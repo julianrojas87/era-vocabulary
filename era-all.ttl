@@ -1,0 +1,594 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix era: <http://era.europa.eu/ns#> .
+@prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
+@prefix era-countries: <http://era.europa.eu/concepts/countries#> .
+@prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
+@prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
+@prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
+@prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
+@prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
+
+era: a foaf:Document ;
+    foaf:primaryTopic era: ;
+    dct:issued "2020-07-29"^^xsd:date ;
+    dct:modified "2020-07-29"^^xsd:date ;
+    dct:hasFormat era: ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> .
+
+era: a owl:Ontology ;
+    dct:title "ERA vocabulary"@en ;
+    rdfs:label "ERA vocabulary"@en ;
+    dct:creator <https://julianrojas.org#me> ;
+    rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
+    owl:versionInfo "v0.3.5" .
+    #owl:imports wgs:, geosparql: .
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+######## Abstraction Layer #########
+
+era:MicroNode a owl:Class, rdfs:Class ;
+    rdfs:label "Micro Node"@en ;
+    rdfs:comment "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:MicroLink a owl:Class, rdfs:Class ;
+    rdfs:label "Micro Link"@en ;
+    rdfs:comment "An abstraction of a track that represent a physical rail connection between two different micro nodes."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:NodePort a owl:Class, rdfs:Class ;
+    rdfs:subClassOf geosparql:Geometry, wgs:Point;
+    rdfs:label "Node Port"@en ;
+    rdfs:comment "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:InternalNodeLink a owl:Class, rdfs:Class ;
+    rdfs:label "Internal Node Link"@en ;
+    rdfs:comment "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+
+######## Implementation Layer #########
+
+era:OperationalPoint a owl:Class, rdfs:Class ;
+    rdfs:label "Operational Point"@en ;
+    rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:subClassOf geosparql:Feature, wgs:SpatialThing;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:Track a owl:Class, rdfs:Class ;
+    rdfs:label "Track"@en ;
+    rdfs:comment "A running track that is used for train service movements."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:Tunnel a owl:Class, rdfs:Class ;
+    rdfs:label "Tunnel"@en ;
+    rdfs:comment "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:VehicleType a owl:Class, rdfs:Class ;
+    rdfs:label "Vehicle Type"@en ;
+    rdfs:comment "A vehicle type that has been authorized to operate on the EU railway infrastructure."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+era:hasImplementation a owl:ObjectProperty, rdf:Property ;
+    owl:inverseOf era:hasAbstraction ;
+    rdfs:label "has implementation"@en ;
+    rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:MicroNode era:MicroLink )
+                ] ;
+    rdfs:range  [ a owl:Class ;
+                  owl:unionOf ( era:OperationalPoint era:Track )
+                ] ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasAbstraction a owl:ObjectProperty, rdf:Property ;
+    owl:inverseOf era:hasImplementation ;
+    rdfs:label "has abstraction"@en ;
+    rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:OperationalPoint era:Track )
+                ] ;
+    rdfs:range  [ a owl:Class ;
+                  owl:unionOf ( era:MicroNode era:MicroLink )
+                ] ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:opType a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "operational point type"@en ;
+    rdfs:comment "Indicates the type on an operational point."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:OperationalPoint ;
+    rdfs:range era-op-types:OperationalPointType ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:country a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "country"@en ;
+    rdfs:comment "Indicates a related country."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:OperationalPoint era:VehicleType )
+                ] ;
+    rdfs:range era-countries:Country ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:startPort a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "start port"@en ;
+    rdfs:comment "Reference to the starting operational point's node port of a micro link or an internal node link."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
+                ] ;
+    rdfs:range era:NodePort ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:endPort a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "end port"@en ;
+    rdfs:comment "Reference to the ending operational point's node port of a micro link or an internal node link."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
+                ] ;
+    rdfs:range era:NodePort ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:belongsToNode a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "belongs to node"@en ;
+    rdfs:comment "Indicates the micro node to which a node port belongs to."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NodePort ;
+    rdfs:range era:MicroNode ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:startLocation a owl:ObjectProperty, rdf:Property ;
+    rdfs:subPropertyOf geosparql:hasGeometry, wgs:location ;
+    rdfs:label "start location"@en ;
+    rdfs:comment "References the geolocation of the start of a tunnel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
+    rdfs:range [ a owl:Class ;
+                  owl:unionOf ( geosparql:Geometry wgs:Point )
+               ] ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:endLocation a owl:ObjectProperty, rdf:Property ;
+    rdfs:subPropertyOf geosparql:hasGeometry, wgs:location ;
+    rdfs:label "end location"@en ;
+    rdfs:comment "References the geolocation of the end of a tunnel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
+    rdfs:range [ a owl:Class ;
+                  owl:unionOf ( geosparql:Geometry wgs:Point )
+               ] ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasTrack a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "has track"@en ;
+    rdfs:comment "References a rail track that goes through a tunnel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
+    rdfs:range era:Track ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:passesThroughTunnel a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "passes through tunnel"@en ;
+    rdfs:comment "References a tunnel that a track goes through."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range era:Tunnel ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:category a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "category"@en ;
+    rdfs:comment "Vehicle category."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-vehicles:Category ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:subCategory a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "subcategory"@en ;
+    rdfs:comment "Vehicle subcategory."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-vehicles:SubCategory ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:manufacturer a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "manufacturer"@en ;
+    rdfs:comment "Vehicle manufacturer company."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-manufacturers:Manufacturer ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+era:uopid a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "unique operational point id"@en ;
+    rdfs:comment "Code composed of country code and alphanumeric operational point code, as defined in RINF."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:OperationalPoint ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:tafTAPCode a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "TAF/TAP code"@en ;
+    rdfs:comment "Primary code developed for TAF/TAP."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:OperationalPoint ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:bidirectional a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "bidirectional"@en ;
+    rdfs:comment "Indicates if a micro link or an internal node link can be traversed in both directions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
+                ] ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:lineUICCode a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "line UIC code"@en ;
+    rdfs:comment "Line associated UIC code."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:tunnelLength a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "tunnel length"@en ;
+    rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:double ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:trackLength a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "track length"@en ;
+    rdfs:comment "Distance in kilometers between operational points at start and end of a track."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:double ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:alternativeName a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "alternative name"@en ;
+    rdfs:comment "Alternative name of a vehicle."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+#################################################################
+#
+#    Compatibility Parameters
+#
+#################################################################
+
+########## Gauging ##########
+
+era:gaugingProfile a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.3.1.1 and ERATV 4.2.1
+    rdfs:label "gauging profile"@en ;
+    rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-gaugings:GaugingProfile ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:gaugingCheckLocation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.1.2
+    rdfs:label "gauging check location"@en ;
+    rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "unstable" .
+
+
+########## Train detection systems ##########
+
+era:trainDetectionSystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.7.1.1 and ERATV 4.14.1
+    rdfs:label "train detection system"@en ;
+    rdfs:comment "Indication of supported types of train detection systems."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-tds:TrainDetectionSystem ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+
+########## Wheelset ##########
+
+era:wheelSetGauge a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.1 and ERATV 4.1.3
+    rdfs:label "wheel set gauge"@en ;
+    rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+########## Tunnel ##########
+
+era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.8.10
+    rdfs:label "rolling stock fire category"@en ;
+    rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
+    rdfs:range era-rs-fire:Category ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:nationalRollingStockFireCategory a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.8.11
+    rdfs:label "national rolling stock fire category"@en ;
+    rdfs:comment "Applicable national rolling stock fire category for a tunnel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
+    rdfs:range xsd:string ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2019-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+
+#################################################################
+#
+#    Abstract Concepts
+#
+#################################################################
+
+era-op-types:OperationalPointType a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Operational Point Type"@en ;
+    rdfs:comment "Abstract class representing the different existing types of Operational Points"@en .
+
+era-countries:Country a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "Abstract class representing country entities"@en .
+
+era-vehicles:Category a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Vehicle Category"@en ;
+    rdfs:comment "Abstract class representing vehicle categories"@en .
+
+era-vehicles:SubCategory a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Vehicle Sub Category"@en ;
+    rdfs:comment "Abstract class representing vehicle sub categories"@en .
+
+era-manufacturers:Manufacturer a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Manufacturer"@en ;
+    rdfs:comment "Abstract class representing vehicle manufacturer companies"@en .
+
+era-gaugings:GaugingProfile a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Gauging Profile"@en ;
+    rdfs:comment "Abstract class representing gauging profiles"@en .
+
+era-tds:TrainDetectionSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Train Detection System"@en ;
+    rdfs:comment "Abstract class representing train detection systems"@en .
+
+era-rs-fire:Category a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Rolling Stock Fire Category"@en ;
+    rdfs:comment "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en .
+
+#################################################################
+#
+#    Data Types
+#
+#################################################################
+
+era-countries:iso3166-1-alpha-2DT a rdfs:Datatype ;
+    rdfs:label "ISO 3166-1 alpha-2DT" ;
+    rdfs:seeAlso <https://iso.org/iso-3166-country-codes.html> .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+
+########## Vehicle categories ##########
+
+era-vehicles:tractionVehicles a era-vehicles:Category ;
+    skos:prefLabel "Traction Vehicles"@en .
+
+era-vehicles:hauledPassenger a era-vehicles:Category ;
+    skos:prefLabel "Hauled Passenger Vehicles"@en .
+
+era-vehicles:freightWagons a era-vehicles:Category ;
+    skos:prefLabel "Freight Wagons"@en .
+
+era-vehicles:specialVehicles a era-vehicles:Category ;
+    skos:prefLabel "Special Vehicles"@en .
+
+########## Vehicle subcategories ##########
+
+era-vehicles:locomotive a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:tractionVehicles ;
+    skos:prefLabel "Locomotive"@en .
+
+era-vehicles:passengerTrainset a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:tractionVehicles ;
+    skos:prefLabel "Self-propelled passenger trainset (incl. railbusses)"@en .
+
+era-vehicles:freightTrainset a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:tractionVehicles ;
+    skos:prefLabel "Self-propelled freight trainset"@en .
+
+era-vehicles:shunter a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:tractionVehicles ;
+    skos:prefLabel "Shunter"@en .
+
+era-vehicles:otherTractionVehicles a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:tractionVehicles ;
+    skos:prefLabel "Other (tramways, light rail vehicles, etc)"@en .
+
+era-vehicles:passengerCoach a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Passenger Coach (incl. sleeping cars, restaurant, etc.)"@en .
+
+era-vehicles:van a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Van"@en .
+
+era-vehicles:carCarrier a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Car Carrier"@en .
+
+era-vehicles:serviceVehicle a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Vehicle for services (e.g. kitchen)"@en .
+
+era-vehicles:coachesRake a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Fixed rake of coaches"@en .
+
+era-vehicles:otherHauledPassenger a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:hauledPassenger ;
+    skos:prefLabel "Other hauled passenger vehicles"@en .
+
+era-vehicles:freightWagon a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:freightWagons ;
+    skos:prefLabel "Freight wagon"@en .
+
+era-vehicles:freightWagonsRake a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:freightWagons ;
+    skos:prefLabel "Fixed rake of freight wagons"@en .
+
+era-vehicles:selfPropelledSpecialVehicle a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:specialVehicles ;
+    skos:prefLabel "Self-propelled special vehicle"@en .
+
+era-vehicles:hauledSpecialVehicle a era-vehicles:SubCategory ;
+    skos:broader era-vehicles:specialVehicles ;
+    skos:prefLabel "Hauled special vehicle"@en .
+
+########## Rolling stock fire categories ##########
+
+era-rs-fire:a a era-rs-fire:Category ;
+    skos:prefLabel "A" ;
+    skos:definition "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A"@en .
+
+era-rs-fire:b a era-rs-fire:Category ;
+    skos:prefLabel "B" ;
+    skos:definition "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B"@en .
+
+era-rs-fire:none a era-rs-fire:Category ;
+    skos:prefLabel "None"@en ;
+    skos:definition "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .

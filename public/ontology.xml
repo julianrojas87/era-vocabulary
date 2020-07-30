@@ -1,0 +1,1240 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://era.europa.eu/ns#"
+     xml:base="http://era.europa.eu/ns"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://era.europa.eu/ns#">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:creator rdf:resource="https://julianrojas.org#me"/>
+        <terms:hasFormat rdf:resource="http://era.europa.eu/ns#"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:title xml:lang="en">ERA vocabulary</terms:title>
+        <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
+        <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
+        <owl:versionInfo>v0.3.5</owl:versionInfo>
+        <foaf:primaryTopic rdf:resource="http://era.europa.eu/ns#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT -->
+
+
+    <rdfs:Datatype rdf:about="http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT">
+        <rdfs:label>ISO 3166-1 alpha-2DT</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iso.org/iso-3166-country-codes.html"/>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://era.europa.eu/ns#belongsToNode -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#belongsToNode">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#NodePort"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#MicroNode"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the micro node to which a node port belongs to.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">belongs to node</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#category -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#category">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/vehicles#Category"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Vehicle category.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">category</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#country -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#country">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/countries#Country"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates a related country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">country</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#endLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#endLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">References the geolocation of the end of a tunnel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">end location</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#endPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#endPort">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#InternalNodeLink"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroLink"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#NodePort"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Reference to the ending operational point&apos;s node port of a micro link or an internal node link.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">end port</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#gaugingProfile -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#gaugingProfile">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/gaugings#GaugingProfile"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Gauges as defined in European standard or other local gauges, including lower or upper part.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">gauging profile</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#hasAbstraction -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#hasAbstraction">
+        <owl:inverseOf rdf:resource="http://era.europa.eu/ns#hasImplementation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroLink"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroNode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Property that links a physical entity with its topological abstraction representation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">has abstraction</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#hasImplementation -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#hasImplementation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroLink"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroNode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Property that links a topological abstraction entity with its physical representation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">has implementation</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#hasTrack -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#hasTrack">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#Track"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">References a rail track that goes through a tunnel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">has track</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#manufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#manufacturer">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/manufacturers#Manufacturer"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Vehicle manufacturer company.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">manufacturer</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#opType -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#opType">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#OperationalPoint"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/op-types#OperationalPointType"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the type on an operational point.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">operational point type</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#passesThroughTunnel -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#passesThroughTunnel">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">References a tunnel that a track goes through.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">passes through tunnel</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#rollingStockFireCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#rollingStockFireCategory">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Applicable rolling stock fire category for a tunnel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">rolling stock fire category</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#startLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#startLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">References the geolocation of the start of a tunnel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">start location</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#startPort -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#startPort">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#InternalNodeLink"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroLink"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#NodePort"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Reference to the starting operational point&apos;s node port of a micro link or an internal node link.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">start port</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#subCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#subCategory">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Vehicle subcategory.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">subcategory</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#trainDetectionSystem -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#trainDetectionSystem">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/train-detection#TrainDetectionSystem"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indication of supported types of train detection systems.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">train detection system</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://era.europa.eu/ns#alternativeName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#alternativeName">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Alternative name of a vehicle.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">alternative name</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#bidirectional -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#bidirectional">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#InternalNodeLink"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#MicroLink"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates if a micro link or an internal node link can be traversed in both directions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">bidirectional</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#gaugingCheckLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#gaugingCheckLocation">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Location of particular points requiring specific checks due to deviations from gauging.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">gauging check location</rdfs:label>
+        <ns1:term_status>unstable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#lineUICCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#lineUICCode">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Line associated UIC code.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">line UIC code</rdfs:label>
+        <ns1:term_status>unstable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#nationalRollingStockFireCategory -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#nationalRollingStockFireCategory">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Applicable national rolling stock fire category for a tunnel.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">national rolling stock fire category</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#tafTAPCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#tafTAPCode">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#OperationalPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Primary code developed for TAF/TAP.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">TAF/TAP code</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#trackLength -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#trackLength">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Distance in kilometers between operational points at start and end of a track.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">track length</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#tunnelLength -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#tunnelLength">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Length of a tunnel meassured in kilometers.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">tunnel length</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#uopid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#uopid">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#OperationalPoint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">Code composed of country code and alphanumeric operational point code, as defined in RINF.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">unique operational point id</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#wheelSetGauge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#wheelSetGauge">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A single value expressed in millimetres that identifies the track and vehicle wheel set gauge.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">wheel set gauge</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://era.europa.eu/concepts/countries#Country -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/countries#Country">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing country entities</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/gaugings#GaugingProfile -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/gaugings#GaugingProfile">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing gauging profiles</rdfs:comment>
+        <rdfs:label xml:lang="en">Gauging Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/manufacturers#Manufacturer -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/manufacturers#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing vehicle manufacturer companies</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/op-types#OperationalPointType -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/op-types#OperationalPointType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing the different existing types of Operational Points</rdfs:comment>
+        <rdfs:label xml:lang="en">Operational Point Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/rs-fire#Category -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/rs-fire#Category">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B</rdfs:comment>
+        <rdfs:label xml:lang="en">Rolling Stock Fire Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/train-detection#TrainDetectionSystem -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/train-detection#TrainDetectionSystem">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing train detection systems</rdfs:comment>
+        <rdfs:label xml:lang="en">Train Detection System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#Category -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicles#Category">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing vehicle categories</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#SubCategory -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicles#SubCategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Abstract class representing vehicle sub categories</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle Sub Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#InternalNodeLink -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#InternalNodeLink">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A specific track abstraction usee to represent a micro link switch that is possible inside a micro node.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Internal Node Link</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#MicroLink -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#MicroLink">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">An abstraction of a track that represent a physical rail connection between two different micro nodes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Micro Link</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#MicroNode -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#MicroNode">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Micro Node</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#NodePort -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#NodePort">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A port to enter or exit a micro node. Represents the connection between a micro link and a micro node.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Node Port</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#OperationalPoint -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#OperationalPoint">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Operational Point</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#Track -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#Track">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A running track that is used for train service movements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Track</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#Tunnel -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#Tunnel">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Tunnel</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://era.europa.eu/ns#VehicleType -->
+
+
+    <owl:Class rdf:about="http://era.europa.eu/ns#VehicleType">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
+        <rdfs:comment xml:lang="en">A vehicle type that has been authorized to operate on the EU railway infrastructure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Vehicle Type</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature"/>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://era.europa.eu/concepts/rs-fire#a -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/rs-fire#a">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
+        <skos:definition xml:lang="en">Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A</skos:definition>
+        <skos:prefLabel>A</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/rs-fire#b -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/rs-fire#b">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
+        <skos:definition xml:lang="en">Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B</skos:definition>
+        <skos:prefLabel>B</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/rs-fire#none -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/rs-fire#none">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
+        <skos:definition xml:lang="en">None of rolling stock fire categories A or B shall be applied on a tunnel</skos:definition>
+        <skos:prefLabel xml:lang="en">None</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#carCarrier -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#carCarrier">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Car Carrier</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#coachesRake -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#coachesRake">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Fixed rake of coaches</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#freightTrainset -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#freightTrainset">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#tractionVehicles"/>
+        <skos:prefLabel xml:lang="en">Self-propelled freight trainset</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#freightWagon -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#freightWagon">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#freightWagons"/>
+        <skos:prefLabel xml:lang="en">Freight wagon</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#freightWagons -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#freightWagons">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#Category"/>
+        <skos:prefLabel xml:lang="en">Freight Wagons</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#freightWagonsRake -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#freightWagonsRake">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#freightWagons"/>
+        <skos:prefLabel xml:lang="en">Fixed rake of freight wagons</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#hauledPassenger -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#hauledPassenger">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#Category"/>
+        <skos:prefLabel xml:lang="en">Hauled Passenger Vehicles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#specialVehicles"/>
+        <skos:prefLabel xml:lang="en">Hauled special vehicle</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#locomotive -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#locomotive">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#tractionVehicles"/>
+        <skos:prefLabel xml:lang="en">Locomotive</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#otherHauledPassenger -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#otherHauledPassenger">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Other hauled passenger vehicles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#otherTractionVehicles -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#otherTractionVehicles">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#tractionVehicles"/>
+        <skos:prefLabel xml:lang="en">Other (tramways, light rail vehicles, etc)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#passengerCoach -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#passengerCoach">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Passenger Coach (incl. sleeping cars, restaurant, etc.)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#passengerTrainset -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#passengerTrainset">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#tractionVehicles"/>
+        <skos:prefLabel xml:lang="en">Self-propelled passenger trainset (incl. railbusses)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#specialVehicles"/>
+        <skos:prefLabel xml:lang="en">Self-propelled special vehicle</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#serviceVehicle -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#serviceVehicle">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Vehicle for services (e.g. kitchen)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#shunter -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#shunter">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#tractionVehicles"/>
+        <skos:prefLabel xml:lang="en">Shunter</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#specialVehicles -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#specialVehicles">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#Category"/>
+        <skos:prefLabel xml:lang="en">Special Vehicles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#tractionVehicles -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#tractionVehicles">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#Category"/>
+        <skos:prefLabel xml:lang="en">Traction Vehicles</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/vehicles#van -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/vehicles#van">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/vehicles#SubCategory"/>
+        <skos:broader rdf:resource="http://era.europa.eu/concepts/vehicles#hauledPassenger"/>
+        <skos:prefLabel xml:lang="en">Van</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/ns# -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/ns#">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

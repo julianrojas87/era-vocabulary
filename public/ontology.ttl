@@ -1,0 +1,811 @@
+@prefix : <http://era.europa.eu/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://era.europa.eu/ns#> .
+
+<http://era.europa.eu/ns#> rdf:type owl:Ontology ;
+                            <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+                            <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> ;
+                            <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> ;
+                            <http://purl.org/dc/terms/issued> "2020-07-29"^^xsd:date ;
+                            <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
+                            <http://purl.org/dc/terms/title> "ERA vocabulary"@en ;
+                            rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
+                            rdfs:label "ERA vocabulary"@en ;
+                            owl:versionInfo "v0.3.5" ;
+                            <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT
+<http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT> rdf:type rdfs:Datatype ;
+                                                              rdfs:label "ISO 3166-1 alpha-2DT" ;
+                                                              rdfs:seeAlso <https://iso.org/iso-3166-country-codes.html> .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://era.europa.eu/ns#belongsToNode
+:belongsToNode rdf:type owl:ObjectProperty ;
+               rdfs:domain :NodePort ;
+               rdfs:range :MicroNode ;
+               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               rdfs:comment "Indicates the micro node to which a node port belongs to."@en ;
+               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+               rdfs:label "belongs to node"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#category
+:category rdf:type owl:ObjectProperty ;
+          rdfs:domain :VehicleType ;
+          rdfs:range <http://era.europa.eu/concepts/vehicles#Category> ;
+          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          rdfs:comment "Vehicle category."@en ;
+          rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+          rdfs:label "category"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#country
+:country rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :OperationalPoint
+                                     :VehicleType
+                                   )
+                     ] ;
+         rdfs:range <http://era.europa.eu/concepts/countries#Country> ;
+         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+         <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+         rdfs:comment "Indicates a related country."@en ;
+         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+         rdfs:label "country"@en ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#endLocation
+:endLocation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> ,
+                                <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
+             rdfs:domain :Tunnel ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://www.opengis.net/ont/geosparql#Geometry>
+                                        <http://www.w3.org/2003/01/geo/wgs84_pos#Point>
+                                      )
+                        ] ;
+             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             rdfs:comment "References the geolocation of the end of a tunnel."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "end location"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#endPort
+:endPort rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :InternalNodeLink
+                                     :MicroLink
+                                   )
+                     ] ;
+         rdfs:range :NodePort ;
+         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+         <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+         rdfs:comment "Reference to the ending operational point's node port of a micro link or an internal node link."@en ;
+         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+         rdfs:label "end port"@en ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#gaugingProfile
+:gaugingProfile rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Track
+                                            :VehicleType
+                                          )
+                            ] ;
+                rdfs:range <http://era.europa.eu/concepts/gaugings#GaugingProfile> ;
+                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part."@en ;
+                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                rdfs:label "gauging profile"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#hasAbstraction
+:hasAbstraction rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasImplementation ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OperationalPoint
+                                            :Track
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :MicroLink
+                                           :MicroNode
+                                         )
+                           ] ;
+                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
+                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                rdfs:label "has abstraction"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#hasImplementation
+:hasImplementation rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( :MicroLink
+                                               :MicroNode
+                                             )
+                               ] ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :OperationalPoint
+                                              :Track
+                                            )
+                              ] ;
+                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                   <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                   rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
+                   rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                   rdfs:label "has implementation"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#hasTrack
+:hasTrack rdf:type owl:ObjectProperty ;
+          rdfs:domain :Tunnel ;
+          rdfs:range :Track ;
+          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          rdfs:comment "References a rail track that goes through a tunnel."@en ;
+          rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+          rdfs:label "has track"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#manufacturer
+:manufacturer rdf:type owl:ObjectProperty ;
+              rdfs:domain :VehicleType ;
+              rdfs:range <http://era.europa.eu/concepts/manufacturers#Manufacturer> ;
+              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+              <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+              rdfs:comment "Vehicle manufacturer company."@en ;
+              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+              rdfs:label "manufacturer"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#opType
+:opType rdf:type owl:ObjectProperty ;
+        rdfs:domain :OperationalPoint ;
+        rdfs:range <http://era.europa.eu/concepts/op-types#OperationalPointType> ;
+        <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+        rdfs:comment "Indicates the type on an operational point."@en ;
+        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+        rdfs:label "operational point type"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#passesThroughTunnel
+:passesThroughTunnel rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Track ;
+                     rdfs:range :Tunnel ;
+                     <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                     <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                     rdfs:comment "References a tunnel that a track goes through."@en ;
+                     rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                     rdfs:label "passes through tunnel"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#rollingStockFireCategory
+:rollingStockFireCategory rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Tunnel ;
+                          rdfs:range <http://era.europa.eu/concepts/rs-fire#Category> ;
+                          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                          rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
+                          rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                          rdfs:label "rolling stock fire category"@en ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#startLocation
+:startLocation rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#hasGeometry> ,
+                                  <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
+               rdfs:domain :Tunnel ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://www.opengis.net/ont/geosparql#Geometry>
+                                          <http://www.w3.org/2003/01/geo/wgs84_pos#Point>
+                                        )
+                          ] ;
+               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               rdfs:comment "References the geolocation of the start of a tunnel."@en ;
+               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+               rdfs:label "start location"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#startPort
+:startPort rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :InternalNodeLink
+                                       :MicroLink
+                                     )
+                       ] ;
+           rdfs:range :NodePort ;
+           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           rdfs:comment "Reference to the starting operational point's node port of a micro link or an internal node link."@en ;
+           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+           rdfs:label "start port"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#subCategory
+:subCategory rdf:type owl:ObjectProperty ;
+             rdfs:domain :VehicleType ;
+             rdfs:range <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             rdfs:comment "Vehicle subcategory."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "subcategory"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#trainDetectionSystem
+:trainDetectionSystem rdf:type owl:ObjectProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Track
+                                                  :VehicleType
+                                                )
+                                  ] ;
+                      rdfs:range <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> ;
+                      <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                      <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                      rdfs:comment "Indication of supported types of train detection systems."@en ;
+                      rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                      rdfs:label "train detection system"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://era.europa.eu/ns#alternativeName
+:alternativeName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :VehicleType ;
+                 rdfs:range xsd:string ;
+                 <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                 <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                 rdfs:comment "Alternative name of a vehicle."@en ;
+                 rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                 rdfs:label "alternative name"@en ;
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#bidirectional
+:bidirectional rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :InternalNodeLink
+                                           :MicroLink
+                                         )
+                           ] ;
+               rdfs:range xsd:boolean ;
+               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               rdfs:comment "Indicates if a micro link or an internal node link can be traversed in both directions."@en ;
+               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+               rdfs:label "bidirectional"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#gaugingCheckLocation
+:gaugingCheckLocation rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Track ;
+                      rdfs:range xsd:string ;
+                      <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                      <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                      rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging."@en ;
+                      rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                      rdfs:label "gauging check location"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#lineUICCode
+:lineUICCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Track ;
+             rdfs:range xsd:string ;
+             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             rdfs:comment "Line associated UIC code."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "line UIC code"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#nationalRollingStockFireCategory
+:nationalRollingStockFireCategory rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Tunnel ;
+                                  rdfs:range xsd:string ;
+                                  <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                                  rdfs:comment "Applicable national rolling stock fire category for a tunnel."@en ;
+                                  rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                                  rdfs:label "national rolling stock fire category"@en ;
+                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#tafTAPCode
+:tafTAPCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :OperationalPoint ;
+            rdfs:range xsd:string ;
+            <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+            <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+            rdfs:comment "Primary code developed for TAF/TAP."@en ;
+            rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+            rdfs:label "TAF/TAP code"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#trackLength
+:trackLength rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Track ;
+             rdfs:range xsd:double ;
+             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             rdfs:comment "Distance in kilometers between operational points at start and end of a track."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "track length"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#tunnelLength
+:tunnelLength rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Track ;
+              rdfs:range xsd:double ;
+              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+              <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+              rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
+              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+              rdfs:label "tunnel length"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#uopid
+:uopid rdf:type owl:DatatypeProperty ;
+       rdfs:domain :OperationalPoint ;
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+       rdfs:comment "Code composed of country code and alphanumeric operational point code, as defined in RINF."@en ;
+       rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+       rdfs:label "unique operational point id"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#wheelSetGauge
+:wheelSetGauge rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Track
+                                           :VehicleType
+                                         )
+                           ] ;
+               rdfs:range xsd:integer ;
+               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en ;
+               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+               rdfs:label "wheel set gauge"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://era.europa.eu/concepts/countries#Country
+<http://era.europa.eu/concepts/countries#Country> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                  rdfs:comment "Abstract class representing country entities"@en ;
+                                                  rdfs:label "Country"@en .
+
+
+###  http://era.europa.eu/concepts/gaugings#GaugingProfile
+<http://era.europa.eu/concepts/gaugings#GaugingProfile> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                        rdfs:comment "Abstract class representing gauging profiles"@en ;
+                                                        rdfs:label "Gauging Profile"@en .
+
+
+###  http://era.europa.eu/concepts/manufacturers#Manufacturer
+<http://era.europa.eu/concepts/manufacturers#Manufacturer> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                           rdfs:comment "Abstract class representing vehicle manufacturer companies"@en ;
+                                                           rdfs:label "Manufacturer"@en .
+
+
+###  http://era.europa.eu/concepts/op-types#OperationalPointType
+<http://era.europa.eu/concepts/op-types#OperationalPointType> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                              rdfs:comment "Abstract class representing the different existing types of Operational Points"@en ;
+                                                              rdfs:label "Operational Point Type"@en .
+
+
+###  http://era.europa.eu/concepts/rs-fire#Category
+<http://era.europa.eu/concepts/rs-fire#Category> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                 rdfs:comment "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en ;
+                                                 rdfs:label "Rolling Stock Fire Category"@en .
+
+
+###  http://era.europa.eu/concepts/train-detection#TrainDetectionSystem
+<http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                     rdfs:comment "Abstract class representing train detection systems"@en ;
+                                                                     rdfs:label "Train Detection System"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#Category
+<http://era.europa.eu/concepts/vehicles#Category> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                  rdfs:comment "Abstract class representing vehicle categories"@en ;
+                                                  rdfs:label "Vehicle Category"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#SubCategory
+<http://era.europa.eu/concepts/vehicles#SubCategory> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                     rdfs:comment "Abstract class representing vehicle sub categories"@en ;
+                                                     rdfs:label "Vehicle Sub Category"@en .
+
+
+###  http://era.europa.eu/ns#InternalNodeLink
+:InternalNodeLink rdf:type owl:Class ;
+                  <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                  rdfs:comment "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."@en ;
+                  rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                  rdfs:label "Internal Node Link"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#MicroLink
+:MicroLink rdf:type owl:Class ;
+           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           rdfs:comment "An abstraction of a track that represent a physical rail connection between two different micro nodes."@en ;
+           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+           rdfs:label "Micro Link"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#MicroNode
+:MicroNode rdf:type owl:Class ;
+           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           rdfs:comment "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."@en ;
+           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+           rdfs:label "Micro Node"@en ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#NodePort
+:NodePort rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ,
+                          <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          rdfs:comment "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."@en ;
+          rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+          rdfs:label "Node Port"@en ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#OperationalPoint
+:OperationalPoint rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                  <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                  <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                  rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
+                  rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                  rdfs:label "Operational Point"@en ;
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#Track
+:Track rdf:type owl:Class ;
+       <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+       rdfs:comment "A running track that is used for train service movements."@en ;
+       rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+       rdfs:label "Track"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#Tunnel
+:Tunnel rdf:type owl:Class ;
+        <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+        rdfs:comment "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."@en ;
+        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+        rdfs:label "Tunnel"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#VehicleType
+:VehicleType rdf:type owl:Class ;
+             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             rdfs:comment "A vehicle type that has been authorized to operate on the EU railway infrastructure."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "Vehicle Type"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://era.europa.eu/concepts/rs-fire#a
+<http://era.europa.eu/concepts/rs-fire#a> rdf:type owl:NamedIndividual ,
+                                                   <http://era.europa.eu/concepts/rs-fire#Category> ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "A" .
+
+
+###  http://era.europa.eu/concepts/rs-fire#b
+<http://era.europa.eu/concepts/rs-fire#b> rdf:type owl:NamedIndividual ,
+                                                   <http://era.europa.eu/concepts/rs-fire#Category> ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "B" .
+
+
+###  http://era.europa.eu/concepts/rs-fire#none
+<http://era.europa.eu/concepts/rs-fire#none> rdf:type owl:NamedIndividual ,
+                                                      <http://era.europa.eu/concepts/rs-fire#Category> ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "None of rolling stock fire categories A or B shall be applied on a tunnel"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "None"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#carCarrier
+<http://era.europa.eu/concepts/vehicles#carCarrier> rdf:type owl:NamedIndividual ,
+                                                             <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                    <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Car Carrier"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#coachesRake
+<http://era.europa.eu/concepts/vehicles#coachesRake> rdf:type owl:NamedIndividual ,
+                                                              <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                     <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Fixed rake of coaches"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#freightTrainset
+<http://era.europa.eu/concepts/vehicles#freightTrainset> rdf:type owl:NamedIndividual ,
+                                                                  <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                         <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#tractionVehicles> ;
+                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Self-propelled freight trainset"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#freightWagon
+<http://era.europa.eu/concepts/vehicles#freightWagon> rdf:type owl:NamedIndividual ,
+                                                               <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                      <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#freightWagons> ;
+                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Freight wagon"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#freightWagons
+<http://era.europa.eu/concepts/vehicles#freightWagons> rdf:type owl:NamedIndividual ,
+                                                                <http://era.europa.eu/concepts/vehicles#Category> ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Freight Wagons"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#freightWagonsRake
+<http://era.europa.eu/concepts/vehicles#freightWagonsRake> rdf:type owl:NamedIndividual ,
+                                                                    <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                           <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#freightWagons> ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Fixed rake of freight wagons"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#hauledPassenger
+<http://era.europa.eu/concepts/vehicles#hauledPassenger> rdf:type owl:NamedIndividual ,
+                                                                  <http://era.europa.eu/concepts/vehicles#Category> ;
+                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Hauled Passenger Vehicles"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle
+<http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle> rdf:type owl:NamedIndividual ,
+                                                                       <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                              <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#specialVehicles> ;
+                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Hauled special vehicle"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#locomotive
+<http://era.europa.eu/concepts/vehicles#locomotive> rdf:type owl:NamedIndividual ,
+                                                             <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                    <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#tractionVehicles> ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Locomotive"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#otherHauledPassenger
+<http://era.europa.eu/concepts/vehicles#otherHauledPassenger> rdf:type owl:NamedIndividual ,
+                                                                       <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                              <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Other hauled passenger vehicles"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#otherTractionVehicles
+<http://era.europa.eu/concepts/vehicles#otherTractionVehicles> rdf:type owl:NamedIndividual ,
+                                                                        <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                               <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#tractionVehicles> ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> "Other (tramways, light rail vehicles, etc)"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#passengerCoach
+<http://era.europa.eu/concepts/vehicles#passengerCoach> rdf:type owl:NamedIndividual ,
+                                                                 <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                        <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Passenger Coach (incl. sleeping cars, restaurant, etc.)"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#passengerTrainset
+<http://era.europa.eu/concepts/vehicles#passengerTrainset> rdf:type owl:NamedIndividual ,
+                                                                    <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                           <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#tractionVehicles> ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Self-propelled passenger trainset (incl. railbusses)"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle
+<http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle> rdf:type owl:NamedIndividual ,
+                                                                              <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                                     <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#specialVehicles> ;
+                                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Self-propelled special vehicle"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#serviceVehicle
+<http://era.europa.eu/concepts/vehicles#serviceVehicle> rdf:type owl:NamedIndividual ,
+                                                                 <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                        <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                                        <http://www.w3.org/2004/02/skos/core#prefLabel> "Vehicle for services (e.g. kitchen)"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#shunter
+<http://era.europa.eu/concepts/vehicles#shunter> rdf:type owl:NamedIndividual ,
+                                                          <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                                 <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#tractionVehicles> ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Shunter"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#specialVehicles
+<http://era.europa.eu/concepts/vehicles#specialVehicles> rdf:type owl:NamedIndividual ,
+                                                                  <http://era.europa.eu/concepts/vehicles#Category> ;
+                                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Special Vehicles"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#tractionVehicles
+<http://era.europa.eu/concepts/vehicles#tractionVehicles> rdf:type owl:NamedIndividual ,
+                                                                   <http://era.europa.eu/concepts/vehicles#Category> ;
+                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Traction Vehicles"@en .
+
+
+###  http://era.europa.eu/concepts/vehicles#van
+<http://era.europa.eu/concepts/vehicles#van> rdf:type owl:NamedIndividual ,
+                                                      <http://era.europa.eu/concepts/vehicles#SubCategory> ;
+                                             <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> ;
+                                             <http://www.w3.org/2004/02/skos/core#prefLabel> "Van"@en .
+
+
+###  http://era.europa.eu/ns#
+<http://era.europa.eu/ns#> rdf:type owl:NamedIndividual ,
+                                    <http://xmlns.com/foaf/0.1/Document> .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

@@ -1,0 +1,2543 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://era.europa.eu/concepts/rs-fire", "http://era.europa.eu/ns", "http://era.europa.eu/concepts/manufacturers", "http://www.w3.org/2001/XMLSchema", "http://era.europa.eu/concepts/op-types", "http://era.europa.eu/concepts/train-detection", "http://era.europa.eu/concepts/countries", "http://era.europa.eu/concepts/gaugings", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2000/01/rdf-schema", "http://xmlns.com/foaf/0.1", "http://era.europa.eu/concepts/vehicles", "http://www.opengis.net/ont/geosparql", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "ERA vocabulary"
+    },
+    "iri" : "http://era.europa.eu/ns#",
+    "version" : "v0.3.5",
+    "author" : [ "https://julianrojas.org#me" ],
+    "labels" : {
+      "en" : "ERA vocabulary"
+    },
+    "comments" : {
+      "en" : "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."
+    },
+    "other" : {
+      "hasFormat" : [ {
+        "identifier" : "hasFormat",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://julianrojas.org#me",
+        "type" : "iri"
+      } ],
+      "primaryTopic" : [ {
+        "identifier" : "primaryTopic",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "v0.3.5",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ERA vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "46",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "67",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "3", "4", "5", "6", "7", "8", "1", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://era.europa.eu/ns#VehicleType",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "VehicleType",
+      "en" : "Vehicle Type"
+    },
+    "comment" : {
+      "en" : "A vehicle type that has been authorized to operate on the EU railway infrastructure."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://era.europa.eu/concepts/vehicles#Category",
+    "baseIri" : "http://era.europa.eu/concepts/vehicles",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Vehicle Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Traction Vehicles",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "tractionVehicles"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#specialVehicles",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Special Vehicles",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "specialVehicles"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#freightWagons",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Freight Wagons",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "freightWagons"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hauled Passenger Vehicles",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "hauledPassenger"
+      }
+    } ],
+    "comment" : {
+      "en" : "Abstract class representing vehicle categories"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://era.europa.eu/ns#Track",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Track",
+      "en" : "Track"
+    },
+    "comment" : {
+      "en" : "A running track that is used for train service movements."
+    },
+    "id" : "14"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "13" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "26",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Geometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Geometry"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://era.europa.eu/concepts/op-types#OperationalPointType",
+    "baseIri" : "http://era.europa.eu/concepts/op-types",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationalPointType",
+      "en" : "Operational Point Type"
+    },
+    "comment" : {
+      "en" : "Abstract class representing the different existing types of Operational Points"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "13" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "57"
+  }, {
+    "instances" : 0,
+    "union" : [ "60", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://era.europa.eu/concepts/manufacturers#Manufacturer",
+    "baseIri" : "http://era.europa.eu/concepts/manufacturers",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "comment" : {
+      "en" : "Abstract class representing vehicle manufacturer companies"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "60", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "64"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "13" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "46"
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "14" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "42"
+  }, {
+    "instances" : 0,
+    "union" : [ "37", "60" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://era.europa.eu/ns#InternalNodeLink",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InternalNodeLink",
+      "en" : "Internal Node Link"
+    },
+    "comment" : {
+      "en" : "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."
+    },
+    "id" : "61"
+  }, {
+    "instances" : 0,
+    "union" : [ "37", "60" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
+    "baseIri" : "http://era.europa.eu/concepts/gaugings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GaugingProfile",
+      "en" : "Gauging Profile"
+    },
+    "comment" : {
+      "en" : "Abstract class representing gauging profiles"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "14" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "50"
+  }, {
+    "instances" : 0,
+    "union" : [ "66", "48" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "65"
+  }, {
+    "instances" : 0,
+    "union" : [ "60", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "13" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "69"
+  }, {
+    "instances" : 0,
+    "union" : [ "66", "48" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://era.europa.eu/concepts/vehicles#SubCategory",
+    "baseIri" : "http://era.europa.eu/concepts/vehicles",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubCategory",
+      "en" : "Vehicle Sub Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Hauled special vehicle",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#specialVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "hauledSpecialVehicle"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#freightWagonsRake",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Fixed rake of freight wagons",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#freightWagons",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "freightWagonsRake"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#passengerCoach",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Passenger Coach (incl. sleeping cars, restaurant, etc.)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "passengerCoach"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Self-propelled special vehicle",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#specialVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "selfPropelledSpecialVehicle"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#coachesRake",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Fixed rake of coaches",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "coachesRake"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#shunter",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Shunter",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "shunter"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#otherTractionVehicles",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Other (tramways, light rail vehicles, etc)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "otherTractionVehicles"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#serviceVehicle",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Vehicle for services (e.g. kitchen)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "serviceVehicle"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#otherHauledPassenger",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Other hauled passenger vehicles",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "otherHauledPassenger"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#locomotive",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Locomotive",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "locomotive"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#van",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Van",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "van"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#passengerTrainset",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Self-propelled passenger trainset (incl. railbusses)",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "passengerTrainset"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#carCarrier",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Car Carrier",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "carCarrier"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#freightWagon",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Freight wagon",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#freightWagons",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "freightWagon"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/vehicles#freightTrainset",
+      "baseIri" : "http://era.europa.eu/concepts/vehicles",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Self-propelled freight trainset",
+          "type" : "label"
+        } ],
+        "broader" : [ {
+          "identifier" : "broader",
+          "language" : "undefined",
+          "value" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "freightTrainset"
+      }
+    } ],
+    "comment" : {
+      "en" : "Abstract class representing vehicle sub categories"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://era.europa.eu/ns#MicroNode",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MicroNode",
+      "en" : "Micro Node"
+    },
+    "comment" : {
+      "en" : "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://era.europa.eu/ns#OperationalPoint",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OperationalPoint",
+      "en" : "Operational Point"
+    },
+    "comment" : {
+      "en" : "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."
+    },
+    "id" : "11",
+    "superClasses" : [ "62", "73" ]
+  }, {
+    "iri" : "http://era.europa.eu/ns#NodePort",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NodePort",
+      "en" : "Node Port"
+    },
+    "comment" : {
+      "en" : "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."
+    },
+    "id" : "36",
+    "superClasses" : [ "66", "48" ]
+  }, {
+    "iri" : "http://era.europa.eu/ns#MicroLink",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MicroLink",
+      "en" : "Micro Link"
+    },
+    "comment" : {
+      "en" : "An abstraction of a track that represent a physical rail connection between two different micro nodes."
+    },
+    "id" : "60"
+  }, {
+    "iri" : "http://era.europa.eu/ns#Tunnel",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Tunnel",
+      "en" : "Tunnel"
+    },
+    "comment" : {
+      "en" : "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "http://era.europa.eu/ns#",
+      "baseIri" : "http://era.europa.eu/ns",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://era.europa.eu/concepts/rs-fire#Category",
+    "baseIri" : "http://era.europa.eu/concepts/rs-fire",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category",
+      "en" : "Rolling Stock Fire Category"
+    },
+    "individuals" : [ {
+      "iri" : "http://era.europa.eu/concepts/rs-fire#a",
+      "baseIri" : "http://era.europa.eu/concepts/rs-fire",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "A",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "a"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/rs-fire#b",
+      "baseIri" : "http://era.europa.eu/concepts/rs-fire",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "B",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "b"
+      }
+    }, {
+      "iri" : "http://era.europa.eu/concepts/rs-fire#none",
+      "baseIri" : "http://era.europa.eu/concepts/rs-fire",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "None",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "None of rolling stock fire categories A or B shall be applied on a tunnel",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "none"
+      }
+    } ],
+    "comment" : {
+      "en" : "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://era.europa.eu/concepts/train-detection#TrainDetectionSystem",
+    "baseIri" : "http://era.europa.eu/concepts/train-detection",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrainDetectionSystem",
+      "en" : "Train Detection System"
+    },
+    "comment" : {
+      "en" : "Abstract class representing train detection systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://era.europa.eu/concepts/countries#Country",
+    "baseIri" : "http://era.europa.eu/concepts/countries",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "comment" : {
+      "en" : "Abstract class representing country entities"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://era.europa.eu/ns#tafTAPCode",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tafTAPCode",
+      "en" : "TAF/TAP code"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Primary code developed for TAF/TAP."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://era.europa.eu/ns#nationalRollingStockFireCategory",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nationalRollingStockFireCategory",
+      "en" : "national rolling stock fire category"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Applicable national rolling stock fire category for a tunnel."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://era.europa.eu/ns#opType",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "opType",
+      "en" : "operational point type"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Indicates the type on an operational point."
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "location"
+    },
+    "domain" : "26",
+    "subproperty" : [ "30", "31" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://era.europa.eu/ns#subCategory",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "subCategory",
+      "en" : "subcategory"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Vehicle subcategory."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://era.europa.eu/ns#endLocation",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endLocation",
+      "en" : "end location"
+    },
+    "superproperty" : [ "29", "34" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "References the geolocation of the end of a tunnel."
+    },
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://era.europa.eu/ns#belongsToNode",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToNode",
+      "en" : "belongs to node"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Indicates the micro node to which a node port belongs to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://era.europa.eu/ns#passesThroughTunnel",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "passesThroughTunnel",
+      "en" : "passes through tunnel"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "References a tunnel that a track goes through."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "26",
+    "subproperty" : [ "30", "31" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://era.europa.eu/ns#alternativeName",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "alternativeName",
+      "en" : "alternative name"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Alternative name of a vehicle."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://era.europa.eu/ns#hasAbstraction",
+    "inverse" : "44",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAbstraction",
+      "en" : "has abstraction"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Property that links a physical entity with its topological abstraction representation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://era.europa.eu/ns#gaugingProfile",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gaugingProfile",
+      "en" : "gauging profile"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Gauges as defined in European standard or other local gauges, including lower or upper part."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://era.europa.eu/ns#hasImplementation",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasImplementation",
+      "en" : "has implementation"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "Property that links a topological abstraction entity with its physical representation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://era.europa.eu/ns#tunnelLength",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tunnelLength",
+      "en" : "tunnel length"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Length of a tunnel meassured in kilometers."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://era.europa.eu/ns#trainDetectionSystem",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "trainDetectionSystem",
+      "en" : "train detection system"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "Indication of supported types of train detection systems."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://era.europa.eu/ns#uopid",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "uopid",
+      "en" : "unique operational point id"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Code composed of country code and alphanumeric operational point code, as defined in RINF."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://era.europa.eu/ns#gaugingCheckLocation",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gaugingCheckLocation",
+      "en" : "gauging check location"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Location of particular points requiring specific checks due to deviations from gauging."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://era.europa.eu/ns#rollingStockFireCategory",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rollingStockFireCategory",
+      "en" : "rolling stock fire category"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Applicable rolling stock fire category for a tunnel."
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://era.europa.eu/ns#manufacturer",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "manufacturer",
+      "en" : "manufacturer"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Vehicle manufacturer company."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://era.europa.eu/ns#lineUICCode",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lineUICCode",
+      "en" : "line UIC code"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Line associated UIC code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://era.europa.eu/ns#wheelSetGauge",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wheelSetGauge",
+      "en" : "wheel set gauge"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://era.europa.eu/ns#bidirectional",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "53",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bidirectional",
+      "en" : "bidirectional"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "Indicates if a micro link or an internal node link can be traversed in both directions."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://era.europa.eu/ns#country",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "country",
+      "en" : "country"
+    },
+    "domain" : "69",
+    "comment" : {
+      "en" : "Indicates a related country."
+    },
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://era.europa.eu/ns#endPort",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endPort",
+      "en" : "end port"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "Reference to the ending operational point's node port of a micro link or an internal node link."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://era.europa.eu/ns#category",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "category",
+      "en" : "category"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Vehicle category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://era.europa.eu/ns#startLocation",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startLocation",
+      "en" : "start location"
+    },
+    "superproperty" : [ "29", "34" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "References the geolocation of the start of a tunnel."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "73",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://era.europa.eu/ns#hasTrack",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTrack",
+      "en" : "has track"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "References a rail track that goes through a tunnel."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "range" : "48",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "66",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://era.europa.eu/ns#startPort",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startPort",
+      "en" : "start port"
+    },
+    "domain" : "67",
+    "comment" : {
+      "en" : "Reference to the starting operational point's node port of a micro link or an internal node link."
+    },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://era.europa.eu/ns#trackLength",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "trackLength",
+      "en" : "track length"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Distance in kilometers between operational points at start and end of a track."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "62",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  } ]
+}
