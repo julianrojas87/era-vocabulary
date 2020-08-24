@@ -538,6 +538,39 @@ era:gaugingTransversalDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1
     vs:term_status "unstable" .
 
 
+########## Vertical Radius ##########
+
+era:minimumVerticalRadius a owl:DatatypeProperty, rdf:Property ; # RINF 1.2.2.0.3.3
+    rdfs:label "minimum vertical curve radius"@en ;
+    rdfs:comment "Radius of the smallest vertical curve expressed in metres."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:minimumConvexVerticalRadius a owl:DatatypeProperty, rdf:Property ; # ERATV 4.8.5
+    rdfs:label "minimum convex vertical radius"@en ;
+    rdfs:comment "Minimum vertical convex curve radius capability."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:minimumConcaveVerticalRadius a owl:DatatypeProperty, rdf:Property ; # ERATV 4.8.6
+    rdfs:label "minimum concave vertical radius"@en ;
+    rdfs:comment "Minimum vertical concave curve radius capability."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+
 ########## Train detection systems ##########
 
 era:trainDetectionSystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.7.1.1 and ERATV 4.14.1
