@@ -13,6 +13,7 @@
 @prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
+@prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 
@@ -57,7 +58,7 @@ era-tds:TrainDetectionSystem a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Train Detection System"@en ;
     rdfs:comment "Abstract class representing train detection systems"@en .
 
-era-tds:FrenchTrainDetectionSystemLimitation a owl:Class ;
+era-ftds:FrenchTrainDetectionSystemLimitation a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "French Train Detection System Limitation"@en ;
     rdfs:comment "Abstract class representing french train detection systems limitations"@en .
@@ -67,10 +68,15 @@ era-am:AxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Axle Bearing Condition Monitoring"@en ;
     rdfs:comment "Abstract class representing axle bearing condition monitoring setups"@en .
 
-era-am:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Thermal Capacity TSI Reference"@en ;
     rdfs:comment "Abstract class representing reference cases of TSI thermal capacities"@en .
+
+era-ic:IceCondition a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Ice Condition"@en ;
+    rdfs:comment "Abstract class representing ice, snow and hail conditions"@en .
 
 era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;

@@ -19,6 +19,7 @@
 @prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
+@prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 era: a foaf:Document ;
@@ -1028,6 +1029,54 @@ era:eddyCurrentBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
+
+
+########## Weather conditions ##########
+
+era:minimumTemperature a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.2.6 and ERATV 4.3.1 
+    rdfs:label "minimum temperature"@en ;
+    rdfs:comment "Minimum tempertaure allowed for unrestricted operation access, according to European standard."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:maximumTemperature a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.2.6 and ERATV 4.3.1 
+    rdfs:label "maximum temperature"@en ;
+    rdfs:comment "Maximum tempertaure allowed for unrestricted operation access, according to European standard."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasSevereWeatherConditions a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.2.8
+    rdfs:label "has severe weather conditions"@en ;
+    rdfs:comment "Climatic conditions on the line are severe according to European standard."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:snowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
+    rdfs:label "snow ice hail conditions"@en ;
+    rdfs:comment "Snow, ice and hail conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ic:IceCondition ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
 
 ########## Tunnel ##########
 
