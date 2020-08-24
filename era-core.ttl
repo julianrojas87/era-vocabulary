@@ -739,6 +739,36 @@ era:wheelSetGauge a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.1 and 
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
+era:minimumWheelDiameter a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.5.2 and ERATV 4.8.2
+    rdfs:label "minimum wheel diameter"@en ;
+    rdfs:comment "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+########## Minimum curve ##########
+
+era:minimumHorizontalRadius a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.7 and ERATV 4.8.4
+    rdfs:label "minimum horizontal radius"@en ;
+    rdfs:comment "Radius of the smallest horizontal curve of the track in metres."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" . 
+
+
+########## Braking ##########
+
+
 ########## Tunnel ##########
 
 era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.8.10
