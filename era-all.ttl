@@ -18,10 +18,10 @@
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
-era: a foaf:Document ;
+era:document a foaf:Document ;
     foaf:primaryTopic era: ;
-    dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:issued "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
     dct:hasFormat era: ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> .
 
@@ -30,7 +30,7 @@ era: a owl:Ontology ;
     rdfs:label "ERA vocabulary"@en ;
     dct:creator <https://julianrojas.org#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.3.5" .
+    owl:versionInfo "v0.3.6" .
     #owl:imports wgs:, geosparql:, geonames:.
 
 #################################################################
@@ -319,7 +319,7 @@ era:tunnelLength a owl:DatatypeProperty, rdf:Property ;
     rdfs:label "tunnel length"@en ;
     rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:Tunnel ;
     rdfs:range xsd:double ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2019-07-29"^^xsd:date ;
@@ -577,6 +577,11 @@ era-rs-fire:none a era-rs-fire:Category ;
 #    External
 #
 #################################################################
+
+geonames:Feature a owl:Class;
+    rdfs:subClassOf wgs:SpatialThing ;
+    rdfs:label "Feature"@en ;
+    rdfs:comment "A geographical feature"@en .
 
 dct:spatial a owl:ObjectProperty, rdf:Property ;
     rdfs:label "spatial"@en ;
