@@ -20,6 +20,7 @@
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
+@prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 era: a foaf:Document ;
@@ -1077,6 +1078,30 @@ era:snowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
+
+########## Voltages and frequencies ##########
+
+era:contactLineSystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
+    rdfs:label "contact line system"@en ;
+    rdfs:comment "Indication of the type of the contact line system."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-cls:ContactLineSystem ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:energySupplySystem  a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
+    rdfs:label "energy supply system"@en ;
+    rdfs:comment "Indication of the traction supply system (nominal voltage and frequency)."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:string;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
 
 ########## Tunnel ##########
 

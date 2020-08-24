@@ -14,6 +14,7 @@
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
+@prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 
@@ -77,6 +78,11 @@ era-ic:IceCondition a owl:Class ; # Concepts of this class are dynamically gener
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Ice Condition"@en ;
     rdfs:comment "Abstract class representing ice, snow and hail conditions"@en .
+
+era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Contact Line System"@en ;
+    rdfs:comment "Abstract class representing contact line systems"@en .
 
 era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
