@@ -18,6 +18,7 @@
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
+@prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 era: a foaf:Document ;
@@ -716,7 +717,7 @@ era:railInclination a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.3 an
     vs:term_status "stable" .
 
 era:maximumSpeedAndCantDeficiency a owl:DataTypeProperty, rdf:Property ; # ERATV 4.6.4
-   rdfs:label "maximum speed and cant deficiency"@en ;
+    rdfs:label "maximum speed and cant deficiency"@en ;
     rdfs:comment "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
@@ -767,6 +768,136 @@ era:minimumHorizontalRadius a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.
 
 
 ########## Braking ##########
+
+era:maximumBrakingDistance a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.1
+    rdfs:label "maximum braking distance"@en ;
+    rdfs:comment "The maximum value of the braking distance [in metres] of a train shall be given for the maximum line speed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" . 
+
+era:gradientProfile a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.6
+    rdfs:label "gradient profile"@en ;
+    rdfs:comment "Sequence of gradient values and locations of change in gradient."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" . 
+
+era:maximumTrainDeceleration a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.1
+    rdfs:label "maximum train deceleration"@en ;
+    rdfs:comment "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:double ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasadditionalBrakingInformation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.2
+    rdfs:label "has additional braking information"@en ;
+    rdfs:comment "Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:additionalBrakingInformationDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.3
+    rdfs:label "additional braking information document"@en ;
+    rdfs:comment "Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:emergencyBraking a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.5
+    rdfs:label "emergency braking"@en ;
+    rdfs:comment "Stopping distance and deceleration profile for each load condition per design maximum speed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:brakeWeightPercentage a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.6
+    rdfs:label "brake weight percentage"@en ;
+    rdfs:comment "Brake weight percentage (lambda) or Braked mass."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:thermalCapacityTSIReference a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.2.1.1
+    rdfs:label "thermal capacity TSI reference"@en ;
+    rdfs:comment "Reference case of a TSI thermal capacity."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-tc:ThermalCapacityTSIReference ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:thermalCapacitySpeed a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.2
+    rdfs:label "thermal capacity speed"@en ;
+    rdfs:comment "Thermal capacity speed. If no reference case is indicated."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:double ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:thermalCapacityGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.3
+    rdfs:label "thermal capacity gradient"@en ;
+    rdfs:comment "Thermal capacity gradient. If no reference case is indicated."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:double ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:thermalCapacityDistance a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.4
+    rdfs:label "thermal capacity distance"@en ;
+    rdfs:comment "Thermal capacity distance. If no reference case is indicated."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:double ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:thermalCapacityTime a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.5
+    rdfs:label "thermal capacity time"@en ;
+    rdfs:comment "Thermal capacity time. If no reference case is indicated."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:parkingBrakeMaximumGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.3.3
+    rdfs:label "parking brake maximum gradient"@en ;
+    rdfs:comment "Maximum gradient on which the unit is kept immobilised by the parking brake alone (if the vehicle is fitted with it)."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:double ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
 
 
 ########## Tunnel ##########
