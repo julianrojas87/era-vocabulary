@@ -11,7 +11,6 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
-@prefix era-countries: <http://era.europa.eu/concepts/countries#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
@@ -152,18 +151,6 @@ era:opType a owl:ObjectProperty, rdf:Property ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:OperationalPoint ;
     rdfs:range era-op-types:OperationalPointType ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2019-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:country a owl:ObjectProperty, rdf:Property ;
-    rdfs:label "country"@en ;
-    rdfs:comment "Indicates a related country."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:OperationalPoint era:VehicleType )
-                ] ;
-    rdfs:range era-countries:Country ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2019-07-29"^^xsd:date ;
     vs:term_status "stable" .

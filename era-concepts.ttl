@@ -5,7 +5,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
-@prefix era-countries: <http://era.europa.eu/concepts/countries#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers:  <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
@@ -23,11 +22,6 @@ era-op-types:OperationalPointType a owl:Class ; # Concepts of this class are dyn
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Operational Point Type"@en ;
     rdfs:comment "Abstract class representing the different existing types of Operational Points"@en .
-
-era-countries:Country a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
-    rdfs:subClassOf skos:Concept ;
-    rdfs:label "Country"@en ;
-    rdfs:comment "Abstract class representing country entities"@en .
 
 era-vehicles:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
@@ -65,9 +59,6 @@ era-rs-fire:Category a owl:Class ;
 #
 #################################################################
 
-era-countries:iso3166-1-alpha-2DT a rdfs:Datatype ;
-    rdfs:label "ISO 3166-1 alpha-2DT" ;
-    rdfs:seeAlso <https://iso.org/iso-3166-country-codes.html> .
 
 #################################################################
 #
