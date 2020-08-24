@@ -318,7 +318,7 @@ era:tunnelLength a owl:DatatypeProperty, rdf:Property ;
     rdfs:label "tunnel length"@en ;
     rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:Tunnel ;
     rdfs:range xsd:double ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2019-07-29"^^xsd:date ;

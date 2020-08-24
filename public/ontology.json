@@ -3,9 +3,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#OperationalPoint"
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
     } ]
   } ]
 }, {
@@ -13,9 +13,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://era.europa.eu/ns#OperationalPoint"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://era.europa.eu/ns#Track"
     } ]
   } ]
 }, {
@@ -23,9 +23,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#OperationalPoint"
+      "@id" : "http://era.europa.eu/ns#MicroLink"
     }, {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://era.europa.eu/ns#MicroNode"
     } ]
   } ]
 }, {
@@ -43,23 +43,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
-    }, {
-      "@id" : "http://era.europa.eu/ns#MicroNode"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
       "@id" : "http://era.europa.eu/ns#OperationalPoint"
     }, {
       "@id" : "http://era.europa.eu/ns#Track"
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -69,7 +59,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -79,11 +69,21 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#OperationalPoint"
     }, {
       "@id" : "http://era.europa.eu/ns#VehicleType"
     } ]
@@ -113,9 +113,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
     }, {
-      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+      "@id" : "http://era.europa.eu/ns#MicroLink"
     } ]
   } ]
 }, {
@@ -123,37 +123,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
+      "@id" : "http://era.europa.eu/ns#Track"
     }, {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
+      "@id" : "http://era.europa.eu/ns#VehicleType"
     } ]
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/countries#Country",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing country entities"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ISO 3166-1 alpha-2DT"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://iso.org/iso-3166-country-codes.html"
-  } ]
 }, {
   "@id" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -463,23 +440,9 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ],
-  "http://creativecommons.org/ns#license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://julianrojas.org#me"
-  } ],
-  "http://purl.org/dc/terms/hasFormat" : [ {
-    "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -494,10 +457,7 @@
     "@value" : "ERA vocabulary"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.3.5"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "http://era.europa.eu/ns#"
+    "@value" : "v0.3.6"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#InternalNodeLink",
@@ -834,35 +794,24 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://era.europa.eu/ns#country",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
+  "@id" : "http://era.europa.eu/ns#document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
+    "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2019-07-29"
+    "@value" : "2020-08-24"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Indicates a related country."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
     "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/countries#Country"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#endLocation",
@@ -890,7 +839,7 @@
     "@value" : "end location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
@@ -916,7 +865,7 @@
     "@value" : "Reference to the ending operational point's node port of a micro link or an internal node link."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid4"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -978,7 +927,7 @@
     "@value" : "Gauges as defined in European standard or other local gauges, including lower or upper part."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1009,7 +958,7 @@
     "@value" : "Property that links a physical entity with its topological abstraction representation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1019,7 +968,7 @@
     "@value" : "has abstraction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://era.europa.eu/ns#hasImplementation"
@@ -1043,7 +992,7 @@
     "@value" : "Property that links a topological abstraction entity with its physical representation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1053,7 +1002,7 @@
     "@value" : "has implementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1301,7 +1250,7 @@
     "@value" : "start location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
@@ -1327,7 +1276,7 @@
     "@value" : "Reference to the starting operational point's node port of a micro link or an internal node link."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1451,7 +1400,7 @@
     "@value" : "Indication of supported types of train detection systems."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1482,7 +1431,7 @@
     "@value" : "Length of a tunnel meassured in kilometers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://era.europa.eu/ns#Track"
+    "@id" : "http://era.europa.eu/ns#Tunnel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1575,6 +1524,37 @@
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/spatial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-08-24"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Spatial characteristics of the resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/dc/terms/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "spatial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://sws.geonames.org/Feature"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -1619,4 +1599,18 @@
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://sws.geonames.org/Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geographical feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
 } ]

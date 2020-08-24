@@ -7,16 +7,11 @@
 @base <http://era.europa.eu/ns#> .
 
 <http://era.europa.eu/ns#> rdf:type owl:Ontology ;
-                            <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                             <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> ;
-                            <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> ;
-                            <http://purl.org/dc/terms/issued> "2020-07-29"^^xsd:date ;
-                            <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                             <http://purl.org/dc/terms/title> "ERA vocabulary"@en ;
                             rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
                             rdfs:label "ERA vocabulary"@en ;
-                            owl:versionInfo "v0.3.5" ;
-                            <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
+                            owl:versionInfo "v0.3.6" .
 
 #################################################################
 #    Annotation properties
@@ -74,12 +69,6 @@
 #    Datatypes
 #################################################################
 
-###  http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT
-<http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT> rdf:type rdfs:Datatype ;
-                                                              rdfs:label "ISO 3166-1 alpha-2DT" ;
-                                                              rdfs:seeAlso <https://iso.org/iso-3166-country-codes.html> .
-
-
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
 
@@ -110,22 +99,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
           rdfs:label "category"@en ;
           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-
-
-###  http://era.europa.eu/ns#country
-:country rdf:type owl:ObjectProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :OperationalPoint
-                                     :VehicleType
-                                   )
-                     ] ;
-         rdfs:range <http://era.europa.eu/concepts/countries#Country> ;
-         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-         <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
-         rdfs:comment "Indicates a related country."@en ;
-         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
-         rdfs:label "country"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  http://era.europa.eu/ns#endLocation
@@ -341,6 +314,22 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
+###  http://purl.org/dc/terms/spatial
+<http://purl.org/dc/terms/spatial> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( :OperationalPoint
+                                                               :VehicleType
+                                                             )
+                                               ] ;
+                                   rdfs:range <https://sws.geonames.org/Feature> ;
+                                   <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                                   <http://purl.org/dc/terms/modified> "2019-08-24"^^xsd:date ;
+                                   rdfs:comment "Spatial characteristics of the resource."@en ;
+                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                   rdfs:label "spatial"@en ;
+                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty .
 
@@ -443,7 +432,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://era.europa.eu/ns#tunnelLength
 :tunnelLength rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Track ;
+              rdfs:domain :Tunnel ;
               rdfs:range xsd:double ;
               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
@@ -484,13 +473,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://era.europa.eu/concepts/countries#Country
-<http://era.europa.eu/concepts/countries#Country> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                  rdfs:comment "Abstract class representing country entities"@en ;
-                                                  rdfs:label "Country"@en .
-
 
 ###  http://era.europa.eu/concepts/gaugings#GaugingProfile
 <http://era.europa.eu/concepts/gaugings#GaugingProfile> rdf:type owl:Class ;
@@ -649,6 +631,13 @@ xsd:date rdf:type rdfs:Datatype .
 <http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class .
 
 
+###  https://sws.geonames.org/Feature
+<https://sws.geonames.org/Feature> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                   rdfs:comment "A geographical feature"@en ;
+                                   rdfs:label "Feature"@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -803,9 +792,14 @@ xsd:date rdf:type rdfs:Datatype .
                                              <http://www.w3.org/2004/02/skos/core#prefLabel> "Van"@en .
 
 
-###  http://era.europa.eu/ns#
-<http://era.europa.eu/ns#> rdf:type owl:NamedIndividual ,
-                                    <http://xmlns.com/foaf/0.1/Document> .
+###  http://era.europa.eu/ns#document
+:document rdf:type owl:NamedIndividual ,
+                   <http://xmlns.com/foaf/0.1/Document> ;
+          <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+          <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> ;
+          <http://purl.org/dc/terms/issued> "2020-08-24"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+          <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

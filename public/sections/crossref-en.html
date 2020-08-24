@@ -4,7 +4,7 @@ This section provides details for each class and property defined by ERA vocabul
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://era.europa.eu/concepts/countries#Country" title="http://era.europa.eu/concepts/countries#Country">Country</a>
+         <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
       </li>
       <li>
          <a href="#http://era.europa.eu/concepts/gaugings#GaugingProfile"
@@ -57,25 +57,26 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
       </li>
    </ul>
-   <div class="entity" id="http://era.europa.eu/concepts/countries#Country">
-      <h3>Country<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://sws.geonames.org/Feature">
+      <h3>Feature<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/countries#Country</p>
+         <strong>IRI:</strong> https://sws.geonames.org/Feature</p>
       <div class="comment">
-         <span class="markdown">Abstract class representing country entities</span>
+         <span class="markdown">A geographical feature</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <span class="dotted"
+                  title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#country" title="http://era.europa.eu/ns#country">country</a>
+            <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -353,7 +354,6 @@ This section provides details for each class and property defined by ERA vocabul
             <sup class="type-dp" title="data property">dp</sup>, <a href="#lineUICCode" title="http://era.europa.eu/ns#lineUICCode">line UIC code</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -415,7 +415,8 @@ This section provides details for each class and property defined by ERA vocabul
                title="http://era.europa.eu/ns#nationalRollingStockFireCategory">national rolling stock fire category</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#rollingStockFireCategory" title="http://era.europa.eu/ns#rollingStockFireCategory">rolling stock fire category</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -555,9 +556,6 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#category" title="http://era.europa.eu/ns#category">category</a>
       </li>
       <li>
-         <a href="#country" title="http://era.europa.eu/ns#country">country</a>
-      </li>
-      <li>
          <a href="#endLocation" title="http://era.europa.eu/ns#endLocation">end location</a>
       </li>
       <li>
@@ -586,6 +584,9 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#rollingStockFireCategory" title="http://era.europa.eu/ns#rollingStockFireCategory">rolling stock fire category</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
       </li>
       <li>
          <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
@@ -665,44 +666,6 @@ This section provides details for each class and property defined by ERA vocabul
             <dt>has range</dt>
             <dd>
                <a href="#http://era.europa.eu/concepts/vehicles#Category" title="http://era.europa.eu/concepts/vehicles#Category">Vehicle Category</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="country">
-      <h3>country<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#country</p>
-      <div class="comment">
-         <span class="markdown">Indicates a related country.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://era.europa.eu/concepts/countries#Country" title="http://era.europa.eu/concepts/countries#Country">Country</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1093,6 +1056,44 @@ This section provides details for each class and property defined by ERA vocabul
             <dt>has range</dt>
             <dd>
                <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/spatial">
+      <h3>spatial<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/spatial</p>
+      <div class="comment">
+         <span class="markdown">Spatial characteristics of the resource.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1555,7 +1556,7 @@ This section provides details for each class and property defined by ERA vocabul
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <a href="#Tunnel" title="http://era.europa.eu/ns#Tunnel">Tunnel</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1650,8 +1651,8 @@ This section provides details for each class and property defined by ERA vocabul
             title="http://era.europa.eu/concepts/vehicles#carCarrier">Car Carrier</a>
       </li>
       <li>
-         <a href="#" title="http://era.europa.eu/ns#">
-            <span>ERA vocabulary</span>
+         <a href="#document" title="http://era.europa.eu/ns#document">
+            <span>document</span>
          </a>
       </li>
       <li>
@@ -1780,13 +1781,13 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
-   <div class="entity" id="">
-      <h3>ERA vocabulary<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="document">
+      <h3>document<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#</p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#document</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>

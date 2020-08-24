@@ -12,16 +12,11 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://era.europa.eu/ns#">
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:creator rdf:resource="https://julianrojas.org#me"/>
-        <terms:hasFormat rdf:resource="http://era.europa.eu/ns#"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:versionInfo>v0.3.5</owl:versionInfo>
-        <foaf:primaryTopic rdf:resource="http://era.europa.eu/ns#"/>
+        <owl:versionInfo>v0.3.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -134,16 +129,6 @@
     
 
 
-    <!-- http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT -->
-
-
-    <rdfs:Datatype rdf:about="http://era.europa.eu/concepts/countries#iso3166-1-alpha-2DT">
-        <rdfs:label>ISO 3166-1 alpha-2DT</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://iso.org/iso-3166-country-codes.html"/>
-    </rdfs:Datatype>
-    
-
-
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
 
@@ -190,29 +175,6 @@
         <rdfs:comment xml:lang="en">Vehicle category.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">category</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#country -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#country">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/countries#Country"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
-        <rdfs:comment xml:lang="en">Indicates a related country.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">country</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -517,6 +479,29 @@
     
 
 
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
+                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://sws.geonames.org/Feature"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-08-24</terms:modified>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">spatial</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
 
 
@@ -666,7 +651,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#tunnelLength">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</terms:modified>
@@ -726,17 +711,6 @@
      -->
 
 
-    
-
-
-    <!-- http://era.europa.eu/concepts/countries#Country -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/countries#Country">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">Abstract class representing country entities</rdfs:comment>
-        <rdfs:label xml:lang="en">Country</rdfs:label>
-    </owl:Class>
     
 
 
@@ -972,6 +946,17 @@
 
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- https://sws.geonames.org/Feature -->
+
+
+    <owl:Class rdf:about="https://sws.geonames.org/Feature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">A geographical feature</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1225,11 +1210,16 @@
     
 
 
-    <!-- http://era.europa.eu/ns# -->
+    <!-- http://era.europa.eu/ns#document -->
 
 
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/ns#">
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/ns#document">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:hasFormat rdf:resource="http://era.europa.eu/ns#"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <foaf:primaryTopic rdf:resource="http://era.europa.eu/ns#"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
