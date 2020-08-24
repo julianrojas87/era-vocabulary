@@ -12,7 +12,10 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://era.europa.eu/ns#">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:creator rdf:resource="https://julianrojas.org#me"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
@@ -499,14 +502,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="https://sws.geonames.org/Feature"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
@@ -529,6 +525,22 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+    
+
+
+    <!-- https://sws.geonames.org/parentCountry -->
+
+
+    <owl:ObjectProperty rdf:about="https://sws.geonames.org/parentCountry">
+        <rdfs:domain rdf:resource="https://sws.geonames.org/Feature"/>
+        <rdfs:range rdf:resource="https://sws.geonames.org/Feature"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <rdfs:comment xml:lang="en">Parent country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://sws.geonames.org/"/>
+        <rdfs:label xml:lang="en">Parent Country</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
     
 
 
@@ -1105,9 +1117,9 @@
 
     <owl:Class rdf:about="http://era.europa.eu/ns#OperationalPoint">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="https://sws.geonames.org/Feature"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
         <rdfs:comment xml:lang="en">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">Operational Point</rdfs:label>
@@ -1466,10 +1478,7 @@
 
     <owl:NamedIndividual rdf:about="http://era.europa.eu/ns#document">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:hasFormat rdf:resource="http://era.europa.eu/ns#"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
         <foaf:primaryTopic rdf:resource="http://era.europa.eu/ns#"/>
     </owl:NamedIndividual>
 </rdf:RDF>

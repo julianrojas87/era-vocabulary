@@ -7,7 +7,10 @@
 @base <http://era.europa.eu/ns#> .
 
 <http://era.europa.eu/ns#> rdf:type owl:Ontology ;
+                            <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                             <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> ;
+                            <http://purl.org/dc/terms/issued> "2020-08-24"^^xsd:date ;
+                            <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
                             <http://purl.org/dc/terms/title> "ERA vocabulary"@en ;
                             rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
                             rdfs:label "ERA vocabulary"@en ;
@@ -328,11 +331,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :OperationalPoint
-                                                               :VehicleType
-                                                             )
-                                               ] ;
+                                   rdfs:domain :VehicleType ;
                                    rdfs:range <https://sws.geonames.org/Feature> ;
                                    <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
                                    <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
@@ -348,6 +347,18 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty .
+
+
+###  https://sws.geonames.org/parentCountry
+<https://sws.geonames.org/parentCountry> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://sws.geonames.org/Feature> ;
+                                         rdfs:range <https://sws.geonames.org/Feature> ;
+                                         <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                                         <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                                         rdfs:comment "Parent country."@en ;
+                                         rdfs:isDefinedBy <https://sws.geonames.org/> ;
+                                         rdfs:label "Parent Country"@en ;
+                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 #################################################################
@@ -755,9 +766,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#OperationalPoint
 :OperationalPoint rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
-                                  <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+                                  <https://sws.geonames.org/Feature> ;
                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                  <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
                   rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
                   rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                   rdfs:label "Operational Point"@en ;
@@ -982,10 +993,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#document
 :document rdf:type owl:NamedIndividual ,
                    <http://xmlns.com/foaf/0.1/Document> ;
-          <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
           <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> ;
-          <http://purl.org/dc/terms/issued> "2020-08-24"^^xsd:date ;
-          <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
           <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
 
 

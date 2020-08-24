@@ -16,11 +16,23 @@
       "en" : "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."
     },
     "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "https://julianrojas.org#me",
         "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -32,6 +44,12 @@
         "identifier" : "title",
         "language" : "en",
         "value" : "ERA vocabulary",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-08-24",
         "type" : "label"
       } ]
     }
@@ -50,10 +68,10 @@
     "id" : "16",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "15",
+    "id" : "17",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "18",
@@ -74,28 +92,31 @@
     "id" : "25",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "27",
+    "id" : "42",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "41",
+    "id" : "27",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "30",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "43",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "44",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "49",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "50",
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "53",
@@ -104,31 +125,28 @@
     "id" : "56",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "59",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
     "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
     "type" : "owl:Class"
   }, {
     "id" : "5",
@@ -137,25 +155,22 @@
     "id" : "9",
     "type" : "owl:Class"
   }, {
+    "id" : "76",
+    "type" : "owl:Thing"
+  }, {
     "id" : "77",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "78",
-    "type" : "owl:unionOf"
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "82",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "48",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "83",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:unionOf"
   }, {
     "id" : "12",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "55",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "11",
@@ -167,49 +182,49 @@
     "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "98",
+    "id" : "97",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "93",
     "type" : "owl:unionOf"
   }, {
     "id" : "94",
     "type" : "owl:unionOf"
   }, {
-    "id" : "95",
+    "id" : "98",
     "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
   }, {
     "id" : "99",
     "type" : "owl:unionOf"
   }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "100",
+    "id" : "103",
     "type" : "owl:unionOf"
   }, {
     "id" : "104",
     "type" : "owl:unionOf"
   }, {
-    "id" : "105",
+    "id" : "50",
     "type" : "owl:unionOf"
   }, {
-    "id" : "52",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "58",
+    "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
+    "id" : "34",
     "type" : "owl:unionOf"
   }, {
-    "id" : "108",
+    "id" : "107",
     "type" : "owl:unionOf"
   }, {
     "id" : "6",
@@ -222,11 +237,11 @@
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "0",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
@@ -239,11 +254,11 @@
     "attributes" : [ "external" ],
     "id" : "1"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "13",
     "label" : {
-      "IRI-based" : "double"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -253,16 +268,16 @@
       "IRI-based" : "double"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "15",
+    "id" : "17",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "15",
     "label" : {
       "IRI-based" : "string"
     }
@@ -281,18 +296,18 @@
       "IRI-based" : "double"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "20",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "integer"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "21",
     "label" : {
-      "IRI-based" : "boolean"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -302,23 +317,23 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "25",
     "label" : {
-      "IRI-based" : "integer"
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "27",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "41",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -337,54 +352,56 @@
     "id" : "3",
     "superClasses" : [ "1" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "30",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
-    "instances" : 0,
-    "union" : [ "45", "46" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "44"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "49",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "43",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
     "instances" : 0,
-    "union" : [ "24", "11" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "54", "55" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "53"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "56",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
     "label" : {
       "IRI-based" : "string"
     }
@@ -397,7 +414,7 @@
     },
     "subClasses" : [ "24" ],
     "attributes" : [ "external" ],
-    "id" : "59"
+    "id" : "57"
   }, {
     "iri" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
     "baseIri" : "http://era.europa.eu/concepts/gaugings",
@@ -419,9 +436,48 @@
     "label" : {
       "IRI-based" : "SpatialThing"
     },
-    "subClasses" : [ "24", "68" ],
+    "subClasses" : [ "63" ],
     "attributes" : [ "external" ],
-    "id" : "63"
+    "id" : "64"
+  }, {
+    "iri" : "http://era.europa.eu/ns#OperationalPoint",
+    "baseIri" : "http://era.europa.eu/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OperationalPoint",
+      "en" : "Operational Point"
+    },
+    "comment" : {
+      "en" : "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."
+    },
+    "id" : "24",
+    "superClasses" : [ "57", "63" ]
   }, {
     "iri" : "http://era.europa.eu/ns#MicroNode",
     "baseIri" : "http://era.europa.eu/ns",
@@ -459,46 +515,7 @@
     "comment" : {
       "en" : "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."
     },
-    "id" : "38"
-  }, {
-    "iri" : "http://era.europa.eu/ns#OperationalPoint",
-    "baseIri" : "http://era.europa.eu/ns",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://era.europa.eu/ns#",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "OperationalPoint",
-      "en" : "Operational Point"
-    },
-    "comment" : {
-      "en" : "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."
-    },
-    "id" : "24",
-    "superClasses" : [ "59", "63" ]
+    "id" : "39"
   }, {
     "iri" : "http://era.europa.eu/ns#NodePort",
     "baseIri" : "http://era.europa.eu/ns",
@@ -536,8 +553,8 @@
     "comment" : {
       "en" : "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."
     },
-    "id" : "37",
-    "superClasses" : [ "58", "66" ]
+    "id" : "38",
+    "superClasses" : [ "66", "61" ]
   }, {
     "iri" : "http://era.europa.eu/ns#MicroLink",
     "baseIri" : "http://era.europa.eu/ns",
@@ -575,7 +592,7 @@
     "comment" : {
       "en" : "An abstraction of a track that represent a physical rail connection between two different micro nodes."
     },
-    "id" : "45"
+    "id" : "54"
   }, {
     "iri" : "http://era.europa.eu/ns#Tunnel",
     "baseIri" : "http://era.europa.eu/ns",
@@ -613,7 +630,7 @@
     "comment" : {
       "en" : "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."
     },
-    "id" : "32"
+    "id" : "33"
   }, {
     "iri" : "http://era.europa.eu/concepts/load-capabilities#LoadCapability",
     "baseIri" : "http://era.europa.eu/concepts/load-capabilities",
@@ -704,6 +721,13 @@
     "id" : "9",
     "superClasses" : [ "1" ]
   }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "76",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "77",
@@ -711,44 +735,30 @@
       "IRI-based" : "integer"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
     "instances" : 0,
     "union" : [ "29", "11" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "78"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "82",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#double",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "48",
-    "label" : {
-      "IRI-based" : "double"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#double",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "83",
-    "label" : {
-      "IRI-based" : "double"
-    }
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "82"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "12",
     "label" : {
       "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
-    "label" : {
-      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://era.europa.eu/ns#VehicleType",
@@ -904,9 +914,9 @@
     "label" : {
       "IRI-based" : "Geometry"
     },
-    "subClasses" : [ "37" ],
+    "subClasses" : [ "38" ],
     "attributes" : [ "external" ],
-    "id" : "66"
+    "id" : "61"
   }, {
     "iri" : "http://era.europa.eu/concepts/manufacturers#Manufacturer",
     "baseIri" : "http://era.europa.eu/concepts/manufacturers",
@@ -924,23 +934,38 @@
   }, {
     "instances" : 0,
     "union" : [ "29", "11" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "98"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "97"
   }, {
     "instances" : 0,
     "union" : [ "24", "29" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "93"
+  }, {
+    "instances" : 0,
+    "union" : [ "39", "54" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "94"
   }, {
     "instances" : 0,
-    "union" : [ "38", "45" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "95"
+    "union" : [ "39", "54" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "98"
   }, {
+    "iri" : "https://sws.geonames.org/Feature",
+    "baseIri" : "https://sws.geonames.org",
     "instances" : 0,
-    "union" : [ "38", "45" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "99"
+    "label" : {
+      "IRI-based" : "Feature",
+      "en" : "Feature"
+    },
+    "subClasses" : [ "24" ],
+    "comment" : {
+      "en" : "A geographical feature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "64" ]
   }, {
     "iri" : "http://era.europa.eu/ns#InternalNodeLink",
     "baseIri" : "http://era.europa.eu/ns",
@@ -978,41 +1003,27 @@
     "comment" : {
       "en" : "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."
     },
-    "id" : "46"
-  }, {
-    "iri" : "https://sws.geonames.org/Feature",
-    "baseIri" : "https://sws.geonames.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Feature",
-      "en" : "Feature"
-    },
-    "comment" : {
-      "en" : "A geographical feature"
-    },
-    "attributes" : [ "external" ],
-    "id" : "68",
-    "superClasses" : [ "63" ]
+    "id" : "55"
   }, {
     "instances" : 0,
     "union" : [ "24", "29" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "100"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "99"
   }, {
     "instances" : 0,
-    "union" : [ "58", "66" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "66", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "103"
+  }, {
+    "instances" : 0,
+    "union" : [ "54", "55" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "104"
   }, {
     "instances" : 0,
-    "union" : [ "45", "46" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "105"
-  }, {
-    "instances" : 0,
     "union" : [ "29", "11" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "52"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "50"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
@@ -1020,19 +1031,19 @@
     "label" : {
       "IRI-based" : "Point"
     },
-    "subClasses" : [ "37" ],
+    "subClasses" : [ "38" ],
     "attributes" : [ "external" ],
-    "id" : "58"
+    "id" : "66"
   }, {
     "instances" : 0,
-    "union" : [ "58", "66" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "33"
+    "union" : [ "66", "61" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "34"
   }, {
     "instances" : 0,
-    "union" : [ "45", "46" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "108"
+    "union" : [ "54", "55" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "107"
   }, {
     "iri" : "http://era.europa.eu/concepts/vehicles#SubCategory",
     "baseIri" : "http://era.europa.eu/concepts/vehicles",
@@ -1365,29 +1376,11 @@
           "value" : "http://era.europa.eu/ns#",
           "type" : "iri"
         } ],
-        "license" : [ {
-          "identifier" : "license",
-          "language" : "undefined",
-          "value" : "https://creativecommons.org/licenses/by/4.0/",
-          "type" : "iri"
-        } ],
         "primaryTopic" : [ {
           "identifier" : "primaryTopic",
           "language" : "undefined",
           "value" : "http://era.europa.eu/ns#",
           "type" : "iri"
-        } ],
-        "modified" : [ {
-          "identifier" : "modified",
-          "language" : "undefined",
-          "value" : "2020-08-24",
-          "type" : "label"
-        } ],
-        "issued" : [ {
-          "identifier" : "issued",
-          "language" : "undefined",
-          "value" : "2020-08-24",
-          "type" : "label"
         } ]
       },
       "labels" : {
@@ -1427,40 +1420,37 @@
     "id" : "28",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "31",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "36",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "39",
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "47",
+    "id" : "45",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "51",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "54",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "57",
-    "type" : "rdfs:SubClassOf"
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "60",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "62",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "64",
+    "id" : "62",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "65",
@@ -1469,14 +1459,17 @@
     "id" : "67",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "71",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "72",
     "type" : "rdfs:SubClassOf"
@@ -1490,16 +1483,19 @@
     "id" : "75",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "76",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "79",
+    "id" : "78",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "80",
+    "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "84",
@@ -1509,37 +1505,37 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "86",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "87",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "88",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "89",
-    "type" : "owl:datatypeProperty"
+    "id" : "35",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
+    "id" : "90",
     "type" : "owl:objectProperty"
   }, {
     "id" : "91",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "92",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "35",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "93",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "97",
     "type" : "owl:objectProperty"
   }, {
     "id" : "96",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "101",
     "type" : "owl:datatypeProperty"
@@ -1547,20 +1543,20 @@
     "id" : "102",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "103",
+    "id" : "105",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "106",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "107",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "109",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "110",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "111",
     "type" : "owl:datatypeProperty"
@@ -1571,17 +1567,17 @@
     "id" : "113",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "90",
+    "id" : "89",
     "type" : "owl:objectProperty"
   }, {
     "id" : "115",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "116",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "117",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://era.europa.eu/ns#vehicleLength",
@@ -1746,7 +1742,7 @@
   }, {
     "iri" : "http://era.europa.eu/ns#highSpeedLoadModelCompliance",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "21",
+    "range" : "30",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1822,11 +1818,11 @@
       "en" : "Vehicle subcategory."
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "31"
   }, {
     "iri" : "http://era.europa.eu/ns#endLocation",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "33",
+    "range" : "34",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1857,17 +1853,17 @@
       "IRI-based" : "endLocation",
       "en" : "end location"
     },
-    "superproperty" : [ "34", "35" ],
-    "domain" : "32",
+    "superproperty" : [ "35", "36" ],
+    "domain" : "33",
     "comment" : {
       "en" : "References the geolocation of the end of a tunnel."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "32"
   }, {
     "iri" : "http://era.europa.eu/ns#belongsToNode",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "38",
+    "range" : "39",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1898,16 +1894,16 @@
       "IRI-based" : "belongsToNode",
       "en" : "belongs to node"
     },
-    "domain" : "37",
+    "domain" : "38",
     "comment" : {
       "en" : "Indicates the micro node to which a node port belongs to."
     },
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "37"
   }, {
     "iri" : "http://era.europa.eu/ns#alternativeName",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "40",
+    "range" : "41",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1943,11 +1939,11 @@
       "en" : "Alternative name of a vehicle."
     },
     "attributes" : [ "datatype" ],
-    "id" : "39"
+    "id" : "40"
   }, {
     "iri" : "http://era.europa.eu/ns#tunnelLength",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "48",
+    "range" : "46",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1978,12 +1974,12 @@
       "IRI-based" : "tunnelLength",
       "en" : "tunnel length"
     },
-    "domain" : "32",
+    "domain" : "33",
     "comment" : {
       "en" : "Length of a tunnel meassured in kilometers."
     },
     "attributes" : [ "datatype" ],
-    "id" : "47"
+    "id" : "45"
   }, {
     "iri" : "http://era.europa.eu/ns#trainDetectionSystem",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2018,16 +2014,16 @@
       "IRI-based" : "trainDetectionSystem",
       "en" : "train detection system"
     },
-    "domain" : "52",
+    "domain" : "50",
     "comment" : {
       "en" : "Indication of supported types of train detection systems."
     },
     "attributes" : [ "object" ],
-    "id" : "51"
+    "id" : "49"
   }, {
     "iri" : "http://era.europa.eu/ns#uopid",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "55",
+    "range" : "52",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2063,16 +2059,11 @@
       "en" : "Code composed of country code and alphanumeric operational point code, as defined in RINF."
     },
     "attributes" : [ "datatype" ],
-    "id" : "54"
-  }, {
-    "range" : "58",
-    "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "57"
+    "id" : "51"
   }, {
     "iri" : "http://era.europa.eu/ns#staticAxleLoadNormalPayload",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "18",
+    "range" : "19",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2108,7 +2099,7 @@
       "en" : "Static axle load under normal payload."
     },
     "attributes" : [ "datatype" ],
-    "id" : "60"
+    "id" : "58"
   }, {
     "iri" : "http://era.europa.eu/ns#manufacturer",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2148,41 +2139,41 @@
       "en" : "Vehicle manufacturer company."
     },
     "attributes" : [ "object" ],
-    "id" : "61"
+    "id" : "59"
   }, {
-    "range" : "63",
-    "domain" : "24",
+    "range" : "61",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "64",
+    "domain" : "63",
     "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
-    "range" : "59",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "64"
-  }, {
     "range" : "66",
-    "domain" : "37",
+    "domain" : "38",
     "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "63",
-    "domain" : "68",
+    "domain" : "24",
     "attributes" : [ "object", "anonymous" ],
     "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
   }, {
     "range" : "1",
     "domain" : "7",
     "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
-    "range" : "1",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "70"
-  }, {
     "iri" : "http://era.europa.eu/ns#staticAxleLoadWorkingOrder",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "16",
+    "range" : "18",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2218,6 +2209,11 @@
       "en" : "Static axle load in working order."
     },
     "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "range" : "57",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
     "range" : "1",
@@ -2226,7 +2222,7 @@
     "id" : "72"
   }, {
     "range" : "1",
-    "domain" : "8",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
@@ -2239,11 +2235,6 @@
     "domain" : "4",
     "attributes" : [ "object", "anonymous" ],
     "id" : "75"
-  }, {
-    "range" : "1",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "76"
   }, {
     "iri" : "http://era.europa.eu/ns#hasTrack",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2278,21 +2269,21 @@
       "IRI-based" : "hasTrack",
       "en" : "has track"
     },
-    "domain" : "32",
+    "domain" : "33",
     "comment" : {
       "en" : "References a rail track that goes through a tunnel."
     },
     "attributes" : [ "object" ],
-    "id" : "79"
+    "id" : "78"
   }, {
     "range" : "1",
-    "domain" : "2",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
+    "id" : "79"
   }, {
     "iri" : "http://era.europa.eu/ns#structureCheckLocation",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "13",
+    "range" : "16",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2328,11 +2319,16 @@
       "en" : "Railway location of structures requiring specific checks."
     },
     "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "81"
   }, {
     "iri" : "http://era.europa.eu/ns#maximumSpeed",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "25",
+    "range" : "20",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2368,11 +2364,11 @@
       "en" : "Maximum design speed."
     },
     "attributes" : [ "datatype" ],
-    "id" : "84"
+    "id" : "83"
   }, {
     "iri" : "http://era.europa.eu/ns#compatibilityProcedureDocument",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "50",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2408,11 +2404,11 @@
       "en" : "Document with the procedure(s) for static and dynamic route compatibility checks."
     },
     "attributes" : [ "datatype" ],
-    "id" : "85"
+    "id" : "84"
   }, {
     "iri" : "http://era.europa.eu/ns#tafTAPCode",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "0",
+    "range" : "13",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2448,11 +2444,11 @@
       "en" : "Primary code developed for TAF/TAP."
     },
     "attributes" : [ "datatype" ],
-    "id" : "86"
+    "id" : "85"
   }, {
     "iri" : "http://purl.org/dc/terms/spatial",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "68",
+    "range" : "63",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2483,16 +2479,16 @@
       "IRI-based" : "spatial",
       "en" : "spatial"
     },
-    "domain" : "53",
+    "domain" : "11",
     "comment" : {
       "en" : "Spatial characteristics of the resource."
     },
     "attributes" : [ "object", "external" ],
-    "id" : "87"
+    "id" : "86"
   }, {
     "iri" : "http://era.europa.eu/ns#designMassExceptionalPayload",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "49",
+    "range" : "48",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2528,11 +2524,11 @@
       "en" : "Design mass under exceptional payload."
     },
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "87"
   }, {
     "iri" : "http://era.europa.eu/ns#nationalRollingStockFireCategory",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "17",
+    "range" : "22",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2563,23 +2559,23 @@
       "IRI-based" : "nationalRollingStockFireCategory",
       "en" : "national rolling stock fire category"
     },
-    "domain" : "32",
+    "domain" : "33",
     "comment" : {
       "en" : "Applicable national rolling stock fire category for a tunnel."
     },
     "attributes" : [ "datatype" ],
-    "id" : "89"
+    "id" : "88"
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "range" : "82",
+    "range" : "76",
     "label" : {
       "IRI-based" : "location"
     },
-    "domain" : "82",
-    "subproperty" : [ "90", "31" ],
+    "domain" : "76",
+    "subproperty" : [ "89", "32" ],
     "attributes" : [ "object", "external" ],
-    "id" : "34"
+    "id" : "35"
   }, {
     "iri" : "http://era.europa.eu/ns#loadCapability",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2619,11 +2615,11 @@
       "en" : "A combination of the line category and speed at the weakest point of the track."
     },
     "attributes" : [ "object" ],
-    "id" : "91"
+    "id" : "90"
   }, {
     "iri" : "http://era.europa.eu/ns#passesThroughTunnel",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "32",
+    "range" : "33",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2659,23 +2655,23 @@
       "en" : "References a tunnel that a track goes through."
     },
     "attributes" : [ "object" ],
-    "id" : "92"
+    "id" : "91"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
-    "range" : "82",
+    "range" : "76",
     "label" : {
       "IRI-based" : "hasGeometry"
     },
-    "domain" : "82",
-    "subproperty" : [ "90", "31" ],
+    "domain" : "76",
+    "subproperty" : [ "89", "32" ],
     "attributes" : [ "object", "external" ],
-    "id" : "35"
+    "id" : "36"
   }, {
     "iri" : "http://era.europa.eu/ns#hasAbstraction",
-    "inverse" : "96",
+    "inverse" : "95",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "95",
+    "range" : "94",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2706,12 +2702,12 @@
       "IRI-based" : "hasAbstraction",
       "en" : "has abstraction"
     },
-    "domain" : "94",
+    "domain" : "93",
     "comment" : {
       "en" : "Property that links a physical entity with its topological abstraction representation."
     },
     "attributes" : [ "object" ],
-    "id" : "93"
+    "id" : "92"
   }, {
     "iri" : "http://era.europa.eu/ns#gaugingProfile",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2746,16 +2742,16 @@
       "IRI-based" : "gaugingProfile",
       "en" : "gauging profile"
     },
-    "domain" : "98",
+    "domain" : "97",
     "comment" : {
       "en" : "Gauges as defined in European standard or other local gauges, including lower or upper part."
     },
     "attributes" : [ "object" ],
-    "id" : "97"
+    "id" : "96"
   }, {
     "iri" : "http://era.europa.eu/ns#hasImplementation",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "100",
+    "range" : "99",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2786,12 +2782,12 @@
       "IRI-based" : "hasImplementation",
       "en" : "has implementation"
     },
-    "domain" : "99",
+    "domain" : "98",
     "comment" : {
       "en" : "Property that links a topological abstraction entity with its physical representation."
     },
     "attributes" : [ "object" ],
-    "id" : "96"
+    "id" : "95"
   }, {
     "iri" : "http://era.europa.eu/ns#gaugingCheckLocation",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2831,11 +2827,11 @@
       "en" : "Location of particular points requiring specific checks due to deviations from gauging."
     },
     "attributes" : [ "datatype" ],
-    "id" : "101"
+    "id" : "100"
   }, {
     "iri" : "http://era.europa.eu/ns#designMassNormalPayload",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "41",
+    "range" : "47",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2871,11 +2867,11 @@
       "en" : "Design mass under normal payload."
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "101"
   }, {
     "iri" : "http://era.europa.eu/ns#staticAxleLoadExceptionalPayload",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "19",
+    "range" : "17",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2911,7 +2907,7 @@
       "en" : "Static axle load under exceptional payload."
     },
     "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "102"
   }, {
     "iri" : "http://era.europa.eu/ns#axleSpacing",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2951,7 +2947,7 @@
       "en" : "Position of the axles along the unit."
     },
     "attributes" : [ "datatype" ],
-    "id" : "106"
+    "id" : "105"
   }, {
     "iri" : "http://era.europa.eu/ns#rollingStockFireCategory",
     "baseIri" : "http://era.europa.eu/ns",
@@ -2986,16 +2982,16 @@
       "IRI-based" : "rollingStockFireCategory",
       "en" : "rolling stock fire category"
     },
-    "domain" : "32",
+    "domain" : "33",
     "comment" : {
       "en" : "Applicable rolling stock fire category for a tunnel."
     },
     "attributes" : [ "object" ],
-    "id" : "107"
+    "id" : "106"
   }, {
     "iri" : "http://era.europa.eu/ns#lineUICCode",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "20",
+    "range" : "21",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3031,7 +3027,7 @@
       "en" : "Line associated UIC code."
     },
     "attributes" : [ "datatype" ],
-    "id" : "109"
+    "id" : "108"
   }, {
     "iri" : "http://era.europa.eu/ns#wheelSetGauge",
     "baseIri" : "http://era.europa.eu/ns",
@@ -3066,16 +3062,56 @@
       "IRI-based" : "wheelSetGauge",
       "en" : "wheel set gauge"
     },
-    "domain" : "78",
+    "domain" : "82",
     "comment" : {
       "en" : "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."
     },
     "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://sws.geonames.org/parentCountry",
+    "baseIri" : "https://sws.geonames.org",
+    "range" : "63",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://sws.geonames.org/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parentCountry",
+      "en" : "Parent Country"
+    },
+    "domain" : "63",
+    "comment" : {
+      "en" : "Parent country."
+    },
+    "attributes" : [ "object", "external" ],
     "id" : "110"
   }, {
     "iri" : "http://era.europa.eu/ns#bidirectional",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "43",
+    "range" : "44",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3106,7 +3142,7 @@
       "IRI-based" : "bidirectional",
       "en" : "bidirectional"
     },
-    "domain" : "44",
+    "domain" : "53",
     "comment" : {
       "en" : "Indicates if a micro link or an internal node link can be traversed in both directions."
     },
@@ -3115,7 +3151,7 @@
   }, {
     "iri" : "http://era.europa.eu/ns#endPort",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "37",
+    "range" : "38",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3146,7 +3182,7 @@
       "IRI-based" : "endPort",
       "en" : "end port"
     },
-    "domain" : "108",
+    "domain" : "107",
     "comment" : {
       "en" : "Reference to the ending operational point's node port of a micro link or an internal node link."
     },
@@ -3195,7 +3231,7 @@
   }, {
     "iri" : "http://era.europa.eu/ns#startLocation",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "104",
+    "range" : "103",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3226,17 +3262,17 @@
       "IRI-based" : "startLocation",
       "en" : "start location"
     },
-    "superproperty" : [ "34", "35" ],
-    "domain" : "32",
+    "superproperty" : [ "35", "36" ],
+    "domain" : "33",
     "comment" : {
       "en" : "References the geolocation of the start of a tunnel."
     },
     "attributes" : [ "object" ],
-    "id" : "90"
+    "id" : "89"
   }, {
     "iri" : "http://era.europa.eu/ns#nationalLoadCapability",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "22",
+    "range" : "25",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3274,49 +3310,9 @@
     "attributes" : [ "datatype" ],
     "id" : "115"
   }, {
-    "iri" : "http://era.europa.eu/ns#startPort",
-    "baseIri" : "http://era.europa.eu/ns",
-    "range" : "37",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://era.europa.eu/ns#",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "startPort",
-      "en" : "start port"
-    },
-    "domain" : "105",
-    "comment" : {
-      "en" : "Reference to the starting operational point's node port of a micro link or an internal node link."
-    },
-    "attributes" : [ "object" ],
-    "id" : "116"
-  }, {
     "iri" : "http://era.europa.eu/ns#trackLength",
     "baseIri" : "http://era.europa.eu/ns",
-    "range" : "83",
+    "range" : "0",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3352,6 +3348,46 @@
       "en" : "Distance in kilometers between operational points at start and end of a track."
     },
     "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://era.europa.eu/ns#startPort",
+    "baseIri" : "http://era.europa.eu/ns",
+    "range" : "38",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://era.europa.eu/ns#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startPort",
+      "en" : "start port"
+    },
+    "domain" : "104",
+    "comment" : {
+      "en" : "Reference to the starting operational point's node port of a micro link or an internal node link."
+    },
+    "attributes" : [ "object" ],
     "id" : "117"
   } ]
 }

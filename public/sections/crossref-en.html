@@ -78,9 +78,20 @@ This section provides details for each class and property defined by ERA vocabul
                   title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
+            <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -287,9 +298,8 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted"
-                  title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
+            <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -582,7 +592,8 @@ This section provides details for each class and property defined by ERA vocabul
             <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#maximumSpeed" title="http://era.europa.eu/ns#maximumSpeed">maximum design speed</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#permissiblePayload" title="http://era.europa.eu/ns#permissiblePayload">permissible payload</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadWorkingOrder"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#staticAxleLoadWorkingOrder"
                title="http://era.europa.eu/ns#staticAxleLoadWorkingOrder">static axle load in working order</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadExceptionalPayload"
                title="http://era.europa.eu/ns#staticAxleLoadExceptionalPayload">static axle load under exceptional payload</a>
@@ -629,6 +640,9 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
+      </li>
+      <li>
+         <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
       </li>
       <li>
          <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
@@ -1078,6 +1092,41 @@ This section provides details for each class and property defined by ERA vocabul
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://sws.geonames.org/parentCountry">
+      <h3>Parent Country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://sws.geonames.org/parentCountry</p>
+      <div class="comment">
+         <span class="markdown">Parent country.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://sws.geonames.org/">https://sws.geonames.org/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="passesThroughTunnel">
       <h3>passes through tunnel<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1172,9 +1221,6 @@ This section provides details for each class and property defined by ERA vocabul
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>

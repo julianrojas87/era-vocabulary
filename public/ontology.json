@@ -83,23 +83,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#OperationalPoint"
-    }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
       "@id" : "http://era.europa.eu/ns#InternalNodeLink"
     }, {
       "@id" : "http://era.europa.eu/ns#MicroLink"
     } ]
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -455,8 +445,19 @@
 }, {
   "@id" : "http://era.europa.eu/ns#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "https://julianrojas.org#me"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -587,7 +588,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
+    "@value" : "2020-08-24"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -603,7 +604,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    "@id" : "https://sws.geonames.org/Feature"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -792,7 +793,7 @@
     "@value" : "Indicates if a micro link or an internal node link can be traversed in both directions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid34"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -965,19 +966,8 @@
 }, {
   "@id" : "http://era.europa.eu/ns#document",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ],
-  "http://creativecommons.org/ns#license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
   "http://purl.org/dc/terms/hasFormat" : [ {
     "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
   } ],
   "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1972,7 +1962,7 @@
     "@value" : "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid37"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2018,7 +2008,7 @@
     "@value" : "Spatial characteristics of the resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
+    "@id" : "http://era.europa.eu/ns#VehicleType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://purl.org/dc/terms/"
@@ -2091,5 +2081,36 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "https://sws.geonames.org/parentCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Parent country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://sws.geonames.org/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://sws.geonames.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parent Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://sws.geonames.org/Feature"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 } ]

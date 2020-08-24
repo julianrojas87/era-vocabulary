@@ -1,5 +1,8 @@
 <http://era.europa.eu/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://era.europa.eu/ns#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
@@ -348,15 +351,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#OperationalPoint> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#range> <https://sws.geonames.org/Feature> .
 <http://purl.org/dc/terms/spatial> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/spatial> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -368,6 +363,17 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.opengis.net/ont/geosparql#hasGeometry
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
+# 
+# https://sws.geonames.org/parentCountry
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sws.geonames.org/Feature> .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://sws.geonames.org/Feature> .
+<https://sws.geonames.org/parentCountry> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sws.geonames.org/parentCountry> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent country."@en .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://sws.geonames.org/> .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#label> "Parent Country"@en .
+<https://sws.geonames.org/parentCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # 
 # 
@@ -402,15 +408,15 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#bidirectional
 <http://era.europa.eu/ns#bidirectional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://era.europa.eu/ns#bidirectional> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#InternalNodeLink> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#MicroLink> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#bidirectional> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#InternalNodeLink> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#MicroLink> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://era.europa.eu/ns#bidirectional> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://era.europa.eu/ns#bidirectional> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#bidirectional> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -641,15 +647,15 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#wheelSetGauge
 <http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -758,10 +764,9 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sws.geonames.org/Feature> .
 <http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point"@en .
@@ -801,6 +806,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.w3.org/2003/01/geo/wgs84_pos#Point
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 # 
@@ -953,10 +959,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://era.europa.eu/ns#document
 <http://era.europa.eu/ns#document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://era.europa.eu/ns#document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
-<http://era.europa.eu/ns#document> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://era.europa.eu/ns#document> <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> .
-<http://era.europa.eu/ns#document> <http://purl.org/dc/terms/issued> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#document> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#document> <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
