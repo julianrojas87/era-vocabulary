@@ -964,6 +964,71 @@ era:magneticBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.4
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
+
+########## Eddy current track brake ##########
+
+era:eddyCurrentBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.2 and ERATV 4.7.4.1.1
+    rdfs:label "eddy current braking"@en ;
+    rdfs:comment "Use of eddy current brakes."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:conditionalEddyCurrentBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.2
+    rdfs:label "conditional eddy current braking"@en ;
+    rdfs:comment "Eddy current braking allowed under certain conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:emergencyOnlyEddyCurrentBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.2
+    rdfs:label "emergency only eddy current braking"@en ;
+    rdfs:comment "Eddy current braking allowed only under emergency conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:conditionalEmergencyOnlyEddyCurrentBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.2
+    rdfs:label "conditional emergency only eddy current braking"@en ;
+    rdfs:comment "Eddy current braking allowed only certain conditions for emergency situations."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:eddyCurrentBrakingConditionsDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.4
+    rdfs:label "eddy current braking conditions document"@en ;
+    rdfs:comment "Document with the conditions for the use of eddy current brakes."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:eddyCurrentBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.4.1.2
+    rdfs:label "eddy current brake prevention"@en ;
+    rdfs:comment "Possibility of preventing the use of the eddy current track brake (only if fitted with eddy current brake)"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
 ########## Tunnel ##########
 
 era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.8.10
