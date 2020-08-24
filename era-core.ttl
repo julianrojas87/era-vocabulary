@@ -465,7 +465,7 @@ era:designMassExceptionalPayload a owl:DatatypeProperty, rdf:Property ; # ERATV 
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:maximumSpeed a owl:DatatypeProperty, rdf:Property ; # ERATV 4.1.2.1
+era:maximumDesignSpeed a owl:DatatypeProperty, rdf:Property ; # ERATV 4.1.2.1
     rdfs:label "maximum design speed"@en ;
     rdfs:comment "Maximum design speed."@en ;
     rdfs:isDefinedBy era: ;
@@ -680,6 +680,50 @@ era:axleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "unstable" .
 
+
+########## Running characteristics ##########
+
+era:cantDeficiency a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.2
+    rdfs:label "cant deficiency"@en ;
+    rdfs:comment "Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:maximumPermittedSpeed a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.2.5
+    rdfs:label "maximum permitted speed"@en ;
+    rdfs:comment "Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:railInclination a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
+    rdfs:label "rail inclination"@en ;
+    rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:integer ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:maximumSpeedAndCantDeficiency a owl:DataTypeProperty, rdf:Property ; # ERATV 4.6.4
+   rdfs:label "maximum speed and cant deficiency"@en ;
+    rdfs:comment "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
 
 ########## Wheelset ##########
 
