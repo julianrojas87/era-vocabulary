@@ -82,7 +82,7 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:domain :NodePort ;
                rdfs:range :MicroNode ;
                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                rdfs:comment "Indicates the micro node to which a node port belongs to."@en ;
                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                rdfs:label "belongs to node"@en ;
@@ -94,7 +94,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:domain :VehicleType ;
           rdfs:range <http://era.europa.eu/concepts/vehicles#Category> ;
           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
           rdfs:comment "Vehicle category."@en ;
           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
           rdfs:label "category"@en ;
@@ -112,7 +112,7 @@ xsd:date rdf:type rdfs:Datatype .
                                       )
                         ] ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
              rdfs:comment "References the geolocation of the end of a tunnel."@en ;
              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
              rdfs:label "end location"@en ;
@@ -128,7 +128,7 @@ xsd:date rdf:type rdfs:Datatype .
                      ] ;
          rdfs:range :NodePort ;
          <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-         <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+         <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
          rdfs:comment "Reference to the ending operational point's node port of a micro link or an internal node link."@en ;
          rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
          rdfs:label "end port"@en ;
@@ -144,7 +144,7 @@ xsd:date rdf:type rdfs:Datatype .
                             ] ;
                 rdfs:range <http://era.europa.eu/concepts/gaugings#GaugingProfile> ;
                 <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                 rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part."@en ;
                 rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                 rdfs:label "gauging profile"@en ;
@@ -165,7 +165,7 @@ xsd:date rdf:type rdfs:Datatype .
                                          )
                            ] ;
                 <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                 rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
                 rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                 rdfs:label "has abstraction"@en ;
@@ -185,7 +185,7 @@ xsd:date rdf:type rdfs:Datatype .
                                             )
                               ] ;
                    <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                   <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                   <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                    rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
                    rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                    rdfs:label "has implementation"@en ;
@@ -197,11 +197,23 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:domain :Tunnel ;
           rdfs:range :Track ;
           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
           rdfs:comment "References a rail track that goes through a tunnel."@en ;
           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
           rdfs:label "has track"@en ;
           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#loadCapability
+:loadCapability rdf:type owl:ObjectProperty ;
+                rdfs:domain :Track ;
+                rdfs:range <http://era.europa.eu/concepts/load-capabilities#LoadCapability> ;
+                <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                rdfs:comment "A combination of the line category and speed at the weakest point of the track."@en ;
+                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                rdfs:label "load capability"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  http://era.europa.eu/ns#manufacturer
@@ -209,7 +221,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:domain :VehicleType ;
               rdfs:range <http://era.europa.eu/concepts/manufacturers#Manufacturer> ;
               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-              <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+              <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
               rdfs:comment "Vehicle manufacturer company."@en ;
               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
               rdfs:label "manufacturer"@en ;
@@ -221,7 +233,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:domain :OperationalPoint ;
         rdfs:range <http://era.europa.eu/concepts/op-types#OperationalPointType> ;
         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
         rdfs:comment "Indicates the type on an operational point."@en ;
         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
         rdfs:label "operational point type"@en ;
@@ -233,7 +245,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:domain :Track ;
                      rdfs:range :Tunnel ;
                      <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                     <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                     <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                      rdfs:comment "References a tunnel that a track goes through."@en ;
                      rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                      rdfs:label "passes through tunnel"@en ;
@@ -245,7 +257,7 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:domain :Tunnel ;
                           rdfs:range <http://era.europa.eu/concepts/rs-fire#Category> ;
                           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                          <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                           rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
                           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                           rdfs:label "rolling stock fire category"@en ;
@@ -263,7 +275,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         )
                           ] ;
                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                rdfs:comment "References the geolocation of the start of a tunnel."@en ;
                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                rdfs:label "start location"@en ;
@@ -279,7 +291,7 @@ xsd:date rdf:type rdfs:Datatype .
                        ] ;
            rdfs:range :NodePort ;
            <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
            rdfs:comment "Reference to the starting operational point's node port of a micro link or an internal node link."@en ;
            rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
            rdfs:label "start port"@en ;
@@ -291,7 +303,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :VehicleType ;
              rdfs:range <http://era.europa.eu/concepts/vehicles#SubCategory> ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
              rdfs:comment "Vehicle subcategory."@en ;
              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
              rdfs:label "subcategory"@en ;
@@ -307,7 +319,7 @@ xsd:date rdf:type rdfs:Datatype .
                                   ] ;
                       rdfs:range <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> ;
                       <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                      <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                      <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                       rdfs:comment "Indication of supported types of train detection systems."@en ;
                       rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                       rdfs:label "train detection system"@en ;
@@ -323,7 +335,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                ] ;
                                    rdfs:range <https://sws.geonames.org/Feature> ;
                                    <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
-                                   <http://purl.org/dc/terms/modified> "2019-08-24"^^xsd:date ;
+                                   <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
                                    rdfs:comment "Spatial characteristics of the resource."@en ;
                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                    rdfs:label "spatial"@en ;
@@ -347,11 +359,23 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:domain :VehicleType ;
                  rdfs:range xsd:string ;
                  <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                 <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                 <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                  rdfs:comment "Alternative name of a vehicle."@en ;
                  rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                  rdfs:label "alternative name"@en ;
                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#axleSpacing
+:axleSpacing rdf:type owl:DatatypeProperty ;
+             rdfs:domain :VehicleType ;
+             rdfs:range xsd:string ;
+             <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+             rdfs:comment "Position of the axles along the unit."@en ;
+             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+             rdfs:label "axle spacing"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 
 ###  http://era.europa.eu/ns#bidirectional
@@ -363,11 +387,59 @@ xsd:date rdf:type rdfs:Datatype .
                            ] ;
                rdfs:range xsd:boolean ;
                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                rdfs:comment "Indicates if a micro link or an internal node link can be traversed in both directions."@en ;
                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                rdfs:label "bidirectional"@en ;
                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#compatibilityProcedureDocument
+:compatibilityProcedureDocument rdf:type owl:DatatypeProperty ;
+                                rdfs:domain :Track ;
+                                rdfs:range xsd:double ;
+                                <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                                <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                                rdfs:comment "Document with the procedure(s) for static and dynamic route compatibility checks."@en ;
+                                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                                rdfs:label "structure check document"@en ;
+                                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#designMassExceptionalPayload
+:designMassExceptionalPayload rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :VehicleType ;
+                              rdfs:range xsd:integer ;
+                              <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                              <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                              rdfs:comment "Design mass under exceptional payload."@en ;
+                              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                              rdfs:label "design mass under exceptional payload"@en ;
+                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#designMassNormalPayload
+:designMassNormalPayload rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :VehicleType ;
+                         rdfs:range xsd:integer ;
+                         <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                         <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                         rdfs:comment "Design mass under normal payload."@en ;
+                         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                         rdfs:label "design mass under normal payload"@en ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#designMassWorkingOrder
+:designMassWorkingOrder rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :VehicleType ;
+                        rdfs:range xsd:integer ;
+                        <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                        <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                        rdfs:comment "Design mass in working order."@en ;
+                        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                        rdfs:label "design mass in working order"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  http://era.europa.eu/ns#gaugingCheckLocation
@@ -375,11 +447,23 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:domain :Track ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                      <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                      <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                       rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging."@en ;
                       rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                       rdfs:label "gauging check location"@en ;
                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#highSpeedLoadModelCompliance
+:highSpeedLoadModelCompliance rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Track ;
+                              rdfs:range xsd:boolean ;
+                              <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                              <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                              rdfs:comment "Compliance of structures with the High Speed Load Model (HSLM)."@en ;
+                              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                              rdfs:label "high speed load model compliance"@en ;
+                              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  http://era.europa.eu/ns#lineUICCode
@@ -387,11 +471,35 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :Track ;
              rdfs:range xsd:string ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
              rdfs:comment "Line associated UIC code."@en ;
              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
              rdfs:label "line UIC code"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#maximumSpeed
+:maximumSpeed rdf:type owl:DatatypeProperty ;
+              rdfs:domain :VehicleType ;
+              rdfs:range xsd:integer ;
+              <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+              <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+              rdfs:comment "Maximum design speed."@en ;
+              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+              rdfs:label "maximum design speed"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#nationalLoadCapability
+:nationalLoadCapability rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Track ;
+                        rdfs:range xsd:string ;
+                        <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                        <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                        rdfs:comment "National classification for load capability."@en ;
+                        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                        rdfs:label "national load capability"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 
 ###  http://era.europa.eu/ns#nationalRollingStockFireCategory
@@ -399,11 +507,71 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:domain :Tunnel ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                                  <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                                   rdfs:comment "Applicable national rolling stock fire category for a tunnel."@en ;
                                   rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                                   rdfs:label "national rolling stock fire category"@en ;
                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#permissiblePayload
+:permissiblePayload rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :VehicleType ;
+                    rdfs:range xsd:string ;
+                    <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                    <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                    rdfs:comment "Permissible payload for different line categories."@en ;
+                    rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                    rdfs:label "permissible payload"@en ;
+                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://era.europa.eu/ns#staticAxleLoadExceptionalPayload
+:staticAxleLoadExceptionalPayload rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :VehicleType ;
+                                  rdfs:range xsd:double ;
+                                  <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                                  <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                                  rdfs:comment "Static axle load under exceptional payload."@en ;
+                                  rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                                  rdfs:label "static axle load under exceptional payload"@en ;
+                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#staticAxleLoadNormalPayload
+:staticAxleLoadNormalPayload rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :VehicleType ;
+                             rdfs:range xsd:double ;
+                             <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                             <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                             rdfs:comment "Static axle load under normal payload."@en ;
+                             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                             rdfs:label "static axle load under normal payload"@en ;
+                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#staticAxleLoadWorkingOrder
+:staticAxleLoadWorkingOrder rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :VehicleType ;
+                            rdfs:range xsd:double ;
+                            <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                            <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                            rdfs:comment "Static axle load in working order."@en ;
+                            rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                            rdfs:label "static axle load in working order"@en ;
+                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#structureCheckLocation
+:structureCheckLocation rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Track ;
+                        rdfs:range xsd:double ;
+                        <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+                        <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+                        rdfs:comment "Railway location of structures requiring specific checks."@en ;
+                        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+                        rdfs:label "structure check location"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 
 
 ###  http://era.europa.eu/ns#tafTAPCode
@@ -411,7 +579,7 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:domain :OperationalPoint ;
             rdfs:range xsd:string ;
             <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-            <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+            <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
             rdfs:comment "Primary code developed for TAF/TAP."@en ;
             rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
             rdfs:label "TAF/TAP code"@en ;
@@ -423,7 +591,7 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:domain :Track ;
              rdfs:range xsd:double ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
              rdfs:comment "Distance in kilometers between operational points at start and end of a track."@en ;
              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
              rdfs:label "track length"@en ;
@@ -435,7 +603,7 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:domain :Tunnel ;
               rdfs:range xsd:double ;
               <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-              <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+              <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
               rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
               rdfs:label "tunnel length"@en ;
@@ -447,11 +615,23 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:domain :OperationalPoint ;
        rdfs:range xsd:string ;
        <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-       <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
        rdfs:comment "Code composed of country code and alphanumeric operational point code, as defined in RINF."@en ;
        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
        rdfs:label "unique operational point id"@en ;
        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://era.europa.eu/ns#vehicleLength
+:vehicleLength rdf:type owl:DatatypeProperty ;
+               rdfs:domain :VehicleType ;
+               rdfs:range xsd:integer ;
+               <http://purl.org/dc/terms/created> "2020-08-24"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2020-08-24"^^xsd:date ;
+               rdfs:comment "Vehicle length."@en ;
+               rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
+               rdfs:label "vehicle length"@en ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  http://era.europa.eu/ns#wheelSetGauge
@@ -463,7 +643,7 @@ xsd:date rdf:type rdfs:Datatype .
                            ] ;
                rdfs:range xsd:integer ;
                <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-               <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+               <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en ;
                rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                rdfs:label "wheel set gauge"@en ;
@@ -479,6 +659,13 @@ xsd:date rdf:type rdfs:Datatype .
                                                         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
                                                         rdfs:comment "Abstract class representing gauging profiles"@en ;
                                                         rdfs:label "Gauging Profile"@en .
+
+
+###  http://era.europa.eu/concepts/load-capabilities#LoadCapability
+<http://era.europa.eu/concepts/load-capabilities#LoadCapability> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                                 rdfs:comment "Abstract class representing track load capabilities, defined as a combination of the line category and speed at the weakest point of the track"@en ;
+                                                                 rdfs:label "Load Capability"@en .
 
 
 ###  http://era.europa.eu/concepts/manufacturers#Manufacturer
@@ -526,7 +713,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#InternalNodeLink
 :InternalNodeLink rdf:type owl:Class ;
                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                   rdfs:comment "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."@en ;
                   rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                   rdfs:label "Internal Node Link"@en ;
@@ -536,7 +723,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#MicroLink
 :MicroLink rdf:type owl:Class ;
            <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
            rdfs:comment "An abstraction of a track that represent a physical rail connection between two different micro nodes."@en ;
            rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
            rdfs:label "Micro Link"@en ;
@@ -546,7 +733,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#MicroNode
 :MicroNode rdf:type owl:Class ;
            <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-           <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+           <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
            rdfs:comment "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."@en ;
            rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
            rdfs:label "Micro Node"@en ;
@@ -558,7 +745,7 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ,
                           <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
           <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-          <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+          <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
           rdfs:comment "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."@en ;
           rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
           rdfs:label "Node Port"@en ;
@@ -570,7 +757,7 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
                                   <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
                   <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-                  <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+                  <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
                   rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
                   rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
                   rdfs:label "Operational Point"@en ;
@@ -580,7 +767,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#Track
 :Track rdf:type owl:Class ;
        <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-       <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+       <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
        rdfs:comment "A running track that is used for train service movements."@en ;
        rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
        rdfs:label "Track"@en ;
@@ -590,7 +777,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#Tunnel
 :Tunnel rdf:type owl:Class ;
         <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
         rdfs:comment "A railway tunnel is an excavation or a construction around the track provided to allow the railway to pass for example higher land, buildings or water."@en ;
         rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
         rdfs:label "Tunnel"@en ;
@@ -600,7 +787,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://era.europa.eu/ns#VehicleType
 :VehicleType rdf:type owl:Class ;
              <http://purl.org/dc/terms/created> "2020-07-29"^^xsd:date ;
-             <http://purl.org/dc/terms/modified> "2019-07-29"^^xsd:date ;
+             <http://purl.org/dc/terms/modified> "2020-07-29"^^xsd:date ;
              rdfs:comment "A vehicle type that has been authorized to operate on the EU railway infrastructure."@en ;
              rdfs:isDefinedBy <http://era.europa.eu/ns#> ;
              rdfs:label "Vehicle Type"@en ;

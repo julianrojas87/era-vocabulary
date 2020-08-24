@@ -7,6 +7,7 @@
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers:  <http://era.europa.eu/concepts/manufacturers#> .
+@prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
@@ -37,6 +38,11 @@ era-manufacturers:Manufacturer a owl:Class ; # Concepts of this class are dynami
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Manufacturer"@en ;
     rdfs:comment "Abstract class representing vehicle manufacturer companies"@en .
+
+era-lc:LoadCapability a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Load Capability"@en ;
+    rdfs:comment "Abstract class representing track load capabilities, defined as a combination of the line category and speed at the weakest point of the track"@en .
 
 era-gaugings:GaugingProfile a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;

@@ -14,6 +14,10 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
       </li>
       <li>
+         <a href="#http://era.europa.eu/concepts/load-capabilities#LoadCapability"
+            title="http://era.europa.eu/concepts/load-capabilities#LoadCapability">Load Capability</a>
+      </li>
+      <li>
          <a href="#http://era.europa.eu/concepts/manufacturers#Manufacturer"
             title="http://era.europa.eu/concepts/manufacturers#Manufacturer">Manufacturer</a>
       </li>
@@ -123,6 +127,29 @@ This section provides details for each class and property defined by ERA vocabul
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://era.europa.eu/concepts/load-capabilities#LoadCapability">
+      <h3>Load Capability<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/load-capabilities#LoadCapability</p>
+      <div class="comment">
+         <span class="markdown">Abstract class representing track load capabilities, defined as a combination of the line category and speed at the weakest point of the track</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://era.europa.eu/concepts/manufacturers#Manufacturer">
@@ -351,9 +378,16 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#gaugingCheckLocation" title="http://era.europa.eu/ns#gaugingCheckLocation">gauging check location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#highSpeedLoadModelCompliance"
+               title="http://era.europa.eu/ns#highSpeedLoadModelCompliance">high speed load model compliance</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#lineUICCode" title="http://era.europa.eu/ns#lineUICCode">line UIC code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nationalLoadCapability" title="http://era.europa.eu/ns#nationalLoadCapability">national load capability</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#compatibilityProcedureDocument"
+               title="http://era.europa.eu/ns#compatibilityProcedureDocument">structure check document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#structureCheckLocation" title="http://era.europa.eu/ns#structureCheckLocation">structure check location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -539,10 +573,24 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#alternativeName" title="http://era.europa.eu/ns#alternativeName">alternative name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#category" title="http://era.europa.eu/ns#category">category</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">subcategory</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#designMassWorkingOrder" title="http://era.europa.eu/ns#designMassWorkingOrder">design mass in working order</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#designMassExceptionalPayload"
+               title="http://era.europa.eu/ns#designMassExceptionalPayload">design mass under exceptional payload</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#designMassNormalPayload" title="http://era.europa.eu/ns#designMassNormalPayload">design mass under normal payload</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#maximumSpeed" title="http://era.europa.eu/ns#maximumSpeed">maximum design speed</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#permissiblePayload" title="http://era.europa.eu/ns#permissiblePayload">permissible payload</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadWorkingOrder"
+               title="http://era.europa.eu/ns#staticAxleLoadWorkingOrder">static axle load in working order</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadExceptionalPayload"
+               title="http://era.europa.eu/ns#staticAxleLoadExceptionalPayload">static axle load under exceptional payload</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadNormalPayload"
+               title="http://era.europa.eu/ns#staticAxleLoadNormalPayload">static axle load under normal payload</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">subcategory</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleLength" title="http://era.europa.eu/ns#vehicleLength">vehicle length</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -572,6 +620,9 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#hasTrack" title="http://era.europa.eu/ns#hasTrack">has track</a>
+      </li>
+      <li>
+         <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
       </li>
       <li>
          <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
@@ -914,6 +965,42 @@ This section provides details for each class and property defined by ERA vocabul
             <dt>has range</dt>
             <dd>
                <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="loadCapability">
+      <h3>load capability<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#loadCapability</p>
+      <div class="comment">
+         <span class="markdown">A combination of the line category and speed at the weakest point of the track.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://era.europa.eu/concepts/load-capabilities#LoadCapability"
+                  title="http://era.europa.eu/concepts/load-capabilities#LoadCapability">Load Capability</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1263,17 +1350,62 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#alternativeName" title="http://era.europa.eu/ns#alternativeName">alternative name</a>
       </li>
       <li>
+         <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
+      </li>
+      <li>
          <a href="#bidirectional" title="http://era.europa.eu/ns#bidirectional">bidirectional</a>
+      </li>
+      <li>
+         <a href="#designMassWorkingOrder" title="http://era.europa.eu/ns#designMassWorkingOrder">design mass in working order</a>
+      </li>
+      <li>
+         <a href="#designMassExceptionalPayload"
+            title="http://era.europa.eu/ns#designMassExceptionalPayload">design mass under exceptional payload</a>
+      </li>
+      <li>
+         <a href="#designMassNormalPayload" title="http://era.europa.eu/ns#designMassNormalPayload">design mass under normal payload</a>
       </li>
       <li>
          <a href="#gaugingCheckLocation" title="http://era.europa.eu/ns#gaugingCheckLocation">gauging check location</a>
       </li>
       <li>
+         <a href="#highSpeedLoadModelCompliance"
+            title="http://era.europa.eu/ns#highSpeedLoadModelCompliance">high speed load model compliance</a>
+      </li>
+      <li>
          <a href="#lineUICCode" title="http://era.europa.eu/ns#lineUICCode">line UIC code</a>
+      </li>
+      <li>
+         <a href="#maximumSpeed" title="http://era.europa.eu/ns#maximumSpeed">maximum design speed</a>
+      </li>
+      <li>
+         <a href="#nationalLoadCapability" title="http://era.europa.eu/ns#nationalLoadCapability">national load capability</a>
       </li>
       <li>
          <a href="#nationalRollingStockFireCategory"
             title="http://era.europa.eu/ns#nationalRollingStockFireCategory">national rolling stock fire category</a>
+      </li>
+      <li>
+         <a href="#permissiblePayload" title="http://era.europa.eu/ns#permissiblePayload">permissible payload</a>
+      </li>
+      <li>
+         <a href="#staticAxleLoadWorkingOrder"
+            title="http://era.europa.eu/ns#staticAxleLoadWorkingOrder">static axle load in working order</a>
+      </li>
+      <li>
+         <a href="#staticAxleLoadExceptionalPayload"
+            title="http://era.europa.eu/ns#staticAxleLoadExceptionalPayload">static axle load under exceptional payload</a>
+      </li>
+      <li>
+         <a href="#staticAxleLoadNormalPayload"
+            title="http://era.europa.eu/ns#staticAxleLoadNormalPayload">static axle load under normal payload</a>
+      </li>
+      <li>
+         <a href="#compatibilityProcedureDocument"
+            title="http://era.europa.eu/ns#compatibilityProcedureDocument">structure check document</a>
+      </li>
+      <li>
+         <a href="#structureCheckLocation" title="http://era.europa.eu/ns#structureCheckLocation">structure check location</a>
       </li>
       <li>
          <a href="#tafTAPCode" title="http://era.europa.eu/ns#tafTAPCode">TAF/TAP code</a>
@@ -1286,6 +1418,9 @@ This section provides details for each class and property defined by ERA vocabul
       </li>
       <li>
          <a href="#uopid" title="http://era.europa.eu/ns#uopid">unique operational point id</a>
+      </li>
+      <li>
+         <a href="#vehicleLength" title="http://era.europa.eu/ns#vehicleLength">vehicle length</a>
       </li>
       <li>
          <a href="#wheelSetGauge" title="http://era.europa.eu/ns#wheelSetGauge">wheel set gauge</a>
@@ -1310,6 +1445,40 @@ This section provides details for each class and property defined by ERA vocabul
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="axleSpacing">
+      <h3>axle spacing<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#axleSpacing</p>
+      <div class="comment">
+         <span class="markdown">Position of the axles along the unit.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1362,6 +1531,108 @@ This section provides details for each class and property defined by ERA vocabul
          </dl>
       </div>
    </div>
+   <div class="entity" id="designMassWorkingOrder">
+      <h3>design mass in working order<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#designMassWorkingOrder</p>
+      <div class="comment">
+         <span class="markdown">Design mass in working order.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="designMassExceptionalPayload">
+      <h3>design mass under exceptional payload<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#designMassExceptionalPayload</p>
+      <div class="comment">
+         <span class="markdown">Design mass under exceptional payload.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="designMassNormalPayload">
+      <h3>design mass under normal payload<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#designMassNormalPayload</p>
+      <div class="comment">
+         <span class="markdown">Design mass under normal payload.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="gaugingCheckLocation">
       <h3>gauging check location<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1396,6 +1667,40 @@ This section provides details for each class and property defined by ERA vocabul
          </dl>
       </div>
    </div>
+   <div class="entity" id="highSpeedLoadModelCompliance">
+      <h3>high speed load model compliance<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#highSpeedLoadModelCompliance</p>
+      <div class="comment">
+         <span class="markdown">Compliance of structures with the High Speed Load Model (HSLM).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="lineUICCode">
       <h3>line UIC code<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1405,6 +1710,74 @@ This section provides details for each class and property defined by ERA vocabul
          <strong>IRI:</strong> http://era.europa.eu/ns#lineUICCode</p>
       <div class="comment">
          <span class="markdown">Line associated UIC code.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="maximumSpeed">
+      <h3>maximum design speed<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#maximumSpeed</p>
+      <div class="comment">
+         <span class="markdown">Maximum design speed.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nationalLoadCapability">
+      <h3>national load capability<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#nationalLoadCapability</p>
+      <div class="comment">
+         <span class="markdown">National classification for load capability.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1460,6 +1833,210 @@ This section provides details for each class and property defined by ERA vocabul
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="permissiblePayload">
+      <h3>permissible payload<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#permissiblePayload</p>
+      <div class="comment">
+         <span class="markdown">Permissible payload for different line categories.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="staticAxleLoadWorkingOrder">
+      <h3>static axle load in working order<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#staticAxleLoadWorkingOrder</p>
+      <div class="comment">
+         <span class="markdown">Static axle load in working order.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="staticAxleLoadExceptionalPayload">
+      <h3>static axle load under exceptional payload<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#staticAxleLoadExceptionalPayload</p>
+      <div class="comment">
+         <span class="markdown">Static axle load under exceptional payload.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="staticAxleLoadNormalPayload">
+      <h3>static axle load under normal payload<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#staticAxleLoadNormalPayload</p>
+      <div class="comment">
+         <span class="markdown">Static axle load under normal payload.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="compatibilityProcedureDocument">
+      <h3>structure check document<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#compatibilityProcedureDocument</p>
+      <div class="comment">
+         <span class="markdown">Document with the procedure(s) for static and dynamic route compatibility checks.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="structureCheckLocation">
+      <h3>structure check location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#structureCheckLocation</p>
+      <div class="comment">
+         <span class="markdown">Railway location of structures requiring specific checks.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
             </dd>
          </dl>
       </div>
@@ -1596,6 +2173,40 @@ This section provides details for each class and property defined by ERA vocabul
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleLength">
+      <h3>vehicle length<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#vehicleLength</p>
+      <div class="comment">
+         <span class="markdown">Vehicle length.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
             </dd>
          </dl>
       </div>
