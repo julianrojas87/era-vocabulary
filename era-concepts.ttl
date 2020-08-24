@@ -11,6 +11,7 @@
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
+@prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 
@@ -59,6 +60,11 @@ era-tds:FrenchTrainDetectionSystemLimitation a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "French Train Detection System Limitation"@en ;
     rdfs:comment "Abstract class representing french train detection systems limitations"@en .
+
+era-am:AxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Axle Bearing Condition Monitoring"@en ;
+    rdfs:comment "Abstract class representing axle bearing condition monitoring setups"@en .
 
 era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;

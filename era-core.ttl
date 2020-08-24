@@ -17,6 +17,7 @@
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
+@prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 era: a foaf:Document ;
@@ -596,7 +597,7 @@ era:trainDetectionSystemSpecificCheck a owl:DatatypeProperty, rdf:Property ; # R
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "unstable" .
 
-era:frenchTrainDetectionSystemLimitation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.7.1.4
+era:frenchTrainDetectionSystemLimitation a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.7.1.4
     rdfs:label "french train detection system limitation"@en ;
     rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network."@en ;
     rdfs:isDefinedBy era: ;
@@ -605,6 +606,79 @@ era:frenchTrainDetectionSystemLimitation a owl:DatatypeProperty, rdf:Property ; 
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
+
+
+########## Hot axle box detection ##########
+
+era:hasHotAxleBoxDetector a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.7.1.4
+    rdfs:label "has axle box detector"@en ;
+    rdfs:comment "Existence of trackside hot axle box detector (HABD)."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hotAxleBoxDetectorTSICompliant a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.5
+    rdfs:label "hot axle box detector TSI compliant"@en ;
+    rdfs:comment "Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hotAxleBoxDetectorIdentification a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.6
+    rdfs:label "hot axle box detector identification"@en ;
+    rdfs:comment "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:hotAxleBoxDetectorGeneration a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.7
+    rdfs:label "hot axle box detector generation"@en ;
+    rdfs:comment "Generation of trackside HABD. Specific for the French Italian and Swedish networks."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:hotAxleBoxDetectorLocation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.8
+    rdfs:label "hot axle box detector location"@en ;
+    rdfs:comment "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:hotAxleBoxDetectorDirection a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.9
+    rdfs:label "hot axle box detector direction"@en ;
+    rdfs:comment "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:axleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 4.9.2
+    rdfs:label "axle bearing condition monitoring"@en ;
+    rdfs:comment "Axle bearing condition monitoring."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-am:AxleBearingMonitoring ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "unstable" .
 
 
 ########## Wheelset ##########
