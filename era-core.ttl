@@ -900,6 +900,70 @@ era:parkingBrakeMaximumGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4
     vs:term_status "stable" .
 
 
+########## Magnetic track brake ##########
+
+era:magneticBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.3 and ERATV 4.7.4.2.1
+    rdfs:label "magnetic braking"@en ;
+    rdfs:comment "Use of magnetic brakes."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:conditionalMagneticBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.3
+    rdfs:label "conditional magnetic braking"@en ;
+    rdfs:comment "Magnetic braking allowed under certain conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:emergencyOnlyMagneticBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.3
+    rdfs:label "emergency only magnetic braking"@en ;
+    rdfs:comment "Magnetic braking allowed only under emergency conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:conditionalEmergencyOnlyMagneticBraking a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.11.3
+    rdfs:label "conditional emergency only magnetic braking"@en ;
+    rdfs:comment "Magnetic braking allowed only certain conditions for emergency situations."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:magneticBrakingConditionsDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.6.5
+    rdfs:label "magnetic braking conditions document"@en ;
+    rdfs:comment "Document with the conditions for the use of magnetic brakes."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:magneticBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.4.2.2
+    rdfs:label "magnetic brake prevention"@en ;
+    rdfs:comment "Possibility of preventing the use of the magnetic track brake (only if fitted with magnetic brake)"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" .
+
 ########## Tunnel ##########
 
 era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.8.10
