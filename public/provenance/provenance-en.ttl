@@ -6,5 +6,5 @@
 	 prov:wasAttributedTo <https://julianrojas.org#me>;
 	 dc:creator <https://julianrojas.org#me>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2020-08-24";
+	 prov:wasGeneratedAt "2020-08-25";
 .

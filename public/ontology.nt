@@ -2,11 +2,11 @@
 <http://era.europa.eu/ns#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.6" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.8" .
 # 
 # 
 # #################################################################
@@ -73,6 +73,17 @@
 # #################################################################
 # 
 # 
+# http://era.europa.eu/ns#axleBearingConditionMonitoring
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#comment> "Axle bearing condition monitoring."@en .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2000/01/rdf-schema#label> "axle bearing condition monitoring"@en .
+<http://era.europa.eu/ns#axleBearingConditionMonitoring> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
 # http://era.europa.eu/ns#belongsToNode
 <http://era.europa.eu/ns#belongsToNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#belongsToNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#NodePort> .
@@ -94,6 +105,28 @@
 <http://era.europa.eu/ns#category> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#category> <http://www.w3.org/2000/01/rdf-schema#label> "category"@en .
 <http://era.europa.eu/ns#category> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#contactLineSystem
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem> .
+<http://era.europa.eu/ns#contactLineSystem> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#contactLineSystem> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the type of the contact line system."@en .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2000/01/rdf-schema#label> "contact line system"@en .
+<http://era.europa.eu/ns#contactLineSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#contactStripMaterial
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which contact strip materials are permitted to be used."@en .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "contact strip material"@en .
+<http://era.europa.eu/ns#contactStripMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#endLocation
 <http://era.europa.eu/ns#endLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -138,6 +171,17 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://era.europa.eu/ns#endPort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#endPort> <http://www.w3.org/2000/01/rdf-schema#label> "end port"@en .
 <http://era.europa.eu/ns#endPort> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Section with train detection limitation, specific for route compatibility check on French network."@en .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "french train detection system limitation"@en .
+<http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#gaugingProfile
 <http://era.europa.eu/ns#gaugingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -257,6 +301,28 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#opType> <http://www.w3.org/2000/01/rdf-schema#label> "operational point type"@en .
 <http://era.europa.eu/ns#opType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#otherPantographHead
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead> .
+<http://era.europa.eu/ns#otherPantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#otherPantographHead> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which other pantograph heads are allowed to be used."@en .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "other pantograph head"@en .
+<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#pantographHeadTSI
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#label> "tsi pantograph head"@en .
+<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#passesThroughTunnel
 <http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
@@ -278,6 +344,17 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#rollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "rolling stock fire category"@en .
 <http://era.europa.eu/ns#rollingStockFireCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#snowIceHailConditions
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/ice-conditions#IceCondition> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Snow, ice and hail conditions."@en .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2000/01/rdf-schema#label> "snow ice hail conditions"@en .
+<http://era.europa.eu/ns#snowIceHailConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#startLocation
 <http://era.europa.eu/ns#startLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -329,6 +406,17 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#subCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#subCategory> <http://www.w3.org/2000/01/rdf-schema#label> "subcategory"@en .
 <http://era.europa.eu/ns#subCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#thermalCapacityTSIReference
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference case of a TSI thermal capacity."@en .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity TSI reference"@en .
+<http://era.europa.eu/ns#thermalCapacityTSIReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://era.europa.eu/ns#trainDetectionSystem
 <http://era.europa.eu/ns#trainDetectionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -384,6 +472,17 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
+# http://era.europa.eu/ns#additionalBrakingInformationDocument
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI."@en .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2000/01/rdf-schema#label> "additional braking information document"@en .
+<http://era.europa.eu/ns#additionalBrakingInformationDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
 # http://era.europa.eu/ns#alternativeName
 <http://era.europa.eu/ns#alternativeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#alternativeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
@@ -394,6 +493,17 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#alternativeName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#alternativeName> <http://www.w3.org/2000/01/rdf-schema#label> "alternative name"@en .
 <http://era.europa.eu/ns#alternativeName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#automaticDroppingDeviceRequired
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of whether an automatic dropping device (ADD) required on the vehicle."@en .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2000/01/rdf-schema#label> "automatic dropping device required"@en .
+<http://era.europa.eu/ns#automaticDroppingDeviceRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#axleSpacing
 <http://era.europa.eu/ns#axleSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -425,6 +535,22 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#bidirectional> <http://www.w3.org/2000/01/rdf-schema#label> "bidirectional"@en .
 <http://era.europa.eu/ns#bidirectional> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#brakeWeightPercentage
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://era.europa.eu/ns#cantDeficiency
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#cantDeficiency> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#cantDeficiency> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for."@en .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "cant deficiency"@en .
+<http://era.europa.eu/ns#cantDeficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#compatibilityProcedureDocument
 <http://era.europa.eu/ns#compatibilityProcedureDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
@@ -435,6 +561,72 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#compatibilityProcedureDocument> <http://www.w3.org/2000/01/rdf-schema#label> "structure check document"@en .
 <http://era.europa.eu/ns#compatibilityProcedureDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#conditionalEddyCurrentBraking
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Eddy current braking allowed under certain conditions."@en .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "conditional eddy current braking"@en .
+<http://era.europa.eu/ns#conditionalEddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Eddy current braking allowed only certain conditions for emergency situations."@en .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "conditional emergency only eddy current braking"@en .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Magnetic braking allowed only certain conditions for emergency situations."@en .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "conditional emergency only magnetic braking"@en .
+<http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#conditionalMagneticBraking
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Magnetic braking allowed under certain conditions."@en .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "conditional magnetic braking"@en .
+<http://era.europa.eu/ns#conditionalMagneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#conditionalRegenerativeBrake
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#comment> "Regenerative braking allowed under certain conditions."@en .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#label> "conditional regenerative brake"@en .
+<http://era.europa.eu/ns#conditionalRegenerativeBrake> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#currentLimitationRequired
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of whether an on board current or power limitation function on vehicles is required."@en .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2000/01/rdf-schema#label> "current limitation required"@en .
+<http://era.europa.eu/ns#currentLimitationRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#designMassExceptionalPayload
 <http://era.europa.eu/ns#designMassExceptionalPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -469,16 +661,204 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#designMassWorkingOrder> <http://www.w3.org/2000/01/rdf-schema#label> "design mass in working order"@en .
 <http://era.europa.eu/ns#designMassWorkingOrder> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#eddyCurrentBrakePrevention
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://era.europa.eu/ns#eddyCurrentBraking
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of eddy current brakes."@en .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "eddy current braking"@en .
+<http://era.europa.eu/ns#eddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the conditions for the use of eddy current brakes."@en .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "eddy current braking conditions document"@en .
+<http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#emergencyBraking
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Eddy current braking allowed only under emergency conditions."@en .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2000/01/rdf-schema#label> "emergency only eddy current braking"@en .
+<http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#emergencyOnlyMagneticBraking
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Magnetic braking allowed only under emergency conditions."@en .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "emergency only magnetic braking"@en .
+<http://era.europa.eu/ns#emergencyOnlyMagneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#energySupplySystem
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#energySupplySystem> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#energySupplySystem> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the traction supply system (nominal voltage and frequency)."@en .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2000/01/rdf-schema#label> "energy supply system"@en .
+<http://era.europa.eu/ns#energySupplySystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#energySupplySystemTSICompliant
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication if the traction supply system (nominal voltage and frequency) is fully compliant with TSI."@en .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "energy supply system TSI compliant"@en .
+<http://era.europa.eu/ns#energySupplySystemTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
 # http://era.europa.eu/ns#gaugingCheckLocation
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
-<http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#gaugingCheckLocation> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#gaugingCheckLocation> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of particular points requiring specific checks due to deviations from gauging."@en .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2000/01/rdf-schema#label> "gauging check location"@en .
 <http://era.europa.eu/ns#gaugingCheckLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#gaugingTransversalDocument
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the transversal section of the particular points requiring specific checks."@en .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "gauging traversal document"@en .
+<http://era.europa.eu/ns#gaugingTransversalDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#gradientProfile
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#gradientProfile> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#gradientProfile> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Sequence of gradient values and locations of change in gradient."@en .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2000/01/rdf-schema#label> "gradient profile"@en .
+<http://era.europa.eu/ns#gradientProfile> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#hasAutomaticDroppingDevice
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Automatic dropping device (ADD) fitted (to be indicated for each energy supply system the vehicle is equipped for)."@en .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2000/01/rdf-schema#label> "has automatic dropping device "@en .
+<http://era.europa.eu/ns#hasAutomaticDroppingDevice> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#hasCurrentLimitation
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Electric units equipped with power or current limitation function."@en .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "has current limitation"@en .
+<http://era.europa.eu/ns#hasCurrentLimitation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#hasHotAxleBoxDetector
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence of trackside hot axle box detector (HABD)."@en .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2000/01/rdf-schema#label> "has axle box detector"@en .
+<http://era.europa.eu/ns#hasHotAxleBoxDetector> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#hasRegenerativeBrake
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication whether regenerative braking is permitted or not."@en .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2000/01/rdf-schema#label> "has regenerative brake"@en .
+<http://era.europa.eu/ns#hasRegenerativeBrake> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#hasSevereWeatherConditions
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Climatic conditions on the line are severe according to European standard."@en .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2000/01/rdf-schema#label> "has severe weather conditions"@en .
+<http://era.europa.eu/ns#hasSevereWeatherConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#hasadditionalBrakingInformation
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI."@en .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2000/01/rdf-schema#label> "has additional braking information"@en .
+<http://era.europa.eu/ns#hasadditionalBrakingInformation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#highSpeedLoadModelCompliance
 <http://era.europa.eu/ns#highSpeedLoadModelCompliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -491,6 +871,61 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#highSpeedLoadModelCompliance> <http://www.w3.org/2000/01/rdf-schema#label> "high speed load model compliance"@en .
 <http://era.europa.eu/ns#highSpeedLoadModelCompliance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#hotAxleBoxDetectorDirection
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector direction"@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorDirection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#hotAxleBoxDetectorGeneration
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#comment> "Generation of trackside HABD. Specific for the French Italian and Swedish networks."@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector generation"@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorGeneration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#hotAxleBoxDetectorIdentification
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#comment> "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector identification"@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorIdentification> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#hotAxleBoxDetectorLocation
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector location"@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorLocation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks."@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector TSI compliant"@en .
+<http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#lineUICCode
 <http://era.europa.eu/ns#lineUICCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#lineUICCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
@@ -502,16 +937,255 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#lineUICCode> <http://www.w3.org/2000/01/rdf-schema#label> "line UIC code"@en .
 <http://era.europa.eu/ns#lineUICCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
-# http://era.europa.eu/ns#maximumSpeed
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<http://era.europa.eu/ns#maximumSpeed> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#maximumSpeed> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum design speed."@en .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "maximum design speed"@en .
-<http://era.europa.eu/ns#maximumSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# http://era.europa.eu/ns#magneticBrakePrevention
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://era.europa.eu/ns#magneticBraking
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#unionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#magneticBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Use of magnetic brakes."@en .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2000/01/rdf-schema#label> "magnetic braking"@en .
+<http://era.europa.eu/ns#magneticBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#magneticBrakingConditionsDocument
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document with the conditions for the use of magnetic brakes."@en .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2000/01/rdf-schema#label> "magnetic braking conditions document"@en .
+<http://era.europa.eu/ns#magneticBrakingConditionsDocument> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maxCurrentStandstillPantograph
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#unionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the maximum allowable train current at standstill for DC systems expressed in amperes."@en .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2000/01/rdf-schema#label> "maximum standstill current per pantograph"@en .
+<http://era.europa.eu/ns#maxCurrentStandstillPantograph> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumBrakingDistance
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "The maximum value of the braking distance [in metres] of a train shall be given for the maximum line speed."@en .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2000/01/rdf-schema#label> "maximum braking distance"@en .
+<http://era.europa.eu/ns#maximumBrakingDistance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumContactWireHeight
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the maximum contact wire height expressed in metres."@en .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "maximum contact wire height"@en .
+<http://era.europa.eu/ns#maximumContactWireHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumDesignSpeed
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum design speed."@en .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "maximum design speed"@en .
+<http://era.europa.eu/ns#maximumDesignSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumPermittedSpeed
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour."@en .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "maximum permitted speed"@en .
+<http://era.europa.eu/ns#maximumPermittedSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumSpeedAndCantDeficiency
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://era.europa.eu/ns#maximumTemperature
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/2002/07/owl#unionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#maximumTemperature> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumTemperature> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum tempertaure allowed for unrestricted operation access, according to European standard."@en .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "maximum temperature"@en .
+<http://era.europa.eu/ns#maximumTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#maximumTrainDeceleration
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#comment> "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."@en .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2000/01/rdf-schema#label> "maximum train deceleration"@en .
+<http://era.europa.eu/ns#maximumTrainDeceleration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumConcaveVerticalRadius
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum vertical concave curve radius capability."@en .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum concave vertical radius"@en .
+<http://era.europa.eu/ns#minimumConcaveVerticalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumContactWireHeight
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the minimum contact wire height expressed in metres."@en .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2000/01/rdf-schema#label> "minimum contact wire height"@en .
+<http://era.europa.eu/ns#minimumContactWireHeight> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumConvexVerticalRadius
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum vertical convex curve radius capability."@en .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum convex vertical radius"@en .
+<http://era.europa.eu/ns#minimumConvexVerticalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumHorizontalRadius
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Radius of the smallest horizontal curve of the track in metres."@en .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum horizontal radius"@en .
+<http://era.europa.eu/ns#minimumHorizontalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumTemperature
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#minimumTemperature> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumTemperature> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum tempertaure allowed for unrestricted operation access, according to European standard."@en .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "minimum temperature"@en .
+<http://era.europa.eu/ns#minimumTemperature> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#minimumVerticalRadius
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "Radius of the smallest vertical curve expressed in metres."@en .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2000/01/rdf-schema#label> "minimum vertical curve radius"@en .
+<http://era.europa.eu/ns#minimumVerticalRadius> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#minimumWheelDiameter
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."@en .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "minimum wheel diameter"@en .
+<http://era.europa.eu/ns#minimumWheelDiameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#nationalLoadCapability
 <http://era.europa.eu/ns#nationalLoadCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -535,6 +1209,33 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#nationalRollingStockFireCategory> <http://www.w3.org/2000/01/rdf-schema#label> "national rolling stock fire category"@en .
 <http://era.europa.eu/ns#nationalRollingStockFireCategory> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#numberOfPantographsInContactWithOCL
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of pantographs in contact with the overhead contact line (OCL) (to be indicated for each energy supply system the vehicle is equipped for)."@en .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#label> "number of pantpgraphs in contact with OCL"@en .
+<http://era.europa.eu/ns#numberOfPantographsInContactWithOCL> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#oclType
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#oclType> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#oclType> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2000/01/rdf-schema#comment> "OCL type."@en .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2000/01/rdf-schema#label> "ocl type"@en .
+<http://era.europa.eu/ns#oclType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#parkingBrakeMaximumGradient
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
 # http://era.europa.eu/ns#permissiblePayload
 <http://era.europa.eu/ns#permissiblePayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#permissiblePayload> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
@@ -545,6 +1246,69 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#permissiblePayload> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#permissiblePayload> <http://www.w3.org/2000/01/rdf-schema#label> "permissible payload"@en .
 <http://era.europa.eu/ns#permissiblePayload> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#permittedContactForce
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#permittedContactForce> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#permittedContactForce> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of contact force allowed expressed in newtons."@en .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2000/01/rdf-schema#label> "permitted contact force"@en .
+<http://era.europa.eu/ns#permittedContactForce> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#preventRegenerativeBrakeUse
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Possibility of preventing the use of the regenerative brake (only if fitted with regenerative brake)."@en .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2000/01/rdf-schema#label> "prevent regenerative brake use"@en .
+<http://era.europa.eu/ns#preventRegenerativeBrakeUse> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#railInclination
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid67 <http://www.w3.org/2002/07/owl#unionOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://era.europa.eu/ns#railInclination> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#railInclination> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2000/01/rdf-schema#comment> "An angle defining the inclination of the head of a rail relative to the running surface."@en .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2000/01/rdf-schema#label> "rail inclination"@en .
+<http://era.europa.eu/ns#railInclination> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed."@en .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "raised pantographs distance and speed"@en .
+<http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#comment> "Shortest distance between two pantographs in contact with the OCL (to be indicated for each energy supply system the vehicle is equipped for; to be indicated for single and, if applicable, multiple operation) (only if number of raised pantographs is more than 1)."@en .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#label> "shortest distance between pantpgraphs in contact with OCL"@en .
+<http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#staticAxleLoadExceptionalPayload
 <http://era.europa.eu/ns#staticAxleLoadExceptionalPayload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -601,6 +1365,26 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#tafTAPCode> <http://www.w3.org/2000/01/rdf-schema#label> "TAF/TAP code"@en .
 <http://era.europa.eu/ns#tafTAPCode> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#thermalCapacityDistance
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://era.europa.eu/ns#thermalCapacityGradient
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://era.europa.eu/ns#thermalCapacitySpeed
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://era.europa.eu/ns#thermalCapacityTime
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
 # http://era.europa.eu/ns#trackLength
 <http://era.europa.eu/ns#trackLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#trackLength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
@@ -611,6 +1395,17 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#trackLength> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#trackLength> <http://www.w3.org/2000/01/rdf-schema#label> "track length"@en .
 <http://era.europa.eu/ns#trackLength> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#trainDetectionSystemSpecificCheck
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of track circuits or axle counter to which specific checks are needed."@en .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2000/01/rdf-schema#label> "detection system specific check"@en .
+<http://era.europa.eu/ns#trainDetectionSystemSpecificCheck> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://era.europa.eu/ns#tunnelLength
 <http://era.europa.eu/ns#tunnelLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -623,6 +1418,17 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#tunnelLength> <http://www.w3.org/2000/01/rdf-schema#label> "tunnel length"@en .
 <http://era.europa.eu/ns#tunnelLength> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#umax2
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#umax2> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#umax2> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2000/01/rdf-schema#comment> "Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014. Specific for the French network."@en .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2000/01/rdf-schema#label> "umax2"@en .
+<http://era.europa.eu/ns#umax2> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
 # http://era.europa.eu/ns#uopid
 <http://era.europa.eu/ns#uopid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#uopid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#OperationalPoint> .
@@ -633,6 +1439,28 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#uopid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#uopid> <http://www.w3.org/2000/01/rdf-schema#label> "unique operational point id"@en .
 <http://era.europa.eu/ns#uopid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#vehicleContactForce
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Mean contact force."@en .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle contact force"@en .
+<http://era.europa.eu/ns#vehicleContactForce> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://era.europa.eu/ns#vehicleContactStripMaterial
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Material of pantograph contact strip the vehicle may be equipped with (to be indicated for each energy supply system the vehicle is equipped for)."@en .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle contact strip material"@en .
+<http://era.europa.eu/ns#vehicleContactStripMaterial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://era.europa.eu/ns#vehicleLength
 <http://era.europa.eu/ns#vehicleLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -645,17 +1473,28 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#vehicleLength> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle length"@en .
 <http://era.europa.eu/ns#vehicleLength> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#vehiclePantographHead
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Pantograph head geometry (to be indicated for each energy supply system the vehicle is equipped for)."@en .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "vehicle pantograph head"@en .
+<http://era.europa.eu/ns#vehiclePantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
 # http://era.europa.eu/ns#wheelSetGauge
 <http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#Track> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://era.europa.eu/ns#VehicleType> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#wheelSetGauge> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -673,12 +1512,42 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
+# http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring
+<http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing axle bearing condition monitoring setups"@en .
+<http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring> <http://www.w3.org/2000/01/rdf-schema#label> "Axle Bearing Condition Monitoring"@en .
+# 
+# http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem
+<http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing contact line systems"@en .
+<http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Line System"@en .
+# 
+# http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial
+<http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing contact strip materials"@en .
+<http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Strip Material"@en .
+# 
+# http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation
+<http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing french train detection systems limitations"@en .
+<http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> <http://www.w3.org/2000/01/rdf-schema#label> "French Train Detection System Limitation"@en .
+# 
 # http://era.europa.eu/concepts/gaugings#GaugingProfile
 <http://era.europa.eu/concepts/gaugings#GaugingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/concepts/gaugings#GaugingProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/concepts/gaugings#GaugingProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing gauging profiles"@en .
 <http://era.europa.eu/concepts/gaugings#GaugingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Gauging Profile"@en .
+# 
+# http://era.europa.eu/concepts/ice-conditions#IceCondition
+<http://era.europa.eu/concepts/ice-conditions#IceCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/ice-conditions#IceCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/ice-conditions#IceCondition> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing ice, snow and hail conditions"@en .
+<http://era.europa.eu/concepts/ice-conditions#IceCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Condition"@en .
 # 
 # http://era.europa.eu/concepts/load-capabilities#LoadCapability
 <http://era.europa.eu/concepts/load-capabilities#LoadCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -698,17 +1567,35 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/concepts/op-types#OperationalPointType> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing the different existing types of Operational Points"@en .
 <http://era.europa.eu/concepts/op-types#OperationalPointType> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point Type"@en .
 # 
+# http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead
+<http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing other accepted pantograph heads"@en .
+<http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "Other Pantograph Head"@en .
+# 
 # http://era.europa.eu/concepts/rs-fire#Category
 <http://era.europa.eu/concepts/rs-fire#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/concepts/rs-fire#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://era.europa.eu/concepts/rs-fire#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en .
 <http://era.europa.eu/concepts/rs-fire#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Rolling Stock Fire Category"@en .
 # 
+# http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference
+<http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing reference cases of TSI thermal capacities"@en .
+<http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal Capacity TSI Reference"@en .
+# 
 # http://era.europa.eu/concepts/train-detection#TrainDetectionSystem
 <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing train detection systems"@en .
 <http://era.europa.eu/concepts/train-detection#TrainDetectionSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Train Detection System"@en .
+# 
+# http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead
+<http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class representing TSI compliant pantograph heads"@en .
+<http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "TSI Pantograph Head"@en .
 # 
 # http://era.europa.eu/concepts/vehicles#Category
 <http://era.europa.eu/concepts/vehicles#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -764,9 +1651,10 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sws.geonames.org/Feature> .
+<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Operational Point"@en .
@@ -803,10 +1691,12 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
 # 
+# http://www.w3.org/2002/07/owl#DataTypeProperty
+<http://www.w3.org/2002/07/owl#DataTypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/2003/01/geo/wgs84_pos#Point
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
-<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 # 
@@ -845,6 +1735,54 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/2004/02/skos/core#definition> "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/2004/02/skos/core#prefLabel> "None"@en .
+# 
+# http://era.europa.eu/concepts/train-detection#N_1
+<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/2004/02/skos/core#definition> "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
+<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+1" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_2
+<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/2004/02/skos/core#definition> "Sections with directional Interlocking"@en .
+<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+2" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_3
+<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for directional interlocking"@en .
+<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+3" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_4
+<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/2004/02/skos/core#definition> "Sections with Installation with track circuit announcement"@en .
+<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+4" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_5
+<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
+<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+5" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_6
+<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
+<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+6" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_7
+<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a pedal announcement mechanism"@en .
+<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+7" .
+# 
+# http://era.europa.eu/concepts/train-detection#N_8
+<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
+<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for specific announcement reset devices"@en .
+<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+8" .
 # 
 # http://era.europa.eu/concepts/vehicles#carCarrier
 <http://era.europa.eu/concepts/vehicles#carCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -956,10 +1894,129 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/concepts/vehicles#van> <http://www.w3.org/2004/02/skos/core#broader> <http://era.europa.eu/concepts/vehicles#hauledPassenger> .
 <http://era.europa.eu/concepts/vehicles#van> <http://www.w3.org/2004/02/skos/core#prefLabel> "Van"@en .
 # 
+# http://era.europa.eu/ns#brakeWeightPercentage
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
 # http://era.europa.eu/ns#document
 <http://era.europa.eu/ns#document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://era.europa.eu/ns#document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
 <http://era.europa.eu/ns#document> <http://purl.org/dc/terms/hasFormat> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#document> <http://xmlns.com/foaf/0.1/primaryTopic> <http://era.europa.eu/ns#> .
+# 
+# http://era.europa.eu/ns#eddyCurrentBrakePrevention
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#emergencyBraking
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#magneticBrakePrevention
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#maximumSpeedAndCantDeficiency
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#parkingBrakeMaximumGradient
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#thermalCapacityDistance
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#thermalCapacityGradient
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#thermalCapacitySpeed
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# http://era.europa.eu/ns#thermalCapacityTime
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "Brake weight percentage (lambda) or Braked mass."@en .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "brake weight percentage"@en .
+<http://era.europa.eu/ns#brakeWeightPercentage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#comment> "Possibility of preventing the use of the eddy current track brake (only if fitted with eddy current brake)"@en .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#label> "eddy current brake prevention"@en .
+<http://era.europa.eu/ns#eddyCurrentBrakePrevention> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#emergencyBraking> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyBraking> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2000/01/rdf-schema#comment> "Stopping distance and deceleration profile for each load condition per design maximum speed."@en .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2000/01/rdf-schema#label> "emergency braking"@en .
+<http://era.europa.eu/ns#emergencyBraking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#comment> "Possibility of preventing the use of the magnetic track brake (only if fitted with magnetic brake)"@en .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#label> "magnetic brake prevention"@en .
+<http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."@en .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2000/01/rdf-schema#label> "maximum speed and cant deficiency"@en .
+<http://era.europa.eu/ns#maximumSpeedAndCantDeficiency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum gradient on which the unit is kept immobilised by the parking brake alone (if the vehicle is fitted with it)."@en .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2000/01/rdf-schema#label> "parking brake maximum gradient"@en .
+<http://era.europa.eu/ns#parkingBrakeMaximumGradient> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal capacity distance. If no reference case is indicated."@en .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity distance"@en .
+<http://era.europa.eu/ns#thermalCapacityDistance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal capacity gradient. If no reference case is indicated."@en .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity gradient"@en .
+<http://era.europa.eu/ns#thermalCapacityGradient> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal capacity speed. If no reference case is indicated."@en .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity speed"@en .
+<http://era.europa.eu/ns#thermalCapacitySpeed> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+<http://era.europa.eu/ns#thermalCapacityTime> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Thermal capacity time. If no reference case is indicated."@en .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2000/01/rdf-schema#label> "thermal capacity time"@en .
+<http://era.europa.eu/ns#thermalCapacityTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
