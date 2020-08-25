@@ -16,7 +16,7 @@ This section provides details for each class and property defined by ERA vocabul
             title="http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial">Contact Strip Material</a>
       </li>
       <li>
-         <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+         <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
       </li>
       <li>
          <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
@@ -163,13 +163,13 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://sws.geonames.org/Feature">
+   <div class="entity" id="http://www.geonames.org/ontology#Feature">
       <h3>Feature<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://sws.geonames.org/Feature</p>
+         <strong>IRI:</strong> http://www.geonames.org/ontology#Feature</p>
       <div class="comment">
          <span class="markdown">A geographical feature</span>
       </div>
@@ -180,14 +180,19 @@ This section provides details for each class and property defined by ERA vocabul
                   title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
+            <a href="#http://www.geonames.org/ontology#parentCountry" title="http://www.geonames.org/ontology#parentCountry">Parent Country</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
+            <a href="#http://www.geonames.org/ontology#parentCountry" title="http://www.geonames.org/ontology#parentCountry">Parent Country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/dc/terms/spatial" title="http://purl.org/dc/terms/spatial">spatial</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -214,6 +219,26 @@ This section provides details for each class and property defined by ERA vocabul
             <a href="#frenchTrainDetectionSystemLimitation"
                title="http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation">french train detection system limitation</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#N_1"
+               title="http://era.europa.eu/concepts/french-train-detection#N_1">N+1</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_2"
+               title="http://era.europa.eu/concepts/french-train-detection#N_2">N+2</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_3"
+               title="http://era.europa.eu/concepts/french-train-detection#N_3">N+3</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_4"
+               title="http://era.europa.eu/concepts/french-train-detection#N_4">N+4</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_5"
+               title="http://era.europa.eu/concepts/french-train-detection#N_5">N+5</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_6"
+               title="http://era.europa.eu/concepts/french-train-detection#N_6">N+6</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_7"
+               title="http://era.europa.eu/concepts/french-train-detection#N_7">N+7</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/french-train-detection#N_8"
+               title="http://era.europa.eu/concepts/french-train-detection#N_8">N+8</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -442,9 +467,8 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted"
-                  title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
+            <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -527,22 +551,6 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>
             <a href="#http://era.europa.eu/concepts/rs-fire#a" title="http://era.europa.eu/concepts/rs-fire#a">A</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/rs-fire#b" title="http://era.europa.eu/concepts/rs-fire#b">B</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_1"
-               title="http://era.europa.eu/concepts/train-detection#N_1">N+1</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_2"
-               title="http://era.europa.eu/concepts/train-detection#N_2">N+2</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_3"
-               title="http://era.europa.eu/concepts/train-detection#N_3">N+3</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_4"
-               title="http://era.europa.eu/concepts/train-detection#N_4">N+4</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_5"
-               title="http://era.europa.eu/concepts/train-detection#N_5">N+5</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_6"
-               title="http://era.europa.eu/concepts/train-detection#N_6">N+6</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_7"
-               title="http://era.europa.eu/concepts/train-detection#N_7">N+7</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/train-detection#N_8"
-               title="http://era.europa.eu/concepts/train-detection#N_8">N+8</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://era.europa.eu/concepts/rs-fire#none" title="http://era.europa.eu/concepts/rs-fire#none">None</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
@@ -976,7 +984,13 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#hasTrack" title="http://era.europa.eu/ns#hasTrack">has track</a>
       </li>
       <li>
+         <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
+      </li>
+      <li>
          <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
       </li>
       <li>
          <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
@@ -988,7 +1002,7 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#otherPantographHead" title="http://era.europa.eu/ns#otherPantographHead">other pantograph head</a>
       </li>
       <li>
-         <a href="#https://sws.geonames.org/parentCountry" title="https://sws.geonames.org/parentCountry">Parent Country</a>
+         <a href="#http://www.geonames.org/ontology#parentCountry" title="http://www.geonames.org/ontology#parentCountry">Parent Country</a>
       </li>
       <li>
          <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
@@ -1224,8 +1238,8 @@ This section provides details for each class and property defined by ERA vocabul
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span>
-               <sup class="type-op" title="object property">op</sup>, <span class="dotted" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</span>
+               <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1484,6 +1498,40 @@ This section provides details for each class and property defined by ERA vocabul
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#hasGeometry">
+      <h3>hasGeometry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#hasGeometry</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#endLocation" title="http://era.europa.eu/ns#endLocation">end location</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.opengis.net/ont/geosparql#Feature">feature</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="loadCapability">
       <h3>load capability<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1515,6 +1563,39 @@ This section provides details for each class and property defined by ERA vocabul
             <dd>
                <a href="#http://era.europa.eu/concepts/load-capabilities#LoadCapability"
                   title="http://era.europa.eu/concepts/load-capabilities#LoadCapability">Load Capability</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+      <h3>location<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#location</p>
+      <div class="comment">
+         <span class="markdown">The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">http://www.w3.org/2003/01/geo/wgs84_pos#</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#endLocation" title="http://era.europa.eu/ns#endLocation">end location</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">spatial thing</span>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1628,20 +1709,20 @@ This section provides details for each class and property defined by ERA vocabul
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://sws.geonames.org/parentCountry">
+   <div class="entity" id="http://www.geonames.org/ontology#parentCountry">
       <h3>Parent Country<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://sws.geonames.org/parentCountry</p>
+         <strong>IRI:</strong> http://www.geonames.org/ontology#parentCountry</p>
       <div class="comment">
          <span class="markdown">Parent country.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="https://sws.geonames.org/">https://sws.geonames.org/</a>
+            <a href="http://www.geonames.org/ontology#">http://www.geonames.org/ontology#</a>
          </dd>
       </dl>
       <dl>
@@ -1652,12 +1733,12 @@ This section provides details for each class and property defined by ERA vocabul
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+               <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+               <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1798,7 +1879,7 @@ This section provides details for each class and property defined by ERA vocabul
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://sws.geonames.org/Feature" title="https://sws.geonames.org/Feature">Feature</a>
+               <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1828,8 +1909,8 @@ This section provides details for each class and property defined by ERA vocabul
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</span>
-               <sup class="type-op" title="object property">op</sup>, <span class="dotted" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</span>
+               <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -5420,36 +5501,36 @@ This section provides details for each class and property defined by ERA vocabul
          </a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_1"
-            title="http://era.europa.eu/concepts/train-detection#N_1">N+1</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_1"
+            title="http://era.europa.eu/concepts/french-train-detection#N_1">N+1</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_2"
-            title="http://era.europa.eu/concepts/train-detection#N_2">N+2</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_2"
+            title="http://era.europa.eu/concepts/french-train-detection#N_2">N+2</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_3"
-            title="http://era.europa.eu/concepts/train-detection#N_3">N+3</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_3"
+            title="http://era.europa.eu/concepts/french-train-detection#N_3">N+3</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_4"
-            title="http://era.europa.eu/concepts/train-detection#N_4">N+4</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_4"
+            title="http://era.europa.eu/concepts/french-train-detection#N_4">N+4</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_5"
-            title="http://era.europa.eu/concepts/train-detection#N_5">N+5</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_5"
+            title="http://era.europa.eu/concepts/french-train-detection#N_5">N+5</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_6"
-            title="http://era.europa.eu/concepts/train-detection#N_6">N+6</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_6"
+            title="http://era.europa.eu/concepts/french-train-detection#N_6">N+6</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_7"
-            title="http://era.europa.eu/concepts/train-detection#N_7">N+7</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_7"
+            title="http://era.europa.eu/concepts/french-train-detection#N_7">N+7</a>
       </li>
       <li>
-         <a href="#http://era.europa.eu/concepts/train-detection#N_8"
-            title="http://era.europa.eu/concepts/train-detection#N_8">N+8</a>
+         <a href="#http://era.europa.eu/concepts/french-train-detection#N_8"
+            title="http://era.europa.eu/concepts/french-train-detection#N_8">N+8</a>
       </li>
       <li>
          <a href="#http://era.europa.eu/concepts/rs-fire#none" title="http://era.europa.eu/concepts/rs-fire#none">None</a>
@@ -5795,146 +5876,154 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_1">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_1">
       <h3>N+1<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_1</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_1</p>
       <div class="comment">
          <span class="markdown">Sections with tonnage circulated per track is inferior to 15000 tons/day/track</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_2">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_2">
       <h3>N+2<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_2</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_2</p>
       <div class="comment">
          <span class="markdown">Sections with directional Interlocking</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_3">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_3">
       <h3>N+3<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_3</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_3</p>
       <div class="comment">
          <span class="markdown">Sections with 45-second delay for directional interlocking</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_4">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_4">
       <h3>N+4<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_4</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_4</p>
       <div class="comment">
          <span class="markdown">Sections with Installation with track circuit announcement</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_5">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_5">
       <h3>N+5<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_5</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_5</p>
       <div class="comment">
          <span class="markdown">Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_6">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_6">
       <h3>N+6<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_6</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_6</p>
       <div class="comment">
          <span class="markdown">Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_7">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_7">
       <h3>N+7<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_7</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_7</p>
       <div class="comment">
          <span class="markdown">Sections with absence of a pedal announcement mechanism</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://era.europa.eu/concepts/train-detection#N_8">
+   <div class="entity" id="http://era.europa.eu/concepts/french-train-detection#N_8">
       <h3>N+8<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/concepts/train-detection#N_8</p>
+         <strong>IRI:</strong> http://era.europa.eu/concepts/french-train-detection#N_8</p>
       <div class="comment">
          <span class="markdown">Sections with 45-second delay for specific announcement reset devices</span>
       </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://era.europa.eu/concepts/rs-fire#Category" title="http://era.europa.eu/concepts/rs-fire#Category">Rolling Stock Fire Category</a>
+            <a href="#http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+               title="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation">French Train Detection System Limitation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

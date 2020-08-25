@@ -1564,35 +1564,35 @@ era-vehicles:hauledSpecialVehicle a era-vehicles:SubCategory ;
 
 ########## French train detection system limitations ##########
 
-era-tds:N_1 a era-rs-fire:Category ;
+era-ftds:N_1 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+1" ;
     skos:definition "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
 
-era-tds:N_2 a era-rs-fire:Category ;
+era-ftds:N_2 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+2" ;
     skos:definition "Sections with directional Interlocking"@en .
 
-era-tds:N_3 a era-rs-fire:Category ;
+era-ftds:N_3 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+3" ;
     skos:definition "Sections with 45-second delay for directional interlocking"@en .
 
-era-tds:N_4 a era-rs-fire:Category ;
+era-ftds:N_4 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+4" ;
     skos:definition "Sections with Installation with track circuit announcement"@en .
 
-era-tds:N_5 a era-rs-fire:Category ;
+era-ftds:N_5 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+5" ;
     skos:definition "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
 
-era-tds:N_6 a era-rs-fire:Category ;
+era-ftds:N_6 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+6" ;
     skos:definition "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
 
-era-tds:N_7 a era-rs-fire:Category ;
+era-ftds:N_7 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+7" ;
     skos:definition "Sections with absence of a pedal announcement mechanism"@en .
 
-era-tds:N_8 a era-rs-fire:Category ;
+era-ftds:N_8 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+8" ;
     skos:definition "Sections with 45-second delay for specific announcement reset devices"@en .
 
@@ -1616,7 +1616,19 @@ era-rs-fire:none a era-rs-fire:Category ;
 #
 #################################################################
 
-geonames:Feature a owl:Class;
+wgs:location a rdf:Property ;
+    rdfs:label "location"@en ;
+    rdfs:range wgs:SpatialThing ;
+    rdfs:isDefinedBy wgs: ;
+    rdfs:comment "The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping."@en .
+
+geosparql:hasGeometry a owl:ObjectProperty ;
+    rdfs:label "hasGeometry"@en ;
+    rdfs:isDefinedBy geosparql: ;
+    rdfs:range geosparql:Geometry ;
+    rdfs:domain geosparql:Feature .
+
+geonames:Feature a owl:Class ;
     rdfs:subClassOf wgs:SpatialThing ;
     rdfs:label "Feature"@en ;
     rdfs:comment "A geographical feature"@en .

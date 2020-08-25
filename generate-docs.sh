@@ -35,3 +35,5 @@ function main() {
 
 downloadWidoco
 main
+rm ./public/ontology.ttl
+cp ontology.ttl ./public/

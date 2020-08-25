@@ -298,6 +298,86 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+1"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with directional Interlocking"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+2"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with 45-second delay for directional interlocking"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+3"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with Installation with track circuit announcement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+4"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+5"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+6"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with absence of a pedal announcement mechanism"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+7"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Sections with 45-second delay for specific announcement reset devices"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@value" : "N+8"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -439,86 +519,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+1"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with directional Interlocking"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+2"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with 45-second delay for directional interlocking"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+3"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with Installation with track circuit announcement"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+4"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+5"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+6"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a pedal announcement mechanism"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+7"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#N_8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with 45-second delay for specific announcement reset devices"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+8"
   } ]
 }, {
   "@id" : "http://era.europa.eu/concepts/train-detection#TrainDetectionSystem",
@@ -761,7 +761,7 @@
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://julianrojas.org#me"
+    "@id" : "https://julianrojas.org/#me"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -784,7 +784,7 @@
     "@value" : "ERA vocabulary"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.3.8"
+    "@value" : "v0.3.9"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#InternalNodeLink",
@@ -914,9 +914,9 @@
     "@value" : "Operational Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    "@id" : "http://www.geonames.org/ontology#Feature"
   }, {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -4593,7 +4593,7 @@
     "@value" : "spatial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://sws.geonames.org/Feature"
+    "@id" : "http://www.geonames.org/ontology#Feature"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -4602,6 +4602,51 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://www.geonames.org/ontology#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geographical feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "http://www.geonames.org/ontology#parentCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-24"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Parent country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.geonames.org/ontology#Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.geonames.org/ontology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parent Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.geonames.org/ontology#Feature"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -4609,7 +4654,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasGeometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
@@ -4624,7 +4682,21 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -4646,49 +4718,4 @@
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://sws.geonames.org/Feature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A geographical feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-  } ]
-}, {
-  "@id" : "https://sws.geonames.org/parentCountry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Parent country."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://sws.geonames.org/Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://sws.geonames.org/"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Parent Country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://sws.geonames.org/Feature"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
-  } ]
 } ]

@@ -1,12 +1,12 @@
 <http://era.europa.eu/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://era.europa.eu/ns#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/creator> <https://julianrojas.org#me> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/creator> <https://julianrojas.org/#me> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.8" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3.9" .
 # 
 # 
 # #################################################################
@@ -131,7 +131,6 @@
 # http://era.europa.eu/ns#endLocation
 <http://era.europa.eu/ns#endLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#endLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#hasGeometry> .
-<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#endLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#endLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Tunnel> .
@@ -440,7 +439,7 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://purl.org/dc/terms/spatial
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
-<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#range> <https://sws.geonames.org/Feature> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.geonames.org/ontology#Feature> .
 <http://purl.org/dc/terms/spatial> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/spatial> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial characteristics of the resource."@en .
@@ -448,20 +447,31 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#label> "spatial"@en .
 <http://purl.org/dc/terms/spatial> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://www.geonames.org/ontology#parentCountry
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.geonames.org/ontology#Feature> .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.geonames.org/ontology#Feature> .
+<http://www.geonames.org/ontology#parentCountry> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.geonames.org/ontology#parentCountry> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent country."@en .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.geonames.org/ontology#> .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2000/01/rdf-schema#label> "Parent Country"@en .
+<http://www.geonames.org/ontology#parentCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry"@en .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
-# 
-# https://sws.geonames.org/parentCountry
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sws.geonames.org/Feature> .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://sws.geonames.org/Feature> .
-<https://sws.geonames.org/parentCountry> <http://purl.org/dc/terms/created> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://sws.geonames.org/parentCountry> <http://purl.org/dc/terms/modified> "2020-08-24"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent country."@en .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://sws.geonames.org/> .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2000/01/rdf-schema#label> "Parent Country"@en .
-<https://sws.geonames.org/parentCountry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
 # 
 # 
 # 
@@ -1649,10 +1659,8 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#OperationalPoint
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
-<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#OperationalPoint> <http://purl.org/dc/terms/modified> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#OperationalPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en .
@@ -1687,6 +1695,12 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#VehicleType> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Type"@en .
 <http://era.europa.eu/ns#VehicleType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographical feature"@en .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
+# 
 # http://www.opengis.net/ont/geosparql#Feature
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
@@ -1703,12 +1717,6 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://xmlns.com/foaf/0.1/Document
 <http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://sws.geonames.org/Feature
-<https://sws.geonames.org/Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://sws.geonames.org/Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-<https://sws.geonames.org/Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographical feature"@en .
-<https://sws.geonames.org/Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
-# 
 # 
 # 
 # #################################################################
@@ -1717,6 +1725,54 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_1
+<http://era.europa.eu/concepts/french-train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_1> <http://www.w3.org/2004/02/skos/core#definition> "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+1" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_2
+<http://era.europa.eu/concepts/french-train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_2> <http://www.w3.org/2004/02/skos/core#definition> "Sections with directional Interlocking"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_2> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+2" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_3
+<http://era.europa.eu/concepts/french-train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_3> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for directional interlocking"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_3> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+3" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_4
+<http://era.europa.eu/concepts/french-train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_4> <http://www.w3.org/2004/02/skos/core#definition> "Sections with Installation with track circuit announcement"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_4> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+4" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_5
+<http://era.europa.eu/concepts/french-train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_5> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_5> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+5" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_6
+<http://era.europa.eu/concepts/french-train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_6> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_6> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+6" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_7
+<http://era.europa.eu/concepts/french-train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_7> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a pedal announcement mechanism"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_7> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+7" .
+# 
+# http://era.europa.eu/concepts/french-train-detection#N_8
+<http://era.europa.eu/concepts/french-train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://era.europa.eu/concepts/french-train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation> .
+<http://era.europa.eu/concepts/french-train-detection#N_8> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for specific announcement reset devices"@en .
+<http://era.europa.eu/concepts/french-train-detection#N_8> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+8" .
 # 
 # http://era.europa.eu/concepts/rs-fire#a
 <http://era.europa.eu/concepts/rs-fire#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1735,54 +1791,6 @@ _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/2004/02/skos/core#definition> "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .
 <http://era.europa.eu/concepts/rs-fire#none> <http://www.w3.org/2004/02/skos/core#prefLabel> "None"@en .
-# 
-# http://era.europa.eu/concepts/train-detection#N_1
-<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/2004/02/skos/core#definition> "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
-<http://era.europa.eu/concepts/train-detection#N_1> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+1" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_2
-<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/2004/02/skos/core#definition> "Sections with directional Interlocking"@en .
-<http://era.europa.eu/concepts/train-detection#N_2> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+2" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_3
-<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for directional interlocking"@en .
-<http://era.europa.eu/concepts/train-detection#N_3> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+3" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_4
-<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/2004/02/skos/core#definition> "Sections with Installation with track circuit announcement"@en .
-<http://era.europa.eu/concepts/train-detection#N_4> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+4" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_5
-<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
-<http://era.europa.eu/concepts/train-detection#N_5> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+5" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_6
-<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
-<http://era.europa.eu/concepts/train-detection#N_6> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+6" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_7
-<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/2004/02/skos/core#definition> "Sections with absence of a pedal announcement mechanism"@en .
-<http://era.europa.eu/concepts/train-detection#N_7> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+7" .
-# 
-# http://era.europa.eu/concepts/train-detection#N_8
-<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://era.europa.eu/concepts/rs-fire#Category> .
-<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/2004/02/skos/core#definition> "Sections with 45-second delay for specific announcement reset devices"@en .
-<http://era.europa.eu/concepts/train-detection#N_8> <http://www.w3.org/2004/02/skos/core#prefLabel> "N+8" .
 # 
 # http://era.europa.eu/concepts/vehicles#carCarrier
 <http://era.europa.eu/concepts/vehicles#carCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

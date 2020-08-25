@@ -13,13 +13,13 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://era.europa.eu/ns#">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:creator rdf:resource="https://julianrojas.org#me"/>
+        <terms:creator rdf:resource="https://julianrojas.org/#me"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:versionInfo>v0.3.8</owl:versionInfo>
+        <owl:versionInfo>v0.3.9</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -631,7 +631,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="https://sws.geonames.org/Feature"/>
+        <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
         <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
@@ -642,32 +642,42 @@
     
 
 
+    <!-- http://www.geonames.org/ontology#parentCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#parentCountry">
+        <rdfs:domain rdf:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:range rdf:resource="http://www.geonames.org/ontology#Feature"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <rdfs:comment xml:lang="en">Parent country.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology#"/>
+        <rdfs:label xml:lang="en">Parent Country</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:label xml:lang="en">hasGeometry</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-    
-
-
-    <!-- https://sws.geonames.org/parentCountry -->
-
-
-    <owl:ObjectProperty rdf:about="https://sws.geonames.org/parentCountry">
-        <rdfs:domain rdf:resource="https://sws.geonames.org/Feature"/>
-        <rdfs:range rdf:resource="https://sws.geonames.org/Feature"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
-        <rdfs:comment xml:lang="en">Parent country.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://sws.geonames.org/"/>
-        <rdfs:label xml:lang="en">Parent Country</rdfs:label>
-        <ns1:term_status>stable</ns1:term_status>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2396,8 +2406,8 @@
 
 
     <owl:Class rdf:about="http://era.europa.eu/ns#OperationalPoint">
+        <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
         <rdfs:comment xml:lang="en">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers.</rdfs:comment>
@@ -2446,6 +2456,17 @@
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">Vehicle Type</rdfs:label>
         <ns1:term_status>stable</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geonames.org/ontology#Feature -->
+
+
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="en">A geographical feature</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
     </owl:Class>
     
 
@@ -2499,17 +2520,6 @@
     
 
 
-    <!-- https://sws.geonames.org/Feature -->
-
-
-    <owl:Class rdf:about="https://sws.geonames.org/Feature">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-        <rdfs:comment xml:lang="en">A geographical feature</rdfs:comment>
-        <rdfs:label xml:lang="en">Feature</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2519,6 +2529,94 @@
      -->
 
 
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_1">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with tonnage circulated per track is inferior to 15000 tons/day/track</skos:definition>
+        <skos:prefLabel>N+1</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_2">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with directional Interlocking</skos:definition>
+        <skos:prefLabel>N+2</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_3">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with 45-second delay for directional interlocking</skos:definition>
+        <skos:prefLabel>N+3</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_4">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with Installation with track circuit announcement</skos:definition>
+        <skos:prefLabel>N+4</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_5">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines</skos:definition>
+        <skos:prefLabel>N+5</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_6">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working</skos:definition>
+        <skos:prefLabel>N+6</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_7">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with absence of a pedal announcement mechanism</skos:definition>
+        <skos:prefLabel>N+7</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://era.europa.eu/concepts/french-train-detection#N_8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/french-train-detection#N_8">
+        <rdf:type rdf:resource="http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <skos:definition xml:lang="en">Sections with 45-second delay for specific announcement reset devices</skos:definition>
+        <skos:prefLabel>N+8</skos:prefLabel>
+    </owl:NamedIndividual>
     
 
 
@@ -2551,94 +2649,6 @@
         <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
         <skos:definition xml:lang="en">None of rolling stock fire categories A or B shall be applied on a tunnel</skos:definition>
         <skos:prefLabel xml:lang="en">None</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_1 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_1">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with tonnage circulated per track is inferior to 15000 tons/day/track</skos:definition>
-        <skos:prefLabel>N+1</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_2 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_2">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with directional Interlocking</skos:definition>
-        <skos:prefLabel>N+2</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_3 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_3">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with 45-second delay for directional interlocking</skos:definition>
-        <skos:prefLabel>N+3</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_4 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_4">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with Installation with track circuit announcement</skos:definition>
-        <skos:prefLabel>N+4</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_5 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_5">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines</skos:definition>
-        <skos:prefLabel>N+5</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_6 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_6">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working</skos:definition>
-        <skos:prefLabel>N+6</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_7 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_7">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with absence of a pedal announcement mechanism</skos:definition>
-        <skos:prefLabel>N+7</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#N_8 -->
-
-
-    <owl:NamedIndividual rdf:about="http://era.europa.eu/concepts/train-detection#N_8">
-        <rdf:type rdf:resource="http://era.europa.eu/concepts/rs-fire#Category"/>
-        <skos:definition xml:lang="en">Sections with 45-second delay for specific announcement reset devices</skos:definition>
-        <skos:prefLabel>N+8</skos:prefLabel>
     </owl:NamedIndividual>
     
 
