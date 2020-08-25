@@ -1158,6 +1158,34 @@ era:preventRegenerativeBrakeUse a owl:DatatypeProperty, rdf:Property ; # ERATV 4
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" . 
 
+
+########## Current limitation ##########
+
+era:currentLimitationRequired a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.5.1
+    rdfs:label "current limitation required"@en ;
+    rdfs:comment "Indication of whether an on board current or power limitation function on vehicles is required."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean;
+    dct:created "2020-08-25"^^xsd:date ;
+    dct:modified "2020-08-25"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasCurrentLimitation a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.14
+    rdfs:label "has current limitation"@en ;
+    rdfs:comment "Electric units equipped with power or current limitation function."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:boolean;
+    dct:created "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-24"^^xsd:date ;
+    vs:term_status "stable" . 
+
+
+########## Pantograph ##########
+
+
+
 ########## Tunnel ##########
 
 era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.8.10
