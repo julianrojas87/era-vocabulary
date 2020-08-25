@@ -9,7 +9,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix geonames: <https://sws.geonames.org/> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
@@ -39,7 +39,7 @@ era: a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.3.8" .
+    owl:versionInfo "v0.3.9" .
     #owl:imports wgs:, geosparql:, geonames:.
 
 #################################################################
@@ -90,7 +90,7 @@ era:OperationalPoint a owl:Class, rdfs:Class ;
     rdfs:label "Operational Point"@en ;
     rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:subClassOf geosparql:Feature, wgs:SpatialThing;
+    rdfs:subClassOf geosparql:Feature, geonames:Feature;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
