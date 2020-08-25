@@ -38,7 +38,7 @@ era: a owl:Ontology ;
     dct:issued "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-25"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:creator <https://julianrojas.org#me> ;
+    dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
     owl:versionInfo "v0.3.8" .
     #owl:imports wgs:, geosparql:, geonames:.
