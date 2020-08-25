@@ -15,6 +15,9 @@
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
+@prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
+@prefix era-oph: <http://era.europa.eu/concepts/other-pantograph-heads#> .
+@prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 
@@ -83,6 +86,21 @@ era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Contact Line System"@en ;
     rdfs:comment "Abstract class representing contact line systems"@en .
+
+era-tph:TSIPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "TSI Pantograph Head"@en ;
+    rdfs:comment "Abstract class representing TSI compliant pantograph heads"@en .
+
+era-oph:OtherPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Pantograph Head"@en ;
+    rdfs:comment "Abstract class representing other accepted pantograph heads"@en .
+
+era-csm:ContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Contact Strip Material"@en ;
+    rdfs:comment "Abstract class representing contact strip materials"@en .
 
 era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
