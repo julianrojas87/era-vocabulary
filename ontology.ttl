@@ -12,6 +12,7 @@
 @prefix geonames: <http://www.geonames.org/ontology#> .
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
+@prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
@@ -38,7 +39,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-28"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
@@ -167,6 +168,16 @@ era:opType a owl:ObjectProperty, rdf:Property ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
+
+era:lineUICCode a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "line UIC code"@en ;
+    rdfs:comment "Line associated UIC code."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range era-uic:UICCode ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
 
 era:startPort a owl:ObjectProperty, rdf:Property ;
     rdfs:label "start port"@en ;
@@ -316,16 +327,6 @@ era:bidirectional a owl:DatatypeProperty, rdf:Property ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
-
-era:lineUICCode a owl:DatatypeProperty, rdf:Property ;
-    rdfs:label "line UIC code"@en ;
-    rdfs:comment "Line associated UIC code."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range xsd:string ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "unstable" .
 
 era:tunnelLength a owl:DatatypeProperty, rdf:Property ;
     rdfs:label "tunnel length"@en ;
@@ -1409,6 +1410,11 @@ era-op-types:OperationalPointType a owl:Class ; # Concepts of this class are dyn
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Operational Point Type"@en ;
     rdfs:comment "Abstract class representing the different existing types of Operational Points"@en .
+
+era-uic:UICCode a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "UIC Code"@en ;
+    rdfs:comment "Abstract class representing UIC codes"@en .
 
 era-vehicles:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
