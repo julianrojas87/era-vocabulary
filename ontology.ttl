@@ -22,6 +22,8 @@
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
+@prefix era-ess: <http://era.europa.eu/concepts/energy-supply-systems#> .
+@prefix era-oess: <http://era.europa.eu/concepts/other-energy-supply-systems#> .
 @prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
 @prefix era-oph: <http://era.europa.eu/concepts/other-pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
@@ -35,12 +37,12 @@ era:document a foaf:Document ;
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
-    dct:issued "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
+    dct:issued "2020-07-29"^^xsd:date ;
+    dct:modified "2020-08-28"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.3.9" .
+    owl:versionInfo "v0.4.0" .
     #owl:imports wgs:, geosparql:, geonames:.
 
 #################################################################
@@ -1096,16 +1098,28 @@ era:contactLineSystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:energySupplySystem  a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
+era:energySupplySystem  a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
     rdfs:label "energy supply system"@en ;
     rdfs:comment "Indication of the traction supply system (nominal voltage and frequency)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range xsd:string;
+    rdfs:range era-ess:EnergySupplySystem ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-28"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherEnergySupplySystem  a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
+    rdfs:label "other energy supply system"@en ;
+    rdfs:comment "Indication of other traction supply system (nominal voltage and frequency) that exceeds the range of the EN 50163:2004."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-ess:EnergySupplySystem ;
+    dct:created "2020-08-28"^^xsd:date ;
+    dct:modified "2020-08-28"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:energySupplySystemTSICompliant a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2.1
@@ -1451,6 +1465,16 @@ era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically
     rdfs:label "Contact Line System"@en ;
     rdfs:comment "Abstract class representing contact line systems"@en .
 
+era-ess:EnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Energy Supply System"@en ;
+    rdfs:comment "Abstract class representing energy supply systems"@en .
+
+era-oess:OtherEnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Energy Supply System"@en ;
+    rdfs:comment "Abstract class representing other energy supply systems"@en .
+
 era-tph:TSIPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "TSI Pantograph Head"@en ;
@@ -1595,6 +1619,11 @@ era-ftds:N_7 a era-ftds:FrenchTrainDetectionSystemLimitation ;
 era-ftds:N_8 a era-ftds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+8" ;
     skos:definition "Sections with 45-second delay for specific announcement reset devices"@en .
+
+########## Energy supply systems ##########
+
+era-ess:DC_600_V a era-ess:EnergySuplySystem ; # This was the only value not used in RINF and ERATV among the possible ones
+    skos:prefLabel "DC 600 V" .
 
 ########## Rolling stock fire categories ##########
 
