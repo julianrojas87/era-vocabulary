@@ -1366,7 +1366,7 @@ era:oclType a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.9
     vs:term_status "unstable" .
 
 era:hasAutomaticDroppingDevice a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.11
-    rdfs:label "has automatic dropping device "@en ;
+    rdfs:label "has automatic dropping device"@en ;
     rdfs:comment "Automatic dropping device (ADD) fitted (to be indicated for each energy supply system the vehicle is equipped for)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
@@ -1396,6 +1396,16 @@ era:nationalRollingStockFireCategory a owl:DatatypeProperty, rdf:Property ; # RI
     rdfs:range xsd:string ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:fireSafetyCategory a owl:ObjectProperty, rdf:Property ; # ERATV 4.4.1
+    rdfs:label "fire safety category"@en ;
+    rdfs:comment "Fire safety category for tunnels."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-rs-fire:Category;
+    dct:created "2020-08-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
     vs:term_status "stable" .
 
 ########## Train length ##########
@@ -1654,3 +1664,12 @@ era-rs-fire:b a era-rs-fire:Category ;
 era-rs-fire:none a era-rs-fire:Category ;
     skos:prefLabel "None"@en ;
     skos:definition "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .
+
+era-rs-fire:otm a era-rs-fire:Category ;
+    skos:prefLabel "OTM"@en ;
+    skos:definition "OTM as defined in 4.2.10.1.2 of TSI LOC&PAS 1302/2014"@en .
+
+era-rs-fire:srt-tsi a era-rs-fire:Category ;
+    skos:prefLabel "SRT TSI Freight Locomotive"@en ;
+    skos:definition "SRT TSI Freight Locomotive as defined in 4.2.10.1.2"@en .
+
