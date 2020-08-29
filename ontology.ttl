@@ -1277,7 +1277,9 @@ era:otherContactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.
     rdfs:label "contact strip material"@en ;
     rdfs:comment "Indication of which other contact strip materials are permitted to be used."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Vehicle ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
     rdfs:range era-ocsm:OtherContactStripMaterial;
     dct:created "2020-08-29"^^xsd:date ;
     dct:modified "2020-08-29"^^xsd:date ;
