@@ -28,6 +28,7 @@
 @prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
 @prefix era-oph: <http://era.europa.eu/concepts/other-pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
+@prefix era-ocsm: <http://era.europa.eu/concepts/other-contact-strip-materials#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 
 
@@ -1260,15 +1261,27 @@ era:otherPantographHead a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.2
     dct:modified "2020-08-25"^^xsd:date ;
     vs:term_status "stable" .
 
-era:contactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4
+era:contactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4 and ERATV 4.10.10
     rdfs:label "contact strip material"@en ;
     rdfs:comment "Indication of which contact strip materials are permitted to be used."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
     rdfs:range era-csm:ContactStripMaterial;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
-    vs:term_status "stable" .
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherContactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4
+    rdfs:label "contact strip material"@en ;
+    rdfs:comment "Indication of which other contact strip materials are permitted to be used."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range era-ocsm:OtherContactStripMaterial;
+    dct:created "2020-08-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
 
 era:permittedContactForce a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.5.2
     rdfs:label "permitted contact force"@en ;
@@ -1303,16 +1316,6 @@ era:automaticDroppingDeviceRequired a owl:DatatypeProperty, rdf:Property ; # RIN
 era:vehiclePantographHead a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.6
     rdfs:label "vehicle pantograph head"@en ;
     rdfs:comment "Pantograph head geometry (to be indicated for each energy supply system the vehicle is equipped for)."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string;
-    dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
-    vs:term_status "unstable" .
-
-era:vehicleContactStripMaterial a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.10
-    rdfs:label "vehicle contact strip material"@en ;
-    rdfs:comment "Material of pantograph contact strip the vehicle may be equipped with (to be indicated for each energy supply system the vehicle is equipped for)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
     rdfs:range xsd:string;
@@ -1495,6 +1498,11 @@ era-csm:ContactStripMaterial a owl:Class ; # Concepts of this class are dynamica
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Contact Strip Material"@en ;
     rdfs:comment "Abstract class representing contact strip materials"@en .
+
+era-ocsm:OtherContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Contact Strip Material"@en ;
+    rdfs:comment "Abstract class representing other contact strip materials"@en .
 
 era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
