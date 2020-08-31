@@ -17,6 +17,7 @@
 @prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
+@prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
@@ -498,14 +499,14 @@ era:vehicleLength a owl:DatatypeProperty, rdf:Property ; # ERATV 4.8.1
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:axleSpacing a owl:DatatypeProperty, rdf:Property ; # ERATV 4.5.3.4
+era:axleSpacing a owl:ObjectProperty, rdf:Property ; # ERATV 4.5.3.4
     rdfs:label "axle spacing"@en ;
-    rdfs:comment "Position of the axles along the unit."@en ;
+    rdfs:comment "Position of the axles along the unit. a: Distance between axles; b: Distance from end axle to the end of the nearest coupling plane; c: distance between two inside axles."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-ap:AxlePosition ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:permissiblePayload a owl:DatatypeProperty, rdf:Property ; # ERATV 4.5.1
@@ -1626,6 +1627,11 @@ era-gaugings:GaugingProfile a owl:Class ; # Concepts of this class are dynamical
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Gauging Profile"@en ;
     rdfs:comment "Abstract class representing gauging profiles"@en .
+
+era-ap:AxlePosition a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Axle Position"@en ;
+    rdfs:comment "Abstract class representing axle positions"@en .
 
 era-tds:TrainDetectionSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
