@@ -40,11 +40,11 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-31"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.4.0" .
+    owl:versionInfo "v0.9.0" .
     #owl:imports wgs:, geosparql:, geonames:.
 
 #################################################################
@@ -533,12 +533,12 @@ era:gaugingProfile a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.3.1.1 and
 
 era:gaugingCheckLocation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.1.2
     rdfs:label "gauging check location"@en ;
-    rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging."@en ;
+    rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range xsd:boolean ;
+    rdfs:range xsd:double ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:gaugingTransversalDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.1.3
