@@ -24,14 +24,10 @@
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
 @prefix era-ess: <http://era.europa.eu/concepts/energy-supply-systems#> .
-@prefix era-oess: <http://era.europa.eu/concepts/other-energy-supply-systems#> .
 @prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
-@prefix era-oph: <http://era.europa.eu/concepts/other-pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
-@prefix era-ocsm: <http://era.europa.eu/concepts/other-contact-strip-materials#> .
-@prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
+@prefix era-rsf: <http://era.europa.eu/concepts/rolling-stock-fire#> .
 @prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
-@prefix era-ophs: <http://era.europa.eu/concepts/other-platform-heights#> .
 @prefix era-gsmr: <http://era.europa.eu/concepts/gsmr-networks#> .
 @prefix era-rsc: <http://era.europa.eu/concepts/radio-system-compatibilities#> .
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
@@ -1124,7 +1120,7 @@ era:otherEnergySupplySystem  a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range era-ess:EnergySupplySystem ;
+    rdfs:range era-ess:OtherEnergySupplySystem ;
     dct:created "2020-08-28"^^xsd:date ;
     dct:modified "2020-08-28"^^xsd:date ;
     vs:term_status "unstable" .
@@ -1261,7 +1257,7 @@ era:otherPantographHead a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.2
     rdfs:comment "Indication of which other pantograph heads are allowed to be used."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-oph:OtherPantographHead;
+    rdfs:range era-tph:OtherPantographHead;
     dct:created "2020-08-25"^^xsd:date ;
     dct:modified "2020-08-25"^^xsd:date ;
     vs:term_status "stable" .
@@ -1285,7 +1281,7 @@ era:otherContactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range era-ocsm:OtherContactStripMaterial;
+    rdfs:range era-csm:OtherContactStripMaterial;
     dct:created "2020-08-29"^^xsd:date ;
     dct:modified "2020-08-29"^^xsd:date ;
     vs:term_status "unstable" .
@@ -1388,7 +1384,7 @@ era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1
     rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Tunnel ;
-    rdfs:range era-rs-fire:Category ;
+    rdfs:range era-rsf:Category ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
@@ -1408,7 +1404,7 @@ era:fireSafetyCategory a owl:ObjectProperty, rdf:Property ; # ERATV 4.4.1
     rdfs:comment "Fire safety category for tunnels."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range era-rs-fire:Category;
+    rdfs:range era-rsf:Category;
     dct:created "2020-08-29"^^xsd:date ;
     dct:modified "2020-08-29"^^xsd:date ;
     vs:term_status "stable" .
@@ -1434,7 +1430,7 @@ era:otherPlatformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
     rdfs:comment "Other Platform heights for which the vehicle is de­signed."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range era-ophs:OtherPlatformHeight ;
+    rdfs:range era-ph:OtherPlatformHeight ;
     dct:created "2020-08-31"^^xsd:date ;
     dct:modified "2020-08-31"^^xsd:date ;
     vs:term_status "unstable" .
@@ -1666,7 +1662,7 @@ era-ess:EnergySuplySystem a owl:Class ; # Concepts of this class are dynamically
     rdfs:label "Energy Supply System"@en ;
     rdfs:comment "Abstract class representing energy supply systems"@en .
 
-era-oess:OtherEnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+era-ess:OtherEnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Energy Supply System"@en ;
     rdfs:comment "Abstract class representing other energy supply systems"@en .
@@ -1676,7 +1672,7 @@ era-tph:TSIPantographHead a owl:Class ; # Concepts of this class are dynamically
     rdfs:label "TSI Pantograph Head"@en ;
     rdfs:comment "Abstract class representing TSI compliant pantograph heads"@en .
 
-era-oph:OtherPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-tph:OtherPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Pantograph Head"@en ;
     rdfs:comment "Abstract class representing other accepted pantograph heads"@en .
@@ -1686,12 +1682,12 @@ era-csm:ContactStripMaterial a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Contact Strip Material"@en ;
     rdfs:comment "Abstract class representing contact strip materials"@en .
 
-era-ocsm:OtherContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-csm:OtherContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Contact Strip Material"@en ;
     rdfs:comment "Abstract class representing other contact strip materials"@en .
 
-era-rs-fire:Category a owl:Class ;
+era-rsf:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Rolling Stock Fire Category"@en ;
     rdfs:comment "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en .
@@ -1701,7 +1697,7 @@ era-ph:PlatformHeight a owl:Class ; # Concepts of this class are dynamically gen
     rdfs:label "Platform Height"@en ;
     rdfs:comment "Abstract class representing predefined platform heights"@en .
 
-era-ophs:OtherPlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-ph:OtherPlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Platform Height"@en ;
     rdfs:comment "Abstract class representing other platform heights"@en .
@@ -1862,23 +1858,23 @@ era-ess:DC_600_V a era-ess:EnergySuplySystem ; # This was the only value not use
 
 ########## Rolling stock fire categories ##########
 
-era-rs-fire:a a era-rs-fire:Category ;
+era-rsf:a a era-rsf:Category ;
     skos:prefLabel "A" ;
     skos:definition "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A"@en .
 
-era-rs-fire:b a era-rs-fire:Category ;
+era-rsf:b a era-rsf:Category ;
     skos:prefLabel "B" ;
     skos:definition "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B"@en .
 
-era-rs-fire:none a era-rs-fire:Category ;
+era-rsf:none a era-rsf:Category ;
     skos:prefLabel "None"@en ;
     skos:definition "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .
 
-era-rs-fire:otm a era-rs-fire:Category ;
+era-rsf:otm a era-rsf:Category ;
     skos:prefLabel "OTM"@en ;
     skos:definition "OTM as defined in 4.2.10.1.2 of TSI LOC&PAS 1302/2014"@en .
 
-era-rs-fire:srt-tsi a era-rs-fire:Category ;
+era-rsf:srt-tsi a era-rsf:Category ;
     skos:prefLabel "SRT TSI Freight Locomotive"@en ;
     skos:definition "SRT TSI Freight Locomotive as defined in 4.2.10.1.2"@en .
 
