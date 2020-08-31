@@ -1452,6 +1452,26 @@ era:etcsSystemCompatibility a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.
     dct:modified "2020-08-31"^^xsd:date ;
     vs:term_status "unstable" .
 
+era:trainIntegrityOnBoardRequired a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.2.8
+    rdfs:label "train integrity on-board required"@en ;
+    rdfs:comment "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasTrainIntegrityConfirmation a owl:DatatypeProperty, rdf:Property ; # ERATV 4.13.1.9
+    rdfs:label "has train integrity confirmation"@en ;
+    rdfs:comment "Indication of on-board management system about completeness of the train information."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
 ########## GSM-R ##########
 ########## Class B ##########
 
