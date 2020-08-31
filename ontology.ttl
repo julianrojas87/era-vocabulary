@@ -18,7 +18,6 @@
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
-@prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
@@ -615,7 +614,7 @@ era:frenchTrainDetectionSystemLimitation a owl:ObjectProperty, rdf:Property ; # 
     rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-ftds:FrenchTrainDetectionSystemLimitation ;
+    rdfs:range era-tds:FrenchTrainDetectionSystemLimitation ;
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
@@ -1632,7 +1631,7 @@ era-tds:TrainDetectionSystem a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Train Detection System"@en ;
     rdfs:comment "Abstract class representing train detection systems"@en .
 
-era-ftds:FrenchTrainDetectionSystemLimitation a owl:Class ;
+era-tds:FrenchTrainDetectionSystemLimitation a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "French Train Detection System Limitation"@en ;
     rdfs:comment "Abstract class representing french train detection systems limitations"@en .
@@ -1819,35 +1818,35 @@ era-vehicles:hauledSpecialVehicle a era-vehicles:SubCategory ;
 
 ########## French train detection system limitations ##########
 
-era-ftds:N_1 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_1 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+1" ;
     skos:definition "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
 
-era-ftds:N_2 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_2 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+2" ;
     skos:definition "Sections with directional Interlocking"@en .
 
-era-ftds:N_3 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_3 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+3" ;
     skos:definition "Sections with 45-second delay for directional interlocking"@en .
 
-era-ftds:N_4 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_4 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+4" ;
     skos:definition "Sections with Installation with track circuit announcement"@en .
 
-era-ftds:N_5 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_5 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+5" ;
     skos:definition "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
 
-era-ftds:N_6 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_6 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+6" ;
     skos:definition "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
 
-era-ftds:N_7 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_7 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+7" ;
     skos:definition "Sections with absence of a pedal announcement mechanism"@en .
 
-era-ftds:N_8 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_8 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+8" ;
     skos:definition "Sections with 45-second delay for specific announcement reset devices"@en .
 
