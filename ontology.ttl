@@ -30,6 +30,8 @@
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
 @prefix era-ocsm: <http://era.europa.eu/concepts/other-contact-strip-materials#> .
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
+@prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
+@prefix era-ophs: <http://era.europa.eu/concepts/other-platform-heights#> .
 
 
 era:document a foaf:Document ;
@@ -40,7 +42,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-29"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
@@ -1409,8 +1411,37 @@ era:fireSafetyCategory a owl:ObjectProperty, rdf:Property ; # ERATV 4.4.1
     vs:term_status "stable" .
 
 ########## Train length ##########
+
+# TODO: To be defined when Operational Track's Sidings and Platforms are defined
+
 ########## Platform height and access and egress ##########
+
+era:platformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
+    rdfs:label "platform height"@en ;
+    rdfs:comment "Platform heights for which the vehicle is de­signed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ph:PlatformHeight ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherPlatformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
+    rdfs:label "other platform height"@en ;
+    rdfs:comment "Other Platform heights for which the vehicle is de­signed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ophs:OtherPlatformHeight ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+# TODO: To be completed when Operational Track's Sidings and Platforms are defined
+
 ########## ETCS ##########
+
+
+
 ########## GSM-R ##########
 ########## Class B ##########
 
@@ -1520,6 +1551,16 @@ era-rs-fire:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Rolling Stock Fire Category"@en ;
     rdfs:comment "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en .
+
+era-ph:PlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Platform Height"@en ;
+    rdfs:comment "Abstract class representing predefined platform heights"@en .
+
+era-ophs:OtherPlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Platform Height"@en ;
+    rdfs:comment "Abstract class representing other platform heights"@en .
 
 #################################################################
 #
