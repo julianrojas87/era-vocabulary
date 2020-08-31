@@ -32,7 +32,10 @@
 @prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
 @prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
 @prefix era-ophs: <http://era.europa.eu/concepts/other-platform-heights#> .
-
+@prefix era-gsmr: <http://era.europa.eu/concepts/gsmr-networks#> .
+@prefix era-rsc: <http://era.europa.eu/concepts/radio-system-compatibilities#> .
+@prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
+@prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 
 era:document a foaf:Document ;
     foaf:primaryTopic era: ;
@@ -1473,7 +1476,118 @@ era:hasTrainIntegrityConfirmation a owl:DatatypeProperty, rdf:Property ; # ERATV
     vs:term_status "stable" .
 
 ########## GSM-R ##########
+
+era:gsmrNetworkCoverage a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.5
+    rdfs:label "gsm-r network coverage"@en ;
+    rdfs:comment "GSM-R networks covered by a roaming agreement)"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:voiceGSMRNetwork a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.10
+    rdfs:label "voice GSM-R network"@en ;
+    rdfs:comment "Voice SIM Card GSM-R Home Network"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:dataGSMRNetwork a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.11
+    rdfs:label "data GSM-R network"@en ;
+    rdfs:comment "Data SIM Card GSM-R Home Network"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:usesGroup555 a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.3.4
+    rdfs:label "uses group 555"@en ;
+    rdfs:comment "Indication if group 555 is needed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:voiceRadioCompatible a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.9 and ERATV 4.13.2.5
+    rdfs:label "voice radio compatible"@en ;
+    rdfs:comment "Radio requirements used for demonstrating technical compatibility voice"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-rsc:RadioSystemCompatibility ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:dataRadioCompatible a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.10 and ERATV 4.13.2.8
+    rdfs:label "data radio compatible"@en ;
+    rdfs:comment "Radio requirements used for demonstrating technical compatibility data"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-rsc:RadioSystemCompatibility ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+
 ########## Class B ##########
+
+era:protectionLegacySystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.5.3 and ERATV 4.13.1.5
+    rdfs:label "protection legacy system"@en ;
+    rdfs:comment "Indication of which class B system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-tpls:TrainProtectionLegacySystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherProtectionLegacySystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.1.5
+    rdfs:label "other protection legacy system"@en ;
+    rdfs:comment "Indication of which other train protection system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-tpls:OtherTrainProtectionLegacySystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+
+era:legacyRadioSystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.6.1 and ERATV 4.13.2.3
+    rdfs:label "legacy radio system"@en ;
+    rdfs:comment "Indication of radio legacy systems installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-lrs:LegacyRadioSystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherLegacyRadioSystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.3
+    rdfs:label "other legacy radio system"@en ;
+    rdfs:comment "Indication of which other legacy radio system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-lrs:OtherLegacyRadioSystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
 
 
 #################################################################
@@ -1592,11 +1706,35 @@ era-ophs:OtherPlatformHeight a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Other Platform Height"@en ;
     rdfs:comment "Abstract class representing other platform heights"@en .
 
-#################################################################
-#
-#    Data Types
-#
-#################################################################
+era-gsmr:GSMRNetwork a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "GSM-R Network"@en ;
+    rdfs:comment "Abstract class representing GSM-R networks"@en .
+
+era-rsc:RadioSystemCompatibility a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Radio System Compatibility"@en ;
+    rdfs:comment "Abstract class representing radio system compatibilities"@en .
+
+era-tpls:TrainProtectionLegacySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Train Protection Legacy System"@en ;
+    rdfs:comment "Abstract class representing train protection legacy systems"@en .
+
+era-tpls:OtherTrainProtectionLegacySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Train Protection Legacy System"@en ;
+    rdfs:comment "Abstract class representing other train protection legacy systems"@en .
+
+era-lrs:LegacyRadioSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Legacy Radio System"@en ;
+    rdfs:comment "Abstract class representing legacy radio systems"@en .
+
+era-lrs:OtherLegacyRadioSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Legacy Radio System"@en ;
+    rdfs:comment "Abstract class representing other legacy radio systems"@en .
 
 
 #################################################################
@@ -1743,4 +1881,15 @@ era-rs-fire:otm a era-rs-fire:Category ;
 era-rs-fire:srt-tsi a era-rs-fire:Category ;
     skos:prefLabel "SRT TSI Freight Locomotive"@en ;
     skos:definition "SRT TSI Freight Locomotive as defined in 4.2.10.1.2"@en .
+
+########## Radio System Compatibilities ##########
+
+era-rsc:Not_Defined a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "Not Defined"@en .
+
+era-rsc:RSC-EU-0 a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "RSC-EU-0"@en .
+
+era-rsc:RSC-NP-CCS7.4a a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "RSC-EU-0"@en .
 
