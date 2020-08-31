@@ -1440,7 +1440,17 @@ era:otherPlatformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
 
 ########## ETCS ##########
 
-
+era:etcsSystemCompatibility a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.2.9 and ERATV 4.13.1.8
+    rdfs:label "ETCS system compatibility"@en ;
+    rdfs:comment "ETCS requirements used for demonstrating technical compatibility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:string ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
 
 ########## GSM-R ##########
 ########## Class B ##########
