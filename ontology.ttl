@@ -9,7 +9,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix eu-countries: <http://publications.europa.eu/resource/authority/country> .
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
@@ -51,8 +51,8 @@ era: a owl:Ontology ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.9.0" .
-    #owl:imports wgs:, geosparql:, geonames:.
+    owl:versionInfo "v0.9.0" ;
+    owl:imports eu-countries:, wgs:, geosparql: .
 
 #################################################################
 #
@@ -102,9 +102,9 @@ era:OperationalPoint a owl:Class, rdfs:Class ;
     rdfs:label "Operational Point"@en ;
     rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:subClassOf geosparql:Feature, geonames:Feature;
+    rdfs:subClassOf geosparql:Feature, wgs:SpatialThing ; #geonames:Feature;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
 era:Track a owl:Class, rdfs:Class ;
@@ -213,12 +213,12 @@ era:endPort a owl:ObjectProperty, rdf:Property ;
 
 era:belongsToNode a owl:ObjectProperty, rdf:Property ;
     rdfs:label "belongs to node"@en ;
-    rdfs:comment "Indicates the micro node to which a node port belongs to."@en ;
+    rdfs:comment "Indicates the micro node that a node port belongs to."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:NodePort ;
     rdfs:range era:MicroNode ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
 era:startLocation a owl:ObjectProperty, rdf:Property ;
@@ -295,6 +295,18 @@ era:manufacturer a owl:ObjectProperty, rdf:Property ;
     rdfs:range era-manufacturers:Manufacturer ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:inCountry a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "in country"@en ;
+    rdfs:comment "Indicates the country in which the entity resides."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:OperationalPoint era:VehicleType )
+                ] ;
+    rdfs:range skos:Concept ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -2012,4 +2024,3 @@ era-rsc:RSC-EU-0 a era-rsc:RadioSystemCompatibility ;
 
 era-rsc:RSC-NP-CCS7.4a a era-rsc:RadioSystemCompatibility ;
     skos:prefLabel "RSC-EU-0"@en .
-
