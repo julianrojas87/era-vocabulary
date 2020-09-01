@@ -12,21 +12,32 @@
 @prefix geonames: <http://www.geonames.org/ontology#> .
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
+@prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
+@prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
-@prefix era-ftds: <http://era.europa.eu/concepts/french-train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
+@prefix era-mscd: <http://era.europa.eu/concepts/max-speed-cant-deficiency#> .
+@prefix era-ri: <http://era.europa.eu/concepts/rail-inclinations#> .
+@prefix era-gcf: <http://era.europa.eu/concepts/gauge-changeover-facilities#> .
+@prefix era-ebp: <http://era.europa.eu/concepts/emergency-braking-profiles#> .
+@prefix era-bwp: <http://era.europa.eu/concepts/brake-weight-percentages#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
+@prefix era-ess: <http://era.europa.eu/concepts/energy-supply-systems#> .
 @prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
-@prefix era-oph: <http://era.europa.eu/concepts/other-pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
-@prefix era-rs-fire: <http://era.europa.eu/concepts/rs-fire#> .
-
+@prefix era-rsf: <http://era.europa.eu/concepts/rolling-stock-fire#> .
+@prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
+@prefix era-esc: <http://era.europa.eu/concepts/etcs-system-compatibilities#> .
+@prefix era-gsmr: <http://era.europa.eu/concepts/gsmr-networks#> .
+@prefix era-rsc: <http://era.europa.eu/concepts/radio-system-compatibilities#> .
+@prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
+@prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 
 era:document a foaf:Document ;
     foaf:primaryTopic era: ;
@@ -35,12 +46,12 @@ era:document a foaf:Document ;
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
-    dct:issued "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
+    dct:issued "2020-07-29"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.3.9" .
+    owl:versionInfo "v0.9.0" .
     #owl:imports wgs:, geosparql:, geonames:.
 
 #################################################################
@@ -165,6 +176,16 @@ era:opType a owl:ObjectProperty, rdf:Property ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
+
+era:lineUICCode a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "line UIC code"@en ;
+    rdfs:comment "Line associated UIC code."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range era-uic:UICCode ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
 
 era:startPort a owl:ObjectProperty, rdf:Property ;
     rdfs:label "start port"@en ;
@@ -314,16 +335,6 @@ era:bidirectional a owl:DatatypeProperty, rdf:Property ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
-
-era:lineUICCode a owl:DatatypeProperty, rdf:Property ;
-    rdfs:label "line UIC code"@en ;
-    rdfs:comment "Line associated UIC code."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range xsd:string ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "unstable" .
 
 era:tunnelLength a owl:DatatypeProperty, rdf:Property ;
     rdfs:label "tunnel length"@en ;
@@ -493,14 +504,14 @@ era:vehicleLength a owl:DatatypeProperty, rdf:Property ; # ERATV 4.8.1
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:axleSpacing a owl:DatatypeProperty, rdf:Property ; # ERATV 4.5.3.4
+era:axleSpacing a owl:ObjectProperty, rdf:Property ; # ERATV 4.5.3.4
     rdfs:label "axle spacing"@en ;
-    rdfs:comment "Position of the axles along the unit."@en ;
+    rdfs:comment "Position of the axles along the unit. a: Distance between axles; b: Distance from end axle to the end of the nearest coupling plane; c: distance between two inside axles."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-ap:AxlePosition ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:permissiblePayload a owl:DatatypeProperty, rdf:Property ; # ERATV 4.5.1
@@ -529,12 +540,12 @@ era:gaugingProfile a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.3.1.1 and
 
 era:gaugingCheckLocation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.1.2
     rdfs:label "gauging check location"@en ;
-    rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging."@en ;
+    rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range xsd:boolean ;
+    rdfs:range xsd:double ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:gaugingTransversalDocument a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.3.1.3
@@ -610,7 +621,7 @@ era:frenchTrainDetectionSystemLimitation a owl:ObjectProperty, rdf:Property ; # 
     rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-ftds:FrenchTrainDetectionSystemLimitation ;
+    rdfs:range era-tds:FrenchTrainDetectionSystemLimitation ;
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
@@ -663,7 +674,7 @@ era:hotAxleBoxDetectorLocation a owl:DatatypeProperty, rdf:Property ; # RINF 1.1
     rdfs:comment "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range xsd:string ;
+    rdfs:range xsd:double ;
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "unstable" .
@@ -685,7 +696,17 @@ era:axleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 
     rdfs:domain era:VehicleType ;
     rdfs:range era-am:AxleBearingMonitoring ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:otherAxleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 4.9.2
+    rdfs:label "other axle bearing condition monitoring"@en ;
+    rdfs:comment "Other Axle bearing condition monitoring."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-am:OtherAxleBearingMonitoring ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 
@@ -711,26 +732,36 @@ era:maximumPermittedSpeed a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:railInclination a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
+era:railInclination a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
     rdfs:label "rail inclination"@en ;
     rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range xsd:integer ;
+    rdfs:range era-ri:RailInclination ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
-era:maximumSpeedAndCantDeficiency a owl:DataTypeProperty, rdf:Property ; # ERATV 4.6.4
+era:otherRailInclination a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.5
+    rdfs:label "rail inclination"@en ;
+    rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ri:OtherRailInclination ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:maximumSpeedAndCantDeficiency a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
     rdfs:label "maximum speed and cant deficiency"@en ;
     rdfs:comment "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-mscd:MaxSpeedCantDeficiency ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 ########## Wheelset ##########
@@ -758,6 +789,26 @@ era:minimumWheelDiameter a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.5
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
+
+era:wheelSetGaugeChangeoverFacility a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
+    rdfs:label "wheelset gauge changeover facility"@en ;
+    rdfs:comment "Wheelset gauge changeover facility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gcf:GaugeChangeoverFacility ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherWheelSetGaugeChangeoverFacility a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
+    rdfs:label "other wheelset gauge changeover facility"@en ;
+    rdfs:comment "Other wheelset gauge changeover facility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gcf:OtherGaugeChangeoverFacility ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
 
 ########## Minimum curve ##########
 
@@ -826,25 +877,25 @@ era:additionalBrakingInformationDocument a owl:DatatypeProperty, rdf:Property ; 
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "unstable" .
 
-era:emergencyBraking a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.5
+era:emergencyBrake a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.5
     rdfs:label "emergency braking"@en ;
     rdfs:comment "Stopping distance and deceleration profile for each load condition per design maximum speed."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-ebp:EmergencyBrakingProfile ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
-    vs:term_status "unstable" .
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
 
-era:brakeWeightPercentage a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.6
+era:brakeWeightPercentage a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.6
     rdfs:label "brake weight percentage"@en ;
     rdfs:comment "Brake weight percentage (lambda) or Braked mass."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-bwp:BrakeWeightPercentage ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
-    vs:term_status "unstable" .
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
 
 era:thermalCapacityTSIReference a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.2.1.1
     rdfs:label "thermal capacity TSI reference"@en ;
@@ -1083,6 +1134,16 @@ era:snowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
+era:otherSnowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
+    rdfs:label "other snow ice hail conditions"@en ;
+    rdfs:comment "Other Snow, ice and hail conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ic:OtherIceCondition ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
+
 
 ########## Voltages and frequencies ##########
 
@@ -1096,16 +1157,28 @@ era:contactLineSystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:energySupplySystem  a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
+era:energySupplySystem  a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
     rdfs:label "energy supply system"@en ;
     rdfs:comment "Indication of the traction supply system (nominal voltage and frequency)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range xsd:string;
+    rdfs:range era-ess:EnergySupplySystem ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-08-28"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherEnergySupplySystem  a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
+    rdfs:label "other energy supply system"@en ;
+    rdfs:comment "Indication of other traction supply system (nominal voltage and frequency) that exceeds the range of the EN 50163:2004."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-ess:OtherEnergySupplySystem ;
+    dct:created "2020-08-28"^^xsd:date ;
+    dct:modified "2020-08-28"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:energySupplySystemTSICompliant a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.2.1
@@ -1115,8 +1188,8 @@ era:energySupplySystemTSICompliant a owl:DatatypeProperty, rdf:Property ; # RINF
     rdfs:domain era:Track ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
-    vs:term_status "unstable" . 
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" . 
 
 era:umax2 a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.2.1.3
     rdfs:label "umax2"@en ;
@@ -1240,20 +1313,34 @@ era:otherPantographHead a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.2
     rdfs:comment "Indication of which other pantograph heads are allowed to be used."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-oph:OtherPantographHead;
+    rdfs:range era-tph:OtherPantographHead;
     dct:created "2020-08-25"^^xsd:date ;
     dct:modified "2020-08-25"^^xsd:date ;
     vs:term_status "stable" .
 
-era:contactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4
+era:contactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4 and ERATV 4.10.10
     rdfs:label "contact strip material"@en ;
     rdfs:comment "Indication of which contact strip materials are permitted to be used."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
     rdfs:range era-csm:ContactStripMaterial;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
-    vs:term_status "stable" .
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherContactStripMaterial a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.4
+    rdfs:label "contact strip material"@en ;
+    rdfs:comment "Indication of which other contact strip materials are permitted to be used."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-csm:OtherContactStripMaterial;
+    dct:created "2020-08-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "unstable" .
 
 era:permittedContactForce a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.2.5.2
     rdfs:label "permitted contact force"@en ;
@@ -1295,25 +1382,15 @@ era:vehiclePantographHead a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.6
     dct:modified "2020-08-25"^^xsd:date ;
     vs:term_status "unstable" .
 
-era:vehicleContactStripMaterial a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.10
-    rdfs:label "vehicle contact strip material"@en ;
-    rdfs:comment "Material of pantograph contact strip the vehicle may be equipped with (to be indicated for each energy supply system the vehicle is equipped for)."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string;
-    dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
-    vs:term_status "unstable" .
-
 era:vehicleContactForce a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.15
     rdfs:label "vehicle contact force"@en ;
     rdfs:comment "Mean contact force."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string;
+    rdfs:range xsd:integer;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-08-25"^^xsd:date ;
-    vs:term_status "unstable" .
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
 
 era:numberOfPantographsInContactWithOCL a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.7
     rdfs:label "number of pantpgraphs in contact with OCL"@en ;
@@ -1346,7 +1423,7 @@ era:oclType a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.9
     vs:term_status "unstable" .
 
 era:hasAutomaticDroppingDevice a owl:DatatypeProperty, rdf:Property ; # ERATV 4.10.11
-    rdfs:label "has automatic dropping device "@en ;
+    rdfs:label "has automatic dropping device"@en ;
     rdfs:comment "Automatic dropping device (ADD) fitted (to be indicated for each energy supply system the vehicle is equipped for)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
@@ -1363,7 +1440,7 @@ era:rollingStockFireCategory a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1
     rdfs:comment "Applicable rolling stock fire category for a tunnel."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Tunnel ;
-    rdfs:range era-rs-fire:Category ;
+    rdfs:range era-rsf:Category ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
@@ -1378,11 +1455,193 @@ era:nationalRollingStockFireCategory a owl:DatatypeProperty, rdf:Property ; # RI
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
+era:fireSafetyCategory a owl:ObjectProperty, rdf:Property ; # ERATV 4.4.1
+    rdfs:label "fire safety category"@en ;
+    rdfs:comment "Fire safety category for tunnels."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-rsf:Category;
+    dct:created "2020-08-29"^^xsd:date ;
+    dct:modified "2020-08-29"^^xsd:date ;
+    vs:term_status "stable" .
+
 ########## Train length ##########
+
+# TODO: To be defined when Operational Track's Sidings and Platforms are defined
+
 ########## Platform height and access and egress ##########
+
+era:platformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
+    rdfs:label "platform height"@en ;
+    rdfs:comment "Platform heights for which the vehicle is de­signed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ph:PlatformHeight ;
+    dct:created "2020-07-29"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherPlatformHeight a owl:ObjectProperty, rdf:Property ; # ERATV 4.12.3.1
+    rdfs:label "other platform height"@en ;
+    rdfs:comment "Other Platform heights for which the vehicle is de­signed."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ph:OtherPlatformHeight ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+# TODO: To be completed when Operational Track's Sidings and Platforms are defined
+
 ########## ETCS ##########
+
+era:etcsSystemCompatibility a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.2.9 and ERATV 4.13.1.8
+    rdfs:label "ETCS system compatibility"@en ;
+    rdfs:comment "ETCS requirements used for demonstrating technical compatibility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-ecs:ETCSSystemCompatibility ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:trainIntegrityOnBoardRequired a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.2.8
+    rdfs:label "train integrity on-board required"@en ;
+    rdfs:comment "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasTrainIntegrityConfirmation a owl:DatatypeProperty, rdf:Property ; # ERATV 4.13.1.9
+    rdfs:label "has train integrity confirmation"@en ;
+    rdfs:comment "Indication of on-board management system about completeness of the train information."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
 ########## GSM-R ##########
+
+era:gsmrNetworkCoverage a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.5
+    rdfs:label "gsm-r network coverage"@en ;
+    rdfs:comment "GSM-R networks covered by a roaming agreement)"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:voiceGSMRNetwork a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.10
+    rdfs:label "voice GSM-R network"@en ;
+    rdfs:comment "Voice SIM Card GSM-R Home Network"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:dataGSMRNetwork a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.11
+    rdfs:label "data GSM-R network"@en ;
+    rdfs:comment "Data SIM Card GSM-R Home Network"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gsmr:GSMRNetwork ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:usesGroup555 a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.3.3.4 and ERATV 4.13.2.12
+    rdfs:label "uses group 555"@en ;
+    rdfs:comment "Indication if group 555 is needed/used."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:voiceRadioCompatible a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.9 and ERATV 4.13.2.5
+    rdfs:label "voice radio compatible"@en ;
+    rdfs:comment "Radio requirements used for demonstrating technical compatibility voice"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-rsc:RadioSystemCompatibility ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:dataRadioCompatible a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.10 and ERATV 4.13.2.8
+    rdfs:label "data radio compatible"@en ;
+    rdfs:comment "Radio requirements used for demonstrating technical compatibility data"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-rsc:RadioSystemCompatibility ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "stable" .
+
+
 ########## Class B ##########
+
+era:protectionLegacySystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.5.3 and ERATV 4.13.1.5
+    rdfs:label "protection legacy system"@en ;
+    rdfs:comment "Indication of which class B system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-tpls:TrainProtectionLegacySystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherProtectionLegacySystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.1.5
+    rdfs:label "other protection legacy system"@en ;
+    rdfs:comment "Indication of which other train protection system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-tpls:OtherTrainProtectionLegacySystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+
+era:legacyRadioSystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.6.1 and ERATV 4.13.2.3
+    rdfs:label "legacy radio system"@en ;
+    rdfs:comment "Indication of radio legacy systems installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Track era:VehicleType )
+                ] ;
+    rdfs:range era-lrs:LegacyRadioSystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherLegacyRadioSystem a owl:ObjectProperty, rdf:Property ; # ERATV 4.13.2.3
+    rdfs:label "other legacy radio system"@en ;
+    rdfs:comment "Indication of which other legacy radio system is installed"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-lrs:OtherLegacyRadioSystem ;
+    dct:created "2020-08-31"^^xsd:date ;
+    dct:modified "2020-08-31"^^xsd:date ;
+    vs:term_status "unstable" .
 
 
 #################################################################
@@ -1395,6 +1654,11 @@ era-op-types:OperationalPointType a owl:Class ; # Concepts of this class are dyn
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Operational Point Type"@en ;
     rdfs:comment "Abstract class representing the different existing types of Operational Points"@en .
+
+era-uic:UICCode a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "UIC Code"@en ;
+    rdfs:comment "Abstract class representing UIC codes"@en .
 
 era-vehicles:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
@@ -1421,12 +1685,17 @@ era-gaugings:GaugingProfile a owl:Class ; # Concepts of this class are dynamical
     rdfs:label "Gauging Profile"@en ;
     rdfs:comment "Abstract class representing gauging profiles"@en .
 
+era-ap:AxlePosition a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Axle Position"@en ;
+    rdfs:comment "Abstract class representing axle positions"@en .
+
 era-tds:TrainDetectionSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Train Detection System"@en ;
     rdfs:comment "Abstract class representing train detection systems"@en .
 
-era-ftds:FrenchTrainDetectionSystemLimitation a owl:Class ;
+era-tds:FrenchTrainDetectionSystemLimitation a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "French Train Detection System Limitation"@en ;
     rdfs:comment "Abstract class representing french train detection systems limitations"@en .
@@ -1435,6 +1704,46 @@ era-am:AxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamica
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Axle Bearing Condition Monitoring"@en ;
     rdfs:comment "Abstract class representing axle bearing condition monitoring setups"@en .
+
+era-am:OtherAxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Axle Bearing Condition Monitoring"@en ;
+    rdfs:comment "Abstract class representing other axle bearing condition monitoring setups"@en .
+
+era-mscd:MaxSpeedCantDeficiency a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Max Speed Cant Deficiency"@en ;
+    rdfs:comment "Abstract class representing max speed - cant deficiency combinations"@en .
+
+era-ri:RailInclination a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Rail Inclination"@en ;
+    rdfs:comment "Abstract class representing rail inclinations"@en .
+
+era-ri:OtherRailInclination a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Rail Inclination"@en ;
+    rdfs:comment "Abstract class representing other rail inclinations"@en .
+
+era-gcf:GaugeChangeoverFacility a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Gauge Changeover Facility"@en ;
+    rdfs:comment "Abstract class representing gauge changeover facilities"@en .
+
+era-gcf:OtherGaugeChangeoverFacility a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Gauge Changeover Facility"@en ;
+    rdfs:comment "Abstract class representing other gauge changeover facilities"@en .
+
+era-ebp:EmergencyBrakingProfile a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Emergency Braking Profile"@en ;
+    rdfs:comment "Abstract class representing emergency braking profiles"@en .
+
+era-ebp:BrakeWeightPercentage a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Brake Weight Percentae"@en ;
+    rdfs:comment "Abstract class representing ebrake weight percentages"@en .
 
 era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
@@ -1446,17 +1755,32 @@ era-ic:IceCondition a owl:Class ; # Concepts of this class are dynamically gener
     rdfs:label "Ice Condition"@en ;
     rdfs:comment "Abstract class representing ice, snow and hail conditions"@en .
 
+era-ic:OtherIceCondition a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Ice Condition"@en ;
+    rdfs:comment "Abstract class representing other ice, snow and hail conditions"@en .
+
 era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Contact Line System"@en ;
     rdfs:comment "Abstract class representing contact line systems"@en .
+
+era-ess:EnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Energy Supply System"@en ;
+    rdfs:comment "Abstract class representing energy supply systems"@en .
+
+era-ess:OtherEnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Energy Supply System"@en ;
+    rdfs:comment "Abstract class representing other energy supply systems"@en .
 
 era-tph:TSIPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "TSI Pantograph Head"@en ;
     rdfs:comment "Abstract class representing TSI compliant pantograph heads"@en .
 
-era-oph:OtherPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-tph:OtherPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Pantograph Head"@en ;
     rdfs:comment "Abstract class representing other accepted pantograph heads"@en .
@@ -1466,16 +1790,60 @@ era-csm:ContactStripMaterial a owl:Class ; # Concepts of this class are dynamica
     rdfs:label "Contact Strip Material"@en ;
     rdfs:comment "Abstract class representing contact strip materials"@en .
 
-era-rs-fire:Category a owl:Class ;
+era-csm:OtherContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Contact Strip Material"@en ;
+    rdfs:comment "Abstract class representing other contact strip materials"@en .
+
+era-rsf:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Rolling Stock Fire Category"@en ;
     rdfs:comment "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"@en .
 
-#################################################################
-#
-#    Data Types
-#
-#################################################################
+era-ph:PlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Platform Height"@en ;
+    rdfs:comment "Abstract class representing predefined platform heights"@en .
+
+era-ph:OtherPlatformHeight a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Platform Height"@en ;
+    rdfs:comment "Abstract class representing other platform heights"@en .
+
+era-esc:ETCSSystemCompatibility a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "ETCS System Compatibility"@en ;
+    rdfs:comment "Abstract class representing ETCS system compatibilities"@en .
+
+era-gsmr:GSMRNetwork a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "GSM-R Network"@en ;
+    rdfs:comment "Abstract class representing GSM-R networks"@en .
+
+era-rsc:RadioSystemCompatibility a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Radio System Compatibility"@en ;
+    rdfs:comment "Abstract class representing radio system compatibilities"@en .
+
+era-tpls:TrainProtectionLegacySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Train Protection Legacy System"@en ;
+    rdfs:comment "Abstract class representing train protection legacy systems"@en .
+
+era-tpls:OtherTrainProtectionLegacySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Train Protection Legacy System"@en ;
+    rdfs:comment "Abstract class representing other train protection legacy systems"@en .
+
+era-lrs:LegacyRadioSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Legacy Radio System"@en ;
+    rdfs:comment "Abstract class representing legacy radio systems"@en .
+
+era-lrs:OtherLegacyRadioSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Legacy Radio System"@en ;
+    rdfs:comment "Abstract class representing other legacy radio systems"@en .
 
 
 #################################################################
@@ -1564,51 +1932,88 @@ era-vehicles:hauledSpecialVehicle a era-vehicles:SubCategory ;
 
 ########## French train detection system limitations ##########
 
-era-ftds:N_1 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_1 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+1" ;
     skos:definition "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"@en .
 
-era-ftds:N_2 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_2 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+2" ;
     skos:definition "Sections with directional Interlocking"@en .
 
-era-ftds:N_3 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_3 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+3" ;
     skos:definition "Sections with 45-second delay for directional interlocking"@en .
 
-era-ftds:N_4 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_4 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+4" ;
     skos:definition "Sections with Installation with track circuit announcement"@en .
 
-era-ftds:N_5 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_5 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+5" ;
     skos:definition "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"@en .
 
-era-ftds:N_6 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_6 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+6" ;
     skos:definition "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"@en .
 
-era-ftds:N_7 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_7 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+7" ;
     skos:definition "Sections with absence of a pedal announcement mechanism"@en .
 
-era-ftds:N_8 a era-ftds:FrenchTrainDetectionSystemLimitation ;
+era-tds:N_8 a era-tds:FrenchTrainDetectionSystemLimitation ;
     skos:prefLabel "N+8" ;
     skos:definition "Sections with 45-second delay for specific announcement reset devices"@en .
 
+########## Energy supply systems ##########
+
+era-ess:DC_600_V a era-ess:EnergySuplySystem ; # This was the only value not used in RINF and ERATV among the possible ones
+    skos:prefLabel "DC 600 V" .
+
 ########## Rolling stock fire categories ##########
 
-era-rs-fire:a a era-rs-fire:Category ;
+era-rsf:a a era-rsf:Category ;
     skos:prefLabel "A" ;
     skos:definition "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A"@en .
 
-era-rs-fire:b a era-rs-fire:Category ;
+era-rsf:b a era-rsf:Category ;
     skos:prefLabel "B" ;
     skos:definition "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B"@en .
 
-era-rs-fire:none a era-rs-fire:Category ;
+era-rsf:none a era-rsf:Category ;
     skos:prefLabel "None"@en ;
     skos:definition "None of rolling stock fire categories A or B shall be applied on a tunnel"@en .
+
+era-rsf:otm a era-rsf:Category ;
+    skos:prefLabel "OTM"@en ;
+    skos:definition "OTM as defined in 4.2.10.1.2 of TSI LOC&PAS 1302/2014"@en .
+
+era-rsf:srt-tsi a era-rsf:Category ;
+    skos:prefLabel "SRT TSI Freight Locomotive"@en ;
+    skos:definition "SRT TSI Freight Locomotive as defined in 4.2.10.1.2"@en .
+
+########## Radio System Compatibilities ##########
+
+era-esc:Not_Defined a era-esc:ETCSSystemCompatibility ;
+    skos:prefLabel "Not Defined"@en .
+
+era-esc:ESC-EU-0 a era-esc:ETCSSystemCompatibility ;
+    skos:prefLabel "ESC-EU-0"@en .
+
+era-esc:ESC-NP-CCS7.4a a era-esc:ETCSSystemCompatibility ;
+    skos:prefLabel "ESC-EU-0"@en .
+
+########## Radio System Compatibilities ##########
+
+era-rsc:Not_Defined a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "Not Defined"@en .
+
+era-rsc:RSC-EU-0 a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "RSC-EU-0"@en .
+
+era-rsc:RSC-NP-CCS7.4a a era-rsc:RadioSystemCompatibility ;
+    skos:prefLabel "RSC-EU-0"@en .
+
+
 
 #################################################################
 #
