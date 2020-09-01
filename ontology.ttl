@@ -907,7 +907,7 @@ era:thermalCapacityTSIReference a owl:ObjectProperty, rdf:Property ; # ERATV 4.7
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "unstable" .
 
-era:thermalCapacitySpeed a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.2
+era:thermalCapacitySpeed a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.2.1.2
     rdfs:label "thermal capacity speed"@en ;
     rdfs:comment "Thermal capacity speed. If no reference case is indicated."@en ;
     rdfs:isDefinedBy era: ;
@@ -917,7 +917,7 @@ era:thermalCapacitySpeed a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:thermalCapacityGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.3
+era:thermalCapacityGradient a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.2.1.3
     rdfs:label "thermal capacity gradient"@en ;
     rdfs:comment "Thermal capacity gradient. If no reference case is indicated."@en ;
     rdfs:isDefinedBy era: ;
@@ -927,7 +927,7 @@ era:thermalCapacityGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:thermalCapacityDistance a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.4
+era:thermalCapacityDistance a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.2.1.4
     rdfs:label "thermal capacity distance"@en ;
     rdfs:comment "Thermal capacity distance. If no reference case is indicated."@en ;
     rdfs:isDefinedBy era: ;
@@ -937,7 +937,7 @@ era:thermalCapacityDistance a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:thermalCapacityTime a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.5
+era:thermalCapacityTime a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.2.1.5
     rdfs:label "thermal capacity time"@en ;
     rdfs:comment "Thermal capacity time. If no reference case is indicated."@en ;
     rdfs:isDefinedBy era: ;
@@ -947,7 +947,7 @@ era:thermalCapacityTime a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.2.1.5
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:parkingBrakeMaximumGradient a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.3.3
+era:parkingBrakeMaximumGradient a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.3.3
     rdfs:label "parking brake maximum gradient"@en ;
     rdfs:comment "Maximum gradient on which the unit is kept immobilised by the parking brake alone (if the vehicle is fitted with it)."@en ;
     rdfs:isDefinedBy era: ;
@@ -1012,7 +1012,7 @@ era:magneticBrakingConditionsDocument a owl:DatatypeProperty, rdf:Property ; # R
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:magneticBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.4.2.2
+era:magneticBrakePrevention a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.4.2.2
     rdfs:label "magnetic brake prevention"@en ;
     rdfs:comment "Possibility of preventing the use of the magnetic track brake (only if fitted with magnetic brake)"@en ;
     rdfs:isDefinedBy era: ;
@@ -1077,7 +1077,7 @@ era:eddyCurrentBrakingConditionsDocument a owl:DatatypeProperty, rdf:Property ; 
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:eddyCurrentBrakePrevention a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.4.1.2
+era:eddyCurrentBrakePrevention a owl:DatatypeProperty, rdf:Property ; # ERATV 4.7.4.1.2
     rdfs:label "eddy current brake prevention"@en ;
     rdfs:comment "Possibility of preventing the use of the eddy current track brake (only if fitted with eddy current brake)"@en ;
     rdfs:isDefinedBy era: ;
