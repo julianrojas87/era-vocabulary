@@ -1740,7 +1740,7 @@ era-ebp:EmergencyBrakingProfile a owl:Class ; # Concepts of this class are dynam
     rdfs:label "Emergency Braking Profile"@en ;
     rdfs:comment "Abstract class representing emergency braking profiles"@en .
 
-era-ebp:BrakeWeightPercentage a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-bwp:BrakeWeightPercentage a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Brake Weight Percentae"@en ;
     rdfs:comment "Abstract class representing ebrake weight percentages"@en .
