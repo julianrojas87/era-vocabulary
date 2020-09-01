@@ -696,7 +696,17 @@ era:axleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 
     rdfs:domain era:VehicleType ;
     rdfs:range era-am:AxleBearingMonitoring ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:otherAxleBearingConditionMonitoring a owl:ObjectProperty, rdf:Property ; # ERATV 4.9.2
+    rdfs:label "other axle bearing condition monitoring"@en ;
+    rdfs:comment "Other Axle bearing condition monitoring."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-am:OtherAxleBearingMonitoring ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 
@@ -1684,6 +1694,11 @@ era-am:AxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamica
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Axle Bearing Condition Monitoring"@en ;
     rdfs:comment "Abstract class representing axle bearing condition monitoring setups"@en .
+
+era-am:OtherAxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Axle Bearing Condition Monitoring"@en ;
+    rdfs:comment "Abstract class representing other axle bearing condition monitoring setups"@en .
 
 era-mscd:MaxSpeedCantDeficiency a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
