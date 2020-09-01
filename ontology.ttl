@@ -20,6 +20,7 @@
 @prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
+@prefix era-mscd: <http://era.europa.eu/concepts/max-speed-cant-deficiency#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
@@ -729,14 +730,14 @@ era:railInclination a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.3 an
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:maximumSpeedAndCantDeficiency a owl:DataTypeProperty, rdf:Property ; # ERATV 4.6.4
+era:maximumSpeedAndCantDeficiency a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
     rdfs:label "maximum speed and cant deficiency"@en ;
     rdfs:comment "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-mscd:MaxSpeedCantDeficiency ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "unstable" .
 
 ########## Wheelset ##########
@@ -1647,6 +1648,11 @@ era-am:AxleBearingMonitoring a owl:Class ; # Concepts of this class are dynamica
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Axle Bearing Condition Monitoring"@en ;
     rdfs:comment "Abstract class representing axle bearing condition monitoring setups"@en .
+
+era-mscd:MaxSpeedCantDeficiency a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Max Speed Cant Deficiency"@en ;
+    rdfs:comment "Abstract class representing max speed - cant deficiency combinations"@en .
 
 era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
