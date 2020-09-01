@@ -1,3 +1,4 @@
+@prefix : <http://era.ilabt.imec.be/era-vocabulary/ontology.ttl> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -39,7 +40,7 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 
-era:document a foaf:Document ;
+: a foaf:Document ;
     foaf:primaryTopic era: ;
     dct:hasFormat era: .
 
