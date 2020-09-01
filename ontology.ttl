@@ -22,6 +22,7 @@
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-mscd: <http://era.europa.eu/concepts/max-speed-cant-deficiency#> .
 @prefix era-ri: <http://era.europa.eu/concepts/rail-inclinations#> .
+@prefix era-gcf: <http://era.europa.eu/concepts/gauge-changeover-facilities#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
@@ -776,6 +777,26 @@ era:minimumWheelDiameter a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.5
     dct:created "2020-08-24"^^xsd:date ;
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
+
+era:wheelSetGaugeChangeoverFacility a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
+    rdfs:label "wheelset gauge changeover facility"@en ;
+    rdfs:comment "Wheelset gauge changeover facility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gcf:GaugeChangeoverFacility ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
+
+era:otherWheelSetGaugeChangeoverFacility a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
+    rdfs:label "other wheelset gauge changeover facility"@en ;
+    rdfs:comment "Other wheelset gauge changeover facility."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-gcf:OtherGaugeChangeoverFacility ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
 
 ########## Minimum curve ##########
 
@@ -1674,6 +1695,16 @@ era-ri:OtherRailInclination a owl:Class ; # Concepts of this class are dynamical
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Rail Inclination"@en ;
     rdfs:comment "Abstract class representing other rail inclinations"@en .
+
+era-gcf:GaugeChangeoverFacility a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Gauge Changeover Facility"@en ;
+    rdfs:comment "Abstract class representing gauge changeover facilities"@en .
+
+era-gcf:OtherGaugeChangeoverFacility a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Gauge Changeover Facility"@en ;
+    rdfs:comment "Abstract class representing other gauge changeover facilities"@en .
 
 era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
