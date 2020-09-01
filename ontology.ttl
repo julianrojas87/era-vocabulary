@@ -24,6 +24,7 @@
 @prefix era-ri: <http://era.europa.eu/concepts/rail-inclinations#> .
 @prefix era-gcf: <http://era.europa.eu/concepts/gauge-changeover-facilities#> .
 @prefix era-ebp: <http://era.europa.eu/concepts/emergency-braking-profiles#> .
+@prefix era-bwp: <http://era.europa.eu/concepts/brake-weight-percentages#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
@@ -876,15 +877,15 @@ era:emergencyBrake a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.5
     dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
-era:brakeWeightPercentage a owl:DataTypeProperty, rdf:Property ; # ERATV 4.7.6
+era:brakeWeightPercentage a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.6
     rdfs:label "brake weight percentage"@en ;
     rdfs:comment "Brake weight percentage (lambda) or Braked mass."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range xsd:string ;
+    rdfs:range era-bwp:BrakeWeightPercentage ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
-    vs:term_status "unstable" .
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
 
 era:thermalCapacityTSIReference a owl:ObjectProperty, rdf:Property ; # ERATV 4.7.2.1.1
     rdfs:label "thermal capacity TSI reference"@en ;
@@ -1711,6 +1712,11 @@ era-ebp:EmergencyBrakingProfile a owl:Class ; # Concepts of this class are dynam
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Emergency Braking Profile"@en ;
     rdfs:comment "Abstract class representing emergency braking profiles"@en .
+
+era-ebp:BrakeWeightPercentage a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Brake Weight Percentae"@en ;
+    rdfs:comment "Abstract class representing ebrake weight percentages"@en .
 
 era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
