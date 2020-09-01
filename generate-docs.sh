@@ -26,7 +26,7 @@ function executeWidoco() {
 }
 
 function main() {
-    local vocabFile="era-all.ttl"
+    local vocabFile="ontology.ttl"
     local outputFolder="./public/"
     local configFile="era-widoco.conf"
 

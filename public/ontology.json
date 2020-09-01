@@ -3,63 +3,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+      "@id" : "http://era.europa.eu/ns#Track"
     }, {
-      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+      "@id" : "http://era.europa.eu/ns#VehicleType"
     } ]
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#OperationalPoint"
-    }, {
-      "@id" : "http://era.europa.eu/ns#Track"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
-    }, {
-      "@id" : "http://era.europa.eu/ns#MicroNode"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
-    }, {
-      "@id" : "http://era.europa.eu/ns#MicroNode"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#OperationalPoint"
-    }, {
-      "@id" : "http://era.europa.eu/ns#Track"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
-    }, {
-      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -69,7 +19,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -79,13 +29,73 @@
     } ]
   } ]
 }, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#OperationalPoint"
+    }, {
+      "@id" : "http://era.europa.eu/ns#Track"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#MicroLink"
+    }, {
+      "@id" : "http://era.europa.eu/ns#MicroNode"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#MicroLink"
+    }, {
+      "@id" : "http://era.europa.eu/ns#MicroNode"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
+      "@id" : "http://era.europa.eu/ns#OperationalPoint"
     }, {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
+      "@id" : "http://era.europa.eu/ns#Track"
     } ]
   } ]
 }, {
@@ -93,7 +103,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://era.europa.eu/ns#OperationalPoint"
     }, {
       "@id" : "http://era.europa.eu/ns#VehicleType"
     } ]
@@ -113,9 +123,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
+      "@id" : "http://era.europa.eu/ns#Track"
     }, {
-      "@id" : "http://era.europa.eu/ns#MicroLink"
+      "@id" : "http://era.europa.eu/ns#VehicleType"
     } ]
   } ]
 }, {
@@ -163,9 +173,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
     } ]
   } ]
 }, {
@@ -173,9 +183,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://era.europa.eu/ns#MicroLink"
     } ]
   } ]
 }, {
@@ -203,9 +213,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://era.europa.eu/ns#InternalNodeLink"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://era.europa.eu/ns#MicroLink"
     } ]
   } ]
 }, {
@@ -223,9 +233,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://era.europa.eu/ns#Track"
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
     }, {
-      "@id" : "http://era.europa.eu/ns#VehicleType"
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
     } ]
   } ]
 }, {
@@ -239,520 +249,94 @@
     } ]
   } ]
 }, {
-  "@id" : "http://creativecommons.org/ns#license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing axle bearing condition monitoring setups"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Axle Bearing Condition Monitoring"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing contact line systems"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Contact Line System"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing contact strip materials"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Contact Strip Material"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing french train detection systems limitations"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "French Train Detection System Limitation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with tonnage circulated per track is inferior to 15000 tons/day/track"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+1"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with directional Interlocking"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+2"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with 45-second delay for directional interlocking"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+3"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with Installation with track circuit announcement"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+4"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a shunting assistance pedal in the normal direction of circulation for non-reversible double track lines"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+5"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a shunting assistance pedal regardless of the direction of traffic for single track lines and tracks for two way working"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+6"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with absence of a pedal announcement mechanism"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+7"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/french-train-detection#N_8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Sections with 45-second delay for specific announcement reset devices"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "N+8"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
+  "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing gauging profiles"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Gauging Profile"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/ice-conditions#IceCondition",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing ice, snow and hail conditions"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Ice Condition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/load-capabilities#LoadCapability",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing track load capabilities, defined as a combination of the line category and speed at the weakest point of the track"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Load Capability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/manufacturers#Manufacturer",
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing vehicle manufacturer companies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Manufacturer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
-  "@id" : "http://era.europa.eu/concepts/op-types#OperationalPointType",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing the different existing types of Operational Points"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Operational Point Type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing other accepted pantograph heads"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Other Pantograph Head"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/rs-fire#Category",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing fire categories of rolling stock. Rolling stock admitted in tunnels shall belong to either of the fire safety categories A and B"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Rolling Stock Fire Category"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/rs-fire#a",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Rolling stock which is designed and built to operate on underground sections and tunnels of not more than 5 km in length, with side evacuation available is defined as category A"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "A"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/rs-fire#b",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Rolling stock which is designed and built to operate in all tunnels of the trans-European Network is defined as category B"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "B"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/rs-fire#none",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/rs-fire#Category" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "None of rolling stock fire categories A or B shall be applied on a tunnel"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "None"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing reference cases of TSI thermal capacities"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Thermal Capacity TSI Reference"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/train-detection#TrainDetectionSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing train detection systems"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Train Detection System"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing TSI compliant pantograph heads"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "TSI Pantograph Head"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#Category",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing vehicle categories"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle Category"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#SubCategory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abstract class representing vehicle sub categories"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle Sub Category"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#carCarrier",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Car Carrier"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#coachesRake",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Fixed rake of coaches"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#freightTrainset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Self-propelled freight trainset"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#freightWagon",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#freightWagons"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Freight wagon"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#freightWagons",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#Category" ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Freight Wagons"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#freightWagonsRake",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#freightWagons"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Fixed rake of freight wagons"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#Category" ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Hauled Passenger Vehicles"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#hauledSpecialVehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#specialVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Hauled special vehicle"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#locomotive",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Locomotive"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#otherHauledPassenger",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Other hauled passenger vehicles"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#otherTractionVehicles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Other (tramways, light rail vehicles, etc)"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#passengerCoach",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Passenger Coach (incl. sleeping cars, restaurant, etc.)"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#passengerTrainset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Self-propelled passenger trainset (incl. railbusses)"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#selfPropelledSpecialVehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#specialVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Self-propelled special vehicle"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#serviceVehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle for services (e.g. kitchen)"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#shunter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Shunter"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#specialVehicles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#Category" ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Special Vehicles"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#tractionVehicles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#Category" ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Traction Vehicles"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/concepts/vehicles#van",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://era.europa.eu/concepts/vehicles#SubCategory" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://era.europa.eu/concepts/vehicles#hauledPassenger"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "Van"
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://era.europa.eu/ns#Track"
+    }, {
+      "@id" : "http://era.europa.eu/ns#VehicleType"
+    } ]
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#",
@@ -765,11 +349,11 @@
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-07-29"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
+    "@value" : "2020-09-01"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -783,8 +367,15 @@
     "@language" : "en",
     "@value" : "ERA vocabulary"
   } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://era.ilabt.imec.be/era-vocabulary/era-skos#"
+  }, {
+    "@id" : "http://publications.europa.eu/resource/authority/country"
+  }, {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v0.3.9"
+    "@value" : "v0.9.0"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#InternalNodeLink",
@@ -900,7 +491,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -914,9 +505,9 @@
     "@value" : "Operational Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.geonames.org/ontology#Feature"
-  }, {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1098,7 +689,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1118,22 +709,22 @@
     "@id" : "http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "unstable"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#axleSpacing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Position of the axles along the unit."
+    "@value" : "Position of the axles along the unit. a: Distance between axles; b: Distance from end axle to the end of the nearest coupling plane; c: distance between two inside axles."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://era.europa.eu/ns#VehicleType"
@@ -1146,7 +737,7 @@
     "@value" : "axle spacing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/axle-positions#AxlePosition"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -1160,11 +751,11 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates the micro node to which a node port belongs to."
+    "@value" : "Indicates the micro node that a node port belongs to."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://era.europa.eu/ns#NodePort"
@@ -1198,7 +789,7 @@
     "@value" : "Indicates if a micro link or an internal node link can be traversed in both directions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1215,14 +806,14 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#brakeWeightPercentage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1239,10 +830,10 @@
     "@value" : "brake weight percentage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "unstable"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#cantDeficiency",
@@ -1532,14 +1123,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
+    "@value" : "2020-08-29"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indication of which contact strip materials are permitted to be used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://era.europa.eu/ns#Track"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1552,7 +1143,7 @@
     "@id" : "http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#currentLimitationRequired",
@@ -1581,6 +1172,68 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#dataGSMRNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Data SIM Card GSM-R Home Network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data GSM-R network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#dataRadioCompatible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Radio requirements used for demonstrating technical compatibility data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data radio compatible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -1679,17 +1332,8 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://era.europa.eu/ns#document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ],
-  "http://purl.org/dc/terms/hasFormat" : [ {
-    "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
-    "@id" : "http://era.europa.eu/ns#"
-  } ]
-}, {
   "@id" : "http://era.europa.eu/ns#eddyCurrentBrakePrevention",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -1734,7 +1378,7 @@
     "@value" : "Use of eddy current brakes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid34"
+    "@id" : "_:genid67"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1781,15 +1425,15 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://era.europa.eu/ns#emergencyBraking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@id" : "http://era.europa.eu/ns#emergencyBrake",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1806,10 +1450,10 @@
     "@value" : "emergency braking"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/emergency-braking-profiles#EmergencyBrakingProfile"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "unstable"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking",
@@ -1899,7 +1543,7 @@
     "@value" : "end location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
@@ -1925,7 +1569,7 @@
     "@value" : "Reference to the ending operational point's node port of a micro link or an internal node link."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1942,21 +1586,21 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#energySupplySystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-08-28"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Indication of the traction supply system (nominal voltage and frequency)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid37"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -1966,7 +1610,7 @@
     "@value" : "energy supply system"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/energy-supply-systems#EnergySupplySystem"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -1980,7 +1624,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2000,7 +1644,69 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#etcsSystemCompatibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ETCS requirements used for demonstrating technical compatibility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ETCS system compatibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/etcs-system-compatibilities#ETCSSystemCompatibility"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#fireSafetyCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-29"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-29"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fire safety category for tunnels."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "fire safety category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/rolling-stock-fire#Category"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation",
@@ -2028,7 +1734,7 @@
     "@value" : "french train detection system limitation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/french-train-detection#FrenchTrainDetectionSystemLimitation"
+    "@id" : "http://era.europa.eu/concepts/train-detection#FrenchTrainDetectionSystemLimitation"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -2042,11 +1748,11 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Location of particular points requiring specific checks due to deviations from gauging."
+    "@value" : "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://era.europa.eu/ns#Track"
@@ -2059,7 +1765,7 @@
     "@value" : "gauging check location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -2080,7 +1786,7 @@
     "@value" : "Gauges as defined in European standard or other local gauges, including lower or upper part."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2158,6 +1864,37 @@
     "@value" : "unstable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#gsmrNetworkCoverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "GSM-R networks covered by a roaming agreement)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "gsm-r network coverage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#hasAbstraction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -2173,7 +1910,7 @@
     "@value" : "Property that links a physical entity with its topological abstraction representation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2183,7 +1920,7 @@
     "@value" : "has abstraction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid25"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://era.europa.eu/ns#hasImplementation"
@@ -2214,7 +1951,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "has automatic dropping device "
+    "@value" : "has automatic dropping device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -2300,7 +2037,7 @@
     "@value" : "Property that links a topological abstraction entity with its physical representation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid28"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2310,7 +2047,7 @@
     "@value" : "has implementation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -2331,7 +2068,7 @@
     "@value" : "Indication whether regenerative braking is permitted or not."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid40"
+    "@id" : "_:genid70"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2404,6 +2141,37 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://era.europa.eu/ns#Track"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#hasTrainIntegrityConfirmation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of on-board management system about completeness of the train information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has train integrity confirmation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -2589,7 +2357,7 @@
     "@value" : "hot axle box detector location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -2626,15 +2394,77 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#inCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the country in which the entity resides."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "in country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#legacyRadioSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of radio legacy systems installed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "legacy radio system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/legacy-radio-systems#LegacyRadioSystem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#lineUICCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-07-29"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-07-29"
+    "@value" : "2020-08-29"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2651,7 +2481,7 @@
     "@value" : "line UIC code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/uic-codes#UICCode"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -2689,7 +2519,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#magneticBrakePrevention",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -2734,7 +2564,7 @@
     "@value" : "Use of magnetic brakes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid43"
+    "@id" : "_:genid73"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2827,7 +2657,7 @@
     "@value" : "Indication of the maximum allowable train current at standstill for DC systems expressed in amperes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid46"
+    "@id" : "_:genid76"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2889,7 +2719,7 @@
     "@value" : "Indication of the maximum contact wire height expressed in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid49"
+    "@id" : "_:genid79"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2968,14 +2798,14 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#maximumSpeedAndCantDeficiency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2992,7 +2822,7 @@
     "@value" : "maximum speed and cant deficiency"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://era.europa.eu/concepts/max-speed-cant-deficiency#MaxSpeedCantDeficiency"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
@@ -3013,7 +2843,7 @@
     "@value" : "Maximum tempertaure allowed for unrestricted operation access, according to European standard."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid52"
+    "@id" : "_:genid82"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3106,7 +2936,7 @@
     "@value" : "Indication of the minimum contact wire height expressed in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid55"
+    "@id" : "_:genid85"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3168,7 +2998,7 @@
     "@value" : "Radius of the smallest horizontal curve of the track in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid58"
+    "@id" : "_:genid88"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3199,7 +3029,7 @@
     "@value" : "Minimum tempertaure allowed for unrestricted operation access, according to European standard."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid61"
+    "@id" : "_:genid91"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3261,7 +3091,7 @@
     "@value" : "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid64"
+    "@id" : "_:genid94"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3432,6 +3262,130 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#otherAxleBearingConditionMonitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Other Axle bearing condition monitoring."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other axle bearing condition monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/axle-monitoring#OtherAxleBearingMonitoring"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherContactStripMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-29"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-29"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of which other contact strip materials are permitted to be used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact strip material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/contact-strip-materials#OtherContactStripMaterial"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherEnergySupplySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-28"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-28"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of other traction supply system (nominal voltage and frequency) that exceeds the range of the EN 50163:2004."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other energy supply system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/energy-supply-systems#OtherEnergySupplySystem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherLegacyRadioSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of which other legacy radio system is installed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other legacy radio system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/legacy-radio-systems#OtherLegacyRadioSystem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#otherPantographHead",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3457,10 +3411,165 @@
     "@value" : "other pantograph head"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/other-pantograph-heads#OtherPantographHead"
+    "@id" : "http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherPlatformHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Other Platform heights for which the vehicle is de­signed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other platform height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/platform-heights#OtherPlatformHeight"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherProtectionLegacySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of which other train protection system is installed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other protection legacy system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/train-protection-legacy-systems#OtherTrainProtectionLegacySystem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherRailInclination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An angle defining the inclination of the head of a rail relative to the running surface."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rail inclination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/rail-inclinations#OtherRailInclination"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherSnowIceHailConditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Other Snow, ice and hail conditions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other snow ice hail conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/ice-conditions#OtherIceCondition"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-01"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Other wheelset gauge changeover facility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "other wheelset gauge changeover facility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/gauge-changeover-facilities#OtherGaugeChangeoverFacility"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#pantographHeadTSI",
@@ -3495,7 +3604,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#parkingBrakeMaximumGradient",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -3618,6 +3727,37 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#platformHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-07-29"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Platform heights for which the vehicle is de­signed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "platform height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/platform-heights#PlatformHeight"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#preventRegenerativeBrakeUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -3649,22 +3789,53 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#protectionLegacySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication of which class B system is installed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid46"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "protection legacy system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "unstable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#railInclination",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An angle defining the inclination of the head of a rail relative to the running surface."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid67"
+    "@id" : "_:genid49"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -3674,7 +3845,7 @@
     "@value" : "rail inclination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://era.europa.eu/concepts/rail-inclinations#RailInclination"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -3736,7 +3907,7 @@
     "@value" : "rolling stock fire category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/rs-fire#Category"
+    "@id" : "http://era.europa.eu/concepts/rolling-stock-fire#Category"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -3829,7 +4000,7 @@
     "@value" : "start location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid52"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
@@ -3855,7 +4026,7 @@
     "@value" : "Reference to the starting operational point's node port of a micro link or an internal node link."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -4058,7 +4229,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#thermalCapacityDistance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -4089,7 +4260,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#thermalCapacityGradient",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -4120,7 +4291,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#thermalCapacitySpeed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -4182,7 +4353,7 @@
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#thermalCapacityTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#DataTypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2020-08-24"
@@ -4258,7 +4429,7 @@
     "@value" : "Indication of supported types of train detection systems."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -4303,6 +4474,37 @@
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "unstable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#trainIntegrityOnBoardRequired",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "train integrity on-board required"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#tunnelLength",
@@ -4398,6 +4600,37 @@
     "@value" : "stable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#usesGroup555",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication if group 555 is needed/used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid97"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses group 555"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#vehicleContactForce",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4406,7 +4639,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -4423,41 +4656,10 @@
     "@value" : "vehicle contact force"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "unstable"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/ns#vehicleContactStripMaterial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Material of pantograph contact strip the vehicle may be equipped with (to be indicated for each energy supply system the vehicle is equipped for)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://era.europa.eu/ns#VehicleType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "vehicle contact strip material"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "unstable"
+    "@value" : "stable"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#vehicleLength",
@@ -4522,6 +4724,68 @@
     "@value" : "unstable"
   } ]
 }, {
+  "@id" : "http://era.europa.eu/ns#voiceGSMRNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Voice SIM Card GSM-R Home Network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#VehicleType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "voice GSM-R network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#voiceRadioCompatible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-08-31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Radio requirements used for demonstrating technical compatibility voice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid61"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "voice radio compatible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
   "@id" : "http://era.europa.eu/ns#wheelSetGauge",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/created" : [ {
@@ -4537,7 +4801,7 @@
     "@value" : "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid100"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -4553,169 +4817,145 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/terms/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/hasFormat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/spatial",
+  "@id" : "http://era.europa.eu/ns#wheelSetGaugeChangeoverFacility",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
+    "@value" : "2020-09-01"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Spatial characteristics of the resource."
+    "@value" : "Wheelset gauge changeover facility."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://era.europa.eu/ns#VehicleType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://purl.org/dc/terms/"
+    "@id" : "http://era.europa.eu/ns#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "spatial"
+    "@value" : "wheelset gauge changeover facility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.geonames.org/ontology#Feature"
+    "@id" : "http://era.europa.eu/concepts/gauge-changeover-facilities#GaugeChangeoverFacility"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
+    "@value" : "unstable"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/terms/title",
+  "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.geonames.org/ontology#Feature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#",
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "$Date: 2009/04/20 15:00:30 $"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A vocabulary for representing latitude, longitude and \n altitude information in the WGS84 geodetic reference datum. \n Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "WGS84 Geo Positioning: an RDF vocabulary"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A geographical feature"
+    "@value" : "\nRecent changes to this namespace:\n$Log: wgs84_pos.rdf,v $\nRevision 1.22  2009/04/20 15:00:30  timbl\nRemove the time bits which have been deal with elsewhere eg in iCal.\n\nRevision 1.21  2009/04/20 12:52:47  timbl\ntry again\n\nRevision 1.20  2009/04/20 12:42:11  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.19  2009/04/20 12:36:31  timbl\nAdd Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)\n\nRevision 1.18  2006/02/01 22:01:04  danbri\nClarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid\n\nRevision 1.17  2004/02/06 17:38:12  danbri\nFixed a bad commit screwup\n\nRevision 1.15  2003/04/19 11:24:08  danbri\nFixed the typo even more.\n\nRevision 1.14  2003/04/19 11:16:56  danbri\nfixed a typo\n\nRevision 1.13  2003/02/19 22:27:27  connolly\nrelaxed domain constraints on lat/long/alt from Point to SpatialThing\n\nRevision 1.12  2003/01/12 01:41:41  danbri\nTrying local copy of XSLT doc.\n\nRevision 1.11  2003/01/12 01:20:18  danbri\nadded a link to morten's xslt rdfs viewer.\n\nRevision 1.10  2003/01/11 18:56:49  danbri\nRemoved datatype range from lat and long properties, since they would\nhave required each occurance of the property to mention the datatype.\n\nRevision 1.9  2003/01/11 11:41:31  danbri\nAnother typo; repaired rdfs:Property to rdf:Property x4\n\nRevision 1.8  2003/01/11 11:05:02  danbri\nAdded an rdfs:range for each lat/long/alt property,\nhttp://www.w3.org/2001/XMLSchema#float\n\nRevision 1.7  2003/01/10 20:25:16  danbri\nLonger rdfs:comment for Point, trying to be Earth-centric and neutral about\ncoordinate system(s) at the same time. Feedback welcomed.\n\nRevision 1.6  2003/01/10 20:18:30  danbri\nAdded CVS log comments into the RDF/XML as an rdfs:comment property of the\nvocabulary. Note that this is not common practice (but seems both harmless\nand potentially useful).\n\n\nrevision 1.5\ndate: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5\nUpdated schema:\nAdded a dc:date, added url for more info. Changed the rdfs:label of the\nnamespace from gp to geo. Added a class Point, set as the rdfs:domain of\neach property. Added XML comment on the lat_long property suggesting that\nwe might not need it (based on #rdfig commentary from implementors).\n\nrevision 1.4\ndate: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5\nFixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in\n#rdfig for catching this error.\n\nrevision 1.3\ndate: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3\nfixed buglet in vocab, added more wgs links\n\nrevision 1.2\ndate: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4\nRemoved alt from the as-a-flat-string property, and switched from\nspace separated to comma separated.\n\nrevision 1.1\ndate: 2003/01/10 10:53:23;  author: danbri;  state: Exp;\nbasic geo vocab\n\n"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Feature"
+    "@value" : "geo"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
+  }, {
+    "@value" : "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
   } ]
 }, {
-  "@id" : "http://www.geonames.org/ontology#parentCountry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-24"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Parent country."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.geonames.org/ontology#Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.geonames.org/ontology#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Parent Country"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.geonames.org/ontology#Feature"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasGeometry"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2002/07/owl#DataTypeProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything with spatial extent, i.e. size, shape, or position.\n e.g. people, places, bowling balls, as well as abstract areas like cubes.\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SpatialThing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "altitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 latitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "latitude"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A comma-separated representation of a latitude, longitude coordinate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lat/long"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The relation between something and the point, or other geometrical thing in space, where it is.  For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+    "@value" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
     "@value" : "location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/based_near"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The WGS84 longitude of a SpatialThing (decimal degrees)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "longitude"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+  "@id" : "http://xmlns.com/foaf/0.1/based_near",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
