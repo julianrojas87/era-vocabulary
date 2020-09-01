@@ -1134,6 +1134,16 @@ era:snowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
+era:otherSnowIceHailConditions a owl:ObjectProperty, rdf:Property ; # ERATV 4.3.3
+    rdfs:label "other snow ice hail conditions"@en ;
+    rdfs:comment "Other Snow, ice and hail conditions."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ic:OtherIceCondition ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
+
 
 ########## Voltages and frequencies ##########
 
@@ -1744,6 +1754,11 @@ era-ic:IceCondition a owl:Class ; # Concepts of this class are dynamically gener
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Ice Condition"@en ;
     rdfs:comment "Abstract class representing ice, snow and hail conditions"@en .
+
+era-ic:OtherIceCondition a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Ice Condition"@en ;
+    rdfs:comment "Abstract class representing other ice, snow and hail conditions"@en .
 
 era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
