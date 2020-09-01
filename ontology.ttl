@@ -1502,7 +1502,7 @@ era:etcsSystemCompatibility a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range era-ecs:ETCSSystemCompatibility ;
+    rdfs:range era-esc:ETCSSystemCompatibility ;
     dct:created "2020-08-31"^^xsd:date ;
     dct:modified "2020-08-31"^^xsd:date ;
     vs:term_status "unstable" .
