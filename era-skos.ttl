@@ -5,7 +5,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
+@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .

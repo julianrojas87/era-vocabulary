@@ -1,4 +1,3 @@
-@prefix : <http://era.ilabt.imec.be/era-vocabulary/ontology.ttl> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,6 +10,7 @@
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix eu-countries: <http://publications.europa.eu/resource/authority/country> .
+@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
@@ -40,10 +40,6 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 
-: a foaf:Document ;
-    foaf:primaryTopic era: ;
-    dct:hasFormat era: .
-
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
@@ -53,7 +49,7 @@ era: a owl:Ontology ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
     owl:versionInfo "v0.9.0" ;
-    owl:imports eu-countries:, wgs:, geosparql: .
+    owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
 
 #################################################################
 #
