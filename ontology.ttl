@@ -21,6 +21,7 @@
 @prefix era-tds: <http://era.europa.eu/concepts/train-detection#> .
 @prefix era-am: <http://era.europa.eu/concepts/axle-monitoring#> .
 @prefix era-mscd: <http://era.europa.eu/concepts/max-speed-cant-deficiency#> .
+@prefix era-ri: <http://era.europa.eu/concepts/rail-inclinations#> .
 @prefix era-tc: <http://era.europa.eu/concepts/thermal-capacity#> .
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
@@ -718,17 +719,27 @@ era:maximumPermittedSpeed a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.
     dct:modified "2020-08-24"^^xsd:date ;
     vs:term_status "stable" .
 
-era:railInclination a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
+era:railInclination a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
     rdfs:label "rail inclination"@en ;
     rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
                   owl:unionOf ( era:Track era:VehicleType )
                 ] ;
-    rdfs:range xsd:integer ;
+    rdfs:range era-ri:RailInclination ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-08-24"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
+
+era:otherRailInclination a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.5
+    rdfs:label "rail inclination"@en ;
+    rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range era-ri:OtherRailInclination ;
+    dct:created "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "unstable" .
 
 era:maximumSpeedAndCantDeficiency a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
     rdfs:label "maximum speed and cant deficiency"@en ;
@@ -1653,6 +1664,16 @@ era-mscd:MaxSpeedCantDeficiency a owl:Class ; # Concepts of this class are dynam
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Max Speed Cant Deficiency"@en ;
     rdfs:comment "Abstract class representing max speed - cant deficiency combinations"@en .
+
+era-ri:RailInclination a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Rail Inclination"@en ;
+    rdfs:comment "Abstract class representing rail inclinations"@en .
+
+era-ri:OtherRailInclination a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Other Rail Inclination"@en ;
+    rdfs:comment "Abstract class representing other rail inclinations"@en .
 
 era-tc:ThermalCapacityTSIReference a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
