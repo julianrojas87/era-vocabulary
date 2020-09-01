@@ -1765,12 +1765,12 @@ era-cls:ContactLineSystem a owl:Class ; # Concepts of this class are dynamically
     rdfs:label "Contact Line System"@en ;
     rdfs:comment "Abstract class representing contact line systems"@en .
 
-era-ess:EnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+era-ess:EnergySupplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Energy Supply System"@en ;
     rdfs:comment "Abstract class representing energy supply systems"@en .
 
-era-ess:OtherEnergySuplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
+era-ess:OtherEnergySupplySystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time except one
     rdfs:subClassOf skos:Concept ;
     rdfs:label "Other Energy Supply System"@en ;
     rdfs:comment "Abstract class representing other energy supply systems"@en .
@@ -1966,7 +1966,7 @@ era-tds:N_8 a era-tds:FrenchTrainDetectionSystemLimitation ;
 
 ########## Energy supply systems ##########
 
-era-ess:DC_600_V a era-ess:EnergySuplySystem ; # This was the only value not used in RINF and ERATV among the possible ones
+era-ess:DC_600_V a era-ess:EnergySupplySystem ; # This was the only value not used in RINF and ERATV among the possible ones
     skos:prefLabel "DC 600 V" .
 
 ########## Rolling stock fire categories ##########
