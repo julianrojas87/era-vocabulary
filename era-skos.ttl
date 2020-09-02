@@ -25312,7 +25312,7 @@ era-bwp:079%2C00_%28%25%29_or_00063%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "079,00 (%) or 00063,00 tonnes" .
 
 era-bwp:080%2C00_%28%25%29_or_00072%2C00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "080,00 (%) or 00072,00 tonnes" .@prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
+  skos:prefLabel "080,00 (%) or 00072,00 tonnes" .
 
 era-bwp:080%2C00_%28%25%29_or_00109%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "080,00 (%) or 00109,00 tonnes" .
@@ -25499,6 +25499,92 @@ era-ic:Not_applicable a era-ic:OtherIceCondition;
 
 era-ic:Not_known a era-ic:OtherIceCondition;
   skos:prefLabel "Not known" .
+
+<http://era.europa.eu/concepts/ice-conditions#Nothing_special_with_regards_to_snow_and_hail_performance.__No_snow_ploughs_fitted.>
+  a era-ic:OtherIceCondition;
+  skos:prefLabel "Nothing special with regards to snow and hail performance.  No snow ploughs fitted." .
+
+era-ic:OP3005_%2F_IN1418 a era-ic:OtherIceCondition;
+  skos:prefLabel "OP3005 / IN1418" .
+
+era-ic:RIC_Coach a era-ic:OtherIceCondition;
+  skos:prefLabel "RIC Coach" .
+
+era-ic:S1_%280-250_m%29%2C_heigt_A1_%28up_to_1400_m%29_ a era-ic:OtherIceCondition;
+  skos:prefLabel "S1 (0-250 m), heigt A1 (up to 1400 m) " .
+
+era-ic:S1_%28EN_50125-1%3A2014%29 a era-ic:OtherIceCondition;
+  skos:prefLabel "S1 (EN 50125-1:2014)" .
+
+era-ic:S1_%28EN_50125-1%3A2014%29_ a era-ic:OtherIceCondition;
+  skos:prefLabel "S1 (EN 50125-1:2014) " .
+
+era-ic:S1_of_EN_50125-1%3A2014 a era-ic:OtherIceCondition;
+  skos:prefLabel "S1 of EN 50125-1:2014" .
+
+era-ic:S2_ a era-ic:OtherIceCondition;
+  skos:prefLabel "S2 " .
+
+era-ic:S2_EN50125-1%3A2014_clause_4.7 a era-ic:OtherIceCondition;
+  skos:prefLabel "S2 EN50125-1:2014 clause 4.7" .
+
+era-ic:Severe a era-ic:IceCondition;
+  skos:prefLabel "Severe" .
+
+era-ic:Special_vehicle_for_snow_removal a era-ic:OtherIceCondition;
+  skos:prefLabel "Special vehicle for snow removal" .
+
+era-ic:T2 a era-ic:OtherIceCondition;
+  skos:prefLabel "T2" .
+
+era-ic:according_to_EN_50125-1%3A2014_ a era-ic:OtherIceCondition;
+  skos:prefLabel "according to EN 50125-1:2014 " .
+
+era-ic:general%3A_Schnee%2C_Regen%2C_Eis_%28-30%C2%B0C_to_%2B40_%C2%B0C%29 a era-ic:OtherIceCondition;
+  skos:prefLabel "general: Schnee, Regen, Eis (-30°C to +40 °C)" .
+
+era-ic:n%2Fa a era-ic:OtherIceCondition;
+  skos:prefLabel "n/a" .
+
+era-ic:no_information%2C_non_TSI_train a era-ic:OtherIceCondition;
+  skos:prefLabel "no information, non TSI train" .
+
+era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29 a era-ic:IceCondition;
+  skos:prefLabel "nominal (EN 50125-1:1999 clause 4.7)" .
+
+era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29_with_snowplough_for_serious_snow_condition
+  a era-ic:OtherIceCondition;
+  skos:prefLabel "nominal (EN 50125-1:1999 clause 4.7) with snowplough for serious snow condition" .
+
+era-ic:nominal_%28EN_50125-1%3A2014%29_ a era-ic:OtherIceCondition;
+  skos:prefLabel "nominal (EN 50125-1:2014) " .
+
+era-ic:nominal_with_snow_deflector a era-ic:IceCondition;
+  skos:prefLabel "nominal with snow deflector" .
+
+era-ic:none a era-ic:OtherIceCondition;
+  skos:prefLabel "none" .
+
+era-ic:normal a era-ic:OtherIceCondition;
+  skos:prefLabel "normal" .
+
+era-ic:not_applicable a era-ic:OtherIceCondition;
+  skos:prefLabel "not applicable" .
+
+era-ic:not_available_-_non_TSI_trains a era-ic:OtherIceCondition;
+  skos:prefLabel "not available - non TSI trains" .
+
+era-ic:severe_except_snowdrift a era-ic:IceCondition;
+  skos:prefLabel "severe except snowdrift" .
+
+era-ic:to_be_completed a era-ic:OtherIceCondition;
+  skos:prefLabel "to be completed" .
+
+era-ic:unknown a era-ic:OtherIceCondition;
+  skos:prefLabel "unknown" .
+
+era-ic:very_extreme a era-ic:OtherIceCondition;
+  skos:prefLabel "very extreme" .
 
 ########## Contact line systems ##########
 
