@@ -44,11 +44,11 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-07"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.9.0" ;
+    owl:versionInfo "v0.9.1" ;
     owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
 
 #################################################################
@@ -754,13 +754,13 @@ era:railInclination a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.1.4.3 and 
     vs:term_status "stable" .
 
 era:otherRailInclination a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.5
-    rdfs:label "rail inclination"@en ;
-    rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
+    rdfs:label "other rail inclination"@en ;
+    rdfs:comment "An angle defining other type of inclination of the head of a rail relative to the running surface."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
     rdfs:range era-ri:OtherRailInclination ;
     dct:created "2020-09-01"^^xsd:date ;
-    dct:modified "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-07"^^xsd:date ;
     vs:term_status "unstable" .
 
 era:maximumSpeedAndCantDeficiency a owl:ObjectProperty, rdf:Property ; # ERATV 4.6.4
