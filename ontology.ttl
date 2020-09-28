@@ -69,7 +69,7 @@ era:MicroNode a owl:Class, rdfs:Class ;
 
 era:MicroLink a owl:Class, rdfs:Class ;
     rdfs:label "Micro Link"@en ;
-    rdfs:comment "An abstraction of a track that represent a physical rail connection between two different micro nodes."@en ;
+    rdfs:comment "An abstraction of a track that represents a physical rail connection between two different micro nodes."@en ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
@@ -97,7 +97,7 @@ era:InternalNodeLink a owl:Class, rdfs:Class ;
 
 era:OperationalPoint a owl:Class, rdfs:Class ;
     rdfs:label "Operational Point"@en ;
-    rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
+    rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:subClassOf geosparql:Feature, wgs:SpatialThing ; #geonames:Feature;
     dct:created "2020-07-29"^^xsd:date ;
