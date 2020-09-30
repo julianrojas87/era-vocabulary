@@ -44,7 +44,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-09-07"^^xsd:date ;
+    dct:modified "2020-09-28"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
@@ -69,7 +69,7 @@ era:MicroNode a owl:Class, rdfs:Class ;
 
 era:MicroLink a owl:Class, rdfs:Class ;
     rdfs:label "Micro Link"@en ;
-    rdfs:comment "An abstraction of a track that represent a physical rail connection between two different micro nodes."@en ;
+    rdfs:comment "An abstraction of a track that represents a physical rail connection between two different micro nodes."@en ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
@@ -86,7 +86,7 @@ era:NodePort a owl:Class, rdfs:Class ;
 
 era:InternalNodeLink a owl:Class, rdfs:Class ;
     rdfs:label "Internal Node Link"@en ;
-    rdfs:comment "A specific track abstraction usee to represent a micro link switch that is possible inside a micro node."@en ;
+    rdfs:comment "A specific track abstraction used to represent a micro link switch that is possible inside a micro node."@en ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
@@ -97,7 +97,7 @@ era:InternalNodeLink a owl:Class, rdfs:Class ;
 
 era:OperationalPoint a owl:Class, rdfs:Class ;
     rdfs:label "Operational Point"@en ;
-    rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers."@en ;
+    rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:subClassOf geosparql:Feature, wgs:SpatialThing ; #geonames:Feature;
     dct:created "2020-07-29"^^xsd:date ;
