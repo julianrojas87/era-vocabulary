@@ -13,7 +13,7 @@
 @prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
-@prefix era-uic: <http://era.europa.eu/concepts/uic-codes#> .
+@prefix era-lni: <http://era.europa.eu/concepts/line-national-ids#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
 @prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
@@ -174,15 +174,15 @@ era:opType a owl:ObjectProperty, rdf:Property ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
-era:lineUICCode a owl:ObjectProperty, rdf:Property ;
-    rdfs:label "line UIC code"@en ;
-    rdfs:comment "Line associated UIC code."@en ;
+era:lineNationalId a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "line national ID"@en ;
+    rdfs:comment "Related national line identification."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-uic:UICCode ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-08-29"^^xsd:date ;
-    vs:term_status "unstable" .
+    rdfs:range era-lni:LineNationalId ;
+    dct:created "2020-09-30"^^xsd:date ;
+    dct:modified "2020-09-30"^^xsd:date ;
+    vs:term_status "stable" .
 
 era:startPort a owl:ObjectProperty, rdf:Property ;
     rdfs:label "start port"@en ;
