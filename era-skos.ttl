@@ -25776,9 +25776,6 @@ era-csm:0 a era-csm:OtherContactStripMaterial;
 era-csm:Carbon a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon" .
 
-era-csm:Carbon_and_Steel a era-csm:ContactStripMaterial;
-  skos:prefLabel "Carbon and Steel" .
-
 era-csm:Carbon_and_copper_%28Kasperowsy_type%29 a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon and copper (Kasperowsy type)" .
 
@@ -25791,13 +25788,13 @@ era-csm:Carbon_m%C3%A9tallis%C3%A9 a era-csm:OtherContactStripMaterial;
 era-csm:Carbon_with_addidive_material_and_coated_with_copper a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon with addidive material and coated with copper" .
 
-era-csm:Carbon_with_additive_material a era-csm:ContactStripMaterial, era-csm:OtherContactStripMaterial;
+era-csm:Carbon_with_additive_material a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon with additive material" .
 
 era-csm:Carbon_with_additive_material_and_coated_with_copper a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon with additive material and coated with copper" .
 
-era-csm:Carbon_with_cladded_cooper a era-csm:ContactStripMaterial, era-csm:OtherContactStripMaterial;
+era-csm:Carbon_with_cladded_cooper a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Carbon with cladded cooper" .
 
 era-csm:Carbon_with_cladded_copper a era-csm:OtherContactStripMaterial;
@@ -25839,13 +25836,6 @@ era-csm:Copper_with_additive_material a era-csm:OtherContactStripMaterial;
 era-csm:Gemetalliseerd_kool a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Gemetalliseerd kool" .
 
-era-csm:If_permitted_by_RINF%3A_impregnated_carbon_with_cladded_copper_are_allowed
-  a era-csm:ContactStripMaterial;
-  skos:prefLabel "If permitted by RINF: impregnated carbon with cladded copper are allowed" .
-
-era-csm:Impregnated_carbon_with_additive_material a era-csm:ContactStripMaterial;
-  skos:prefLabel "Impregnated carbon with additive material" .
-
 era-csm:Metallised_carbon a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Metallised carbon" .
 
@@ -25873,12 +25863,6 @@ era-csm:N%2FA_Third_Rail_shoegear a era-csm:OtherContactStripMaterial;
 era-csm:Not_applicable a era-csm:OtherContactStripMaterial;
   skos:prefLabel "Not applicable" .
 
-era-csm:Plain_carbon a era-csm:ContactStripMaterial;
-  skos:prefLabel "Plain carbon" .
-
-era-csm:Plan_carbon a era-csm:ContactStripMaterial;
-  skos:prefLabel "Plan carbon" .
-
 era-csm:RH85M6 a era-csm:OtherContactStripMaterial;
   skos:prefLabel "RH85M6" .
 
@@ -25900,11 +25884,17 @@ era-csm:and_coated_with_copper a era-csm:OtherContactStripMaterial;
 era-csm:carbon%2C_steel%2C_grease a era-csm:OtherContactStripMaterial;
   skos:prefLabel "carbon, steel, grease" .
 
+era-csm:carbon_and_steel a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon and Steel" .
+
 era-csm:carbon_with_additive_material a era-csm:ContactStripMaterial;
-  skos:prefLabel "carbon with additive material" .
+  skos:prefLabel "Carbon with additive material", "carbon with additive material" .
 
 era-csm:carbon_with_additive_material_SK01ACu a era-csm:OtherContactStripMaterial;
   skos:prefLabel "carbon with additive material SK01ACu" .
+
+era-csm:carbon_with_cladded_cooper a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon with cladded cooper" .
 
 era-csm:carbon_with_cladded_copper a era-csm:ContactStripMaterial;
   skos:prefLabel "carbon with cladded copper" .
@@ -25924,14 +25914,24 @@ era-csm:copper_and_steel a era-csm:OtherContactStripMaterial;
 era-csm:graphite_carbon a era-csm:OtherContactStripMaterial;
   skos:prefLabel "graphite carbon" .
 
+era-csm:if_permitted_by_rinf%3A_impregnated_carbon_with_cladded_copper_are_allowed
+  a era-csm:ContactStripMaterial;
+  skos:prefLabel "If permitted by RINF: impregnated carbon with cladded copper are allowed" .
+
 era-csm:impregnated__carbon_%28%25_of_metallic_content%29 a era-csm:ContactStripMaterial;
   skos:prefLabel "impregnated  carbon (% of metallic content)" .
+
+era-csm:impregnated_carbon_with_additive_material a era-csm:ContactStripMaterial;
+  skos:prefLabel "Impregnated carbon with additive material" .
 
 era-csm:metalized_carbon a era-csm:OtherContactStripMaterial;
   skos:prefLabel "metalized carbon" .
 
 era-csm:plain_carbon a era-csm:ContactStripMaterial;
-  skos:prefLabel "plain carbon" .
+  skos:prefLabel "Plain carbon", "plain carbon" .
+
+era-csm:plan_carbon a era-csm:ContactStripMaterial;
+  skos:prefLabel "Plan carbon" .
 
 ########## Rolling stock fire categories ##########
 
