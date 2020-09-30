@@ -24347,6 +24347,9 @@ era-lc:E5-80 a era-lc:LoadCapability;
 
 ########## Gauging profiles ###########
 
+era-gaugings:3.3_%28French_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "3.3 (French network)" .
+
 era-gaugings:AFG a era-gaugings:GaugingProfile;
   skos:prefLabel "AFG" .
 
@@ -24362,8 +24365,14 @@ era-gaugings:AFM%20427 a era-gaugings:GaugingProfile;
 era-gaugings:BE1 a era-gaugings:GaugingProfile;
   skos:prefLabel "BE1" .
 
+era-gaugings:BE1_%28Belgian_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "BE1 (Belgian network)" .
+
 era-gaugings:BE2 a era-gaugings:GaugingProfile;
   skos:prefLabel "BE2" .
+
+era-gaugings:BE2_%28Belgian_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "BE2 (Belgian network)" .
 
 era-gaugings:BE3 a era-gaugings:GaugingProfile;
   skos:prefLabel "BE3" .
@@ -24374,11 +24383,23 @@ era-gaugings:DE1 a era-gaugings:GaugingProfile;
 era-gaugings:DE2 a era-gaugings:GaugingProfile;
   skos:prefLabel "DE2" .
 
+era-gaugings:DE2_%28German_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "DE2 (German network)" .
+
 era-gaugings:DE3 a era-gaugings:GaugingProfile;
   skos:prefLabel "DE3" .
 
+era-gaugings:DE3_%28German_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "DE3 (German network)" .
+
+era-gaugings:DK1 a era-gaugings:GaugingProfile;
+  skos:prefLabel "DK1" .
+
 era-gaugings:FIN1 a era-gaugings:GaugingProfile;
   skos:prefLabel "FIN1" .
+
+era-gaugings:FIN1_%28Specific_case_Finland%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "FIN1 (Specific case Finland)" .
 
 era-gaugings:FR-3.3 a era-gaugings:GaugingProfile;
   skos:prefLabel "FR-3.3" .
@@ -24395,6 +24416,9 @@ era-gaugings:FS a era-gaugings:GaugingProfile;
 era-gaugings:G1 a era-gaugings:GaugingProfile;
   skos:prefLabel "G1" .
 
+era-gaugings:G1_up_and_GI2_down a era-gaugings:GaugingProfile;
+  skos:prefLabel "G1 up and GI2 down" .
+
 era-gaugings:G2 a era-gaugings:GaugingProfile;
   skos:prefLabel "G2" .
 
@@ -24403,6 +24427,9 @@ era-gaugings:GA a era-gaugings:GaugingProfile;
 
 era-gaugings:GB a era-gaugings:GaugingProfile;
   skos:prefLabel "GB" .
+
+era-gaugings:GB-M6 a era-gaugings:GaugingProfile;
+  skos:prefLabel "GB-M6" .
 
 era-gaugings:GB1 a era-gaugings:GaugingProfile;
   skos:prefLabel "GB1" .
@@ -24440,6 +24467,9 @@ era-gaugings:GI2 a era-gaugings:GaugingProfile;
 era-gaugings:GI3 a era-gaugings:GaugingProfile;
   skos:prefLabel "GI3" .
 
+era-gaugings:Gauge_3.3 a era-gaugings:GaugingProfile;
+  skos:prefLabel "Gauge 3.3" .
+
 era-gaugings:IRL1 a era-gaugings:GaugingProfile;
   skos:prefLabel "IRL1" .
 
@@ -24467,8 +24497,20 @@ era-gaugings:M80 a era-gaugings:GaugingProfile;
 era-gaugings:NL1 a era-gaugings:GaugingProfile;
   skos:prefLabel "NL1" .
 
+era-gaugings:NL1_%28Specific_case_the_Netherlands%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "NL1 (Specific case the Netherlands)" .
+
 era-gaugings:NL2 a era-gaugings:GaugingProfile;
   skos:prefLabel "NL2" .
+
+era-gaugings:NL_%28Dutch__network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "NL (Dutch  network)" .
+
+era-gaugings:NO1 a era-gaugings:GaugingProfile;
+  skos:prefLabel "NO1" .
+
+era-gaugings:Not_applicable a era-gaugings:GaugingProfile;
+  skos:prefLabel "Not applicable" .
 
 era-gaugings:PTb a era-gaugings:GaugingProfile;
   skos:prefLabel "PTb" .
@@ -24479,11 +24521,21 @@ era-gaugings:PTb%2B a era-gaugings:GaugingProfile;
 era-gaugings:PTc a era-gaugings:GaugingProfile;
   skos:prefLabel "PTc" .
 
+era-gaugings:Per_altezze_%E2%89%A4_a_3250_mm_rispetta_la_fiche_UIC_505-1%3B_per_altezze_%3E_a_3250_mm_eccede_il_profilo_max_di_costruzione_previsto_dalla_fiche_UIC_505-1
+  a era-gaugings:GaugingProfile;
+  skos:prefLabel "Per altezze ≤ a 3250 mm rispetta la fiche UIC 505-1; per altezze > a 3250 mm eccede il profilo max di costruzione previsto dalla fiche UIC 505-1" .
+
 era-gaugings:S a era-gaugings:GaugingProfile;
   skos:prefLabel "S" .
 
 era-gaugings:SEa a era-gaugings:GaugingProfile;
   skos:prefLabel "SEa" .
+
+era-gaugings:SEa_%28Specific_case_Sweden%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "SEa (Specific case Sweden)" .
+
+era-gaugings:SEa_%28Swedish_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "SEa (Swedish network)" .
 
 era-gaugings:SEc a era-gaugings:GaugingProfile;
   skos:prefLabel "SEc" .
@@ -24494,14 +24546,26 @@ era-gaugings:Tram-train%202.40 a era-gaugings:GaugingProfile;
 era-gaugings:Tram-train%202.65 a era-gaugings:GaugingProfile;
   skos:prefLabel "Tram-train 2.65" .
 
+era-gaugings:UIC_505-1 a era-gaugings:GaugingProfile;
+  skos:prefLabel "UIC 505-1" .
+
 era-gaugings:UK1 a era-gaugings:GaugingProfile;
   skos:prefLabel "UK1" .
 
 era-gaugings:UK1%5BD%5D a era-gaugings:GaugingProfile;
   skos:prefLabel "UK1[D]" .
 
+era-gaugings:UK1_%28UK_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "UK1 (UK network)" .
+
 era-gaugings:W6 a era-gaugings:GaugingProfile;
   skos:prefLabel "W6" .
+
+era-gaugings:W6a_%28UK_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "W6a (UK network)" .
+
+era-gaugings:W6a_upper_and_lower_sectors_%28UK_network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "W6a upper and lower sectors (UK network)" .
 
 era-gaugings:Z-GCD a era-gaugings:GaugingProfile;
   skos:prefLabel "Z-GCD" .
