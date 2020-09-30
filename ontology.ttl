@@ -296,9 +296,8 @@ era:manufacturer a owl:ObjectProperty, rdf:Property ;
 
 era:inCountry a owl:ObjectProperty, rdf:Property ;
     rdfs:label "in country"@en ;
-    rdfs:comment "Indicates the country in which the entity resides."@en ;
+    rdfs:comment "Indicates the country in which an entity resides. Expected to be used by Operational Point entities."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:OperationalPoint ;
     rdfs:range skos:Concept ;
     dct:created "2020-09-01"^^xsd:date ;
     dct:modified "2020-09-30"^^xsd:date ;
