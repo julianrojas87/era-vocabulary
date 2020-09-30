@@ -44,11 +44,11 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-09-28"^^xsd:date ;
+    dct:modified "2020-09-30"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.9.1" ;
+    owl:versionInfo "v0.9.2" ;
     owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
 
 #################################################################
@@ -298,12 +298,30 @@ era:inCountry a owl:ObjectProperty, rdf:Property ;
     rdfs:label "in country"@en ;
     rdfs:comment "Indicates the country in which the entity resides."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:OperationalPoint era:VehicleType )
-                ] ;
+    rdfs:domain era:OperationalPoint ;
     rdfs:range skos:Concept ;
     dct:created "2020-09-01"^^xsd:date ;
-    dct:modified "2020-09-01"^^xsd:date ;
+    dct:modified "2020-09-30"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:manufacturingCountry a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "manufacturing country"@en ;
+    rdfs:comment "Indicates the country in which a vehicle type is manufactured."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range skos:Concept ;
+    dct:created "2020-09-30"^^xsd:date ;
+    dct:modified "2020-09-30"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:authorizedCountry a owl:ObjectProperty, rdf:Property ;
+    rdfs:label "authorized country"@en ;
+    rdfs:comment "Indicates the country(ies) in where a vehicle type has been authorized to operate."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range skos:Concept ;
+    dct:created "2020-09-30"^^xsd:date ;
+    dct:modified "2020-09-30"^^xsd:date ;
     vs:term_status "stable" .
 
 
