@@ -25043,6 +25043,9 @@ era-mscd:0350%2C00_km%2Fh_-_0160%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-ri:0 a era-ri:OtherRailInclination;
   skos:prefLabel "0" .
 
+era-ri:1%2F10 a era-ri:RailInclination;
+  skos:prefLabel "1/10" .
+
 era-ri:1%2F20 a era-ri:RailInclination;
   skos:prefLabel "1/20" .
 
@@ -25064,6 +25067,9 @@ era-ri:1%2F20___1%2F30___1%2F40 a era-ri:OtherRailInclination;
 era-ri:1%2F20_and_1%2F40 a era-ri:OtherRailInclination;
   skos:prefLabel "1/20 and 1/40" .
 
+era-ri:1%2F30 a era-ri:RailInclination;
+  skos:prefLabel "1/30" .
+
 era-ri:1%2F40 a era-ri:RailInclination;
   skos:prefLabel "1/40" .
 
@@ -25074,6 +25080,9 @@ era-ri:1%2F40_%28Ligne_CFF_Gen%C3%A8ve_La_Plaine%29_1%2F20__%28r%C3%A9seau_ferr%
 era-ri:1%2F40__%28Ligne_CFF___Gen%C3%A8ve__La_Plaine%29__ou__1%2F20__%28r%C3%A9seau_ferr%C3%A9_fran%C3%A7ais%29
   a era-ri:OtherRailInclination;
   skos:prefLabel "1/40  (Ligne CFF   Genève  La Plaine)  ou  1/20  (réseau ferré français)" .
+
+era-ri:1%2F80 a era-ri:RailInclination;
+  skos:prefLabel "1/80" .
 
 era-ri:1%3A20%2C_1%3A30%2C_1%3A40 a era-ri:OtherRailInclination;
   skos:prefLabel "1:20, 1:30, 1:40" .
