@@ -24,7 +24,7 @@
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
 @prefix era-ess: <http://era.europa.eu/concepts/energy-supply-systems#> .
-@prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
+@prefix era-pth: <http://era.europa.eu/concepts/pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
 @prefix era-rsf: <http://era.europa.eu/concepts/rolling-stock-fire#> .
 @prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
@@ -171,11 +171,11 @@ era-ess:EnergySupplySystem a owl:Class ; # Concepts of this class are dynamicall
     rdfs:label "Energy Supply System"@en ;
     rdfs:comment "Abstract class representing energy supply systems"@en .
 
-era-tph:TSIPantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
+era-pth:PantographHead a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
     skos:inScheme era-skos: ;
-    rdfs:label "TSI Pantograph Head"@en ;
-    rdfs:comment "Abstract class representing TSI compliant pantograph heads"@en .
+    rdfs:label "Pantograph Head"@en ;
+    rdfs:comment "Abstract class representing compliant pantograph heads"@en .
 
 era-csm:ContactStripMaterial a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
     rdfs:subClassOf skos:Concept ;
@@ -25670,42 +25670,54 @@ era-ess:None_%28for_hauled_passenger_vehicles_and_special_vehicles%29 a era-ess:
 era-ess:hybrid a era-ess:EnergySupplySystem;
   skos:prefLabel "hybrid" .
 
-########## TSI pantograph heads ###########
+########## pantograph heads ###########
 
-era-tph:1450_mm a era-tph:TSIPantographHead;
+era-pth:1450_mm a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1450 mm" .
 
-era-tph:1600_mm_%28EP%29 a era-tph:TSIPantographHead;
+era-pth:1600_mm_%28EP%29 a era-pth:PantographHead;
+  era:tsiCompliant true;
   skos:prefLabel "1600 mm (EP)" .
 
-era-tph:1600_mm_%28GB%29 a era-tph:TSIPantographHead;
+era-pth:1600_mm_%28GB%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1600 mm (GB)" .
 
-era-tph:1600_mm_%28GB%2CCTRL%29 a era-tph:TSIPantographHead;
+era-pth:1600_mm_%28GB%2CCTRL%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1600 mm (GB,CTRL)" .
 
-era-tph:1760_mm_%28BE%29 a era-tph:TSIPantographHead;
+era-pth:1760_mm_%28BE%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1760 mm (BE)" .
 
-era-tph:1800_mm_%28NO%2CSE%29 a era-tph:TSIPantographHead;
+era-pth:1800_mm_%28NO%2CSE%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1800 mm (NO,SE)" .
 
-era-tph:1950_mm_%28Type2%29 a era-tph:TSIPantographHead;
+era-pth:1950_mm_%28Type2%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "1950 mm (Type2)" .
 
-era-tph:1950_mm_%28Type_1%29 a era-tph:TSIPantographHead;
+era-pth:1950_mm_%28Type_1%29 a era-pth:PantographHead;
+  era:tsiCompliant true;
   skos:prefLabel "1950 mm (Type 1)" .
 
-era-tph:1950_mm_%28Type_1%29_with_insulated_horns a era-tph:TSIPantographHead;
+era-pth:1950_mm_%28Type_1%29_with_insulated_horns a era-pth:PantographHead;
+  era:tsiCompliant true;
   skos:prefLabel "1950 mm (Type 1) with insulated horns" .
 
-era-tph:2000_mm_%E2%80%93_2260_mm a era-tph:TSIPantographHead;
+era-pth:2000_mm_%E2%80%93_2260_mm a era-pth:PantographHead;
+  era:tsiCompliant true;
   skos:prefLabel "2000 mm – 2260 mm" .
 
-era-tph:none a era-tph:TSIPantographHead, era-tph:TSIPantographHead;
+era-pth:none a era-pth:PantographHead;
+  era:tsiCompliant false, true;
   skos:prefLabel "none" .
 
-era-tph:other a era-tph:TSIPantographHead;
+era-pth:other a era-pth:PantographHead;
+  era:tsiCompliant false;
   skos:prefLabel "other" .
 
 ########## Contact strip materials ##########
