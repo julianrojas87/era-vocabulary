@@ -309,6 +309,9 @@
     } ]
   } ]
 }, {
+  "@id" : "http://era.europa.eu/concepts/pantograph-heads#PantographHead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://era.europa.eu/ns#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
@@ -352,8 +355,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://era.ilabt.imec.be/era-vocabulary/era-skos#"
-  }, {
-    "@id" : "http://publications.europa.eu/resource/authority/country"
   }, {
     "@id" : "http://www.opengis.net/ont/geosparql#"
   } ],
@@ -3596,44 +3597,12 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://era.europa.eu/ns#otherPantographHead",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://era.europa.eu/ns#rinfIndex" : [ {
-    "@value" : "1.1.1.2.3.2"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-08-25"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-11-03"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Indication of which other pantograph heads are allowed to be used."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://era.europa.eu/ns#Track"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://era.europa.eu/ns#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "other pantograph head"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead"
-  } ],
-  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
-    "@value" : "stable"
-  } ]
-}, {
-  "@id" : "http://era.europa.eu/ns#pantographHeadTSI",
+  "@id" : "http://era.europa.eu/ns#pantographHead",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://era.europa.eu/ns#rinfIndex" : [ {
     "@value" : "1.1.1.2.3.1"
+  }, {
+    "@value" : "1.1.1.2.3.2"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -3658,7 +3627,7 @@
     "@value" : "tsi pantograph head"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead"
+    "@id" : "http://era.europa.eu/concepts/pantograph-heads#PantographHead"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "stable"
@@ -4663,6 +4632,34 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "train integrity on-board required"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://era.europa.eu/ns#tsiCompliant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-11-03"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-11-03"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if a certain property is TSI compliant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://era.europa.eu/ns#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "tsi compliant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"

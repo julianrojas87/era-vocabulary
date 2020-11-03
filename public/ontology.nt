@@ -1,6 +1,5 @@
 <http://era.europa.eu/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#imports> <http://era.ilabt.imec.be/era-vocabulary/era-skos#> .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#imports> <http://publications.europa.eu/resource/authority/country> .
 <http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql#> .
 <http://era.europa.eu/ns#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Dylan Van Assche" .
@@ -541,29 +540,19 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#opType> <http://www.w3.org/2000/01/rdf-schema#label> "operational point type"@en .
 <http://era.europa.eu/ns#opType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
-# http://era.europa.eu/ns#otherPantographHead
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead> .
-<http://era.europa.eu/ns#otherPantographHead> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.2" .
-<http://era.europa.eu/ns#otherPantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#otherPantographHead> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which other pantograph heads are allowed to be used."@en .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "other pantograph head"@en .
-<http://era.europa.eu/ns#otherPantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-# 
-# http://era.europa.eu/ns#pantographHeadTSI
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.1" .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2000/01/rdf-schema#label> "tsi pantograph head"@en .
-<http://era.europa.eu/ns#pantographHeadTSI> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# http://era.europa.eu/ns#pantographHead
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/pantograph-heads#PantographHead> .
+<http://era.europa.eu/concepts/pantograph-heads#PantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#pantographHead> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.1" .
+<http://era.europa.eu/ns#pantographHead> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.2" .
+<http://era.europa.eu/ns#pantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#pantographHead> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of which TSI compliant pantograph heads are allowed to be used."@en .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#label> "tsi pantograph head"@en .
+<http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#passesThroughTunnel
 <http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1801,6 +1790,16 @@ _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#trainIntegrityOnBoardRequired> <http://www.w3.org/2000/01/rdf-schema#label> "train integrity on-board required"@en .
 <http://era.europa.eu/ns#trainIntegrityOnBoardRequired> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#tsiCompliant
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#tsiCompliant> <http://purl.org/dc/terms/created> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#tsiCompliant> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if a certain property is TSI compliant."@en .
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/2000/01/rdf-schema#label> "tsi compliant"@en .
+<http://era.europa.eu/ns#tsiCompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#tunnelLength
 <http://era.europa.eu/ns#tunnelLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#tunnelLength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Tunnel> .
@@ -1921,6 +1920,8 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+# http://era.europa.eu/concepts/pantograph-heads#PantographHead
 # 
 # http://era.europa.eu/ns#InternalNodeLink
 <http://era.europa.eu/ns#InternalNodeLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

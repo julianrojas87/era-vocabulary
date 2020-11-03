@@ -9,7 +9,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix eu-countries: <http://publications.europa.eu/resource/authority/country> .
+@prefix eu-countries: <http://publications.europa.eu/resource/authority/country/> .
 @prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
@@ -30,7 +30,7 @@
 @prefix era-ic: <http://era.europa.eu/concepts/ice-conditions#> .
 @prefix era-cls: <http://era.europa.eu/concepts/contact-line-systems#> .
 @prefix era-ess: <http://era.europa.eu/concepts/energy-supply-systems#> .
-@prefix era-tph: <http://era.europa.eu/concepts/tsi-pantograph-heads#> .
+@prefix era-pth: <http://era.europa.eu/concepts/pantograph-heads#> .
 @prefix era-csm: <http://era.europa.eu/concepts/contact-strip-materials#> .
 @prefix era-rsf: <http://era.europa.eu/concepts/rolling-stock-fire#> .
 @prefix era-ph: <http://era.europa.eu/concepts/platform-heights#> .
@@ -397,6 +397,15 @@ era:alternativeName a owl:DatatypeProperty, rdf:Property ;
     rdfs:range xsd:string ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:tsiCompliant a owl:DatatypeProperty, rdf:Property ;
+    rdfs:label "tsi compliant"@en ;
+    rdfs:comment "Indicates if a certain property is TSI compliant."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-11-03"^^xsd:date ;
+    dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .
 
 era:rinfIndex a owl:AnnotationProperty ;
@@ -1389,24 +1398,13 @@ era:minimumContactWireHeight a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1
     dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .
 
-era:pantographHeadTSI a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.1
-    era:rinfIndex "1.1.1.2.3.1" ;
+era:pantographHead a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.1
+    era:rinfIndex "1.1.1.2.3.1", "1.1.1.2.3.2" ;
     rdfs:label "tsi pantograph head"@en ;
     rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
-    rdfs:range era-tph:TSIPantographHead;
-    dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:otherPantographHead a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.2.3.2
-    era:rinfIndex "1.1.1.2.3.2" ;
-    rdfs:label "other pantograph head"@en ;
-    rdfs:comment "Indication of which other pantograph heads are allowed to be used."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range era-tph:OtherPantographHead;
+    rdfs:range era-pth:PantographHead;
     dct:created "2020-08-25"^^xsd:date ;
     dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .

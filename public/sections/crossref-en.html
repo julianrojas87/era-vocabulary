@@ -329,8 +329,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#maximumTrainDeceleration">maximum train deceleration</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minimumVerticalRadius" title="http://era.europa.eu/ns#minimumVerticalRadius">minimum vertical curve radius</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#nationalLoadCapability" title="http://era.europa.eu/ns#nationalLoadCapability">national load capability</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#otherPantographHead" title="http://era.europa.eu/ns#otherPantographHead">other pantograph head</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#permittedContactForce" title="http://era.europa.eu/ns#permittedContactForce">permitted contact force</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#raisedPantographsDistanceAndSpeed"
                title="http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
@@ -340,7 +339,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trainIntegrityOnBoardRequired"
                title="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">train integrity on-board required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#pantographHeadTSI" title="http://era.europa.eu/ns#pantographHeadTSI">tsi pantograph head</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#pantographHead" title="http://era.europa.eu/ns#pantographHead">tsi pantograph head</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#umax2" title="http://era.europa.eu/ns#umax2">umax2</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -581,9 +580,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
       </li>
       <li>
-         <a href="#otherPantographHead" title="http://era.europa.eu/ns#otherPantographHead">other pantograph head</a>
-      </li>
-      <li>
          <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
       </li>
       <li>
@@ -619,7 +615,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#trainDetectionSystem" title="http://era.europa.eu/ns#trainDetectionSystem">train detection system</a>
       </li>
       <li>
-         <a href="#pantographHeadTSI" title="http://era.europa.eu/ns#pantographHeadTSI">tsi pantograph head</a>
+         <a href="#pantographHead" title="http://era.europa.eu/ns#pantographHead">tsi pantograph head</a>
       </li>
       <li>
          <a href="#voiceGSMRNetwork" title="http://era.europa.eu/ns#voiceGSMRNetwork">voice GSM-R network</a>
@@ -1752,41 +1748,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="otherPantographHead">
-      <h3>other pantograph head<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherPantographHead</p>
-      <div class="comment">
-         <span class="markdown">Indication of which other pantograph heads are allowed to be used.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead">other pantograph head</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="passesThroughTunnel">
       <h3>passes through tunnel<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2192,13 +2153,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="pantographHeadTSI">
+   <div class="entity" id="pantographHead">
       <h3>tsi pantograph head<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#pantographHeadTSI</p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#pantographHead</p>
       <div class="comment">
          <span class="markdown">Indication of which TSI compliant pantograph heads are allowed to be used.</span>
       </div>
@@ -2222,7 +2183,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted"
-                     title="http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead">t s i pantograph head</span>
+                     title="http://era.europa.eu/concepts/pantograph-heads#PantographHead">pantograph head</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2609,6 +2571,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <li>
          <a href="#trainIntegrityOnBoardRequired"
             title="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">train integrity on-board required</a>
+      </li>
+      <li>
+         <a href="#tsiCompliant" title="http://era.europa.eu/ns#tsiCompliant">tsi compliant</a>
       </li>
       <li>
          <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
@@ -5245,6 +5210,35 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tsiCompliant">
+      <h3>tsi compliant<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#tsiCompliant</p>
+      <div class="comment">
+         <span class="markdown">Indicates if a certain property is TSI compliant.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
