@@ -43,7 +43,7 @@ This section provides details for each class and property defined by ERA vocabul
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#InternalNodeLink</p>
       <div class="comment">
-         <span class="markdown">A specific track abstraction usee to represent a micro link switch that is possible inside a micro node.</span>
+         <span class="markdown">A specific track abstraction used to represent a micro link switch that is possible inside a micro node.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -64,7 +64,7 @@ This section provides details for each class and property defined by ERA vocabul
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#MicroLink</p>
       <div class="comment">
-         <span class="markdown">An abstraction of a track that represent a physical rail connection between two different micro nodes.</span>
+         <span class="markdown">An abstraction of a track that represents a physical rail connection between two different micro nodes.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -152,7 +152,7 @@ This section provides details for each class and property defined by ERA vocabul
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#OperationalPoint</p>
       <div class="comment">
-         <span class="markdown">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers.</span>
+         <span class="markdown">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -280,7 +280,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#conditionalMagneticBraking">conditional magnetic braking</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#conditionalRegenerativeBrake"
                title="http://era.europa.eu/ns#conditionalRegenerativeBrake">conditional regenerative brake</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#currentLimitationRequired"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#contactLineSystem" title="http://era.europa.eu/ns#contactLineSystem">contact line system</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#currentLimitationRequired"
                title="http://era.europa.eu/ns#currentLimitationRequired">current limitation required</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trainDetectionSystemSpecificCheck"
                title="http://era.europa.eu/ns#trainDetectionSystemSpecificCheck">detection system specific check</a>
@@ -299,8 +300,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#gaugingTransversalDocument">gauging traversal document</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#gradientProfile" title="http://era.europa.eu/ns#gradientProfile">gradient profile</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#gsmrNetworkCoverage" title="http://era.europa.eu/ns#gsmrNetworkCoverage">gsm-r network coverage</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasadditionalBrakingInformation"
-               title="http://era.europa.eu/ns#hasadditionalBrakingInformation">has additional braking information</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAdditionalBrakingInformation"
+               title="http://era.europa.eu/ns#hasAdditionalBrakingInformation">has additional braking information</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHotAxleBoxDetector" title="http://era.europa.eu/ns#hasHotAxleBoxDetector">has axle box detector</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSevereWeatherConditions"
                title="http://era.europa.eu/ns#hasSevereWeatherConditions">has severe weather conditions</a>
@@ -318,7 +319,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#hotAxleBoxDetectorIdentification">hot axle box detector identification</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hotAxleBoxDetectorLocation"
                title="http://era.europa.eu/ns#hotAxleBoxDetectorLocation">hot axle box detector location</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#lineUICCode" title="http://era.europa.eu/ns#lineUICCode">line UIC code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#lineNationalId" title="http://era.europa.eu/ns#lineNationalId">line national ID</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#magneticBrakingConditionsDocument"
                title="http://era.europa.eu/ns#magneticBrakingConditionsDocument">magnetic braking conditions document</a>
@@ -414,12 +415,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>is in domain of</dt>
          <dd>
             <a href="#alternativeName" title="http://era.europa.eu/ns#alternativeName">alternative name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#axleBearingConditionMonitoring"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#authorizedCountry" title="http://era.europa.eu/ns#authorizedCountry">authorized country</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#axleBearingConditionMonitoring"
                title="http://era.europa.eu/ns#axleBearingConditionMonitoring">axle bearing condition monitoring</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#brakeWeightPercentage" title="http://era.europa.eu/ns#brakeWeightPercentage">brake weight percentage</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#category" title="http://era.europa.eu/ns#category">category</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#contactLineSystem" title="http://era.europa.eu/ns#contactLineSystem">contact line system</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dataGSMRNetwork" title="http://era.europa.eu/ns#dataGSMRNetwork">data GSM-R network</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#designMassWorkingOrder" title="http://era.europa.eu/ns#designMassWorkingOrder">design mass in working order</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#designMassExceptionalPayload"
@@ -434,6 +435,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCurrentLimitation" title="http://era.europa.eu/ns#hasCurrentLimitation">has current limitation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#magneticBrakePrevention" title="http://era.europa.eu/ns#magneticBrakePrevention">magnetic brake prevention</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#manufacturingCountry" title="http://era.europa.eu/ns#manufacturingCountry">manufacturing country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#maximumDesignSpeed" title="http://era.europa.eu/ns#maximumDesignSpeed">maximum design speed</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumSpeedAndCantDeficiency"
                title="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
@@ -444,24 +446,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfPantographsInContactWithOCL"
                title="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">number of pantpgraphs in contact with OCL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#oclType" title="http://era.europa.eu/ns#oclType">ocl type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#otherAxleBearingConditionMonitoring"
-               title="http://era.europa.eu/ns#otherAxleBearingConditionMonitoring">other axle bearing condition monitoring</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#otherLegacyRadioSystem" title="http://era.europa.eu/ns#otherLegacyRadioSystem">other legacy radio system</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#otherPlatformHeight" title="http://era.europa.eu/ns#otherPlatformHeight">other platform height</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#otherProtectionLegacySystem"
-               title="http://era.europa.eu/ns#otherProtectionLegacySystem">other protection legacy system</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#otherSnowIceHailConditions"
-               title="http://era.europa.eu/ns#otherSnowIceHailConditions">other snow ice hail conditions</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#otherWheelSetGaugeChangeoverFacility"
-               title="http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility">other wheelset gauge changeover facility</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#parkingBrakeMaximumGradient"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#parkingBrakeMaximumGradient"
                title="http://era.europa.eu/ns#parkingBrakeMaximumGradient">parking brake maximum gradient</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#permissiblePayload" title="http://era.europa.eu/ns#permissiblePayload">permissible payload</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#platformHeight" title="http://era.europa.eu/ns#platformHeight">platform height</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#preventRegenerativeBrakeUse"
                title="http://era.europa.eu/ns#preventRegenerativeBrakeUse">prevent regenerative brake use</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#otherRailInclination" title="http://era.europa.eu/ns#otherRailInclination">rail inclination</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
                title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantpgraphs in contact with OCL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#snowIceHailConditions" title="http://era.europa.eu/ns#snowIceHailConditions">snow ice hail conditions</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#staticAxleLoadWorkingOrder"
@@ -491,6 +482,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#authorizedCountry" title="http://era.europa.eu/ns#authorizedCountry">authorized country</a>
+      </li>
+      <li>
          <a href="#axleBearingConditionMonitoring"
             title="http://era.europa.eu/ns#axleBearingConditionMonitoring">axle bearing condition monitoring</a>
       </li>
@@ -511,10 +505,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#contactStripMaterial" title="http://era.europa.eu/ns#contactStripMaterial">contact strip material</a>
-      </li>
-      <li>
-         <a href="#otherContactStripMaterial"
-            title="http://era.europa.eu/ns#otherContactStripMaterial">contact strip material</a>
       </li>
       <li>
          <a href="#dataGSMRNetwork" title="http://era.europa.eu/ns#dataGSMRNetwork">data GSM-R network</a>
@@ -566,7 +556,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#legacyRadioSystem" title="http://era.europa.eu/ns#legacyRadioSystem">legacy radio system</a>
       </li>
       <li>
-         <a href="#lineUICCode" title="http://era.europa.eu/ns#lineUICCode">line UIC code</a>
+         <a href="#lineNationalId" title="http://era.europa.eu/ns#lineNationalId">line national ID</a>
       </li>
       <li>
          <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
@@ -581,6 +571,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
       </li>
       <li>
+         <a href="#manufacturingCountry" title="http://era.europa.eu/ns#manufacturingCountry">manufacturing country</a>
+      </li>
+      <li>
          <a href="#maximumSpeedAndCantDeficiency"
             title="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
       </li>
@@ -588,32 +581,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
       </li>
       <li>
-         <a href="#otherAxleBearingConditionMonitoring"
-            title="http://era.europa.eu/ns#otherAxleBearingConditionMonitoring">other axle bearing condition monitoring</a>
-      </li>
-      <li>
-         <a href="#otherEnergySupplySystem" title="http://era.europa.eu/ns#otherEnergySupplySystem">other energy supply system</a>
-      </li>
-      <li>
-         <a href="#otherLegacyRadioSystem" title="http://era.europa.eu/ns#otherLegacyRadioSystem">other legacy radio system</a>
-      </li>
-      <li>
          <a href="#otherPantographHead" title="http://era.europa.eu/ns#otherPantographHead">other pantograph head</a>
-      </li>
-      <li>
-         <a href="#otherPlatformHeight" title="http://era.europa.eu/ns#otherPlatformHeight">other platform height</a>
-      </li>
-      <li>
-         <a href="#otherProtectionLegacySystem"
-            title="http://era.europa.eu/ns#otherProtectionLegacySystem">other protection legacy system</a>
-      </li>
-      <li>
-         <a href="#otherSnowIceHailConditions"
-            title="http://era.europa.eu/ns#otherSnowIceHailConditions">other snow ice hail conditions</a>
-      </li>
-      <li>
-         <a href="#otherWheelSetGaugeChangeoverFacility"
-            title="http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility">other wheelset gauge changeover facility</a>
       </li>
       <li>
          <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
@@ -623,9 +591,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#protectionLegacySystem" title="http://era.europa.eu/ns#protectionLegacySystem">protection legacy system</a>
-      </li>
-      <li>
-         <a href="#otherRailInclination" title="http://era.europa.eu/ns#otherRailInclination">rail inclination</a>
       </li>
       <li>
          <a href="#railInclination" title="http://era.europa.eu/ns#railInclination">rail inclination</a>
@@ -667,6 +632,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://era.europa.eu/ns#wheelSetGaugeChangeoverFacility">wheelset gauge changeover facility</a>
       </li>
    </ul>
+   <div class="entity" id="authorizedCountry">
+      <h3>authorized country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#authorizedCountry</p>
+      <div class="comment">
+         <span class="markdown">Indicates the country(ies) in where a vehicle type has been authorized to operate.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="axleBearingConditionMonitoring">
       <h3>axle bearing condition monitoring<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -720,7 +719,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -865,7 +864,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -894,7 +893,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -910,44 +909,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial">contact strip material</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherContactStripMaterial">
-      <h3>contact strip material<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherContactStripMaterial</p>
-      <div class="comment">
-         <span class="markdown">Indication of which other contact strip materials are permitted to be used.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/contact-strip-materials#OtherContactStripMaterial">other contact strip material</span>
             </dd>
          </dl>
       </div>
@@ -1159,7 +1120,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1197,7 +1158,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1495,7 +1456,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#inCountry</p>
       <div class="comment">
-         <span class="markdown">Indicates the country in which the entity resides.</span>
+         <span class="markdown">Indicates the country in which an entity resides. Expected to be used by Operational Point entities.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1509,14 +1470,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
@@ -1542,7 +1495,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1562,15 +1515,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="lineUICCode">
-      <h3>line UIC code<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="lineNationalId">
+      <h3>line national ID<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#lineUICCode</p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#lineNationalId</p>
       <div class="comment">
-         <span class="markdown">Line associated UIC code.</span>
+         <span class="markdown">Related national line identification.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1580,7 +1533,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1591,7 +1544,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://era.europa.eu/concepts/uic-codes#UICCode">u i c code</span>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/line-national-ids#LineNationalId">line national id</span>
             </dd>
          </dl>
       </div>
@@ -1694,6 +1648,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="manufacturingCountry">
+      <h3>manufacturing country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#manufacturingCountry</p>
+      <div class="comment">
+         <span class="markdown">Indicates the country in which a vehicle type is manufactured.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="maximumSpeedAndCantDeficiency">
       <h3>maximum speed and cant deficiency<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1712,7 +1700,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -1764,114 +1752,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="otherAxleBearingConditionMonitoring">
-      <h3>other axle bearing condition monitoring<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherAxleBearingConditionMonitoring</p>
-      <div class="comment">
-         <span class="markdown">Other Axle bearing condition monitoring.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/axle-monitoring#OtherAxleBearingMonitoring">other axle bearing monitoring</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherEnergySupplySystem">
-      <h3>other energy supply system<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherEnergySupplySystem</p>
-      <div class="comment">
-         <span class="markdown">Indication of other traction supply system (nominal voltage and frequency) that exceeds the range of the EN 50163:2004.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/energy-supply-systems#OtherEnergySupplySystem">other energy supply system</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherLegacyRadioSystem">
-      <h3>other legacy radio system<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherLegacyRadioSystem</p>
-      <div class="comment">
-         <span class="markdown">Indication of which other legacy radio system is installed</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/legacy-radio-systems#OtherLegacyRadioSystem">other legacy radio system</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="otherPantographHead">
       <h3>other pantograph head<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1903,146 +1783,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead">other pantograph head</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherPlatformHeight">
-      <h3>other platform height<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherPlatformHeight</p>
-      <div class="comment">
-         <span class="markdown">Other Platform heights for which the vehicle is de­signed.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/platform-heights#OtherPlatformHeight">other platform height</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherProtectionLegacySystem">
-      <h3>other protection legacy system<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherProtectionLegacySystem</p>
-      <div class="comment">
-         <span class="markdown">Indication of which other train protection system is installed</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/train-protection-legacy-systems#OtherTrainProtectionLegacySystem">other train protection legacy system</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherSnowIceHailConditions">
-      <h3>other snow ice hail conditions<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherSnowIceHailConditions</p>
-      <div class="comment">
-         <span class="markdown">Other Snow, ice and hail conditions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/ice-conditions#OtherIceCondition">other ice condition</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherWheelSetGaugeChangeoverFacility">
-      <h3>other wheelset gauge changeover facility<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility</p>
-      <div class="comment">
-         <span class="markdown">Other wheelset gauge changeover facility.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/gauge-changeover-facilities#OtherGaugeChangeoverFacility">other gauge changeover facility</span>
             </dd>
          </dl>
       </div>
@@ -2100,7 +1840,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -2135,7 +1875,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -2151,41 +1891,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem">train protection legacy system</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="otherRailInclination">
-      <h3>rail inclination<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#otherRailInclination</p>
-      <div class="comment">
-         <span class="markdown">An angle defining the inclination of the head of a rail relative to the running surface.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>unstable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/rail-inclinations#OtherRailInclination">other rail inclination</span>
             </dd>
          </dl>
       </div>
@@ -2432,7 +2137,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -2613,7 +2318,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -2722,8 +2427,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#gradientProfile" title="http://era.europa.eu/ns#gradientProfile">gradient profile</a>
       </li>
       <li>
-         <a href="#hasadditionalBrakingInformation"
-            title="http://era.europa.eu/ns#hasadditionalBrakingInformation">has additional braking information</a>
+         <a href="#hasAdditionalBrakingInformation"
+            title="http://era.europa.eu/ns#hasAdditionalBrakingInformation">has additional braking information</a>
       </li>
       <li>
          <a href="#hasAutomaticDroppingDevice"
@@ -2948,7 +2653,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3427,7 +3132,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3668,7 +3373,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3702,7 +3407,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3736,7 +3441,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3752,13 +3457,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasadditionalBrakingInformation">
+   <div class="entity" id="hasAdditionalBrakingInformation">
       <h3>has additional braking information<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#hasadditionalBrakingInformation</p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#hasAdditionalBrakingInformation</p>
       <div class="comment">
          <span class="markdown">Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI.</span>
       </div>
@@ -4045,7 +3750,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4079,7 +3784,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4113,7 +3818,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4147,7 +3852,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4746,7 +4451,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4817,7 +4522,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4919,7 +4624,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4987,7 +4692,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -5089,7 +4794,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -5259,7 +4964,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -5293,7 +4998,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -5599,7 +5304,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>
@@ -5772,7 +5477,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl>
          <dt>Term status</dt>
-         <dd>unstable</dd>
+         <dd>stable</dd>
       </dl>
       <div class="description">
          <dl>

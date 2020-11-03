@@ -16,7 +16,7 @@ function executeWidoco() {
     java -jar $widocoJarFile \
         -ontFile $ontologyFile \
         -outFolder $ontologyOutputFolder \
-        -getOntologyMetadata \
+        -confFile $ontologyConfigFile \
         -oops \
         -rewriteAll \
         -saveConfig $ontologyConfigFile \

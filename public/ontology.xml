@@ -4,6 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:ns2="http://era.europa.eu/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -20,13 +21,19 @@
         <owl:imports rdf:resource="http://publications.europa.eu/resource/authority/country"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql#"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:creator rdf:resource="https://julianrojas.org/#me"/>
+        <terms:contributor>Dylan Van Assche</terms:contributor>
+        <terms:contributor>Ivaylo Velitchkov</terms:contributor>
+        <terms:contributor>Julián Rojas</terms:contributor>
+        <terms:contributor>Marina Aguado</terms:contributor>
+        <terms:contributor>Pieter Colpaert</terms:contributor>
+        <terms:contributor>Polymnia Vasilopoulou</terms:contributor>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
+        <terms:publisher>European Union Agency for Railways</terms:publisher>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:versionInfo>v0.9.0</owl:versionInfo>
+        <owl:versionInfo>v1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -43,6 +50,34 @@
     
 
 
+    <!-- http://era.europa.eu/ns#eratvIndex -->
+
+
+    <owl:AnnotationProperty rdf:about="http://era.europa.eu/ns#eratvIndex">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
+        <rdfs:comment xml:lang="en">Index code used in the original definition of a parameter in ERATV.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">eratv index</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#rinfIndex -->
+
+
+    <owl:AnnotationProperty rdf:about="http://era.europa.eu/ns#rinfIndex">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
+        <rdfs:comment xml:lang="en">Index code used in the original definition of a parameter in RINF.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">rinf index</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/title -->
 
 
@@ -54,6 +89,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -126,14 +168,31 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://era.europa.eu/ns#authorizedCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#authorizedCountry">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the country(ies) in where a vehicle type has been authorized to operate.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">authorized country</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://era.europa.eu/ns#axleBearingConditionMonitoring -->
 
 
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#axleBearingConditionMonitoring">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring"/>
+        <eratvIndex>4.9.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Axle bearing condition monitoring.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">axle bearing condition monitoring</rdfs:label>
@@ -148,12 +207,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#axleSpacing">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/axle-positions#AxlePosition"/>
+        <eratvIndex>4.5.3.4</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Position of the axles along the unit. a: Distance between axles; b: Distance from end axle to the end of the nearest coupling plane; c: distance between two inside axles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">axle spacing</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -180,8 +240,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#brakeWeightPercentage">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage"/>
+        <eratvIndex>4.7.6</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Brake weight percentage (lambda) or Braked mass.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">brake weight percentage</rdfs:label>
@@ -210,10 +271,11 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#contactLineSystem">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem"/>
+        <rinfIndex>1.1.1.2.2.1.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the type of the contact line system.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">contact line system</rdfs:label>
@@ -235,12 +297,14 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial"/>
+        <eratvIndex>4.10.10</eratvIndex>
+        <rinfIndex>1.1.1.2.3.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which contact strip materials are permitted to be used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">contact strip material</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -251,8 +315,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#dataGSMRNetwork">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"/>
+        <eratvIndex>4.13.2.11</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Data SIM Card GSM-R Home Network</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">data GSM-R network</rdfs:label>
@@ -274,8 +339,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility"/>
+        <eratvIndex>4.13.2.8</eratvIndex>
+        <rinfIndex>1.1.1.3.3.10</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility data</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">data radio compatible</rdfs:label>
@@ -290,8 +357,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#emergencyBrake">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/emergency-braking-profiles#EmergencyBrakingProfile"/>
+        <eratvIndex>4.7.5</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Stopping distance and deceleration profile for each load condition per design maximum speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">emergency braking</rdfs:label>
@@ -361,12 +429,14 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/energy-supply-systems#EnergySupplySystem"/>
+        <eratvIndex>4.10.1</eratvIndex>
+        <rinfIndex>1.1.1.2.2.1.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-28</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the traction supply system (nominal voltage and frequency).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">energy supply system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -384,12 +454,14 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/etcs-system-compatibilities#ETCSSystemCompatibility"/>
+        <eratvIndex>4.13.1.8</eratvIndex>
+        <rinfIndex>1.1.1.3.2.9</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">ETCS requirements used for demonstrating technical compatibility.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">ETCS system compatibility</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -400,8 +472,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#fireSafetyCategory">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/rolling-stock-fire#Category"/>
+        <eratvIndex>4.4.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Fire safety category for tunnels.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">fire safety category</rdfs:label>
@@ -416,8 +489,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#frenchTrainDetectionSystemLimitation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/train-detection#FrenchTrainDetectionSystemLimitation"/>
+        <rinfIndex>1.1.1.3.7.1.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Section with train detection limitation, specific for route compatibility check on French network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">french train detection system limitation</rdfs:label>
@@ -439,8 +513,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/gaugings#GaugingProfile"/>
+        <eratvIndex>4.2.1</eratvIndex>
+        <rinfIndex>1.1.1.1.3.1.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Gauges as defined in European standard or other local gauges, including lower or upper part.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">gauging profile</rdfs:label>
@@ -455,8 +531,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#gsmrNetworkCoverage">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"/>
+        <rinfIndex>1.1.1.3.3.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">GSM-R networks covered by a roaming agreement)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">gsm-r network coverage</rdfs:label>
@@ -546,18 +623,10 @@ above the local reference ellipsoid).</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#inCountry">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#OperationalPoint"/>
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">Indicates the country in which the entity resides.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the country in which an entity resides. Expected to be used by Operational Point entities.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">in country</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -578,28 +647,30 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/legacy-radio-systems#LegacyRadioSystem"/>
+        <eratvIndex>4.13.2.3</eratvIndex>
+        <rinfIndex>1.1.1.3.6.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of radio legacy systems installed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">legacy radio system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://era.europa.eu/ns#lineUICCode -->
+    <!-- http://era.europa.eu/ns#lineNationalId -->
 
 
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#lineUICCode">
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#lineNationalId">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/uic-codes#UICCode"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:modified>
-        <rdfs:comment xml:lang="en">Line associated UIC code.</rdfs:comment>
+        <rdfs:range rdf:resource="http://era.europa.eu/concepts/line-national-ids#LineNationalId"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:modified>
+        <rdfs:comment xml:lang="en">Related national line identification.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">line UIC code</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <rdfs:label xml:lang="en">line national ID</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -610,8 +681,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#loadCapability">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/load-capabilities#LoadCapability"/>
+        <rinfIndex>1.1.1.1.2.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">A combination of the line category and speed at the weakest point of the track.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">load capability</rdfs:label>
@@ -636,18 +708,35 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://era.europa.eu/ns#manufacturingCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#manufacturingCountry">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates the country in which a vehicle type is manufactured.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">manufacturing country</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://era.europa.eu/ns#maximumSpeedAndCantDeficiency -->
 
 
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/max-speed-cant-deficiency#MaxSpeedCantDeficiency"/>
+        <eratvIndex>4.6.4</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum speed and cant deficiency</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -668,176 +757,19 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://era.europa.eu/ns#otherAxleBearingConditionMonitoring -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherAxleBearingConditionMonitoring">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/axle-monitoring#OtherAxleBearingMonitoring"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">Other Axle bearing condition monitoring.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other axle bearing condition monitoring</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherContactStripMaterial -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherContactStripMaterial">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/contact-strip-materials#OtherContactStripMaterial"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-29</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of which other contact strip materials are permitted to be used.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">contact strip material</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherEnergySupplySystem -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherEnergySupplySystem">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#Track"/>
-                    <rdf:Description rdf:about="http://era.europa.eu/ns#VehicleType"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/energy-supply-systems#OtherEnergySupplySystem"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-28</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-28</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of other traction supply system (nominal voltage and frequency) that exceeds the range of the EN 50163:2004.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other energy supply system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherLegacyRadioSystem -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherLegacyRadioSystem">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/legacy-radio-systems#OtherLegacyRadioSystem"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of which other legacy radio system is installed</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other legacy radio system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://era.europa.eu/ns#otherPantographHead -->
 
 
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherPantographHead">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/tsi-pantograph-heads#OtherPantographHead"/>
+        <rinfIndex>1.1.1.2.3.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which other pantograph heads are allowed to be used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">other pantograph head</rdfs:label>
         <ns:term_status>stable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherPlatformHeight -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherPlatformHeight">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/platform-heights#OtherPlatformHeight"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">Other Platform heights for which the vehicle is de­signed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other platform height</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherProtectionLegacySystem -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherProtectionLegacySystem">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/train-protection-legacy-systems#OtherTrainProtectionLegacySystem"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
-        <rdfs:comment xml:lang="en">Indication of which other train protection system is installed</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other protection legacy system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherRailInclination -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherRailInclination">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/rail-inclinations#OtherRailInclination"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">rail inclination</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherSnowIceHailConditions -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherSnowIceHailConditions">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/ice-conditions#OtherIceCondition"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">Other Snow, ice and hail conditions.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other snow ice hail conditions</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility -->
-
-
-    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#otherWheelSetGaugeChangeoverFacility">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
-        <rdfs:range rdf:resource="http://era.europa.eu/concepts/gauge-changeover-facilities#OtherGaugeChangeoverFacility"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">Other wheelset gauge changeover facility.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">other wheelset gauge changeover facility</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -848,8 +780,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#pantographHeadTSI">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/tsi-pantograph-heads#TSIPantographHead"/>
+        <rinfIndex>1.1.1.2.3.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which TSI compliant pantograph heads are allowed to be used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">tsi pantograph head</rdfs:label>
@@ -880,12 +813,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#platformHeight">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/platform-heights#PlatformHeight"/>
+        <eratvIndex>4.12.3.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Platform heights for which the vehicle is de­signed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">platform height</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -903,12 +837,14 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem"/>
+        <eratvIndex>4.13.1.5</eratvIndex>
+        <rinfIndex>1.1.1.3.5.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of which class B system is installed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">protection legacy system</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -926,8 +862,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/rail-inclinations#RailInclination"/>
+        <eratvIndex>4.6.5</eratvIndex>
+        <rinfIndex>1.1.1.1.4.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">An angle defining the inclination of the head of a rail relative to the running surface.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">rail inclination</rdfs:label>
@@ -942,8 +880,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#rollingStockFireCategory">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/rolling-stock-fire#Category"/>
+        <rinfIndex>1.1.1.1.8.10</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Applicable rolling stock fire category for a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">rolling stock fire category</rdfs:label>
@@ -958,8 +897,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#snowIceHailConditions">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/ice-conditions#IceCondition"/>
+        <eratvIndex>4.3.3</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Snow, ice and hail conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">snow ice hail conditions</rdfs:label>
@@ -1038,12 +978,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#thermalCapacityTSIReference">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference"/>
+        <eratvIndex>4.7.2.1.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Reference case of a TSI thermal capacity.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">thermal capacity TSI reference</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -1061,8 +1002,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/train-detection#TrainDetectionSystem"/>
+        <eratvIndex>4.14.1</eratvIndex>
+        <rinfIndex>1.1.1.3.7.1.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of supported types of train detection systems.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">train detection system</rdfs:label>
@@ -1077,8 +1020,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#voiceGSMRNetwork">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"/>
+        <eratvIndex>4.13.2.10</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Voice SIM Card GSM-R Home Network</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">voice GSM-R network</rdfs:label>
@@ -1100,8 +1044,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility"/>
+        <eratvIndex>4.13.2.5</eratvIndex>
+        <rinfIndex>1.1.1.3.3.9</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Radio requirements used for demonstrating technical compatibility voice</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">voice radio compatible</rdfs:label>
@@ -1116,12 +1062,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#wheelSetGaugeChangeoverFacility">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://era.europa.eu/concepts/gauge-changeover-facilities#GaugeChangeoverFacility"/>
+        <eratvIndex>4.6.4</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Wheelset gauge changeover facility.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">wheelset gauge changeover facility</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -1153,12 +1100,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#additionalBrakingInformationDocument">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.3.11.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">additional braking information document</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1185,8 +1133,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#automaticDroppingDeviceRequired">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.2.5.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of whether an automatic dropping device (ADD) required on the vehicle.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">automatic dropping device required</rdfs:label>
@@ -1224,8 +1173,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#cantDeficiency">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rinfIndex>1.1.1.1.4.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">cant deficiency</rdfs:label>
@@ -1240,12 +1190,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#compatibilityProcedureDocument">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rinfIndex>1.1.1.1.2.4.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Document with the procedure(s) for static and dynamic route compatibility checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">structure check document</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1256,8 +1207,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#conditionalEddyCurrentBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Eddy current braking allowed under certain conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">conditional eddy current braking</rdfs:label>
@@ -1272,8 +1224,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#conditionalEmergencyOnlyEddyCurrentBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Eddy current braking allowed only certain conditions for emergency situations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">conditional emergency only eddy current braking</rdfs:label>
@@ -1288,8 +1241,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#conditionalEmergencyOnlyMagneticBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Magnetic braking allowed only certain conditions for emergency situations.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">conditional emergency only magnetic braking</rdfs:label>
@@ -1304,8 +1258,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#conditionalMagneticBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Magnetic braking allowed under certain conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">conditional magnetic braking</rdfs:label>
@@ -1320,8 +1275,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#conditionalRegenerativeBrake">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.2.2.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Regenerative braking allowed under certain conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">conditional regenerative brake</rdfs:label>
@@ -1336,8 +1292,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#currentLimitationRequired">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.2.5.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of whether an on board current or power limitation function on vehicles is required.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">current limitation required</rdfs:label>
@@ -1352,8 +1309,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#designMassExceptionalPayload">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.5.2.3</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Design mass under exceptional payload.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">design mass under exceptional payload</rdfs:label>
@@ -1368,8 +1326,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#designMassNormalPayload">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.5.2.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Design mass under normal payload.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">design mass under normal payload</rdfs:label>
@@ -1384,8 +1343,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#designMassWorkingOrder">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.5.2.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Design mass in working order.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">design mass in working order</rdfs:label>
@@ -1400,8 +1360,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#eddyCurrentBrakePrevention">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.1.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Possibility of preventing the use of the eddy current track brake (only if fitted with eddy current brake)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">eddy current brake prevention</rdfs:label>
@@ -1423,8 +1384,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.1.1</eratvIndex>
+        <rinfIndex>1.1.1.1.6.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Use of eddy current brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">eddy current braking</rdfs:label>
@@ -1439,8 +1402,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#eddyCurrentBrakingConditionsDocument">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.6.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Document with the conditions for the use of eddy current brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">eddy current braking conditions document</rdfs:label>
@@ -1455,8 +1419,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#emergencyOnlyEddyCurrentBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Eddy current braking allowed only under emergency conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">emergency only eddy current braking</rdfs:label>
@@ -1471,8 +1436,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#emergencyOnlyMagneticBraking">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.6.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Magnetic braking allowed only under emergency conditions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">emergency only magnetic braking</rdfs:label>
@@ -1487,8 +1453,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#energySupplySystemTSICompliant">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.2.2.1.2.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication if the traction supply system (nominal voltage and frequency) is fully compliant with TSI.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">energy supply system TSI compliant</rdfs:label>
@@ -1503,12 +1470,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#gaugingCheckLocation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rinfIndex>1.1.1.1.3.1.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">gauging check location</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1519,12 +1487,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#gaugingTransversalDocument">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.3.1.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Document with the transversal section of the particular points requiring specific checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">gauging traversal document</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1535,12 +1504,30 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#gradientProfile">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.3.6</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Sequence of gradient values and locations of change in gradient.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">gradient profile</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://era.europa.eu/ns#hasAdditionalBrakingInformation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasAdditionalBrakingInformation">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.3.11.2</rinfIndex>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
+        <rdfs:comment xml:lang="en">Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">has additional braking information</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1551,8 +1538,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasAutomaticDroppingDevice">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.10.11</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Automatic dropping device (ADD) fitted (to be indicated for each energy supply system the vehicle is equipped for).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has automatic dropping device</rdfs:label>
@@ -1567,8 +1555,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasCurrentLimitation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.10.14</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Electric units equipped with power or current limitation function.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has current limitation</rdfs:label>
@@ -1583,8 +1572,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasHotAxleBoxDetector">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.7.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Existence of trackside hot axle box detector (HABD).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has axle box detector</rdfs:label>
@@ -1606,8 +1596,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.3.1</eratvIndex>
+        <rinfIndex>1.1.1.2.2.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether regenerative braking is permitted or not.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has regenerative brake</rdfs:label>
@@ -1622,8 +1614,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasSevereWeatherConditions">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.2.8</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Climatic conditions on the line are severe according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has severe weather conditions</rdfs:label>
@@ -1638,27 +1631,12 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasTrainIntegrityConfirmation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.13.1.9</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of on-board management system about completeness of the train information.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">has train integrity confirmation</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://era.europa.eu/ns#hasadditionalBrakingInformation -->
-
-
-    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hasadditionalBrakingInformation">
-        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
-        <rdfs:comment xml:lang="en">Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
-        <rdfs:label xml:lang="en">has additional braking information</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
@@ -1670,8 +1648,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#highSpeedLoadModelCompliance">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.2.4.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Compliance of structures with the High Speed Load Model (HSLM).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">high speed load model compliance</rdfs:label>
@@ -1686,12 +1665,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hotAxleBoxDetectorDirection">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.7.9</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">hot axle box detector direction</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1702,12 +1682,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hotAxleBoxDetectorGeneration">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.7.7</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Generation of trackside HABD. Specific for the French Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">hot axle box detector generation</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1718,12 +1699,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hotAxleBoxDetectorIdentification">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.7.6</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">hot axle box detector identification</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1734,12 +1716,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hotAxleBoxDetectorLocation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rinfIndex>1.1.1.1.7.8</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">hot axle box detector location</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -1750,8 +1733,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.1.7.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">hot axle box detector TSI compliant</rdfs:label>
@@ -1766,8 +1750,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#magneticBrakePrevention">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.2.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Possibility of preventing the use of the magnetic track brake (only if fitted with magnetic brake)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">magnetic brake prevention</rdfs:label>
@@ -1789,8 +1774,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.2.1</eratvIndex>
+        <rinfIndex>1.1.1.1.6.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Use of magnetic brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">magnetic braking</rdfs:label>
@@ -1805,8 +1792,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#magneticBrakingConditionsDocument">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.6.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Document with the conditions for the use of magnetic brakes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">magnetic braking conditions document</rdfs:label>
@@ -1828,8 +1816,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.10.4</eratvIndex>
+        <rinfIndex>1.1.1.2.2.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the maximum allowable train current at standstill for DC systems expressed in amperes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum standstill current per pantograph</rdfs:label>
@@ -1844,8 +1834,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#maximumBrakingDistance">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rinfIndex>1.1.1.3.11.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">The maximum value of the braking distance [in metres] of a train shall be given for the maximum line speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum braking distance</rdfs:label>
@@ -1867,8 +1858,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.10.5</eratvIndex>
+        <rinfIndex>1.1.1.2.2.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the maximum contact wire height expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum contact wire height</rdfs:label>
@@ -1883,8 +1876,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#maximumDesignSpeed">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.1.2.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Maximum design speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum design speed</rdfs:label>
@@ -1899,8 +1893,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#maximumPermittedSpeed">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rinfIndex>1.1.1.1.2.5</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum permitted speed</rdfs:label>
@@ -1922,8 +1917,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.3.1</eratvIndex>
+        <rinfIndex>1.1.1.1.2.6</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Maximum tempertaure allowed for unrestricted operation access, according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum temperature</rdfs:label>
@@ -1938,8 +1935,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#maximumTrainDeceleration">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rinfIndex>1.1.1.1.6.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">maximum train deceleration</rdfs:label>
@@ -1954,8 +1952,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#minimumConcaveVerticalRadius">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.8.6</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Minimum vertical concave curve radius capability.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum concave vertical radius</rdfs:label>
@@ -1977,8 +1976,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.10.5</eratvIndex>
+        <rinfIndex>1.1.1.2.2.6</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of the minimum contact wire height expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum contact wire height</rdfs:label>
@@ -1993,8 +1994,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#minimumConvexVerticalRadius">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.8.5</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Minimum vertical convex curve radius capability.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum convex vertical radius</rdfs:label>
@@ -2016,8 +2018,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.8.4</eratvIndex>
+        <rinfIndex>1.1.1.1.3.7</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Radius of the smallest horizontal curve of the track in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum horizontal radius</rdfs:label>
@@ -2039,8 +2043,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.3.1</eratvIndex>
+        <rinfIndex>1.1.1.1.2.6</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Minimum tempertaure allowed for unrestricted operation access, according to European standard.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum temperature</rdfs:label>
@@ -2055,12 +2061,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#minimumVerticalRadius">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.2.2.0.3.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Radius of the smallest vertical curve expressed in metres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum vertical curve radius</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2078,8 +2085,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.8.2</eratvIndex>
+        <rinfIndex>1.1.1.1.5.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">minimum wheel diameter</rdfs:label>
@@ -2094,12 +2103,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#nationalLoadCapability">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.2.4.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">National classification for load capability.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">national load capability</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2110,8 +2120,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#nationalRollingStockFireCategory">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Tunnel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.1.8.11</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Applicable national rolling stock fire category for a tunnel.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">national rolling stock fire category</rdfs:label>
@@ -2126,8 +2137,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.10.7</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Number of pantographs in contact with the overhead contact line (OCL) (to be indicated for each energy supply system the vehicle is equipped for).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">number of pantpgraphs in contact with OCL</rdfs:label>
@@ -2142,12 +2154,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#oclType">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <eratvIndex>4.10.9</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-03</terms:modified>
         <rdfs:comment xml:lang="en">OCL type.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">ocl type</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2158,8 +2171,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#parkingBrakeMaximumGradient">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.7.3.3</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Maximum gradient on which the unit is kept immobilised by the parking brake alone (if the vehicle is fitted with it).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">parking brake maximum gradient</rdfs:label>
@@ -2174,12 +2188,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#permissiblePayload">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <eratvIndex>4.5.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Permissible payload for different line categories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">permissible payload</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2190,8 +2205,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#permittedContactForce">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.2.5.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of contact force allowed expressed in newtons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">permitted contact force</rdfs:label>
@@ -2206,8 +2222,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#preventRegenerativeBrakeUse">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.7.4.3.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Possibility of preventing the use of the regenerative brake (only if fitted with regenerative brake).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">prevent regenerative brake use</rdfs:label>
@@ -2222,12 +2239,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.2.3.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">raised pantographs distance and speed</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2238,8 +2256,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.10.8</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Shortest distance between two pantographs in contact with the OCL (to be indicated for each energy supply system the vehicle is equipped for; to be indicated for single and, if applicable, multiple operation) (only if number of raised pantographs is more than 1).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">shortest distance between pantpgraphs in contact with OCL</rdfs:label>
@@ -2254,8 +2273,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#staticAxleLoadExceptionalPayload">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.5.3.3</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Static axle load under exceptional payload.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">static axle load under exceptional payload</rdfs:label>
@@ -2270,8 +2290,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#staticAxleLoadNormalPayload">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.5.3.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Static axle load under normal payload.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">static axle load under normal payload</rdfs:label>
@@ -2286,8 +2307,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#staticAxleLoadWorkingOrder">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.5.3.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Static axle load in working order.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">static axle load in working order</rdfs:label>
@@ -2302,12 +2324,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#structureCheckLocation">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rinfIndex>1.1.1.1.2.4.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Railway location of structures requiring specific checks.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">structure check location</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2334,8 +2357,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#thermalCapacityDistance">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.7.2.1.4</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Thermal capacity distance. If no reference case is indicated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">thermal capacity distance</rdfs:label>
@@ -2350,8 +2374,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#thermalCapacityGradient">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.7.2.1.3</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Thermal capacity gradient. If no reference case is indicated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">thermal capacity gradient</rdfs:label>
@@ -2366,8 +2391,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#thermalCapacitySpeed">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <eratvIndex>4.7.2.1.2</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Thermal capacity speed. If no reference case is indicated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">thermal capacity speed</rdfs:label>
@@ -2382,8 +2408,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#thermalCapacityTime">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.7.2.1.5</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Thermal capacity time. If no reference case is indicated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">thermal capacity time</rdfs:label>
@@ -2414,12 +2441,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#trainDetectionSystemSpecificCheck">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.3.7.1.2</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Type of track circuits or axle counter to which specific checks are needed.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">detection system specific check</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2430,8 +2458,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rinfIndex>1.1.1.3.2.8</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">train integrity on-board required</rdfs:label>
@@ -2462,12 +2491,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#umax2">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#Track"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rinfIndex>1.1.1.2.2.1.3</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014. Specific for the French network.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">umax2</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2501,8 +2531,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <eratvIndex>4.13.2.12</eratvIndex>
+        <rinfIndex>1.1.1.3.3.4</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Indication if group 555 is needed/used.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">uses group 555</rdfs:label>
@@ -2517,8 +2549,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#vehicleContactForce">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.10.15</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Mean contact force.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">vehicle contact force</rdfs:label>
@@ -2533,8 +2566,9 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#vehicleLength">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.8.1</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Vehicle length.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">vehicle length</rdfs:label>
@@ -2549,12 +2583,13 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#vehiclePantographHead">
         <rdfs:domain rdf:resource="http://era.europa.eu/ns#VehicleType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <eratvIndex>4.10.6</eratvIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-25</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">Pantograph head geometry (to be indicated for each energy supply system the vehicle is equipped for).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">vehicle pantograph head</rdfs:label>
-        <ns:term_status>unstable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -2572,8 +2607,10 @@ above the local reference ellipsoid).</rdfs:comment>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <eratvIndex>4.1.3</eratvIndex>
+        <rinfIndex>1.1.1.1.4.1</rinfIndex>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-03</terms:modified>
         <rdfs:comment xml:lang="en">A single value expressed in millimetres that identifies the track and vehicle wheel set gauge.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">wheel set gauge</rdfs:label>
@@ -2600,7 +2637,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://era.europa.eu/ns#InternalNodeLink">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
-        <rdfs:comment xml:lang="en">A specific track abstraction usee to represent a micro link switch that is possible inside a micro node.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A specific track abstraction used to represent a micro link switch that is possible inside a micro node.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">Internal Node Link</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2614,7 +2651,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <owl:Class rdf:about="http://era.europa.eu/ns#MicroLink">
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:modified>
-        <rdfs:comment xml:lang="en">An abstraction of a track that represent a physical rail connection between two different micro nodes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An abstraction of a track that represents a physical rail connection between two different micro nodes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">Micro Link</rdfs:label>
         <ns:term_status>stable</ns:term_status>
@@ -2660,7 +2697,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-01</terms:modified>
-        <rdfs:comment xml:lang="en">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point means also any location at boundaries between Member States or infrastructure managers.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
         <rdfs:label xml:lang="en">Operational Point</rdfs:label>
         <ns:term_status>stable</ns:term_status>
