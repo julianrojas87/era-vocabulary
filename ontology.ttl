@@ -9,7 +9,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix eu-countries: <http://publications.europa.eu/resource/authority/country> .
+@prefix eu-countries: <http://publications.europa.eu/resource/authority/country/> .
 @prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
@@ -46,10 +46,17 @@ era: a owl:Ontology ;
     dct:issued "2020-07-29"^^xsd:date ;
     dct:modified "2020-11-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:creator <https://julianrojas.org/#me> ;
+    dct:publisher "European Union Agency for Railways" ;
+    dct:contributor "Julián Rojas" ;
+    dct:contributor "Ivaylo Velitchkov" ;
+    dct:contributor "Polymnia Vasilopoulou" ;
+    dct:contributor "Marina Aguado" ;
+    dct:contributor "Dylan Van Assche" ;
+    dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v0.9.2" ;
+    owl:versionInfo "v1.0.0" ;
     owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
+
 
 #################################################################
 #
@@ -392,22 +399,18 @@ era:alternativeName a owl:DatatypeProperty, rdf:Property ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
-era:rinfIndex a owl:DatatypeProperty, rdf:Property ;
+era:rinfIndex a owl:AnnotationProperty ;
     rdfs:label "rinf index"@en ;
     rdfs:comment "Index code used in the original definition of a parameter in RINF."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range xsd:string ;
     dct:created "2020-11-03"^^xsd:date ;
     dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .
 
-era:eratvIndex a owl:DatatypeProperty, rdf:Property ;
+era:eratvIndex a owl:AnnotationProperty ;
     rdfs:label "eratv index"@en ;
     rdfs:comment "Index code used in the original definition of a parameter in ERATV."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain rdfs:Resource ;
-    rdfs:range xsd:string ;
     dct:created "2020-11-03"^^xsd:date ;
     dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .
