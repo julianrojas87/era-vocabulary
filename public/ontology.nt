@@ -4,17 +4,16 @@
 <http://era.europa.eu/ns#> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Dylan Van Assche" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Ivaylo Velitchkov" .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Julián Rojas" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Marina Aguado" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Pieter Colpaert" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.0" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.0.1" .
 # 
 # 
 # #################################################################
@@ -370,7 +369,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://era.europa.eu/ns#rinfIndex> "1.1.1.3.3.5" .
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://purl.org/dc/terms/created> "2020-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://purl.org/dc/terms/modified> "2020-11-03"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement)"@en .
+<http://era.europa.eu/ns#gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "GSM-R networks covered by a roaming agreement"@en .
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "gsm-r network coverage"@en .
 <http://era.europa.eu/ns#gsmrNetworkCoverage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -544,7 +543,6 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#pantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
 <http://era.europa.eu/ns#pantographHead> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/pantograph-heads#PantographHead> .
-<http://era.europa.eu/concepts/pantograph-heads#PantographHead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#pantographHead> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.1" .
 <http://era.europa.eu/ns#pantographHead> <http://era.europa.eu/ns#rinfIndex> "1.1.1.2.3.2" .
 <http://era.europa.eu/ns#pantographHead> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -1252,6 +1250,18 @@ _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector TSI compliant"@en .
 <http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#isQuiteRoute
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://era.europa.eu/ns#rinfIndex> "1.1.1.1.7.11" .
+<http://era.europa.eu/ns#isQuiteRoute> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://purl.org/dc/terms/modified> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of a track being part of a route with noise restrictions"@en .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#label> "is quiet route"@en .
+<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#magneticBrakePrevention
 <http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
@@ -1920,8 +1930,6 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
-# 
-# http://era.europa.eu/concepts/pantograph-heads#PantographHead
 # 
 # http://era.europa.eu/ns#InternalNodeLink
 <http://era.europa.eu/ns#InternalNodeLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -44,17 +44,17 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2020-11-04"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
-    dct:contributor "Julián Rojas" ;
     dct:contributor "Ivaylo Velitchkov" ;
     dct:contributor "Polymnia Vasilopoulou" ;
     dct:contributor "Marina Aguado" ;
     dct:contributor "Dylan Van Assche" ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.0.0" ;
+    owl:versionInfo "v1.0.1" ;
     owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
 
 
@@ -1620,7 +1620,7 @@ era:hasTrainIntegrityConfirmation a owl:DatatypeProperty, rdf:Property ; # ERATV
 era:gsmrNetworkCoverage a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.3.5
     era:rinfIndex "1.1.1.3.3.5" ;
     rdfs:label "gsm-r network coverage"@en ;
-    rdfs:comment "GSM-R networks covered by a roaming agreement)"@en ;
+    rdfs:comment "GSM-R networks covered by a roaming agreement"@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Track ;
     rdfs:range era-gsmr:GSMRNetwork ;
@@ -1722,4 +1722,17 @@ era:legacyRadioSystem a owl:ObjectProperty, rdf:Property ; # RINF 1.1.1.3.6.1 an
     rdfs:range era-lrs:LegacyRadioSystem ;
     dct:created "2020-08-31"^^xsd:date ;
     dct:modified "2020-11-03"^^xsd:date ;
+    vs:term_status "stable" .
+
+########## Noise ##########
+
+era:isQuiteRoute a owl:DatatypeProperty, rdf:Property ; # RINF 1.1.1.1.7.11
+    era:rinfIndex "1.1.1.1.7.11" ;
+    rdfs:label "is quiet route"@en ;
+    rdfs:comment "Indication of a track being part of a route with noise restrictions"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Track ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-11-04"^^xsd:date ;
+    dct:modified "2020-11-04"^^xsd:date ;
     vs:term_status "stable" .

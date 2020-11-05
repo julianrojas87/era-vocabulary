@@ -319,6 +319,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#hotAxleBoxDetectorIdentification">hot axle box detector identification</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hotAxleBoxDetectorLocation"
                title="http://era.europa.eu/ns#hotAxleBoxDetectorLocation">hot axle box detector location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isQuiteRoute" title="http://era.europa.eu/ns#isQuiteRoute">is quiet route</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#lineNationalId" title="http://era.europa.eu/ns#lineNationalId">line national ID</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#magneticBrakingConditionsDocument"
@@ -1290,7 +1291,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#gsmrNetworkCoverage</p>
       <div class="comment">
-         <span class="markdown">GSM-R networks covered by a roaming agreement)</span>
+         <span class="markdown">GSM-R networks covered by a roaming agreement</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2184,7 +2185,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/pantograph-heads#PantographHead">pantograph head</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2436,6 +2436,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <li>
          <a href="#hotAxleBoxDetectorTSICompliant"
             title="http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant">hot axle box detector TSI compliant</a>
+      </li>
+      <li>
+         <a href="#isQuiteRoute" title="http://era.europa.eu/ns#isQuiteRoute">is quiet route</a>
       </li>
       <li>
          <a href="#magneticBrakePrevention" title="http://era.europa.eu/ns#magneticBrakePrevention">magnetic brake prevention</a>
@@ -3842,6 +3845,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <strong>IRI:</strong> http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant</p>
       <div class="comment">
          <span class="markdown">Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isQuiteRoute">
+      <h3>is quiet route<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#isQuiteRoute</p>
+      <div class="comment">
+         <span class="markdown">Indication of a track being part of a route with noise restrictions</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
