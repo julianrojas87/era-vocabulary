@@ -15,7 +15,6 @@
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-lni: <http://era.europa.eu/concepts/line-national-ids#> .
 @prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
-@prefix era-manufacturers: <http://era.europa.eu/concepts/manufacturers#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
@@ -55,7 +54,7 @@ era: a owl:Ontology ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
     owl:versionInfo "v1.1.0" ;
-    owl:imports era-skos:, eu-countries:, wgs:, geosparql: .
+    owl:imports foaf:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
 #################################################################
@@ -133,6 +132,17 @@ era:VehicleType a owl:Class ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+######## Others #########
+
+era:Manufacturer a owl:Class ;
+    rdfs:subClassOf foaf:Organization ;
+    rdfs:label "Manufacturer"@en ;
+    rdfs:comment "Class representing vehicle manufacturer companies"@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-11-19"^^xsd:date ;
+    dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
 
 #################################################################
@@ -296,9 +306,9 @@ era:manufacturer a owl:ObjectProperty ;
     rdfs:comment "Vehicle manufacturer company."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range era-manufacturers:Manufacturer ;
+    rdfs:range era:Manufacturer ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
 
 era:inCountry a owl:ObjectProperty ;
