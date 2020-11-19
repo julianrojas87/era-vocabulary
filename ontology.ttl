@@ -272,23 +272,23 @@ era:passesThroughTunnel a owl:ObjectProperty ;
     vs:term_status "stable" .
 
 era:category a owl:ObjectProperty ;
-    rdfs:label "category"@en ;
+    rdfs:label "vehicle category"@en ;
     rdfs:comment "Vehicle category."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
     rdfs:range era-vehicles:Category ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
 
 era:subCategory a owl:ObjectProperty ;
-    rdfs:label "subcategory"@en ;
+    rdfs:label "vehicle subcategory"@en ;
     rdfs:comment "Vehicle subcategory."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
     rdfs:range era-vehicles:SubCategory ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
 
 era:manufacturer a owl:ObjectProperty ;
