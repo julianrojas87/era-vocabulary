@@ -4,7 +4,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix org: <https://www.w3.org/ns/org#> .
+@prefix schema: <https://schema.org/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
@@ -55,7 +55,7 @@ era: a owl:Ontology ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
     owl:versionInfo "v1.1.0" ;
-    owl:imports org:, era-skos:, eu-countries:, wgs:, geosparql: .
+    owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
 #################################################################
@@ -138,7 +138,7 @@ era:VehicleType a owl:Class ;
 ######## Others #########
 
 era:Manufacturer a owl:Class ;
-    rdfs:subClassOf org:FormalOrganization ;
+    rdfs:subClassOf schema:Organization ;
     rdfs:label "Manufacturer"@en ;
     rdfs:comment "A company or organization that manufactures vehicles."@en ;
     rdfs:isDefinedBy era: ;
