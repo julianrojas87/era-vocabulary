@@ -44,7 +44,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-19"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -133,6 +133,14 @@ era:VehicleType a owl:Class ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:Vehicle a owl:Class ;
+    rdfs:label "Vehicle"@en ;
+    rdfs:comment "A specific vehicle or wagon able to operate over railway lines."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-11-22"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "stable" .
 
 ######## Others #########
