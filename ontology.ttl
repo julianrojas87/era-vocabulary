@@ -15,7 +15,7 @@
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-lni: <http://era.europa.eu/concepts/line-national-ids#> .
-@prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
+@prefix era-vehicle-types: <http://era.europa.eu/concepts/vehicle-types#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
@@ -287,7 +287,7 @@ era:category a owl:ObjectProperty ;
     rdfs:comment "Vehicle category."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range era-vehicles:Category ;
+    rdfs:range era-vehicle-types:Category ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
@@ -297,7 +297,7 @@ era:subCategory a owl:ObjectProperty ;
     rdfs:comment "Vehicle subcategory."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:VehicleType ;
-    rdfs:range era-vehicles:SubCategory ;
+    rdfs:range era-vehicle-types:SubCategory ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .

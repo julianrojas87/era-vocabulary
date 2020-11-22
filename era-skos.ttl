@@ -9,7 +9,7 @@
 @prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-lni: <http://era.europa.eu/concepts/line-national-ids#> .
-@prefix era-vehicles: <http://era.europa.eu/concepts/vehicles#> .
+@prefix era-vehicle-types: <http://era.europa.eu/concepts/vehicle-types#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .
 @prefix era-gaugings: <http://era.europa.eu/concepts/gaugings#> .
 @prefix era-ap: <http://era.europa.eu/concepts/axle-positions#> .
@@ -63,13 +63,13 @@ era-lni:LineNationalId a owl:Class ; # Concepts of this class are dynamically ge
     rdfs:label "Line National ID"@en ;
     rdfs:comment "Abstract class representing line national Identificators"@en .
 
-era-vehicles:Category a owl:Class ;
+era-vehicle-types:Category a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     skos:inScheme era-skos: ;
     rdfs:label "Vehicle Category"@en ;
     rdfs:comment "Abstract class representing vehicle categories"@en .
 
-era-vehicles:SubCategory a owl:Class ;
+era-vehicle-types:SubCategory a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     skos:inScheme era-skos: ;
     rdfs:label "Vehicle Sub Category"@en ;
@@ -21528,78 +21528,78 @@ era-lni:Zp-Ww a era-lni:LineNationalId;
 
 ########## Vehicle categories ##########
 
-era-vehicles:tractionVehicles a era-vehicles:Category ;
+era-vehicle-types:tractionVehicles a era-vehicle-types:Category ;
     skos:prefLabel "Traction Vehicles"@en .
 
-era-vehicles:hauledPassenger a era-vehicles:Category ;
+era-vehicle-types:hauledPassenger a era-vehicle-types:Category ;
     skos:prefLabel "Hauled Passenger Vehicles"@en .
 
-era-vehicles:freightWagons a era-vehicles:Category ;
+era-vehicle-types:freightWagons a era-vehicle-types:Category ;
     skos:prefLabel "Freight Wagons"@en .
 
-era-vehicles:specialVehicles a era-vehicles:Category ;
+era-vehicle-types:specialVehicles a era-vehicle-types:Category ;
     skos:prefLabel "Special Vehicles"@en .
 
 ########## Vehicle subcategories ##########
 
-era-vehicles:locomotive a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:tractionVehicles ;
+era-vehicle-types:locomotive a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:tractionVehicles ;
     skos:prefLabel "Locomotive"@en .
 
-era-vehicles:passengerTrainset a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:tractionVehicles ;
+era-vehicle-types:passengerTrainset a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:tractionVehicles ;
     skos:prefLabel "Self-propelled passenger trainset (incl. railbusses)"@en .
 
-era-vehicles:freightTrainset a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:tractionVehicles ;
+era-vehicle-types:freightTrainset a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:tractionVehicles ;
     skos:prefLabel "Self-propelled freight trainset"@en .
 
-era-vehicles:shunter a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:tractionVehicles ;
+era-vehicle-types:shunter a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:tractionVehicles ;
     skos:prefLabel "Shunter"@en .
 
-era-vehicles:otherTractionVehicles a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:tractionVehicles ;
+era-vehicle-types:otherTractionVehicles a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:tractionVehicles ;
     skos:prefLabel "Other (tramways, light rail vehicles, etc)"@en .
 
-era-vehicles:passengerCoach a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:passengerCoach a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Passenger Coach (incl. sleeping cars, restaurant, etc.)"@en .
 
-era-vehicles:van a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:van a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Van"@en .
 
-era-vehicles:carCarrier a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:carCarrier a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Car Carrier"@en .
 
-era-vehicles:serviceVehicle a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:serviceVehicle a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Vehicle for services (e.g. kitchen)"@en .
 
-era-vehicles:coachesRake a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:coachesRake a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Fixed rake of coaches"@en .
 
-era-vehicles:otherHauledPassenger a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:hauledPassenger ;
+era-vehicle-types:otherHauledPassenger a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:hauledPassenger ;
     skos:prefLabel "Other hauled passenger vehicles"@en .
 
-era-vehicles:freightWagon a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:freightWagons ;
+era-vehicle-types:freightWagon a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:freightWagons ;
     skos:prefLabel "Freight wagon"@en .
 
-era-vehicles:freightWagonsRake a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:freightWagons ;
+era-vehicle-types:freightWagonsRake a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:freightWagons ;
     skos:prefLabel "Fixed rake of freight wagons"@en .
 
-era-vehicles:selfPropelledSpecialVehicle a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:specialVehicles ;
+era-vehicle-types:selfPropelledSpecialVehicle a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:specialVehicles ;
     skos:prefLabel "Self-propelled special vehicle"@en .
 
-era-vehicles:hauledSpecialVehicle a era-vehicles:SubCategory ;
-    skos:broader era-vehicles:specialVehicles ;
+era-vehicle-types:hauledSpecialVehicle a era-vehicle-types:SubCategory ;
+    skos:broader era-vehicle-types:specialVehicles ;
     skos:prefLabel "Hauled special vehicle"@en .
 
 ########## Load Capabilities ##########
