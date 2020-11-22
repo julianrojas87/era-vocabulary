@@ -331,12 +331,14 @@ era:inCountry a owl:ObjectProperty ;
 
 era:manufacturingCountry a owl:ObjectProperty ;
     rdfs:label "manufacturing country"@en ;
-    rdfs:comment "Indicates the country in which a vehicle type is manufactured."@en ;
+    rdfs:comment "Indicates the country in which a vehicle or vehicle type is manufactured."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:VehicleType ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:Vehicle era:VehicleType )
+                ] ;
     rdfs:range skos:Concept ;
     dct:created "2020-09-30"^^xsd:date ;
-    dct:modified "2020-09-30"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "stable" .
 
 era:authorizedCountry a owl:ObjectProperty ;
