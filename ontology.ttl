@@ -349,6 +349,15 @@ era:authorizedCountry a owl:ObjectProperty ;
     dct:modified "2020-09-30"^^xsd:date ;
     vs:term_status "stable" .
 
+era:vehicleType a owl:ObjectProperty ;
+    rdfs:label "vehicle type"@en ;
+    rdfs:comment "Indicates the vehicle type of a specific vehicle ow wagon."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range era:VehicleType ;
+    dct:created "2020-11-22"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "stable" .
 
 #################################################################
 #
@@ -436,6 +445,16 @@ era:typeVersionNumber a owl:DatatypeProperty ;
     dct:created "2020-11-22"^^xsd:date ;
     dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "stable" .
+
+era:vehicleSeries a owl:DatatypeProperty ;
+    rdfs:label "vehicle series"@en ;
+    rdfs:comment "Manufacturing series of a vehicle."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range xsd:string ;
+    dct:created "2020-11-22"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "unstable" .
 
 
 #################################################################
