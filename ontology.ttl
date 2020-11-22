@@ -427,6 +427,16 @@ era:tsiCompliant a owl:DatatypeProperty ;
     dct:modified "2020-11-03"^^xsd:date ;
     vs:term_status "stable" .
 
+era:typeVersionNumber a owl:DatatypeProperty ;
+    rdfs:label "type version number"@en ;
+    rdfs:comment "Serial number that identifies a vehicle type."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:VehicleType ;
+    rdfs:range xsd:string ;
+    dct:created "2020-11-22"^^xsd:date ;
+    dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "stable" .
+
 
 #################################################################
 #
