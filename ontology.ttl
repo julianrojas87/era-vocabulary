@@ -1823,3 +1823,17 @@ era:isQuiteRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
     dct:created "2020-11-04"^^xsd:date ;
     dct:modified "2020-11-04"^^xsd:date ;
     vs:term_status "stable" .
+
+
+########## Composite brake block ##########
+
+era:compositeBrakeBlockRetrofitted a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
+    rdfs:label "composite brake block retrofitted"@en ;
+    rdfs:comment "Indicates if a vehicle's composite brake block is retrofitted"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range xsd:boolean ;
+    dct:created "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
+    vs:term_status "stable" .
+
