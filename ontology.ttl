@@ -155,6 +155,15 @@ era:Manufacturer a owl:Class ;
     dct:modified "2020-11-19"^^xsd:date ;
     vs:term_status "stable" .
 
+era:VehicleKeeper a owl:Class ;
+    rdfs:subClassOf schema:Organization ;
+    rdfs:label "Vehicle Keeper"@en ;
+    rdfs:comment "A company or organization that owns or operates a certain vehicle."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
+    vs:term_status "stable" .
+
 #################################################################
 #
 #    Object Properties
