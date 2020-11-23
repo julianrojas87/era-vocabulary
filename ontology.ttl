@@ -1824,7 +1824,7 @@ era:isQuiteRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
     dct:modified "2020-11-04"^^xsd:date ;
     vs:term_status "stable" .
 
-era:quieterRoutesExemptedCountry owl:ObjectProperty ;
+era:quieterRoutesExemptedCountry a owl:ObjectProperty ;
     rdfs:label "quieter route exempted country"@en ;
     rdfs:comment "Country where a vehicle may operate without noise restrictions"@en ;
     rdfs:isDefinedBy era: ;
