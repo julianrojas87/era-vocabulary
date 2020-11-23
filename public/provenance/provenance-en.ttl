@@ -10,11 +10,11 @@
 	 prov:wasAttributedTo :agent4;
 	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2020-11-03";
+	 prov:wasGeneratedAt "2020-11-24";
 .
-:agent0 a prov:Agent; foaf:name "Dylan Van Assche".
-:agent1 a prov:Agent; foaf:name "Ivaylo Velitchkov".
-:agent2 a prov:Agent; foaf:name "Julián Rojas".
+:agent0 a prov:Agent; foaf:name "Julián Rojas".
+:agent1 a prov:Agent; foaf:name "Dylan Van Assche".
+:agent2 a prov:Agent; foaf:name "Ivaylo Velitchkov".
 :agent3 a prov:Agent; foaf:name "Marina Aguado".
 :agent4 a prov:Agent; foaf:name "Pieter Colpaert".
 :agent5 a prov:Agent; foaf:name "Polymnia Vasilopoulou".
