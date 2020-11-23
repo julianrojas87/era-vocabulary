@@ -371,12 +371,12 @@ era:vehicleType a owl:ObjectProperty ;
     dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "stable" .
 
-era:restrictionCode a owl:ObjectProperty ;
-    rdfs:label "restriction code"@en ;
-    rdfs:comment "Indicates a restriction code of vehicle or wagon."@en ;
+era:operationalRestriction a owl:ObjectProperty ;
+    rdfs:label "operational restriction"@en ;
+    rdfs:comment "Indicates an operational restriction of vehicle or wagon."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Vehicle ;
-    rdfs:range era-rc:RestrictionCode ;
+    rdfs:range era-rc:Restriction ;
     dct:created "2020-11-23"^^xsd:date ;
     dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
@@ -1822,6 +1822,16 @@ era:isQuiteRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
     rdfs:range xsd:boolean ;
     dct:created "2020-11-04"^^xsd:date ;
     dct:modified "2020-11-04"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:quieterRoutesExemptedCountry owl:ObjectProperty ;
+    rdfs:label "quieter route exempted country"@en ;
+    rdfs:comment "Country where a vehicle may operate without noise restrictions"@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range skos:Concept ;
+    dct:created "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
 
 
