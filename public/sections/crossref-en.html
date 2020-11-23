@@ -7,6 +7,9 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
       </li>
       <li>
+         <a href="#Manufacturer" title="http://era.europa.eu/ns#Manufacturer">Manufacturer</a>
+      </li>
+      <li>
          <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
       </li>
       <li>
@@ -32,6 +35,12 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#Tunnel" title="http://era.europa.eu/ns#Tunnel">Tunnel</a>
       </li>
       <li>
+         <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+      </li>
+      <li>
+         <a href="#VehicleKeeper" title="http://era.europa.eu/ns#VehicleKeeper">Vehicle Keeper</a>
+      </li>
+      <li>
          <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
       </li>
    </ul>
@@ -54,6 +63,39 @@ This section provides details for each class and property defined by ERA vocabul
       <dl>
          <dt>Term status</dt>
          <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="Manufacturer">
+      <h3>Manufacturer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#Manufacturer</p>
+      <div class="comment">
+         <span class="markdown">A company or organization that manufactures vehicles.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://schema.org/Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="MicroLink">
@@ -391,6 +433,74 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Vehicle">
+      <h3>Vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#Vehicle</p>
+      <div class="comment">
+         <span class="markdown">A specific vehicle or wagon able to operate over railway lines.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#compositeBrakeBlockRetrofitted"
+               title="http://era.europa.eu/ns#compositeBrakeBlockRetrofitted">composite brake block retrofitted</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operationalRestriction" title="http://era.europa.eu/ns#operationalRestriction">operational restriction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#quieterRoutesExemptedCountry"
+               title="http://era.europa.eu/ns#quieterRoutesExemptedCountry">quieter route exempted country</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleKeeper" title="http://era.europa.eu/ns#vehicleKeeper">vehicle keeper</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleSeries" title="http://era.europa.eu/ns#vehicleSeries">vehicle series</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleType" title="http://era.europa.eu/ns#vehicleType">vehicle type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VehicleKeeper">
+      <h3>Vehicle Keeper<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#VehicleKeeper</p>
+      <div class="comment">
+         <span class="markdown">A company or organization that owns or operates a certain vehicle.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="https://schema.org/Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#vehicleKeeper" title="http://era.europa.eu/ns#vehicleKeeper">vehicle keeper</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="VehicleType">
       <h3>Vehicle Type<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -420,7 +530,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#axleBearingConditionMonitoring">axle bearing condition monitoring</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#brakeWeightPercentage" title="http://era.europa.eu/ns#brakeWeightPercentage">brake weight percentage</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#category" title="http://era.europa.eu/ns#category">category</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dataGSMRNetwork" title="http://era.europa.eu/ns#dataGSMRNetwork">data GSM-R network</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#designMassWorkingOrder" title="http://era.europa.eu/ns#designMassWorkingOrder">design mass in working order</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#designMassExceptionalPayload"
@@ -435,7 +544,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCurrentLimitation" title="http://era.europa.eu/ns#hasCurrentLimitation">has current limitation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#magneticBrakePrevention" title="http://era.europa.eu/ns#magneticBrakePrevention">magnetic brake prevention</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturer" title="http://era.europa.eu/ns#manufacturer">manufacturer</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#manufacturingCountry" title="http://era.europa.eu/ns#manufacturingCountry">manufacturing country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#maximumDesignSpeed" title="http://era.europa.eu/ns#maximumDesignSpeed">maximum design speed</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#maximumSpeedAndCantDeficiency"
                title="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
@@ -444,7 +552,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minimumConvexVerticalRadius"
                title="http://era.europa.eu/ns#minimumConvexVerticalRadius">minimum convex vertical radius</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOfPantographsInContactWithOCL"
-               title="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">number of pantpgraphs in contact with OCL</a>
+               title="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">number of pantographs in contact with OCL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#oclType" title="http://era.europa.eu/ns#oclType">ocl type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#parkingBrakeMaximumGradient"
                title="http://era.europa.eu/ns#parkingBrakeMaximumGradient">parking brake maximum gradient</a>
@@ -453,7 +561,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-op" title="object property">op</sup>, <a href="#preventRegenerativeBrakeUse"
                title="http://era.europa.eu/ns#preventRegenerativeBrakeUse">prevent regenerative brake use</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
-               title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantpgraphs in contact with OCL</a>
+               title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantographs in contact with OCL</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#snowIceHailConditions" title="http://era.europa.eu/ns#snowIceHailConditions">snow ice hail conditions</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#staticAxleLoadWorkingOrder"
                title="http://era.europa.eu/ns#staticAxleLoadWorkingOrder">static axle load in working order</a>
@@ -461,19 +569,26 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#staticAxleLoadExceptionalPayload">static axle load under exceptional payload</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#staticAxleLoadNormalPayload"
                title="http://era.europa.eu/ns#staticAxleLoadNormalPayload">static axle load under normal payload</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">subcategory</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#thermalCapacityTSIReference"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#thermalCapacityTSIReference"
                title="http://era.europa.eu/ns#thermalCapacityTSIReference">thermal capacity TSI reference</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#thermalCapacityDistance" title="http://era.europa.eu/ns#thermalCapacityDistance">thermal capacity distance</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#thermalCapacityGradient" title="http://era.europa.eu/ns#thermalCapacityGradient">thermal capacity gradient</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#thermalCapacitySpeed" title="http://era.europa.eu/ns#thermalCapacitySpeed">thermal capacity speed</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#thermalCapacityTime" title="http://era.europa.eu/ns#thermalCapacityTime">thermal capacity time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleContactForce" title="http://era.europa.eu/ns#vehicleContactForce">vehicle contact force</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeVersionNumber" title="http://era.europa.eu/ns#typeVersionNumber">type version number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#category" title="http://era.europa.eu/ns#category">vehicle category</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleContactForce" title="http://era.europa.eu/ns#vehicleContactForce">vehicle contact force</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleLength" title="http://era.europa.eu/ns#vehicleLength">vehicle length</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#vehiclePantographHead" title="http://era.europa.eu/ns#vehiclePantographHead">vehicle pantograph head</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#voiceGSMRNetwork" title="http://era.europa.eu/ns#voiceGSMRNetwork">voice GSM-R network</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">vehicle subcategory</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#voiceGSMRNetwork" title="http://era.europa.eu/ns#voiceGSMRNetwork">voice GSM-R network</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#wheelSetGaugeChangeoverFacility"
                title="http://era.europa.eu/ns#wheelSetGaugeChangeoverFacility">wheelset gauge changeover facility</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#vehicleType" title="http://era.europa.eu/ns#vehicleType">vehicle type</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -496,9 +611,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#brakeWeightPercentage" title="http://era.europa.eu/ns#brakeWeightPercentage">brake weight percentage</a>
-      </li>
-      <li>
-         <a href="#category" title="http://era.europa.eu/ns#category">category</a>
       </li>
       <li>
          <a href="#contactLineSystem" title="http://era.europa.eu/ns#contactLineSystem">contact line system</a>
@@ -581,6 +693,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
       </li>
       <li>
+         <a href="#operationalRestriction" title="http://era.europa.eu/ns#operationalRestriction">operational restriction</a>
+      </li>
+      <li>
          <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
       </li>
       <li>
@@ -588,6 +703,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#protectionLegacySystem" title="http://era.europa.eu/ns#protectionLegacySystem">protection legacy system</a>
+      </li>
+      <li>
+         <a href="#quieterRoutesExemptedCountry"
+            title="http://era.europa.eu/ns#quieterRoutesExemptedCountry">quieter route exempted country</a>
       </li>
       <li>
          <a href="#railInclination" title="http://era.europa.eu/ns#railInclination">rail inclination</a>
@@ -606,9 +725,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#startPort" title="http://era.europa.eu/ns#startPort">start port</a>
       </li>
       <li>
-         <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">subcategory</a>
-      </li>
-      <li>
          <a href="#thermalCapacityTSIReference"
             title="http://era.europa.eu/ns#thermalCapacityTSIReference">thermal capacity TSI reference</a>
       </li>
@@ -617,6 +733,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#pantographHead" title="http://era.europa.eu/ns#pantographHead">tsi pantograph head</a>
+      </li>
+      <li>
+         <a href="#category" title="http://era.europa.eu/ns#category">vehicle category</a>
+      </li>
+      <li>
+         <a href="#vehicleKeeper" title="http://era.europa.eu/ns#vehicleKeeper">vehicle keeper</a>
+      </li>
+      <li>
+         <a href="#subCategory" title="http://era.europa.eu/ns#subCategory">vehicle subcategory</a>
+      </li>
+      <li>
+         <a href="#vehicleType" title="http://era.europa.eu/ns#vehicleType">vehicle type</a>
       </li>
       <li>
          <a href="#voiceGSMRNetwork" title="http://era.europa.eu/ns#voiceGSMRNetwork">voice GSM-R network</a>
@@ -799,40 +927,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage">brake weight percentage</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="category">
-      <h3>category<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#category</p>
-      <div class="comment">
-         <span class="markdown">Vehicle category.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://era.europa.eu/concepts/vehicles#Category">category</span>
             </dd>
          </dl>
       </div>
@@ -1453,7 +1547,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#inCountry</p>
       <div class="comment">
-         <span class="markdown">Indicates the country in which an entity resides. Expected to be used by Operational Point entities.</span>
+         <span class="markdown">Indicates the country in which an entity resides.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1639,8 +1733,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/manufacturers#Manufacturer">manufacturer</span>
+               <a href="#Manufacturer" title="http://era.europa.eu/ns#Manufacturer">Manufacturer</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1653,7 +1747,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#manufacturingCountry</p>
       <div class="comment">
-         <span class="markdown">Indicates the country in which a vehicle type is manufactured.</span>
+         <span class="markdown">Indicates the country in which a vehicle or vehicle type is manufactured.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1669,6 +1763,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -1745,6 +1842,42 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/op-types#OperationalPointType">operational point type</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="operationalRestriction">
+      <h3>operational restriction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#operationalRestriction</p>
+      <div class="comment">
+         <span class="markdown">Indicates an operational restriction of vehicle or wagon.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/restrictions#Restriction">restriction</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1853,6 +1986,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem">train protection legacy system</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quieterRoutesExemptedCountry">
+      <h3>quieter route exempted country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#quieterRoutesExemptedCountry</p>
+      <div class="comment">
+         <span class="markdown">Country where a vehicle may operate without noise restrictions</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
             </dd>
          </dl>
       </div>
@@ -2046,41 +2213,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="subCategory">
-      <h3>subcategory<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#subCategory</p>
-      <div class="comment">
-         <span class="markdown">Vehicle subcategory.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted"
-                     title="http://era.europa.eu/concepts/vehicles#SubCategory">sub category</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="thermalCapacityTSIReference">
       <h3>thermal capacity TSI reference<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2185,6 +2317,148 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/pantograph-heads#PantographHead">pantograph head</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="category">
+      <h3>vehicle category<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#category</p>
+      <div class="comment">
+         <span class="markdown">Vehicle category.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/vehicle-types#Category">category</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleKeeper">
+      <h3>vehicle keeper<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#vehicleKeeper</p>
+      <div class="comment">
+         <span class="markdown">Indicates the organization that owns/operated a vehicle or wagon.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#VehicleKeeper" title="http://era.europa.eu/ns#VehicleKeeper">Vehicle Keeper</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="subCategory">
+      <h3>vehicle subcategory<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#subCategory</p>
+      <div class="comment">
+         <span class="markdown">Vehicle subcategory.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/vehicle-types#SubCategory">sub category</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleType">
+      <h3>vehicle type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#vehicleType</p>
+      <div class="comment">
+         <span class="markdown">Indicates the vehicle type of a specific vehicle or wagon.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2316,6 +2590,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#cantDeficiency" title="http://era.europa.eu/ns#cantDeficiency">cant deficiency</a>
+      </li>
+      <li>
+         <a href="#compositeBrakeBlockRetrofitted"
+            title="http://era.europa.eu/ns#compositeBrakeBlockRetrofitted">composite brake block retrofitted</a>
       </li>
       <li>
          <a href="#conditionalEddyCurrentBraking"
@@ -2507,7 +2785,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#numberOfPantographsInContactWithOCL"
-            title="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">number of pantpgraphs in contact with OCL</a>
+            title="http://era.europa.eu/ns#numberOfPantographsInContactWithOCL">number of pantographs in contact with OCL</a>
       </li>
       <li>
          <a href="#oclType" title="http://era.europa.eu/ns#oclType">ocl type</a>
@@ -2532,7 +2810,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
-            title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantpgraphs in contact with OCL</a>
+            title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantographs in contact with OCL</a>
       </li>
       <li>
          <a href="#staticAxleLoadWorkingOrder"
@@ -2582,6 +2860,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
       </li>
       <li>
+         <a href="#typeVersionNumber" title="http://era.europa.eu/ns#typeVersionNumber">type version number</a>
+      </li>
+      <li>
          <a href="#umax2" title="http://era.europa.eu/ns#umax2">umax2</a>
       </li>
       <li>
@@ -2598,6 +2879,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#vehiclePantographHead" title="http://era.europa.eu/ns#vehiclePantographHead">vehicle pantograph head</a>
+      </li>
+      <li>
+         <a href="#vehicleSeries" title="http://era.europa.eu/ns#vehicleSeries">vehicle series</a>
       </li>
       <li>
          <a href="#wheelSetGauge" title="http://era.europa.eu/ns#wheelSetGauge">wheel set gauge</a>
@@ -2772,6 +3056,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="compositeBrakeBlockRetrofitted">
+      <h3>composite brake block retrofitted<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#compositeBrakeBlockRetrofitted</p>
+      <div class="comment">
+         <span class="markdown">Indicates if a vehicle's composite brake block is retrofitted</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
@@ -4575,7 +4893,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </div>
    </div>
    <div class="entity" id="numberOfPantographsInContactWithOCL">
-      <h3>number of pantpgraphs in contact with OCL<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of pantographs in contact with OCL<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -4813,7 +5131,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </div>
    </div>
    <div class="entity" id="shortestDistanceBetweenPantographsInContactWithOCL">
-      <h3>shortest distance between pantpgraphs in contact with OCL<sup class="type-dp" title="data property">dp</sup>
+      <h3>shortest distance between pantographs in contact with OCL<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -5317,6 +5635,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="typeVersionNumber">
+      <h3>type version number<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#typeVersionNumber</p>
+      <div class="comment">
+         <span class="markdown">Serial number that identifies a vehicle type.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="umax2">
       <h3>umax2<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -5515,6 +5867,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has domain</dt>
             <dd>
                <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleSeries">
+      <h3>vehicle series<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#vehicleSeries</p>
+      <div class="comment">
+         <span class="markdown">Manufacturing series of a vehicle.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
