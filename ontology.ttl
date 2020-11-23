@@ -381,6 +381,16 @@ era:restrictionCode a owl:ObjectProperty ;
     dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
 
+era:vehicleKeeper a owl:ObjectProperty ;
+    rdfs:label "vehicle keeper"@en ;
+    rdfs:comment "Indicates the organization that owns/operated a vehicle or wagon."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range era:VehicleKeeper ;
+    dct:created "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
+    vs:term_status "stable" .
+
 #################################################################
 #
 #    Data properties
