@@ -39,12 +39,13 @@
 @prefix era-rsc: <http://era.europa.eu/concepts/radio-system-compatibilities#> .
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
+@prefix era-rc: <http://era.europa.eu/concepts/restriction-codes#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-22"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -353,12 +354,22 @@ era:authorizedCountry a owl:ObjectProperty ;
 
 era:vehicleType a owl:ObjectProperty ;
     rdfs:label "vehicle type"@en ;
-    rdfs:comment "Indicates the vehicle type of a specific vehicle ow wagon."@en ;
+    rdfs:comment "Indicates the vehicle type of a specific vehicle or wagon."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Vehicle ;
     rdfs:range era:VehicleType ;
     dct:created "2020-11-22"^^xsd:date ;
     dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:restrictionCode a owl:ObjectProperty ;
+    rdfs:label "restriction code"@en ;
+    rdfs:comment "Indicates a restriction code of vehicle or wagon."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range era-rc:RestrictionCode ;
+    dct:created "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
 
 #################################################################

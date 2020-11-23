@@ -220,7 +220,7 @@ era-lrs:LegacyRadioSystem a owl:Class ; # Concepts of this class are dynamically
     rdfs:label "Legacy Radio System"@en ;
     rdfs:comment "Abstract class representing legacy radio systems"@en .
 
-era-rsc:RestrictionCode a owl:Class ;
+era-rc:RestrictionCode a owl:Class ;
     rdfs:subClassOf skos:Concept ;
     skos:inScheme era-skos: ;
     rdfs:label "Restriction Codes"@en ;
