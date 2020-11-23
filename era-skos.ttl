@@ -34,7 +34,6 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
-@prefix era-brs: <http://era.europa.eu/concepts/braking-systems#> .
 
 era-skos: a skos:ConceptScheme, owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
@@ -226,12 +225,6 @@ era-rc:Restriction a owl:Class ;
     skos:inScheme era-skos: ;
     rdfs:label "Restriction"@en ;
     rdfs:comment "Abstract class representing harmonized restrictions. The structure of a restriction code is a combination of [Category].[Type].[Value or specification]."@en .
-
-era-brs:BrakingSystem a owl:Class ; # Concepts of this class are dynamically genereated at mapping time
-    rdfs:subClassOf skos:Concept ;
-    skos:inScheme era-skos: ;
-    rdfs:label "Braking System"@en ;
-    rdfs:comment "Abstract class representing vehicle braking systems"@en .
 
 
 #################################################################

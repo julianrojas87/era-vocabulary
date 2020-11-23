@@ -40,7 +40,6 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
-@prefix era-brs: <http://era.europa.eu/concepts/braking-systems#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
@@ -1847,14 +1846,3 @@ era:compositeBrakeBlockRetrofitted a owl:DatatypeProperty ;
     dct:created "2020-11-23"^^xsd:date ;
     dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
-
-era:brakingSystem a owl:ObjectProperty ;
-    rdfs:label "braking system"@en ;
-    rdfs:comment "A braking system installed in the vehicle"@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Vehicle ;
-    rdfs:range era-brs:BrakingSystem ;
-    dct:created "2020-11-23"^^xsd:date ;
-    dct:modified "2020-11-23"^^xsd:date ;
-    vs:term_status "stable" .
-
