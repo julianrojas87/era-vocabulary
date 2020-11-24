@@ -55,7 +55,7 @@ era: a owl:Ontology ;
     dct:contributor "Dylan Van Assche" ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.1.0" ;
+    owl:versionInfo "v1.1.1" ;
     owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 

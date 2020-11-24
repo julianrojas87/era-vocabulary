@@ -45,7 +45,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-23"^^xsd:date ;
+    dct:modified "2020-11-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -55,7 +55,7 @@ era: a owl:Ontology ;
     dct:contributor "Dylan Van Assche" ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.1.0" ;
+    owl:versionInfo "v1.1.1" ;
     owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
@@ -476,6 +476,16 @@ era:typeVersionNumber a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     dct:created "2020-11-22"^^xsd:date ;
     dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:vehicleNumber a owl:DatatypeProperty ;
+    rdfs:label "vehicle number"@en ;
+    rdfs:comment "Identification number of a vehicle or wagon."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Vehicle ;
+    rdfs:range xsd:string ;
+    dct:created "2020-11-24"^^xsd:date ;
+    dct:modified "2020-11-24"^^xsd:date ;
     vs:term_status "stable" .
 
 era:vehicleSeries a owl:DatatypeProperty ;
