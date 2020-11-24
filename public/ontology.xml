@@ -25,12 +25,12 @@
         <terms:contributor>Pieter Colpaert</terms:contributor>
         <terms:contributor>Polymnia Vasilopoulou</terms:contributor>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-23</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-24</terms:modified>
         <terms:publisher>European Union Agency for Railways</terms:publisher>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:versionInfo>v1.1.0</owl:versionInfo>
+        <owl:versionInfo>v1.1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2693,6 +2693,22 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://era.europa.eu/ns#vehicleNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://era.europa.eu/ns#vehicleNumber">
+        <rdfs:domain rdf:resource="http://era.europa.eu/ns#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-24</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-11-24</terms:modified>
+        <rdfs:comment xml:lang="en">Identification number of a vehicle or wagon.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">vehicle number</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://era.europa.eu/ns#vehiclePantographHead -->
 
 
@@ -2760,27 +2776,6 @@ above the local reference ellipsoid).</rdfs:comment>
      -->
 
 
-    
-
-
-    <!-- http://era.europa.eu/concepts/restrictions#Restriction -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/restrictions#Restriction"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/vehicle-types#Category -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicle-types#Category"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/vehicle-types#SubCategory -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicle-types#SubCategory"/>
     
 
 

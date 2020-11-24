@@ -462,7 +462,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-op" title="object property">op</sup>, <a href="#quieterRoutesExemptedCountry"
                title="http://era.europa.eu/ns#quieterRoutesExemptedCountry">quieter route exempted country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#vehicleKeeper" title="http://era.europa.eu/ns#vehicleKeeper">vehicle keeper</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleSeries" title="http://era.europa.eu/ns#vehicleSeries">vehicle series</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#vehicleNumber" title="http://era.europa.eu/ns#vehicleNumber">vehicle number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleSeries" title="http://era.europa.eu/ns#vehicleSeries">vehicle series</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#vehicleType" title="http://era.europa.eu/ns#vehicleType">vehicle type</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -1877,7 +1878,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/restrictions#Restriction">restriction</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2352,7 +2352,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/vehicle-types#Category">category</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2423,7 +2422,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/vehicle-types#SubCategory">sub category</span>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2876,6 +2874,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#vehicleLength" title="http://era.europa.eu/ns#vehicleLength">vehicle length</a>
+      </li>
+      <li>
+         <a href="#vehicleNumber" title="http://era.europa.eu/ns#vehicleNumber">vehicle number</a>
       </li>
       <li>
          <a href="#vehiclePantographHead" title="http://era.europa.eu/ns#vehiclePantographHead">vehicle pantograph head</a>
@@ -5838,6 +5839,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="vehicleNumber">
+      <h3>vehicle number<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#vehicleNumber</p>
+      <div class="comment">
+         <span class="markdown">Identification number of a vehicle or wagon.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Vehicle" title="http://era.europa.eu/ns#Vehicle">Vehicle</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
