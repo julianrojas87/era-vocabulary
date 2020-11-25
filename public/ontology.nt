@@ -9,12 +9,12 @@
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Pieter Colpaert" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-11-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-11-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.1" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.2" .
 # 
 # 
 # #################################################################
@@ -1314,17 +1314,17 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2000/01/rdf-schema#label> "hot axle box detector TSI compliant"@en .
 <http://era.europa.eu/ns#hotAxleBoxDetectorTSICompliant> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
-# http://era.europa.eu/ns#isQuiteRoute
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://era.europa.eu/ns#rinfIndex> "1.1.1.1.7.11" .
-<http://era.europa.eu/ns#isQuiteRoute> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://purl.org/dc/terms/modified> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of a track being part of a route with noise restrictions"@en .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2000/01/rdf-schema#label> "is quiet route"@en .
-<http://era.europa.eu/ns#isQuiteRoute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# http://era.europa.eu/ns#isQuietRoute
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://era.europa.eu/ns#isQuietRoute> <http://era.europa.eu/ns#rinfIndex> "1.1.1.1.7.11" .
+<http://era.europa.eu/ns#isQuietRoute> <http://purl.org/dc/terms/created> "2020-11-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#isQuietRoute> <http://purl.org/dc/terms/modified> "2020-11-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of a track being part of a route with noise restrictions"@en .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#label> "is quiet route"@en .
+<http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#magneticBrakePrevention
 <http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
