@@ -341,7 +341,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-11-24"
+    "@value" : "2020-11-25"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "European Union Agency for Railways"
@@ -366,7 +366,7 @@
     "@id" : "https://schema.org/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v1.1.1"
+    "@value" : "v1.1.2"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#InternalNodeLink",
@@ -2749,7 +2749,7 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "http://era.europa.eu/ns#isQuiteRoute",
+  "@id" : "http://era.europa.eu/ns#isQuietRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://era.europa.eu/ns#rinfIndex" : [ {
     "@value" : "1.1.1.1.7.11"
@@ -2760,7 +2760,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2020-11-04"
+    "@value" : "2020-11-25"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
