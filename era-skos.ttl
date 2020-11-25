@@ -24935,7 +24935,7 @@ era-rc:2.7.2 a era-rc:Restriction;
 
 era-rc:2.7.3 a era-rc:Restriction;
   skos:prefLabel "Very quiet (tested against a TSI NOI)"@en;
-  skos:altLabel "2.7.3"
+  skos:altLabel "2.7.3";
   skos:definition "Can be used in all quieter routes – TSI Noise compliant – Very quiet (tested against a TSI NOI)"@en.
 
 era-rc:2.7.4 a era-rc:Restriction;
