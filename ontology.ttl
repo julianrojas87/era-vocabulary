@@ -1823,7 +1823,7 @@ era:legacyRadioSystem a owl:ObjectProperty ; # RINF 1.1.1.3.6.1 and ERATV 4.13.2
 
 ########## Noise ##########
 
-era:isQuiteRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
+era:isQuietRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
     era:rinfIndex "1.1.1.1.7.11" ;
     rdfs:label "is quiet route"@en ;
     rdfs:comment "Indication of a track being part of a route with noise restrictions"@en ;

@@ -24924,29 +24924,36 @@ era-lrs:nav_inform%C4%81cijas a era-lrs:LegacyRadioSystem;
 ########## Restriction codes ##########
 
 era-rc:2.7.1 a era-rc:Restriction;
-  skos:prefLabel "2.7.1";
+  skos:prefLabel "Silent (retrofitted without testing)"@en;
+  skos:altLabel "2.7.1";
   skos:definition "Can be used in all quieter routes – TSI Noise compliant – Silent (retrofitted without testing)"@en.
 
 era-rc:2.7.2 a era-rc:Restriction;
-  skos:prefLabel "2.7.2";
+  skos:prefLabel "Silent (tested against a TSI NOI)"@en;
+  skos:altLabel "2.7.2";
   skos:definition "Can be used in all quieter routes – TSI Noise compliant – Silent (tested against a TSI NOI)"@en.
 
 era-rc:2.7.3 a era-rc:Restriction;
-  skos:prefLabel "2.7.3";
+  skos:prefLabel "Very quiet (tested against a TSI NOI)"@en;
+  skos:altLabel "2.7.3"
   skos:definition "Can be used in all quieter routes – TSI Noise compliant – Very quiet (tested against a TSI NOI)"@en.
 
 era-rc:2.7.4 a era-rc:Restriction;
-  skos:prefLabel "2.7.4";
-  skos:definition "Can be used in all quieter routes – TSI Noise not compliant – exempted in accordance with TSI Noise"@en.
+  skos:prefLabel "Exempted in accordance with TSI Noise"@en;
+  skos:altLabel "2.7.4";
+  skos:definition "Can be used in all quieter routes – TSI Noise not compliant – Exempted in accordance with TSI Noise"@en.
 
 era-rc:2.7.5 a era-rc:Restriction;
-  skos:prefLabel "2.7.5";
+  skos:prefLabel "Covered by specific case"@en;
+  skos:altLabel "2.7.5";
   skos:definition "Can be used in quieter routes only in this MS – Covered by specific case"@en.
 
 era-rc:2.7.6 a era-rc:Restriction;
-  skos:prefLabel "2.7.6";
+  skos:prefLabel "Fitted with 'historic' CBBs"@en;
+  skos:altLabel "2.7.6";
   skos:definition "Can be used in quieter routes only in this MS – Fitted with 'historic' CBBs"@en.
 
 era-rc:2.7.7 a era-rc:Restriction;
-  skos:prefLabel "2.7.7";
+  skos:prefLabel "Can't be used in quieter routes"@en;
+  skos:altLabel "2.7.7";
   skos:definition "Can't be used in quieter routes"@en.
