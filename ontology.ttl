@@ -45,7 +45,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-25"^^xsd:date ;
+    dct:modified "2021-01-25"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -55,7 +55,7 @@ era: a owl:Ontology ;
     dct:contributor "Dylan Van Assche" ;
     dct:contributor "Pieter Colpaert" ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.1.2" ;
+    owl:versionInfo "v1.2.0" ;
     owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
@@ -102,6 +102,14 @@ era:InternalNodeLink a owl:Class ;
 
 
 ######## Implementation Layer #########
+
+era:LineNationalId a owl:Class ;
+    rdfs:label "Line National Id"@en ;
+    rdfs:comment "Unique line identification within a member state."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-01-25"^^xsd:date ;
+    dct:modified "2021-01-25"^^xsd:date ;
+    vs:term_status "stable" .
 
 era:OperationalPoint a owl:Class ;
     rdfs:label "Operational Point"@en ;
@@ -214,10 +222,9 @@ era:lineNationalId a owl:ObjectProperty ;
     rdfs:label "line national ID"@en ;
     rdfs:comment "Related national line identification."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range era-lni:LineNationalId ;
+    rdfs:range era:LineNationalId ;
     dct:created "2020-09-30"^^xsd:date ;
-    dct:modified "2020-09-30"^^xsd:date ;
+    dct:modified "2021-01-25"^^xsd:date ;
     vs:term_status "stable" .
 
 era:startPort a owl:ObjectProperty ;
