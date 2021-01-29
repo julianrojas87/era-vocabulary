@@ -482,6 +482,16 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#label> "line national ID"@en .
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#lineReference
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/ns#LineReference> .
+<http://era.europa.eu/ns#lineReference> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#lineReference> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a relationship with a specific national railway line."@en .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#label> "line referece"@en .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#loadCapability
 <http://era.europa.eu/ns#loadCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#loadCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
@@ -1328,7 +1338,6 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://era.europa.eu/ns#kilometer
 <http://era.europa.eu/ns#kilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#LineReference> .
-<http://era.europa.eu/ns#LineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 <http://era.europa.eu/ns#kilometer> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#kilometer> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -2058,6 +2067,13 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#LineReference
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#LineReference> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#LineReference> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a specific national railway line."@en .
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/2000/01/rdf-schema#label> "Line Reference"@en .
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # http://era.europa.eu/ns#Manufacturer
 <http://era.europa.eu/ns#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
