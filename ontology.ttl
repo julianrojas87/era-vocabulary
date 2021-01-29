@@ -100,6 +100,14 @@ era:InternalNodeLink a owl:Class ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
+era:LineReference a owl:Class ;
+    rdfs:label "Line Reference"@en ;
+    rdfs:comment "A reference to a specific national railway line."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-01-29"^^xsd:date ;
+    dct:modified "2021-01-29"^^xsd:date ;
+    vs:term_status "stable" .
+
 
 ######## Implementation Layer #########
 
@@ -225,6 +233,15 @@ era:lineNationalId a owl:ObjectProperty ;
     rdfs:range era:LineNationalId ;
     dct:created "2020-09-30"^^xsd:date ;
     dct:modified "2021-01-25"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:lineReference a owl:ObjectProperty ;
+    rdfs:label "line referece"@en ;
+    rdfs:comment "Indicates a relationship with a specific national railway line."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:range era:LineReference ;
+    dct:created "2021-01-29"^^xsd:date ;
+    dct:modified "2021-01-29"^^xsd:date ;
     vs:term_status "stable" .
 
 era:startPort a owl:ObjectProperty ;

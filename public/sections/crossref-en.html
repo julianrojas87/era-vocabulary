@@ -10,6 +10,9 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#LineNationalId" title="http://era.europa.eu/ns#LineNationalId">Line National Id</a>
       </li>
       <li>
+         <a href="#LineReference" title="http://era.europa.eu/ns#LineReference">Line Reference</a>
+      </li>
+      <li>
          <a href="#Manufacturer" title="http://era.europa.eu/ns#Manufacturer">Manufacturer</a>
       </li>
       <li>
@@ -92,6 +95,39 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in range of</dt>
          <dd>
             <a href="#lineNationalId" title="http://era.europa.eu/ns#lineNationalId">line national ID</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineReference">
+      <h3>Line Reference<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#LineReference</p>
+      <div class="comment">
+         <span class="markdown">A reference to a specific national railway line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#kilometer" title="http://era.europa.eu/ns#kilometer">kilometer</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#lineReference" title="http://era.europa.eu/ns#lineReference">line referece</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -700,6 +736,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#lineNationalId" title="http://era.europa.eu/ns#lineNationalId">line national ID</a>
+      </li>
+      <li>
+         <a href="#lineReference" title="http://era.europa.eu/ns#lineReference">line referece</a>
       </li>
       <li>
          <a href="#loadCapability" title="http://era.europa.eu/ns#loadCapability">load capability</a>
@@ -1662,6 +1701,36 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <a href="#LineNationalId" title="http://era.europa.eu/ns#LineNationalId">Line National Id</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="lineReference">
+      <h3>line referece<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#lineReference</p>
+      <div class="comment">
+         <span class="markdown">Indicates a relationship with a specific national railway line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LineReference" title="http://era.europa.eu/ns#LineReference">Line Reference</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4275,7 +4344,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://era.europa.eu/ns#LineReference">line reference</span>
+               <a href="#LineReference" title="http://era.europa.eu/ns#LineReference">Line Reference</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

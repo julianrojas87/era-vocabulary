@@ -671,6 +671,21 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://era.europa.eu/ns#lineReference -->
+
+
+    <owl:ObjectProperty rdf:about="http://era.europa.eu/ns#lineReference">
+        <rdfs:range rdf:resource="http://era.europa.eu/ns#LineReference"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:modified>
+        <rdfs:comment xml:lang="en">Indicates a relationship with a specific national railway line.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">line referece</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://era.europa.eu/ns#loadCapability -->
 
 
@@ -2825,7 +2840,14 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- http://era.europa.eu/ns#LineReference -->
 
 
-    <owl:Class rdf:about="http://era.europa.eu/ns#LineReference"/>
+    <owl:Class rdf:about="http://era.europa.eu/ns#LineReference">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:modified>
+        <rdfs:comment xml:lang="en">A reference to a specific national railway line.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://era.europa.eu/ns#"/>
+        <rdfs:label xml:lang="en">Line Reference</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
     
 
 
