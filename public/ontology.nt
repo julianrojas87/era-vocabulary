@@ -9,12 +9,12 @@
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Pieter Colpaert" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2020-11-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.1.2" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.2.0" .
 # 
 # 
 # #################################################################
@@ -474,10 +474,9 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#lineNationalId
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#Track> .
-<http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/concepts/line-national-ids#LineNationalId> .
+<http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/ns#LineNationalId> .
 <http://era.europa.eu/ns#lineNationalId> <http://purl.org/dc/terms/created> "2020-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#lineNationalId> <http://purl.org/dc/terms/modified> "2020-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#lineNationalId> <http://purl.org/dc/terms/modified> "2021-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#comment> "Related national line identification."@en .
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#lineNationalId> <http://www.w3.org/2000/01/rdf-schema#label> "line national ID"@en .
@@ -1326,6 +1325,18 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2000/01/rdf-schema#label> "is quiet route"@en .
 <http://era.europa.eu/ns#isQuietRoute> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
+# http://era.europa.eu/ns#kilometer
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#LineReference> .
+<http://era.europa.eu/ns#LineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://era.europa.eu/ns#kilometer> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#kilometer> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance measured from the origin of a national railway line."@en .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2000/01/rdf-schema#label> "kilometer"@en .
+<http://era.europa.eu/ns#kilometer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
 # http://era.europa.eu/ns#magneticBrakePrevention
 <http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://era.europa.eu/ns#magneticBrakePrevention> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#VehicleType> .
@@ -2036,6 +2047,17 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#InternalNodeLink> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#InternalNodeLink> <http://www.w3.org/2000/01/rdf-schema#label> "Internal Node Link"@en .
 <http://era.europa.eu/ns#InternalNodeLink> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#LineNationalId
+<http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://era.europa.eu/ns#LineNationalId> <http://purl.org/dc/terms/created> "2021-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#LineNationalId> <http://purl.org/dc/terms/modified> "2021-01-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique line identification within a member state."@en .
+<http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
+<http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/2000/01/rdf-schema#label> "Line National Id"@en .
+<http://era.europa.eu/ns#LineNationalId> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://era.europa.eu/ns#LineReference
 # 
 # http://era.europa.eu/ns#Manufacturer
 <http://era.europa.eu/ns#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
