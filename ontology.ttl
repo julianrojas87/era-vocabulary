@@ -505,6 +505,16 @@ era:vehicleSeries a owl:DatatypeProperty ;
     dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "unstable" .
 
+era:kilometer a owl:DatatypeProperty ;
+    rdfs:label "kilometer"@en ;
+    rdfs:comment "Distance measured from the origin of a national railway line."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:LineReference ;
+    rdfs:range xsd:double ;
+    dct:created "2021-01-29"^^xsd:date ;
+    dct:modified "2021-01-29"^^xsd:date ;
+    vs:term_status "stable" .
+
 
 #################################################################
 #
