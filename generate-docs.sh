@@ -33,7 +33,7 @@ function main() {
     executeWidoco $vocabFile $outputFolder $configFile
 }
 
-downloadWidoco
+# downloadWidoco
 main
 rm ./public/ontology.ttl
 cp ontology.ttl ./public/
