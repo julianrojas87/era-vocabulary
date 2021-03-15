@@ -1,6 +1,6 @@
 # era-vocabulary
 
-Vocabulary definition for the European Union Agency for Railways.
+Vocabulary definition for the European Union Agency for Railways. The vocabulary documentation is built using the [Widoco](https://github.com/dgarijo/Widoco) toolset.
 
 Online documentation for this vocabulary is available at http://era.ilabt.imec.be/era-vocabulary/index-en.html
 
@@ -44,20 +44,22 @@ Then follow the next steps:
    git clone https://github.com/julianrojas87/era-vocabulary.git
    ```
 
-2. Create a folder named `public` inside the cloned repository
+2. Normally the latest built version of the Widoco documentation is already available within the repository in the [`public`](https://github.com/julianrojas87/era-vocabulary/tree/master/public) folder. If you want to deploy this version then skip to step 4, otherwise proceed to delete all the files and folders in `public/`:
 
    ```bash
-   cd era-vocabulary
-   mkdir public
+   cd public
+   rm -rf *
    ```
 
-3. Generate the WIDOCO documentation:
+   Now continue to the next step.
+
+3. Generate the Widoco documentation:
 
    ```bash
    ./generate-docs.sh
    ```
 
-   The resulting sources will be placed in `era-vocabulary/public`.
+   The resulting sources will be placed in the `public/` folder.
 
 4. Publish the Web page. In this example we use Node.js's [`npx`](https://nodejs.dev/learn/the-npx-nodejs-package-runner) utility and [`http-server`](https://github.com/http-party/http-server) for this, but you may choose to publish the static files otherwise (e.g. directly via NGINX).
 
