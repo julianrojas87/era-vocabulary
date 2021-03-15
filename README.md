@@ -21,7 +21,7 @@ To deploy this container follow these steps:
 3. Start the application:
 
    ```bash
-   docker run -p ${PORT}:80 era-rcc
+   docker run -p ${PORT}:80 era-vocabulary
    ```
 
    Replace `${PORT}` for the TCP port where you want to run the application. Once the container is running you can access these resources:
@@ -65,13 +65,13 @@ Then follow the next steps:
 
    ```bash
    cd public
-   npx http-server -p ${PORT}
+   npx http-server --cors -p ${PORT}
    ```
 
    Replace `${PORT}` for the TCP port where you want to run the application. Once the application is running you may access the following resources:
 
-   - The vocabulary documentation at `http://localhost:${PORT}/era-vocabulary/index-en.html`.
-   - The reference data at `http://localhost:${PORT}/era-vocabulary/era-skos.ttl`.
+   - The vocabulary documentation at `http://localhost:${PORT}/index-en.html`.
+   - The reference data at `http://localhost:${PORT}/era-skos.ttl`.
 
 ## See also
 
