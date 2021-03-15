@@ -39,7 +39,7 @@ era-skos: a skos:ConceptScheme, owl:Ontology ;
     rdfs:label "ERA SKOS vocabularies"@en ;
     skos:prefLabel "ERA SKOS vocabularies"@en ;
     dct:issued "2020-09-01"^^xsd:date ;
-    dct:modified "2021-03-03"^^xsd:date ;
+    dct:modified "2021-15-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Controlled SKOS-based vocabularies defined by the European Union Agency for Railways to describe concepts related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
@@ -363,9 +363,6 @@ era-vehicle-types:hauledSpecialVehicle a era-vehicle-types:SubCategory ;
 
 ########## Load Capabilities ##########
 
-era-lc:A-030 a era-lc:LoadCapability;
-  skos:prefLabel "A-030" .
-
 era-lc:A-040 a era-lc:LoadCapability;
   skos:prefLabel "A-040" .
 
@@ -377,6 +374,9 @@ era-lc:A-060 a era-lc:LoadCapability;
 
 era-lc:A-070 a era-lc:LoadCapability;
   skos:prefLabel "A-070" .
+
+era-lc:A-085 a era-lc:LoadCapability;
+  skos:prefLabel "A-085" .
 
 era-lc:A-090 a era-lc:LoadCapability;
   skos:prefLabel "A-090" .
@@ -410,9 +410,6 @@ era-lc:B1-0 a era-lc:LoadCapability;
 
 era-lc:B1-030 a era-lc:LoadCapability;
   skos:prefLabel "B1-030" .
-
-era-lc:B1-050 a era-lc:LoadCapability;
-  skos:prefLabel "B1-050" .
 
 era-lc:B1-060 a era-lc:LoadCapability;
   skos:prefLabel "B1-060" .
@@ -522,9 +519,6 @@ era-lc:B2-60 a era-lc:LoadCapability;
 era-lc:B2-70 a era-lc:LoadCapability;
   skos:prefLabel "B2-70" .
 
-era-lc:B2-75 a era-lc:LoadCapability;
-  skos:prefLabel "B2-75" .
-
 era-lc:B2-80 a era-lc:LoadCapability;
   skos:prefLabel "B2-80" .
 
@@ -536,6 +530,9 @@ era-lc:C2-0 a era-lc:LoadCapability;
 
 era-lc:C2-030 a era-lc:LoadCapability;
   skos:prefLabel "C2-030" .
+
+era-lc:C2-040 a era-lc:LoadCapability;
+  skos:prefLabel "C2-040" .
 
 era-lc:C2-045 a era-lc:LoadCapability;
   skos:prefLabel "C2-045" .
@@ -621,6 +618,9 @@ era-lc:C3-0 a era-lc:LoadCapability;
 era-lc:C3-000 a era-lc:LoadCapability;
   skos:prefLabel "C3-000" .
 
+era-lc:C3-015 a era-lc:LoadCapability;
+  skos:prefLabel "C3-015" .
+
 era-lc:C3-030 a era-lc:LoadCapability;
   skos:prefLabel "C3-030" .
 
@@ -671,9 +671,6 @@ era-lc:C3-120 a era-lc:LoadCapability;
 
 era-lc:C3-130 a era-lc:LoadCapability;
   skos:prefLabel "C3-130" .
-
-era-lc:C3-150 a era-lc:LoadCapability;
-  skos:prefLabel "C3-150" .
 
 era-lc:C3-160 a era-lc:LoadCapability;
   skos:prefLabel "C3-160" .
@@ -780,9 +777,6 @@ era-lc:C4-40 a era-lc:LoadCapability;
 era-lc:C4-50 a era-lc:LoadCapability;
   skos:prefLabel "C4-50" .
 
-era-lc:C4-55 a era-lc:LoadCapability;
-  skos:prefLabel "C4-55" .
-
 era-lc:C4-60 a era-lc:LoadCapability;
   skos:prefLabel "C4-60" .
 
@@ -815,6 +809,12 @@ era-lc:D2-050 a era-lc:LoadCapability;
 
 era-lc:D2-060 a era-lc:LoadCapability;
   skos:prefLabel "D2-060" .
+
+era-lc:D2-070 a era-lc:LoadCapability;
+  skos:prefLabel "D2-070" .
+
+era-lc:D2-080 a era-lc:LoadCapability;
+  skos:prefLabel "D2-080" .
 
 era-lc:D2-100 a era-lc:LoadCapability;
   skos:prefLabel "D2-100" .
@@ -918,11 +918,20 @@ era-lc:D3-100 a era-lc:LoadCapability;
 era-lc:D3-110 a era-lc:LoadCapability;
   skos:prefLabel "D3-110" .
 
+era-lc:D3-115 a era-lc:LoadCapability;
+  skos:prefLabel "D3-115" .
+
 era-lc:D3-120 a era-lc:LoadCapability;
   skos:prefLabel "D3-120" .
 
+era-lc:D3-130 a era-lc:LoadCapability;
+  skos:prefLabel "D3-130" .
+
 era-lc:D3-140 a era-lc:LoadCapability;
   skos:prefLabel "D3-140" .
+
+era-lc:D3-150 a era-lc:LoadCapability;
+  skos:prefLabel "D3-150" .
 
 era-lc:D3-160 a era-lc:LoadCapability;
   skos:prefLabel "D3-160" .
@@ -966,6 +975,9 @@ era-lc:D4-0 a era-lc:LoadCapability;
 era-lc:D4-000 a era-lc:LoadCapability;
   skos:prefLabel "D4-000" .
 
+era-lc:D4-030 a era-lc:LoadCapability;
+  skos:prefLabel "D4-030" .
+
 era-lc:D4-040 a era-lc:LoadCapability;
   skos:prefLabel "D4-040" .
 
@@ -1004,9 +1016,6 @@ era-lc:D4-105 a era-lc:LoadCapability;
 
 era-lc:D4-110 a era-lc:LoadCapability;
   skos:prefLabel "D4-110" .
-
-era-lc:D4-115 a era-lc:LoadCapability;
-  skos:prefLabel "D4-115" .
 
 era-lc:D4-120 a era-lc:LoadCapability;
   skos:prefLabel "D4-120" .
@@ -1071,6 +1080,9 @@ era-lc:D4-40 a era-lc:LoadCapability;
 era-lc:D4-45 a era-lc:LoadCapability;
   skos:prefLabel "D4-45" .
 
+era-lc:D4-5 a era-lc:LoadCapability;
+  skos:prefLabel "D4-5" .
+
 era-lc:D4-50 a era-lc:LoadCapability;
   skos:prefLabel "D4-50" .
 
@@ -1103,6 +1115,9 @@ era-lc:D4-95 a era-lc:LoadCapability;
 
 era-lc:E4-100 a era-lc:LoadCapability;
   skos:prefLabel "E4-100" .
+
+era-lc:E4-120 a era-lc:LoadCapability;
+  skos:prefLabel "E4-120" .
 
 era-lc:E4-130 a era-lc:LoadCapability;
   skos:prefLabel "E4-130" .
@@ -1226,8 +1241,20 @@ era-gaugings:FR-3.4.2 a era-gaugings:GaugingProfile;
 era-gaugings:FS a era-gaugings:GaugingProfile;
   skos:prefLabel "FS" .
 
+era-gaugings:G%C4%8CD a era-gaugings:GaugingProfile;
+  skos:prefLabel "GČD" .
+
 era-gaugings:G1 a era-gaugings:GaugingProfile;
   skos:prefLabel "G1" .
+
+era-gaugings:G1%2BGI1 a era-gaugings:GaugingProfile;
+  skos:prefLabel "G1+GI1" .
+
+era-gaugings:G1%2FGI2 a era-gaugings:GaugingProfile;
+  skos:prefLabel "G1/GI2" .
+
+era-gaugings:G1%2FGl1 a era-gaugings:GaugingProfile;
+  skos:prefLabel "G1/Gl1" .
 
 era-gaugings:G1_up_and_GI2_down a era-gaugings:GaugingProfile;
   skos:prefLabel "G1 up and GI2 down" .
@@ -1241,6 +1268,9 @@ era-gaugings:GA a era-gaugings:GaugingProfile;
 era-gaugings:GB a era-gaugings:GaugingProfile;
   skos:prefLabel "GB" .
 
+era-gaugings:GB%3AG%C4%8CD a era-gaugings:GaugingProfile;
+  skos:prefLabel "GB:GČD" .
+
 era-gaugings:GB-M6 a era-gaugings:GaugingProfile;
   skos:prefLabel "GB-M6" .
 
@@ -1252,6 +1282,9 @@ era-gaugings:GB2 a era-gaugings:GaugingProfile;
 
 era-gaugings:GC a era-gaugings:GaugingProfile;
   skos:prefLabel "GC" .
+
+era-gaugings:GCZ3 a era-gaugings:GaugingProfile;
+  skos:prefLabel "GCZ3" .
 
 era-gaugings:GEA16 a era-gaugings:GaugingProfile;
   skos:prefLabel "GEA16" .
@@ -1271,11 +1304,23 @@ era-gaugings:GEE10 a era-gaugings:GaugingProfile;
 era-gaugings:GHE16 a era-gaugings:GaugingProfile;
   skos:prefLabel "GHE16" .
 
+era-gaugings:GHE16_%28Specific_case_Spain_%E2%80%93_upper_parts%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "GHE16 (Specific case Spain – upper parts)" .
+
 era-gaugings:GI1 a era-gaugings:GaugingProfile;
   skos:prefLabel "GI1" .
 
+era-gaugings:GI1_%28Specific_case_Spain_%E2%80%93_lower_parts%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "GI1 (Specific case Spain – lower parts)" .
+
 era-gaugings:GI2 a era-gaugings:GaugingProfile;
   skos:prefLabel "GI2" .
+
+era-gaugings:GI2_%28Specific_case_Spain_%E2%80%93_lower_parts%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "GI2 (Specific case Spain – lower parts)" .
+
+era-gaugings:GI2_according_EN_15273-2_ a era-gaugings:GaugingProfile;
+  skos:prefLabel "GI2 according EN 15273-2 " .
 
 era-gaugings:GI3 a era-gaugings:GaugingProfile;
   skos:prefLabel "GI3" .
@@ -1310,6 +1355,9 @@ era-gaugings:M80 a era-gaugings:GaugingProfile;
 era-gaugings:NL1 a era-gaugings:GaugingProfile;
   skos:prefLabel "NL1" .
 
+era-gaugings:NL1_%28Dutch__network%29 a era-gaugings:GaugingProfile;
+  skos:prefLabel "NL1 (Dutch  network)" .
+
 era-gaugings:NL1_%28Specific_case_the_Netherlands%29 a era-gaugings:GaugingProfile;
   skos:prefLabel "NL1 (Specific case the Netherlands)" .
 
@@ -1325,6 +1373,9 @@ era-gaugings:NO1 a era-gaugings:GaugingProfile;
 era-gaugings:Not_applicable a era-gaugings:GaugingProfile;
   skos:prefLabel "Not applicable" .
 
+era-gaugings:OCF-02 a era-gaugings:GaugingProfile;
+  skos:prefLabel "OCF-02" .
+
 era-gaugings:PTb a era-gaugings:GaugingProfile;
   skos:prefLabel "PTb" .
 
@@ -1333,6 +1384,10 @@ era-gaugings:PTb%2B a era-gaugings:GaugingProfile;
 
 era-gaugings:PTc a era-gaugings:GaugingProfile;
   skos:prefLabel "PTc" .
+
+era-gaugings:Per_altezze_%3C%3D_a_3250_mm_rispetta_la_fiche_UIC_505-1%3B_per_altezze_%3E_a_3250_mm_eccede_il_profilo_max_di_costruzione_previsto_dalla_fiche_505-1
+  a era-gaugings:GaugingProfile;
+  skos:prefLabel "Per altezze <= a 3250 mm rispetta la fiche UIC 505-1; per altezze > a 3250 mm eccede il profilo max di costruzione previsto dalla fiche 505-1" .
 
 era-gaugings:Per_altezze_%E2%89%A4_a_3250_mm_rispetta_la_fiche_UIC_505-1%3B_per_altezze_%3E_a_3250_mm_eccede_il_profilo_max_di_costruzione_previsto_dalla_fiche_UIC_505-1
   a era-gaugings:GaugingProfile;
@@ -1361,6 +1416,9 @@ era-gaugings:Tram-train%202.65 a era-gaugings:GaugingProfile;
 
 era-gaugings:UIC_505-1 a era-gaugings:GaugingProfile;
   skos:prefLabel "UIC 505-1" .
+
+<http://era.europa.eu/concepts/gaugings#UIC_505-1_excluding_the_doorsteps.> a era-gaugings:GaugingProfile;
+  skos:prefLabel "UIC 505-1 excluding the doorsteps." .
 
 era-gaugings:UK1 a era-gaugings:GaugingProfile;
   skos:prefLabel "UK1" .
@@ -1391,6 +1449,9 @@ era-gaugings:other a era-gaugings:GaugingProfile;
 era-ap:a%3A_0000%2C00_m_b%3A_0000%2C00_m_c%3A_0000%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0000,00 m b: 0000,00 m c: 0000,00 m" .
 
+era-ap:a%3A_0001%2C20_m_b%3A_0002%2C44_m_c%3A_0004%2C44_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,20 m b: 0002,44 m c: 0004,44 m" .
+
 era-ap:a%3A_0001%2C25_m_b%3A_0004%2C00_m_c%3A_0015%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,25 m b: 0004,00 m c: 0015,00 m" .
 
@@ -1403,8 +1464,17 @@ era-ap:a%3A_0001%2C80_m_b%3A_0000%2C88_m_c%3A_0009%2C39_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C00_m_c%3A_0007%2C20_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,00 m c: 0007,20 m" .
 
-era-ap:a%3A_0001%2C80_m_b%3A_0001%2C10_m_c%3A_0009%2C40_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0001,80 m b: 0001,10 m c: 0009,40 m" .
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C10_m_c%3A_0009%2C42_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,10 m c: 0009,42 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C25_m_c%3A_0012%2C40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,25 m c: 0012,40 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C48_m_c%3A_0009%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,48 m c: 0009,70 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C48_m_c%3A_0010%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,48 m c: 0010,20 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C48_m_c%3A_0010%2C30_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,48 m c: 0010,30 m" .
@@ -1415,6 +1485,9 @@ era-ap:a%3A_0001%2C80_m_b%3A_0001%2C50_m_c%3A_0006%2C40_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0005%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0005,70 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0007%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0007,20 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0007%2C56_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0007,56 m" .
 
@@ -1424,8 +1497,14 @@ era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0007%2C96_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0009%2C46_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0009,46 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0009%2C76_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0009,76 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0009%2C86_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0009,86 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0012%2C80_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0012,80 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C62_m_c%3A_0013%2C06_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,62 m c: 0013,06 m" .
@@ -1439,14 +1518,17 @@ era-ap:a%3A_0001%2C80_m_b%3A_0001%2C65_m_c%3A_0010%2C70_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C65_m_c%3A_0011%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,65 m c: 0011,70 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C66_m_c%3A_0012%2C40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,66 m c: 0012,40 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0007%2C72_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0007,72 m" .
 
-era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0009%2C12_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0009,12 m" .
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0009%2C06_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0009,06 m" .
 
-era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0010%2C63_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0010,63 m" .
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0009%2C37_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0009,37 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0013%2C43_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,87 m c: 0013,43 m" .
@@ -1454,23 +1536,38 @@ era-ap:a%3A_0001%2C80_m_b%3A_0001%2C87_m_c%3A_0013%2C43_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0001%2C90_m_c%3A_0008%2C60_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0001,90 m c: 0008,60 m" .
 
-era-ap:a%3A_0001%2C80_m_b%3A_0001%2C98_m_c%3A_0009%2C48_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0001,80 m b: 0001,98 m c: 0009,48 m" .
+era-ap:a%3A_0001%2C80_m_b%3A_0001%2C90_m_c%3A_0010%2C19_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0001,90 m c: 0010,19 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C05_m_c%3A_0010%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,05 m c: 0010,30 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C08_m_c%3A_0017%2C50_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,08 m c: 0017,50 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C19_m_c%3A_0008%2C65_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,19 m c: 0008,65 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0002%2C20_m_c%3A_0016%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0002,20 m c: 0016,70 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C23_m_c%3A_0009%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,23 m c: 0009,20 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0002%2C45_m_c%3A_0011%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0002,45 m c: 0011,70 m" .
-
-era-ap:a%3A_0001%2C80_m_b%3A_0002%2C52_m_c%3A_0013%2C06_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0001,80 m b: 0002,52 m c: 0013,06 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0002%2C72_m_c%3A_0008%2C90_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0002,72 m c: 0008,90 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C80_m_c%3A_0008%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,80 m c: 0008,00 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0002%2C80_m_c%3A_0010%2C39_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0002,80 m c: 0010,39 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0002%2C81_m_c%3A_0010%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0002,81 m c: 0010,20 m" .
 
 era-ap:a%3A_0001%2C80_m_b%3A_0002%2C98_m_c%3A_0017%2C30_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0002,98 m c: 0017,30 m" .
@@ -1481,14 +1578,38 @@ era-ap:a%3A_0001%2C80_m_b%3A_0003%2C12_m_c%3A_0011%2C20_m a era-ap:AxlePosition;
 era-ap:a%3A_0001%2C80_m_b%3A_0003%2C12_m_c%3A_0020%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0003,12 m c: 0020,00 m" .
 
+era-ap:a%3A_0001%2C80_m_b%3A_0003%2C32_m_c%3A_0011%2C15_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0003,32 m c: 0011,15 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0003%2C68_m_c%3A_0015%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0003,68 m c: 0015,30 m" .
+
+era-ap:a%3A_0001%2C80_m_b%3A_0003%2C83_m_c%3A_0012%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,80 m b: 0003,83 m c: 0012,20 m" .
+
 era-ap:a%3A_0001%2C80_m_b%3A_0010%2C63_m_c%3A_0005%2C23_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001,80 m b: 0010,63 m c: 0005,23 m" .
+
+era-ap:a%3A_0001%2C90_m_b%3A_0003%2C45_m_c%3A_0014%2C20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001,90 m b: 0003,45 m c: 0014,20 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0001.25_m_c%3A_0016.56_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0001.25 m c: 0016.56 m" .
 
 era-ap:a%3A_0001.80_m_b%3A_0001.62_m_c%3A_0006.20_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0001.62 m c: 0006.20 m" .
 
 era-ap:a%3A_0001.80_m_b%3A_0001.62_m_c%3A_0007.56_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0001.62 m c: 0007.56 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0001.62_m_c%3A_0009.56_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0001.62 m c: 0009.56 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0001.87_m_c%3A_0006.76_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0001.87 m c: 0006.76 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0001.87_m_c%3A_0009.12_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0001.87 m c: 0009.12 m" .
 
 era-ap:a%3A_0001.80_m_b%3A_0001.87_m_c%3A_0010.63_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0001.87 m c: 0010.63 m" .
@@ -1499,11 +1620,32 @@ era-ap:a%3A_0001.80_m_b%3A_0001.87_m_c%3A_0012.40_m a era-ap:AxlePosition;
 era-ap:a%3A_0001.80_m_b%3A_0001.90_m_c%3A_0008.60_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0001.90 m c: 0008.60 m" .
 
+era-ap:a%3A_0001.80_m_b%3A_0001.98_m_c%3A_0009.48_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0001.98 m c: 0009.48 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0002.00_m_c%3A_0008.59_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0002.00 m c: 0008.59 m" .
+
 era-ap:a%3A_0001.80_m_b%3A_0002.07_m_c%3A_0012.00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0002.07 m c: 0012.00 m" .
 
+era-ap:a%3A_0001.80_m_b%3A_0002.52_m_c%3A_0004.70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0002.52 m c: 0004.70 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0002.52_m_c%3A_0013.06_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0002.52 m c: 0013.06 m" .
+
 era-ap:a%3A_0001.80_m_b%3A_0002.80_m_c%3A_0010.39_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0001.80 m b: 0002.80 m c: 0010.39 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0002.81_m_c%3A_0010.20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0002.81 m c: 0010.20 m" .
+
+era-ap:a%3A_0001.80_m_b%3A_0002.82_m_c%3A_0008.07_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0001.80 m b: 0002.82 m c: 0008.07 m" .
+
+era-ap:a%3A_0002%2C00_m_b%3A_0001%2C74_m_c%3A_0009%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,00 m b: 0001,74 m c: 0009,70 m" .
 
 era-ap:a%3A_0002%2C00_m_b%3A_0001%2C80_m_c%3A_0011%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,00 m b: 0001,80 m c: 0011,00 m" .
@@ -1511,11 +1653,29 @@ era-ap:a%3A_0002%2C00_m_b%3A_0001%2C80_m_c%3A_0011%2C00_m a era-ap:AxlePosition;
 era-ap:a%3A_0002%2C00_m_b%3A_0001%2C83_m_c%3A_0011%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,00 m b: 0001,83 m c: 0011,00 m" .
 
+era-ap:a%3A_0002%2C00_m_b%3A_0002%2C31_m_c%3A_0007%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,00 m b: 0002,31 m c: 0007,30 m" .
+
+era-ap:a%3A_0002%2C00_m_b%3A_0002%2C41_m_c%3A_0007%2C40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,00 m b: 0002,41 m c: 0007,40 m" .
+
 era-ap:a%3A_0002%2C10_m_b%3A_0004%2C50_m_c%3A_0012%2C79_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,10 m b: 0004,50 m c: 0012,79 m" .
 
 era-ap:a%3A_0002%2C10_m_b%3A_0004%2C50_m_c%3A_0012%2C94_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,10 m b: 0004,50 m c: 0012,94 m" .
+
+era-ap:a%3A_0002%2C20_m_b%3A_0002%2C12_m_c%3A_0006%2C59_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,20 m b: 0002,12 m c: 0006,59 m" .
+
+era-ap:a%3A_0002%2C20_m_b%3A_0002%2C41_m_c%3A_0005%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,20 m b: 0002,41 m c: 0005,00 m" .
+
+era-ap:a%3A_0002%2C30_m_b%3A_0002%2C90_m_c%3A_0013%2C45_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,30 m b: 0002,90 m c: 0013,45 m" .
+
+era-ap:a%3A_0002%2C40_m_b%3A_0001%2C86_m_c%3A_0004%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,40 m b: 0001,86 m c: 0004,30 m" .
 
 era-ap:a%3A_0002%2C40_m_b%3A_0002%2C75_m_c%3A_0006%2C10_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,40 m b: 0002,75 m c: 0006,10 m" .
@@ -1526,8 +1686,29 @@ era-ap:a%3A_0002%2C40_m_b%3A_0002%2C89_m_c%3A_0010%2C02_m a era-ap:AxlePosition;
 era-ap:a%3A_0002%2C40_m_b%3A_0002%2C89_m_c%3A_0012%2C64_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,40 m b: 0002,89 m c: 0012,64 m" .
 
+era-ap:a%3A_0002%2C40_m_b%3A_0003%2C33_m_c%3A_0005%2C54_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,40 m b: 0003,33 m c: 0005,54 m" .
+
 era-ap:a%3A_0002%2C40_m_b%3A_0003%2C83_m_c%3A_0007%2C50_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,40 m b: 0003,83 m c: 0007,50 m" .
+
+era-ap:a%3A_0002%2C40_m_b%3A_0004%2C15_m_c%3A_0022%2C50_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,40 m b: 0004,15 m c: 0022,50 m" .
+
+era-ap:a%3A_0002%2C45_m_b%3A_0000%2C71_m_c%3A_0013%2C49_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,45 m b: 0000,71 m c: 0013,49 m" .
+
+era-ap:a%3A_0002%2C50_m_b%3A_0001%2C10_m_c%3A_0013%2C60_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,50 m b: 0001,10 m c: 0013,60 m" .
+
+era-ap:a%3A_0002%2C50_m_b%3A_0002%2C00_m_c%3A_0004%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,50 m b: 0002,00 m c: 0004,70 m" .
+
+era-ap:a%3A_0002%2C50_m_b%3A_0002%2C05_m_c%3A_0017%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,50 m b: 0002,05 m c: 0017,30 m" .
+
+era-ap:a%3A_0002%2C50_m_b%3A_0003%2C30_m_c%3A_0017%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,50 m b: 0003,30 m c: 0017,30 m" .
 
 era-ap:a%3A_0002%2C50_m_b%3A_0004%2C10_m_c%3A_0013%2C40_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,50 m b: 0004,10 m c: 0013,40 m" .
@@ -1535,20 +1716,68 @@ era-ap:a%3A_0002%2C50_m_b%3A_0004%2C10_m_c%3A_0013%2C40_m a era-ap:AxlePosition;
 era-ap:a%3A_0002%2C50_m_b%3A_0004%2C15_m_c%3A_0013%2C40_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,50 m b: 0004,15 m c: 0013,40 m" .
 
+era-ap:a%3A_0002%2C55_m_b%3A_0001%2C96_m_c%3A_0017%2C45_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,55 m b: 0001,96 m c: 0017,45 m" .
+
+era-ap:a%3A_0002%2C55_m_b%3A_0002%2C59_m_c%3A_0017%2C45_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,55 m b: 0002,59 m c: 0017,45 m" .
+
+era-ap:a%3A_0002%2C56_m_b%3A_0002%2C49_m_c%3A_0016%2C44_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,56 m b: 0002,49 m c: 0016,44 m" .
+
+era-ap:a%3A_0002%2C60_m_b%3A_0002%2C95_m_c%3A_0007%2C79_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,60 m b: 0002,95 m c: 0007,79 m" .
+
 era-ap:a%3A_0002%2C60_m_b%3A_0002%2C96_m_c%3A_0007%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,60 m b: 0002,96 m c: 0007,70 m" .
+
+era-ap:a%3A_0002%2C65_m_b%3A_0001%2C60_m_c%3A_0013%2C54_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,65 m b: 0001,60 m c: 0013,54 m" .
 
 era-ap:a%3A_0002%2C65_m_b%3A_0003%2C51_m_c%3A_0016%2C45_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,65 m b: 0003,51 m c: 0016,45 m" .
 
+era-ap:a%3A_0002%2C70_m_b%3A_0003%2C65_m_c%3A_0016%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,70 m b: 0003,65 m c: 0016,30 m" .
+
+era-ap:a%3A_0002%2C70_m_b%3A_0003%2C90_m_c%3A_0002%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,70 m b: 0003,90 m c: 0002,70 m" .
+
+era-ap:a%3A_0002%2C70_m_b%3A_0003%2C90_m_c%3A_0013%2C40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,70 m b: 0003,90 m c: 0013,40 m" .
+
 era-ap:a%3A_0002%2C70_m_b%3A_0004%2C20_m_c%3A_0014%2C75_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002,70 m b: 0004,20 m c: 0014,75 m" .
+
+era-ap:a%3A_0002%2C80_m_b%3A_0002%2C71_m_c%3A_0009%2C30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,80 m b: 0002,71 m c: 0009,30 m" .
+
+era-ap:a%3A_0002%2C85_m_b%3A_0003%2C72_m_c%3A_0014%2C55_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002,85 m b: 0003,72 m c: 0014,55 m" .
+
+era-ap:a%3A_0002.10_m_b%3A_0002.72_m_c%3A_0008.76_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002.10 m b: 0002.72 m c: 0008.76 m" .
+
+era-ap:a%3A_0002.30_m_b%3A_0003.29_m_c%3A_0002.30_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002.30 m b: 0003.29 m c: 0002.30 m" .
+
+era-ap:a%3A_0002.40_m_b%3A_0003.27_m_c%3A_0011.95_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0002.40 m b: 0003.27 m c: 0011.95 m" .
 
 era-ap:a%3A_0002.50_m_b%3A_0004.00_m_c%3A_0014.80_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0002.50 m b: 0004.00 m c: 0014.80 m" .
 
+era-ap:a%3A_0003%2C00_m_b%3A_0002%2C85_m_c%3A_0007%2C40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0003,00 m b: 0002,85 m c: 0007,40 m" .
+
 era-ap:a%3A_0003%2C00_m_b%3A_0003%2C24_m_c%3A_0006%2C50_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0003,00 m b: 0003,24 m c: 0006,50 m" .
+
+era-ap:a%3A_0003%2C00_m_b%3A_0003%2C26_m_c%3A_0015%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0003,00 m b: 0003,26 m c: 0015,70 m" .
+
+era-ap:a%3A_0003%2C00_m_b%3A_0003%2C28_m_c%3A_0006%2C50_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0003,00 m b: 0003,28 m c: 0006,50 m" .
 
 era-ap:a%3A_0003%2C00_m_b%3A_0003%2C28_m_c%3A_0015%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0003,00 m b: 0003,28 m c: 0015,70 m" .
@@ -1556,23 +1785,44 @@ era-ap:a%3A_0003%2C00_m_b%3A_0003%2C28_m_c%3A_0015%2C70_m a era-ap:AxlePosition;
 era-ap:a%3A_0003%2C00_m_b%3A_0003%2C52_m_c%3A_0011%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0003,00 m b: 0003,52 m c: 0011,00 m" .
 
-era-ap:a%3A_0003%2C00_m_b%3A_0004%2C78_m_c%3A_0006%2C50_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0003,00 m b: 0004,78 m c: 0006,50 m" .
-
-era-ap:a%3A_0003%2C00_m_b%3A_0005%2C71_m_c%3A_0007%2C40_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0003,00 m b: 0005,71 m c: 0007,40 m" .
-
 era-ap:a%3A_0003.00_m_b%3A_0003.24_m_c%3A_0006.50_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0003.00 m b: 0003.24 m c: 0006.50 m" .
+
+era-ap:a%3A_0003.00_m_b%3A_0005.71_m_c%3A_0007.40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0003.00 m b: 0005.71 m c: 0007.40 m" .
+
+era-ap:a%3A_0004%2C35_m_b%3A_0001%2C46_m_c%3A_0000%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0004,35 m b: 0001,46 m c: 0000,00 m" .
+
+era-ap:a%3A_0004%2C38_m_b%3A_0001%2C46_m_c%3A_0000%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0004,38 m b: 0001,46 m c: 0000,00 m" .
 
 era-ap:a%3A_0005%2C49_m_b%3A_0003%2C27_m_c%3A_0005%2C49_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0005,49 m b: 0003,27 m c: 0005,49 m" .
 
-era-ap:a%3A_0007%2C00_m_b%3A_0001%2C62_m_c%3A_0005%2C20_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0007,00 m b: 0001,62 m c: 0005,20 m" .
+era-ap:a%3A_0005%2C90_m_b%3A_0000%2C00_m_c%3A_0000%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0005,90 m b: 0000,00 m c: 0000,00 m" .
 
-era-ap:a%3A_0008%2C00_m_b%3A_0002%2C31_m_c%3A_0008%2C00_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0008,00 m b: 0002,31 m c: 0008,00 m" .
+era-ap:a%3A_0007%2C10_m_b%3A_0002%2C27_m_c%3A_0007%2C10_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0007,10 m b: 0002,27 m c: 0007,10 m" .
+
+era-ap:a%3A_0007.00_m_b%3A_0001.62_m_c%3A_0005.20_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0007.00 m b: 0001.62 m c: 0005.20 m" .
+
+era-ap:a%3A_0008%2C00_m_b%3A_0002%2C31_m_c%3A_0000%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0008,00 m b: 0002,31 m c: 0000,00 m" .
+
+era-ap:a%3A_0008%2C00_m_b%3A_0002%2C99_m_c%3A_0008%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0008,00 m b: 0002,99 m c: 0008,00 m" .
+
+era-ap:a%3A_0008%2C10_m_b%3A_0003%2C64_m_c%3A_0008%2C10_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0008,10 m b: 0003,64 m c: 0008,10 m" .
+
+era-ap:a%3A_0008%2C20_m_b%3A_0001%2C95_m_c%3A_0001%2C43_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0008,20 m b: 0001,95 m c: 0001,43 m" .
+
+era-ap:a%3A_0008%2C20_m_b%3A_0002%2C15_m_c%3A_0001%2C43_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0008,20 m b: 0002,15 m c: 0001,43 m" .
 
 era-ap:a%3A_0008%2C26_m_b%3A_0001%2C62_m_c%3A_0006%2C46_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0008,26 m b: 0001,62 m c: 0006,46 m" .
@@ -1586,17 +1836,32 @@ era-ap:a%3A_0008%2C56_m_b%3A_0001%2C62_m_c%3A_0006%2C76_m a era-ap:AxlePosition;
 era-ap:a%3A_0009%2C00_m_b%3A_0002%2C17_m_c%3A_0009%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0009,00 m b: 0002,17 m c: 0009,00 m" .
 
+era-ap:a%3A_0009%2C00_m_b%3A_0002%2C39_m_c%3A_0009%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0009,00 m b: 0002,39 m c: 0009,00 m" .
+
+era-ap:a%3A_0009%2C00_m_b%3A_0002%2C63_m_c%3A_0006%2C60_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0009,00 m b: 0002,63 m c: 0006,60 m" .
+
+era-ap:a%3A_0009%2C51_m_b%3A_0003%2C83_m_c%3A_0009%2C51_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0009,51 m b: 0003,83 m c: 0009,51 m" .
+
 era-ap:a%3A_0009%2C52_m_b%3A_0001%2C87_m_c%3A_0007%2C72_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0009,52 m b: 0001,87 m c: 0007,72 m" .
 
 era-ap:a%3A_0009%2C73_m_b%3A_0001%2C62_m_c%3A_0007%2C93_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0009,73 m b: 0001,62 m c: 0007,93 m" .
 
-era-ap:a%3A_0010%2C55_m_b%3A_0002%2C11_m_c%3A_0001%2C60_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0010,55 m b: 0002,11 m c: 0001,60 m" .
+era-ap:a%3A_0010%2C40_m_b%3A_0004%2C23_m_c%3A_0007%2C55_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0010,40 m b: 0004,23 m c: 0007,55 m" .
+
+era-ap:a%3A_0010%2C90_m_b%3A_0002%2C75_m_c%3A_0006%2C10_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0010,90 m b: 0002,75 m c: 0006,10 m" .
 
 era-ap:a%3A_0010.00_m_b%3A_0025.15_m_c%3A_0005.15_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0010.00 m b: 0025.15 m c: 0005.15 m" .
+
+era-ap:a%3A_0010.55_m_b%3A_0002.11_m_c%3A_0001.60_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0010.55 m b: 0002.11 m c: 0001.60 m" .
 
 era-ap:a%3A_0011%2C74_m_b%3A_0001%2C05_m_c%3A_0007%2C74_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0011,74 m b: 0001,05 m c: 0007,74 m" .
@@ -1610,23 +1875,50 @@ era-ap:a%3A_0012%2C95_m_b%3A_0003%2C78_m_c%3A_0002%2C40_m a era-ap:AxlePosition;
 era-ap:a%3A_0014%2C20_m_b%3A_0001%2C87_m_c%3A_0012%2C40_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0014,20 m b: 0001,87 m c: 0012,40 m" .
 
+era-ap:a%3A_0014%2C20_m_b%3A_0004%2C22_m_c%3A_0008%2C70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0014,20 m b: 0004,22 m c: 0008,70 m" .
+
 era-ap:a%3A_0014%2C30_m_b%3A_0004%2C11_m_c%3A_0003%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0014,30 m b: 0004,11 m c: 0003,00 m" .
 
-era-ap:a%3A_0015%2C80_m_b%3A_0001%2C62_m_c%3A_0014%2C00_m a era-ap:AxlePosition;
-  skos:prefLabel "a: 0015,80 m b: 0001,62 m c: 0014,00 m" .
+era-ap:a%3A_0014.20_m_b%3A_0001.87_m_c%3A_0012.40_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0014.20 m b: 0001.87 m c: 0012.40 m" .
+
+era-ap:a%3A_0014.60_m_b%3A_0001.90_m_c%3A_0012.80_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0014.60 m b: 0001.90 m c: 0012.80 m" .
 
 era-ap:a%3A_0015.00_m_b%3A_0004.00_m_c%3A_0002.70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0015.00 m b: 0004.00 m c: 0002.70 m" .
 
+era-ap:a%3A_0015.80_m_b%3A_0001.62_m_c%3A_0014.00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0015.80 m b: 0001.62 m c: 0014.00 m" .
+
+era-ap:a%3A_0016%2C00_m_b%3A_0003%2C80_m_c%3A_0008%2C50_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0016,00 m b: 0003,80 m c: 0008,50 m" .
+
+era-ap:a%3A_0016.20_m_b%3A_0003.90_m_c%3A_0002.70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0016.20 m b: 0003.90 m c: 0002.70 m" .
+
 era-ap:a%3A_0018%2C00_m_b%3A_0001%2C79_m_c%3A_0002%2C70_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0018,00 m b: 0001,79 m c: 0002,70 m" .
+
+era-ap:a%3A_0018%2C20_m_b%3A_0023%2C60_m_c%3A_0018%2C50_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0018,20 m b: 0023,60 m c: 0018,50 m" .
 
 era-ap:a%3A_0019%2C80_m_b%3A_0002%2C35_m_c%3A_0014%2C60_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0019,80 m b: 0002,35 m c: 0014,60 m" .
 
+era-ap:a%3A_0020.30_m_b%3A_0002.02_m_c%3A_0016.70_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 0020.30 m b: 0002.02 m c: 0016.70 m" .
+
 era-ap:a%3A_0025.20_m_b%3A_0002.28_m_c%3A_0010.00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 0025.20 m b: 0002.28 m c: 0010.00 m" .
+
+era-ap:a%3A_1800%2C00_m_b%3A_2700%2C00_m_c%3A_1750%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 1800,00 m b: 2700,00 m c: 1750,00 m" .
+
+era-ap:a%3A_1800.00_m_b%3A_1620.00_m_c%3A_7050.00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 1800.00 m b: 1620.00 m c: 7050.00 m" .
 
 era-ap:a%3A_1800.00_m_b%3A_2000.00_m_c%3A_5160.00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 1800.00 m b: 2000.00 m c: 5160.00 m" .
@@ -1637,8 +1929,20 @@ era-ap:a%3A_2200%2C00_m_b%3A_2985%2C00_m_c%3A_2500%2C00_m a era-ap:AxlePosition;
 era-ap:a%3A_2400%2C00_m_b%3A_4800%2C00_m_c%3A_9600%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 2400,00 m b: 4800,00 m c: 9600,00 m" .
 
+era-ap:a%3A_2600%2C00_m_b%3A_2955%2C00_m_c%3A_7790%2C00_m a era-ap:AxlePosition;
+  skos:prefLabel "a: 2600,00 m b: 2955,00 m c: 7790,00 m" .
+
+era-ap:a%3A_2___%2C___m_b%3A_____%2C___m_c%3A_____%2C___m a era-ap:AxlePosition;
+  skos:prefLabel "a: 2___,__ m b: ____,__ m c: ____,__ m" .
+
 era-ap:a%3A_4500%2C00_m_b%3A_2380%2C00_m_c%3A_4500%2C00_m a era-ap:AxlePosition;
   skos:prefLabel "a: 4500,00 m b: 2380,00 m c: 4500,00 m" .
+
+era-ap:a%3A____1%2C8__m_b%3A____1%2C77_m_c%3A___15%2C9__m a era-ap:AxlePosition;
+  skos:prefLabel "a: ___1,8_ m b: ___1,77 m c: __15,9_ m" .
+
+era-ap:a%3A____2.5__m_b%3A____2.5__m_c%3A___16.5__m a era-ap:AxlePosition;
+  skos:prefLabel "a: ___2.5_ m b: ___2.5_ m c: __16.5_ m" .
 
 ########## Train detection systems ##########
 
@@ -1693,6 +1997,9 @@ era-tds:N_8 a era-tds:FrenchTrainDetectionSystemLimitation ;
 era-am:0 a era-am:AxleBearingMonitoring;
   skos:prefLabel "0" .
 
+era-am:ATMS a era-am:AxleBearingMonitoring;
+  skos:prefLabel "ATMS" .
+
 era-am:According_to_HABD a era-am:AxleBearingMonitoring;
   skos:prefLabel "According to HABD" .
 
@@ -1705,14 +2012,36 @@ era-am:Detectable_by_line_side a era-am:AxleBearingMonitoring;
 era-am:False a era-am:AxleBearingMonitoring;
   skos:prefLabel "False" .
 
+era-am:Max_speed_60kmh_-_Not_Applicable a era-am:AxleBearingMonitoring;
+  skos:prefLabel "Max speed 60kmh - Not Applicable" .
+
 era-am:N a era-am:AxleBearingMonitoring;
   skos:prefLabel "N" .
+
+era-am:N%2FA a era-am:AxleBearingMonitoring;
+  skos:prefLabel "N/A" .
+
+era-am:N%2Fa a era-am:AxleBearingMonitoring;
+  skos:prefLabel "N/a" .
+
+era-am:NO_APLICA a era-am:AxleBearingMonitoring;
+  skos:prefLabel "NO APLICA" .
 
 era-am:No a era-am:AxleBearingMonitoring;
   skos:prefLabel "No" .
 
+era-am:None a era-am:AxleBearingMonitoring;
+  skos:prefLabel "None" .
+
+era-am:None_detection a era-am:AxleBearingMonitoring;
+  skos:prefLabel "None detection" .
+
 era-am:Not_applicable a era-am:AxleBearingMonitoring;
   skos:prefLabel "Not applicable" .
+
+era-am:Not_applicable_due_to_low_travelling_speed_%28acc._to_iDeBo-Assessment%29 a
+    era-am:AxleBearingMonitoring;
+  skos:prefLabel "Not applicable due to low travelling speed (acc. to iDeBo-Assessment)" .
 
 era-am:On_board_HABD_is_not_fitted a era-am:AxleBearingMonitoring;
   skos:prefLabel "On board HABD is not fitted" .
@@ -1729,8 +2058,20 @@ era-am:PT_100_on_10_first_cars%3B_rest_detectable_by_line_side a era-am:AxleBear
 era-am:inner_wheel_bearings a era-am:AxleBearingMonitoring;
   skos:prefLabel "inner wheel bearings" .
 
+era-am:keine_Hei%C3%9Fl%C3%A4uferortung_vorgesehen%2C_weder_fahrzeug-_noch_streckenseitig
+  a era-am:AxleBearingMonitoring;
+  skos:prefLabel "keine Heißläuferortung vorgesehen, weder fahrzeug- noch streckenseitig" .
+
 era-am:none a era-am:AxleBearingMonitoring;
   skos:prefLabel "none" .
+
+era-am:onboard_equipped%2C_active_in_B%2C_NL_____line_side_detection_acc._TSI_not_given
+  a era-am:AxleBearingMonitoring;
+  skos:prefLabel "onboard equipped, active in B, NL     line side detection acc. TSI not given" .
+
+era-am:onboard_equipped%2C_active_in_NL_____line_side_detection_acc._TSI_not_given
+  a era-am:AxleBearingMonitoring;
+  skos:prefLabel "onboard equipped, active in NL     line side detection acc. TSI not given" .
 
 era-am:procedure_exsisting_for_manual_monitoring_by_operators_onboard a era-am:AxleBearingMonitoring;
   skos:prefLabel "procedure exsisting for manual monitoring by operators onboard" .
@@ -1746,8 +2087,17 @@ era-mscd:0000%2C00_km%2Fh_-_0000%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-mscd:0001%2C25_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0001,25 km/h - 0150,00 mm" .
 
+era-mscd:0010%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0010,00 km/h - 0130,00 mm" .
+
+era-mscd:0020%2C00_km%2Fh_-_0000%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0020,00 km/h - 0000,00 mm" .
+
 era-mscd:0060%2C00_km%2Fh_-_0160%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0060,00 km/h - 0160,00 mm" .
+
+era-mscd:0060%2C00_km%2Fh_-_____%2C___mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0060,00 km/h - ____,__ mm" .
 
 era-mscd:0070%2C00_km%2Fh_-_0092%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0070,00 km/h - 0092,00 mm" .
@@ -1763,6 +2113,21 @@ era-mscd:0080%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 
 era-mscd:0080%2C00_km%2Fh_-_0200%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0080,00 km/h - 0200,00 mm" .
+
+era-mscd:0080.00_km%2Fh_-_0000.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0080.00 km/h - 0000.00 mm" .
+
+era-mscd:0090%2C00_km%2Fh_-_0160%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0090,00 km/h - 0160,00 mm" .
+
+era-mscd:0100%2C00_km%2Fh_-_0092%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0100,00 km/h - 0092,00 mm" .
+
+era-mscd:0100%2C00_km%2Fh_-_0100%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0100,00 km/h - 0100,00 mm" .
+
+era-mscd:0100%2C00_km%2Fh_-_0115%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0100,00 km/h - 0115,00 mm" .
 
 era-mscd:0100%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0100,00 km/h - 0130,00 mm" .
@@ -1782,11 +2147,17 @@ era-mscd:0100%2C00_km%2Fh_-_0180%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-mscd:0100.00_km%2Fh_-_0130.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0100.00 km/h - 0130.00 mm" .
 
+era-mscd:0100.00_km%2Fh_-_0160.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0100.00 km/h - 0160.00 mm" .
+
 era-mscd:0107%2C00_km%2Fh_-_0165%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0107,00 km/h - 0165,00 mm" .
 
 era-mscd:0120%2C00_km%2Fh_-_0020%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0120,00 km/h - 0020,00 mm" .
+
+era-mscd:0120%2C00_km%2Fh_-_0115%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0120,00 km/h - 0115,00 mm" .
 
 era-mscd:0120%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0120,00 km/h - 0130,00 mm" .
@@ -1794,11 +2165,20 @@ era-mscd:0120%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-mscd:0120%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0120,00 km/h - 0150,00 mm" .
 
+era-mscd:0120%2C00_km%2Fh_-_0165%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0120,00 km/h - 0165,00 mm" .
+
 era-mscd:0120.00_km%2Fh_-_0115.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0120.00 km/h - 0115.00 mm" .
 
 era-mscd:0120.00_km%2Fh_-_0130.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0120.00 km/h - 0130.00 mm" .
+
+era-mscd:0120.00_km%2Fh_-_0140.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0120.00 km/h - 0140.00 mm" .
+
+era-mscd:0120.00_km%2Fh_-_0150.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0120.00 km/h - 0150.00 mm" .
 
 era-mscd:0130%2C00_km%2Fh_-_0122%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0130,00 km/h - 0122,00 mm" .
@@ -1809,14 +2189,20 @@ era-mscd:0140%2C00_km%2Fh_-_0091%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-mscd:0140%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0140,00 km/h - 0150,00 mm" .
 
+era-mscd:0140%2C00_km%2Fh_-_0165%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0140,00 km/h - 0165,00 mm" .
+
+era-mscd:0140.00_km%2Fh_-_0150.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0140.00 km/h - 0150.00 mm" .
+
 era-mscd:0150%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0150,00 km/h - 0153,00 mm" .
 
+era-mscd:0160%2C00_km%2Fh_-_0120%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0160,00 km/h - 0120,00 mm" .
+
 era-mscd:0160%2C00_km%2Fh_-_0122%2C40_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0160,00 km/h - 0122,40 mm" .
-
-era-mscd:0160%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
-  skos:prefLabel "0160,00 km/h - 0130,00 mm" .
 
 era-mscd:0160%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0160,00 km/h - 0150,00 mm" .
@@ -1827,29 +2213,65 @@ era-mscd:0160%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
 era-mscd:0160%2C00_km%2Fh_-_0165%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0160,00 km/h - 0165,00 mm" .
 
+era-mscd:0160.00_km%2Fh_-_0130.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0160.00 km/h - 0130.00 mm" .
+
 era-mscd:0160.00_km%2Fh_-_0150.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0160.00 km/h - 0150.00 mm" .
 
 era-mscd:0160.00_km%2Fh_-_0153.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0160.00 km/h - 0153.00 mm" .
 
+era-mscd:0180%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0180,00 km/h - 0153,00 mm" .
+
+era-mscd:0200%2C00_km%2Fh_-_0120%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0200,00 km/h - 0120,00 mm" .
+
+era-mscd:0200%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0200,00 km/h - 0130,00 mm" .
+
+era-mscd:0200%2C00_km%2Fh_-_0140%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0200,00 km/h - 0140,00 mm" .
+
 era-mscd:0200%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0200,00 km/h - 0150,00 mm" .
+
+era-mscd:0200%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0200,00 km/h - 0153,00 mm" .
 
 era-mscd:0200.00_km%2Fh_-_0150.00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0200.00 km/h - 0150.00 mm" .
 
+era-mscd:0220%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0220,00 km/h - 0150,00 mm" .
+
+era-mscd:0230%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0230,00 km/h - 0150,00 mm" .
+
 era-mscd:0250%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0250,00 km/h - 0150,00 mm" .
 
+era-mscd:0250%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0250,00 km/h - 0153,00 mm" .
+
+era-mscd:0300%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0300,00 km/h - 0130,00 mm" .
+
 era-mscd:0300%2C00_km%2Fh_-_0150%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0300,00 km/h - 0150,00 mm" .
+
+era-mscd:0300%2C00_km%2Fh_-_0153%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "0300,00 km/h - 0153,00 mm" .
 
 era-mscd:0320%2C00_km%2Fh_-_0130%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0320,00 km/h - 0130,00 mm" .
 
 era-mscd:0350%2C00_km%2Fh_-_0160%2C00_mm a era-mscd:MaxSpeedCantDeficiency;
   skos:prefLabel "0350,00 km/h - 0160,00 mm" .
+
+era-mscd:_200.00_km%2Fh_-__150.00_mm a era-mscd:MaxSpeedCantDeficiency;
+  skos:prefLabel "_200.00 km/h - _150.00 mm" .
 
 ########## Rail inclinations ##########
 
@@ -1862,14 +2284,32 @@ era-ri:1%2F10 a era-ri:RailInclination;
 era-ri:1%2F20 a era-ri:RailInclination;
   skos:prefLabel "1/20" .
 
+era-ri:1%2F20%2C1%2F40 a era-ri:RailInclination;
+  skos:prefLabel "1/20,1/40" .
+
+era-ri:1%2F20%2C_1%2F30%2C_1%2F40 a era-ri:RailInclination;
+  skos:prefLabel "1/20, 1/30, 1/40" .
+
+era-ri:1%2F20%2C_1%2F30%2C_1%2F40_ a era-ri:RailInclination;
+  skos:prefLabel "1/20, 1/30, 1/40 " .
+
+era-ri:1%2F20%2C_1%2F30._1%2F40 a era-ri:RailInclination;
+  skos:prefLabel "1/20, 1/30. 1/40" .
+
 era-ri:1%2F20%2C_1%2F40 a era-ri:RailInclination;
   skos:prefLabel "1/20, 1/40" .
+
+era-ri:1%2F20%3A_1%2F40 a era-ri:RailInclination;
+  skos:prefLabel "1/20: 1/40" .
 
 era-ri:1%2F20%3B_1%2F40 a era-ri:RailInclination;
   skos:prefLabel "1/20; 1/40" .
 
 era-ri:1%2F20%3B_1%2F40%3B a era-ri:RailInclination;
   skos:prefLabel "1/20; 1/40;" .
+
+era-ri:1%2F20_%26_1%2F40 a era-ri:RailInclination;
+  skos:prefLabel "1/20 & 1/40" .
 
 era-ri:1%2F20_-_1%2F40 a era-ri:RailInclination;
   skos:prefLabel "1/20 - 1/40" .
@@ -1894,17 +2334,44 @@ era-ri:1%2F40__%28Ligne_CFF___Gen%C3%A8ve__La_Plaine%29__ou__1%2F20__%28r%C3%A9s
   a era-ri:RailInclination;
   skos:prefLabel "1/40  (Ligne CFF   Genève  La Plaine)  ou  1/20  (réseau ferré français)" .
 
+era-ri:1%2F40_and_1%2F20 a era-ri:RailInclination;
+  skos:prefLabel "1/40 and 1/20" .
+
 era-ri:1%2F80 a era-ri:RailInclination;
   skos:prefLabel "1/80" .
 
 era-ri:1%3A20%2C_1%3A30%2C_1%3A40 a era-ri:RailInclination;
   skos:prefLabel "1:20, 1:30, 1:40" .
 
+era-ri:1%3A20_%26_1%3A40 a era-ri:RailInclination;
+  skos:prefLabel "1:20 & 1:40" .
+
 era-ri:1%3A20_and_1%3A40 a era-ri:RailInclination;
   skos:prefLabel "1:20 and 1:40" .
 
-era-ri:Undetermined a era-ri:RailInclination;
-  skos:prefLabel "Undetermined" .
+era-ri:1%3A40 a era-ri:RailInclination;
+  skos:prefLabel "1:40" .
+
+era-ri:All a era-ri:RailInclination;
+  skos:prefLabel "All" .
+
+era-ri:All_%28assessment_against_EN14363%3A2005%29 a era-ri:RailInclination;
+  skos:prefLabel "All (assessment against EN14363:2005)" .
+
+era-ri:Combination_not_provided a era-ri:RailInclination;
+  skos:prefLabel "Combination not provided" .
+
+era-ri:N%2FA a era-ri:RailInclination;
+  skos:prefLabel "N/A" .
+
+era-ri:NINGUNO a era-ri:RailInclination;
+  skos:prefLabel "NINGUNO" .
+
+era-ri:RIV a era-ri:RailInclination;
+  skos:prefLabel "RIV" .
+
+era-ri:Sans_objet a era-ri:RailInclination;
+  skos:prefLabel "Sans objet" .
 
 era-ri:all_rail_inclination a era-ri:RailInclination;
   skos:prefLabel "all rail inclination" .
@@ -1912,19 +2379,35 @@ era-ri:all_rail_inclination a era-ri:RailInclination;
 era-ri:all_rail_inclinations a era-ri:RailInclination;
   skos:prefLabel "all rail inclinations" .
 
-era-ri:sans_objet a era-ri:RailInclination;
-  skos:prefLabel "sans objet" .
+era-ri:undetermined a era-ri:RailInclination;
+  skos:prefLabel "undetermined" .
 
 ########## Gauge changeover facilities ##########
 
 era-gcf:1.435mm_%2F_1.668mm a era-gcf:GaugeChangeoverFacility;
   skos:prefLabel "1.435mm / 1.668mm" .
 
+era-gcf:1435%2F1668mm_bogie%2Faxle_change a era-gcf:GaugeChangeoverFacility;
+  skos:prefLabel "1435/1668mm bogie/axle change" .
+
+era-gcf:Exchange_of_the_wheelset a era-gcf:GaugeChangeoverFacility;
+  skos:prefLabel "Exchange of the wheelset" .
+
 era-gcf:Exchange_of_the_wheelsets a era-gcf:GaugeChangeoverFacility;
   skos:prefLabel "Exchange of the wheelsets" .
 
+era-gcf:MANUAL_ a era-gcf:GaugeChangeoverFacility;
+  skos:prefLabel "MANUAL " .
+
 era-gcf:Manual_change_of_wheelsets a era-gcf:GaugeChangeoverFacility;
   skos:prefLabel "Manual change of wheelsets" .
+
+era-gcf:SEMIAUTOMATICO a era-gcf:GaugeChangeoverFacility;
+  skos:prefLabel "SEMIAUTOMATICO" .
+
+era-gcf:TSI_WAG%2C_7.1.2_%28c%29_The_unit_must_not_be_equipped_with_variable_gauge_wheelsets
+  a era-gcf:GaugeChangeoverFacility;
+  skos:prefLabel "TSI WAG, 7.1.2 (c) The unit must not be equipped with variable gauge wheelsets" .
 
 era-gcf:change_of_wheelsets_at_the_border_line a era-gcf:GaugeChangeoverFacility;
   skos:prefLabel "change of wheelsets at the border line" .
@@ -1941,6 +2424,10 @@ era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
 
+era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0686%2C00_m_-_0001%2C10_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 0000,00 m - 0000,00 m/s² c: 0686,00 m - 0001,10 m/s²" .
+
 era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0885%2C60_m_-_0000%2C98_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 0000,00 m - 0000,00 m/s² c: 0885,60 m - 0000,98 m/s²" .
@@ -1949,6 +2436,14 @@ era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_0606%2C20_m_-_0000%2C64_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 0606,20 m - 0000,64 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
+era-ebp:a%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_b%3A_3353%2C00_m_-_0001%2C20_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0000,00 m - 0000,00 m/s² b: 3353,00 m - 0001,20 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
 era-ebp:a%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0000.00 m - 0000.00 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
@@ -1956,6 +2451,10 @@ era-ebp:a%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B
 era-ebp:a%3A_0159%2C00_m_-_0087%2C00_m%2Fs%C2%B2_b%3A_0165%2C00_m_-_0084%2C00_m%2Fs%C2%B2_c%3A_0167%2C00_m_-_0083%2C00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0159,00 m - 0087,00 m/s² b: 0165,00 m - 0084,00 m/s² c: 0167,00 m - 0083,00 m/s²" .
+
+era-ebp:a%3A_0175%2C00_m_-_0000%2C92_m%2Fs%C2%B2_b%3A_0175%2C00_m_-_0000%2C92_m%2Fs%C2%B2_c%3A_0175%2C00_m_-_0000%2C92_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0175,00 m - 0000,92 m/s² b: 0175,00 m - 0000,92 m/s² c: 0175,00 m - 0000,92 m/s²" .
 
 era-ebp:a%3A_0258%2C00_m_-_0000%2C90_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -1969,13 +2468,17 @@ era-ebp:a%3A_0320%2C00_m_-_0000%2C68_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0320,00 m - 0000,68 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
-era-ebp:a%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_b%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_c%3A_0332%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+era-ebp:a%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_b%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_c%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
-  skos:prefLabel "a: 0332,00 m - 0000,80 m/s² b: 0332,00 m - 0000,80 m/s² c: 0332,00 m - 0000,00 m/s²" .
+  skos:prefLabel "a: 0332,00 m - 0000,80 m/s² b: 0332,00 m - 0000,80 m/s² c: 0332,00 m - 0000,80 m/s²" .
 
-era-ebp:a%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_b%3A_0332%2C00_m_-_0000%2C80_m%2Fs%C2%B2_c%3A_0332%2C00_m_-_0000%2C0__m%2Fs%C2%B2
+era-ebp:a%3A_0344.00_m_-_0001.00_m%2Fs%C2%B2_b%3A_0344.00_m_-_0001.00_m%2Fs%C2%B2_c%3A_0344.00_m_-_0001.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
-  skos:prefLabel "a: 0332,00 m - 0000,80 m/s² b: 0332,00 m - 0000,80 m/s² c: 0332,00 m - 0000,0_ m/s²" .
+  skos:prefLabel "a: 0344.00 m - 0001.00 m/s² b: 0344.00 m - 0001.00 m/s² c: 0344.00 m - 0001.00 m/s²" .
+
+era-ebp:a%3A_0350%2C00_m_-_0001%2C40_m%2Fs%C2%B2_b%3A_0350%2C00_m_-_0001%2C40_m%2Fs%C2%B2_c%3A_0350%2C00_m_-_0001%2C40_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0350,00 m - 0001,40 m/s² b: 0350,00 m - 0001,40 m/s² c: 0350,00 m - 0001,40 m/s²" .
 
 era-ebp:a%3A_0350%2C00_m_-_0091%2C00_m%2Fs%C2%B2_b%3A_0350%2C00_m_-_0091%2C00_m%2Fs%C2%B2_c%3A_0350%2C00_m_-_0091%2C00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -1985,9 +2488,41 @@ era-ebp:a%3A_0398%2C00_m_-_0001%2C52_m%2Fs%C2%B2_b%3A_0475%2C00_m_-_0001%2C26_m%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0398,00 m - 0001,52 m/s² b: 0475,00 m - 0001,26 m/s² c: 0501,00 m - 0001,19 m/s²" .
 
+era-ebp:a%3A_0447%2C00_m_-_0000%2C86_m%2Fs%C2%B2_b%3A_0464%2C00_m_-_0000%2C83_m%2Fs%C2%B2_c%3A_0501%2C00_m_-_0000%2C77_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0447,00 m - 0000,86 m/s² b: 0464,00 m - 0000,83 m/s² c: 0501,00 m - 0000,77 m/s²" .
+
+era-ebp:a%3A_0450%2C00_m_-_0000%2C85_m%2Fs%C2%B2_b%3A_0450%2C00_m_-_0000%2C85_m%2Fs%C2%B2_c%3A_0450%2C00_m_-_0000%2C85_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0450,00 m - 0000,85 m/s² b: 0450,00 m - 0000,85 m/s² c: 0450,00 m - 0000,85 m/s²" .
+
 era-ebp:a%3A_0451%2C00_m_-_0000%2C97_m%2Fs%C2%B2_b%3A_0475%2C00_m_-_0000%2C92_m%2Fs%C2%B2_c%3A_0698%2C00_m_-_0000%2C60_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0451,00 m - 0000,97 m/s² b: 0475,00 m - 0000,92 m/s² c: 0698,00 m - 0000,60 m/s²" .
+
+era-ebp:a%3A_0458%2C00_m_-_0000%2C96_m%2Fs%C2%B2_b%3A_0505%2C00_m_-_0000%2C86_m%2Fs%C2%B2_c%3A_0516%2C00_m_-_0000%2C84_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0458,00 m - 0000,96 m/s² b: 0505,00 m - 0000,86 m/s² c: 0516,00 m - 0000,84 m/s²" .
+
+era-ebp:a%3A_0461%2C00_m_-_0000%2C84_m%2Fs%C2%B2_b%3A_0461%2C00_m_-_0000%2C84_m%2Fs%C2%B2_c%3A_0465%2C00_m_-_0000%2C83_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0461,00 m - 0000,84 m/s² b: 0461,00 m - 0000,84 m/s² c: 0465,00 m - 0000,83 m/s²" .
+
+era-ebp:a%3A_0467%2C00_m_-_0000%2C83_m%2Fs%C2%B2_b%3A_0486%2C00_m_-_0000%2C79_m%2Fs%C2%B2_c%3A_0486%2C00_m_-_0000%2C79_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0467,00 m - 0000,83 m/s² b: 0486,00 m - 0000,79 m/s² c: 0486,00 m - 0000,79 m/s²" .
+
+era-ebp:a%3A_0485%2C00_m_-_0000%2C91_m%2Fs%C2%B2_b%3A_0485%2C00_m_-_0000%2C91_m%2Fs%C2%B2_c%3A_0493%2C00_m_-_0000%2C89_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0485,00 m - 0000,91 m/s² b: 0485,00 m - 0000,91 m/s² c: 0493,00 m - 0000,89 m/s²" .
+
+era-ebp:a%3A_0495%2C00_m_-_0001%2C39_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0495,00 m - 0001,39 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
+era-ebp:a%3A_0495.00_m_-_0001.39_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0495.00 m - 0001.39 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
 era-ebp:a%3A_0500%2C00_m_-_0001%2C50_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -1997,17 +2532,25 @@ era-ebp:a%3A_0512%2C00_m_-_0000%2C75_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0512,00 m - 0000,75 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
-era-ebp:a%3A_0534%2C00_m_-_0000%2C89_m%2Fs%C2%B2_b%3A_0614%2C00_m_-_0000%2C76_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+era-ebp:a%3A_0515%2C00_m_-_0000%2C84_m%2Fs%C2%B2_b%3A_0515%2C00_m_-_0000%2C84_m%2Fs%C2%B2_c%3A_0515%2C00_m_-_0000%2C84_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
-  skos:prefLabel "a: 0534,00 m - 0000,89 m/s² b: 0614,00 m - 0000,76 m/s² c: 0000,00 m - 0000,00 m/s²" .
+  skos:prefLabel "a: 0515,00 m - 0000,84 m/s² b: 0515,00 m - 0000,84 m/s² c: 0515,00 m - 0000,84 m/s²" .
+
+era-ebp:a%3A_0524%2C30_m_-_0001%2C50_m%2Fs%C2%B2_b%3A_0523%2C70_m_-_0001%2C50_m%2Fs%C2%B2_c%3A_0572%2C60_m_-_0001%2C40_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0524,30 m - 0001,50 m/s² b: 0523,70 m - 0001,50 m/s² c: 0572,60 m - 0001,40 m/s²" .
+
+era-ebp:a%3A_0534%2C00_m_-_0000%2C89_m%2Fs%C2%B2_b%3A_0614%2C00_m_-_0000%2C76_m%2Fs%C2%B2_c%3A_0614%2C00_m_-_0000%2C76_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0534,00 m - 0000,89 m/s² b: 0614,00 m - 0000,76 m/s² c: 0614,00 m - 0000,76 m/s²" .
 
 era-ebp:a%3A_0556%2C00_m_-_0000%2C72_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0556,00 m - 0000,72 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
-era-ebp:a%3A_0556%2C00_m_-_0000%2C73_m%2Fs%C2%B2_b%3A_0556%2C00_m_-_0000%2C73_m%2Fs%C2%B2_c%3A_0556%2C00_m_-_0000%2C0__m%2Fs%C2%B2
+era-ebp:a%3A_0556%2C00_m_-_0000%2C75_m%2Fs%C2%B2_b%3A_0556%2C00_m_-_0000%2C75_m%2Fs%C2%B2_c%3A_0556%2C00_m_-_0000%2C75_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
-  skos:prefLabel "a: 0556,00 m - 0000,73 m/s² b: 0556,00 m - 0000,73 m/s² c: 0556,00 m - 0000,0_ m/s²" .
+  skos:prefLabel "a: 0556,00 m - 0000,75 m/s² b: 0556,00 m - 0000,75 m/s² c: 0556,00 m - 0000,75 m/s²" .
 
 era-ebp:a%3A_0564%2C00_m_-_0000%2C75_m%2Fs%C2%B2_b%3A_0636%2C00_m_-_0001%2C55_m%2Fs%C2%B2_c%3A_0725%2C00_m_-_0001%2C36_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -2017,6 +2560,14 @@ era-ebp:a%3A_0573%2C00_m_-_0000%2C67_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0573,00 m - 0000,67 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_0584%2C60_m_-_0001%2C00_m%2Fs%C2%B2_b%3A_0584%2C60_m_-_0001%2C00_m%2Fs%C2%B2_c%3A_0584%2C60_m_-_0001%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0584,60 m - 0001,00 m/s² b: 0584,60 m - 0001,00 m/s² c: 0584,60 m - 0001,00 m/s²" .
+
+era-ebp:a%3A_0605%2C00_m_-_0001%2C80_m%2Fs%C2%B2_b%3A_0569%2C40_m_-_0001%2C40_m%2Fs%C2%B2_c%3A_0652%2C40_m_-_0001%2C20_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0605,00 m - 0001,80 m/s² b: 0569,40 m - 0001,40 m/s² c: 0652,40 m - 0001,20 m/s²" .
+
 era-ebp:a%3A_0611%2C00_m_-_0001%2C41_m%2Fs%C2%B2_b%3A_0657%2C00_m_-_0001%2C15_m%2Fs%C2%B2_c%3A_0657%2C00_m_-_0001%2C15_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0611,00 m - 0001,41 m/s² b: 0657,00 m - 0001,15 m/s² c: 0657,00 m - 0001,15 m/s²" .
@@ -2025,9 +2576,29 @@ era-ebp:a%3A_0611%2C90_m_-_0000%2C63_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0611,90 m - 0000,63 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_0619%2C00_m_-_0001%2C06_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0619,00 m - 0001,06 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
+era-ebp:a%3A_0619.00_m_-_0001.06_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0619.00 m - 0001.06 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
+
+era-ebp:a%3A_0622%2C00_m_-_0000%2C66_m%2Fs%C2%B2_b%3A_0622%2C00_m_-_0000%2C66_m%2Fs%C2%B2_c%3A_0622%2C00_m_-_0000%2C66_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0622,00 m - 0000,66 m/s² b: 0622,00 m - 0000,66 m/s² c: 0622,00 m - 0000,66 m/s²" .
+
 era-ebp:a%3A_0622%2C00_m_-_0000%2C69_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0622,00 m - 0000,69 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
+era-ebp:a%3A_0642%2C00_m_-_0001%2C01_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0642,00 m - 0001,01 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
+era-ebp:a%3A_0654%2C00_m_-_0000%2C97_m%2Fs%C2%B2_b%3A_0654%2C00_m_-_0000%2C97_m%2Fs%C2%B2_c%3A_0654%2C00_m_-_0000%2C97_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0654,00 m - 0000,97 m/s² b: 0654,00 m - 0000,97 m/s² c: 0654,00 m - 0000,97 m/s²" .
 
 era-ebp:a%3A_0657%2C00_m_-_0001%2C23_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -2045,9 +2616,53 @@ era-ebp:a%3A_0686%2C00_m_-_0001%2C43_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0686,00 m - 0001,43 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_0691%2C00_m_-_0000%2C61_m%2Fs%C2%B2_b%3A_0691%2C00_m_-_0000%2C61_m%2Fs%C2%B2_c%3A_0691%2C00_m_-_0000%2C61_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0691,00 m - 0000,61 m/s² b: 0691,00 m - 0000,61 m/s² c: 0691,00 m - 0000,61 m/s²" .
+
+era-ebp:a%3A_0696%2C00_m_-_0000%2C55_m%2Fs%C2%B2_b%3A_0696%2C00_m_-_0000%2C55_m%2Fs%C2%B2_c%3A_0696%2C00_m_-_0000%2C55_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0696,00 m - 0000,55 m/s² b: 0696,00 m - 0000,55 m/s² c: 0696,00 m - 0000,55 m/s²" .
+
+era-ebp:a%3A_0697%2C00_m_-_0001%2C50_m%2Fs%C2%B2_b%3A_0699%2C30_m_-_0001%2C50_m%2Fs%C2%B2_c%3A_0778%2C80_m_-_0001%2C30_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0697,00 m - 0001,50 m/s² b: 0699,30 m - 0001,50 m/s² c: 0778,80 m - 0001,30 m/s²" .
+
+era-ebp:a%3A_0700%2C00_m_-_0000%2C55_m%2Fs%C2%B2_b%3A_0700%2C00_m_-_0000%2C55_m%2Fs%C2%B2_c%3A_0700%2C00_m_-_0000%2C55_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0700,00 m - 0000,55 m/s² b: 0700,00 m - 0000,55 m/s² c: 0700,00 m - 0000,55 m/s²" .
+
+era-ebp:a%3A_0700.00_m_-_0001.08_m%2Fs%C2%B2_b%3A_0755.00_m_-_0001.00_m%2Fs%C2%B2_c%3A_0721.00_m_-_0001.05_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0700.00 m - 0001.08 m/s² b: 0755.00 m - 0001.00 m/s² c: 0721.00 m - 0001.05 m/s²" .
+
+era-ebp:a%3A_0721%2C00_m_-_0001%2C12_m%2Fs%C2%B2_b%3A_0725%2C00_m_-_0001%2C11_m%2Fs%C2%B2_c%3A_0726%2C00_m_-_0001%2C11_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0721,00 m - 0001,12 m/s² b: 0725,00 m - 0001,11 m/s² c: 0726,00 m - 0001,11 m/s²" .
+
+era-ebp:a%3A_0722%2C40_m_-_0000%2C75_m%2Fs%C2%B2_b%3A_0722%2C40_m_-_0000%2C75_m%2Fs%C2%B2_c%3A_0722%2C40_m_-_0000%2C75_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0722,40 m - 0000,75 m/s² b: 0722,40 m - 0000,75 m/s² c: 0722,40 m - 0000,75 m/s²" .
+
 era-ebp:a%3A_0734%2C00_m_-_0001%2C03_m%2Fs%C2%B2_b%3A_0734%2C00_m_-_0001%2C03_m%2Fs%C2%B2_c%3A_0734%2C00_m_-_0001%2C03_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0734,00 m - 0001,03 m/s² b: 0734,00 m - 0001,03 m/s² c: 0734,00 m - 0001,03 m/s²" .
+
+era-ebp:a%3A_0754.60_m_-_0000.83_m%2Fs%C2%B2_b%3A_0754.60_m_-_0000.83_m%2Fs%C2%B2_c%3A_0754.60_m_-_0000.83_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0754.60 m - 0000.83 m/s² b: 0754.60 m - 0000.83 m/s² c: 0754.60 m - 0000.83 m/s²" .
+
+era-ebp:a%3A_0757%2C90_m_-_0001%2C02_m%2Fs%C2%B2_b%3A_0757%2C90_m_-_0001%2C02_m%2Fs%C2%B2_c%3A_0757%2C90_m_-_0001%2C02_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0757,90 m - 0001,02 m/s² b: 0757,90 m - 0001,02 m/s² c: 0757,90 m - 0001,02 m/s²" .
+
+era-ebp:a%3A_0783%2C00_m_-_0071%2C00_m%2Fs%C2%B2_b%3A_0783%2C00_m_-_0071%2C00_m%2Fs%C2%B2_c%3A_0783%2C00_m_-_0071%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0783,00 m - 0071,00 m/s² b: 0783,00 m - 0071,00 m/s² c: 0783,00 m - 0071,00 m/s²" .
+
+era-ebp:a%3A_0804%2C60_m_-_0001%2C30_m%2Fs%C2%B2_b%3A_0772%2C40_m_-_0001%2C40_m%2Fs%C2%B2_c%3A_0870%2C10_m_-_0001%2C20_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0804,60 m - 0001,30 m/s² b: 0772,40 m - 0001,40 m/s² c: 0870,10 m - 0001,20 m/s²" .
 
 era-ebp:a%3A_0811%2C00_m_-_0001%2C30_m%2Fs%C2%B2_b%3A_0811%2C00_m_-_0001%2C30_m%2Fs%C2%B2_c%3A_0811%2C00_m_-_0001%2C30_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -2065,33 +2680,77 @@ era-ebp:a%3A_0830%2C11_m_-_0001%2C19_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0830,11 m - 0001,19 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_0831%2C00_m_-_0001%2C19_m%2Fs%C2%B2_b%3A_0831%2C00_m_-_0001%2C19_m%2Fs%C2%B2_c%3A_0831%2C00_m_-_0001%2C19_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0831,00 m - 0001,19 m/s² b: 0831,00 m - 0001,19 m/s² c: 0831,00 m - 0001,19 m/s²" .
+
+era-ebp:a%3A_0845.00_m_-_0001.20_m%2Fs%C2%B2_b%3A_0884.00_m_-_0001.10_m%2Fs%C2%B2_c%3A_0906.00_m_-_0001.10_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0845.00 m - 0001.20 m/s² b: 0884.00 m - 0001.10 m/s² c: 0906.00 m - 0001.10 m/s²" .
+
 era-ebp:a%3A_0856%2C00_m_-_0001%2C36_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0856,00 m - 0001,36 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
+
+era-ebp:a%3A_0859%2C00_m_-_0001%2C15_m%2Fs%C2%B2_b%3A_0859%2C00_m_-_0001%2C15_m%2Fs%C2%B2_c%3A_0859%2C00_m_-_0001%2C15_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0859,00 m - 0001,15 m/s² b: 0859,00 m - 0001,15 m/s² c: 0859,00 m - 0001,15 m/s²" .
+
+era-ebp:a%3A_0860%2C00_m_-_0001%2C14_m%2Fs%C2%B2_b%3A_0860%2C00_m_-_0001%2C14_m%2Fs%C2%B2_c%3A_0860%2C00_m_-_0001%2C14_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0860,00 m - 0001,14 m/s² b: 0860,00 m - 0001,14 m/s² c: 0860,00 m - 0001,14 m/s²" .
 
 era-ebp:a%3A_0903.00_m_-_0001.09_m%2Fs%C2%B2_b%3A_0897.00_m_-_0001.10_m%2Fs%C2%B2_c%3A_0895.00_m_-_0001.10_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0903.00 m - 0001.09 m/s² b: 0897.00 m - 0001.10 m/s² c: 0895.00 m - 0001.10 m/s²" .
 
+era-ebp:a%3A_0950.00_m_-_0001.04_m%2Fs%C2%B2_b%3A_0940.00_m_-_0001.05_m%2Fs%C2%B2_c%3A_0946.00_m_-_0001.04_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0950.00 m - 0001.04 m/s² b: 0940.00 m - 0001.05 m/s² c: 0946.00 m - 0001.04 m/s²" .
+
 era-ebp:a%3A_0967.00_m_-_0001.08_m%2Fs%C2%B2_b%3A_0961.00_m_-_0001.09_m%2Fs%C2%B2_c%3A_0921.00_m_-_0001.14_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0967.00 m - 0001.08 m/s² b: 0961.00 m - 0001.09 m/s² c: 0921.00 m - 0001.14 m/s²" .
+
+era-ebp:a%3A_0975%2C00_m_-_0000%2C78_m%2Fs%C2%B2_b%3A_0939%2C00_m_-_0001%2C05_m%2Fs%C2%B2_c%3A_0841%2C00_m_-_0001%2C17_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0975,00 m - 0000,78 m/s² b: 0939,00 m - 0001,05 m/s² c: 0841,00 m - 0001,17 m/s²" .
 
 era-ebp:a%3A_0992%2C00_m_-_0000%2C76_m%2Fs%C2%B2_b%3A_0992%2C00_m_-_0000%2C76_m%2Fs%C2%B2_c%3A_0992%2C00_m_-_0000%2C76_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 0992,00 m - 0000,76 m/s² b: 0992,00 m - 0000,76 m/s² c: 0992,00 m - 0000,76 m/s²" .
 
+era-ebp:a%3A_0999.00_m_-_0000.99_m%2Fs%C2%B2_b%3A_1030.00_m_-_0000.96_m%2Fs%C2%B2_c%3A_1005.00_m_-_0000.98_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 0999.00 m - 0000.99 m/s² b: 1030.00 m - 0000.96 m/s² c: 1005.00 m - 0000.98 m/s²" .
+
+era-ebp:a%3A_1006%2C00_m_-_0000%2C98_m%2Fs%C2%B2_b%3A_1010%2C00_m_-_0000%2C98_m%2Fs%C2%B2_c%3A_1014%2C00_m_-_0000%2C97_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1006,00 m - 0000,98 m/s² b: 1010,00 m - 0000,98 m/s² c: 1014,00 m - 0000,97 m/s²" .
+
+era-ebp:a%3A_1010%2C00_m_-_0000%2C98_m%2Fs%C2%B2_b%3A_1021%2C00_m_-_0000%2C97_m%2Fs%C2%B2_c%3A_1024%2C00_m_-_0000%2C96_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1010,00 m - 0000,98 m/s² b: 1021,00 m - 0000,97 m/s² c: 1024,00 m - 0000,96 m/s²" .
+
+era-ebp:a%3A_1078%2C00_m_-_0001%2C17_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1078,00 m - 0001,17 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
 era-ebp:a%3A_1078%2C00_m_-_0001%2C17_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 1078,00 m - 0001,17 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
-era-ebp:a%3A_1298%2C70_m_-_0000%2C97_m%2Fs%C2%B2_b%3A_1298%2C70_m_-_0000%2C97_m%2Fs%C2%B2_c%3A_1298%2C70_m_-_0000%2C97_m%2Fs%C2%B2
+era-ebp:a%3A_1298.70_m_-_0000.97_m%2Fs%C2%B2_b%3A_1298.70_m_-_0000.97_m%2Fs%C2%B2_c%3A_1298.70_m_-_0000.97_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
-  skos:prefLabel "a: 1298,70 m - 0000,97 m/s² b: 1298,70 m - 0000,97 m/s² c: 1298,70 m - 0000,97 m/s²" .
+  skos:prefLabel "a: 1298.70 m - 0000.97 m/s² b: 1298.70 m - 0000.97 m/s² c: 1298.70 m - 0000.97 m/s²" .
 
 era-ebp:a%3A_1344%2C00_m_-_0001%2C15_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 1344,00 m - 0001,15 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
+
+era-ebp:a%3A_1544%2C00_m_-_0010%2C00_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1544,00 m - 0010,00 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
 
 era-ebp:a%3A_1546%2C00_m_-_0001%2C04_m%2Fs%C2%B2_b%3A_1597%2C00_m_-_0001%2C01_m%2Fs%C2%B2_c%3A_1662%2C00_m_-_0000%2C96_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -2101,9 +2760,33 @@ era-ebp:a%3A_1637.00_m_-_0000.94_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 1637.00 m - 0000.94 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
 
+era-ebp:a%3A_1647%2C00_m_-_0001%2C24_m%2Fs%C2%B2_b%3A_1647%2C00_m_-_0001%2C24_m%2Fs%C2%B2_c%3A_1647%2C00_m_-_0001%2C24_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1647,00 m - 0001,24 m/s² b: 1647,00 m - 0001,24 m/s² c: 1647,00 m - 0001,24 m/s²" .
+
+era-ebp:a%3A_1705%2C00_m_-_0000%2C82_m%2Fs%C2%B2_b%3A_1705%2C00_m_-_0000%2C82_m%2Fs%C2%B2_c%3A_1723%2C00_m_-_0000%2C81_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1705,00 m - 0000,82 m/s² b: 1705,00 m - 0000,82 m/s² c: 1723,00 m - 0000,81 m/s²" .
+
+era-ebp:a%3A_1729%2C00_m_-_0001%2C18_m%2Fs%C2%B2_b%3A_1729%2C00_m_-_0001%2C18_m%2Fs%C2%B2_c%3A_1729%2C00_m_-_0001%2C18_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1729,00 m - 0001,18 m/s² b: 1729,00 m - 0001,18 m/s² c: 1729,00 m - 0001,18 m/s²" .
+
+era-ebp:a%3A_1820%2C00_m_-_0000%2C91_m%2Fs%C2%B2_b%3A_1891%2C00_m_-_0000%2C87_m%2Fs%C2%B2_c%3A_1979%2C00_m_-_0000%2C83_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 1820,00 m - 0000,91 m/s² b: 1891,00 m - 0000,87 m/s² c: 1979,00 m - 0000,83 m/s²" .
+
+era-ebp:a%3A_3074%2C00_m_-_0001%2C00_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 3074,00 m - 0001,00 m/s² b: 0000,00 m - 0000,00 m/s² c: 0000,00 m - 0000,00 m/s²" .
+
 era-ebp:a%3A_3074%2C00_m_-_0001%2C00_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2_c%3A_0000.00_m_-_0000.00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
   skos:prefLabel "a: 3074,00 m - 0001,00 m/s² b: 0000.00 m - 0000.00 m/s² c: 0000.00 m - 0000.00 m/s²" .
+
+era-ebp:a%3A_3474%2C00_m_-_0001%2C23_m%2Fs%C2%B2_b%3A_3750%2C00_m_-_0001%2C13_m%2Fs%C2%B2_c%3A_3960%2C00_m_-_0001%2C07_m%2Fs%C2%B2
+  a era-ebp:EmergencyBrakingProfile;
+  skos:prefLabel "a: 3474,00 m - 0001,23 m/s² b: 3750,00 m - 0001,13 m/s² c: 3960,00 m - 0001,07 m/s²" .
 
 era-ebp:a%3A_3560%2C00_m_-_0001%2C09_m%2Fs%C2%B2_b%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2_c%3A_0000%2C00_m_-_0000%2C00_m%2Fs%C2%B2
   a era-ebp:EmergencyBrakingProfile;
@@ -2122,11 +2805,35 @@ era-ebp:a%3A_4440%2C95_m_-_0000%2C95_m%2Fs%C2%B2_b%3A_0000.00_m_-_0000.00_m%2Fs%
 era-bwp:000%2C00_%28%25%29_or_00000%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "000,00 (%) or 00000,00 tonnes" .
 
+era-bwp:000%2C00_%28%25%29_or_00020%2C61_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00020,61 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00047%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00047,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00062%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00062,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00077%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00077,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00108%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00108,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00128%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00128,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or_00130%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or 00130,00 tonnes" .
+
 era-bwp:000%2C00_%28%25%29_or_00148%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "000,00 (%) or 00148,00 tonnes" .
 
 era-bwp:000%2C00_%28%25%29_or_00246%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "000,00 (%) or 00246,00 tonnes" .
+
+era-bwp:000%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000,00 (%) or _____,__ tonnes" .
 
 era-bwp:000%2C10_%28%25%29_or_00001%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "000,10 (%) or 00001,00 tonnes" .
@@ -2134,23 +2841,38 @@ era-bwp:000%2C10_%28%25%29_or_00001%2C00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:000.00_%28%25%29_or_00000.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "000.00 (%) or 00000.00 tonnes" .
 
+era-bwp:000.00_%28%25%29_or_00090.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000.00 (%) or 00090.00 tonnes" .
+
+era-bwp:000.00_%28%25%29_or_00108.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "000.00 (%) or 00108.00 tonnes" .
+
 era-bwp:056%2C70_%28%25%29_or_00057%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "056,70 (%) or 00057,00 tonnes" .
 
 era-bwp:061%2C00_%28%25%29_or_00061%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "061,00 (%) or 00061,00 tonnes" .
 
+era-bwp:065%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "065,00 (%) or _____,__ tonnes" .
+
 era-bwp:065%2C20_%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "065,20 (%) or 00059,00 tonnes" .
+
+era-bwp:065%2C60_%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "065,60 (%) or 00059,00 tonnes" .
 
 era-bwp:065%2C70_%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "065,70 (%) or 00059,00 tonnes" .
 
+era-bwp:065%2C91_%28%25%29_or_00053%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "065,91 (%) or 00053,00 tonnes" .
+
+era-bwp:065.70_%28%25%29_or_00059.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "065.70 (%) or 00059.00 tonnes" .
+
 era-bwp:066%2C00_%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "066,00 (%) or 00059,00 tonnes" .
-
-era-bwp:066%2C90_%28%25%29_or_00060%2C25_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "066,90 (%) or 00060,25 tonnes" .
 
 era-bwp:066.00_%28%25%29_or_00059.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "066.00 (%) or 00059.00 tonnes" .
@@ -2158,17 +2880,35 @@ era-bwp:066.00_%28%25%29_or_00059.00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:066.80_%28%25%29_or_00045.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "066.80 (%) or 00045.00 tonnes" .
 
+era-bwp:066.90_%28%25%29_or_00060.25_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "066.90 (%) or 00060.25 tonnes" .
+
+era-bwp:067%2C00_%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "067,00 (%) or 00059,00 tonnes" .
+
 era-bwp:067%2C00_%28%25%29_or_00060%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "067,00 (%) or 00060,00 tonnes" .
 
 era-bwp:067%2C00_%28%25%29_or_00061%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "067,00 (%) or 00061,00 tonnes" .
 
-era-bwp:068%2C00_%28%25%29_or_00058%2C00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "068,00 (%) or 00058,00 tonnes" .
+era-bwp:067%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "067,00 (%) or _____,__ tonnes" .
+
+era-bwp:067.00_%28%25%29_or______.___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "067.00 (%) or _____.__ tonnes" .
+
+era-bwp:068.00_%28%25%29_or_00058.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "068.00 (%) or 00058.00 tonnes" .
+
+era-bwp:069%2C00_%28%25%29_or_00050%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "069,00 (%) or 00050,00 tonnes" .
 
 era-bwp:069%2C10_%28%25%29_or_00063%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "069,10 (%) or 00063,00 tonnes" .
+
+era-bwp:069.10_%28%25%29_or_00047.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "069.10 (%) or 00047.00 tonnes" .
 
 era-bwp:070.00_%28%25%29_or_00058.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "070.00 (%) or 00058.00 tonnes" .
@@ -2182,8 +2922,17 @@ era-bwp:071%2C00_%28%25%29_or_00064%2C00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:071%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "071,00 (%) or _____,__ tonnes" .
 
+era-bwp:071.00_%28%25%29_or_00064.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "071.00 (%) or 00064.00 tonnes" .
+
 era-bwp:072%2C00_%28%25%29_or_00547%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "072,00 (%) or 00547,00 tonnes" .
+
+era-bwp:072%2C85_%28%25%29_or_00051%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "072,85 (%) or 00051,00 tonnes" .
+
+era-bwp:072.00_%28%25%29_or______.___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "072.00 (%) or _____.__ tonnes" .
 
 era-bwp:073.00_%28%25%29_or_00110.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "073.00 (%) or 00110.00 tonnes" .
@@ -2191,14 +2940,26 @@ era-bwp:073.00_%28%25%29_or_00110.00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:076%2C00_%28%25%29_or_00024%2C48_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "076,00 (%) or 00024,48 tonnes" .
 
+era-bwp:076%2C00_%28%25%29_or_00109%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "076,00 (%) or 00109,00 tonnes" .
+
+era-bwp:078%2C00_%28%25%29_or_00030%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "078,00 (%) or 00030,00 tonnes" .
+
 era-bwp:079%2C00_%28%25%29_or_00033%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "079,00 (%) or 00033,00 tonnes" .
 
 era-bwp:079%2C00_%28%25%29_or_00063%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "079,00 (%) or 00063,00 tonnes" .
 
+era-bwp:080%2C00_%28%25%29_or_00036%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "080,00 (%) or 00036,00 tonnes" .
+
 era-bwp:080%2C00_%28%25%29_or_00072%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "080,00 (%) or 00072,00 tonnes" .
+
+era-bwp:080%2C00_%28%25%29_or_00073%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "080,00 (%) or 00073,00 tonnes" .
 
 era-bwp:080%2C00_%28%25%29_or_00109%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "080,00 (%) or 00109,00 tonnes" .
@@ -2209,8 +2970,17 @@ era-bwp:080%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:080.00_%28%25%29_or_00072.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "080.00 (%) or 00072.00 tonnes" .
 
-era-bwp:083%2C00_%28%25%29_or_00094%2C00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "083,00 (%) or 00094,00 tonnes" .
+era-bwp:083%2C00_%28%25%29_or_00720%2C0__tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "083,00 (%) or 00720,0_ tonnes" .
+
+era-bwp:085%2C00_%28%25%29_or_00049%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "085,00 (%) or 00049,00 tonnes" .
+
+era-bwp:088%2C00_%28%25%29_or_00128%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "088,00 (%) or 00128,00 tonnes" .
+
+era-bwp:088%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "088,00 (%) or _____,__ tonnes" .
 
 era-bwp:091%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "091,00 (%) or _____,__ tonnes" .
@@ -2218,23 +2988,74 @@ era-bwp:091%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:091%2C90_%28%25%29_or_00109%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "091,90 (%) or 00109,00 tonnes" .
 
+era-bwp:091.20_%28%25%29_or_00109.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "091.20 (%) or 00109.00 tonnes" .
+
 era-bwp:095%2C00_%28%25%29_or_00038%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "095,00 (%) or 00038,00 tonnes" .
 
 era-bwp:095.00_%28%25%29_or_00072.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "095.00 (%) or 00072.00 tonnes" .
 
-era-bwp:100.00_%28%25%29_or_00055.70_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "100.00 (%) or 00055.70 tonnes" .
+era-bwp:096%2C00_%28%25%29_or_00063%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "096,00 (%) or 00063,00 tonnes" .
+
+era-bwp:096%2C00_%28%25%29_or_00077%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "096,00 (%) or 00077,00 tonnes" .
+
+era-bwp:098%2C70_%28%25%29_or_00057%2C20_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "098,70 (%) or 00057,20 tonnes" .
+
+era-bwp:100%2C00_%28%25%29_or_00065%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "100,00 (%) or 00065,00 tonnes" .
+
+era-bwp:100%2C00_%28%25%29_or_00089%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "100,00 (%) or 00089,00 tonnes" .
+
+era-bwp:100.00_%28%25%29_or_00056.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "100.00 (%) or 00056.00 tonnes" .
+
+era-bwp:100.00_%28%25%29_or_00072.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "100.00 (%) or 00072.00 tonnes" .
+
+era-bwp:101%2C40_%28%25%29_or_00071%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "101,40 (%) or 00071,00 tonnes" .
 
 era-bwp:102%2C00_%28%25%29_or_00074%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "102,00 (%) or 00074,00 tonnes" .
 
-era-bwp:102%2C00_%28%25%29_or_00087%2C85_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "102,00 (%) or 00087,85 tonnes" .
+era-bwp:102.00_%28%25%29_or_00087.85_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "102.00 (%) or 00087.85 tonnes" .
 
-era-bwp:103%2C80_%28%25%29_or_00061%2C00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "103,80 (%) or 00061,00 tonnes" .
+era-bwp:103%2C00_%28%25%29_or_00072%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "103,00 (%) or 00072,00 tonnes" .
+
+era-bwp:103%2C60_%28%25%29_or_00049%2C70_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "103,60 (%) or 00049,70 tonnes" .
+
+era-bwp:103.80_%28%25%29_or_00061.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "103.80 (%) or 00061.00 tonnes" .
+
+era-bwp:104%2C00_%28%25%29_or_00066%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "104,00 (%) or 00066,00 tonnes" .
+
+era-bwp:105%2C00_%28%25%29_or_00083%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "105,00 (%) or 00083,00 tonnes" .
+
+era-bwp:109%2C00_%28%25%29_or_00131%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "109,00 (%) or 00131,00 tonnes" .
+
+era-bwp:109.00_%28%25%29_or_00131.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "109.00 (%) or 00131.00 tonnes" .
+
+era-bwp:109.80_%28%25%29_or_00135.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "109.80 (%) or 00135.00 tonnes" .
+
+era-bwp:110%2C00_%28%25%29_or_00088%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "110,00 (%) or 00088,00 tonnes" .
+
+era-bwp:111%2C40_%28%25%29_or_00098%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "111,40 (%) or 00098,00 tonnes" .
 
 era-bwp:113%2C00_%28%25%29_or_00097%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "113,00 (%) or 00097,00 tonnes" .
@@ -2242,8 +3063,14 @@ era-bwp:113%2C00_%28%25%29_or_00097%2C00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:113%2C21_%28%25%29_or_00078%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "113,21 (%) or 00078,00 tonnes" .
 
-era-bwp:115%2C50_%28%25%29_or_00102%2C00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "115,50 (%) or 00102,00 tonnes" .
+era-bwp:113.21_%28%25%29_or_00078.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "113.21 (%) or 00078.00 tonnes" .
+
+era-bwp:115.50_%28%25%29_or_00102.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "115.50 (%) or 00102.00 tonnes" .
+
+era-bwp:119%2C00_%28%25%29_or_00145%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "119,00 (%) or 00145,00 tonnes" .
 
 era-bwp:125.00_%28%25%29_or_00151.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "125.00 (%) or 00151.00 tonnes" .
@@ -2251,17 +3078,74 @@ era-bwp:125.00_%28%25%29_or_00151.00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:127%2C00_%28%25%29_or_00066%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "127,00 (%) or 00066,00 tonnes" .
 
+era-bwp:138%2C00_%28%25%29_or_00251%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "138,00 (%) or 00251,00 tonnes" .
+
+era-bwp:139%2C00_%28%25%29_or_00204%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "139,00 (%) or 00204,00 tonnes" .
+
+era-bwp:140%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "140,00 (%) or _____,__ tonnes" .
+
+era-bwp:141.00_%28%25%29_or_00285.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "141.00 (%) or 00285.00 tonnes" .
+
+era-bwp:145%2C00_%28%25%29_or_00722%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "145,00 (%) or 00722,00 tonnes" .
+
+era-bwp:150%2C00_%28%25%29_or_00000%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "150,00 (%) or 00000,00 tonnes" .
+
+era-bwp:150.00_%28%25%29_or_00000.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "150.00 (%) or 00000.00 tonnes" .
+
+era-bwp:150.00_%28%25%29_or_00119.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "150.00 (%) or 00119.00 tonnes" .
+
 era-bwp:155%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "155,00 (%) or _____,__ tonnes" .
+
+era-bwp:158.00_%28%25%29_or_00216.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "158.00 (%) or 00216.00 tonnes" .
 
 era-bwp:161%2C00_%28%25%29_or_00387%2C52_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "161,00 (%) or 00387,52 tonnes" .
 
+era-bwp:162%2C00_%28%25%29_or_00773%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "162,00 (%) or 00773,00 tonnes" .
+
+era-bwp:162%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "162,00 (%) or _____,__ tonnes" .
+
+era-bwp:165%2C00_%28%25%29_or_00000%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "165,00 (%) or 00000,00 tonnes" .
+
 era-bwp:175.00_%28%25%29_or______.___tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "175.00 (%) or _____.__ tonnes" .
 
+era-bwp:176%2C00_%28%25%29_or_00148%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "176,00 (%) or 00148,00 tonnes" .
+
 era-bwp:180%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "180,00 (%) or _____,__ tonnes" .
+
+era-bwp:183%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "183,00 (%) or _____,__ tonnes" .
+
+era-bwp:194%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "194,00 (%) or _____,__ tonnes" .
+
+era-bwp:201%2C00_%28%25%29_or_00656%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "201,00 (%) or 00656,00 tonnes" .
+
+era-bwp:201%2C00_%28%25%29_or_00910%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "201,00 (%) or 00910,00 tonnes" .
+
+era-bwp:201%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "201,00 (%) or _____,__ tonnes" .
+
+era-bwp:205%2C00_%28%25%29_or______%2C___tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "205,00 (%) or _____,__ tonnes" .
 
 era-bwp:___%2C___%28%25%29_or_00020%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00020,00 tonnes" .
@@ -2269,11 +3153,20 @@ era-bwp:___%2C___%28%25%29_or_00020%2C00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:___%2C___%28%25%29_or_00027%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00027,00 tonnes" .
 
+era-bwp:___%2C___%28%25%29_or_00029%2C70_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___,__ (%) or 00029,70 tonnes" .
+
 era-bwp:___%2C___%28%25%29_or_00035%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00035,00 tonnes" .
 
+era-bwp:___%2C___%28%25%29_or_00037%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___,__ (%) or 00037,00 tonnes" .
+
 era-bwp:___%2C___%28%25%29_or_00059%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00059,00 tonnes" .
+
+era-bwp:___%2C___%28%25%29_or_00060%2C00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___,__ (%) or 00060,00 tonnes" .
 
 era-bwp:___%2C___%28%25%29_or_00062%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00062,00 tonnes" .
@@ -2314,17 +3207,35 @@ era-bwp:___%2C___%28%25%29_or_00451%2C00_tonnes a era-bwp:BrakeWeightPercentage;
 era-bwp:___%2C___%28%25%29_or_00719%2C00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___,__ (%) or 00719,00 tonnes" .
 
+era-bwp:___%2C___%28%25%29_or__55__%2C0__tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___,__ (%) or _55__,0_ tonnes" .
+
 era-bwp:___.___%28%25%29_or_00026.30_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___.__ (%) or 00026.30 tonnes" .
 
 era-bwp:___.___%28%25%29_or_00028.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___.__ (%) or 00028.00 tonnes" .
 
+era-bwp:___.___%28%25%29_or_00058.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00058.00 tonnes" .
+
 era-bwp:___.___%28%25%29_or_00072.00_tonnes a era-bwp:BrakeWeightPercentage;
   skos:prefLabel "___.__ (%) or 00072.00 tonnes" .
 
-era-bwp:___.___%28%25%29_or_00090.00_tonnes a era-bwp:BrakeWeightPercentage;
-  skos:prefLabel "___.__ (%) or 00090.00 tonnes" .
+era-bwp:___.___%28%25%29_or_00080.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00080.00 tonnes" .
+
+era-bwp:___.___%28%25%29_or_00087.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00087.00 tonnes" .
+
+era-bwp:___.___%28%25%29_or_00108.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00108.00 tonnes" .
+
+era-bwp:___.___%28%25%29_or_00234.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00234.00 tonnes" .
+
+era-bwp:___.___%28%25%29_or_00345.00_tonnes a era-bwp:BrakeWeightPercentage;
+  skos:prefLabel "___.__ (%) or 00345.00 tonnes" .
 
 ########## Thermal capacities ##########
 
@@ -2374,8 +3285,15 @@ era-ic:Design_pre-dates_standard a era-ic:IceCondition;
 era-ic:EN_50125-1%3A2014_clause_4.7_-_class_S1 a era-ic:IceCondition;
   skos:prefLabel "EN 50125-1:2014 clause 4.7 - class S1" .
 
+<http://era.europa.eu/concepts/ice-conditions#L%27engin_ne_travaille_pas_lors_des_p%C3%A9riodes_de_gel.>
+  a era-ic:IceCondition;
+  skos:prefLabel "L'engin ne travaille pas lors des périodes de gel." .
+
 era-ic:NOT_KNOWN a era-ic:IceCondition;
   skos:prefLabel "NOT KNOWN" .
+
+era-ic:Nominal_%28EN_50125-1%3A2014_clause_4.7%29 a era-ic:IceCondition;
+  skos:prefLabel "Nominal (EN 50125-1:2014 clause 4.7)" .
 
 era-ic:Normal_running_until_250mm_above_top_of_rail_head a era-ic:IceCondition;
   skos:prefLabel "Normal running until 250mm above top of rail head" .
@@ -2396,6 +3314,9 @@ era-ic:OP3005_%2F_IN1418 a era-ic:IceCondition;
 era-ic:RIC_Coach a era-ic:IceCondition;
   skos:prefLabel "RIC Coach" .
 
+era-ic:S1 a era-ic:IceCondition;
+  skos:prefLabel "S1" .
+
 era-ic:S1_%280-250_m%29%2C_heigt_A1_%28up_to_1400_m%29_ a era-ic:IceCondition;
   skos:prefLabel "S1 (0-250 m), heigt A1 (up to 1400 m) " .
 
@@ -2405,8 +3326,14 @@ era-ic:S1_%28EN_50125-1%3A2014%29 a era-ic:IceCondition;
 era-ic:S1_%28EN_50125-1%3A2014%29_ a era-ic:IceCondition;
   skos:prefLabel "S1 (EN 50125-1:2014) " .
 
+era-ic:S1_conform_EN_50125%3A2014 a era-ic:IceCondition;
+  skos:prefLabel "S1 conform EN 50125:2014" .
+
 era-ic:S1_of_EN_50125-1%3A2014 a era-ic:IceCondition;
   skos:prefLabel "S1 of EN 50125-1:2014" .
+
+era-ic:S2 a era-ic:IceCondition;
+  skos:prefLabel "S2" .
 
 era-ic:S2_ a era-ic:IceCondition;
   skos:prefLabel "S2 " .
@@ -2414,8 +3341,14 @@ era-ic:S2_ a era-ic:IceCondition;
 era-ic:S2_EN50125-1%3A2014_clause_4.7 a era-ic:IceCondition;
   skos:prefLabel "S2 EN50125-1:2014 clause 4.7" .
 
+era-ic:S3_according_EN_50125-1%3A2014_clause_4.7 a era-ic:IceCondition;
+  skos:prefLabel "S3 according EN 50125-1:2014 clause 4.7" .
+
 era-ic:Severe a era-ic:IceCondition;
   skos:prefLabel "Severe" .
+
+era-ic:Severe_with_restrictions a era-ic:IceCondition;
+  skos:prefLabel "Severe with restrictions" .
 
 era-ic:Special_vehicle_for_snow_removal a era-ic:IceCondition;
   skos:prefLabel "Special vehicle for snow removal" .
@@ -2426,6 +3359,9 @@ era-ic:T2 a era-ic:IceCondition;
 era-ic:according_to_EN_50125-1%3A2014_ a era-ic:IceCondition;
   skos:prefLabel "according to EN 50125-1:2014 " .
 
+era-ic:general%3A_Schnee%2C_Regen%2C_Eis_%28-30%C2%B0C_to_%2B40%C2%B0C%29 a era-ic:IceCondition;
+  skos:prefLabel "general: Schnee, Regen, Eis (-30°C to +40°C)" .
+
 era-ic:general%3A_Schnee%2C_Regen%2C_Eis_%28-30%C2%B0C_to_%2B40_%C2%B0C%29 a era-ic:IceCondition;
   skos:prefLabel "general: Schnee, Regen, Eis (-30°C to +40 °C)" .
 
@@ -2435,8 +3371,8 @@ era-ic:n%2Fa a era-ic:IceCondition;
 era-ic:no_information%2C_non_TSI_train a era-ic:IceCondition;
   skos:prefLabel "no information, non TSI train" .
 
-era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29 a era-ic:IceCondition;
-  skos:prefLabel "nominal (EN 50125-1:1999 clause 4.7)" .
+era-ic:nominal a era-ic:IceCondition;
+  skos:prefLabel "nominal" .
 
 era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29_with_snowplough_for_serious_snow_condition
   a era-ic:IceCondition;
@@ -2456,6 +3392,12 @@ era-ic:normal a era-ic:IceCondition;
 
 era-ic:not_applicable a era-ic:IceCondition;
   skos:prefLabel "not applicable" .
+
+era-ic:not_available-non_TSI_train a era-ic:IceCondition;
+  skos:prefLabel "not available-non TSI train" .
+
+era-ic:not_available-non_TSI_trains a era-ic:IceCondition;
+  skos:prefLabel "not available-non TSI trains" .
 
 era-ic:not_available_-_non_TSI_trains a era-ic:IceCondition;
   skos:prefLabel "not available - non TSI trains" .
@@ -2501,6 +3443,9 @@ era-ess:15kV-16%2C7Hz a era-ess:EnergySupplySystem;
 era-ess:15kV-16_2%2F3Hz_%3A_2646_kW_%2C_1kV-16_2%2F3_Hz_or_50_Hz a era-ess:EnergySupplySystem;
   skos:prefLabel "15kV-16 2/3Hz : 2646 kW , 1kV-16 2/3 Hz or 50 Hz" .
 
+era-ess:3X400_V%2C_50_Hz a era-ess:EnergySupplySystem;
+  skos:prefLabel "3X400 V, 50 Hz" .
+
 era-ess:3kV_%28PL%2C_CZ%2C_SK%29 a era-ess:EnergySupplySystem;
   skos:prefLabel "3kV (PL, CZ, SK)" .
 
@@ -2531,7 +3476,7 @@ era-ess:DC_3kV a era-ess:EnergySupplySystem;
 era-ess:DC_650V a era-ess:EnergySupplySystem;
   skos:prefLabel "DC 650V" .
 
-era-ess:DC_750V a era-ess:EnergySupplySystem, era-ess:EnergySupplySystem;
+era-ess:DC_750V a era-ess:EnergySupplySystem;
   skos:prefLabel "DC 750V" .
 
 era-ess:DC_750V_third_rail a era-ess:EnergySupplySystem;
@@ -2539,6 +3484,13 @@ era-ess:DC_750V_third_rail a era-ess:EnergySupplySystem;
 
 era-ess:None_%28for_hauled_passenger_vehicles_and_special_vehicles%29 a era-ess:EnergySupplySystem;
   skos:prefLabel "None (for hauled passenger vehicles and special vehicles)" .
+
+era-ess:Three-phase_alternator_28V_100A%2C_2_Accumulators_in_series_connection%2C_24V_Vehicle_electrical_system_voltage
+  a era-ess:EnergySupplySystem;
+  skos:prefLabel "Three-phase alternator 28V 100A, 2 Accumulators in series connection, 24V Vehicle electrical system voltage" .
+
+era-ess:V%C3%ADa_Urbana_e_Interurbana_750_Vdc a era-ess:EnergySupplySystem;
+  skos:prefLabel "Vía Urbana e Interurbana 750 Vdc" .
 
 era-ess:hybrid a era-ess:EnergySupplySystem;
   skos:prefLabel "hybrid" .
@@ -2569,6 +3521,10 @@ era-pth:1800_mm_%28NO%2CSE%29 a era-pth:PantographHead;
   era:tsiCompliant false;
   skos:prefLabel "1800 mm (NO,SE)" .
 
+era-pth:1950_mm_%28PL%29 a era-pth:PantographHead;
+  era:tsiCompliant false;
+  skos:prefLabel "1950 mm (PL)" .
+
 era-pth:1950_mm_%28Type2%29 a era-pth:PantographHead;
   era:tsiCompliant false;
   skos:prefLabel "1950 mm (Type2)" .
@@ -2598,8 +3554,25 @@ era-pth:other a era-pth:PantographHead;
 era-csm:0 a era-csm:ContactStripMaterial;
   skos:prefLabel "0" .
 
+era-csm:1950mm%3A_Carbon_with_additive_material_%2F_1450_mm%3A_Carbon_with_additive_material_and_coated_with_copper
+  a era-csm:ContactStripMaterial;
+  skos:prefLabel "1950mm: Carbon with additive material / 1450 mm: Carbon with additive material and coated with copper" .
+
+era-csm:1950mm%3A_Carbon_with_additive_material_%2F_1450mm%3A_Carbon_with_additive_material_and_coated_with_copper
+  a era-csm:ContactStripMaterial;
+  skos:prefLabel "1950mm: Carbon with additive material / 1450mm: Carbon with additive material and coated with copper" .
+
+era-csm:CARB%C3%93N_BH424C a era-csm:ContactStripMaterial;
+  skos:prefLabel "CARBÓN BH424C" .
+
+era-csm:Carb%C3%B3n_SK_85_Cu a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbón SK 85 Cu" .
+
 era-csm:Carbon a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon" .
+
+era-csm:Carbon_and_Steel a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon and Steel" .
 
 era-csm:Carbon_and_copper_%28Kasperowsy_type%29 a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon and copper (Kasperowsy type)" .
@@ -2616,11 +3589,20 @@ era-csm:Carbon_with_addidive_material_and_coated_with_copper a era-csm:ContactSt
 era-csm:Carbon_with_additive_material a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon with additive material" .
 
+era-csm:Carbon_with_additive_material_an_coated_with_copper a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon with additive material an coated with copper" .
+
 era-csm:Carbon_with_additive_material_and_coated_with_copper a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon with additive material and coated with copper" .
 
 era-csm:Carbon_with_cladded_cooper a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon with cladded cooper" .
+
+era-csm:Carbon_with_cladded_cooper%2C_Steel_%28winter%29 a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon with cladded cooper, Steel (winter)" .
+
+era-csm:Carbon_with_cladded_cooper_ a era-csm:ContactStripMaterial;
+  skos:prefLabel "Carbon with cladded cooper " .
 
 era-csm:Carbon_with_cladded_copper a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon with cladded copper" .
@@ -2637,8 +3619,8 @@ era-csm:Carbon_with_metal a era-csm:ContactStripMaterial;
 era-csm:Carbone_m%C3%A9talis%C3%A9 a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbone métalisé" .
 
-era-csm:Cooper a era-csm:ContactStripMaterial;
-  skos:prefLabel "Cooper" .
+era-csm:Composite_Carbon a era-csm:ContactStripMaterial;
+  skos:prefLabel "Composite Carbon" .
 
 era-csm:Cooper%2FSteel a era-csm:ContactStripMaterial;
   skos:prefLabel "Cooper/Steel" .
@@ -2655,8 +3637,15 @@ era-csm:Cooper_with_steel a era-csm:ContactStripMaterial;
 era-csm:Copper a era-csm:ContactStripMaterial;
   skos:prefLabel "Copper" .
 
+era-csm:Copper._The_locomotive_shall_be_equipped_with_carbon_contact_strips_before_13%2F06%2F2021
+  a era-csm:ContactStripMaterial;
+  skos:prefLabel "Copper. The locomotive shall be equipped with carbon contact strips before 13/06/2021" .
+
 era-csm:Copper_with_additive_material a era-csm:ContactStripMaterial;
   skos:prefLabel "Copper with additive material" .
+
+era-csm:EN-GJL-200 a era-csm:ContactStripMaterial;
+  skos:prefLabel "EN-GJL-200" .
 
 era-csm:Gemetalliseerd_kool a era-csm:ContactStripMaterial;
   skos:prefLabel "Gemetalliseerd kool" .
@@ -2685,8 +3674,14 @@ era-csm:N%2FA_3rd_rail_shoegear a era-csm:ContactStripMaterial;
 era-csm:N%2FA_Third_Rail_shoegear a era-csm:ContactStripMaterial;
   skos:prefLabel "N/A Third Rail shoegear" .
 
+era-csm:None a era-csm:ContactStripMaterial;
+  skos:prefLabel "None" .
+
 era-csm:Not_applicable a era-csm:ContactStripMaterial;
   skos:prefLabel "Not applicable" .
+
+era-csm:Plain_carbon a era-csm:ContactStripMaterial;
+  skos:prefLabel "Plain carbon" .
 
 era-csm:RH85M6 a era-csm:ContactStripMaterial;
   skos:prefLabel "RH85M6" .
@@ -2703,6 +3698,9 @@ era-csm:_graphite a era-csm:ContactStripMaterial;
 era-csm:_metallized_carbon a era-csm:ContactStripMaterial;
   skos:prefLabel " metallized carbon" .
 
+era-csm:_spheroidal_graphite_cast_iron a era-csm:ContactStripMaterial;
+  skos:prefLabel " spheroidal graphite cast iron" .
+
 era-csm:and_coated_with_copper a era-csm:ContactStripMaterial;
   skos:prefLabel "and coated with copper" .
 
@@ -2718,17 +3716,26 @@ era-csm:carbon_with_additive_material a era-csm:ContactStripMaterial;
 era-csm:carbon_with_additive_material_SK01ACu a era-csm:ContactStripMaterial;
   skos:prefLabel "carbon with additive material SK01ACu" .
 
+era-csm:carbon_with_addtitve_material a era-csm:ContactStripMaterial;
+  skos:prefLabel "carbon with addtitve material" .
+
 era-csm:carbon_with_cladded_cooper a era-csm:ContactStripMaterial;
   skos:prefLabel "Carbon with cladded cooper" .
 
 era-csm:carbon_with_cladded_copper a era-csm:ContactStripMaterial;
   skos:prefLabel "carbon with cladded copper" .
 
+era-csm:cooper a era-csm:ContactStripMaterial;
+  skos:prefLabel "cooper" .
+
 era-csm:copper a era-csm:ContactStripMaterial;
   skos:prefLabel "copper" .
 
 era-csm:copper_%26_steel a era-csm:ContactStripMaterial;
   skos:prefLabel "copper & steel" .
+
+era-csm:copper_-_steel a era-csm:ContactStripMaterial;
+  skos:prefLabel "copper - steel" .
 
 era-csm:copper_alloy a era-csm:ContactStripMaterial;
   skos:prefLabel "copper alloy" .
@@ -2751,6 +3758,9 @@ era-csm:impregnated_carbon_with_additive_material a era-csm:ContactStripMaterial
 
 era-csm:metalized_carbon a era-csm:ContactStripMaterial;
   skos:prefLabel "metalized carbon" .
+
+era-csm:metallised_carbon_SK85_Cu a era-csm:ContactStripMaterial;
+  skos:prefLabel "metallised carbon SK85 Cu" .
 
 era-csm:plain_carbon a era-csm:ContactStripMaterial;
   skos:prefLabel "Plain carbon", "plain carbon" .
@@ -2782,6 +3792,12 @@ era-rsf:srt-tsi a era-rsf:Category ;
 
 ########## Platform heights ##########
 
+era-ph:1%2C47m a era-ph:PlatformHeight;
+  skos:prefLabel "1,47m" .
+
+era-ph:1050_mm a era-ph:PlatformHeight;
+  skos:prefLabel "1050 mm" .
+
 era-ph:1100 a era-ph:PlatformHeight;
   skos:prefLabel "1100" .
 
@@ -2806,7 +3822,7 @@ era-ph:200_mm a era-ph:PlatformHeight;
 era-ph:220_mm%2C_360_mm a era-ph:PlatformHeight;
   skos:prefLabel "220 mm, 360 mm" .
 
-era-ph:250 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:250 a era-ph:PlatformHeight;
   skos:prefLabel "250" .
 
 era-ph:250_-_300 a era-ph:PlatformHeight;
@@ -2830,14 +3846,20 @@ era-ph:265 a era-ph:PlatformHeight;
 era-ph:265_mm a era-ph:PlatformHeight;
   skos:prefLabel "265 mm" .
 
+era-ph:265mm a era-ph:PlatformHeight;
+  skos:prefLabel "265mm" .
+
 era-ph:270_mm%2C_380_mm%2C_960_mm a era-ph:PlatformHeight;
   skos:prefLabel "270 mm, 380 mm, 960 mm" .
 
-era-ph:280 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:280 a era-ph:PlatformHeight;
   skos:prefLabel "280" .
 
 era-ph:280_mm a era-ph:PlatformHeight;
   skos:prefLabel "280 mm" .
+
+era-ph:280_mm%2C_360_mm a era-ph:PlatformHeight;
+  skos:prefLabel "280 mm, 360 mm" .
 
 era-ph:280mm a era-ph:PlatformHeight;
   skos:prefLabel "280mm" .
@@ -2862,6 +3884,9 @@ era-ph:300_mm a era-ph:PlatformHeight;
 
 era-ph:300_mm%2C_1_060_mm a era-ph:PlatformHeight;
   skos:prefLabel "300 mm, 1 060 mm" .
+
+era-ph:300_mm%2C_380_mm%2C_960_mm a era-ph:PlatformHeight;
+  skos:prefLabel "300 mm, 380 mm, 960 mm" .
 
 era-ph:300_mm%2C_760_mm a era-ph:PlatformHeight;
   skos:prefLabel "300 mm, 760 mm" .
@@ -2896,11 +3921,17 @@ era-ph:380 a era-ph:PlatformHeight;
 era-ph:380%2C_500 a era-ph:PlatformHeight;
   skos:prefLabel "380, 500" .
 
+era-ph:380_%2F_790 a era-ph:PlatformHeight;
+  skos:prefLabel "380 / 790" .
+
 era-ph:380_550 a era-ph:PlatformHeight;
   skos:prefLabel "380 550" .
 
 era-ph:380_mm a era-ph:PlatformHeight;
   skos:prefLabel "380 mm" .
+
+era-ph:380_mm%2C_220_mm a era-ph:PlatformHeight;
+  skos:prefLabel "380 mm, 220 mm" .
 
 era-ph:380_mm%2C_270_mm a era-ph:PlatformHeight;
   skos:prefLabel "380 mm, 270 mm" .
@@ -2908,7 +3939,13 @@ era-ph:380_mm%2C_270_mm a era-ph:PlatformHeight;
 era-ph:380_mm%2C_500_mm a era-ph:PlatformHeight;
   skos:prefLabel "380 mm, 500 mm" .
 
-era-ph:385 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:380_mm%3B_200_mm a era-ph:PlatformHeight;
+  skos:prefLabel "380 mm; 200 mm" .
+
+era-ph:380mm%3B_200mm a era-ph:PlatformHeight;
+  skos:prefLabel "380mm; 200mm" .
+
+era-ph:385 a era-ph:PlatformHeight;
   skos:prefLabel "385" .
 
 era-ph:385-750 a era-ph:PlatformHeight;
@@ -2926,9 +3963,6 @@ era-ph:540_mm_to_760_mm a era-ph:PlatformHeight;
 era-ph:550 a era-ph:PlatformHeight;
   skos:prefLabel "550" .
 
-era-ph:570_mm a era-ph:PlatformHeight;
-  skos:prefLabel "570 mm" .
-
 era-ph:580 a era-ph:PlatformHeight;
   skos:prefLabel "580" .
 
@@ -2938,13 +3972,19 @@ era-ph:600 a era-ph:PlatformHeight;
 era-ph:680 a era-ph:PlatformHeight;
   skos:prefLabel "680" .
 
+era-ph:680_mm a era-ph:PlatformHeight;
+  skos:prefLabel "680 mm" .
+
 era-ph:685 a era-ph:PlatformHeight;
   skos:prefLabel "685" .
+
+era-ph:70-550_mm_%28specific_case_Germany%29 a era-ph:PlatformHeight;
+  skos:prefLabel "70-550 mm (specific case Germany)" .
 
 era-ph:700 a era-ph:PlatformHeight;
   skos:prefLabel "700" .
 
-era-ph:730 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:730 a era-ph:PlatformHeight;
   skos:prefLabel "730" .
 
 era-ph:750 a era-ph:PlatformHeight;
@@ -2959,13 +3999,22 @@ era-ph:750_mm%3B_380_mm a era-ph:PlatformHeight;
 era-ph:760 a era-ph:PlatformHeight;
   skos:prefLabel "760" .
 
+era-ph:760_mm_-_840_mm_ a era-ph:PlatformHeight;
+  skos:prefLabel "760 mm - 840 mm " .
+
+era-ph:760_mm_530_mm a era-ph:PlatformHeight;
+  skos:prefLabel "760 mm 530 mm" .
+
 era-ph:760_tot_840 a era-ph:PlatformHeight;
   skos:prefLabel "760 tot 840" .
+
+era-ph:760_tot_840_mm a era-ph:PlatformHeight;
+  skos:prefLabel "760 tot 840 mm" .
 
 era-ph:790_mm%3B_830_mm%3B_1080_mm a era-ph:PlatformHeight;
   skos:prefLabel "790 mm; 830 mm; 1080 mm" .
 
-era-ph:840 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:840 a era-ph:PlatformHeight;
   skos:prefLabel "840" .
 
 era-ph:840_mm a era-ph:PlatformHeight;
@@ -2974,7 +4023,7 @@ era-ph:840_mm a era-ph:PlatformHeight;
 era-ph:900 a era-ph:PlatformHeight;
   skos:prefLabel "900" .
 
-era-ph:915 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:915 a era-ph:PlatformHeight;
   skos:prefLabel "915" .
 
 era-ph:915_mm a era-ph:PlatformHeight;
@@ -3013,22 +4062,37 @@ era-ph:920_mm a era-ph:PlatformHeight;
 era-ph:920_mm_ a era-ph:PlatformHeight;
   skos:prefLabel "920 mm " .
 
-era-ph:960 a era-ph:PlatformHeight, era-ph:PlatformHeight;
+era-ph:960 a era-ph:PlatformHeight;
   skos:prefLabel "960" .
 
 era-ph:960_mm a era-ph:PlatformHeight;
   skos:prefLabel "960 mm" .
 
+era-ph:960_mm%2C_1030_mm a era-ph:PlatformHeight;
+  skos:prefLabel "960 mm, 1030 mm" .
+
 era-ph:960_mm%2C_380_mm_%28with_dual_movable_step%29%2C_300_mm_%28with_dual_movable_step%29
   a era-ph:PlatformHeight;
   skos:prefLabel "960 mm, 380 mm (with dual movable step), 300 mm (with dual movable step)" .
 
-era-ph:978_mm a era-ph:PlatformHeight;
-  skos:prefLabel "978 mm" .
+era-ph:Freight_Locomotive a era-ph:PlatformHeight;
+  skos:prefLabel "Freight Locomotive" .
 
 era-ph:From_1070_to_1150_mm_%28RER%2FRATP%29_and_from_550_to_1150_mm_%28on_RFN_part%29
   a era-ph:PlatformHeight;
   skos:prefLabel "From 1070 to 1150 mm (RER/RATP) and from 550 to 1150 mm (on RFN part)" .
+
+era-ph:N%2FA_for_Locomotives a era-ph:PlatformHeight;
+  skos:prefLabel "N/A for Locomotives" .
+
+era-ph:N%2FA_for_Locomotives_mm a era-ph:PlatformHeight;
+  skos:prefLabel "N/A for Locomotives mm" .
+
+era-ph:Not_applicable a era-ph:PlatformHeight;
+  skos:prefLabel "Not applicable" .
+
+era-ph:Not_applicable_for_locomotives a era-ph:PlatformHeight;
+  skos:prefLabel "Not applicable for locomotives" .
 
 era-ph:Not_relevant_for_locomotives a era-ph:PlatformHeight;
   skos:prefLabel "Not relevant for locomotives" .
@@ -3038,6 +4102,12 @@ era-ph:Over_than_900mm_until_1150mm a era-ph:PlatformHeight;
 
 era-ph:Platform_height_760_tot_840_%2BBS a era-ph:PlatformHeight;
   skos:prefLabel "Platform height 760 tot 840 +BS" .
+
+era-ph:Platform_height_760_tot_840_%2BBS_mm_ a era-ph:PlatformHeight;
+  skos:prefLabel "Platform height 760 tot 840 +BS mm " .
+
+era-ph:Spe a era-ph:PlatformHeight;
+  skos:prefLabel "Spe" .
 
 era-ph:Suomi a era-ph:PlatformHeight;
   skos:prefLabel "Suomi" .
@@ -3065,6 +4135,12 @@ era-ph:motrice_%3A_860_mm_%2F_remorque_%3A_585_mm a era-ph:PlatformHeight;
 
 era-ph:n%2Fa_for_locomotive a era-ph:PlatformHeight;
   skos:prefLabel "n/a for locomotive" .
+
+era-ph:not_applicable_%28freight_locomotive%29 a era-ph:PlatformHeight;
+  skos:prefLabel "not applicable (freight locomotive)" .
+
+era-ph:not_relevant_for_lokomotives a era-ph:PlatformHeight;
+  skos:prefLabel "not relevant for lokomotives" .
 
 ########## ETCS System Compatibilities ##########
 
@@ -3124,6 +4200,9 @@ era-gsmr:GSM-R_N_%28Norway%29 a era-gsmr:GSMRNetwork;
 era-gsmr:GSM-R_SI_%28Slovenia%29 a era-gsmr:GSMRNetwork;
   skos:prefLabel "GSM-R SI (Slovenia)" .
 
+era-gsmr:GSM-R_SK_%28Slovakia%29 a era-gsmr:GSMRNetwork;
+  skos:prefLabel "GSM-R SK (Slovakia)" .
+
 era-gsmr:GSM-R_S_%28Sweden%29 a era-gsmr:GSMRNetwork;
   skos:prefLabel "GSM-R S (Sweden)" .
 
@@ -3139,6 +4218,10 @@ era-rsc:RSC-NP-CCS7.4a a era-rsc:RadioSystemCompatibility ;
     skos:prefLabel "RSC-EU-0"@en .
 
 ########## Train protection legacy systems ##########
+
+era-tpls:2_Systeme%3A_ZBS_mit_Fahrzeugger%C3%A4t_Zub242t_der_Siemens_AG_und_mechanische_Fahrsperre
+  a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "2 Systeme: ZBS mit Fahrzeuggerät Zub242t der Siemens AG und mechanische Fahrsperre" .
 
 era-tpls:3SL-2M a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "3SL-2M" .
@@ -3167,6 +4250,18 @@ era-tpls:ATB-EG_with_Vv-fuctionality a era-tpls:TrainProtectionLegacySystem;
 era-tpls:ATB-EG_with_Vv-functionality a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATB-EG with Vv-functionality" .
 
+era-tpls:ATB_%28ATB-EG_%28met_Vv_functionaliteit%29%29 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATB (ATB-EG (met Vv functionaliteit))" .
+
+era-tpls:ATB_%28ATB-EG_met_Vv_functionaliteit%29 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATB (ATB-EG met Vv functionaliteit)" .
+
+era-tpls:ATB_%28EG_Vv-functionaliteit%29 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATB (EG Vv-functionaliteit)" .
+
+era-tpls:ATB_%28EG_met_Vv_functionaliteit%29 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATB (EG met Vv functionaliteit)" .
+
 era-tpls:ATB_First_generation a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATB First generation" .
 
@@ -3182,14 +4277,26 @@ era-tpls:ATC-2 a era-tpls:TrainProtectionLegacySystem;
 era-tpls:ATC2 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATC2" .
 
+era-tpls:ATC_v2 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATC v2" .
+
+era-tpls:ATC_vR a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATC vR" .
+
 era-tpls:ATESS-BRS a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATESS-BRS" .
+
+era-tpls:ATP a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATP" .
 
 era-tpls:ATP-VR%2FRHK a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATP-VR/RHK" .
 
 era-tpls:ATP00_9G016AF_Baseline_1.2.8 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ATP00 9G016AF Baseline 1.2.8" .
+
+era-tpls:ATP_%28RSDD%2FSCMT%29_ a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ATP (RSDD/SCMT) " .
 
 era-tpls:AWS a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "AWS" .
@@ -3199,9 +4306,6 @@ era-tpls:BACC a era-tpls:TrainProtectionLegacySystem;
 
 era-tpls:BL3_%28version_2.4.0A%29 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "BL3 (version 2.4.0A)" .
-
-era-tpls:CA a era-tpls:TrainProtectionLegacySystem;
-  skos:prefLabel "CA" .
 
 era-tpls:Crocodile a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "Crocodile" .
@@ -3214,6 +4318,9 @@ era-tpls:DAAT a era-tpls:TrainProtectionLegacySystem;
 
 era-tpls:DK_STM_%28ZUB_123%29 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "DK STM (ZUB 123)" .
+
+era-tpls:EBICAB_900_ES a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "EBICAB 900 ES" .
 
 era-tpls:EBULA a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "EBULA" .
@@ -3239,17 +4346,32 @@ era-tpls:Ebicab600_ a era-tpls:TrainProtectionLegacySystem;
 era-tpls:Ebicab_500 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "Ebicab 500" .
 
+era-tpls:Ebicab_500%2F600 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "Ebicab 500/600" .
+
 era-tpls:Ebicab_600 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "Ebicab 600" .
 
 era-tpls:Ebicab_700 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "Ebicab 700" .
 
+era-tpls:EuroSIGNUM%2C_EuroZUB%2C_ZSL90%2C_KVB%2C_SCMT a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "EuroSIGNUM, EuroZUB, ZSL90, KVB, SCMT" .
+
+era-tpls:GNT_%28Geschwindigkeits%C3%BCberwachung_f%C3%BCr_NeiTech-Z%C3%BCge%29 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "GNT (Geschwindigkeitsüberwachung für NeiTech-Züge)" .
+
 era-tpls:GNT_%28ZUB_262%29 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "GNT (ZUB 262)" .
 
 era-tpls:GW_ATP a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "GW ATP" .
+
+era-tpls:INDUSI%2FPZB a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "INDUSI/PZB" .
+
+era-tpls:INDUSI_I60 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "INDUSI I60" .
 
 era-tpls:Indusi%2FPZB a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "Indusi/PZB" .
@@ -3278,7 +4400,7 @@ era-tpls:KVBP a era-tpls:TrainProtectionLegacySystem;
 era-tpls:LS a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "LS" .
 
-era-tpls:LZB a era-tpls:TrainProtectionLegacySystem, era-tpls:TrainProtectionLegacySystem;
+era-tpls:LZB a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "LZB" .
 
 era-tpls:LZB_%28LZB_L72%2C_LZB_L72_CE_I_and_LZB_L72_CE_II%29 a era-tpls:TrainProtectionLegacySystem;
@@ -3286,6 +4408,9 @@ era-tpls:LZB_%28LZB_L72%2C_LZB_L72_CE_I_and_LZB_L72_CE_II%29 a era-tpls:TrainPro
 
 era-tpls:MEMOR_II%2B a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "MEMOR II+" .
+
+era-tpls:MIREL_RM2 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "MIREL RM2" .
 
 era-tpls:MIREL_VZ1 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "MIREL VZ1" .
@@ -3297,7 +4422,7 @@ era-tpls:No_Class_B_train_radio_systems_fitted_AWS_trainborne_equipment_is_fitte
   a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "No Class B train radio systems fitted AWS trainborne equipment is fitted  TPWS train sub-system is provided" .
 
-era-tpls:None a era-tpls:TrainProtectionLegacySystem, era-tpls:TrainProtectionLegacySystem;
+era-tpls:None a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "None" .
 
 era-tpls:PKP_radio_system_with_Radiostop_function a era-tpls:TrainProtectionLegacySystem;
@@ -3309,7 +4434,10 @@ era-tpls:PZB a era-tpls:TrainProtectionLegacySystem;
 era-tpls:PZB_90 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "PZB 90" .
 
-era-tpls:RSDD%2FSCMT a era-tpls:TrainProtectionLegacySystem, era-tpls:TrainProtectionLegacySystem;
+era-tpls:PZB_I60R a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "PZB I60R" .
+
+era-tpls:RSDD%2FSCMT a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "RSDD/SCMT" .
 
 era-tpls:Radio-Stop a era-tpls:TrainProtectionLegacySystem;
@@ -3333,17 +4461,23 @@ era-tpls:SIFA a era-tpls:TrainProtectionLegacySystem;
 era-tpls:SSB_SCMT%2FSSC_BL3 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "SSB SCMT/SSC BL3" .
 
-era-tpls:SSC a era-tpls:TrainProtectionLegacySystem, era-tpls:TrainProtectionLegacySystem;
+era-tpls:SSC a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "SSC" .
 
 era-tpls:SSC_BL3_ a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "SSC BL3 " .
+
+era-tpls:STM a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "STM" .
 
 era-tpls:STM-A_%28KVB%29 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "STM-A (KVB)" .
 
 era-tpls:STM-LZB a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "STM-LZB" .
+
+era-tpls:STM1N_3R2 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "STM1N 3R2" .
 
 era-tpls:STM2N_ATP-VR%2FRHK a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "STM2N ATP-VR/RHK" .
@@ -3371,9 +4505,6 @@ era-tpls:TBL_2 a era-tpls:TrainProtectionLegacySystem;
 
 era-tpls:TPWS a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "TPWS" .
-
-era-tpls:TPWS%2FAWS a era-tpls:TrainProtectionLegacySystem;
-  skos:prefLabel "TPWS/AWS" .
 
 era-tpls:TVM a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "TVM" .
@@ -3405,6 +4536,9 @@ era-tpls:ZUB262ct%2FINTEGRA a era-tpls:TrainProtectionLegacySystem;
 era-tpls:ZUB_121 a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ZUB 121" .
 
+era-tpls:ZUB_123 a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ZUB 123" .
+
 era-tpls:ZUB_123_ a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ZUB 123 " .
 
@@ -3420,6 +4554,9 @@ era-tpls:ZUB_262ct a era-tpls:TrainProtectionLegacySystem;
 era-tpls:ZUB_262ct%2FIntegra a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "ZUB 262ct/Integra" .
 
+era-tpls:ZUB_262ct_%2B_Integra a era-tpls:TrainProtectionLegacySystem;
+  skos:prefLabel "ZUB 262ct + Integra" .
+
 era-tpls:nav_inform%C4%81cijas a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "nav informācijas" .
 
@@ -3427,6 +4564,10 @@ era-tpls:none a era-tpls:TrainProtectionLegacySystem;
   skos:prefLabel "none" .
 
 ########### Legacy radio systems ############
+
+era-lrs:2_Systeme%3A_ZBS_mit_Fahrzeugger%C3%A4t_Zub242t_der_Siemens_AG_und_mechanische_Fahrsperre
+  a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "2 Systeme: ZBS mit Fahrzeuggerät Zub242t der Siemens AG und mechanische Fahrsperre" .
 
 era-lrs:3SL-2M a era-lrs:LegacyRadioSystem;
   skos:prefLabel "3SL-2M" .
@@ -3449,6 +4590,18 @@ era-lrs:ATB-EG_with_Vv-fuctionality a era-lrs:LegacyRadioSystem;
 era-lrs:ATB-EG_with_Vv-functionality a era-lrs:LegacyRadioSystem;
   skos:prefLabel "ATB-EG with Vv-functionality" .
 
+era-lrs:ATB_%28ATB-EG_%28met_Vv_functionaliteit%29%29 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ATB (ATB-EG (met Vv functionaliteit))" .
+
+era-lrs:ATB_%28ATB-EG_met_Vv_functionaliteit%29 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ATB (ATB-EG met Vv functionaliteit)" .
+
+era-lrs:ATB_%28EG_Vv-functionaliteit%29 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ATB (EG Vv-functionaliteit)" .
+
+era-lrs:ATB_%28EG_met_Vv_functionaliteit%29 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ATB (EG met Vv functionaliteit)" .
+
 era-lrs:ATC a era-lrs:LegacyRadioSystem;
   skos:prefLabel "ATC" .
 
@@ -3464,6 +4617,9 @@ era-lrs:ATESS-BRS a era-lrs:LegacyRadioSystem;
 era-lrs:ATP00_9G016AF_Baseline_1.2.8 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "ATP00 9G016AF Baseline 1.2.8" .
 
+era-lrs:ATP_%28RSDD%2FSCMT%29_ a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ATP (RSDD/SCMT) " .
+
 era-lrs:AWS a era-lrs:LegacyRadioSystem;
   skos:prefLabel "AWS" .
 
@@ -3472,9 +4628,6 @@ era-lrs:Analogue_Radio_Germany_-_UIC_751 a era-lrs:LegacyRadioSystem;
 
 era-lrs:BL3_%28version_2.4.0A%29 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "BL3 (version 2.4.0A)" .
-
-era-lrs:CA a era-lrs:LegacyRadioSystem;
-  skos:prefLabel "CA" .
 
 era-lrs:CH a era-lrs:LegacyRadioSystem;
   skos:prefLabel "CH" .
@@ -3500,8 +4653,14 @@ era-lrs:Ebicab600_ a era-lrs:LegacyRadioSystem;
 era-lrs:Ebicab_500 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Ebicab 500" .
 
+era-lrs:Ebicab_500%2F600 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "Ebicab 500/600" .
+
 era-lrs:Ebicab_600 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Ebicab 600" .
+
+era-lrs:EuroSIGNUM%2C_EuroZUB%2C_ZSL90%2C_KVB%2C_SCMT a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "EuroSIGNUM, EuroZUB, ZSL90, KVB, SCMT" .
 
 era-lrs:FS_ETACS_and_GSM a era-lrs:LegacyRadioSystem;
   skos:prefLabel "FS ETACS and GSM" .
@@ -3511,6 +4670,9 @@ era-lrs:GNT_%28ZUB_262%29 a era-lrs:LegacyRadioSystem;
 
 era-lrs:GSM-P a era-lrs:LegacyRadioSystem;
   skos:prefLabel "GSM-P" .
+
+era-lrs:INDUSI%2FPZB a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "INDUSI/PZB" .
 
 era-lrs:Indusi%2FPZB_%28PZB_90_I60R%29 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Indusi/PZB (PZB 90 I60R)" .
@@ -3533,17 +4695,23 @@ era-lrs:Latvian_railway_intra-station_radio_communication_system_ a era-lrs:Lega
 era-lrs:Latvian_railway_radio_system_%28LDZ%29 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Latvian railway radio system (LDZ)" .
 
+era-lrs:MIREL_RM2 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "MIREL RM2" .
+
 era-lrs:MIREL_VZ1 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "MIREL VZ1" .
 
 era-lrs:Mirel a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Mirel" .
 
+era-lrs:Multikom a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "Multikom" .
+
 era-lrs:No_Class_B_train_radio_systems_fitted_AWS_trainborne_equipment_is_fitted__TPWS_train_sub-system_is_provided
   a era-lrs:LegacyRadioSystem;
   skos:prefLabel "No Class B train radio systems fitted AWS trainborne equipment is fitted  TPWS train sub-system is provided" .
 
-era-lrs:None a era-lrs:LegacyRadioSystem, era-lrs:LegacyRadioSystem;
+era-lrs:None a era-lrs:LegacyRadioSystem;
   skos:prefLabel "None" .
 
 era-lrs:PKP_Radio_System a era-lrs:LegacyRadioSystem;
@@ -3551,6 +4719,9 @@ era-lrs:PKP_Radio_System a era-lrs:LegacyRadioSystem;
 
 era-lrs:PZB a era-lrs:LegacyRadioSystem;
   skos:prefLabel "PZB" .
+
+era-lrs:PZB_I60R a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "PZB I60R" .
 
 era-lrs:RETB_%28voice%29 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "RETB (voice)" .
@@ -3585,17 +4756,26 @@ era-lrs:SSC a era-lrs:LegacyRadioSystem;
 era-lrs:SSC_BL3_ a era-lrs:LegacyRadioSystem;
   skos:prefLabel "SSC BL3 " .
 
+era-lrs:STM a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "STM" .
+
 era-lrs:STM-A_%28KVB%29 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "STM-A (KVB)" .
 
 era-lrs:STM-LZB a era-lrs:LegacyRadioSystem;
   skos:prefLabel "STM-LZB" .
 
+era-lrs:STM1N_3R2 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "STM1N 3R2" .
+
 era-lrs:STM2N_ATP-VR%2FRHK a era-lrs:LegacyRadioSystem;
   skos:prefLabel "STM2N ATP-VR/RHK" .
 
 era-lrs:STM_%2F_ATC_2 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "STM / ATC 2" .
+
+era-lrs:Shunting_Radio_Communication_System a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "Shunting Radio Communication System" .
 
 era-lrs:Syst%C3%A8me_SACEM_et_KCVB_ligne_A_du_RER a era-lrs:LegacyRadioSystem;
   skos:prefLabel "Système SACEM et KCVB ligne A du RER" .
@@ -3665,6 +4845,12 @@ era-lrs:ZUB_262ct a era-lrs:LegacyRadioSystem;
 
 era-lrs:ZUB_262ct%2FIntegra a era-lrs:LegacyRadioSystem;
   skos:prefLabel "ZUB 262ct/Integra" .
+
+era-lrs:ZUB_262ct_%2B_Integra a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ZUB 262ct + Integra" .
+
+era-lrs:ZUGFUNK_2000 a era-lrs:LegacyRadioSystem;
+  skos:prefLabel "ZUGFUNK 2000" .
 
 era-lrs:ZUGFUNK_95 a era-lrs:LegacyRadioSystem;
   skos:prefLabel "ZUGFUNK 95" .
