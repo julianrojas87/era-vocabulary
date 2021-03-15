@@ -4,6 +4,73 @@ Vocabulary definition for the European Union Agency for Railways.
 
 Online documentation for this vocabulary is available at http://era.ilabt.imec.be/era-vocabulary/index-en.html
 
+## Run WITH Docker
+
+This application has been _dockerized_ to facilitate its deployment. We use a [multi-stage approach](https://docs.docker.com/develop/develop-images/multistage-build/) to build a container that publishes a build of this Web application via a NGINX instance.
+
+To deploy this container follow these steps:
+
+1. Make sure to have a recent version of [Docker](https://docs.docker.com/engine/install/) installed.
+
+2. Build the Docker image:
+
+   ```bash
+   docker build -t era-vocabulary ./
+   ```
+
+3. Start the application:
+
+   ```bash
+   docker run -p ${PORT}:80 era-rcc
+   ```
+
+   Replace `${PORT}` for the TCP port where you want to run the application. Once the container is running you can access these resources:
+
+   - The vocabulary documentation at `http://localhost:${PORT}/era-vocabulary/index-en.html`.
+   - The reference data at `http://localhost:${PORT}/era-vocabulary/era-skos`.
+
+## Deploy WITHOUT Docker
+
+To directly build this application you need to install first:
+
+- [Java JRE](https://openjdk.java.net/projects/jdk/11/) at least v11.
+- [Node.js](https://nodejs.org/en/download/) at least v12.
+
+Then follow the next steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/julianrojas87/era-vocabulary.git
+   ```
+
+2. Create a folder named `public` inside the cloned repository
+
+   ```bash
+   cd era-vocabulary
+   mkdir public
+   ```
+
+3. Generate the WIDOCO documentation:
+
+   ```bash
+   ./generate-docs.sh
+   ```
+
+   The resulting sources will be placed in `era-vocabulary/public`.
+
+4. Publish the Web page. In this example we use Node.js's [`npx`](https://nodejs.dev/learn/the-npx-nodejs-package-runner) utility and [`http-server`](https://github.com/http-party/http-server) for this, but you may choose to publish the static files otherwise (e.g. directly via NGINX).
+
+   ```bash
+   cd public
+   npx http-server -p ${PORT}
+   ```
+
+   Replace `${PORT}` for the TCP port where you want to run the application. Once the application is running you may access the following resources:
+
+   - The vocabulary documentation at `http://localhost:${PORT}/era-vocabulary/index-en.html`.
+   - The reference data at `http://localhost:${PORT}/era-vocabulary/era-skos.ttl`.
+
 ## See also
 
 1. [Data mappings](https://github.com/julianrojas87/era-data-mappings) for generating the ERA Knowledge Graph, defined using the [RML](https://rml.io) mapping language.
