@@ -25,12 +25,12 @@
         <terms:contributor>Pieter Colpaert</terms:contributor>
         <terms:contributor>Polymnia Vasilopoulou</terms:contributor>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-03-15</terms:modified>
         <terms:publisher>European Union Agency for Railways</terms:publisher>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
         <rdfs:label xml:lang="en">ERA vocabulary</rdfs:label>
-        <owl:versionInfo>v1.2.0</owl:versionInfo>
+        <owl:versionInfo>v1.2.1</owl:versionInfo>
     </owl:Ontology>
     
 

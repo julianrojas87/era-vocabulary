@@ -36,4 +36,4 @@ function main() {
 # downloadWidoco
 main
 rm ./public/ontology.ttl
-cp ontology.ttl ./public/
+cp ontology.ttl era-skos.ttl ./public/

@@ -9,12 +9,12 @@
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Pieter Colpaert" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#> <http://purl.org/dc/terms/modified> "2021-03-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://era.europa.eu/ns#> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
 <http://era.europa.eu/ns#> <http://www.w3.org/2000/01/rdf-schema#label> "ERA vocabulary"@en .
-<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.2.0" .
+<http://era.europa.eu/ns#> <http://www.w3.org/2002/07/owl#versionInfo> "v1.2.1" .
 # 
 # 
 # #################################################################

@@ -341,7 +341,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-01-29"
+    "@value" : "2021-03-15"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "European Union Agency for Railways"
@@ -366,7 +366,7 @@
     "@id" : "https://schema.org/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v1.2.0"
+    "@value" : "v1.2.1"
   } ]
 }, {
   "@id" : "http://era.europa.eu/ns#InternalNodeLink",
