@@ -487,9 +487,10 @@ era:navigability a owl:ObjectProperty ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:NetRelation ;
     rdfs:range era-nv:Navigability ;
-    dct:created "2021-04-23"^^xsd:date ;
-    dct:modified "2021-04-23"^^xsd:date ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
+
 
 #################################################################
 #
@@ -589,12 +590,32 @@ era:vehicleSeries a owl:DatatypeProperty ;
 
 era:kilometer a owl:DatatypeProperty ;
     rdfs:label "kilometer"@en ;
-    rdfs:comment "Distance measured from the origin of a national railway line."@en ;
+    rdfs:comment "Distance measured in kilometers from the origin of a national railway line."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:LineReference ;
     rdfs:range xsd:double ;
     dct:created "2021-01-29"^^xsd:date ;
     dct:modified "2021-01-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:startIntrinsicCoordinate a owl:DatatypeProperty ;
+    rdfs:label "start intrinsic coordinate"@en ;
+    rdfs:comment "Indicates the coordinate point where a linear object begins."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:endIntrinsicCoordinate a owl:ObjectProperty ;
+    rdfs:label "end intrinsic coordinate"@en ;
+    rdfs:comment "Indicates the coordinate point where a linear object ends."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
 
