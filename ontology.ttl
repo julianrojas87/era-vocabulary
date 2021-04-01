@@ -147,6 +147,14 @@ era:OperationalPoint a owl:Class ;
     dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
+era:SectionOfLine a owl:Class ;
+    rdfs:label "Section Of Line"@en ;
+    rdfs:comment "A section of line means the part of line between adjacent operational points and may consist of several tracks."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-04-02"^^xsd:date ;
+    dct:modified "2021-04-02"^^xsd:date ;
+    vs:term_status "stable" .
+
 era:Track a owl:Class ;
     rdfs:label "Track"@en ;
     rdfs:comment "A running track that is used for train service movements."@en ;
