@@ -45,17 +45,17 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2021-03-15"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
     dct:contributor "Ivaylo Velitchkov" ;
     dct:contributor "Polymnia Vasilopoulou" ;
     dct:contributor "Marina Aguado" ;
-    dct:contributor "Dylan Van Assche" ;
-    dct:contributor "Pieter Colpaert" ;
+    dct:contributor <https://dylanvanassche.be/#me> ;
+    dct:contributor <https://pietercolpaert.be/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.2.1" ;
+    owl:versionInfo "v2.0.0-alpha" ;
     owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
