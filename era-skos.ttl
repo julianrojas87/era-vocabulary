@@ -33,6 +33,7 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
+@prefix era-nv: <http://era.europa.eu/concepts/navigability#> .
 
 era-skos: a skos:ConceptScheme, owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
@@ -218,6 +219,12 @@ era-rc:Restriction a owl:Class ;
     skos:inScheme era-skos: ;
     rdfs:label "Restriction"@en ;
     rdfs:comment "Abstract class representing harmonized restrictions. The structure of a restriction code is a combination of [Category].[Type].[Value or specification]."@en .
+
+era-nv:Navigability a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:inScheme era-skos: ;
+    rdfs:label "Navigability"@en ;
+    rdfs:comment "Abstract class representing types of navigability"@en .
 
 
 #################################################################
@@ -4895,3 +4902,21 @@ era-rc:2.7.7 a era-rc:Restriction;
   skos:prefLabel "Can't be used in quieter routes"@en;
   skos:altLabel "2.7.7";
   skos:definition "Can't be used in quieter routes"@en.
+
+########## Navigabilities ##########
+
+era-nv:AB a era-nv:Navigability;
+  skos:prefLabel "AB"@en;
+  skos:definition "Navigation is only possible from element A to element B"@en.
+
+era-nv:BA a era-nv:Navigability;
+  skos:prefLabel "BA"@en;
+  skos:definition "Navigation is only possible from element B to element A"@en.
+
+era-nv:Both a era-nv:Navigability;
+  skos:prefLabel "AB"@en;
+  skos:definition "Navigation between elements A and B is possible in both directions"@en.
+
+era-nv:None a era-nv:Navigability;
+  skos:prefLabel "None"@en;
+  skos:definition "No navigation possible between elements A and B"@en.

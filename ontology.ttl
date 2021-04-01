@@ -40,6 +40,7 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
+@prefix era-nv: <http://era.europa.eu/concepts/navigability#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
@@ -460,6 +461,36 @@ era:hasSignal a owl:ObjectProperty ;
     dct:modified "2021-04-23"^^xsd:date ;
     vs:term_status "stable" .
 
+era:elementA a owl:ObjectProperty ;
+    rdfs:label "element A"@en ;
+    rdfs:comment "References the first topological object in an oriented relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era:NetElement ;
+    dct:created "2021-04-23"^^xsd:date ;
+    dct:modified "2021-04-23"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:elementB a owl:ObjectProperty ;
+    rdfs:label "element B"@en ;
+    rdfs:comment "References the second topological object in an oriented relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era:NetElement ;
+    dct:created "2021-04-23"^^xsd:date ;
+    dct:modified "2021-04-23"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:navigability a owl:ObjectProperty ;
+    rdfs:label "navigability"@en ;
+    rdfs:comment "Indicates the navigation possibilities between two related topological objects."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era-nv:Navigability ;
+    dct:created "2021-04-23"^^xsd:date ;
+    dct:modified "2021-04-23"^^xsd:date ;
+    vs:term_status "stable" .
+
 #################################################################
 #
 #    Data properties
@@ -484,7 +515,7 @@ era:tafTAPCode a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
+    vs:term_status "stable" .in an oriented relation
 
 era:bidirectional a owl:DatatypeProperty ;
     rdfs:label "bidirectional"@en ;
