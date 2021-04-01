@@ -415,6 +415,14 @@ era:vehicleKeeper a owl:ObjectProperty ;
     dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
 
+era:elementPart a owl:ObjectProperty ;
+    rdfs:label "element part"@en ;
+    rdfs:comment "References the object of a higher granularity level which contains a given object."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-04-23"^^xsd:date ;
+    dct:modified "2021-04-23"^^xsd:date ;
+    vs:term_status "stable" .
+
 #################################################################
 #
 #    Data properties
