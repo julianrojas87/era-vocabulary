@@ -67,6 +67,24 @@ era: a owl:Ontology ;
 
 ######## Topology #########
 
+era:NetElement a owl:Class ;
+    rdfs:label "Net Element"@en ;
+    rdfs:comment "Base class for defining nodes in the connectivity graph representing the topological network."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:seeAlso "http://wiki.railtopomodel.org/index.php?title=Main_Page" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:NetRelation a owl:Class ;
+    rdfs:label "Net Relation"@en ;
+    rdfs:comment "Base class for defining edges in the connectivity graph representing the topological network."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:seeAlso "http://wiki.railtopomodel.org/index.php?title=Main_Page" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
 era:MicroNode a owl:Class ;
     rdfs:label "Micro Node"@en ;
     rdfs:comment "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."@en ;
@@ -158,6 +176,15 @@ era:Vehicle a owl:Class ;
     rdfs:isDefinedBy era: ;
     dct:created "2020-11-22"^^xsd:date ;
     dct:modified "2020-11-22"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:Signal a owl:Class ;
+    rdfs:label "Signal"@en ;
+    rdfs:comment "A railway signal is an installation next to the railway track for signalling the maximum allowed speed in the next block section to the train driver."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:seeAlso "https://wiki3.railml.org/DataModel/3.1/IS/" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
 ######## Others #########
@@ -417,8 +444,18 @@ era:vehicleKeeper a owl:ObjectProperty ;
 
 era:elementPart a owl:ObjectProperty ;
     rdfs:label "element part"@en ;
-    rdfs:comment "References the object of a higher granularity level which contains a given object."@en ;
+    rdfs:comment "References the topology object of a higher-granularity level which contains a lower-granularity topology object."@en ;
     rdfs:isDefinedBy era: ;
+    dct:created "2021-04-23"^^xsd:date ;
+    dct:modified "2021-04-23"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasSignal a owl:ObjectProperty ;
+    rdfs:label "has signal"@en ;
+    rdfs:comment "References a signal associated with a topology object."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range era:Signal ;
     dct:created "2021-04-23"^^xsd:date ;
     dct:modified "2021-04-23"^^xsd:date ;
     vs:term_status "stable" .
