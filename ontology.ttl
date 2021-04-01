@@ -40,7 +40,7 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
-@prefix era-nv: <http://era.europa.eu/concepts/navigability#> .
+@prefix era-nv: <http://era.europa.eu/concepts/navigabilities#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
