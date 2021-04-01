@@ -65,7 +65,7 @@ era: a owl:Ontology ;
 #
 #################################################################
 
-######## Abstraction Layer #########
+######## Topology #########
 
 era:MicroNode a owl:Class ;
     rdfs:label "Micro Node"@en ;
@@ -109,7 +109,7 @@ era:LineReference a owl:Class ;
     vs:term_status "stable" .
 
 
-######## Implementation Layer #########
+######## Functional Infrastructure #########
 
 era:LineNationalId a owl:Class ;
     rdfs:label "Line National Id"@en ;
@@ -453,24 +453,13 @@ era:bidirectional a owl:DatatypeProperty ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
-era:tunnelLength a owl:DatatypeProperty ;
-    rdfs:label "tunnel length"@en ;
-    rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
+era:length a owl:DatatypeProperty ;
+    rdfs:label "length"@en ;
+    rdfs:comment "Length of a physical object."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Tunnel ;
     rdfs:range xsd:double ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:trackLength a owl:DatatypeProperty ;
-    rdfs:label "track length"@en ;
-    rdfs:comment "Distance in kilometers between operational points at start and end of a track."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range xsd:double ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
 era:alternativeName a owl:DatatypeProperty ;
