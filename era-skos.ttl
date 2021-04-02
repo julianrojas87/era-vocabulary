@@ -34,6 +34,7 @@
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
 @prefix era-nv: <http://era.europa.eu/concepts/navigabilities#> .
+@prefix era-pos: <http://era.europa.eu/concepts/relation-positions#> .
 
 era-skos: a skos:ConceptScheme, owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
@@ -225,6 +226,12 @@ era-nv:Navigability a owl:Class ;
     skos:inScheme era-skos: ;
     rdfs:label "Navigability"@en ;
     rdfs:comment "Abstract class representing types of navigability"@en .
+
+era-pos:RelationPosition a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    skos:inScheme era-skos: ;
+    rdfs:label "Relation Position"@en ;
+    rdfs:comment "Abstract class representing relation positions of topological objects"@en .
 
 
 #################################################################
@@ -4920,3 +4927,13 @@ era-nv:Both a era-nv:Navigability;
 era-nv:None a era-nv:Navigability;
   skos:prefLabel "None"@en;
   skos:definition "No navigation possible between elements A and B"@en.
+
+  ########## Relation Positions ##########
+
+  era-pos:Start a era-pos:RelationPosition;
+    skos:prefLabel "Start"@en;
+    skos:definition "The topological object starts from where the relation takes place"@en.
+
+  era-pos:End a era-pos:RelationPosition;
+    skos:prefLabel "End"@en;
+    skos:definition "The topological object ends where the relation takes place"@en.

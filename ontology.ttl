@@ -41,6 +41,7 @@
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
 @prefix era-nv: <http://era.europa.eu/concepts/navigabilities#> .
+@prefix era-pos: <http://era.europa.eu/concepts/relation-positions#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
@@ -426,6 +427,26 @@ era:netElement a owl:ObjectProperty ;
     rdfs:range era:NetElement ;
     dct:created "2021-04-01"^^xsd:date ;
     dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:positionOnA a owl:ObjectProperty ;
+    rdfs:label "position on A"@en ;
+    rdfs:comment "Determines the position of the topological object A in a relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation;
+    rdfs:range era-pos:RelationPoisition ;
+    dct:created "2021-04-03"^^xsd:date ;
+    dct:modified "2021-04-03"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:positionOnB a owl:ObjectProperty ;
+    rdfs:label "position on B"@en ;
+    rdfs:comment "Determines the position of the topological object B in a relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation;
+    rdfs:range era-pos:RelationPoisition ;
+    dct:created "2021-04-03"^^xsd:date ;
+    dct:modified "2021-04-03"^^xsd:date ;
     vs:term_status "stable" .
 
 
