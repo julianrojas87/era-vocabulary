@@ -6,7 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix era: <http://era.europa.eu/ns#> .
-@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
+@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary-v2-alpha/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-vehicle-types: <http://era.europa.eu/concepts/vehicle-types#> .
 @prefix era-lc: <http://era.europa.eu/concepts/load-capabilities#> .

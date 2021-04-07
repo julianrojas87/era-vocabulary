@@ -11,7 +11,7 @@
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix eu-countries: <http://publications.europa.eu/resource/authority/country/> .
-@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
+@prefix era-skos: <http://era.ilabt.imec.be/era-vocabulary-v2-alpha/era-skos#> . # TODO: Fix for proper URI in ERA domain that dereferences
 @prefix era: <http://era.europa.eu/ns#> .
 @prefix era-op-types: <http://era.europa.eu/concepts/op-types#> .
 @prefix era-lni: <http://era.europa.eu/concepts/line-national-ids#> .
