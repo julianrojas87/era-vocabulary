@@ -249,10 +249,97 @@
     } ]
   } ]
 }, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/axle-positions#AxlePosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/emergency-braking-profiles#EmergencyBrakingProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/energy-supply-systems#EnergySupplySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/etcs-system-compatibilities#ETCSSystemCompatibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/gauge-changeover-facilities#GaugeChangeoverFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/gaugings#GaugingProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/ice-conditions#IceCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/legacy-radio-systems#LegacyRadioSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/load-capabilities#LoadCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/max-speed-cant-deficiency#MaxSpeedCantDeficiency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://era.europa.eu/concepts/navigabilities#Navigability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://era.europa.eu/concepts/op-types#OperationalPointType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/pantograph-heads#PantographHead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/platform-heights#PlatformHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/rail-inclinations#RailInclination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://era.europa.eu/concepts/relation-positions#RelationPoisition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/restrictions#Restriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/rolling-stock-fire#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/train-detection#FrenchTrainDetectionSystemLimitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/train-detection#TrainDetectionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/vehicle-types#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://era.europa.eu/concepts/vehicle-types#SubCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://era.europa.eu/ns#",
@@ -298,7 +385,7 @@
     "@value" : "ERA vocabulary"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://era.ilabt.imec.be/era-vocabulary/era-skos#"
+    "@id" : "http://era.ilabt.imec.be/era-vocabulary-v2-alpha/era-skos#"
   }, {
     "@id" : "http://www.opengis.net/ont/geosparql#"
   }, {
@@ -5689,6 +5776,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
