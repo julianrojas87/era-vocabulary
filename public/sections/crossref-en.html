@@ -4,9 +4,6 @@ This section provides details for each class and property defined by ERA vocabul
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
-      </li>
-      <li>
          <a href="#LineNationalId" title="http://era.europa.eu/ns#LineNationalId">Line National Id</a>
       </li>
       <li>
@@ -16,19 +13,22 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#Manufacturer" title="http://era.europa.eu/ns#Manufacturer">Manufacturer</a>
       </li>
       <li>
-         <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
+         <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
       </li>
       <li>
-         <a href="#MicroNode" title="http://era.europa.eu/ns#MicroNode">Micro Node</a>
-      </li>
-      <li>
-         <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
+         <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
       </li>
       <li>
          <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
+      </li>
+      <li>
+         <a href="#SectionOfLine" title="http://era.europa.eu/ns#SectionOfLine">Section Of Line</a>
+      </li>
+      <li>
+         <a href="#Signal" title="http://era.europa.eu/ns#Signal">Signal</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
@@ -50,27 +50,6 @@ This section provides details for each class and property defined by ERA vocabul
          <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
       </li>
    </ul>
-   <div class="entity" id="InternalNodeLink">
-      <h3>Internal Node Link<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#InternalNodeLink</p>
-      <div class="comment">
-         <span class="markdown">A specific track abstraction used to represent a micro link switch that is possible inside a micro node.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-   </div>
    <div class="entity" id="LineNationalId">
       <h3>Line National Id<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -165,36 +144,15 @@ This section provides details for each class and property defined by ERA vocabul
          </dd>
       </dl>
    </div>
-   <div class="entity" id="MicroLink">
-      <h3>Micro Link<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="NetElement">
+      <h3>Net Element<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#MicroLink</p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#NetElement</p>
       <div class="comment">
-         <span class="markdown">An abstraction of a track that represents a physical rail connection between two different micro nodes.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-   </div>
-   <div class="entity" id="MicroNode">
-      <h3>Micro Node<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#MicroNode</p>
-      <div class="comment">
-         <span class="markdown">An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure.</span>
+         <span class="markdown">Base class for defining nodes in the connectivity graph representing the topological network.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -207,48 +165,51 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>stable</dd>
       </dl>
       <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#belongsToNode" title="http://era.europa.eu/ns#belongsToNode">belongs to node</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="NodePort">
-      <h3>Node Port<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#NodePort</p>
-      <div class="comment">
-         <span class="markdown">A port to enter or exit a micro node. Represents the connection between a micro link and a micro node.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</span>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#belongsToNode" title="http://era.europa.eu/ns#belongsToNode">belongs to node</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#endIntrinsicCoordinate" title="http://era.europa.eu/ns#endIntrinsicCoordinate">end intrinsic coordinate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#startIntrinsicCoordinate"
+               title="http://era.europa.eu/ns#startIntrinsicCoordinate">start intrinsic coordinate</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#endPort" title="http://era.europa.eu/ns#endPort">end port</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#startPort" title="http://era.europa.eu/ns#startPort">start port</a>
+            <a href="#elementA" title="http://era.europa.eu/ns#elementA">element A</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#elementB" title="http://era.europa.eu/ns#elementB">element B</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#netElement" title="http://era.europa.eu/ns#netElement">net element</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NetRelation">
+      <h3>Net Relation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#NetRelation</p>
+      <div class="comment">
+         <span class="markdown">Base class for defining edges in the connectivity graph representing the topological network.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#elementA" title="http://era.europa.eu/ns#elementA">element A</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#elementB" title="http://era.europa.eu/ns#elementB">element B</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#navigability" title="http://era.europa.eu/ns#navigability">navigability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#positionOnA" title="http://era.europa.eu/ns#positionOnA">position on A</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#positionOnB" title="http://era.europa.eu/ns#positionOnB">position on B</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -313,10 +274,59 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">SpatialThing</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has sub-classes</dt>
+      </dl>
+   </div>
+   <div class="entity" id="SectionOfLine">
+      <h3>Section Of Line<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#SectionOfLine</p>
+      <div class="comment">
+         <span class="markdown">A section of line means the part of line between adjacent operational points and may consist of several tracks.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
          <dd>
-            <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="Signal">
+      <h3>Signal<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#Signal</p>
+      <div class="comment">
+         <span class="markdown">A railway signal is an installation next to the railway track for signalling the maximum allowed speed in the next block section to the train driver.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isSwitchable" title="http://era.europa.eu/ns#isSwitchable">is switchable</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -445,7 +455,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#compatibilityProcedureDocument"
                title="http://era.europa.eu/ns#compatibilityProcedureDocument">structure check document</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#structureCheckLocation" title="http://era.europa.eu/ns#structureCheckLocation">structure check location</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#trainIntegrityOnBoardRequired"
                title="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">train integrity on-board required</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#pantographHead" title="http://era.europa.eu/ns#pantographHead">tsi pantograph head</a>
@@ -489,8 +498,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#rollingStockFireCategory"
                title="http://era.europa.eu/ns#rollingStockFireCategory">rolling stock fire category</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -674,9 +682,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
       </li>
       <li>
-         <a href="#belongsToNode" title="http://era.europa.eu/ns#belongsToNode">belongs to node</a>
-      </li>
-      <li>
          <a href="#brakeWeightPercentage" title="http://era.europa.eu/ns#brakeWeightPercentage">brake weight percentage</a>
       </li>
       <li>
@@ -692,13 +697,19 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#dataRadioCompatible" title="http://era.europa.eu/ns#dataRadioCompatible">data radio compatible</a>
       </li>
       <li>
+         <a href="#elementA" title="http://era.europa.eu/ns#elementA">element A</a>
+      </li>
+      <li>
+         <a href="#elementB" title="http://era.europa.eu/ns#elementB">element B</a>
+      </li>
+      <li>
+         <a href="#elementPart" title="http://era.europa.eu/ns#elementPart">element part</a>
+      </li>
+      <li>
          <a href="#emergencyBrake" title="http://era.europa.eu/ns#emergencyBrake">emergency braking</a>
       </li>
       <li>
          <a href="#endLocation" title="http://era.europa.eu/ns#endLocation">end location</a>
-      </li>
-      <li>
-         <a href="#endPort" title="http://era.europa.eu/ns#endPort">end port</a>
       </li>
       <li>
          <a href="#energySupplySystem" title="http://era.europa.eu/ns#energySupplySystem">energy supply system</a>
@@ -724,6 +735,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#hasImplementation" title="http://era.europa.eu/ns#hasImplementation">has implementation</a>
+      </li>
+      <li>
+         <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
       </li>
       <li>
          <a href="#hasTrack" title="http://era.europa.eu/ns#hasTrack">has track</a>
@@ -760,6 +774,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
       </li>
       <li>
+         <a href="#navigability" title="http://era.europa.eu/ns#navigability">navigability</a>
+      </li>
+      <li>
+         <a href="#netElement" title="http://era.europa.eu/ns#netElement">net element</a>
+      </li>
+      <li>
          <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
       </li>
       <li>
@@ -770,6 +790,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#platformHeight" title="http://era.europa.eu/ns#platformHeight">platform height</a>
+      </li>
+      <li>
+         <a href="#positionOnA" title="http://era.europa.eu/ns#positionOnA">position on A</a>
+      </li>
+      <li>
+         <a href="#positionOnB" title="http://era.europa.eu/ns#positionOnB">position on B</a>
       </li>
       <li>
          <a href="#protectionLegacySystem" title="http://era.europa.eu/ns#protectionLegacySystem">protection legacy system</a>
@@ -790,9 +816,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
-      </li>
-      <li>
-         <a href="#startPort" title="http://era.europa.eu/ns#startPort">start port</a>
       </li>
       <li>
          <a href="#thermalCapacityTSIReference"
@@ -927,41 +950,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/axle-positions#AxlePosition">axle position</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="belongsToNode">
-      <h3>belongs to node<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#belongsToNode</p>
-      <div class="comment">
-         <span class="markdown">Indicates the micro node that a node port belongs to.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MicroNode" title="http://era.europa.eu/ns#MicroNode">Micro Node</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1147,6 +1135,97 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="elementA">
+      <h3>element A<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#elementA</p>
+      <div class="comment">
+         <span class="markdown">References the first topological object in an oriented relation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="elementB">
+      <h3>element B<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#elementB</p>
+      <div class="comment">
+         <span class="markdown">References the second topological object in an oriented relation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="elementPart">
+      <h3>element part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#elementPart</p>
+      <div class="comment">
+         <span class="markdown">References the topology object of a higher-granularity level which contains a lower-granularity topology object.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
    <div class="entity" id="emergencyBrake">
       <h3>emergency braking<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1220,44 +1299,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <span class="dotted" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</span> 
                <span class="logic">or</span> 
                <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="endPort">
-      <h3>end port<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#endPort</p>
-      <div class="comment">
-         <span class="markdown">Reference to the ending operational point's node port of a micro link or an internal node link.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1504,22 +1545,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#MicroNode" title="http://era.europa.eu/ns#MicroNode">Micro Node</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasImplementation" title="http://era.europa.eu/ns#hasImplementation">has implementation</a>
@@ -1550,26 +1575,45 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#MicroNode" title="http://era.europa.eu/ns#MicroNode">Micro Node</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasAbstraction" title="http://era.europa.eu/ns#hasAbstraction">has abstraction</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSignal">
+      <h3>has signal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#hasSignal</p>
+      <div class="comment">
+         <span class="markdown">References a signal associated with a topology object.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Signal" title="http://era.europa.eu/ns#Signal">Signal</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1906,6 +1950,72 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="navigability">
+      <h3>navigability<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#navigability</p>
+      <div class="comment">
+         <span class="markdown">Indicates the navigation possibilities between two related topological objects.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/navigabilities#Navigability">navigability</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="netElement">
+      <h3>net element<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#netElement</p>
+      <div class="comment">
+         <span class="markdown">References an associated topological object.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="opType">
       <h3>operational point type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2042,6 +2152,78 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <span class="dotted"
                      title="http://era.europa.eu/concepts/platform-heights#PlatformHeight">platform height</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="positionOnA">
+      <h3>position on A<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#positionOnA</p>
+      <div class="comment">
+         <span class="markdown">Determines the position of the topological object A in a relation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/relation-positions#RelationPoisition">relation poisition</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="positionOnB">
+      <h3>position on B<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#positionOnB</p>
+      <div class="comment">
+         <span class="markdown">Determines the position of the topological object B in a relation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://era.europa.eu/concepts/relation-positions#RelationPoisition">relation poisition</span>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2264,44 +2446,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <span class="dotted" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</span> 
                <span class="logic">or</span> 
                <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="startPort">
-      <h3>start port<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#startPort</p>
-      <div class="comment">
-         <span class="markdown">Reference to the starting operational point's node port of a micro link or an internal node link.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2678,9 +2822,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://era.europa.eu/ns#automaticDroppingDeviceRequired">automatic dropping device required</a>
       </li>
       <li>
-         <a href="#bidirectional" title="http://era.europa.eu/ns#bidirectional">bidirectional</a>
-      </li>
-      <li>
          <a href="#cantDeficiency" title="http://era.europa.eu/ns#cantDeficiency">cant deficiency</a>
       </li>
       <li>
@@ -2743,6 +2884,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <li>
          <a href="#emergencyOnlyMagneticBraking"
             title="http://era.europa.eu/ns#emergencyOnlyMagneticBraking">emergency only magnetic braking</a>
+      </li>
+      <li>
+         <a href="#endIntrinsicCoordinate" title="http://era.europa.eu/ns#endIntrinsicCoordinate">end intrinsic coordinate</a>
       </li>
       <li>
          <a href="#energySupplySystemTSICompliant"
@@ -2811,7 +2955,16 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#isQuietRoute" title="http://era.europa.eu/ns#isQuietRoute">is quiet route</a>
       </li>
       <li>
+         <a href="#isSwitchable" title="http://era.europa.eu/ns#isSwitchable">is switchable</a>
+      </li>
+      <li>
          <a href="#kilometer" title="http://era.europa.eu/ns#kilometer">kilometer</a>
+      </li>
+      <li>
+         <a href="#length" title="http://era.europa.eu/ns#length">length</a>
+      </li>
+      <li>
+         <a href="#linearCoordinate" title="http://era.europa.eu/ns#linearCoordinate">linear coordinate</a>
       </li>
       <li>
          <a href="#magneticBrakePrevention" title="http://era.europa.eu/ns#magneticBrakePrevention">magnetic brake prevention</a>
@@ -2904,8 +3057,15 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
       </li>
       <li>
+         <a href="#relativePosition" title="http://era.europa.eu/ns#relativePosition">relative position</a>
+      </li>
+      <li>
          <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
             title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantographs in contact with OCL</a>
+      </li>
+      <li>
+         <a href="#startIntrinsicCoordinate"
+            title="http://era.europa.eu/ns#startIntrinsicCoordinate">start intrinsic coordinate</a>
       </li>
       <li>
          <a href="#staticAxleLoadWorkingOrder"
@@ -2942,17 +3102,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#thermalCapacityTime" title="http://era.europa.eu/ns#thermalCapacityTime">thermal capacity time</a>
       </li>
       <li>
-         <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
-      </li>
-      <li>
          <a href="#trainIntegrityOnBoardRequired"
             title="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">train integrity on-board required</a>
       </li>
       <li>
          <a href="#tsiCompliant" title="http://era.europa.eu/ns#tsiCompliant">tsi compliant</a>
-      </li>
-      <li>
-         <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
       </li>
       <li>
          <a href="#typeVersionNumber" title="http://era.europa.eu/ns#typeVersionNumber">type version number</a>
@@ -3078,43 +3232,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has domain</dt>
             <dd>
                <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="bidirectional">
-      <h3>bidirectional<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#bidirectional</p>
-      <div class="comment">
-         <span class="markdown">Indicates if a micro link or an internal node link can be traversed in both directions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3701,6 +3818,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="endIntrinsicCoordinate">
+      <h3>end intrinsic coordinate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#endIntrinsicCoordinate</p>
+      <div class="comment">
+         <span class="markdown">Indicates the coordinate point where a linear object ends.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
             </dd>
          </dl>
       </div>
@@ -4320,6 +4471,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="isSwitchable">
+      <h3>is switchable<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#isSwitchable</p>
+      <div class="comment">
+         <span class="markdown">Indicates if a signal can be swithed to show different messages or if it is a static panel.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Signal" title="http://era.europa.eu/ns#Signal">Signal</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="kilometer">
       <h3>kilometer<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -4328,7 +4513,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#kilometer</p>
       <div class="comment">
-         <span class="markdown">Distance measured from the origin of a national railway line.</span>
+         <span class="markdown">Distance measured in kilometers from the origin of a national railway line.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -4347,6 +4532,64 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <a href="#LineReference" title="http://era.europa.eu/ns#LineReference">Line Reference</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="length">
+      <h3>length<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#length</p>
+      <div class="comment">
+         <span class="markdown">Length of a physical object.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="linearCoordinate">
+      <h3>linear coordinate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#linearCoordinate</p>
+      <div class="comment">
+         <span class="markdown">Indicates the position of an object within a linear positioning system. For example, relative to a national railway line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
@@ -5262,6 +5505,35 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="relativePosition">
+      <h3>relative position<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#relativePosition</p>
+      <div class="comment">
+         <span class="markdown">Indicates the position of an object relative to the linear coordinates of the associated topological object.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="shortestDistanceBetweenPantographsInContactWithOCL">
       <h3>shortest distance between pantographs in contact with OCL<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -5287,6 +5559,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has domain</dt>
             <dd>
                <a href="#VehicleType" title="http://era.europa.eu/ns#VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="startIntrinsicCoordinate">
+      <h3>start intrinsic coordinate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://era.europa.eu/ns#startIntrinsicCoordinate</p>
+      <div class="comment">
+         <span class="markdown">Indicates the coordinate point where a linear object begins.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5636,40 +5942,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="trackLength">
-      <h3>track length<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#trackLength</p>
-      <div class="comment">
-         <span class="markdown">Distance in kilometers between operational points at start and end of a track.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Track" title="http://era.europa.eu/ns#Track">Track</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="trainIntegrityOnBoardRequired">
       <h3>train integrity on-board required<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -5729,40 +6001,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="tunnelLength">
-      <h3>tunnel length<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://era.europa.eu/ns#tunnelLength</p>
-      <div class="comment">
-         <span class="markdown">Length of a tunnel meassured in kilometers.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://era.europa.eu/ns#">http://era.europa.eu/ns#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Tunnel" title="http://era.europa.eu/ns#Tunnel">Tunnel</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
             </dd>
          </dl>
       </div>

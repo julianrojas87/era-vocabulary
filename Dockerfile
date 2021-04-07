@@ -8,7 +8,7 @@ RUN mkdir -p /opt/era-vocabulary
 WORKDIR /opt/era-vocabulary
 # Copy source files
 COPY . .
-# Create output folde
+# Create output folder
 RUN mkdir public
 # Execute WIDOCO
 RUN ./generate-docs.sh

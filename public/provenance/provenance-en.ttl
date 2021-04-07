@@ -4,17 +4,17 @@
 <..\index-en.html> a prov:Entity;
 	 dc:title "ERA vocabulary";
 	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo <https://dylanvanassche.be/#me>;
+	 dc:contributor <https://dylanvanassche.be/#me>;
 	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://pietercolpaert.be/#me>;
+	 dc:contributor <https://pietercolpaert.be/#me>;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
-	 prov:wasAttributedTo :agent4;
-	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:wasGeneratedAt "2020-03-15";
+	 prov:wasGeneratedAt "2020-04-07";
 .
 :agent0 a prov:Agent; foaf:name "Julián Rojas".
-:agent1 a prov:Agent; foaf:name "Dylan Van Assche".
-:agent2 a prov:Agent; foaf:name "Ivaylo Velitchkov".
-:agent3 a prov:Agent; foaf:name "Marina Aguado".
-:agent4 a prov:Agent; foaf:name "Pieter Colpaert".
-:agent5 a prov:Agent; foaf:name "Polymnia Vasilopoulou".
+:agent1 a prov:Agent; foaf:name "Ivaylo Velitchkov".
+:agent2 a prov:Agent; foaf:name "Pieter Colpaert".
+:agent3 a prov:Agent; foaf:name "Polymnia Vasilopoulou".

@@ -40,22 +40,24 @@
 @prefix era-tpls: <http://era.europa.eu/concepts/train-protection-legacy-systems#> .
 @prefix era-lrs: <http://era.europa.eu/concepts/legacy-radio-systems#> .
 @prefix era-rc: <http://era.europa.eu/concepts/restrictions#> .
+@prefix era-nv: <http://era.europa.eu/concepts/navigabilities#> .
+@prefix era-pos: <http://era.europa.eu/concepts/relation-positions#> .
 
 era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2021-03-15"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
     dct:contributor "Ivaylo Velitchkov" ;
     dct:contributor "Polymnia Vasilopoulou" ;
     dct:contributor "Marina Aguado" ;
-    dct:contributor "Dylan Van Assche" ;
-    dct:contributor "Pieter Colpaert" ;
+    dct:contributor <https://dylanvanassche.be/#me> ;
+    dct:contributor <https://pietercolpaert.be/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v1.2.1" ;
+    owl:versionInfo "v2.0.0-alpha" ;
     owl:imports schema:, era-skos:, eu-countries:, wgs:, geosparql: .
 
 
@@ -65,39 +67,34 @@ era: a owl:Ontology ;
 #
 #################################################################
 
-######## Abstraction Layer #########
+######## Topology #########
 
-era:MicroNode a owl:Class ;
-    rdfs:label "Micro Node"@en ;
-    rdfs:comment "An abstraction of an operational point, used to provide a simple topological description of the railway infrastructure."@en ;
+era:NetElement a owl:Class ;
+    rdfs:label "Net Element"@en ;
+    rdfs:comment "Base class for defining nodes in the connectivity graph representing the topological network."@en ;
     rdfs:isDefinedBy era: ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    rdfs:seeAlso "http://wiki.railtopomodel.org/index.php?title=Main_Page" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
-era:MicroLink a owl:Class ;
-    rdfs:label "Micro Link"@en ;
-    rdfs:comment "An abstraction of a track that represents a physical rail connection between two different micro nodes."@en ;
+era:NetRelation a owl:Class ;
+    rdfs:label "Net Relation"@en ;
+    rdfs:comment "Base class for defining edges in the connectivity graph representing the topological network."@en ;
     rdfs:isDefinedBy era: ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    rdfs:seeAlso "http://wiki.railtopomodel.org/index.php?title=Main_Page" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
-era:NodePort a owl:Class ;
-    rdfs:subClassOf geosparql:Geometry, wgs:Point;
-    rdfs:label "Node Port"@en ;
-    rdfs:comment "A port to enter or exit a micro node. Represents the connection between a micro link and a micro node."@en ;
-    rdfs:isDefinedBy era: ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
+######## Functional Infrastructure #########
 
-era:InternalNodeLink a owl:Class ;
-    rdfs:label "Internal Node Link"@en ;
-    rdfs:comment "A specific track abstraction used to represent a micro link switch that is possible inside a micro node."@en ;
+era:LineNationalId a owl:Class ;
+    rdfs:label "Line National Id"@en ;
+    rdfs:comment "Unique line identification within a member state."@en ;
     rdfs:isDefinedBy era: ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:created "2021-01-25"^^xsd:date ;
+    dct:modified "2021-01-25"^^xsd:date ;
     vs:term_status "stable" .
 
 era:LineReference a owl:Class ;
@@ -108,24 +105,21 @@ era:LineReference a owl:Class ;
     dct:modified "2021-01-29"^^xsd:date ;
     vs:term_status "stable" .
 
-
-######## Implementation Layer #########
-
-era:LineNationalId a owl:Class ;
-    rdfs:label "Line National Id"@en ;
-    rdfs:comment "Unique line identification within a member state."@en ;
-    rdfs:isDefinedBy era: ;
-    dct:created "2021-01-25"^^xsd:date ;
-    dct:modified "2021-01-25"^^xsd:date ;
-    vs:term_status "stable" .
-
 era:OperationalPoint a owl:Class ;
     rdfs:label "Operational Point"@en ;
     rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:subClassOf geosparql:Feature, wgs:SpatialThing ; #geonames:Feature;
+    rdfs:subClassOf geosparql:Feature, wgs:SpatialThing ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2020-09-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:SectionOfLine a owl:Class ;
+    rdfs:label "Section Of Line"@en ;
+    rdfs:comment "A section of line means the part of line between adjacent operational points and may consist of several tracks."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-04-02"^^xsd:date ;
+    dct:modified "2021-04-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:Track a owl:Class ;
@@ -160,6 +154,15 @@ era:Vehicle a owl:Class ;
     dct:modified "2020-11-22"^^xsd:date ;
     vs:term_status "stable" .
 
+era:Signal a owl:Class ;
+    rdfs:label "Signal"@en ;
+    rdfs:comment "A railway signal is an installation next to the railway track for signalling the maximum allowed speed in the next block section to the train driver."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:seeAlso "https://wiki3.railml.org/DataModel/3.1/IS/" ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
 ######## Others #########
 
 era:Manufacturer a owl:Class ;
@@ -191,14 +194,8 @@ era:hasImplementation a owl:ObjectProperty ;
     rdfs:label "has implementation"@en ;
     rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:MicroNode era:MicroLink )
-                ] ;
-    rdfs:range  [ a owl:Class ;
-                  owl:unionOf ( era:OperationalPoint era:Track )
-                ] ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2021-04-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasAbstraction a owl:ObjectProperty ;
@@ -206,14 +203,8 @@ era:hasAbstraction a owl:ObjectProperty ;
     rdfs:label "has abstraction"@en ;
     rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:OperationalPoint era:Track )
-                ] ;
-    rdfs:range  [ a owl:Class ;
-                  owl:unionOf ( era:MicroNode era:MicroLink )
-                ] ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2021-04-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:opType a owl:ObjectProperty ;
@@ -242,40 +233,6 @@ era:lineReference a owl:ObjectProperty ;
     rdfs:range era:LineReference ;
     dct:created "2021-01-29"^^xsd:date ;
     dct:modified "2021-01-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:startPort a owl:ObjectProperty ;
-    rdfs:label "start port"@en ;
-    rdfs:comment "Reference to the starting operational point's node port of a micro link or an internal node link."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
-                ] ;
-    rdfs:range era:NodePort ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:endPort a owl:ObjectProperty ;
-    rdfs:label "end port"@en ;
-    rdfs:comment "Reference to the ending operational point's node port of a micro link or an internal node link."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
-                ] ;
-    rdfs:range era:NodePort ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:belongsToNode a owl:ObjectProperty ;
-    rdfs:label "belongs to node"@en ;
-    rdfs:comment "Indicates the micro node that a node port belongs to."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:NodePort ;
-    rdfs:range era:MicroNode ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-09-01"^^xsd:date ;
     vs:term_status "stable" .
 
 era:startLocation a owl:ObjectProperty ;
@@ -415,6 +372,84 @@ era:vehicleKeeper a owl:ObjectProperty ;
     dct:modified "2020-11-23"^^xsd:date ;
     vs:term_status "stable" .
 
+era:elementPart a owl:ObjectProperty ;
+    rdfs:label "element part"@en ;
+    rdfs:comment "References the topology object of a higher-granularity level which contains a lower-granularity topology object."@en ;
+    rdfs:isDefinedBy era: ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:hasSignal a owl:ObjectProperty ;
+    rdfs:label "has signal"@en ;
+    rdfs:comment "References a signal associated with a topology object."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range era:Signal ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:elementA a owl:ObjectProperty ;
+    rdfs:label "element A"@en ;
+    rdfs:comment "References the first topological object in an oriented relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era:NetElement ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:elementB a owl:ObjectProperty ;
+    rdfs:label "element B"@en ;
+    rdfs:comment "References the second topological object in an oriented relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era:NetElement ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:navigability a owl:ObjectProperty ;
+    rdfs:label "navigability"@en ;
+    rdfs:comment "Indicates the navigation possibilities between two related topological objects."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation ;
+    rdfs:range era-nv:Navigability ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:netElement a owl:ObjectProperty ;
+    rdfs:label "net element"@en ;
+    rdfs:comment "References an associated topological object."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:range era:NetElement ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:positionOnA a owl:ObjectProperty ;
+    rdfs:label "position on A"@en ;
+    rdfs:comment "Determines the position of the topological object A in a relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation;
+    rdfs:range era-pos:RelationPoisition ;
+    dct:created "2021-04-03"^^xsd:date ;
+    dct:modified "2021-04-03"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:positionOnB a owl:ObjectProperty ;
+    rdfs:label "position on B"@en ;
+    rdfs:comment "Determines the position of the topological object B in a relation."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetRelation;
+    rdfs:range era-pos:RelationPoisition ;
+    dct:created "2021-04-03"^^xsd:date ;
+    dct:modified "2021-04-03"^^xsd:date ;
+    vs:term_status "stable" .
+
+
 #################################################################
 #
 #    Data properties
@@ -441,36 +476,13 @@ era:tafTAPCode a owl:DatatypeProperty ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
-era:bidirectional a owl:DatatypeProperty ;
-    rdfs:label "bidirectional"@en ;
-    rdfs:comment "Indicates if a micro link or an internal node link can be traversed in both directions."@en ;
+era:length a owl:DatatypeProperty ;
+    rdfs:label "length"@en ;
+    rdfs:comment "Length of a physical object."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:MicroLink era:InternalNodeLink )
-                ] ;
-    rdfs:range xsd:boolean ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:tunnelLength a owl:DatatypeProperty ;
-    rdfs:label "tunnel length"@en ;
-    rdfs:comment "Length of a tunnel meassured in kilometers."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Tunnel ;
     rdfs:range xsd:double ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
-
-era:trackLength a owl:DatatypeProperty ;
-    rdfs:label "track length"@en ;
-    rdfs:comment "Distance in kilometers between operational points at start and end of a track."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
-    rdfs:range xsd:double ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
 era:alternativeName a owl:DatatypeProperty ;
@@ -524,12 +536,60 @@ era:vehicleSeries a owl:DatatypeProperty ;
 
 era:kilometer a owl:DatatypeProperty ;
     rdfs:label "kilometer"@en ;
-    rdfs:comment "Distance measured from the origin of a national railway line."@en ;
+    rdfs:comment "Distance measured in kilometers from the origin of a national railway line."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:LineReference ;
     rdfs:range xsd:double ;
     dct:created "2021-01-29"^^xsd:date ;
     dct:modified "2021-01-29"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:startIntrinsicCoordinate a owl:DatatypeProperty ;
+    rdfs:label "start intrinsic coordinate"@en ;
+    rdfs:comment "Indicates the coordinate point where a linear object begins."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:endIntrinsicCoordinate a owl:DatatypeProperty ;
+    rdfs:label "end intrinsic coordinate"@en ;
+    rdfs:comment "Indicates the coordinate point where a linear object ends."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:isSwitchable a owl:DatatypeProperty ;
+    rdfs:label "is switchable"@en ;
+    rdfs:comment "Indicates if a signal can be swithed to show different messages or if it is a static panel."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:domain era:Signal ;
+    rdfs:range xsd:boolean ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:relativePosition a owl:DatatypeProperty ;
+    rdfs:label "relative position"@en ;
+    rdfs:comment "Indicates the position of an object relative to the linear coordinates of the associated topological object."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
+    vs:term_status "stable" .
+
+era:linearCoordinate a owl:DatatypeProperty ;
+    rdfs:label "linear coordinate"@en ;
+    rdfs:comment "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."@en ;
+    rdfs:isDefinedBy era: ;
+    rdfs:range xsd:double ;
+    dct:created "2021-04-01"^^xsd:date ;
+    dct:modified "2021-04-01"^^xsd:date ;
     vs:term_status "stable" .
 
 

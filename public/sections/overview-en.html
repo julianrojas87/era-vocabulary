@@ -4,9 +4,6 @@ This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
-      <a href="#InternalNodeLink" title="http://era.europa.eu/ns#InternalNodeLink">Internal Node Link</a>
-   </li>
-   <li>
       <a href="#LineNationalId" title="http://era.europa.eu/ns#LineNationalId">Line National Id</a>
    </li>
    <li>
@@ -16,19 +13,22 @@ This ontology has the following classes and properties.</span>
       <a href="#Manufacturer" title="http://era.europa.eu/ns#Manufacturer">Manufacturer</a>
    </li>
    <li>
-      <a href="#MicroLink" title="http://era.europa.eu/ns#MicroLink">Micro Link</a>
+      <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
    </li>
    <li>
-      <a href="#MicroNode" title="http://era.europa.eu/ns#MicroNode">Micro Node</a>
-   </li>
-   <li>
-      <a href="#NodePort" title="http://era.europa.eu/ns#NodePort">Node Port</a>
+      <a href="#NetRelation" title="http://era.europa.eu/ns#NetRelation">Net Relation</a>
    </li>
    <li>
       <a href="#OperationalPoint" title="http://era.europa.eu/ns#OperationalPoint">Operational Point</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">point</a>
+   </li>
+   <li>
+      <a href="#SectionOfLine" title="http://era.europa.eu/ns#SectionOfLine">Section Of Line</a>
+   </li>
+   <li>
+      <a href="#Signal" title="http://era.europa.eu/ns#Signal">Signal</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
@@ -61,9 +61,6 @@ This ontology has the following classes and properties.</span>
       <a href="#axleSpacing" title="http://era.europa.eu/ns#axleSpacing">axle spacing</a>
    </li>
    <li>
-      <a href="#belongsToNode" title="http://era.europa.eu/ns#belongsToNode">belongs to node</a>
-   </li>
-   <li>
       <a href="#brakeWeightPercentage" title="http://era.europa.eu/ns#brakeWeightPercentage">brake weight percentage</a>
    </li>
    <li>
@@ -79,13 +76,19 @@ This ontology has the following classes and properties.</span>
       <a href="#dataRadioCompatible" title="http://era.europa.eu/ns#dataRadioCompatible">data radio compatible</a>
    </li>
    <li>
+      <a href="#elementA" title="http://era.europa.eu/ns#elementA">element A</a>
+   </li>
+   <li>
+      <a href="#elementB" title="http://era.europa.eu/ns#elementB">element B</a>
+   </li>
+   <li>
+      <a href="#elementPart" title="http://era.europa.eu/ns#elementPart">element part</a>
+   </li>
+   <li>
       <a href="#emergencyBrake" title="http://era.europa.eu/ns#emergencyBrake">emergency braking</a>
    </li>
    <li>
       <a href="#endLocation" title="http://era.europa.eu/ns#endLocation">end location</a>
-   </li>
-   <li>
-      <a href="#endPort" title="http://era.europa.eu/ns#endPort">end port</a>
    </li>
    <li>
       <a href="#energySupplySystem" title="http://era.europa.eu/ns#energySupplySystem">energy supply system</a>
@@ -111,6 +114,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasImplementation" title="http://era.europa.eu/ns#hasImplementation">has implementation</a>
+   </li>
+   <li>
+      <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
    </li>
    <li>
       <a href="#hasTrack" title="http://era.europa.eu/ns#hasTrack">has track</a>
@@ -147,6 +153,12 @@ This ontology has the following classes and properties.</span>
          title="http://era.europa.eu/ns#maximumSpeedAndCantDeficiency">maximum speed and cant deficiency</a>
    </li>
    <li>
+      <a href="#navigability" title="http://era.europa.eu/ns#navigability">navigability</a>
+   </li>
+   <li>
+      <a href="#netElement" title="http://era.europa.eu/ns#netElement">net element</a>
+   </li>
+   <li>
       <a href="#opType" title="http://era.europa.eu/ns#opType">operational point type</a>
    </li>
    <li>
@@ -157,6 +169,12 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#platformHeight" title="http://era.europa.eu/ns#platformHeight">platform height</a>
+   </li>
+   <li>
+      <a href="#positionOnA" title="http://era.europa.eu/ns#positionOnA">position on A</a>
+   </li>
+   <li>
+      <a href="#positionOnB" title="http://era.europa.eu/ns#positionOnB">position on B</a>
    </li>
    <li>
       <a href="#protectionLegacySystem" title="http://era.europa.eu/ns#protectionLegacySystem">protection legacy system</a>
@@ -177,9 +195,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#startLocation" title="http://era.europa.eu/ns#startLocation">start location</a>
-   </li>
-   <li>
-      <a href="#startPort" title="http://era.europa.eu/ns#startPort">start port</a>
    </li>
    <li>
       <a href="#thermalCapacityTSIReference"
@@ -224,9 +239,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#automaticDroppingDeviceRequired"
          title="http://era.europa.eu/ns#automaticDroppingDeviceRequired">automatic dropping device required</a>
-   </li>
-   <li>
-      <a href="#bidirectional" title="http://era.europa.eu/ns#bidirectional">bidirectional</a>
    </li>
    <li>
       <a href="#cantDeficiency" title="http://era.europa.eu/ns#cantDeficiency">cant deficiency</a>
@@ -291,6 +303,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#emergencyOnlyMagneticBraking"
          title="http://era.europa.eu/ns#emergencyOnlyMagneticBraking">emergency only magnetic braking</a>
+   </li>
+   <li>
+      <a href="#endIntrinsicCoordinate" title="http://era.europa.eu/ns#endIntrinsicCoordinate">end intrinsic coordinate</a>
    </li>
    <li>
       <a href="#energySupplySystemTSICompliant"
@@ -359,7 +374,16 @@ This ontology has the following classes and properties.</span>
       <a href="#isQuietRoute" title="http://era.europa.eu/ns#isQuietRoute">is quiet route</a>
    </li>
    <li>
+      <a href="#isSwitchable" title="http://era.europa.eu/ns#isSwitchable">is switchable</a>
+   </li>
+   <li>
       <a href="#kilometer" title="http://era.europa.eu/ns#kilometer">kilometer</a>
+   </li>
+   <li>
+      <a href="#length" title="http://era.europa.eu/ns#length">length</a>
+   </li>
+   <li>
+      <a href="#linearCoordinate" title="http://era.europa.eu/ns#linearCoordinate">linear coordinate</a>
    </li>
    <li>
       <a href="#magneticBrakePrevention" title="http://era.europa.eu/ns#magneticBrakePrevention">magnetic brake prevention</a>
@@ -452,8 +476,15 @@ This ontology has the following classes and properties.</span>
          title="http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
    </li>
    <li>
+      <a href="#relativePosition" title="http://era.europa.eu/ns#relativePosition">relative position</a>
+   </li>
+   <li>
       <a href="#shortestDistanceBetweenPantographsInContactWithOCL"
          title="http://era.europa.eu/ns#shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantographs in contact with OCL</a>
+   </li>
+   <li>
+      <a href="#startIntrinsicCoordinate"
+         title="http://era.europa.eu/ns#startIntrinsicCoordinate">start intrinsic coordinate</a>
    </li>
    <li>
       <a href="#staticAxleLoadWorkingOrder"
@@ -490,17 +521,11 @@ This ontology has the following classes and properties.</span>
       <a href="#thermalCapacityTime" title="http://era.europa.eu/ns#thermalCapacityTime">thermal capacity time</a>
    </li>
    <li>
-      <a href="#trackLength" title="http://era.europa.eu/ns#trackLength">track length</a>
-   </li>
-   <li>
       <a href="#trainIntegrityOnBoardRequired"
          title="http://era.europa.eu/ns#trainIntegrityOnBoardRequired">train integrity on-board required</a>
    </li>
    <li>
       <a href="#tsiCompliant" title="http://era.europa.eu/ns#tsiCompliant">tsi compliant</a>
-   </li>
-   <li>
-      <a href="#tunnelLength" title="http://era.europa.eu/ns#tunnelLength">tunnel length</a>
    </li>
    <li>
       <a href="#typeVersionNumber" title="http://era.europa.eu/ns#typeVersionNumber">type version number</a>
