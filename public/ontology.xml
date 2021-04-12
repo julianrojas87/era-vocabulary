@@ -22,11 +22,11 @@
         <terms:author rdf:resource="https://julianrojas.org/#me"/>
         <terms:contributor rdf:resource="https://dylanvanassche.be/#me"/>
         <terms:contributor rdf:resource="https://pietercolpaert.be/#me"/>
-        <terms:contributor>Ivaylo Velitchkov</terms:contributor>
+        <terms:contributor>Ivo Velitchkov</terms:contributor>
         <terms:contributor>Marina Aguado</terms:contributor>
         <terms:contributor>Polymnia Vasilopoulou</terms:contributor>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-29</terms:issued>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-01</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-03</terms:modified>
         <terms:publisher>European Union Agency for Railways</terms:publisher>
         <terms:title xml:lang="en">ERA vocabulary</terms:title>
         <rdfs:comment xml:lang="en">Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it.</rdfs:comment>
@@ -45,13 +45,6 @@
      -->
 
 
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -101,27 +94,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
     
 
 
@@ -2907,213 +2879,10 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/axle-monitoring#AxleBearingMonitoring"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/axle-positions#AxlePosition -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/axle-positions#AxlePosition"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/brake-weight-percentages#BrakeWeightPercentage"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/contact-line-systems#ContactLineSystem"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/contact-strip-materials#ContactStripMaterial"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/emergency-braking-profiles#EmergencyBrakingProfile -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/emergency-braking-profiles#EmergencyBrakingProfile"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/energy-supply-systems#EnergySupplySystem -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/energy-supply-systems#EnergySupplySystem"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/etcs-system-compatibilities#ETCSSystemCompatibility -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/etcs-system-compatibilities#ETCSSystemCompatibility"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/gauge-changeover-facilities#GaugeChangeoverFacility -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/gauge-changeover-facilities#GaugeChangeoverFacility"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/gaugings#GaugingProfile -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/gaugings#GaugingProfile"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/gsmr-networks#GSMRNetwork"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/ice-conditions#IceCondition -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/ice-conditions#IceCondition"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/legacy-radio-systems#LegacyRadioSystem -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/legacy-radio-systems#LegacyRadioSystem"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/load-capabilities#LoadCapability -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/load-capabilities#LoadCapability"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/max-speed-cant-deficiency#MaxSpeedCantDeficiency -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/max-speed-cant-deficiency#MaxSpeedCantDeficiency"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/navigabilities#Navigability -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/navigabilities#Navigability"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/op-types#OperationalPointType -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/op-types#OperationalPointType"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/pantograph-heads#PantographHead -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/pantograph-heads#PantographHead"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/platform-heights#PlatformHeight -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/platform-heights#PlatformHeight"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/radio-system-compatibilities#RadioSystemCompatibility"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/rail-inclinations#RailInclination -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/rail-inclinations#RailInclination"/>
-    
-
-
     <!-- http://era.europa.eu/concepts/relation-positions#RelationPoisition -->
 
 
     <owl:Class rdf:about="http://era.europa.eu/concepts/relation-positions#RelationPoisition"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/restrictions#Restriction -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/restrictions#Restriction"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/rolling-stock-fire#Category -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/rolling-stock-fire#Category"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/thermal-capacity#ThermalCapacityTSIReference"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#FrenchTrainDetectionSystemLimitation -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/train-detection#FrenchTrainDetectionSystemLimitation"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-detection#TrainDetectionSystem -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/train-detection#TrainDetectionSystem"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/train-protection-legacy-systems#TrainProtectionLegacySystem"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/vehicle-types#Category -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicle-types#Category"/>
-    
-
-
-    <!-- http://era.europa.eu/concepts/vehicle-types#SubCategory -->
-
-
-    <owl:Class rdf:about="http://era.europa.eu/concepts/vehicle-types#SubCategory"/>
     
 
 

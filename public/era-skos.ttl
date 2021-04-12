@@ -41,7 +41,7 @@ era-skos: a skos:ConceptScheme, owl:Ontology ;
     rdfs:label "ERA SKOS vocabularies"@en ;
     skos:prefLabel "ERA SKOS vocabularies"@en ;
     dct:issued "2020-09-01"^^xsd:date ;
-    dct:modified "2021-15-03"^^xsd:date ;
+    dct:modified "2021-04-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Controlled SKOS-based vocabularies defined by the European Union Agency for Railways to describe concepts related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
