@@ -47,7 +47,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2021-04-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -261,24 +261,15 @@ era:endLocation a owl:ObjectProperty ;
     dct:modified "2020-07-29"^^xsd:date ;
     vs:term_status "stable" .
 
-era:hasTrack a owl:ObjectProperty ;
-    rdfs:label "has track"@en ;
-    rdfs:comment "References a rail track that goes through a tunnel."@en ;
-    rdfs:isDefinedBy era: ;
-    rdfs:domain era:Tunnel ;
-    rdfs:range era:Track ;
-    dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
-    vs:term_status "stable" .
 
 era:passesThroughTunnel a owl:ObjectProperty ;
     rdfs:label "passes through tunnel"@en ;
     rdfs:comment "References a tunnel that a track goes through."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era:Tunnel ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-07-29"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:category a owl:ObjectProperty ;
@@ -628,10 +619,10 @@ era:loadCapability a owl:ObjectProperty ; # RINF 1.1.1.1.2.4
     rdfs:label "load capability"@en ;
     rdfs:comment "A combination of the line category and speed at the weakest point of the track."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era-lc:LoadCapability ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:nationalLoadCapability a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.1
@@ -639,10 +630,10 @@ era:nationalLoadCapability a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.1
     rdfs:label "national load capability"@en ;
     rdfs:comment "National classification for load capability."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:highSpeedLoadModelCompliance a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.2
@@ -650,10 +641,10 @@ era:highSpeedLoadModelCompliance a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.2
     rdfs:label "high speed load model compliance"@en ;
     rdfs:comment "Compliance of structures with the High Speed Load Model (HSLM)."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:structureCheckLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.3
@@ -661,10 +652,10 @@ era:structureCheckLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.3
     rdfs:label "structure check location"@en ;
     rdfs:comment "Railway location of structures requiring specific checks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:double ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:compatibilityProcedureDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.4
@@ -672,10 +663,10 @@ era:compatibilityProcedureDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.2.4.4
     rdfs:label "structure check document"@en ;
     rdfs:comment "Document with the procedure(s) for static and dynamic route compatibility checks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:double ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:staticAxleLoadWorkingOrder a owl:DatatypeProperty ; # ERATV 4.5.3.1
@@ -797,11 +788,11 @@ era:gaugingProfile a owl:ObjectProperty ; # RINF 1.1.1.1.3.1.1 and ERATV 4.2.1
     rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-gaugings:GaugingProfile ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:gaugingCheckLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.3.1.2
@@ -809,10 +800,10 @@ era:gaugingCheckLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.3.1.2
     rdfs:label "gauging check location"@en ;
     rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:double ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:gaugingTransversalDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.3.1.3
@@ -820,10 +811,10 @@ era:gaugingTransversalDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.3.1.3
     rdfs:label "gauging traversal document"@en ;
     rdfs:comment "Document with the transversal section of the particular points requiring specific checks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -834,10 +825,10 @@ era:minimumVerticalRadius a owl:DatatypeProperty ; # RINF 1.2.2.0.3.3
     rdfs:label "minimum vertical curve radius"@en ;
     rdfs:comment "Radius of the smallest vertical curve expressed in metres."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:minimumConvexVerticalRadius a owl:DatatypeProperty ; # ERATV 4.8.5
@@ -872,11 +863,11 @@ era:trainDetectionSystem a owl:ObjectProperty ; # RINF 1.1.1.3.7.1.1 and ERATV 4
     rdfs:comment "Indication of supported types of train detection systems."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-tds:TrainDetectionSystem ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:trainDetectionSystemSpecificCheck a owl:DatatypeProperty ; # RINF 1.1.1.3.7.1.2
@@ -884,10 +875,10 @@ era:trainDetectionSystemSpecificCheck a owl:DatatypeProperty ; # RINF 1.1.1.3.7.
     rdfs:label "detection system specific check"@en ;
     rdfs:comment "Type of track circuits or axle counter to which specific checks are needed."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:frenchTrainDetectionSystemLimitation a owl:ObjectProperty ; # RINF 1.1.1.3.7.1.4
@@ -895,10 +886,10 @@ era:frenchTrainDetectionSystemLimitation a owl:ObjectProperty ; # RINF 1.1.1.3.7
     rdfs:label "french train detection system limitation"@en ;
     rdfs:comment "Section with train detection limitation, specific for route compatibility check on French network."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era-tds:FrenchTrainDetectionSystemLimitation ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -909,10 +900,10 @@ era:hasHotAxleBoxDetector a owl:DatatypeProperty ; # RINF 1.1.1.1.7.4
     rdfs:label "has axle box detector"@en ;
     rdfs:comment "Existence of trackside hot axle box detector (HABD)."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hotAxleBoxDetectorTSICompliant a owl:DatatypeProperty ; # RINF 1.1.1.1.7.5
@@ -920,10 +911,10 @@ era:hotAxleBoxDetectorTSICompliant a owl:DatatypeProperty ; # RINF 1.1.1.1.7.5
     rdfs:label "hot axle box detector TSI compliant"@en ;
     rdfs:comment "Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hotAxleBoxDetectorIdentification a owl:DatatypeProperty ; # RINF 1.1.1.1.7.6
@@ -931,10 +922,10 @@ era:hotAxleBoxDetectorIdentification a owl:DatatypeProperty ; # RINF 1.1.1.1.7.6
     rdfs:label "hot axle box detector identification"@en ;
     rdfs:comment "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hotAxleBoxDetectorGeneration a owl:DatatypeProperty ; # RINF 1.1.1.1.7.7
@@ -942,10 +933,10 @@ era:hotAxleBoxDetectorGeneration a owl:DatatypeProperty ; # RINF 1.1.1.1.7.7
     rdfs:label "hot axle box detector generation"@en ;
     rdfs:comment "Generation of trackside HABD. Specific for the French Italian and Swedish networks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hotAxleBoxDetectorLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.7.8
@@ -953,10 +944,10 @@ era:hotAxleBoxDetectorLocation a owl:DatatypeProperty ; # RINF 1.1.1.1.7.8
     rdfs:label "hot axle box detector location"@en ;
     rdfs:comment "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:double ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hotAxleBoxDetectorDirection a owl:DatatypeProperty ; # RINF 1.1.1.1.7.9
@@ -964,10 +955,10 @@ era:hotAxleBoxDetectorDirection a owl:DatatypeProperty ; # RINF 1.1.1.1.7.9
     rdfs:label "hot axle box detector direction"@en ;
     rdfs:comment "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:axleBearingConditionMonitoring a owl:ObjectProperty ; # ERATV 4.9.2
@@ -988,10 +979,10 @@ era:cantDeficiency a owl:DatatypeProperty ; # RINF 1.1.1.1.4.2
     rdfs:label "cant deficiency"@en ;
     rdfs:comment "Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:maximumPermittedSpeed a owl:DatatypeProperty ; # RINF 1.1.1.1.2.5
@@ -999,10 +990,10 @@ era:maximumPermittedSpeed a owl:DatatypeProperty ; # RINF 1.1.1.1.2.5
     rdfs:label "maximum permitted speed"@en ;
     rdfs:comment "Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:railInclination a owl:ObjectProperty ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
@@ -1012,11 +1003,11 @@ era:railInclination a owl:ObjectProperty ; # RINF 1.1.1.1.4.3 and ERATV 4.6.5
     rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-ri:RailInclination ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:maximumSpeedAndCantDeficiency a owl:ObjectProperty ; # ERATV 4.6.4
@@ -1039,11 +1030,11 @@ era:wheelSetGauge a owl:DatatypeProperty ; # RINF 1.1.1.1.4.1 and ERATV 4.1.3
     rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:integer ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:minimumWheelDiameter a owl:DatatypeProperty ; # RINF 1.1.1.1.5.2 and ERATV 4.8.2
@@ -1053,11 +1044,11 @@ era:minimumWheelDiameter a owl:DatatypeProperty ; # RINF 1.1.1.1.5.2 and ERATV 4
     rdfs:comment "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:wheelSetGaugeChangeoverFacility a owl:ObjectProperty ; # ERATV 4.6.4
@@ -1080,11 +1071,11 @@ era:minimumHorizontalRadius a owl:DatatypeProperty ; # RINF 1.1.1.1.3.7 and ERAT
     rdfs:comment "Radius of the smallest horizontal curve of the track in metres."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 
@@ -1095,10 +1086,10 @@ era:maximumBrakingDistance a owl:DatatypeProperty ; # RINF 1.1.1.3.11.1
     rdfs:label "maximum braking distance"@en ;
     rdfs:comment "The maximum value of the braking distance [in metres] of a train shall be given for the maximum line speed."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 era:gradientProfile a owl:DatatypeProperty ; # RINF 1.1.1.1.3.6
@@ -1106,10 +1097,10 @@ era:gradientProfile a owl:DatatypeProperty ; # RINF 1.1.1.1.3.6
     rdfs:label "gradient profile"@en ;
     rdfs:comment "Sequence of gradient values and locations of change in gradient."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 era:maximumTrainDeceleration a owl:DatatypeProperty ; # RINF 1.1.1.1.6.1
@@ -1117,10 +1108,10 @@ era:maximumTrainDeceleration a owl:DatatypeProperty ; # RINF 1.1.1.1.6.1
     rdfs:label "maximum train deceleration"@en ;
     rdfs:comment "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:double ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasAdditionalBrakingInformation a owl:DatatypeProperty ; # RINF 1.1.1.3.11.2
@@ -1128,10 +1119,10 @@ era:hasAdditionalBrakingInformation a owl:DatatypeProperty ; # RINF 1.1.1.3.11.2
     rdfs:label "has additional braking information"@en ;
     rdfs:comment "Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:additionalBrakingInformationDocument a owl:DatatypeProperty ; # RINF 1.1.1.3.11.3
@@ -1139,10 +1130,10 @@ era:additionalBrakingInformationDocument a owl:DatatypeProperty ; # RINF 1.1.1.3
     rdfs:label "additional braking information document"@en ;
     rdfs:comment "Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:emergencyBrake a owl:ObjectProperty ; # ERATV 4.7.5
@@ -1243,11 +1234,11 @@ era:magneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3 and ERATV 4.7.4.
     rdfs:comment "Use of magnetic brakes."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:conditionalMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3
@@ -1255,10 +1246,10 @@ era:conditionalMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3
     rdfs:label "conditional magnetic braking"@en ;
     rdfs:comment "Magnetic braking allowed under certain conditions."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:emergencyOnlyMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3
@@ -1266,10 +1257,10 @@ era:emergencyOnlyMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3
     rdfs:label "emergency only magnetic braking"@en ;
     rdfs:comment "Magnetic braking allowed only under emergency conditions."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:conditionalEmergencyOnlyMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.3
@@ -1277,10 +1268,10 @@ era:conditionalEmergencyOnlyMagneticBraking a owl:DatatypeProperty ; # RINF 1.1.
     rdfs:label "conditional emergency only magnetic braking"@en ;
     rdfs:comment "Magnetic braking allowed only certain conditions for emergency situations."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:magneticBrakingConditionsDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.6.5
@@ -1288,10 +1279,10 @@ era:magneticBrakingConditionsDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.6.
     rdfs:label "magnetic braking conditions document"@en ;
     rdfs:comment "Document with the conditions for the use of magnetic brakes."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:magneticBrakePrevention a owl:DatatypeProperty ; # ERATV 4.7.4.2.2
@@ -1302,7 +1293,7 @@ era:magneticBrakePrevention a owl:DatatypeProperty ; # ERATV 4.7.4.2.2
     rdfs:domain era:VehicleType ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -1315,11 +1306,11 @@ era:eddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2 and ERATV 4.7
     rdfs:comment "Use of eddy current brakes."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:conditionalEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2
@@ -1327,10 +1318,10 @@ era:conditionalEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2
     rdfs:label "conditional eddy current braking"@en ;
     rdfs:comment "Eddy current braking allowed under certain conditions."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:emergencyOnlyEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2
@@ -1338,10 +1329,10 @@ era:emergencyOnlyEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2
     rdfs:label "emergency only eddy current braking"@en ;
     rdfs:comment "Eddy current braking allowed only under emergency conditions."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:conditionalEmergencyOnlyEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1.1.1.1.6.2
@@ -1349,10 +1340,10 @@ era:conditionalEmergencyOnlyEddyCurrentBraking a owl:DatatypeProperty ; # RINF 1
     rdfs:label "conditional emergency only eddy current braking"@en ;
     rdfs:comment "Eddy current braking allowed only certain conditions for emergency situations."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:eddyCurrentBrakingConditionsDocument a owl:DatatypeProperty ; # RINF 1.1.1.1.6.4
@@ -1360,10 +1351,10 @@ era:eddyCurrentBrakingConditionsDocument a owl:DatatypeProperty ; # RINF 1.1.1.1
     rdfs:label "eddy current braking conditions document"@en ;
     rdfs:comment "Document with the conditions for the use of eddy current brakes."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:eddyCurrentBrakePrevention a owl:DatatypeProperty ; # ERATV 4.7.4.1.2
@@ -1387,11 +1378,11 @@ era:minimumTemperature a owl:DatatypeProperty ; # RINF 1.1.1.1.2.6 and ERATV 4.3
     rdfs:comment "Minimum tempertaure allowed for unrestricted operation access, according to European standard."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:maximumTemperature a owl:DatatypeProperty ; # RINF 1.1.1.1.2.6 and ERATV 4.3.1
@@ -1401,11 +1392,11 @@ era:maximumTemperature a owl:DatatypeProperty ; # RINF 1.1.1.1.2.6 and ERATV 4.3
     rdfs:comment "Maximum tempertaure allowed for unrestricted operation access, according to European standard."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:integer ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasSevereWeatherConditions a owl:DatatypeProperty ; # RINF 1.1.1.1.2.8
@@ -1413,10 +1404,10 @@ era:hasSevereWeatherConditions a owl:DatatypeProperty ; # RINF 1.1.1.1.2.8
     rdfs:label "has severe weather conditions"@en ;
     rdfs:comment "Climatic conditions on the line are severe according to European standard."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:snowIceHailConditions a owl:ObjectProperty ; # ERATV 4.3.3
@@ -1438,10 +1429,10 @@ era:contactLineSystem a owl:ObjectProperty ; # RINF 1.1.1.2.2.1.1
     rdfs:label "contact line system"@en ;
     rdfs:comment "Indication of the type of the contact line system."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era-cls:ContactLineSystem ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:energySupplySystem  a owl:ObjectProperty ; # RINF 1.1.1.2.2.1.2 and ERATV 4.10.1
@@ -1451,11 +1442,11 @@ era:energySupplySystem  a owl:ObjectProperty ; # RINF 1.1.1.2.2.1.2 and ERATV 4.
     rdfs:comment "Indication of the traction supply system (nominal voltage and frequency)."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-ess:EnergySupplySystem ;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:energySupplySystemTSICompliant a owl:DatatypeProperty ; # RINF 1.1.1.2.2.1.2.1
@@ -1463,10 +1454,10 @@ era:energySupplySystemTSICompliant a owl:DatatypeProperty ; # RINF 1.1.1.2.2.1.2
     rdfs:label "energy supply system TSI compliant"@en ;
     rdfs:comment "Indication if the traction supply system (nominal voltage and frequency) is fully compliant with TSI."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 era:umax2 a owl:DatatypeProperty ; # RINF 1.1.1.2.2.1.3
@@ -1474,10 +1465,10 @@ era:umax2 a owl:DatatypeProperty ; # RINF 1.1.1.2.2.1.3
     rdfs:label "umax2"@en ;
     rdfs:comment "Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014. Specific for the French network."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 
@@ -1490,11 +1481,11 @@ era:hasRegenerativeBrake a owl:DatatypeProperty ; # RINF 1.1.1.2.2.4 and ERATV 4
     rdfs:comment "Indication whether regenerative braking is permitted or not."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:conditionalRegenerativeBrake a owl:DatatypeProperty ; # RINF 1.1.1.2.2.4
@@ -1502,10 +1493,10 @@ era:conditionalRegenerativeBrake a owl:DatatypeProperty ; # RINF 1.1.1.2.2.4
     rdfs:label "conditional regenerative brake"@en ;
     rdfs:comment "Regenerative braking allowed under certain conditions."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-24"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:preventRegenerativeBrakeUse a owl:DatatypeProperty ; # ERATV 4.7.4.3.2
@@ -1527,10 +1518,10 @@ era:currentLimitationRequired a owl:DatatypeProperty ; # RINF 1.1.1.2.5.1
     rdfs:label "current limitation required"@en ;
     rdfs:comment "Indication of whether an on board current or power limitation function on vehicles is required."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasCurrentLimitation a owl:DatatypeProperty ; # ERATV 4.10.14
@@ -1554,11 +1545,11 @@ era:maxCurrentStandstillPantograph a owl:DatatypeProperty ; # RINF 1.1.1.2.2.3 a
     rdfs:comment "Indication of the maximum allowable train current at standstill for DC systems expressed in amperes."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:double;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" . 
 
 era:maximumContactWireHeight a owl:DatatypeProperty ; # RINF 1.1.1.2.2.5 and ERATV 4.10.5
@@ -1568,11 +1559,11 @@ era:maximumContactWireHeight a owl:DatatypeProperty ; # RINF 1.1.1.2.2.5 and ERA
     rdfs:comment "Indication of the maximum contact wire height expressed in metres."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:double;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:minimumContactWireHeight a owl:DatatypeProperty ; # RINF 1.1.1.2.2.6 and ERATV 4.10.5
@@ -1582,11 +1573,11 @@ era:minimumContactWireHeight a owl:DatatypeProperty ; # RINF 1.1.1.2.2.6 and ERA
     rdfs:comment "Indication of the minimum contact wire height expressed in metres."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:double;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:pantographHead a owl:ObjectProperty ; # RINF 1.1.1.2.3.1
@@ -1594,10 +1585,10 @@ era:pantographHead a owl:ObjectProperty ; # RINF 1.1.1.2.3.1
     rdfs:label "tsi pantograph head"@en ;
     rdfs:comment "Indication of which TSI compliant pantograph heads are allowed to be used."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era-pth:PantographHead;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:contactStripMaterial a owl:ObjectProperty ; # RINF 1.1.1.2.3.4 and ERATV 4.10.10
@@ -1607,11 +1598,11 @@ era:contactStripMaterial a owl:ObjectProperty ; # RINF 1.1.1.2.3.4 and ERATV 4.1
     rdfs:comment "Indication of which contact strip materials are permitted to be used."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-csm:ContactStripMaterial;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:permittedContactForce a owl:DatatypeProperty ; # RINF 1.1.1.2.5.2
@@ -1619,10 +1610,10 @@ era:permittedContactForce a owl:DatatypeProperty ; # RINF 1.1.1.2.5.2
     rdfs:label "permitted contact force"@en ;
     rdfs:comment "Indication of contact force allowed expressed in newtons."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:raisedPantographsDistanceAndSpeed a owl:DatatypeProperty ; # RINF 1.1.1.2.3.3
@@ -1630,10 +1621,10 @@ era:raisedPantographsDistanceAndSpeed a owl:DatatypeProperty ; # RINF 1.1.1.2.3.
     rdfs:label "raised pantographs distance and speed"@en ;
     rdfs:comment "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:automaticDroppingDeviceRequired a owl:DatatypeProperty ; # RINF 1.1.1.2.5.3
@@ -1641,10 +1632,10 @@ era:automaticDroppingDeviceRequired a owl:DatatypeProperty ; # RINF 1.1.1.2.5.3
     rdfs:label "automatic dropping device required"@en ;
     rdfs:comment "Indication of whether an automatic dropping device (ADD) required on the vehicle."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean;
     dct:created "2020-08-25"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:vehiclePantographHead a owl:DatatypeProperty ; # ERATV 4.10.6
@@ -1777,11 +1768,11 @@ era:etcsSystemCompatibility a owl:ObjectProperty ; # RINF 1.1.1.3.2.9 and ERATV 
     rdfs:comment "ETCS requirements used for demonstrating technical compatibility."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-esc:ETCSSystemCompatibility ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:trainIntegrityOnBoardRequired a owl:DatatypeProperty ; # RINF 1.1.1.3.2.8
@@ -1789,10 +1780,10 @@ era:trainIntegrityOnBoardRequired a owl:DatatypeProperty ; # RINF 1.1.1.3.2.8
     rdfs:label "train integrity on-board required"@en ;
     rdfs:comment "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasTrainIntegrityConfirmation a owl:DatatypeProperty ; # ERATV 4.13.1.9
@@ -1800,10 +1791,10 @@ era:hasTrainIntegrityConfirmation a owl:DatatypeProperty ; # ERATV 4.13.1.9
     rdfs:label "has train integrity confirmation"@en ;
     rdfs:comment "Indication of on-board management system about completeness of the train information."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 ########## GSM-R ##########
@@ -1813,10 +1804,10 @@ era:gsmrNetworkCoverage a owl:ObjectProperty ; # RINF 1.1.1.3.3.5
     rdfs:label "gsm-r network coverage"@en ;
     rdfs:comment "GSM-R networks covered by a roaming agreement"@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range era-gsmr:GSMRNetwork ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:voiceGSMRNetwork a owl:ObjectProperty ; # ERATV 4.13.2.10
@@ -1848,11 +1839,11 @@ era:usesGroup555 a owl:DatatypeProperty ; # RINF 1.1.1.3.3.4 and ERATV 4.13.2.12
     rdfs:comment "Indication if group 555 is needed/used."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range xsd:boolean ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:voiceRadioCompatible a owl:ObjectProperty ; # RINF 1.1.1.3.3.9 and ERATV 4.13.2.5
@@ -1862,11 +1853,11 @@ era:voiceRadioCompatible a owl:ObjectProperty ; # RINF 1.1.1.3.3.9 and ERATV 4.1
     rdfs:comment "Radio requirements used for demonstrating technical compatibility voice"@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-rsc:RadioSystemCompatibility ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:dataRadioCompatible a owl:ObjectProperty ; # RINF 1.1.1.3.3.10 and ERATV 4.13.2.8
@@ -1876,11 +1867,11 @@ era:dataRadioCompatible a owl:ObjectProperty ; # RINF 1.1.1.3.3.10 and ERATV 4.1
     rdfs:comment "Radio requirements used for demonstrating technical compatibility data"@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-rsc:RadioSystemCompatibility ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -1893,11 +1884,11 @@ era:protectionLegacySystem a owl:ObjectProperty ; # RINF 1.1.1.3.5.3 and ERATV 4
     rdfs:comment "Indication of which class B system is installed"@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-tpls:TrainProtectionLegacySystem ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 
@@ -1908,11 +1899,11 @@ era:legacyRadioSystem a owl:ObjectProperty ; # RINF 1.1.1.3.6.1 and ERATV 4.13.2
     rdfs:comment "Indication of radio legacy systems installed"@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( era:Track era:VehicleType )
+                  owl:unionOf ( era:SectionOfLine era:VehicleType )
                 ] ;
     rdfs:range era-lrs:LegacyRadioSystem ;
     dct:created "2020-08-31"^^xsd:date ;
-    dct:modified "2020-11-03"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 ########## Noise ##########
@@ -1922,10 +1913,10 @@ era:isQuietRoute a owl:DatatypeProperty ; # RINF 1.1.1.1.7.11
     rdfs:label "is quiet route"@en ;
     rdfs:comment "Indication of a track being part of a route with noise restrictions"@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Track ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:boolean ;
     dct:created "2020-11-04"^^xsd:date ;
-    dct:modified "2020-11-25"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:quieterRoutesExemptedCountry a owl:ObjectProperty ;
