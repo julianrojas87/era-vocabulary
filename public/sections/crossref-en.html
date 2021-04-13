@@ -168,7 +168,9 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#endIntrinsicCoordinate" title="http://era.europa.eu/ns#endIntrinsicCoordinate">end intrinsic coordinate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasImplementation" title="http://era.europa.eu/ns#hasImplementation">has implementation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSignal" title="http://era.europa.eu/ns#hasSignal">has signal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#startIntrinsicCoordinate"
                title="http://era.europa.eu/ns#startIntrinsicCoordinate">start intrinsic coordinate</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -177,6 +179,7 @@ This section provides details for each class and property defined by ERA vocabul
          <dd>
             <a href="#elementA" title="http://era.europa.eu/ns#elementA">element A</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#elementB" title="http://era.europa.eu/ns#elementB">element B</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAbstraction" title="http://era.europa.eu/ns#hasAbstraction">has abstraction</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#netElement" title="http://era.europa.eu/ns#netElement">net element</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -363,8 +366,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                title="http://era.europa.eu/ns#maximumTrainDeceleration">maximum train deceleration</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minimumVerticalRadius" title="http://era.europa.eu/ns#minimumVerticalRadius">minimum vertical curve radius</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#nationalLoadCapability" title="http://era.europa.eu/ns#nationalLoadCapability">national load capability</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#passesThroughTunnel" title="http://era.europa.eu/ns#passesThroughTunnel">passes through tunnel</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#permittedContactForce" title="http://era.europa.eu/ns#permittedContactForce">permitted contact force</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#permittedContactForce" title="http://era.europa.eu/ns#permittedContactForce">permitted contact force</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#raisedPantographsDistanceAndSpeed"
                title="http://era.europa.eu/ns#raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#compatibilityProcedureDocument"
@@ -1536,6 +1538,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasImplementation" title="http://era.europa.eu/ns#hasImplementation">has implementation</a>
@@ -1566,6 +1573,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#hasAbstraction" title="http://era.europa.eu/ns#hasAbstraction">has abstraction</a>
@@ -1714,7 +1726,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://era.europa.eu/ns#lineReference</p>
       <div class="comment">
-         <span class="markdown">Indicates a relationship with a specific national railway line.</span>
+         <span class="markdown">Indicates a relationship with a national railway line at a specific kilometer point.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2065,7 +2077,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SectionOfLine" title="http://era.europa.eu/ns#SectionOfLine">Section Of Line</a>
+               <a href="#NetElement" title="http://era.europa.eu/ns#NetElement">Net Element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

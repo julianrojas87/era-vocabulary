@@ -380,8 +380,9 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://era.europa.eu/ns#hasAbstraction
 <http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/2002/07/owl#inverseOf> <http://era.europa.eu/ns#hasImplementation> .
+<http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/ns#NetElement> .
 <http://era.europa.eu/ns#hasAbstraction> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#hasAbstraction> <http://purl.org/dc/terms/modified> "2021-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasAbstraction> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a physical entity with its topological abstraction representation."@en .
 <http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#hasAbstraction> <http://www.w3.org/2000/01/rdf-schema#label> "has abstraction"@en .
@@ -389,8 +390,9 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#hasImplementation
 <http://era.europa.eu/ns#hasImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://era.europa.eu/ns#hasImplementation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#NetElement> .
 <http://era.europa.eu/ns#hasImplementation> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#hasImplementation> <http://purl.org/dc/terms/modified> "2021-04-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#hasImplementation> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#hasImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property that links a topological abstraction entity with its physical representation."@en .
 <http://era.europa.eu/ns#hasImplementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#hasImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "has implementation"@en .
@@ -452,8 +454,8 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://era.europa.eu/ns#lineReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/ns#LineReference> .
 <http://era.europa.eu/ns#lineReference> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#lineReference> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a relationship with a specific national railway line."@en .
+<http://era.europa.eu/ns#lineReference> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a relationship with a national railway line at a specific kilometer point."@en .
 <http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://era.europa.eu/ns#> .
 <http://era.europa.eu/ns#lineReference> <http://www.w3.org/2000/01/rdf-schema#label> "line referece"@en .
 <http://era.europa.eu/ns#lineReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -570,7 +572,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://era.europa.eu/ns#passesThroughTunnel
 <http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#SectionOfLine> .
+<http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://era.europa.eu/ns#NetElement> .
 <http://era.europa.eu/ns#passesThroughTunnel> <http://www.w3.org/2000/01/rdf-schema#range> <http://era.europa.eu/ns#Tunnel> .
 <http://era.europa.eu/ns#passesThroughTunnel> <http://purl.org/dc/terms/created> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://era.europa.eu/ns#passesThroughTunnel> <http://purl.org/dc/terms/modified> "2021-04-13"^^<http://www.w3.org/2001/XMLSchema#date> .

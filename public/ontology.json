@@ -2203,7 +2203,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-04-02"
+    "@value" : "2021-04-13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2215,6 +2215,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has abstraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://era.europa.eu/ns#NetElement"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://era.europa.eu/ns#hasImplementation"
@@ -2367,11 +2370,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-04-02"
+    "@value" : "2021-04-13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Property that links a topological abstraction entity with its physical representation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://era.europa.eu/ns#NetElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -2949,11 +2955,11 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-01-29"
+    "@value" : "2021-04-13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates a relationship with a specific national railway line."
+    "@value" : "Indicates a relationship with a national railway line at a specific kilometer point."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"
@@ -4071,7 +4077,7 @@
     "@value" : "References a tunnel that a track goes through."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://era.europa.eu/ns#SectionOfLine"
+    "@id" : "http://era.europa.eu/ns#NetElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://era.europa.eu/ns#"

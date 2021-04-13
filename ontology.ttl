@@ -194,8 +194,9 @@ era:hasImplementation a owl:ObjectProperty ;
     rdfs:label "has implementation"@en ;
     rdfs:comment "Property that links a topological abstraction entity with its physical representation."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:domain era:NetElement ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2021-04-02"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:hasAbstraction a owl:ObjectProperty ;
@@ -203,8 +204,9 @@ era:hasAbstraction a owl:ObjectProperty ;
     rdfs:label "has abstraction"@en ;
     rdfs:comment "Property that links a physical entity with its topological abstraction representation."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:range era:NetElement ;
     dct:created "2020-07-29"^^xsd:date ;
-    dct:modified "2021-04-02"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:opType a owl:ObjectProperty ;
@@ -228,11 +230,11 @@ era:lineNationalId a owl:ObjectProperty ;
 
 era:lineReference a owl:ObjectProperty ;
     rdfs:label "line referece"@en ;
-    rdfs:comment "Indicates a relationship with a specific national railway line."@en ;
+    rdfs:comment "Indicates a relationship with a national railway line at a specific kilometer point."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:range era:LineReference ;
     dct:created "2021-01-29"^^xsd:date ;
-    dct:modified "2021-01-29"^^xsd:date ;
+    dct:modified "2021-04-13"^^xsd:date ;
     vs:term_status "stable" .
 
 era:startLocation a owl:ObjectProperty ;
@@ -266,7 +268,7 @@ era:passesThroughTunnel a owl:ObjectProperty ;
     rdfs:label "passes through tunnel"@en ;
     rdfs:comment "References a tunnel that a track goes through."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:SectionOfLine ;
+    rdfs:domain era:NetElement ;
     rdfs:range era:Tunnel ;
     dct:created "2020-07-29"^^xsd:date ;
     dct:modified "2021-04-13"^^xsd:date ;
