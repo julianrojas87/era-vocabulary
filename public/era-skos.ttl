@@ -4298,7 +4298,7 @@ era-tpls:TBL1%2B a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "TBL1+" .
 
-era-tpls:TPWS/AWS a skos:Concept;
+era-tpls:TPWS%2FAWS a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "TPWS/AWS" .
 
