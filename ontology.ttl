@@ -15,7 +15,7 @@ era: a owl:Ontology ;
     dct:title "ERA vocabulary"@en ;
     rdfs:label "ERA vocabulary"@en ;
     dct:issued "2020-07-29"^^xsd:date ;
-    dct:modified "2021-09-01"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:author <https://julianrojas.org/#me> ;
     dct:publisher "European Union Agency for Railways" ;
@@ -25,7 +25,7 @@ era: a owl:Ontology ;
     dct:contributor <https://dylanvanassche.be/#me> ;
     dct:contributor <https://pietercolpaert.be/#me> ;
     rdfs:comment "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en ;
-    owl:versionInfo "v2.2.0" ;
+    owl:versionInfo "v2.2.1" ;
     owl:imports wgs:, geosparql: .
 
 
@@ -473,9 +473,10 @@ era:verificationSRT a owl:DatatypeProperty ;
     rdfs:label "declaration of verification SRT"@en ;
     rdfs:comment "Unique number for EC declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:domain era:Tunnel ;
     rdfs:range xsd:string ;
     dct:created "2021-08-03"^^xsd:date ;
-    dct:modified "2021-08-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:verificationINF a owl:DatatypeProperty ;
@@ -483,9 +484,12 @@ era:verificationINF a owl:DatatypeProperty ;
     rdfs:label "declaration of verification INF"@en ;
     rdfs:comment "Unique number for EC declarations concerning requirements of INF (INFrastructure) TSI."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:SectionOfLine era:Track era:Siding )
+                ] ;
     rdfs:range xsd:string ;
     dct:created "2021-08-03"^^xsd:date ;
-    dct:modified "2021-08-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:verificationENE a owl:DatatypeProperty ;
@@ -493,6 +497,7 @@ era:verificationENE a owl:DatatypeProperty ;
     rdfs:label "declaration of verification ENE"@en ;
     rdfs:comment "Unique number for EC declarations concerning requirements of ENE (ENErgy subsystem) on the specific track."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2021-08-08"^^xsd:date ;
     dct:modified "2021-08-11"^^xsd:date ;
@@ -503,14 +508,15 @@ era:verificationCSS a owl:DatatypeProperty ;
     rdfs:label "declaration of verification CSS"@en ;
     rdfs:comment "Unique number for EC declarations concerning requirements of CSS (Command - Control and Signalling subsystem) on the specific track."@en ;
     rdfs:isDefinedBy era: ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2021-08-08"^^xsd:date ;
-    dct:modified "2021-08-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:demonstrationSRT a owl:DatatypeProperty ;
     era:rinfIndex "1.1.1.1.8.6", "1.2.1.0.5.4", "1.2.2.0.5.4" ;
-    rdfs:label "decalration of demonstration SRT"@en ;
+    rdfs:label "declaration of demonstration SRT"@en ;
     rdfs:comment "Unique number for EI declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."@en ;
     rdfs:isDefinedBy era: ;
     rdfs:domain era:Tunnel ;
@@ -521,24 +527,26 @@ era:demonstrationSRT a owl:DatatypeProperty ;
 
 era:demonstrationINF a owl:DatatypeProperty ;
     era:rinfIndex "1.1.1.1.1.2", "1.2.1.0.1.2", "1.2.2.0.1.2" ;
-    rdfs:label "decalration of demonstration INF"@en ;
+    rdfs:label "declaration of demonstration INF"@en ;
     rdfs:comment "Unique number for EI declarations concerning requirements of INF (INFrastructure) TSI."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Tunnel ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( era:SectionOfLine era:Track era:Siding )
+                ] ;
     rdfs:range xsd:string ;
     dct:created "2021-08-03"^^xsd:date ;
-    dct:modified "2021-08-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:demonstrationENE a owl:DatatypeProperty ;
     era:rinfIndex "1.1.1.2.1.2" ;
-    rdfs:label "decalration of demonstration ENE"@en ;
+    rdfs:label "declaration of demonstration ENE"@en ;
     rdfs:comment "Unique number for EI declarations concerning requirements of ENE (ENErgy subsytem) on the specific track."@en ;
     rdfs:isDefinedBy era: ;
-    rdfs:domain era:Tunnel ;
+    rdfs:domain era:SectionOfLine ;
     rdfs:range xsd:string ;
     dct:created "2021-08-08"^^xsd:date ;
-    dct:modified "2021-08-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     vs:term_status "stable" .
 
 era:contactLineSystem a owl:ObjectProperty ; 

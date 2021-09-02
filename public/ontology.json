@@ -19,7 +19,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid100",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -29,7 +29,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid103",
+  "@id" : "_:genid104",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -39,7 +39,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid106",
+  "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -49,7 +49,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid109",
+  "@id" : "_:genid110",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -59,7 +59,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -69,23 +69,21 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid115",
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/TrainDetectionSystem"
+    }, {
+      "@id" : "http://data.europa.eu/949/VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/SectionOfLine"
-    }, {
-      "@id" : "http://data.europa.eu/949/VehicleType"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid118",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/SectionOfLine"
-    }, {
-      "@id" : "http://data.europa.eu/949/Siding"
     }, {
       "@id" : "http://data.europa.eu/949/VehicleType"
     } ]
@@ -97,11 +95,13 @@
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/SectionOfLine"
     }, {
+      "@id" : "http://data.europa.eu/949/Siding"
+    }, {
       "@id" : "http://data.europa.eu/949/VehicleType"
     } ]
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -111,7 +111,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid128",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -128,6 +128,28 @@
       "@id" : "http://data.europa.eu/949/ETCSLevel"
     }, {
       "@id" : "http://data.europa.eu/949/VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/SectionOfLine"
+    }, {
+      "@id" : "http://data.europa.eu/949/VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/SectionOfLine"
+    }, {
+      "@id" : "http://data.europa.eu/949/Siding"
+    }, {
+      "@id" : "http://data.europa.eu/949/Track"
     } ]
   } ]
 }, {
@@ -291,37 +313,29 @@
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/SectionOfLine"
     }, {
+      "@id" : "http://data.europa.eu/949/Siding"
+    }, {
+      "@id" : "http://data.europa.eu/949/Track"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/SectionOfLine"
+    }, {
       "@id" : "http://data.europa.eu/949/VehicleType"
     } ]
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/SectionOfLine"
     }, {
       "@id" : "http://data.europa.eu/949/Track"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid66",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/ContactLineSystem"
-    }, {
-      "@id" : "http://data.europa.eu/949/VehicleType"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/OperationalPoint"
-    }, {
-      "@id" : "http://data.europa.eu/949/SectionOfLine"
     } ]
   } ]
 }, {
@@ -335,7 +349,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/ContactLineSystem"
+    }, {
+      "@id" : "http://data.europa.eu/949/VehicleType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -345,7 +369,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://data.europa.eu/949/OperationalPoint"
+    }, {
+      "@id" : "http://data.europa.eu/949/SectionOfLine"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -355,7 +389,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -367,7 +401,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid82",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -377,7 +411,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -387,7 +421,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -397,7 +431,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -407,21 +441,11 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://data.europa.eu/949/SectionOfLine"
-    }, {
-      "@id" : "http://data.europa.eu/949/VehicleType"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/TrainDetectionSystem"
     }, {
       "@id" : "http://data.europa.eu/949/VehicleType"
     } ]
@@ -455,7 +479,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-09-01"
+    "@value" : "2021-09-02"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "European Union Agency for Railways"
@@ -476,7 +500,7 @@
     "@id" : "http://www.opengis.net/ont/geosparql#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "v2.2.0"
+    "@value" : "v2.2.1"
   } ]
 }, {
   "@id" : "http://data.europa.eu/949/ContactLineSystem",
@@ -2175,21 +2199,21 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-08-11"
+    "@value" : "2021-09-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Unique number for EI declarations concerning requirements of ENE (ENErgy subsytem) on the specific track."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/Tunnel"
+    "@id" : "http://data.europa.eu/949/SectionOfLine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "decalration of demonstration ENE"
+    "@value" : "declaration of demonstration ENE"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2213,21 +2237,21 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-08-11"
+    "@value" : "2021-09-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Unique number for EI declarations concerning requirements of INF (INFrastructure) TSI."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/Tunnel"
+    "@id" : "_:genid60"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "decalration of demonstration INF"
+    "@value" : "declaration of demonstration INF"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2265,7 +2289,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "decalration of demonstration SRT"
+    "@value" : "declaration of demonstration SRT"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2533,7 +2557,7 @@
     "@value" : "Use of eddy current brakes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid60"
+    "@id" : "_:genid64"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -3816,7 +3840,7 @@
     "@value" : "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid63"
+    "@id" : "_:genid67"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -4912,7 +4936,7 @@
     "@value" : "Indication whether regenerative braking is permitted or not."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid66"
+    "@id" : "_:genid70"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -5999,7 +6023,7 @@
     "@value" : "Existence of rules and restrictions of a strictly local nature."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid69"
+    "@id" : "_:genid73"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6035,7 +6059,7 @@
     "@value" : "Documents regarding the rules or restrictions of a strictly local nature available by the IM."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid72"
+    "@id" : "_:genid76"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6106,7 +6130,7 @@
     "@value" : "Use of magnetic brakes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid75"
+    "@id" : "_:genid79"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6275,7 +6299,7 @@
     "@value" : "Indication of the maximum allowable train current at standstill for DC systems expressed in amperes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid78"
+    "@id" : "_:genid82"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6312,7 +6336,7 @@
     "@value" : "Indication of maximum permitted distance between two consecutive axles in case of TSI non-compliance, given in millimetres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid82"
+    "@id" : "_:genid86"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6383,7 +6407,7 @@
     "@value" : "Maximum permitted flange height, given in millimiters."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid85"
+    "@id" : "_:genid89"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6420,7 +6444,7 @@
     "@value" : "The value of maximum permitted impedance given in ohm in case of TSI non-compliance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid88"
+    "@id" : "_:genid92"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6695,7 +6719,7 @@
     "@value" : "Indication of the maximum contact wire height expressed in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid91"
+    "@id" : "_:genid95"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -6936,7 +6960,7 @@
     "@value" : "Maximum tempertaure allowed for unrestricted operation access, according to European standard."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid94"
+    "@id" : "_:genid98"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7041,7 +7065,7 @@
     "@value" : "Minimum permitted axle load, given in tons."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid97"
+    "@id" : "_:genid101"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7149,7 +7173,7 @@
     "@value" : "Indication of minimum permitted distance between first and last axles, given in millimetres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid100"
+    "@id" : "_:genid104"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7186,7 +7210,7 @@
     "@value" : "Minimum permitted flange height, given in millimiters."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid103"
+    "@id" : "_:genid107"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7223,7 +7247,7 @@
     "@value" : "Minimum permitted flange thickness, given in millimiters."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid106"
+    "@id" : "_:genid110"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7260,7 +7284,7 @@
     "@value" : "Minimum permitted width of the rim, given in millimiters."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid109"
+    "@id" : "_:genid113"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7331,7 +7355,7 @@
     "@value" : "Minimum permitted wheel diameter, given in millimiters."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid112"
+    "@id" : "_:genid116"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7402,7 +7426,7 @@
     "@value" : "Indication of the minimum contact wire height expressed in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid115"
+    "@id" : "_:genid119"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7475,7 +7499,7 @@
     "@value" : "Radius of the smallest horizontal curve of the track in metres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid118"
+    "@id" : "_:genid122"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7512,7 +7536,7 @@
     "@value" : "Minimum tempertaure allowed for unrestricted operation access, according to European standard."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid122"
+    "@id" : "_:genid126"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -7583,7 +7607,7 @@
     "@value" : "Maximum unguided length of fixed obtuse crossings is based on a minimum wheel diameter in service expressed in millimetres."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid125"
+    "@id" : "_:genid129"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -11049,7 +11073,7 @@
     "@value" : "Indication if group 555 is needed/used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid128"
+    "@id" : "_:genid132"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -11336,11 +11360,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-08-11"
+    "@value" : "2021-09-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Unique number for EC declarations concerning requirements of CSS (Command - Control and Signalling subsystem) on the specific track."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/SectionOfLine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -11373,6 +11400,9 @@
     "@language" : "en",
     "@value" : "Unique number for EC declarations concerning requirements of ENE (ENErgy subsystem) on the specific track."
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/SectionOfLine"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
   } ],
@@ -11402,11 +11432,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-08-11"
+    "@value" : "2021-09-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Unique number for EC declarations concerning requirements of INF (INFrastructure) TSI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid135"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -11437,11 +11470,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2021-08-11"
+    "@value" : "2021-09-02"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Unique number for EC declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/949/Tunnel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
