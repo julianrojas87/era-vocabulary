@@ -88,8 +88,12 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/contactLineSystemType" title="http://data.europa.eu/949/contactLineSystemType">contact line system type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/energySupplySystemTSICompliant"
+            <a href="#http://data.europa.eu/949/conditionalRegenerativeBrake"
+               title="http://data.europa.eu/949/conditionalRegenerativeBrake">conditional regenerative brake</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/contactLineSystemType" title="http://data.europa.eu/949/contactLineSystemType">contact line system type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/currentLimitationRequired"
+               title="http://data.europa.eu/949/currentLimitationRequired">current limitation required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/energySupplySystemTSICompliant"
                title="http://data.europa.eu/949/energySupplySystemTSICompliant">energy supply system TSI compliant</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maxTrainCurrent" title="http://data.europa.eu/949/maxTrainCurrent">maximum train current</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/umax2" title="http://data.europa.eu/949/umax2">umax2</a>
@@ -191,7 +195,8 @@ This section provides details for each class and property defined by ERA vocabul
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://schema.org/Organization">organization</span>
+            <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://schema.org/Organization">organization</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -338,12 +343,18 @@ This section provides details for each class and property defined by ERA vocabul
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://data.europa.eu/949/tafTAPCode" title="http://data.europa.eu/949/tafTAPCode">TAF/TAP code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/opName" title="http://data.europa.eu/949/opName">op name</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/opType" title="http://data.europa.eu/949/opType">operational point type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/siding" title="http://data.europa.eu/949/siding">siding</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/track" title="http://data.europa.eu/949/track">track</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/opTypeGaugeChangeover" title="http://data.europa.eu/949/opTypeGaugeChangeover">track gauge changeover facility type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/uopid" title="http://data.europa.eu/949/uopid">unique operational point id</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/opEnd" title="http://data.europa.eu/949/opEnd">OP end</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/opStart" title="http://data.europa.eu/949/opStart">OP start</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -374,7 +385,8 @@ This section provides details for each class and property defined by ERA vocabul
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/assistanceStartingTrain"
                title="http://data.europa.eu/949/assistanceStartingTrain">assistance starting train</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/platformHeight" title="http://data.europa.eu/949/platformHeight">platform height</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/platformId" title="http://data.europa.eu/949/platformId">platform id</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -432,132 +444,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/etcsMVersion" title="http://data.europa.eu/949/etcsMVersion">ETCS M_version</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/etcsInfillLineAccess" title="http://data.europa.eu/949/etcsInfillLineAccess">ETCS infill line access</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/etcsNationalPacket44" title="http://data.europa.eu/949/etcsNationalPacket44">ETCS national packet 44</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsOptionalFunctions" title="http://data.europa.eu/949/etcsOptionalFunctions">ETCS optional functions</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gprsForETCS" title="http://data.europa.eu/949/gprsForETCS">GPRS for ETCS</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gprsImplementationArea"
-               title="http://data.europa.eu/949/gprsImplementationArea">GPRS implementation area</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmRActiveMobiles" title="http://data.europa.eu/949/gsmRActiveMobiles">GSM-R active mobiles</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gsmRAdditionalInfo" title="http://data.europa.eu/949/gsmRAdditionalInfo">GSM-R additional network info</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmrNetworkCoverage" title="http://data.europa.eu/949/gsmrNetworkCoverage">GSM-R network coverage</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gsmRNoCoverage" title="http://data.europa.eu/949/gsmRNoCoverage">GSM-R no coverage</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmROptionalFunctions" title="http://data.europa.eu/949/gsmROptionalFunctions">GSM-R optional functions</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/tsiSwitchCrossing" title="http://data.europa.eu/949/tsiSwitchCrossing">TSI compliance for switches and crossings</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/TSIMagneticFields" title="http://data.europa.eu/949/TSIMagneticFields">TSI mangnetic fields</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/TSITractionHarmonics" title="http://data.europa.eu/949/TSITractionHarmonics">TSI traction harmonics</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/accelerationLevelCrossing"
-               title="http://data.europa.eu/949/accelerationLevelCrossing">acceleration allowed level crossings</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/additionalBrakingInformationDocument"
-               title="http://data.europa.eu/949/additionalBrakingInformationDocument">additional braking information document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/automaticDroppingDeviceRequired"
-               title="http://data.europa.eu/949/automaticDroppingDeviceRequired">automatic dropping device required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/cantDeficiency" title="http://data.europa.eu/949/cantDeficiency">cant deficiency</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/conditionalEddyCurrentBraking"
-               title="http://data.europa.eu/949/conditionalEddyCurrentBraking">conditional eddy current braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking"
-               title="http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking">conditional emergency only eddy current braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking"
-               title="http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking">conditional emergency only magnetic braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/conditionalMagneticBraking"
-               title="http://data.europa.eu/949/conditionalMagneticBraking">conditional magnetic braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/conditionalRegenerativeBrake"
-               title="http://data.europa.eu/949/conditionalRegenerativeBrake">conditional regenerative brake</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/currentLimitationRequired"
-               title="http://data.europa.eu/949/currentLimitationRequired">current limitation required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/demonstrationENE" title="http://data.europa.eu/949/demonstrationENE">declaration of demonstration ENE</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/verificationCSS" title="http://data.europa.eu/949/verificationCSS">declaration of verification CSS</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/verificationENE" title="http://data.europa.eu/949/verificationENE">declaration of verification ENE</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument"
-               title="http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument">detection system specific check document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/distSignToPhaseEnd" title="http://data.europa.eu/949/distSignToPhaseEnd">distance sign and phase</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument"
-               title="http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument">eddy current braking conditions document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking"
-               title="http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking">emergency only eddy current braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/emergencyOnlyMagneticBraking"
-               title="http://data.europa.eu/949/emergencyOnlyMagneticBraking">emergency only magnetic braking</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/flangeLubeForbidden" title="http://data.europa.eu/949/flangeLubeForbidden">flange lube forbidden</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/frenchTrainDetectionSystemLimitation"
-               title="http://data.europa.eu/949/frenchTrainDetectionSystemLimitation">french train detection system limitation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gaugingTransversalDocument"
-               title="http://data.europa.eu/949/gaugingTransversalDocument">gauging traversal document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gradientProfile" title="http://data.europa.eu/949/gradientProfile">gradient profile</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasETCSRestrictionsConditions"
-               title="http://data.europa.eu/949/hasETCSRestrictionsConditions">has ETCS restrictions conditions</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasTSITrainDetection" title="http://data.europa.eu/949/hasTSITrainDetection">has TSI train detection</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasAdditionalBrakingInformation"
-               title="http://data.europa.eu/949/hasAdditionalBrakingInformation">has additional braking information</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasHotAxleBoxDetector" title="http://data.europa.eu/949/hasHotAxleBoxDetector">has axle box detector</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasBallast" title="http://data.europa.eu/949/hasBallast">has ballast</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasLevelCrossings" title="http://data.europa.eu/949/hasLevelCrossings">has level crossings</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasOtherTrainProtection"
-               title="http://data.europa.eu/949/hasOtherTrainProtection">has other train protection</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSevereWeatherConditions"
-               title="http://data.europa.eu/949/hasSevereWeatherConditions">has severe weather conditions</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSystemSeparation" title="http://data.europa.eu/949/hasSystemSeparation">has system separation</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasTrainIntegrityConfirmation"
-               title="http://data.europa.eu/949/hasTrainIntegrityConfirmation">has train integrity confirmation</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/highSpeedLoadModelCompliance"
-               title="http://data.europa.eu/949/highSpeedLoadModelCompliance">high speed load model compliance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant">hot axle box detector TSI compliant</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorDirection"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">hot axle box detector direction</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorGeneration"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorGeneration">hot axle box detector generation</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorIdentification"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorIdentification">hot axle box detector identification</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorLocation"
-               title="http://data.europa.eu/949/hotAxleBoxDetectorLocation">hot axle box detector location</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/isQuietRoute" title="http://data.europa.eu/949/isQuietRoute">is quiet route</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/loadCapability" title="http://data.europa.eu/949/loadCapability">load capability</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/magneticBrakingConditionsDocument"
-               title="http://data.europa.eu/949/magneticBrakingConditionsDocument">magnetic braking conditions document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumAltitude" title="http://data.europa.eu/949/maximumAltitude">maximum altitude</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumBrakingDistance"
-               title="http://data.europa.eu/949/maximumBrakingDistance">maximum braking distance</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumPermittedSpeed" title="http://data.europa.eu/949/maximumPermittedSpeed">maximum permitted speed</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumTrainDeceleration"
-               title="http://data.europa.eu/949/maximumTrainDeceleration">maximum train deceleration</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/minimumVerticalRadius" title="http://data.europa.eu/949/minimumVerticalRadius">minimum vertical curve radius</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/multipleTrainProtectionRequired"
-               title="http://data.europa.eu/949/multipleTrainProtectionRequired">multiple train protection required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/nationalLoadCapability"
-               title="http://data.europa.eu/949/nationalLoadCapability">national load capability</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/otherTrainProtection" title="http://data.europa.eu/949/otherTrainProtection">other train protection</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/permittedContactForce" title="http://data.europa.eu/949/permittedContactForce">permitted contact force</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/phaseInfo" title="http://data.europa.eu/949/phaseInfo">phase information</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/phaseSeparation" title="http://data.europa.eu/949/phaseSeparation">phase separation</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/profileNumberSemiTrailers"
-               title="http://data.europa.eu/949/profileNumberSemiTrailers">profile number for semi-trailers</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/profileNumberSwapBodies"
-               title="http://data.europa.eu/949/profileNumberSwapBodies">profile number for swap bodies</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/publicNetworkRoaming" title="http://data.europa.eu/949/publicNetworkRoaming">public network roaming</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/publicNetworkRoamingDetails"
-               title="http://data.europa.eu/949/publicNetworkRoamingDetails">public network roaming details</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/raisedPantographsDistanceAndSpeed"
-               title="http://data.europa.eu/949/raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/redLightsRequired" title="http://data.europa.eu/949/redLightsRequired">red lights required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/solNature" title="http://data.europa.eu/949/solNature">section of line nature</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/specificInformation" title="http://data.europa.eu/949/specificInformation">specific information</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/compatibilityProcedureDocument"
-               title="http://data.europa.eu/949/compatibilityProcedureDocument">structure check document</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/structureCheckLocation"
-               title="http://data.europa.eu/949/structureCheckLocation">structure check location</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/switchProtectControlWarning"
-               title="http://data.europa.eu/949/switchProtectControlWarning">switch protect control warning</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/switchRadioSystem" title="http://data.europa.eu/949/switchRadioSystem">switch radio system</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/systemSeparationInfo" title="http://data.europa.eu/949/systemSeparationInfo">system separation information</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/tiltingSupported" title="http://data.europa.eu/949/tiltingSupported">tilting supported</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/trainIntegrityOnBoardRequired"
-               title="http://data.europa.eu/949/trainIntegrityOnBoardRequired">train integrity on-board required</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/pantographHead" title="http://data.europa.eu/949/pantographHead">tsi pantograph head</a>
+            <a href="#http://data.europa.eu/949/opEnd" title="http://data.europa.eu/949/opEnd">OP end</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/opStart" title="http://data.europa.eu/949/opStart">OP start</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/solNature" title="http://data.europa.eu/949/solNature">section of line nature</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -593,6 +482,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSandRestocking" title="http://data.europa.eu/949/hasSandRestocking">has sand restocking</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasToiletDischarge" title="http://data.europa.eu/949/hasToiletDischarge">has toilet discharge</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasWaterRestocking" title="http://data.europa.eu/949/hasWaterRestocking">has water restocking</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/minimumVerticalRadius" title="http://data.europa.eu/949/minimumVerticalRadius">minimum vertical curve radius</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/sidingId" title="http://data.europa.eu/949/sidingId">siding id</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -689,7 +580,117 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/platform" title="http://data.europa.eu/949/platform">platform</a>
+            <a href="#http://data.europa.eu/949/etcsMVersion" title="http://data.europa.eu/949/etcsMVersion">ETCS M_version</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/etcsInfillLineAccess" title="http://data.europa.eu/949/etcsInfillLineAccess">ETCS infill line access</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsDegradedSituation" title="http://data.europa.eu/949/etcsDegradedSituation">ETCS level for degraded situation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/etcsNationalPacket44" title="http://data.europa.eu/949/etcsNationalPacket44">ETCS national packet 44</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsOptionalFunctions" title="http://data.europa.eu/949/etcsOptionalFunctions">ETCS optional functions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gprsForETCS" title="http://data.europa.eu/949/gprsForETCS">GPRS for ETCS</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gprsImplementationArea"
+               title="http://data.europa.eu/949/gprsImplementationArea">GPRS implementation area</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmRActiveMobiles" title="http://data.europa.eu/949/gsmRActiveMobiles">GSM-R active mobiles</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gsmRAdditionalInfo" title="http://data.europa.eu/949/gsmRAdditionalInfo">GSM-R additional network info</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmrNetworkCoverage" title="http://data.europa.eu/949/gsmrNetworkCoverage">GSM-R network coverage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gsmRNoCoverage" title="http://data.europa.eu/949/gsmRNoCoverage">GSM-R no coverage</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gsmROptionalFunctions" title="http://data.europa.eu/949/gsmROptionalFunctions">GSM-R optional functions</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/tenGISId" title="http://data.europa.eu/949/tenGISId">TEN GIS identity</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/tsiSwitchCrossing" title="http://data.europa.eu/949/tsiSwitchCrossing">TSI compliance for switches and crossings</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/TSIMagneticFields" title="http://data.europa.eu/949/TSIMagneticFields">TSI mangnetic fields</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/TSITractionHarmonics" title="http://data.europa.eu/949/TSITractionHarmonics">TSI traction harmonics</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/accelerationLevelCrossing"
+               title="http://data.europa.eu/949/accelerationLevelCrossing">acceleration allowed level crossings</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/additionalBrakingInformationDocument"
+               title="http://data.europa.eu/949/additionalBrakingInformationDocument">additional braking information document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/automaticDroppingDeviceRequired"
+               title="http://data.europa.eu/949/automaticDroppingDeviceRequired">automatic dropping device required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/cantDeficiency" title="http://data.europa.eu/949/cantDeficiency">cant deficiency</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/contactLineSystem" title="http://data.europa.eu/949/contactLineSystem">contact line system</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/demonstrationENE" title="http://data.europa.eu/949/demonstrationENE">declaration of demonstration ENE</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/verificationCSS" title="http://data.europa.eu/949/verificationCSS">declaration of verification CSS</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/verificationENE" title="http://data.europa.eu/949/verificationENE">declaration of verification ENE</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument"
+               title="http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument">detection system specific check document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/distSignToPhaseEnd" title="http://data.europa.eu/949/distSignToPhaseEnd">distance sign and phase</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument"
+               title="http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument">eddy current braking conditions document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/etcsLevel" title="http://data.europa.eu/949/etcsLevel">etcs level</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/flangeLubeForbidden" title="http://data.europa.eu/949/flangeLubeForbidden">flange lube forbidden</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/frenchTrainDetectionSystemLimitation"
+               title="http://data.europa.eu/949/frenchTrainDetectionSystemLimitation">french train detection system limitation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/gaugingCheckLocation" title="http://data.europa.eu/949/gaugingCheckLocation">gauging check location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gaugingTransversalDocument"
+               title="http://data.europa.eu/949/gaugingTransversalDocument">gauging traversal document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/gradientProfile" title="http://data.europa.eu/949/gradientProfile">gradient profile</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasETCSRestrictionsConditions"
+               title="http://data.europa.eu/949/hasETCSRestrictionsConditions">has ETCS restrictions conditions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasTSITrainDetection" title="http://data.europa.eu/949/hasTSITrainDetection">has TSI train detection</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasAdditionalBrakingInformation"
+               title="http://data.europa.eu/949/hasAdditionalBrakingInformation">has additional braking information</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasHotAxleBoxDetector" title="http://data.europa.eu/949/hasHotAxleBoxDetector">has axle box detector</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasBallast" title="http://data.europa.eu/949/hasBallast">has ballast</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasLevelCrossings" title="http://data.europa.eu/949/hasLevelCrossings">has level crossings</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasOtherTrainProtection"
+               title="http://data.europa.eu/949/hasOtherTrainProtection">has other train protection</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSevereWeatherConditions"
+               title="http://data.europa.eu/949/hasSevereWeatherConditions">has severe weather conditions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSystemSeparation" title="http://data.europa.eu/949/hasSystemSeparation">has system separation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/highSpeedLoadModelCompliance"
+               title="http://data.europa.eu/949/highSpeedLoadModelCompliance">high speed load model compliance</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorTSICompliant">hot axle box detector TSI compliant</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorDirection"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorDirection">hot axle box detector direction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorGeneration"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorGeneration">hot axle box detector generation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorIdentification"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorIdentification">hot axle box detector identification</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hotAxleBoxDetectorLocation"
+               title="http://data.europa.eu/949/hotAxleBoxDetectorLocation">hot axle box detector location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/isQuietRoute" title="http://data.europa.eu/949/isQuietRoute">is quiet route</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/loadCapability" title="http://data.europa.eu/949/loadCapability">load capability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/magneticBrakingConditionsDocument"
+               title="http://data.europa.eu/949/magneticBrakingConditionsDocument">magnetic braking conditions document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumAltitude" title="http://data.europa.eu/949/maximumAltitude">maximum altitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumBrakingDistance"
+               title="http://data.europa.eu/949/maximumBrakingDistance">maximum braking distance</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumPermittedSpeed" title="http://data.europa.eu/949/maximumPermittedSpeed">maximum permitted speed</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/maximumTrainDeceleration"
+               title="http://data.europa.eu/949/maximumTrainDeceleration">maximum train deceleration</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/multipleTrainProtectionRequired"
+               title="http://data.europa.eu/949/multipleTrainProtectionRequired">multiple train protection required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/nationalLoadCapability"
+               title="http://data.europa.eu/949/nationalLoadCapability">national load capability</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/otherTrainProtection" title="http://data.europa.eu/949/otherTrainProtection">other train protection</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/permittedContactForce" title="http://data.europa.eu/949/permittedContactForce">permitted contact force</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/phaseInfo" title="http://data.europa.eu/949/phaseInfo">phase information</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/phaseSeparation" title="http://data.europa.eu/949/phaseSeparation">phase separation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/platform" title="http://data.europa.eu/949/platform">platform</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/profileNumberSemiTrailers"
+               title="http://data.europa.eu/949/profileNumberSemiTrailers">profile number for semi-trailers</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/profileNumberSwapBodies"
+               title="http://data.europa.eu/949/profileNumberSwapBodies">profile number for swap bodies</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/publicNetworkRoaming" title="http://data.europa.eu/949/publicNetworkRoaming">public network roaming</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/publicNetworkRoamingDetails"
+               title="http://data.europa.eu/949/publicNetworkRoamingDetails">public network roaming details</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/raisedPantographsDistanceAndSpeed"
+               title="http://data.europa.eu/949/raisedPantographsDistanceAndSpeed">raised pantographs distance and speed</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/redLightsRequired" title="http://data.europa.eu/949/redLightsRequired">red lights required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/specificInformation" title="http://data.europa.eu/949/specificInformation">specific information</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/compatibilityProcedureDocument"
+               title="http://data.europa.eu/949/compatibilityProcedureDocument">structure check document</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/structureCheckLocation"
+               title="http://data.europa.eu/949/structureCheckLocation">structure check location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/switchProtectControlWarning"
+               title="http://data.europa.eu/949/switchProtectControlWarning">switch protect control warning</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/switchRadioSystem" title="http://data.europa.eu/949/switchRadioSystem">switch radio system</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/systemSeparationInfo" title="http://data.europa.eu/949/systemSeparationInfo">system separation information</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/tiltingSupported" title="http://data.europa.eu/949/tiltingSupported">tilting supported</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/trackDirection" title="http://data.europa.eu/949/trackDirection">track direction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/trackId" title="http://data.europa.eu/949/trackId">track id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/trainIntegrityOnBoardRequired"
+               title="http://data.europa.eu/949/trainIntegrityOnBoardRequired">train integrity on-board required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/pantographHead" title="http://data.europa.eu/949/pantographHead">tsi pantograph head</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -868,7 +869,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="https://schema.org/Organization">organization</span>
+            <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="https://schema.org/Organization">organization</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
@@ -958,6 +960,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasSandingPrevention" title="http://data.europa.eu/949/hasSandingPrevention">has sanding prevention</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasShuntingRestrictions"
                title="http://data.europa.eu/949/hasShuntingRestrictions">has shunting restrictions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasTrainIntegrityConfirmation"
+               title="http://data.europa.eu/949/hasTrainIntegrityConfirmation">has train integrity confirmation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/hasWheelSlideProtectionSystem"
                title="http://data.europa.eu/949/hasWheelSlideProtectionSystem">has wheel slide protection system</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/letterMarking" title="http://data.europa.eu/949/letterMarking">letter marking</a>
@@ -1040,7 +1044,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/vehicleContactForce" title="http://data.europa.eu/949/vehicleContactForce">vehicle contact force</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/vehicleMaxSandingOutput"
                title="http://data.europa.eu/949/vehicleMaxSandingOutput">vehicle max sanding output</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/vehiclePantographHead" title="http://data.europa.eu/949/vehiclePantographHead">vehicle pantograph head</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/vehiclePantographHead"
+               title="http://data.europa.eu/949/vehiclePantographHead">vehicle pantograph head</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/subCategory" title="http://data.europa.eu/949/subCategory">vehicle subcategory</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/vehiclesComposingFixedFormation"
                title="http://data.europa.eu/949/vehiclesComposingFixedFormation">vehicles composing fixed formation</a>
@@ -1091,6 +1096,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <li>
          <a href="#http://data.europa.eu/949/trainDetectionSystemSpecificCheck"
             title="http://data.europa.eu/949/trainDetectionSystemSpecificCheck">detection system specific check</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/eddyCurrentBraking" title="http://data.europa.eu/949/eddyCurrentBraking">eddy current braking</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/elementA" title="http://data.europa.eu/949/elementA">element A</a>
@@ -1199,6 +1207,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </a>
       </li>
       <li>
+         <a href="#http://data.europa.eu/949/magneticBraking" title="http://data.europa.eu/949/magneticBraking">magnetic braking</a>
+      </li>
+      <li>
          <a href="#http://data.europa.eu/949/manufacturer" title="http://data.europa.eu/949/manufacturer">manufacturer</a>
       </li>
       <li>
@@ -1220,6 +1231,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#http://data.europa.eu/949/netElement" title="http://data.europa.eu/949/netElement">net element</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/notApplicable" title="http://data.europa.eu/949/notApplicable">not applicable</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/notYetAvailable" title="http://data.europa.eu/949/notYetAvailable">not yet available</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/opEnd" title="http://data.europa.eu/949/opEnd">OP end</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/opStart" title="http://data.europa.eu/949/opStart">OP start</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/opType" title="http://data.europa.eu/949/opType">operational point type</a>
@@ -1297,6 +1320,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#http://data.europa.eu/949/track" title="http://data.europa.eu/949/track">track</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/trackDirection" title="http://data.europa.eu/949/trackDirection">track direction</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/trainDetectionSystem" title="http://data.europa.eu/949/trainDetectionSystem">train detection system</a>
@@ -1471,7 +1497,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1540,7 +1566,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -1611,7 +1637,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -1649,6 +1675,43 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has domain</dt>
             <dd>
                <a href="#http://data.europa.eu/949/TrainDetectionSystem" title="http://data.europa.eu/949/TrainDetectionSystem">Train Detection System</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/eddyCurrentBraking">
+      <h3>eddy current braking<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/eddyCurrentBraking</p>
+      <div class="comment">
+         <span class="markdown">Use of eddy current brakes.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1958,7 +2021,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -1995,7 +2058,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2030,7 +2093,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2098,7 +2161,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2132,7 +2195,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -2237,7 +2300,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2271,9 +2334,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
@@ -2311,7 +2371,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2345,7 +2405,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2379,7 +2439,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2447,7 +2507,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -2618,7 +2678,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -2749,7 +2809,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2783,6 +2843,43 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>is also defined as</dt>
             <dd>
                <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/magneticBraking">
+      <h3>magnetic braking<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/magneticBraking</p>
+      <div class="comment">
+         <span class="markdown">Use of magnetic brakes.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
             </dd>
          </dl>
       </div>
@@ -3025,6 +3122,118 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/notApplicable">
+      <h3>not applicable<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/notApplicable</p>
+      <div class="comment">
+         <span class="markdown">Reference to a property that is not applicable.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/notYetAvailable">
+      <h3>not yet available<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/notYetAvailable</p>
+      <div class="comment">
+         <span class="markdown">Reference to a property that is not yet available.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/opEnd">
+      <h3>OP end<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/opEnd</p>
+      <div class="comment">
+         <span class="markdown">Operational Point at the end of a Section of Line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/opStart">
+      <h3>OP start<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/opStart</p>
+      <div class="comment">
+         <span class="markdown">Operational Point at the start of a Section of Line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://data.europa.eu/949/opType">
       <h3>operational point type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3117,7 +3326,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3360,7 +3569,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3394,7 +3603,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3428,7 +3637,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -3499,7 +3708,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -3753,7 +3962,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <a href="#http://data.europa.eu/949/Platform" title="http://data.europa.eu/949/Platform">Platform</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3822,12 +4031,49 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has domain</dt>
             <dd>
                <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/trackDirection">
+      <h3>track direction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/trackDirection</p>
+      <div class="comment">
+         <span class="markdown">Track normal running direction.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2004/02/skos/core#Concept">concept</span>
             </dd>
          </dl>
       </div>
@@ -3856,7 +4102,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4268,7 +4514,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4302,7 +4548,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4336,7 +4582,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4542,7 +4788,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -4579,9 +4825,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
@@ -4687,22 +4930,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://data.europa.eu/949/compositeBrakeBlockRetrofitted">composite brake block retrofitted</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/conditionalEddyCurrentBraking"
-            title="http://data.europa.eu/949/conditionalEddyCurrentBraking">conditional eddy current braking</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking"
-            title="http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking">conditional emergency only eddy current braking</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking"
-            title="http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking">conditional emergency only magnetic braking</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/conditionalMagneticBraking"
-            title="http://data.europa.eu/949/conditionalMagneticBraking">conditional magnetic braking</a>
-      </li>
-      <li>
          <a href="#http://data.europa.eu/949/conditionalRegenerativeBrake"
             title="http://data.europa.eu/949/conditionalRegenerativeBrake">conditional regenerative brake</a>
       </li>
@@ -4772,22 +4999,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://data.europa.eu/949/eddyCurrentBrakePrevention">eddy current brake prevention</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/eddyCurrentBraking" title="http://data.europa.eu/949/eddyCurrentBraking">eddy current braking</a>
-      </li>
-      <li>
          <a href="#http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument"
             title="http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument">eddy current braking conditions document</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/emergencyBrake" title="http://data.europa.eu/949/emergencyBrake">emergency braking</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking"
-            title="http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking">emergency only eddy current braking</a>
-      </li>
-      <li>
-         <a href="#http://data.europa.eu/949/emergencyOnlyMagneticBraking"
-            title="http://data.europa.eu/949/emergencyOnlyMagneticBraking">emergency only magnetic braking</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/endIntrinsicCoordinate"
@@ -5019,9 +5235,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             title="http://data.europa.eu/949/magneticBrakePrevention">magnetic brake prevention</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/magneticBraking" title="http://data.europa.eu/949/magneticBraking">magnetic braking</a>
-      </li>
-      <li>
          <a href="#http://data.europa.eu/949/magneticBrakingConditionsDocument"
             title="http://data.europa.eu/949/magneticBrakingConditionsDocument">magnetic braking conditions document</a>
       </li>
@@ -5175,6 +5388,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#http://data.europa.eu/949/oclType" title="http://data.europa.eu/949/oclType">ocl type</a>
       </li>
       <li>
+         <a href="#http://data.europa.eu/949/opName" title="http://data.europa.eu/949/opName">op name</a>
+      </li>
+      <li>
          <a href="#http://data.europa.eu/949/parkingBrakeMandatory" title="http://data.europa.eu/949/parkingBrakeMandatory">parking brake mandatory</a>
       </li>
       <li>
@@ -5195,6 +5411,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#http://data.europa.eu/949/phaseSeparation" title="http://data.europa.eu/949/phaseSeparation">phase separation</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/platformId" title="http://data.europa.eu/949/platformId">platform id</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/portableBoardingAids" title="http://data.europa.eu/949/portableBoardingAids">portable boarding aids</a>
@@ -5245,6 +5464,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <li>
          <a href="#http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL"
             title="http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL">shortest distance between pantographs in contact with OCL</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/sidingId" title="http://data.europa.eu/949/sidingId">siding id</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/sleepingPlaces" title="http://data.europa.eu/949/sleepingPlaces">sleeping places</a>
@@ -5325,6 +5547,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#http://data.europa.eu/949/opTypeGaugeChangeover" title="http://data.europa.eu/949/opTypeGaugeChangeover">track gauge changeover facility type</a>
       </li>
       <li>
+         <a href="#http://data.europa.eu/949/trackId" title="http://data.europa.eu/949/trackId">track id</a>
+      </li>
+      <li>
          <a href="#http://data.europa.eu/949/trainControlSwitchOverSpecialConditions"
             title="http://data.europa.eu/949/trainControlSwitchOverSpecialConditions">train control switch over special conditions</a>
       </li>
@@ -5370,7 +5595,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#http://data.europa.eu/949/vehicleNumber" title="http://data.europa.eu/949/vehicleNumber">vehicle number</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/vehiclePantographHead" title="http://data.europa.eu/949/vehiclePantographHead">vehicle pantograph head</a>
+         <a href="#http://data.europa.eu/949/vehiclePantographHead"
+            title="http://data.europa.eu/949/vehiclePantographHead">vehicle pantograph head</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/vehicleSeries" title="http://data.europa.eu/949/vehicleSeries">vehicle series</a>
@@ -5419,7 +5645,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5453,7 +5679,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5657,7 +5883,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5827,7 +6053,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -5939,142 +6165,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/conditionalEddyCurrentBraking">
-      <h3>conditional eddy current braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/conditionalEddyCurrentBraking</p>
-      <div class="comment">
-         <span class="markdown">Eddy current braking allowed under certain conditions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking">
-      <h3>conditional emergency only eddy current braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/conditionalEmergencyOnlyEddyCurrentBraking</p>
-      <div class="comment">
-         <span class="markdown">Eddy current braking allowed only certain conditions for emergency situations.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking">
-      <h3>conditional emergency only magnetic braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/conditionalEmergencyOnlyMagneticBraking</p>
-      <div class="comment">
-         <span class="markdown">Magnetic braking allowed only certain conditions for emergency situations.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/conditionalMagneticBraking">
-      <h3>conditional magnetic braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/conditionalMagneticBraking</p>
-      <div class="comment">
-         <span class="markdown">Magnetic braking allowed under certain conditions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://data.europa.eu/949/conditionalRegenerativeBrake">
       <h3>conditional regenerative brake<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6099,7 +6189,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6201,7 +6291,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6269,7 +6359,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6303,9 +6393,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
@@ -6377,7 +6464,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6411,7 +6498,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6445,9 +6532,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
@@ -6621,7 +6705,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6689,7 +6773,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6767,43 +6851,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/eddyCurrentBraking">
-      <h3>eddy current braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/eddyCurrentBraking</p>
-      <div class="comment">
-         <span class="markdown">Use of eddy current brakes.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument">
       <h3>eddy current braking conditions document<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6828,7 +6875,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6868,74 +6915,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking">
-      <h3>emergency only eddy current braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/emergencyOnlyEddyCurrentBraking</p>
-      <div class="comment">
-         <span class="markdown">Eddy current braking allowed only under emergency conditions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/emergencyOnlyMagneticBraking">
-      <h3>emergency only magnetic braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/emergencyOnlyMagneticBraking</p>
-      <div class="comment">
-         <span class="markdown">Magnetic braking allowed only under emergency conditions.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
@@ -7134,7 +7113,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7202,7 +7181,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7270,7 +7249,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7372,7 +7351,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7474,9 +7453,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
@@ -7511,7 +7487,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7545,7 +7521,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7579,7 +7555,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7647,7 +7623,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7681,7 +7657,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7715,7 +7691,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7783,7 +7759,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7851,7 +7827,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7885,7 +7861,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8055,7 +8031,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8123,7 +8099,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8191,7 +8167,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8398,7 +8374,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8466,7 +8442,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8534,7 +8510,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8568,7 +8544,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8670,7 +8646,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8704,7 +8680,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8738,7 +8714,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8772,7 +8748,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8806,7 +8782,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8840,7 +8816,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8903,7 +8879,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9134,7 +9110,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9171,7 +9147,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9215,43 +9191,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/magneticBraking">
-      <h3>magnetic braking<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/magneticBraking</p>
-      <div class="comment">
-         <span class="markdown">Use of magnetic brakes.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://data.europa.eu/949/magneticBrakingConditionsDocument">
       <h3>magnetic braking conditions document<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -9276,7 +9215,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9489,7 +9428,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9575,7 +9514,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/maximumBrakingDistance</p>
       <div class="comment">
-         <span class="markdown">The maximum value of the braking distance [in metres] of a train shall be given for the maximum line speed.</span>
+         <span class="markdown">The maximum value of the braking distance [in meters] of a train shall be given for the maximum line speed.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -9591,7 +9530,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9625,7 +9564,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -9764,7 +9703,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9866,7 +9805,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/ContactLineSystem" title="http://data.europa.eu/949/ContactLineSystem">Contact Line System</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
@@ -9906,7 +9845,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -9977,7 +9916,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10335,7 +10274,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -10406,10 +10345,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -10446,7 +10385,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -10517,7 +10456,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10551,7 +10490,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
@@ -10588,7 +10527,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10622,7 +10561,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10802,6 +10741,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/opName">
+      <h3>op name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/opName</p>
+      <div class="comment">
+         <span class="markdown">Name of an Operational Point.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OperationalPoint" title="http://data.europa.eu/949/OperationalPoint">Operational Point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://data.europa.eu/949/parkingBrakeMandatory">
       <h3>parking brake mandatory<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -10962,7 +10935,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -10996,7 +10969,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11030,12 +11003,46 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/platformId">
+      <h3>platform id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/platformId</p>
+      <div class="comment">
+         <span class="markdown">Unique platform identification or number within an Operational Point.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Platform" title="http://data.europa.eu/949/Platform">Platform</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>
@@ -11200,7 +11207,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11234,7 +11241,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11336,7 +11343,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11370,7 +11377,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11511,6 +11518,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/sidingId">
+      <h3>siding id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/sidingId</p>
+      <div class="comment">
+         <span class="markdown">Unique siding identification or number within an Operational Point.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Siding" title="http://data.europa.eu/949/Siding">Siding</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://data.europa.eu/949/sleepingPlaces">
       <h3>sleeping places<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -11569,7 +11610,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11841,7 +11882,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11875,7 +11916,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11909,7 +11950,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11943,7 +11984,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -11977,7 +12018,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -12043,6 +12084,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -12210,7 +12256,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -12288,6 +12334,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/trackId">
+      <h3>track id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/trackId</p>
+      <div class="comment">
+         <span class="markdown">Unique track identification or unique track number within a Section of Line.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://data.europa.eu/949/trainControlSwitchOverSpecialConditions">
       <h3>train control switch over special conditions<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -12346,7 +12426,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -12414,7 +12494,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -12647,7 +12727,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/SectionOfLine" title="http://data.europa.eu/949/SectionOfLine">Section Of Line</a>
+               <a href="#http://data.europa.eu/949/Track" title="http://data.europa.eu/949/Track">Track</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://data.europa.eu/949/VehicleType" title="http://data.europa.eu/949/VehicleType">Vehicle Type</a>
