@@ -56,7 +56,7 @@
 @prefix era-bpt: <http://data.europa.eu/949/concepts/brake-parking-type/> .
 @prefix era-ect: <http://data.europa.eu/949/concepts/end-coupling-type/> .
 @prefix era-eeobl: <http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/> .
-@prefix era-trd: <http://data.europa.eu/949/concepts/track-running-directions/>
+@prefix era-trd: <http://data.europa.eu/949/concepts/track-running-directions/> .
 
 era-skos: a owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
