@@ -36,9 +36,9 @@
 @prefix era-rc: <http://data.europa.eu/949/concepts/restrictions/> .
 @prefix era-nv: <http://data.europa.eu/949/concepts/navigabilities/> .
 @prefix era-pos: <http://data.europa.eu/949/concepts/relation-positions/> .
-@prefix era-gsmrev: <http://data.europa.eu/949/concepts/gsm-r-equipment-version#> .
+@prefix era-gsmrev: <http://data.europa.eu/949/concepts/gsm-r-equipment-version/> .
 @prefix era-gsmrv: <http://data.europa.eu/949/concepts/gsmr-versions/> .
-@prefix era-gsmrrdc: <http://data.europa.eu/949/concepts/gsm-r-radio-data-communication#> .
+@prefix era-gsmrrdc: <http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/> .
 @prefix era-gsmrnumactivemob: <http://data.europa.eu/949/concepts/gsmr-number-active-mobiles/> .
 @prefix era-gsmroptfunc: <http://data.europa.eu/949/concepts/gsmr-optional-functions/> .
 @prefix era-tenclass: <http://data.europa.eu/949/concepts/ten-classifications/> .
@@ -53,15 +53,18 @@
 @prefix era-etcssituation: <http://data.europa.eu/949/concepts/etcs-situation/> .
 @prefix era-opcw: <http://data.europa.eu/949/concepts/other-protection-control-warning/> .
 @prefix era-tsi: <http://data.europa.eu/949/concepts/tsi-compliances/> .
-@prefix era-bpt: <http://data.europa.eu/949/concepts/brake-parking-type#> .
-@prefix era-ect: <http://data.europa.eu/949/concepts/end-coupling-type#> .
-@prefix era-eeobl: <http://data.europa.eu/949/concepts/etcs-equipment-on-board-level#> .
+@prefix era-bpt: <http://data.europa.eu/949/concepts/brake-parking-type/> .
+@prefix era-ect: <http://data.europa.eu/949/concepts/end-coupling-type/> .
+@prefix era-eeobl: <http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/> .
+@prefix era-trd: <http://data.europa.eu/949/concepts/track-running-directions/> .
+@prefix era-ecb: <http://data.europa.eu/949/concepts/eddy-current-braking/> .
+@prefix era-mb: <http://data.europa.eu/949/concepts/magnetic-braking/> .
 
 era-skos: a owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
     rdfs:label "ERA SKOS vocabularies"@en ;
     dct:issued "2020-09-01"^^xsd:date ;
-    dct:modified "2021-08-26"^^xsd:date ;
+    dct:modified "2021-09-10"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:creator <https://julianrojas.org/#me> ;
     rdfs:comment "Controlled SKOS-based vocabularies defined by the European Union Agency for Railways to describe concepts related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
@@ -328,6 +331,21 @@ era-eeobl:ETCSEquipmentLevels a skos:ConceptScheme ; # Concepts of this scheme a
     rdfs:label "ETCS Equipment Levels"@en ;
     rdfs:comment "Concept scheme grouping ETCS equipment levels"@en .
 
+era-trd:TrackRunningDirections a skos:ConceptScheme ;
+    rdfs:isDefinedBy era-skos: ;
+    rdfs:label "Track Running Directions"@en ;
+    rdfs:comment "Concept scheme grouping track running directions"@en .
+
+era-ecb:EddyCurrentBraking a skos:ConceptScheme ;
+    rdfs:isDefinedBy era-skos: ;
+    rdfs:label "Eddy Current Braking"@en ;
+    rdfs:comment "Concept scheme grouping eddy current braking"@en .
+
+era-mb:MagneticBraking a skos:ConceptScheme ;
+    rdfs:isDefinedBy era-skos: ;
+    rdfs:label "Magnetic Braking"@en ;
+    rdfs:comment "Concept scheme grouping magnetic braking"@en .
+
 #################################################################
 #
 #    Concept instances
@@ -339,72 +357,72 @@ era-eeobl:ETCSEquipmentLevels a skos:ConceptScheme ; # Concepts of this scheme a
 era-op-types:borderPoint a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Located exactly in the point where a border between Member States meets a railway line."@en;
-  skos:prefLabel "border point"@en .
+  skos:prefLabel "border point"@en, "punto de frontera"@es .
 
 era-op-types:depotOrWorkshop a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point which is a group of tracks used by depot or workshop for rolling stock maintenance"@en;
-  skos:prefLabel "depot or workshop"@en .
+  skos:prefLabel "depot or workshop"@en, "depósito o taller"@es .
 
 era-op-types:domesticBorderPoint a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Located exactly in the point where networks of different Infrastructure Managers are connected in a Member State"@en;
-  skos:prefLabel "domestic border point"@en .
+  skos:prefLabel "domestic border point"@en,"punto de frontera doméstico"@es .
 
 era-op-types:freightTerminal a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point with dominating functions related to loading and unloading of freight trains"@en;
-  skos:prefLabel "freight terminal"@en .
+  skos:prefLabel "freight terminal"@en, "terminal de carga"@es .
 
 era-op-types:junction a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point consisting of at least one turnout, normally used mostly for changing direction of trains, with reduced or not existing other functions"@en;
-  skos:prefLabel "junction"@en .
+  skos:prefLabel "junction"@en, "cruce"@es .
 
 era-op-types:passengerStop a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Small Operational Point consisting of at least one platform, normally serving mostly for local passenger services"@en;
-  skos:prefLabel "passenger stop"@en .
+  skos:prefLabel "passenger stop"@en, "parada de pasajeros"@es .
 
 era-op-types:passengerTerminal a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point with dominating function of service for passenger traffic"@en;
-  skos:prefLabel "passenger terminal"@en .
+  skos:prefLabel "passenger terminal"@en, "terminal de pasajeros"@es .
 
 era-op-types:privateSiding a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point allowing to provide more information on the private siding and on the way its is linked to the main network. Its use is left to the discretion of each Member State."@en;
-  skos:prefLabel "private siding"@en .
+  skos:prefLabel "private siding"@en, "vía lateral privada"@es .
 
 era-op-types:shuntungYard a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Group of tracks used for shunting trains, mostly related to freight trains"@en;
-  skos:prefLabel "shunting yard"@en .
+  skos:prefLabel "shunting yard"@en, "patio de maniobras"@es .
 
 era-op-types:smallStation a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Multifunctional Operational Point not so big and not so important like station"@en;
-  skos:prefLabel "small station"@en .
+  skos:prefLabel "small station"@en, "estación pequeña"@es .
 
 era-op-types:station a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Big or huge station with several functions, important for international traffic, basic for national railway system"@en;
-  skos:prefLabel "station"@en .
+  skos:prefLabel "station"@en, "estación"@es .
 
 era-op-types:switch a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point consisting of only one switch. It describes a single switch without any extension contrary to a junction that has a real spatial extension and is generally delimited by entry signals"@en;
-  skos:prefLabel "switch"@en .
+  skos:prefLabel "switch"@en, "intercambio"@es .
 
 era-op-types:technicalChange a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "To describe a change on CCS or a type of contact line or gauge changeover facility – fixed installation allowing a train to travel across a break of gauge where two railway networks with different track gauges meet."@en;
-  skos:prefLabel "technical change"@en .
+  skos:prefLabel "technical change"@en, "cambio técnico"@es .
 
 era-op-types:trainTechnicalServices a skos:Concept ;
   skos:inScheme era-op-types:OperationalPointTypes;
   skos:definition "Operational Point which is a group of tracks for servicing trains (parking, cleaning, washing, current revisions, etc.)"@en;
-  skos:prefLabel "train technical services"@en .
+  skos:prefLabel "train technical services"@en, "servicios técnicos para trenes"@es .
 
 
 ########## Vehicle categories ##########
@@ -6374,3 +6392,60 @@ era-eeobl:Regulation_2016%2F919_Set_2 a skos:Concept;
 era-eeobl:Regulation_2016%2F919_Set_3 a skos:Concept;
   skos:inScheme era-eeobl:ETCSEquipmentLevels;
   skos:prefLabel "Regulation 2016/919 Set_3" .
+
+########## Track running directions ##########
+
+era-trd:N a skos:Concept;
+  skos:inScheme era-trd:TrackRunningDirections;
+  skos:prefLabel "N" ;
+  skos:definition "The normal runnig direction is the same as the direction defined by the start and end of the Section of Line." .
+
+era-trd:O a skos:Concept;
+  skos:inScheme era-trd:TrackRunningDirections;
+  skos:prefLabel "O" ;
+  skos:definition "The normal runnig direction is the opposite as the direction defined by the start and end of the Section of Line." .
+
+era-trd:B a skos:Concept;
+  skos:inScheme era-trd:TrackRunningDirections;
+  skos:prefLabel "B" ;
+  skos:definition "The normal runnig direction is both directions defined by the Section of Line." .
+
+########## Eddy current braking ##########
+
+era-ecb:allowed a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed" .
+
+era-ecb:allowed_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed only for emergency brake" .
+
+era-ecb:not_allowed a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "not allowed" .
+
+era-ecb:allowed_under_conditions a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed under conditions" .
+
+########## Magnetic braking ##########
+
+era-mb:allowed a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed" .
+
+era-mb:allowed_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed only for emergency brake" .
+
+era-mb:not_allowed a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "not allowed" .
+
+era-mb:allowed_under_conditions a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed under conditions" .
+
+era-mb:allowed_under_conditions_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed under conditions only for emergency brake" .

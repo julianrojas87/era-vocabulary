@@ -57,6 +57,8 @@
 @prefix era-ect: <http://data.europa.eu/949/concepts/end-coupling-type/> .
 @prefix era-eeobl: <http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/> .
 @prefix era-trd: <http://data.europa.eu/949/concepts/track-running-directions/> .
+@prefix era-ecb: <http://data.europa.eu/949/concepts/eddy-current-braking/> .
+@prefix era-mb: <http://data.europa.eu/949/concepts/magnetic-braking/> .
 
 era-skos: a owl:Ontology ;
     dct:title "ERA SKOS vocabularies"@en ;
@@ -333,6 +335,16 @@ era-trd:TrackRunningDirections a skos:ConceptScheme ;
     rdfs:isDefinedBy era-skos: ;
     rdfs:label "Track Running Directions"@en ;
     rdfs:comment "Concept scheme grouping track running directions"@en .
+
+era-ecb:EddyCurrentBraking a skos:ConceptScheme ;
+    rdfs:isDefinedBy era-skos: ;
+    rdfs:label "Eddy Current Braking"@en ;
+    rdfs:comment "Concept scheme grouping eddy current braking"@en .
+
+era-mb:MagneticBraking a skos:ConceptScheme ;
+    rdfs:isDefinedBy era-skos: ;
+    rdfs:label "Magnetic Braking"@en ;
+    rdfs:comment "Concept scheme grouping magnetic braking"@en .
 
 #################################################################
 #
@@ -6381,7 +6393,7 @@ era-eeobl:Regulation_2016%2F919_Set_3 a skos:Concept;
   skos:inScheme era-eeobl:ETCSEquipmentLevels;
   skos:prefLabel "Regulation 2016/919 Set_3" .
 
-  ########## Track running directions ##########
+########## Track running directions ##########
 
 era-trd:N a skos:Concept;
   skos:inScheme era-trd:TrackRunningDirections;
@@ -6397,3 +6409,43 @@ era-trd:B a skos:Concept;
   skos:inScheme era-trd:TrackRunningDirections;
   skos:prefLabel "B" ;
   skos:definition "The normal runnig direction is both directions defined by the Section of Line." .
+
+########## Eddy current braking ##########
+
+era-ecb:allowed a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed" .
+
+era-ecb:allowed_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed only for emergency brake" .
+
+era-ecb:not_allowed a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "not allowed" .
+
+era-ecb:allowed_under_conditions a skos:Concept;
+  skos:inScheme era-ecb:EddyCurrentBraking;
+  skos:prefLabel "allowed under conditions" .
+
+########## Magnetic braking ##########
+
+era-mb:allowed a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed" .
+
+era-mb:allowed_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed only for emergency brake" .
+
+era-mb:not_allowed a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "not allowed" .
+
+era-mb:allowed_under_conditions a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed under conditions" .
+
+era-mb:allowed_under_conditions_only_for_emergency_brake a skos:Concept;
+  skos:inScheme era-mb:MagneticBraking;
+  skos:prefLabel "allowed under conditions only for emergency brake" .
