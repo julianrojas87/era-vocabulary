@@ -8,7 +8,7 @@
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> "Marina Aguado" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/contributor> "Polymnia Vasilopoulou" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/issued> "2020-07-29"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/> <http://purl.org/dc/terms/modified> "2021-09-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/> <http://purl.org/dc/terms/modified> "2021-09-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
 <http://data.europa.eu/949/> <http://purl.org/dc/terms/title> "ERA vocabulary"@en .
 <http://data.europa.eu/949/> <http://www.w3.org/2000/01/rdf-schema#comment> "Vocabulary defined by the European Union Agency for Railways to describe the concepts and relationships related to the European railway infrastructure and the vehicles authorized to operate over it."@en .
@@ -3687,10 +3687,10 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
-<http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://data.europa.eu/949/eratvIndex> "4.10.8" .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://purl.org/dc/terms/created> "2020-08-25"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://purl.org/dc/terms/modified> "2020-11-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://purl.org/dc/terms/modified> "2021-09-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#comment> "Shortest distance between two pantographs in contact with the OCL (to be indicated for each energy supply system the vehicle is equipped for; to be indicated for single and, if applicable, multiple operation) (only if number of raised pantographs is more than 1)."@en .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL> <http://www.w3.org/2000/01/rdf-schema#label> "shortest distance between pantographs in contact with OCL"@en .
@@ -3711,10 +3711,10 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # http://data.europa.eu/949/sleepingPlaces
 <http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/VehicleType> .
-<http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://data.europa.eu/949/sleepingPlaces> <http://data.europa.eu/949/eratvIndex> "4.12.1.3" .
 <http://data.europa.eu/949/sleepingPlaces> <http://purl.org/dc/terms/created> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/sleepingPlaces> <http://purl.org/dc/terms/modified> "2021-08-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/sleepingPlaces> <http://purl.org/dc/terms/modified> "2021-09-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of sleeping places."@en .
 <http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/sleepingPlaces> <http://www.w3.org/2000/01/rdf-schema#label> "sleeping places"@en .

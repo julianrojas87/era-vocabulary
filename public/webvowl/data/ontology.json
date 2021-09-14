@@ -24,7 +24,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Polymnia Vasilopoulou",
+        "value" : "https://pietercolpaert.be/#me",
+        "type" : "iri"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ivo Velitchkov",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -34,18 +39,13 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Ivo Velitchkov",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "https://dylanvanassche.be/#me",
         "type" : "iri"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://pietercolpaert.be/#me",
-        "type" : "iri"
+        "value" : "Polymnia Vasilopoulou",
+        "type" : "label"
       } ],
       "author" : [ {
         "identifier" : "author",
@@ -53,16 +53,16 @@
         "value" : "https://julianrojas.org/#me",
         "type" : "iri"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-13",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "European Union Agency for Railways",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-15",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -71,16 +71,16 @@
         "value" : "v2.3.0",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "ERA vocabulary",
-        "type" : "label"
-      } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
         "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ERA vocabulary",
         "type" : "label"
       } ]
     }
@@ -117,7 +117,7 @@
     "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "54",
@@ -270,7 +270,7 @@
     "id" : "241",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "205",
+    "id" : "208",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "243",
@@ -285,7 +285,7 @@
     "id" : "254",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "208",
+    "id" : "206",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "260",
@@ -441,7 +441,7 @@
     "id" : "129",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "19",
+    "id" : "22",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "331",
@@ -714,7 +714,7 @@
     "id" : "502",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "527",
+    "id" : "526",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "230",
@@ -774,7 +774,7 @@
     "id" : "448",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "568",
+    "id" : "569",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "361",
@@ -879,7 +879,7 @@
     "id" : "181",
     "type" : "owl:Thing"
   }, {
-    "id" : "22",
+    "id" : "19",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "419",
@@ -933,7 +933,7 @@
     "id" : "655",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "407",
+    "id" : "408",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "619",
@@ -1011,7 +1011,7 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "207",
+    "id" : "205",
     "type" : "owl:Class"
   }, {
     "id" : "132",
@@ -1047,7 +1047,7 @@
     "id" : "256",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
     "id" : "16",
@@ -1068,10 +1068,10 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "746",
+    "id" : "745",
     "type" : "owl:Class"
   }, {
     "id" : "50",
@@ -1098,7 +1098,7 @@
     "id" : "494",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "778",
+    "id" : "779",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "533",
@@ -1140,7 +1140,7 @@
     "id" : "460",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "781",
+    "id" : "782",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "551",
@@ -1176,10 +1176,10 @@
     "id" : "714",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "732",
+    "id" : "731",
     "type" : "owl:unionOf"
   }, {
-    "id" : "733",
+    "id" : "732",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "706",
@@ -1360,7 +1360,7 @@
     "comment" : {
       "en" : "Railway line within a member state."
     },
-    "id" : "44"
+    "id" : "43"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1377,7 +1377,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "62" ],
+    "union" : [ "18", "62" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "61"
   }, {
@@ -1513,7 +1513,7 @@
     "superClasses" : [ "147" ]
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "174"
   }, {
@@ -1609,7 +1609,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "203"
   }, {
@@ -1621,7 +1621,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "219"
   }, {
@@ -1647,7 +1647,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "62", "46" ],
+    "union" : [ "18", "62", "46" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "222"
   }, {
@@ -1678,7 +1678,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "224"
   }, {
@@ -1697,7 +1697,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "232"
   }, {
@@ -1752,13 +1752,13 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "205",
+    "id" : "208",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "instances" : 0,
-    "union" : [ "118", "18" ],
+    "union" : [ "118", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "243"
   }, {
@@ -1770,7 +1770,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "118", "18" ],
+    "union" : [ "118", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "245"
   }, {
@@ -1783,7 +1783,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "208",
+    "id" : "206",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -1917,12 +1917,12 @@
     "superClasses" : [ "121" ]
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "287"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "288"
   }, {
@@ -1939,7 +1939,7 @@
     "id" : "292"
   }, {
     "instances" : 0,
-    "union" : [ "18", "189" ],
+    "union" : [ "21", "189" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "293"
   }, {
@@ -1949,7 +1949,7 @@
     "id" : "294"
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "298"
   }, {
@@ -1959,42 +1959,42 @@
     "id" : "226"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "300"
   }, {
     "instances" : 0,
-    "union" : [ "18", "33" ],
+    "union" : [ "21", "33" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "303"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "304"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "305"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "306"
   }, {
     "instances" : 0,
-    "union" : [ "21", "249" ],
+    "union" : [ "18", "249" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "309"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "310"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "311"
   }, {
@@ -2022,17 +2022,17 @@
     "superClasses" : [ "10" ]
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "314"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "315"
   }, {
     "instances" : 0,
-    "union" : [ "18", "46" ],
+    "union" : [ "21", "46" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "316"
   }, {
@@ -2251,7 +2251,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "id" : "22",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -2918,7 +2918,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/gml",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2928,7 +2928,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -3125,7 +3125,7 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/gml",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -3135,7 +3135,7 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -3411,17 +3411,17 @@
     "superClasses" : [ "82", "516" ]
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "562"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "281"
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "564"
   }, {
@@ -3431,12 +3431,12 @@
     "id" : "456"
   }, {
     "instances" : 0,
-    "union" : [ "21", "62" ],
+    "union" : [ "18", "62" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "439"
   }, {
     "instances" : 0,
-    "union" : [ "21", "90" ],
+    "union" : [ "18", "90" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "565"
   }, {
@@ -3475,7 +3475,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "527",
+    "id" : "526",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -3667,7 +3667,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "568",
+    "id" : "569",
     "label" : {
       "IRI-based" : "double"
     }
@@ -3700,11 +3700,11 @@
       "IRI-based" : "boolean"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "613",
     "label" : {
-      "IRI-based" : "double"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -3714,11 +3714,11 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "616",
     "label" : {
-      "IRI-based" : "integer"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -3957,7 +3957,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "22",
+    "id" : "19",
     "label" : {
       "IRI-based" : "string"
     }
@@ -4115,7 +4115,7 @@
     "superClasses" : [ "65" ]
   }, {
     "instances" : 0,
-    "union" : [ "18", "46" ],
+    "union" : [ "21", "46" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "652"
   }, {
@@ -4170,7 +4170,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "407",
+    "id" : "408",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -4190,7 +4190,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "28"
   }, {
@@ -4554,7 +4554,7 @@
     "comment" : {
       "en" : "A railway signal is an installation next to the railway track for signalling the maximum allowed speed in the next block section to the train driver."
     },
-    "id" : "207"
+    "id" : "205"
   }, {
     "iri" : "http://data.europa.eu/949/Tunnel",
     "baseIri" : "http://data.europa.eu/949",
@@ -4881,7 +4881,7 @@
     "comment" : {
       "en" : "A vehicle type that has been authorized to operate on the EU railway infrastructure."
     },
-    "id" : "21"
+    "id" : "18"
   }, {
     "iri" : "http://www.opengis.net/ont/sf#Surface",
     "baseIri" : "http://www.opengis.net/ont/sf",
@@ -4986,16 +4986,16 @@
         "value" : "A set of concepts, optionally including statements about semantic relationships between those concepts.",
         "type" : "label"
       } ],
-      "scopeNote" : [ {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "A concept scheme may be defined to include concepts from different sources.",
-        "type" : "label"
-      } ],
       "example" : [ {
         "identifier" : "example",
         "language" : "en",
         "value" : "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A concept scheme may be defined to include concepts from different sources.",
         "type" : "label"
       } ]
     },
@@ -5061,7 +5061,7 @@
     "comment" : {
       "en" : "A running track that is used for train service movements."
     },
-    "id" : "18"
+    "id" : "21"
   }, {
     "iri" : "http://data.europa.eu/949/LineReference",
     "baseIri" : "http://data.europa.eu/949",
@@ -5099,7 +5099,7 @@
     "comment" : {
       "en" : "A reference to a specific national railway line."
     },
-    "id" : "746"
+    "id" : "745"
   }, {
     "iri" : "http://www.opengis.net/ont/gml#LineStringSegment",
     "baseIri" : "http://www.opengis.net/ont/gml",
@@ -5185,7 +5185,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "778",
+    "id" : "779",
     "label" : {
       "IRI-based" : "double"
     }
@@ -5219,7 +5219,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "702"
   }, {
@@ -5238,7 +5238,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "433"
   }, {
@@ -5291,13 +5291,13 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "781",
+    "id" : "782",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18", "46" ],
+    "union" : [ "18", "21", "46" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "551"
   }, {
@@ -5343,7 +5343,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "768"
   }, {
@@ -5362,7 +5362,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "18" ],
+    "union" : [ "18", "21" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "377"
   }, {
@@ -5381,24 +5381,24 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "732"
+    "id" : "731"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "733",
+    "id" : "732",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "706"
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "165"
   }, {
@@ -5417,7 +5417,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "210"
   }, {
@@ -5429,7 +5429,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "21", "41" ],
+    "union" : [ "18", "41" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "186"
   }, {
@@ -5510,13 +5510,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/gml",
@@ -5526,11 +5525,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -5584,7 +5584,7 @@
       "undefined" : "point"
     },
     "comment" : {
-      "undefined" : "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  "
+      "undefined" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
     },
     "attributes" : [ "external" ],
     "id" : "295",
@@ -5624,7 +5624,7 @@
     "id" : "40",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "43",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
     "id" : "45",
@@ -5795,7 +5795,7 @@
     "id" : "204",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "206",
+    "id" : "207",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "209",
@@ -6008,7 +6008,7 @@
     "id" : "406",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "408",
+    "id" : "407",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "414",
@@ -6117,10 +6117,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "475",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "476",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "477",
     "type" : "owl:datatypeProperty"
@@ -6237,10 +6237,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "525",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "526",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "527",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "528",
     "type" : "rdfs:SubClassOf"
@@ -6320,7 +6320,7 @@
     "id" : "567",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "569",
+    "id" : "568",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "570",
@@ -6570,10 +6570,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "693",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "694",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "695",
     "type" : "owl:datatypeProperty"
@@ -6666,10 +6666,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "730",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "731",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "733",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "734",
     "type" : "owl:datatypeProperty"
@@ -6702,10 +6702,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "744",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "745",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "746",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "747",
     "type" : "owl:datatypeProperty"
@@ -6717,10 +6717,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "750",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "751",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "752",
     "type" : "owl:datatypeProperty"
@@ -6797,13 +6797,13 @@
     "id" : "777",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "779",
+    "id" : "778",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "780",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "782",
+    "id" : "781",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "783",
@@ -6997,55 +6997,9 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
-    "iri" : "http://data.europa.eu/949/automaticDroppingDeviceRequired",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "19",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-08-25",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-12",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.2.5.3",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "automaticDroppingDeviceRequired",
-      "en" : "automatic dropping device required"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Indication of whether an automatic dropping device (ADD) required on the vehicle."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "17"
-  }, {
     "iri" : "http://data.europa.eu/949/wheelchairSpaces",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "22",
+    "range" : "19",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -7082,9 +7036,55 @@
       "IRI-based" : "wheelchairSpaces",
       "en" : "wheelchair spaces"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of wheelchair spaces."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://data.europa.eu/949/automaticDroppingDeviceRequired",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "22",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-25",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-12",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.2.5.3",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "automaticDroppingDeviceRequired",
+      "en" : "automatic dropping device required"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Indication of whether an automatic dropping device (ADD) required on the vehicle."
     },
     "attributes" : [ "datatype" ],
     "id" : "20"
@@ -7265,12 +7265,12 @@
       "IRI-based" : "category",
       "en" : "vehicle category"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Vehicle category."
     },
     "attributes" : [ "object" ],
-    "id" : "43"
+    "id" : "44"
   }, {
     "iri" : "http://data.europa.eu/949/gradient",
     "baseIri" : "http://data.europa.eu/949",
@@ -7476,7 +7476,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially within the \n      object SpatialObject. DE-9IM: T*F**F***\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "91"
   }, {
     "range" : "16",
@@ -7538,7 +7538,7 @@
     },
     "domain" : "111",
     "subproperty" : [ "113" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "110"
   }, {
     "range" : "116",
@@ -7605,7 +7605,7 @@
       "IRI-based" : "raisedPantographsDistanceAndSpeed",
       "en" : "raised pantographs distance and speed"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed."
     },
@@ -7651,7 +7651,7 @@
       "IRI-based" : "altitudeRangeDetail",
       "en" : "altitude range detail"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Altitude range value for 'X' if value 'AX' is selected in altitude range."
     },
@@ -7740,12 +7740,12 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.8.5",
+        "value" : "1.2.1.0.5.3",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.5.3",
+        "value" : "1.1.1.1.8.5",
         "type" : "label"
       } ]
     },
@@ -7894,7 +7894,7 @@
       "IRI-based" : "gprsImplementationArea",
       "en" : "GPRS implementation area"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of the area in which GPRS can be used for ETCS."
     },
@@ -7940,7 +7940,7 @@
       "IRI-based" : "hasParkingBrake",
       "en" : "has parking brake"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates if a vehicle type has parking brake."
     },
@@ -8038,7 +8038,7 @@
       "IRI-based" : "additionalBrakingInformationDocument",
       "en" : "additional braking information document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Electronic document available in two EU languages from the IM stored by the Agency providing additional information as defined in point (2) of point 4.2.2.6.2 of the Annex to Regulation XXX - OPE TSI."
     },
@@ -8084,7 +8084,7 @@
       "IRI-based" : "thermalCapacityTSIReference",
       "en" : "thermal capacity TSI reference"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Reference case of a TSI thermal capacity."
     },
@@ -8135,7 +8135,7 @@
       "IRI-based" : "maxLengthVehicleNose",
       "en" : "maximum length vehicle nose"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum length of the vehicle nose."
     },
@@ -8207,7 +8207,7 @@
     },
     "superproperty" : [ "183", "184" ],
     "domain" : "181",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "180"
   }, {
     "iri" : "http://data.europa.eu/949/minFlangeHeight",
@@ -8400,9 +8400,49 @@
     "attributes" : [ "object" ],
     "id" : "201"
   }, {
+    "iri" : "http://data.europa.eu/949/isSwitchable",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "206",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSwitchable",
+      "en" : "is switchable"
+    },
+    "domain" : "205",
+    "comment" : {
+      "en" : "Indicates if a signal can be switched to show different messages or if it is a static panel."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "204"
+  }, {
     "iri" : "http://data.europa.eu/949/loadingPlatformHeight",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "205",
+    "range" : "208",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8439,52 +8479,12 @@
       "IRI-based" : "loadingPlatformHeight",
       "en" : "loadng platform height"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Height of loading platform (for flat wagons and combined transport), given in mm."
     },
     "attributes" : [ "datatype" ],
-    "id" : "204"
-  }, {
-    "iri" : "http://data.europa.eu/949/isSwitchable",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "208",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isSwitchable",
-      "en" : "is switchable"
-    },
-    "domain" : "207",
-    "comment" : {
-      "en" : "Indicates if a signal can be switched to show different messages or if it is a static panel."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "206"
+    "id" : "207"
   }, {
     "iri" : "http://data.europa.eu/949/minDistFirstLastAxle",
     "baseIri" : "http://data.europa.eu/949",
@@ -8608,7 +8608,7 @@
       "IRI-based" : "compatibilityProcedureDocument",
       "en" : "structure check document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Document with the procedure(s) for static and dynamic route compatibility checks."
     },
@@ -8634,22 +8634,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -8673,12 +8673,12 @@
     "comment" : {
       "en" : "\n      The default geometry to be used in spatial calculations.\n      It is Usually the most detailed geometry.\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "216"
   }, {
     "iri" : "http://data.europa.eu/949/track",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "18",
+    "range" : "21",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -8738,12 +8738,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -8773,7 +8773,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially disjoint\n      from the object SpatialObject. DE-9IM: FFTFFTTTT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "227"
   }, {
     "iri" : "http://data.europa.eu/949/tiltingSupported",
@@ -8815,7 +8815,7 @@
       "IRI-based" : "tiltingSupported",
       "en" : "tilting supported"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether tilting functions are supported by ETCS."
     },
@@ -8876,7 +8876,7 @@
       "IRI-based" : "cantDeficiency",
       "en" : "cant deficiency"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Maximum cant deficiency expressed in millimetres defined as difference between the applied cant and a higher equilibrium cant the line has been designed for."
     },
@@ -8962,7 +8962,7 @@
       "IRI-based" : "flangeLubricationFitted",
       "en" : "flange lubrication fitted"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates if the vehicle type is fitted for flange lubrication."
     },
@@ -9033,7 +9033,7 @@
       "IRI-based" : "hasAutomaticDroppingDevice",
       "en" : "has automatic dropping device"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Automatic dropping device (ADD) fitted (to be indicated for each energy supply system the vehicle is equipped for)."
     },
@@ -9131,7 +9131,7 @@
       "IRI-based" : "eddyCurrentBrakePrevention",
       "en" : "eddy current brake prevention"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Possibility of preventing the use of the eddy current track brake (only if fitted with eddy current brake)"
     },
@@ -9261,7 +9261,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.5.6",
+        "value" : "1.1.1.1.8.9",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -9271,7 +9271,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.8.9",
+        "value" : "1.2.1.0.5.6",
         "type" : "label"
       } ]
     },
@@ -9377,7 +9377,7 @@
       "IRI-based" : "minimumConcaveVerticalRadius",
       "en" : "minimum concave vertical radius"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Minimum vertical concave curve radius capability."
     },
@@ -9423,7 +9423,7 @@
       "IRI-based" : "etcsOptionalFunctions",
       "en" : "ETCS optional functions"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Optional ETCS functions which might improve operation on the line."
     },
@@ -9469,7 +9469,7 @@
       "IRI-based" : "energyMeterInstalled",
       "en" : "energy meter installed"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "TSI conform energy meter for billing purposes installed on board."
     },
@@ -9585,7 +9585,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially contains the \n      object SpatialObject. DE-9IM: T*****FF*\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "297"
   }, {
     "iri" : "http://data.europa.eu/949/vehicleNumber",
@@ -9667,7 +9667,7 @@
       "IRI-based" : "flangeLubeForbidden",
       "en" : "flange lube forbidden"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether the use of on-board device for flange lubrication is forbidden"
     },
@@ -9805,7 +9805,7 @@
       "IRI-based" : "manufacturer",
       "en" : "manufacturer"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Vehicle manufacturer company."
     },
@@ -9897,7 +9897,7 @@
       "IRI-based" : "supportedPlatformHeight",
       "en" : "supported platform height"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Platform height for which the vehicle is de­signed."
     },
@@ -10035,7 +10035,7 @@
       "IRI-based" : "quasiStaticGuidingForce",
       "en" : "quasi static guiding force"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Quasi-static guiding force (if exceeds the limit defined in TSI or not defined in the TSI), given in kN."
     },
@@ -10188,7 +10188,7 @@
       "IRI-based" : "redLightsRequired",
       "en" : "red lights required"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of a sections where two steady red lights are required in accordance with Regulation (EU) 2019/773"
     },
@@ -10214,22 +10214,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10252,7 +10252,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially equals the \n      object SpatialObject. DE-9IM: TFFFTFFFT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "362"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
@@ -10286,7 +10286,7 @@
     "superproperty" : [ "365" ],
     "domain" : "181",
     "subproperty" : [ "183" ],
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "363"
   }, {
     "iri" : "http://data.europa.eu/949/trainDetectionSystemSpecificCheck",
@@ -10461,7 +10461,7 @@
       "IRI-based" : "etcsNationalApplications",
       "en" : "ETCS national applications"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "ETCS national applications implemented (NID_XUSER of Packet 44)."
     },
@@ -10522,7 +10522,7 @@
       "IRI-based" : "isQuietRoute",
       "en" : "is quiet route"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of a track being part of a route with noise restrictions"
     },
@@ -10556,54 +10556,8 @@
     "comment" : {
       "en" : "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "184"
-  }, {
-    "iri" : "http://data.europa.eu/949/vehiclesComposingFixedFormation",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "407",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.1.12",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "vehiclesComposingFixedFormation",
-      "en" : "vehicles composing fixed formation"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Number of vehicles composing the fixed formation (for fixed formation only). Note: the value is mandatory for all vehicle categories. If the vehicle is composed of only one car, the indicated value shall be '1'."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "406"
   }, {
     "iri" : "http://data.europa.eu/949/etcsDataCommApp",
     "baseIri" : "http://data.europa.eu/949",
@@ -10644,12 +10598,58 @@
       "IRI-based" : "etcsDataCommApp",
       "en" : "ETCS data communication application"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Data communication application for ETCS implementation."
     },
     "attributes" : [ "datatype" ],
-    "id" : "408"
+    "id" : "406"
+  }, {
+    "iri" : "http://data.europa.eu/949/vehiclesComposingFixedFormation",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "408",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.1.12",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "vehiclesComposingFixedFormation",
+      "en" : "vehicles composing fixed formation"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Number of vehicles composing the fixed formation (for fixed formation only). Note: the value is mandatory for all vehicle categories. If the vehicle is composed of only one car, the indicated value shall be '1'."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "407"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehCovers",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -10670,12 +10670,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -10686,6 +10680,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10708,7 +10708,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially covers the \n      object SpatialObject. DE-9IM: T*TFT*FF*\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "414"
   }, {
     "iri" : "http://data.europa.eu/949/hasElectricShoreSupply",
@@ -10776,12 +10776,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -10792,6 +10786,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -10856,7 +10856,7 @@
       "IRI-based" : "publicNetworkRoaming",
       "en" : "public network roaming"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence of roaming to public networks."
     },
@@ -10902,7 +10902,7 @@
       "IRI-based" : "wheelSetGaugeTransformationMethod",
       "en" : "wheel set gauge transformation method"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Wheel gauge transformation method. Defined if more than one wheel gauges have been selected."
     },
@@ -10911,7 +10911,7 @@
   }, {
     "iri" : "http://data.europa.eu/949/vehicleType",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "21",
+    "range" : "18",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10988,7 +10988,7 @@
       "IRI-based" : "maximumBrakeThermalEnergyCapacity",
       "en" : "maximum brake thermal energy capacity"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum brake thermal energy capacity given in kJ"
     },
@@ -11172,7 +11172,7 @@
     "comment" : {
       "en" : "skos:related is disjoint with skos:broaderTransitive"
     },
-    "attributes" : [ "object", "external", "symmetric" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "436"
   }, {
     "iri" : "http://data.europa.eu/949/complianceInfTsi",
@@ -11421,7 +11421,7 @@
       "IRI-based" : "distSignToPhaseEnd",
       "en" : "distance sign and phase"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Distance between the signboard authorizing the driver to “raise pantograph” or “close the circuit breaker” after passing the phase separation and the end of the phase separation section. Specific for route compatibility check on French network."
     },
@@ -11467,7 +11467,7 @@
       "IRI-based" : "structureCheckLocation",
       "en" : "structure check location"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Railway location of structures requiring specific checks."
     },
@@ -11513,7 +11513,7 @@
       "IRI-based" : "startingNoiseLevel",
       "en" : "starting noise level"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "starting noise level given in dB(A)."
     },
@@ -11559,7 +11559,7 @@
       "IRI-based" : "maximumSpeedAndCantDeficiency",
       "en" : "maximum speed and cant deficiency"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Combination of maximum speed and maximum cant deficiency for which the vehicle was assessed."
     },
@@ -11605,7 +11605,7 @@
       "IRI-based" : "designMassNormalPayload",
       "en" : "design mass under normal payload"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Design mass under normal payload."
     },
@@ -11651,7 +11651,7 @@
       "IRI-based" : "hasWheelSlideProtectionSystem",
       "en" : "has wheel slide protection system"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates the presence of a wheel slide protection system."
     },
@@ -11697,7 +11697,7 @@
       "IRI-based" : "designMassExceptionalPayload",
       "en" : "design mass under exceptional payload"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Design mass under exceptional payload."
     },
@@ -11743,7 +11743,7 @@
       "IRI-based" : "hasSandingPrevention",
       "en" : "has sanding prevention"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Possibility of preventing the use of sanding."
     },
@@ -11789,7 +11789,7 @@
       "IRI-based" : "designMassWorkingOrder",
       "en" : "design mass in working order"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Design mass in working order."
     },
@@ -11920,17 +11920,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
+        "value" : "1.1.1.1.8.11",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
         "value" : "1.2.2.0.5.8",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.2.1.0.5.8",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.8.11",
         "type" : "label"
       } ]
     },
@@ -11984,7 +11984,7 @@
       "IRI-based" : "altitudeRange",
       "en" : "altitude range"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Altitude range."
     },
@@ -12122,7 +12122,7 @@
       "IRI-based" : "trainIntegrityOnBoardRequired",
       "en" : "train integrity on-board required"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether Train Integrity monitoring system (TIMS) is required to access the line for safety reasons."
     },
@@ -12214,7 +12214,7 @@
       "IRI-based" : "stationaryNoiseLevel",
       "en" : "stationary noise level"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "stationary noise level given in dB(A)."
     },
@@ -12260,7 +12260,7 @@
       "IRI-based" : "vehicleContactForce",
       "en" : "vehicle contact force"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Mean contact force."
     },
@@ -12306,52 +12306,12 @@
       "IRI-based" : "gsmROptionalFunctions",
       "en" : "GSM-R optional functions"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria."
     },
     "attributes" : [ "object" ],
     "id" : "474"
-  }, {
-    "iri" : "http://data.europa.eu/949/positionOnB",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "42",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "positionOnB",
-      "en" : "position on B"
-    },
-    "domain" : "144",
-    "comment" : {
-      "en" : "Determines the position of the topological object B in a relation."
-    },
-    "attributes" : [ "object" ],
-    "id" : "475"
   }, {
     "iri" : "http://data.europa.eu/949/maximumTrainDeceleration",
     "baseIri" : "http://data.europa.eu/949",
@@ -12392,11 +12352,51 @@
       "IRI-based" : "maximumTrainDeceleration",
       "en" : "maximum train deceleration"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."
     },
     "attributes" : [ "datatype" ],
+    "id" : "475"
+  }, {
+    "iri" : "http://data.europa.eu/949/positionOnB",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnB",
+      "en" : "position on B"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "Determines the position of the topological object B in a relation."
+    },
+    "attributes" : [ "object" ],
     "id" : "476"
   }, {
     "iri" : "http://data.europa.eu/949/dieselThermalAllowed",
@@ -12484,7 +12484,7 @@
       "IRI-based" : "maximumBrakingDistance",
       "en" : "maximum braking distance"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "The maximum value of the braking distance [in meters] of a train shall be given for the maximum line speed."
     },
@@ -12570,7 +12570,7 @@
       "IRI-based" : "permittedContactForce",
       "en" : "permitted contact force"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of contact force allowed expressed in newtons."
     },
@@ -12616,7 +12616,7 @@
       "IRI-based" : "vehiclePantographHead",
       "en" : "vehicle pantograph head"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Pantograph head geometry (to be indicated for each energy supply system the vehicle is equipped for)."
     },
@@ -12646,7 +12646,7 @@
     },
     "superproperty" : [ "110" ],
     "domain" : "42",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "113"
   }, {
     "iri" : "http://data.europa.eu/949/wheelchairSleepingPlaces",
@@ -12688,7 +12688,7 @@
       "IRI-based" : "wheelchairSleepingPlaces",
       "en" : "wheelchair sleeping spaces"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of wheelchair accessible sleeping places."
     },
@@ -12766,12 +12766,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.5.7",
+        "value" : "1.2.1.0.5.7",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.5.7",
+        "value" : "1.2.2.0.5.7",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -12814,7 +12814,7 @@
     },
     "superproperty" : [ "488", "184" ],
     "domain" : "181",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "182"
   }, {
     "iri" : "http://data.europa.eu/949/specificInformation",
@@ -12856,63 +12856,12 @@
       "IRI-based" : "specificInformation",
       "en" : "specific information"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "This parameters allows the IM to provide plain text with specific information about the track."
     },
     "attributes" : [ "datatype" ],
     "id" : "489"
-  }, {
-    "iri" : "http://data.europa.eu/949/gaugingCheckLocation",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "425",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-10",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.1.0.3.5",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.3.1.2",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "gaugingCheckLocation",
-      "en" : "gauging check location"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "491"
   }, {
     "iri" : "http://data.europa.eu/949/maxTrainCurrent",
     "baseIri" : "http://data.europa.eu/949",
@@ -12958,6 +12907,57 @@
       "en" : "Maximum current taken by the complete train (composition of one or more units) expressed in amperes."
     },
     "attributes" : [ "datatype" ],
+    "id" : "491"
+  }, {
+    "iri" : "http://data.europa.eu/949/gaugingCheckLocation",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "425",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-10",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.1.0.3.5",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.3.1.2",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gaugingCheckLocation",
+      "en" : "gauging check location"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "492"
   }, {
     "iri" : "http://data.europa.eu/949/parkingBrakeMaximumGradient",
@@ -12999,7 +12999,7 @@
       "IRI-based" : "parkingBrakeMaximumGradient",
       "en" : "parking brake maximum gradient"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum gradient on which the unit is kept immobilised by the parking brake alone (if the vehicle is fitted with it)."
     },
@@ -13045,7 +13045,7 @@
       "IRI-based" : "voiceOperationalCommImpl",
       "en" : "voice operational communication implementation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Voice and operational communication implementation."
     },
@@ -13182,7 +13182,7 @@
       "IRI-based" : "pantographHead",
       "en" : "tsi pantograph head"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of which TSI compliant pantograph heads are allowed to be used."
     },
@@ -13228,7 +13228,7 @@
       "IRI-based" : "thermalCapacitySpeed",
       "en" : "thermal capacity speed"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Thermal capacity speed. If no reference case is indicated."
     },
@@ -13430,7 +13430,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially contains the \n      object SpatialObject. DE-9IM: TTTFFTFFT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "506"
   }, {
     "iri" : "http://data.europa.eu/949/fixedSeats",
@@ -13472,7 +13472,7 @@
       "IRI-based" : "fixedSeats",
       "en" : "fixed seats"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of fixed seats."
     },
@@ -13518,7 +13518,7 @@
       "IRI-based" : "totalVehicleMass",
       "en" : "total vehicle mass"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Total vehicle mass (for each vehicle of the unit), given in kg."
     },
@@ -13623,7 +13623,7 @@
       "IRI-based" : "platform",
       "en" : "platform"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Reference to a related platform."
     },
@@ -13714,7 +13714,7 @@
       "IRI-based" : "maximumAverageDeceleration",
       "en" : "maximum average deceleration"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum train deceleration given in m/s²."
     },
@@ -13756,6 +13756,52 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "524"
   }, {
+    "iri" : "http://data.europa.eu/949/thermalCapacityTime",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "526",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.7.2.1.5",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-11-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "thermalCapacityTime",
+      "en" : "thermal capacity time"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Thermal capacity time. If no reference case is indicated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "525"
+  }, {
     "iri" : "http://data.europa.eu/949/elementB",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "33",
@@ -13794,53 +13840,7 @@
       "en" : "References the second topological object in an oriented relation."
     },
     "attributes" : [ "object" ],
-    "id" : "525"
-  }, {
-    "iri" : "http://data.europa.eu/949/thermalCapacityTime",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "527",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-08-24",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.7.2.1.5",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2020-11-03",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "thermalCapacityTime",
-      "en" : "thermal capacity time"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Thermal capacity time. If no reference case is indicated."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "526"
+    "id" : "527"
   }, {
     "range" : "136",
     "domain" : "529",
@@ -13886,7 +13886,7 @@
       "IRI-based" : "eddyCurrentBrakingConditionsDocument",
       "en" : "eddy current braking conditions document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Document with the conditions for the use of eddy current brakes."
     },
@@ -13937,7 +13937,7 @@
       "IRI-based" : "permissiblePayload",
       "en" : "permissible payload"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Permissible payload for different line categories."
     },
@@ -13980,12 +13980,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.4.1",
+        "value" : "1.2.3.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.3.1",
+        "value" : "1.1.1.4.1",
         "type" : "label"
       } ]
     },
@@ -14022,12 +14022,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -14057,7 +14057,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially contains the \n      object SpatialObject. DE-9IM: T*TFF*FF*\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "536"
   }, {
     "iri" : "http://data.europa.eu/949/portableBoardingAids",
@@ -14099,7 +14099,7 @@
       "IRI-based" : "portableBoardingAids",
       "en" : "portable boarding aids"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Description of any portable boarding aids if considered in the design of the vehicle for meeting the PRM TSI requirements."
     },
@@ -14125,6 +14125,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -14135,12 +14141,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -14163,7 +14163,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially crosses the \n      object SpatialObject. DE-9IM: T*T******\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "539"
   }, {
     "range" : "34",
@@ -14339,7 +14339,7 @@
       "IRI-based" : "wheelSetGaugeChangeoverFacility",
       "en" : "wheelset gauge changeover facility"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Wheelset gauge changeover facility."
     },
@@ -14385,7 +14385,7 @@
       "IRI-based" : "prioritySeats",
       "en" : "priority seats"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of priority seats."
     },
@@ -14431,7 +14431,7 @@
       "IRI-based" : "massPerWheel",
       "en" : "mass per wheel"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Mass per wheel, given in kg."
     },
@@ -14495,7 +14495,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially equals the \n      object SpatialObject. DE-9IM: TFFFTFFFT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "557"
   }, {
     "iri" : "http://data.europa.eu/949/tunnelIdentification",
@@ -14529,12 +14529,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.5.2",
+        "value" : "1.2.1.0.5.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.5.2",
+        "value" : "1.2.2.0.5.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -14603,7 +14603,7 @@
       "IRI-based" : "hasBallast",
       "en" : "has ballast"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Specifies whether track construction is with sleepers embedded in ballast or not.."
     },
@@ -14649,16 +14649,67 @@
       "IRI-based" : "voiceGSMRNetwork",
       "en" : "voice GSM-R network"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Voice SIM Card GSM-R Home Network"
     },
     "attributes" : [ "object" ],
     "id" : "566"
   }, {
+    "iri" : "http://data.europa.eu/949/localRulesOrRestrictionsDoc",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "233",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-09",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-12",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.4.2",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.3.2",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "localRulesOrRestrictionsDoc",
+      "en" : "local rules or restrictions document"
+    },
+    "domain" : "245",
+    "comment" : {
+      "en" : "Documents regarding the rules or restrictions of a strictly local nature available by the IM."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "567"
+  }, {
     "iri" : "http://data.europa.eu/949/staticAxleLoadExceptionalPayload",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "568",
+    "range" : "569",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -14695,63 +14746,12 @@
       "IRI-based" : "staticAxleLoadExceptionalPayload",
       "en" : "static axle load under exceptional payload"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Static axle load under exceptional payload."
     },
     "attributes" : [ "datatype" ],
-    "id" : "567"
-  }, {
-    "iri" : "http://data.europa.eu/949/localRulesOrRestrictionsDoc",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "233",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-09",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-12",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.3.2",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.4.2",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "localRulesOrRestrictionsDoc",
-      "en" : "local rules or restrictions document"
-    },
-    "domain" : "245",
-    "comment" : {
-      "en" : "Documents regarding the rules or restrictions of a strictly local nature available by the IM."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "569"
+    "id" : "568"
   }, {
     "range" : "86",
     "domain" : "82",
@@ -14765,7 +14765,7 @@
   }, {
     "iri" : "http://data.europa.eu/949/hasSignal",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "207",
+    "range" : "205",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -14836,7 +14836,7 @@
       "IRI-based" : "alternativeName",
       "en" : "alternative name"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Alternative name of a vehicle."
     },
@@ -14882,7 +14882,7 @@
       "IRI-based" : "trackDirection",
       "en" : "track direction"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Track normal running direction."
     },
@@ -14928,7 +14928,7 @@
       "IRI-based" : "magneticBrakingConditionsDocument",
       "en" : "magnetic braking conditions document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Document with the conditions for the use of magnetic brakes."
     },
@@ -14974,7 +14974,7 @@
       "IRI-based" : "magneticBrakePrevention",
       "en" : "magnetic brake prevention"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Possibility of preventing the use of the magnetic track brake (only if fitted with magnetic brake)"
     },
@@ -15020,7 +15020,7 @@
       "IRI-based" : "gsmRRadioDataCommunication",
       "en" : "GSM-R radio data communication"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "GSM-R Radio Data communication on board and its Baseline."
     },
@@ -15064,12 +15064,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.8.7",
+        "value" : "1.2.1.0.6.4",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.5.5",
+        "value" : "1.1.1.1.8.7",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -15079,12 +15079,12 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.0.0.0.5",
+        "value" : "1.2.2.0.5.5",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.6.4",
+        "value" : "1.1.0.0.0.5",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -15143,7 +15143,7 @@
       "IRI-based" : "accelerationLevelCrossing",
       "en" : "acceleration allowed level crossings"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence of limit for acceleration of train if stopping or recovering speed close to a level crossing expressed in a specific reference acceleration curve."
     },
@@ -15180,7 +15180,7 @@
     "superproperty" : [ "365" ],
     "domain" : "181",
     "subproperty" : [ "488" ],
-    "attributes" : [ "transitive", "object", "external" ],
+    "attributes" : [ "external", "object", "transitive" ],
     "id" : "364"
   }, {
     "iri" : "http://data.europa.eu/949/etcsMVersion",
@@ -15222,7 +15222,7 @@
       "IRI-based" : "etcsMVersion",
       "en" : "ETCS M_version"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "ETCS M_version according to SRS 7.5.1.9."
     },
@@ -15268,7 +15268,7 @@
       "IRI-based" : "prmAccessibleToilets",
       "en" : "prm accessible toilets"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of PRM accessible toilets."
     },
@@ -15314,7 +15314,7 @@
       "IRI-based" : "gsmRActiveMobiles",
       "en" : "GSM-R active mobiles"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Number of active GSM-R mobiles (EDOR) or simultaneous communication session on-board for ETCS Level 2 (or level 3) needed to perform radio block centre handovers without having an operational disruption."
     },
@@ -15350,7 +15350,7 @@
     },
     "domain" : "42",
     "subproperty" : [ "364", "363", "436", "184" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "365"
   }, {
     "iri" : "http://data.europa.eu/949/trainDetectionSystem",
@@ -15386,7 +15386,7 @@
       "IRI-based" : "trainDetectionSystem",
       "en" : "train detection system"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Train detection systems installed in the section of line."
     },
@@ -15472,7 +15472,7 @@
       "IRI-based" : "subCategory",
       "en" : "vehicle subcategory"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Vehicle subcategory."
     },
@@ -15507,12 +15507,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -15536,7 +15536,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially touches the \n      object SpatialObject.\n      DE-9IM: FT******* ^ F**T***** ^ F***T****\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "590"
   }, {
     "iri" : "http://data.europa.eu/949/hasToiletDischarge",
@@ -15650,22 +15650,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -15730,7 +15730,7 @@
       "IRI-based" : "energySupplyMaxPower",
       "en" : "energy supply max power"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum power (to be indicated for each energy supply system the vehicle is equipped for), given in kW."
     },
@@ -15810,7 +15810,7 @@
       "IRI-based" : "contactLineSystem",
       "en" : "contact line system"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Contact line system present in the section of line."
     },
@@ -15856,7 +15856,7 @@
       "IRI-based" : "phaseSeparation",
       "en" : "phase separation"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of existence of phase separation and required information."
     },
@@ -15902,7 +15902,7 @@
       "IRI-based" : "maximumSpeedEmpty",
       "en" : "maximum speed empty"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum speed when empty."
     },
@@ -15948,7 +15948,7 @@
       "IRI-based" : "phaseInfo",
       "en" : "phase information"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Required information on phase separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N])."
     },
@@ -15994,7 +15994,7 @@
       "IRI-based" : "verificationCSS",
       "en" : "declaration of verification CSS"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Unique number for EC declarations concerning requirements of CSS (Command - Control and Signalling subsystem) on the specific track."
     },
@@ -16040,7 +16040,7 @@
       "IRI-based" : "maximumServiceBrake",
       "en" : "maximum service break"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "At maximum service brake: Stopping distance, Maximum deceleration, for the load condition 'design mass under normal payload' at the design maximum speed."
     },
@@ -16167,12 +16167,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -16202,7 +16202,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially covered \n      by the object SpatialObject. DE-9IM: TFFTTFTTT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "623"
   }, {
     "iri" : "http://data.europa.eu/949/hasLubricationDevicePrevention",
@@ -16244,7 +16244,7 @@
       "IRI-based" : "hasLubricationDevicePrevention",
       "en" : "has lubrication device prevention"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Possibility of preventing the use of the lubrication device (only if fitted with flange lubrication)."
     },
@@ -16330,7 +16330,7 @@
       "IRI-based" : "tenGISId",
       "en" : "TEN GIS identity"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of the GIS identity (GIS ID) of the section of TEN-T database to which the track belongs."
     },
@@ -16376,7 +16376,7 @@
       "IRI-based" : "oclType",
       "en" : "ocl type"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "OCL type."
     },
@@ -16455,7 +16455,7 @@
     "comment" : {
       "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
     },
-    "attributes" : [ "transitive", "object", "external", "symmetric" ],
+    "attributes" : [ "external", "object", "transitive", "symmetric" ],
     "id" : "633"
   }, {
     "iri" : "http://data.europa.eu/949/staticAxleLoadWorkingOrder",
@@ -16497,7 +16497,7 @@
       "IRI-based" : "staticAxleLoadWorkingOrder",
       "en" : "static axle load in working order"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Static axle load in working order."
     },
@@ -16543,7 +16543,7 @@
       "IRI-based" : "drivingCabs",
       "en" : "driving cabs"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of driving cabs. For wagons the number of driving cabs is to be set to zero (0)."
     },
@@ -16635,7 +16635,7 @@
       "IRI-based" : "gsmrNetworkCoverage",
       "en" : "GSM-R network coverage"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "GSM-R networks covered by a roaming agreement"
     },
@@ -16673,7 +16673,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.6.3",
+        "value" : "1.2.1.0.2.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -16688,7 +16688,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.2.1",
+        "value" : "1.2.1.0.6.3",
         "type" : "label"
       } ]
     },
@@ -16742,7 +16742,7 @@
       "IRI-based" : "vehicleMaxSandingOutput",
       "en" : "vehicle max sanding output"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Vehicle Maximum sanding output, given in grams per second."
     },
@@ -16808,22 +16808,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -16888,7 +16888,7 @@
       "IRI-based" : "conditionsTrainFormation",
       "en" : "conditions train formation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Conditions of use regarding train formation."
     },
@@ -16980,7 +16980,7 @@
       "IRI-based" : "fireSafetyCategory",
       "en" : "fire safety category"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Fire safety category for tunnels."
     },
@@ -17026,7 +17026,7 @@
       "IRI-based" : "preventRegenerativeBrakeUse",
       "en" : "prevent regenerative brake use"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Possibility of preventing the use of the regenerative brake (only if fitted with regenerative brake)."
     },
@@ -17066,7 +17066,7 @@
       "IRI-based" : "etcsLevel",
       "en" : "etcs level"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "ETCS level available in the section of line."
     },
@@ -17112,7 +17112,7 @@
       "IRI-based" : "gsmRAdditionalInfo",
       "en" : "GSM-R additional network info"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Any additional information on network characteristics or corresponding document available from the IM and stored by the Agency, e.g.; interference level, leading to the recommendation of additional on-board protection."
     },
@@ -17230,7 +17230,7 @@
     "comment" : {
       "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
     },
-    "attributes" : [ "object", "functional", "external" ],
+    "attributes" : [ "external", "object", "functional" ],
     "id" : "665"
   }, {
     "iri" : "http://data.europa.eu/949/demonstrationSRT",
@@ -17264,17 +17264,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.5.4",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
         "value" : "1.2.2.0.5.4",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.1.1.1.8.6",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.1.0.5.4",
         "type" : "label"
       } ]
     },
@@ -17328,7 +17328,7 @@
       "IRI-based" : "snowIceHailConditions",
       "en" : "snow ice hail conditions"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Snow, ice and hail conditions."
     },
@@ -17495,12 +17495,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -17530,7 +17530,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially disjoint\n      from the object SpatialObject. DE-9IM: FF*FF****\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "673"
   }, {
     "iri" : "http://data.europa.eu/949/lineCategory",
@@ -17577,58 +17577,12 @@
       "IRI-based" : "lineCategory",
       "en" : "line category"
     },
-    "domain" : "44",
+    "domain" : "43",
     "comment" : {
       "en" : "Classification of a line according to the INF TSI."
     },
     "attributes" : [ "object" ],
     "id" : "674"
-  }, {
-    "iri" : "http://data.europa.eu/949/tsiSwitchCrossing",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "661",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-10",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.5.1",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "tsiSwitchCrossing",
-      "en" : "TSI compliance for switches and crossings"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Switches and crossings are maintained to in service limit dimension as specified in TSI."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "675"
   }, {
     "iri" : "http://data.europa.eu/949/catenaryMaxRatedCurrent",
     "baseIri" : "http://data.europa.eu/949",
@@ -17669,9 +17623,55 @@
       "IRI-based" : "catenaryMaxRatedCurrent",
       "en" : "catenary max rated current"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum rated current from the catenary (to be indicated for each electrical energy supply system the vehicle is equipped for), given in A."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "675"
+  }, {
+    "iri" : "http://data.europa.eu/949/tsiSwitchCrossing",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "661",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-10",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.5.1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tsiSwitchCrossing",
+      "en" : "TSI compliance for switches and crossings"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Switches and crossings are maintained to in service limit dimension as specified in TSI."
     },
     "attributes" : [ "datatype" ],
     "id" : "676"
@@ -17767,7 +17767,7 @@
       "IRI-based" : "dangerousGoodsTankCode",
       "en" : "dangerous goods tank code"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Dangerous goods for which the vehicle is suitable (tank code)."
     },
@@ -17813,7 +17813,7 @@
       "IRI-based" : "maximumLocomotivesCoupled",
       "en" : "maximum locomotives coupled"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum number of trainsets or locomotives coupled together in multiple operation."
     },
@@ -17839,22 +17839,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -17877,7 +17877,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially disjoint \n      from the object SpatialObject. DE-9IM: FF*FF****\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "680"
   }, {
     "iri" : "http://data.europa.eu/949/freightCorridor",
@@ -17924,7 +17924,7 @@
       "IRI-based" : "freightCorridor",
       "en" : "freight corridor"
     },
-    "domain" : "44",
+    "domain" : "43",
     "comment" : {
       "en" : "Railway Freight Corridor that the line is designated to."
     },
@@ -18022,7 +18022,7 @@
       "IRI-based" : "axleBearingConditionMonitoring",
       "en" : "axle bearing condition monitoring"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Axle bearing condition monitoring."
     },
@@ -18053,54 +18053,8 @@
     "superproperty" : [ "184" ],
     "domain" : "181",
     "subproperty" : [ "633" ],
-    "attributes" : [ "object", "external", "symmetric" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "396"
-  }, {
-    "iri" : "http://data.europa.eu/949/boardingAids",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "339",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-31",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.12.3.2",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-31",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "boardingAids",
-      "en" : "boarding aids"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Description of any integrated boarding aids (if provided)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "684"
   }, {
     "iri" : "http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument",
     "baseIri" : "http://data.europa.eu/949",
@@ -18141,9 +18095,55 @@
       "IRI-based" : "trainDetectionSystemSpecificCheckDocument",
       "en" : "detection system specific check document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "684"
+  }, {
+    "iri" : "http://data.europa.eu/949/boardingAids",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "339",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-31",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.12.3.2",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-31",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "boardingAids",
+      "en" : "boarding aids"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Description of any integrated boarding aids (if provided)."
     },
     "attributes" : [ "datatype" ],
     "id" : "685"
@@ -18187,7 +18187,7 @@
       "IRI-based" : "profileNumberSemiTrailers",
       "en" : "profile number for semi-trailers"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Coding for combined transport for semi-trailers as defined in UIC Code."
     },
@@ -18233,7 +18233,7 @@
       "IRI-based" : "hasSystemSeparation",
       "en" : "has system separation"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication of existence of system separation."
     },
@@ -18325,7 +18325,7 @@
       "IRI-based" : "systemSeparationInfo",
       "en" : "system separation information"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Required information on system separation. Data is structured as: length [NNN] + switch off breaker [Y/N] + lower pantograph [Y/N] +[CharacterString]."
     },
@@ -18371,7 +18371,7 @@
       "IRI-based" : "axleSpacing",
       "en" : "axle spacing"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Position of the axles along the unit. a: Distance between axles; b: Distance from end axle to the end of the nearest coupling plane; c: distance between two inside axles."
     },
@@ -18469,12 +18469,58 @@
       "IRI-based" : "hasETCSRestrictionsConditions",
       "en" : "has ETCS restrictions conditions"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether restrictions or conditions due to partial compliance with the CCS TSI exist."
     },
     "attributes" : [ "datatype" ],
     "id" : "692"
+  }, {
+    "iri" : "http://data.europa.eu/949/publicNetworkRoamingDetails",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "630",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-09",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-12",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.3.3.7",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publicNetworkRoamingDetails",
+      "en" : "public network roaming details"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Details on roaming to public networks."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "693"
   }, {
     "iri" : "http://data.europa.eu/949/maxSandingOutput",
     "baseIri" : "http://data.europa.eu/949",
@@ -18520,52 +18566,6 @@
       "en" : "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams."
     },
     "attributes" : [ "object" ],
-    "id" : "693"
-  }, {
-    "iri" : "http://data.europa.eu/949/publicNetworkRoamingDetails",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "630",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-09",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-12",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.3.3.7",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "publicNetworkRoamingDetails",
-      "en" : "public network roaming details"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Details on roaming to public networks."
-    },
-    "attributes" : [ "datatype" ],
     "id" : "694"
   }, {
     "iri" : "http://data.europa.eu/949/relativePosition",
@@ -18647,7 +18647,7 @@
       "IRI-based" : "referencePassByNoiseLevel",
       "en" : "reference pass-by noise level"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Pass-by noise level was measured under reference conditions."
     },
@@ -18693,7 +18693,7 @@
       "IRI-based" : "hasSevereWeatherConditions",
       "en" : "has severe weather conditions"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Climatic conditions on the line are severe according to European standard."
     },
@@ -18799,7 +18799,7 @@
       "IRI-based" : "loadCapability",
       "en" : "load capability"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "A combination of the line category and speed at the weakest point of the track."
     },
@@ -18825,6 +18825,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -18835,12 +18841,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -19102,7 +19102,7 @@
     "comment" : {
       "en" : "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "183"
   }, {
     "iri" : "http://data.europa.eu/949/hasCurrentLimitation",
@@ -19144,7 +19144,7 @@
       "IRI-based" : "hasCurrentLimitation",
       "en" : "has current limitation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Electric units equipped with power or current limitation function."
     },
@@ -19190,7 +19190,7 @@
       "IRI-based" : "letterMarking",
       "en" : "letter marking"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "letter marking"
     },
@@ -19282,7 +19282,7 @@
       "IRI-based" : "endCouplingType",
       "en" : "end coupling type"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Type of end coupling (indicating tensile and compressive forces)."
     },
@@ -19328,7 +19328,7 @@
       "IRI-based" : "minimumConvexVerticalRadius",
       "en" : "minimum convex vertical radius"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Minimum vertical convex curve radius capability."
     },
@@ -19374,7 +19374,7 @@
       "IRI-based" : "radioSwitchOverSpecialConditions",
       "en" : "radio switch over special conditions"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Special conditions implemented on-board to switch over between different radio systems. Given as combination of systems installed on board ('System XX'_'System YY')."
     },
@@ -19446,22 +19446,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -19526,7 +19526,7 @@
       "IRI-based" : "maximumAltitude",
       "en" : "maximum altitude"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Highest point of the section of line above sea level in reference to Normal Amsterdam’s Peil (NAP). The value of the parameter shall be given in metres, with tolerance of +/-100m."
     },
@@ -19572,7 +19572,7 @@
       "IRI-based" : "hotAxleBoxDetectorTSICompliant",
       "en" : "hot axle box detector TSI compliant"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Trackside HABD TSI compliant. Specific for the French, Italian and Swedish networks."
     },
@@ -19598,6 +19598,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -19608,12 +19614,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -19636,7 +19636,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially covers the \n      object SpatialObject. DE-9IM: TTTFTTFFT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "720"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
@@ -19696,7 +19696,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially overlaps the \n      object SpatialObject. DE-9IM: T*T***T** \n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "721"
   }, {
     "iri" : "http://data.europa.eu/949/dataGSMRNetwork",
@@ -19738,7 +19738,7 @@
       "IRI-based" : "dataGSMRNetwork",
       "en" : "data GSM-R network"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Data SIM Card GSM-R Home Network"
     },
@@ -19822,17 +19822,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
+        "value" : "1.2.1.0.6.1",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.0.0.0.1",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
         "value" : "1.2.1.0.5.1",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.8.1",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.1.0.0.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -19847,12 +19847,12 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.0.0.0.1",
+        "value" : "1.1.1.1.8.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.6.1",
+        "value" : "1.2.1.0.0.1",
         "type" : "label"
       } ]
     },
@@ -19901,7 +19901,7 @@
     "comment" : {
       "en" : "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "488"
   }, {
     "iri" : "http://data.europa.eu/949/authorizedCountry",
@@ -19937,7 +19937,7 @@
       "IRI-based" : "authorizedCountry",
       "en" : "authorized country"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates the country(ies) in where a vehicle type has been authorized to operate."
     },
@@ -19983,7 +19983,7 @@
       "IRI-based" : "nationalLoadCapability",
       "en" : "national load capability"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "National classification for load capability."
     },
@@ -20029,12 +20029,64 @@
       "IRI-based" : "numberOfPantographsInContactWithOCL",
       "en" : "number of pantographs in contact with OCL"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of pantographs in contact with the overhead contact line (OCL) (to be indicated for each energy supply system the vehicle is equipped for)."
     },
     "attributes" : [ "datatype" ],
     "id" : "728"
+  }, {
+    "iri" : "http://data.europa.eu/949/minFlangeThickness",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "732",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-08",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.14.2.7",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.3.7.8",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "minFlangeThickness",
+      "en" : "min flange thickness"
+    },
+    "domain" : "731",
+    "comment" : {
+      "en" : "Minimum permitted flange thickness, given in millimiters."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "730"
   }, {
     "iri" : "http://data.europa.eu/949/etcsInfill",
     "baseIri" : "http://data.europa.eu/949",
@@ -20086,59 +20138,7 @@
       "en" : "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation."
     },
     "attributes" : [ "object" ],
-    "id" : "730"
-  }, {
-    "iri" : "http://data.europa.eu/949/minFlangeThickness",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "733",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-08",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.14.2.7",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.3.7.8",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "minFlangeThickness",
-      "en" : "min flange thickness"
-    },
-    "domain" : "732",
-    "comment" : {
-      "en" : "Minimum permitted flange thickness, given in millimiters."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "731"
+    "id" : "733"
   }, {
     "iri" : "http://data.europa.eu/949/gsmRSetsInDrivingCab",
     "baseIri" : "http://data.europa.eu/949",
@@ -20179,7 +20179,7 @@
       "IRI-based" : "gsmRSetsInDrivingCab",
       "en" : "GSM-R sets in driving cab"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of GSM-R mobile sets in driving cab for data transmission."
     },
@@ -20225,7 +20225,7 @@
       "IRI-based" : "maximumDesignSpeed",
       "en" : "maximum design speed"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Maximum design speed."
     },
@@ -20271,7 +20271,7 @@
       "IRI-based" : "etcsDegradedSituation",
       "en" : "ETCS level for degraded situation"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "ERTMS / ETCS application level for degraded situation related to the track side equipment."
     },
@@ -20317,7 +20317,7 @@
       "IRI-based" : "hasCantDefficiencyCompensation",
       "en" : "has cant defficiency compensation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Vehicle equipped with a cant deficiency compensation system (tilting vehicle)."
     },
@@ -20363,7 +20363,7 @@
       "IRI-based" : "hasAdditionalBrakingInformation",
       "en" : "has additional braking information"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Availability by the IM of additional information as defined in 4.2.2.6.2 (2) Regulation XXX - OPE TSI."
     },
@@ -20409,7 +20409,7 @@
       "IRI-based" : "brakeWeightPercentage",
       "en" : "brake weight percentage"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Brake weight percentage (lambda) or Braked mass."
     },
@@ -20438,12 +20438,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -20473,7 +20473,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially overlaps the \n      object SpatialObject. DE-9IM: TTTTTTTTT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "740"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
@@ -20499,7 +20499,7 @@
       "en" : "has top concept"
     },
     "domain" : "112",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "741"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehCoveredBy",
@@ -20521,22 +20521,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -20559,7 +20559,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially covered \n      by the object SpatialObject. DE-9IM: TFF*TFT**\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "742"
   }, {
     "iri" : "http://data.europa.eu/949/hasRefuelling",
@@ -20608,6 +20608,46 @@
     "attributes" : [ "datatype" ],
     "id" : "743"
   }, {
+    "iri" : "http://data.europa.eu/949/kilometer",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "260",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "kilometer",
+      "en" : "kilometer"
+    },
+    "domain" : "745",
+    "comment" : {
+      "en" : "Distance measured in kilometers from the origin of a national railway line."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "744"
+  }, {
     "iri" : "http://data.europa.eu/949/profileNumberSwapBodies",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -20647,52 +20687,12 @@
       "IRI-based" : "profileNumberSwapBodies",
       "en" : "profile number for swap bodies"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Coding for combined transport with swap bodies as defined in UIC Code."
     },
     "attributes" : [ "object" ],
-    "id" : "744"
-  }, {
-    "iri" : "http://data.europa.eu/949/kilometer",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "260",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-01-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-01-29",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "kilometer",
-      "en" : "kilometer"
-    },
-    "domain" : "746",
-    "comment" : {
-      "en" : "Distance measured in kilometers from the origin of a national railway line."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "745"
+    "id" : "746"
   }, {
     "iri" : "http://data.europa.eu/949/verificationINF",
     "baseIri" : "http://data.europa.eu/949",
@@ -20725,7 +20725,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.1.1",
+        "value" : "1.2.1.0.1.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -20735,7 +20735,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.1.1",
+        "value" : "1.1.1.1.1.1",
         "type" : "label"
       } ]
     },
@@ -20807,7 +20807,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially inside \n      the object SpatialObject. DE-9IM: TFF*FFT**\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "748"
   }, {
     "iri" : "http://data.europa.eu/949/gradientProfile",
@@ -20849,12 +20849,58 @@
       "IRI-based" : "gradientProfile",
       "en" : "gradient profile"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Sequence of gradient values and locations of change in gradient."
     },
     "attributes" : [ "datatype" ],
     "id" : "749"
+  }, {
+    "iri" : "http://data.europa.eu/949/ferromagneticWheelMaterial",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "344",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.14.2.12",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ferromagneticWheelMaterial",
+      "en" : "ferromagnetic wheel material"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Wheel material is ferromagnetic."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "750"
   }, {
     "iri" : "http://data.europa.eu/949/tsiCompliantMetalFreeSpace",
     "baseIri" : "http://data.europa.eu/949",
@@ -20900,52 +20946,6 @@
       "en" : "TSI compliance of rules for metal-free space around wheels."
     },
     "attributes" : [ "object" ],
-    "id" : "750"
-  }, {
-    "iri" : "http://data.europa.eu/949/ferromagneticWheelMaterial",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "344",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.14.2.12",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ferromagneticWheelMaterial",
-      "en" : "ferromagnetic wheel material"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Wheel material is ferromagnetic."
-    },
-    "attributes" : [ "datatype" ],
     "id" : "751"
   }, {
     "iri" : "http://data.europa.eu/949/hasOtherTrainProtection",
@@ -20987,7 +20987,7 @@
       "IRI-based" : "hasOtherTrainProtection",
       "en" : "has other train protection"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication if other train protection, control and warning systems in normal operation are installed lineside."
     },
@@ -21033,7 +21033,7 @@
       "IRI-based" : "etcsEquipmentOnBoardLevel",
       "en" : "ETCS equipment level"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "ETCS equipment on-board and its level."
     },
@@ -21073,7 +21073,7 @@
       "IRI-based" : "typeVersionNumber",
       "en" : "type version number"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Serial number that identifies a vehicle type."
     },
@@ -21224,7 +21224,7 @@
     "comment" : {
       "undefined" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "457"
   }, {
     "iri" : "http://data.europa.eu/949/maxImpedanceWheelset",
@@ -21338,6 +21338,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -21348,12 +21354,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -21376,7 +21376,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is spatially inside \n      the object SpatialObject. DE-9IM: TFFTFFTTT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "760"
   }, {
     "iri" : "http://data.europa.eu/949/TSIMagneticFields",
@@ -21418,7 +21418,7 @@
       "IRI-based" : "TSIMagneticFields",
       "en" : "TSI mangnetic fields"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence and TSI compliance of rules for magnetic fields emitted by a vehicle."
     },
@@ -21456,12 +21456,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.3.1.3",
+        "value" : "1.2.1.0.3.6",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.3.6",
+        "value" : "1.1.1.1.3.1.3",
         "type" : "label"
       } ]
     },
@@ -21469,7 +21469,7 @@
       "IRI-based" : "gaugingTransversalDocument",
       "en" : "gauging traversal document"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Document with the transversal section of the particular points requiring specific checks."
     },
@@ -21507,12 +21507,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.0.0.1",
+        "value" : "1.2.1.0.0.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.0.2",
+        "value" : "1.1.1.0.0.1",
         "type" : "label"
       } ]
     },
@@ -21520,7 +21520,7 @@
       "IRI-based" : "trackId",
       "en" : "track id"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Unique track identification or unique track number within a Section of Line."
     },
@@ -21566,7 +21566,7 @@
       "IRI-based" : "frenchTrainDetectionSystemLimitation",
       "en" : "french train detection system limitation"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Section with train detection limitation, specific for route compatibility check on French network."
     },
@@ -21612,7 +21612,7 @@
       "IRI-based" : "hasTSITrainDetection",
       "en" : "has TSI train detection"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication if there is any train detection system installed and fully compliant with the CCS TSI requirements."
     },
@@ -21658,7 +21658,7 @@
       "IRI-based" : "emergencyBrake",
       "en" : "emergency braking"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Stopping distance and deceleration profile for each load condition per design maximum speed."
     },
@@ -21756,7 +21756,7 @@
       "IRI-based" : "numberOfToilets",
       "en" : "number of toilets"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of toilets."
     },
@@ -21786,7 +21786,7 @@
     },
     "superproperty" : [ "436", "184" ],
     "domain" : "181",
-    "attributes" : [ "object", "external", "symmetric" ],
+    "attributes" : [ "external", "object", "symmetric" ],
     "id" : "397"
   }, {
     "iri" : "http://data.europa.eu/949/thermalCapacityGradient",
@@ -21828,7 +21828,7 @@
       "IRI-based" : "thermalCapacityGradient",
       "en" : "thermal capacity gradient"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Thermal capacity gradient. If no reference case is indicated."
     },
@@ -21837,7 +21837,7 @@
   }, {
     "iri" : "http://data.europa.eu/949/lineNationalId",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "44",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -21912,17 +21912,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.1.2",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
         "value" : "1.1.1.1.1.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.2.1.0.1.2",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.2.0.1.2",
         "type" : "label"
       } ]
     },
@@ -22016,58 +22016,12 @@
       "IRI-based" : "hotAxleBoxDetectorGeneration",
       "en" : "hot axle box detector generation"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Generation of trackside HABD. Specific for the French Italian and Swedish networks."
     },
     "attributes" : [ "datatype" ],
     "id" : "776"
-  }, {
-    "iri" : "http://data.europa.eu/949/passByNoiseLevel",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "778",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-31",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.11.1",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-31",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "passByNoiseLevel",
-      "en" : "pass-by noise level"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Pass-by noise level given in dB(A)."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "777"
   }, {
     "iri" : "http://data.europa.eu/949/hasHotAxleBoxDetector",
     "baseIri" : "http://data.europa.eu/949",
@@ -22108,16 +22062,16 @@
       "IRI-based" : "hasHotAxleBoxDetector",
       "en" : "has axle box detector"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence of trackside hot axle box detector (HABD)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "779"
+    "id" : "777"
   }, {
-    "iri" : "http://data.europa.eu/949/numberElementsRakeFreightWagons",
+    "iri" : "http://data.europa.eu/949/passByNoiseLevel",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "781",
+    "range" : "779",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -22134,32 +22088,32 @@
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2021-08-25",
+        "value" : "2021-08-31",
         "type" : "label"
       } ],
       "eratvIndex" : [ {
         "identifier" : "eratvIndex",
         "language" : "undefined",
-        "value" : "4.1.6",
+        "value" : "4.11.1",
         "type" : "label"
       } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2021-08-25",
+        "value" : "2021-08-31",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "numberElementsRakeFreightWagons",
-      "en" : "number elements rake freight wagons"
+      "IRI-based" : "passByNoiseLevel",
+      "en" : "pass-by noise level"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
-      "en" : "Number of elements in the rake of freight wagons (only for subcategory 'rake of freight wagons')"
+      "en" : "Pass-by noise level given in dB(A)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "780"
+    "id" : "778"
   }, {
     "iri" : "http://data.europa.eu/949/hasShuntingRestrictions",
     "baseIri" : "http://data.europa.eu/949",
@@ -22200,12 +22154,58 @@
       "IRI-based" : "hasShuntingRestrictions",
       "en" : "has shunting restrictions"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates the presence of shunting restrictions."
     },
     "attributes" : [ "datatype" ],
-    "id" : "782"
+    "id" : "780"
+  }, {
+    "iri" : "http://data.europa.eu/949/numberElementsRakeFreightWagons",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "782",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.1.6",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "numberElementsRakeFreightWagons",
+      "en" : "number elements rake freight wagons"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Number of elements in the rake of freight wagons (only for subcategory 'rake of freight wagons')"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "781"
   }, {
     "iri" : "http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL",
     "baseIri" : "http://data.europa.eu/949",
@@ -22238,7 +22238,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2020-11-19",
+        "value" : "2021-09-15",
         "type" : "label"
       } ]
     },
@@ -22246,7 +22246,7 @@
       "IRI-based" : "shortestDistanceBetweenPantographsInContactWithOCL",
       "en" : "shortest distance between pantographs in contact with OCL"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Shortest distance between two pantographs in contact with the OCL (to be indicated for each energy supply system the vehicle is equipped for; to be indicated for single and, if applicable, multiple operation) (only if number of raised pantographs is more than 1)."
     },
@@ -22327,7 +22327,7 @@
       "en" : "has member"
     },
     "domain" : "124",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "785"
   }, {
     "iri" : "http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles",
@@ -22461,7 +22461,7 @@
       "IRI-based" : "maximumPermittedSpeed",
       "en" : "maximum permitted speed"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Nominal maximum operational speed on the line as a result of INF, ENE and CCS subsystem characteristics expressed in kilometres/hour."
     },
@@ -22487,6 +22487,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -22497,12 +22503,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22525,7 +22525,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially meets the \n      object SpatialObject. DE-9IM: FFTFTTTTT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "790"
   }, {
     "iri" : "http://data.europa.eu/949/legacyRadioSystem",
@@ -22602,12 +22602,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -22699,22 +22699,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22737,7 +22737,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially equals the \n      object SpatialObject. DE-9IM: TFFFTFFFT\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "795"
   }, {
     "iri" : "http://data.europa.eu/949/maxDistEndTrainFirstAxle",
@@ -22825,7 +22825,7 @@
       "IRI-based" : "transportableOnFerry",
       "en" : "transportable on ferry"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indicates the suitability for transport on ferries."
     },
@@ -22851,12 +22851,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -22867,6 +22861,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22889,7 +22889,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially overlaps the \n      object SpatialObject. DE-9IM: T*T***T**\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "798"
   }, {
     "iri" : "http://data.europa.eu/949/etcsNationalPacket44",
@@ -22931,7 +22931,7 @@
       "IRI-based" : "etcsNationalPacket44",
       "en" : "ETCS national packet 44"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether data for national packet 44 applications is transmitted between track and train."
     },
@@ -22977,7 +22977,7 @@
       "IRI-based" : "etcsOnBoardImplementation",
       "en" : "ETCS on-board implementation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "ETCS on-board implementation."
     },
@@ -23023,7 +23023,7 @@
       "IRI-based" : "cantDefficiency",
       "en" : "cant defficiency"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Cant deficiency (maximum uncompensated lateral acceleration) for which the vehicle has been assessed. For dual gauge vehicles values for each gauge have to be indicated."
     },
@@ -23121,7 +23121,7 @@
       "IRI-based" : "verificationENE",
       "en" : "declaration of verification ENE"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Unique number for EC declarations concerning requirements of ENE (ENErgy subsystem) on the specific track."
     },
@@ -23165,12 +23165,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.3.4",
+        "value" : "1.1.1.1.3.1.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.3.1.1",
+        "value" : "1.2.1.0.3.4",
         "type" : "label"
       } ]
     },
@@ -23224,7 +23224,7 @@
       "IRI-based" : "etcsInfillLineAccess",
       "en" : "ETCS infill line access"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether infill is required to access the line for safety reasons."
     },
@@ -23270,7 +23270,7 @@
       "IRI-based" : "otherTrainProtection",
       "en" : "other train protection"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Other train protection, control and warning systems for degraded situation."
     },
@@ -23316,7 +23316,7 @@
       "IRI-based" : "structuralCategory",
       "en" : "structural category"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Structural category."
     },
@@ -23362,7 +23362,7 @@
       "IRI-based" : "staticAxleLoadNormalPayload",
       "en" : "static axle load under normal payload"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Static axle load under normal payload."
     },
@@ -23454,7 +23454,7 @@
       "IRI-based" : "hotAxleBoxDetectorDirection",
       "en" : "hot axle box detector direction"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."
     },
@@ -23500,7 +23500,7 @@
       "IRI-based" : "TSITractionHarmonics",
       "en" : "TSI traction harmonics"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence and TSI compliance of limits in harmonics in the traction current of vehicles."
     },
@@ -23526,22 +23526,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -23564,7 +23564,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject spatially meets the \n      object SpatialObject. \n      DE-9IM: FT******* ^ F**T***** ^ F***T****\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "813"
   }, {
     "iri" : "http://data.europa.eu/949/thermalCapacityDistance",
@@ -23606,56 +23606,16 @@
       "IRI-based" : "thermalCapacityDistance",
       "en" : "thermal capacity distance"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Thermal capacity distance. If no reference case is indicated."
     },
     "attributes" : [ "datatype" ],
     "id" : "814"
   }, {
-    "iri" : "http://data.europa.eu/949/passesThroughTunnel",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "132",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-09",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "passesThroughTunnel",
-      "en" : "passes through tunnel"
-    },
-    "domain" : "303",
-    "comment" : {
-      "en" : "References a tunnel that a track goes through."
-    },
-    "attributes" : [ "object" ],
-    "id" : "815"
-  }, {
     "iri" : "http://data.europa.eu/949/lineReference",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "746",
+    "range" : "745",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -23695,6 +23655,46 @@
     "domain" : "542",
     "comment" : {
       "en" : "Indicates a relationship with a national railway line at a specific kilometer point."
+    },
+    "attributes" : [ "object" ],
+    "id" : "815"
+  }, {
+    "iri" : "http://data.europa.eu/949/passesThroughTunnel",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-09",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "passesThroughTunnel",
+      "en" : "passes through tunnel"
+    },
+    "domain" : "303",
+    "comment" : {
+      "en" : "References a tunnel that a track goes through."
     },
     "attributes" : [ "object" ],
     "id" : "816"
@@ -23738,7 +23738,7 @@
       "IRI-based" : "hasLevelCrossings",
       "en" : "has level crossings"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether level crossings (including pedestrian track crossing) exist on the section of line."
     },
@@ -23842,7 +23842,7 @@
     "comment" : {
       "en" : "\n      Exists if the subject SpatialObject is not spatially disjoint \n      from the object SpatialObject.\n      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** \n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "818"
   }, {
     "iri" : "http://data.europa.eu/949/meetsRequirementVehicleAuthorisation",
@@ -23884,7 +23884,7 @@
       "IRI-based" : "meetsRequirementVehicleAuthorisation",
       "en" : "meets requirement vehicle authorization"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Type meets the requirements necessary for validity of the vehicle authorisation granted by one Member State in other MSs."
     },
@@ -23922,7 +23922,7 @@
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2021-08-31",
+        "value" : "2021-09-15",
         "type" : "label"
       } ]
     },
@@ -23930,7 +23930,7 @@
       "IRI-based" : "sleepingPlaces",
       "en" : "sleeping places"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Number of sleeping places."
     },
@@ -23976,7 +23976,7 @@
       "IRI-based" : "multipleTrainProtectionRequired",
       "en" : "multiple train protection required"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether more than one train protection, control and warning system is required to be on-board and active simultaneously."
     },
@@ -24022,7 +24022,7 @@
       "IRI-based" : "parkingBrakeType",
       "en" : "parking brake type"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Parking brake type (if the vehicle is fitted with it)."
     },
@@ -24068,7 +24068,7 @@
       "IRI-based" : "hasTrainIntegrityConfirmation",
       "en" : "has train integrity confirmation"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Indication of on-board management system about completeness of the train information."
     },
@@ -24097,12 +24097,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -24133,7 +24133,7 @@
     "comment" : {
       "en" : "\n      A spatial representation for a given feature.\n    "
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "217"
   }, {
     "iri" : "http://data.europa.eu/949/switchRadioSystem",
@@ -24175,7 +24175,7 @@
       "IRI-based" : "switchRadioSystem",
       "en" : "switch radio system"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication whether a switch over between different radio systems and no communication system whilst running exist."
     },
@@ -24221,7 +24221,7 @@
       "IRI-based" : "trainControlSwitchOverSpecialConditions",
       "en" : "train control switch over special conditions"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Special conditions implemented on-board to switch over between different train protection control and warning systems. Given as combination of systems installed on board ('System XX'_'System YY')."
     },
@@ -24267,7 +24267,7 @@
       "IRI-based" : "hotAxleBoxDetectorLocation",
       "en" : "hot axle box detector location"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Railway location of trackside HABD. Applicable if trackside HABD is not TSI compliant."
     },
@@ -24365,7 +24365,7 @@
       "IRI-based" : "demonstrationENE",
       "en" : "declaration of demonstration ENE"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Unique number for EI declarations concerning requirements of ENE (ENErgy subsytem) on the specific track."
     },
@@ -24411,7 +24411,7 @@
       "IRI-based" : "hotAxleBoxDetectorIdentification",
       "en" : "hot axle box detector identification"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."
     },
@@ -24457,7 +24457,7 @@
       "IRI-based" : "gsmRNoCoverage",
       "en" : "GSM-R no coverage"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication if there is no GSMR coverage."
     },
@@ -24503,52 +24503,12 @@
       "IRI-based" : "gprsForETCS",
       "en" : "GPRS for ETCS"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Indication if GPRS can be used for ETCS."
     },
     "attributes" : [ "datatype" ],
     "id" : "831"
-  }, {
-    "iri" : "http://data.europa.eu/949/linearCoordinate",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "241",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "linearCoordinate",
-      "en" : "linear coordinate"
-    },
-    "domain" : "181",
-    "comment" : {
-      "en" : "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "832"
   }, {
     "iri" : "http://data.europa.eu/949/minVehicleImpedance",
     "baseIri" : "http://data.europa.eu/949",
@@ -24589,12 +24549,12 @@
       "IRI-based" : "minVehicleImpedance",
       "en" : "minimum vehicle impedance"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "Minimum vehicle impedance (between wheels and pantograph) (only for vehicles equipped for 1500V or 3000V DC)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "833"
+    "id" : "832"
   }, {
     "iri" : "http://data.europa.eu/949/vehicleSeries",
     "baseIri" : "http://data.europa.eu/949",
@@ -24632,6 +24592,46 @@
     "domain" : "249",
     "comment" : {
       "en" : "Manufacturing series of a vehicle."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "833"
+  }, {
+    "iri" : "http://data.europa.eu/949/linearCoordinate",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "241",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "linearCoordinate",
+      "en" : "linear coordinate"
+    },
+    "domain" : "181",
+    "comment" : {
+      "en" : "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."
     },
     "attributes" : [ "datatype" ],
     "id" : "834"
@@ -24721,7 +24721,7 @@
       "IRI-based" : "switchProtectControlWarning",
       "en" : "switch protect control warning"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Existence of switch over between different protection, control and warning systems while running."
     },
@@ -24767,7 +24767,7 @@
       "IRI-based" : "parkingBrakeMandatory",
       "en" : "parking brake mandatory"
     },
-    "domain" : "21",
+    "domain" : "18",
     "comment" : {
       "en" : "All vehicles of this type must be equipped with a parking brake (parking brake mandatory for vehicles of this type)."
     },
@@ -24813,7 +24813,7 @@
       "IRI-based" : "highSpeedLoadModelCompliance",
       "en" : "high speed load model compliance"
     },
-    "domain" : "18",
+    "domain" : "21",
     "comment" : {
       "en" : "Compliance of structures with the High Speed Load Model (HSLM)."
     },
