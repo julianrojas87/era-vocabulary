@@ -91,7 +91,7 @@ era-vehicle-types:SubCategories a skos:ConceptScheme ;
     rdfs:label "Vehicle Sub Categories"@en ;
     rdfs:comment "Concept scheme grouping vehicle sub categories"@en .
 
-era-sn:SolNatures a skos:ConceptScheme ; # Concepts of this scheme are dynamically genereated at mapping time
+era-sn:SoLNatures a skos:ConceptScheme ; # Concepts of this scheme are dynamically genereated at mapping time
     rdfs:isDefinedBy era-skos: ;
     rdfs:label "Section of Line Natures"@en ;
     rdfs:comment "Concept scheme grouping section of line natures"@en .
