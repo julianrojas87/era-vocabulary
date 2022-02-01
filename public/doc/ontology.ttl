@@ -651,7 +651,7 @@ era:notApplicable a owl:ObjectProperty ;
     rdfs:isDefinedBy era: ;
     dct:created "2021-09-13"^^xsd:date ;
     dct:modified "2021-09-13"^^xsd:date ;
-    vs:term_status "stable" .
+    vs:term_status "unstable" .
 
 era:notYetAvailable a owl:ObjectProperty ;
     rdfs:label "not yet available"@en ;
@@ -659,7 +659,7 @@ era:notYetAvailable a owl:ObjectProperty ;
     rdfs:isDefinedBy era: ;
     dct:created "2021-09-13"^^xsd:date ;
     dct:modified "2021-09-13"^^xsd:date ;
-    vs:term_status "stable" .
+    vs:term_status "unstable" .
 
 
 #################################################################

@@ -1710,9 +1710,17 @@ era-gaugings:DE3_%28Lower_parts_GI2%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "DE3 (Lower parts GI2)" .
 
+era-gaugings:DK1 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "DK1" .
+
 era-gaugings:FIN1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "FIN1" .
+
+era-gaugings:FIN1_%28Specific_case_Finland%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "FIN1 (Specific case Finland)" .
 
 era-gaugings:FR-3.3 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -1777,6 +1785,10 @@ era-gaugings:GB%2FGI2 a skos:Concept;
 era-gaugings:GB%3AG%C4%8CD a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "GB:GČD" .
+
+era-gaugings:GB-M6 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "GB-M6" .
 
 era-gaugings:GB1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -1875,13 +1887,25 @@ era-gaugings:GHE16_%28Spanish_network%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "GHE16 (Spanish network)" .
 
+era-gaugings:GHE16_%28Specific_case_Spain_%E2%80%93_upper_parts%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "GHE16 (Specific case Spain – upper parts)" .
+
 era-gaugings:GI1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "GI1" .
 
+era-gaugings:GI1_%28Specific_case_Spain_%E2%80%93_lower_parts%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "GI1 (Specific case Spain – lower parts)" .
+
 era-gaugings:GI2 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "GI2" .
+
+era-gaugings:GI2_%28Specific_case_Spain_%E2%80%93_lower_parts%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "GI2 (Specific case Spain – lower parts)" .
 
 era-gaugings:GI2_%28lower_part%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -1910,6 +1934,10 @@ era-gaugings:GIC3 a skos:Concept;
 era-gaugings:Galibo_Renfe_01%2F10%2F86 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "Galibo Renfe 01/10/86" .
+
+era-gaugings:Gauge_3.3 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "Gauge 3.3" .
 
 era-gaugings:Gl1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -1951,13 +1979,25 @@ era-gaugings:NL1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "NL1" .
 
+era-gaugings:NL1_%28Dutch__network%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "NL1 (Dutch  network)" .
+
 era-gaugings:NL1_%28Dutch_network%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "NL1 (Dutch network)" .
 
+era-gaugings:NL1_%28Specific_case_the_Netherlands%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "NL1 (Specific case the Netherlands)" .
+
 era-gaugings:NL2 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "NL2" .
+
+era-gaugings:NL_%28Dutch__network%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "NL (Dutch  network)" .
 
 era-gaugings:NL_%28Dutch_network%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -1970,6 +2010,10 @@ era-gaugings:NNTR_BEK_1465_Bilag_3 a skos:Concept;
 era-gaugings:NO1 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "NO1" .
+
+era-gaugings:Not_applicable a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "Not applicable" .
 
 era-gaugings:OCF-02 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
@@ -2021,6 +2065,10 @@ era-gaugings:SEa a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "SEa" .
 
+era-gaugings:SEa_%28Specific_case_Sweden%29 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "SEa (Specific case Sweden)" .
+
 era-gaugings:SEa_%28Swedish_network%29 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "SEa (Swedish network)" .
@@ -2040,6 +2088,10 @@ era-gaugings:Tram-train%202.40 a skos:Concept;
 era-gaugings:Tram-train%202.65 a skos:Concept;
   skos:inScheme era-gaugings:GaugingProfiles;
   skos:prefLabel "Tram-train 2.65" .
+
+era-gaugings:UIC_505-1 a skos:Concept;
+  skos:inScheme era-gaugings:GaugingProfiles;
+  skos:prefLabel "UIC 505-1" .
 
 <http://data.europa.eu/949/concepts/gaugings/UIC_505-1_excluding_the_doorsteps.> a
     skos:Concept;
@@ -2244,7 +2296,7 @@ era-mas:TSI_compliant_when_speed_lower_than_140km%2Fh a skos:Concept;
 
 ########## Axle monitoring ##########
 
-<http://data.europa.eu/949/concepts/axle-monitoring#-50%2C_%2B120> a skos:Concept;
+<http://data.europa.eu/949/concepts/axle-monitoring/-50%2C_%2B120> a skos:Concept;
   skos:inScheme era-am:AxleBearingMonitoring;
   skos:prefLabel "-50, +120" .
 
@@ -2263,6 +2315,10 @@ era-am:According_to_HABD a skos:Concept;
 era-am:Coussinets a skos:Concept;
   skos:inScheme era-am:AxleBearingMonitoring;
   skos:prefLabel "Coussinets" .
+
+era-am:Detectable_by_line_side a skos:Concept;
+  skos:inScheme era-am:AxleBearingMonitoring;
+  skos:prefLabel "Detectable by line side" .
 
 era-am:False a skos:Concept;
   skos:inScheme era-am:AxleBearingMonitoring;
@@ -2328,6 +2384,10 @@ era-am:On_board_HABD_is_not_fitted a skos:Concept;
 era-am:On_track_monitoring a skos:Concept;
   skos:inScheme era-am:AxleBearingMonitoring;
   skos:prefLabel "On track monitoring" .
+
+era-am:Onboard_equipped_%28OP%29 a skos:Concept;
+  skos:inScheme era-am:AxleBearingMonitoring;
+  skos:prefLabel "Onboard equipped (OP)" .
 
 era-am:PT_100_on_10_first_cars%3B_rest_detectable_by_line_side a skos:Concept;
   skos:inScheme era-am:AxleBearingMonitoring;
@@ -2685,7 +2745,7 @@ era-ic:EN_50125-1%3A2014_clause_4.7_-_class_S1 a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "EN 50125-1:2014 clause 4.7 - class S1" .
 
-<http://data.europa.eu/949/concepts/ice-conditions#L%27engin_ne_travaille_pas_lors_des_p%C3%A9riodes_de_gel.>
+<http://data.europa.eu/949/concepts/ice-conditions/L%27engin_ne_travaille_pas_lors_des_p%C3%A9riodes_de_gel.>
   a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "L'engin ne travaille pas lors des périodes de gel." .
@@ -2718,7 +2778,7 @@ era-ic:Not_known a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "Not known" .
 
-<http://data.europa.eu/949/concepts/ice-conditions#Nothing_special_with_regards_to_snow_and_hail_performance.__No_snow_ploughs_fitted.>
+<http://data.europa.eu/949/concepts/ice-conditions/Nothing_special_with_regards_to_snow_and_hail_performance.__No_snow_ploughs_fitted.>
   a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "Nothing special with regards to snow and hail performance.  No snow ploughs fitted." .
@@ -2783,6 +2843,10 @@ era-ic:S_1 a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "S 1" .
 
+era-ic:Severe a skos:Concept;
+  skos:inScheme era-ic:IceConditions;
+  skos:prefLabel "Severe" .
+
 era-ic:Severe_with_restrictions a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "Severe with restrictions" .
@@ -2815,6 +2879,10 @@ era-ic:no_information%2C_non_TSI_train a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "no information, non TSI train" .
 
+era-ic:nominal a skos:Concept;
+  skos:inScheme era-ic:IceConditions;
+  skos:prefLabel "nominal" .
+
 era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29_with_snowplough_for_serious_snow_condition
   a skos:Concept;
   skos:inScheme era-ic:IceConditions;
@@ -2823,6 +2891,10 @@ era-ic:nominal_%28EN_50125-1%3A1999_clause_4.7%29_with_snowplough_for_serious_sn
 era-ic:nominal_%28EN_50125-1%3A2014%29_ a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "nominal (EN 50125-1:2014) " .
+
+era-ic:nominal_with_snow_deflector a skos:Concept;
+  skos:inScheme era-ic:IceConditions;
+  skos:prefLabel "nominal with snow deflector" .
 
 era-ic:not_applicable a skos:Concept;
   skos:inScheme era-ic:IceConditions;
@@ -2839,6 +2911,10 @@ era-ic:not_available-non_TSI_trains a skos:Concept;
 era-ic:not_available_-_non_TSI_trains a skos:Concept;
   skos:inScheme era-ic:IceConditions;
   skos:prefLabel "not available - non TSI trains" .
+
+era-ic:severe_except_snowdrift a skos:Concept;
+  skos:inScheme era-ic:IceConditions;
+  skos:prefLabel "severe except snowdrift" .
 
 era-ic:to_be_completed a skos:Concept;
   skos:inScheme era-ic:IceConditions;
@@ -2921,6 +2997,10 @@ era-ess:AC_25kV-50Hz a skos:Concept;
   skos:inScheme era-ess:EnergySupplySystems;
   skos:prefLabel "AC 25kV-50Hz" .
 
+era-ess:Autonomous a skos:Concept;
+  skos:inScheme era-ess:EnergySupplySystems;
+  skos:prefLabel "Autonomous" .
+
 era-ess:DC750V a skos:Concept;
   skos:inScheme era-ess:EnergySupplySystems;
   skos:prefLabel "DC750V" .
@@ -2928,6 +3008,10 @@ era-ess:DC750V a skos:Concept;
 era-ess:DC_1.5kV a skos:Concept;
   skos:inScheme era-ess:EnergySupplySystems;
   skos:prefLabel "DC 1.5kV" .
+
+era-ess:DC_1.5kV_%28Specific_Case_FR%29 a skos:Concept;
+  skos:inScheme era-ess:EnergySupplySystems;
+  skos:prefLabel "DC 1.5kV (Specific Case FR)" .
 
 era-ess:DC_3kV a skos:Concept;
   skos:inScheme era-ess:EnergySupplySystems;
@@ -2940,6 +3024,14 @@ era-ess:DC_650V a skos:Concept;
 era-ess:DC_750V a skos:Concept;
   skos:inScheme era-ess:EnergySupplySystems;
   skos:prefLabel "DC 750V" .
+
+era-ess:DC_750V_third_rail a skos:Concept;
+  skos:inScheme era-ess:EnergySupplySystems;
+  skos:prefLabel "DC 750V third rail" .
+
+era-ess:None_%28for_hauled_passenger_vehicles_and_special_vehicles%29 a skos:Concept;
+  skos:inScheme era-ess:EnergySupplySystems;
+  skos:prefLabel "None (for hauled passenger vehicles and special vehicles)" .
 
 era-ess:Three-phase_alternator_28V_100A%2C_2_Accumulators_in_series_connection%2C_24V_Vehicle_electrical_system_voltage
   a skos:Concept;
@@ -3258,9 +3350,13 @@ era-csm:carbon%2C_steel%2C_grease a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
   skos:prefLabel "carbon, steel, grease" .
 
+era-csm:carbon_and_steel a skos:Concept;
+  skos:inScheme era-csm:ContactStripMaterials;
+  skos:prefLabel "Carbon and Steel" .
+
 era-csm:carbon_with_additive_material a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
-  skos:prefLabel "carbon with additive material" .
+  skos:prefLabel "Carbon with additive material", "carbon with additive material" .
 
 era-csm:carbon_with_additive_material_SK01ACu a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
@@ -3269,6 +3365,10 @@ era-csm:carbon_with_additive_material_SK01ACu a skos:Concept;
 era-csm:carbon_with_addtitve_material a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
   skos:prefLabel "carbon with addtitve material" .
+
+era-csm:carbon_with_cladded_cooper a skos:Concept;
+  skos:inScheme era-csm:ContactStripMaterials;
+  skos:prefLabel "Carbon with cladded cooper" .
 
 era-csm:carbon_with_cladded_copper a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
@@ -3302,9 +3402,18 @@ era-csm:graphite_carbon a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
   skos:prefLabel "graphite carbon" .
 
+era-csm:if_permitted_by_rinf%3A_impregnated_carbon_with_cladded_copper_are_allowed
+  a skos:Concept;
+  skos:inScheme era-csm:ContactStripMaterials;
+  skos:prefLabel "If permitted by RINF: impregnated carbon with cladded copper are allowed" .
+
 era-csm:impregnated__carbon_%28%25_of_metallic_content%29 a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
   skos:prefLabel "impregnated  carbon (% of metallic content)" .
+
+era-csm:impregnated_carbon_with_additive_material a skos:Concept;
+  skos:inScheme era-csm:ContactStripMaterials;
+  skos:prefLabel "Impregnated carbon with additive material" .
 
 era-csm:metalized_carbon a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
@@ -3320,7 +3429,11 @@ era-csm:other a skos:Concept;
 
 era-csm:plain_carbon a skos:Concept;
   skos:inScheme era-csm:ContactStripMaterials;
-  skos:prefLabel "plain carbon" .
+  skos:prefLabel "Plain carbon", "plain carbon" .
+
+era-csm:plan_carbon a skos:Concept;
+  skos:inScheme era-csm:ContactStripMaterials;
+  skos:prefLabel "Plan carbon" .
 
 ########## Rolling stock fire categories ##########
 
@@ -3636,6 +3749,10 @@ era-ph:730 a skos:Concept;
   skos:inScheme era-ph:PlatformHeights;
   skos:prefLabel "730" .
 
+era-ph:750 a skos:Concept;
+  skos:inScheme era-ph:PlatformHeights;
+  skos:prefLabel "750" .
+
 era-ph:750_-_385 a skos:Concept;
   skos:inScheme era-ph:PlatformHeights;
   skos:prefLabel "750 - 385" .
@@ -3793,6 +3910,10 @@ era-ph:Platform_height_760_tot_840_%2BBS a skos:Concept;
 era-ph:Platform_height_760_tot_840_%2BBS_mm_ a skos:Concept;
   skos:inScheme era-ph:PlatformHeights;
   skos:prefLabel "Platform height 760 tot 840 +BS mm " .
+
+era-ph:Spe a skos:Concept;
+  skos:inScheme era-ph:PlatformHeights;
+  skos:prefLabel "Spe" .
 
 era-ph:from_250_mm_to_550_mm a skos:Concept;
   skos:inScheme era-ph:PlatformHeights;
@@ -4232,98 +4353,6 @@ era-rsc:RSC-SE-01-V a skos:Concept;
 
 ########## Train protection legacy systems ##########
 
-era-tpls:ALSN a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "ALSN" .
-
-era-tpls:ASFA a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "ASFA" .
-
-era-tpls:CAWS a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "CAWS" .
-
-era-tpls:ATP a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "ATP" .
-
-era-tpls:Chiltern-ATP a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "Chiltern-ATP" .
-
-era-tpls:EBICAB_700_BU a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EBICAB 700 BU" .
-
-era-tpls:EBICAB_700_PT a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EBICAB 700 PT" .
-
-era-tpls:EBICAB_900_ES a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EBICAB 900 ES" .
-
-era-tpls:EuroSIGNUM a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EuroSIGNUM" .
-
-era-tpls:EuroZUB a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EuroZUB" .
-
-era-tpls:EVM a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "EVM" .
-
-era-tpls:GW_ATP a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "GW ATP" .
-
-era-tpls:LS a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "LS" .
-
-era-tpls:LZB_ES a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "LZB ES" .
-
-era-tpls:Mechanical_Trainstops a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "Mechanical Trainstops" .
-
-era-tpls:MEMOR_II%2B a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "MEMOR II+" .
-
-era-tpls:NEXTEO a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "NEXTEO" .
-
-era-tpls:PKP_radio_system_with_Radiostop_function a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "PKP radio system with Radiostop function" .
-
-era-tpls:TBL_1 a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "TBL 1" .
-
-era-tpls:TBL_2 a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "TBL 2" .
-
-era-tpls:TBL1%2B a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "TBL1+" .
-
-era-tpls:TPWS%2FAWS a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "TPWS/AWS" .
-
-era-tpls:ZUB_123 a skos:Concept;
-  skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "ZUB 123" .
-
 era-tpls:2_Systeme%3A_ZBS_mit_Fahrzeugger%C3%A4t_Zub242t_der_Siemens_AG_und_mechanische_Fahrsperre
   a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4332,6 +4361,10 @@ era-tpls:2_Systeme%3A_ZBS_mit_Fahrzeugger%C3%A4t_Zub242t_der_Siemens_AG_und_mech
 era-tpls:3SL-2M a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "3SL-2M" .
+
+era-tpls:ALSN a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ALSN" .
 
 era-tpls:ALSN%2BKLUB-U a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4344,6 +4377,14 @@ era-tpls:ALSN%2C_KPD-3PV a skos:Concept;
 era-tpls:ALSN_and_EPV%2C_KPD-3PA a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "ALSN and EPV, KPD-3PA" .
+
+era-tpls:ASFA a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ASFA" .
+
+era-tpls:ATB a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ATB" .
 
 era-tpls:ATB-EG_with_Vv-fuctionality a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4405,6 +4446,10 @@ era-tpls:ATESS-BRS a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "ATESS-BRS" .
 
+era-tpls:ATP a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ATP" .
+
 era-tpls:ATP-VR%2FRHK a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "ATP-VR/RHK" .
@@ -4437,6 +4482,10 @@ era-tpls:Crocodile a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "Crocodile" .
 
+era-tpls:Crocodile_Ebicab a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "Crocodile Ebicab" .
+
 era-tpls:DAAT a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "DAAT" .
@@ -4444,6 +4493,14 @@ era-tpls:DAAT a skos:Concept;
 era-tpls:DK_STM_%28ZUB_123%29 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "DK STM (ZUB 123)" .
+
+era-tpls:EBICAB_700_BU a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "EBICAB 700 BU" .
+
+era-tpls:EBICAB_900_ES a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "EBICAB 900 ES" .
 
 era-tpls:EBULA a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4457,9 +4514,17 @@ era-tpls:ETCS_L1_LS_%2F_KVB a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "ETCS L1 LS / KVB" .
 
+era-tpls:EVM a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "EVM" .
+
 era-tpls:EbiCab600 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "EbiCab600" .
+
+era-tpls:Ebicab a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "Ebicab" .
 
 era-tpls:Ebicab600_ a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4477,23 +4542,34 @@ era-tpls:Ebicab_600 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "Ebicab 600" .
 
+era-tpls:Ebicab_700 a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "Ebicab 700" .
+
+era-tpls:Ebicab_900 a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "Ebicab 900" .
+
 era-tpls:EuroSIGNUM%2C_EuroZUB%2C_ZSL90%2C_KVB%2C_SCMT a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "EuroSIGNUM, EuroZUB, ZSL90, KVB, SCMT" .
 
-era-tpls:GNT_%28Geschwindigkeits%C3%BCberwachung_f%C3%BCr_NeiTech-Z%C3%BCge%29
-  a skos:Concept;
+era-tpls:GNT_%28Geschwindigkeits%C3%BCberwachung_f%C3%BCr_NeiTech-Z%C3%BCge%29 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "GNT (Geschwindigkeitsüberwachung für NeiTech-Züge)(Zub 262)" .
+  skos:prefLabel "GNT (Geschwindigkeitsüberwachung für NeiTech-Züge)" .
 
 era-tpls:GNT_%28Geschwindigkeits%C3%BCberwachung_f%C3%BCr_NeiTech-Z%C3%BCge%29%28Zub_262%29
   a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
-  skos:prefLabel "GNT (Geschwindigkeitsüberwachung für NeiTech-Züge)" .
+  skos:prefLabel "GNT (Geschwindigkeitsüberwachung für NeiTech-Züge)(Zub 262)" .
 
 era-tpls:GNT_%28ZUB_262%29 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "GNT (ZUB 262)" .
+
+era-tpls:GW_ATP a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "GW ATP" .
 
 era-tpls:INDUSI%2FPZB a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4502,6 +4578,10 @@ era-tpls:INDUSI%2FPZB a skos:Concept;
 era-tpls:INDUSI_I60 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "INDUSI I60" .
+
+era-tpls:Indusi%2FPZB a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "Indusi/PZB" .
 
 era-tpls:Indusi%2FPZB_%28PZB_90_I60R%29 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4535,6 +4615,10 @@ era-tpls:KVBP a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "KVBP" .
 
+era-tpls:LS a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "LS" .
+
 era-tpls:LZB a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "LZB" .
@@ -4554,6 +4638,10 @@ era-tpls:LZB_%28LZB_L72%2C_LZB_L72_CE_I_and_LZB_L72_CE_II%29 a skos:Concept;
 era-tpls:LZB_%28LZB_L72_and_LZB_L72_CE_I%29 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "LZB (LZB L72 and LZB L72 CE I)" .
+
+era-tpls:MEMOR_II%2B a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "MEMOR II+" .
 
 era-tpls:MIREL_RM2 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4575,6 +4663,10 @@ era-tpls:No_Class_B_train_radio_systems_fitted_AWS_trainborne_equipment_is_fitte
 era-tpls:None a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "None" .
+
+era-tpls:PKP_Radio_System_with_Radiostop_function a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "PKP Radio System with Radiostop function" .
 
 era-tpls:PZB a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4668,6 +4760,10 @@ era-tpls:Syst%C3%A8me_SACEM_et_KCVB_ligne_A_du_RER a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "Système SACEM et KCVB ligne A du RER" .
 
+era-tpls:TBL a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "TBL" .
+
 era-tpls:TBL1%2B a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "TBL1+" .
@@ -4675,6 +4771,22 @@ era-tpls:TBL1%2B a skos:Concept;
 era-tpls:TBL2%2C_TBL1%2C_TBL1%2B%2C_MEMOR a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "TBL2, TBL1, TBL1+, MEMOR" .
+
+era-tpls:TBL_1 a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "TBL 1" .
+
+era-tpls:TBL_2 a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "TBL 2" .
+
+era-tpls:TPWS a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "TPWS" .
+
+era-tpls:TVM a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "TVM" .
 
 era-tpls:TVM_300 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4711,6 +4823,14 @@ era-tpls:ZUB262ct%2FINTEGRA a skos:Concept;
 era-tpls:ZUB_121 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
   skos:prefLabel "ZUB 121" .
+
+era-tpls:ZUB_123 a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ZUB 123" .
+
+era-tpls:ZUB_123_ a skos:Concept;
+  skos:inScheme era-tpls:TrainProtectionLegacySystems;
+  skos:prefLabel "ZUB 123 " .
 
 era-tpls:ZUB_262 a skos:Concept;
   skos:inScheme era-tpls:TrainProtectionLegacySystems;
@@ -4754,6 +4874,10 @@ era-lrs:2_Systeme%3A_ZBS_mit_Fahrzeugger%C3%A4t_Zub242t_der_Siemens_AG_und_mecha
 era-lrs:3SL-2M a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "3SL-2M" .
+
+era-lrs:450_Mhz_UIC_%28kan%C3%A1l_C%29 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "450 Mhz UIC (kanál C)" .
 
 era-lrs:6 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -4847,6 +4971,14 @@ era-lrs:CA a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "CA" .
 
+era-lrs:CH a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "CH" .
+
+era-lrs:CH_%E2%80%94_Greek_Railways_radio_system_%28VHF%29 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "CH — Greek Railways radio system (VHF)" .
+
 era-lrs:DK_STM_%28ZUB_123%29 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "DK STM (ZUB 123)" .
@@ -4887,6 +5019,10 @@ era-lrs:EuroSIGNUM%2C_EuroZUB%2C_ZSL90%2C_KVB%2C_SCMT a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "EuroSIGNUM, EuroZUB, ZSL90, KVB, SCMT" .
 
+era-lrs:FS_ETACS_and_GSM a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "FS ETACS and GSM" .
+
 era-lrs:GNT_%28Geschwindigkeits%C3%BCberwachung_f%C3%BCr_NeiTech-Z%C3%BCge%29%28Zub_262%29
   a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -4920,6 +5056,10 @@ era-lrs:KARM a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "KARM" .
 
+era-lrs:LDZ_radio_system a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "LDZ radio system" .
+
 era-lrs:LZB a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "LZB" .
@@ -4936,6 +5076,14 @@ era-lrs:LZB_%28LZB_L72_and_LZB_L72_CE_I%29 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "LZB (LZB L72 and LZB L72 CE I)" .
 
+era-lrs:Latvian_railway_intra-station_radio_communication_system_ a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "Latvian railway intra-station radio communication system " .
+
+era-lrs:Latvian_railway_radio_system_%28LDZ%29 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "Latvian railway radio system (LDZ)" .
+
 era-lrs:MIREL_RM2 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "MIREL RM2" .
@@ -4947,6 +5095,10 @@ era-lrs:MIREL_VZ1 a skos:Concept;
 era-lrs:Mirel a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "Mirel" .
+
+era-lrs:Multikom a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "Multikom" .
 
 era-lrs:N a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -4960,6 +5112,10 @@ era-lrs:No_Class_B_train_radio_systems_fitted_AWS_trainborne_equipment_is_fitted
 era-lrs:None a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "None" .
+
+era-lrs:PKP_Radio_System a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "PKP Radio System" .
 
 era-lrs:PZB a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -4976,10 +5132,6 @@ era-lrs:PZB_I60R a skos:Concept;
 era-lrs:RETB_%28voice%29 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "RETB (voice)" .
-
-era-lrs:RETB a skos:Concept;
-  skos:inScheme era-lrs:LegacyRadioSystems;
-  skos:prefLabel "RETB" .
 
 era-lrs:RSDD%2FSCMT a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -5057,6 +5209,10 @@ era-lrs:STM_%2F_ATC_2 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "STM / ATC 2" .
 
+era-lrs:Shunting_Radio_Communication_System a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "Shunting Radio Communication System" .
+
 era-lrs:Syst%C3%A8me_SACEM_et_KCVB_ligne_A_du_RER a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "Système SACEM et KCVB ligne A du RER" .
@@ -5065,9 +5221,45 @@ era-lrs:TBL2%2C_TBL1%2C_TBL1%2B%2C_MEMOR a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "TBL2, TBL1, TBL1+, MEMOR" .
 
+era-lrs:TRS a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "TRS" .
+
+era-lrs:TRS_%E2%80%94_The_Czech_Railways_radio_system a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "TRS — The Czech Railways radio system" .
+
+era-lrs:TTT_Radio_System_CP_N a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "TTT Radio System CP_N" .
+
+era-lrs:The_Estonian_Radio_System a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "The Estonian Radio System" .
+
+era-lrs:The_Lithuanian_Radio_System a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "The Lithuanian Radio System" .
+
 era-lrs:Tripcock a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "Tripcock" .
+
+era-lrs:UIC_Radio_Chapter_1-4 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "UIC Radio Chapter 1-4" .
+
+era-lrs:UIC_Radio_Chapter_1-4%2B6 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "UIC Radio Chapter 1-4+6" .
+
+era-lrs:UIC_Radio_Chapter_1-4%2B6%2B7 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "UIC Radio Chapter 1-4+6+7" .
+
+era-lrs:UIC_Radio_Chapter_1-_4_%2B_6_%28Irish_system%29 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "UIC Radio Chapter 1- 4 + 6 (Irish system)" .
 
 era-lrs:VAD%2C_TACHYMETRIE%2C_ATESS%2C_ATF%2C_GSMR%2C_RS a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -5080,6 +5272,10 @@ era-lrs:VEPS a skos:Concept;
 era-lrs:VEPS_%28V_1.5%2F1.6%29 a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "VEPS (V 1.5/1.6)" .
+
+era-lrs:VR_Train_Radio a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "VR Train Radio" .
 
 era-lrs:Y a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
@@ -5120,6 +5316,14 @@ era-lrs:ZUB_262ct_%2B_Integra a skos:Concept;
 era-lrs:ZUB_26ct_%2B_Integra a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;
   skos:prefLabel "ZUB 26ct + Integra" .
+
+era-lrs:ZUGFUNK_2000 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "ZUGFUNK 2000" .
+
+era-lrs:ZUGFUNK_95 a skos:Concept;
+  skos:inScheme era-lrs:LegacyRadioSystems;
+  skos:prefLabel "ZUGFUNK 95" .
 
 era-lrs:nav_inform%C4%81cijas a skos:Concept;
   skos:inScheme era-lrs:LegacyRadioSystems;

@@ -30,10 +30,11 @@ function main() {
     local outputFolder="./public/"
     local configFile="era-widoco.conf"
 
+    mkdir -p ./public/doc/sections
     executeWidoco $vocabFile $outputFolder $configFile
 }
 
-# downloadWidoco
+downloadWidoco
 main
-rm ./public/ontology.ttl
-cp ontology.ttl era-skos.ttl ./public/
+rm ./public/doc/ontology.ttl
+cp ontology.ttl era-skos.ttl ./public/doc

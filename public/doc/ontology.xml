@@ -102,6 +102,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
 
 
@@ -1132,7 +1153,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:comment xml:lang="en">Reference to a property that is not applicable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">not applicable</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -1146,7 +1167,7 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:comment xml:lang="en">Reference to a property that is not yet available.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">not yet available</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns:term_status>unstable</ns:term_status>
     </owl:ObjectProperty>
     
 

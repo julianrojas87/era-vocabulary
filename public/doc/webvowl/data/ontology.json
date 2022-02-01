@@ -24,8 +24,8 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://pietercolpaert.be/#me",
-        "type" : "iri"
+        "value" : "Polymnia Vasilopoulou",
+        "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
@@ -34,8 +34,8 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Marina Aguado",
-        "type" : "label"
+        "value" : "https://pietercolpaert.be/#me",
+        "type" : "iri"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
@@ -44,7 +44,7 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Polymnia Vasilopoulou",
+        "value" : "Marina Aguado",
         "type" : "label"
       } ],
       "author" : [ {
@@ -53,16 +53,16 @@
         "value" : "https://julianrojas.org/#me",
         "type" : "iri"
       } ],
-      "publisher" : [ {
-        "identifier" : "publisher",
-        "language" : "undefined",
-        "value" : "European Union Agency for Railways",
-        "type" : "label"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2021-09-15",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "European Union Agency for Railways",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -71,16 +71,16 @@
         "value" : "v2.3.0",
         "type" : "label"
       } ],
-      "issued" : [ {
-        "identifier" : "issued",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "ERA vocabulary",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2020-07-29",
         "type" : "label"
       } ]
     }
@@ -714,7 +714,7 @@
     "id" : "502",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "526",
+    "id" : "527",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "230",
@@ -774,7 +774,7 @@
     "id" : "448",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "569",
+    "id" : "568",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "361",
@@ -933,7 +933,7 @@
     "id" : "655",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "408",
+    "id" : "407",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "619",
@@ -1071,7 +1071,7 @@
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "745",
+    "id" : "746",
     "type" : "owl:Class"
   }, {
     "id" : "50",
@@ -1098,7 +1098,7 @@
     "id" : "494",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "779",
+    "id" : "778",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "533",
@@ -1140,7 +1140,7 @@
     "id" : "460",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "782",
+    "id" : "781",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "551",
@@ -1176,10 +1176,10 @@
     "id" : "714",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "731",
+    "id" : "732",
     "type" : "owl:unionOf"
   }, {
-    "id" : "732",
+    "id" : "733",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "706",
@@ -1378,7 +1378,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "62" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "61"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1514,7 +1514,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "174"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1610,7 +1610,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "203"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1622,7 +1622,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "219"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -1648,7 +1648,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "62", "46" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "222"
   }, {
     "iri" : "http://www.opengis.net/ont/gml#CubicSpline",
@@ -1679,7 +1679,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "224"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -1698,7 +1698,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "232"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1759,7 +1759,7 @@
   }, {
     "instances" : 0,
     "union" : [ "118", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "243"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1771,7 +1771,7 @@
   }, {
     "instances" : 0,
     "union" : [ "118", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "245"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -1918,12 +1918,12 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "287"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "288"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1935,67 +1935,67 @@
   }, {
     "instances" : 0,
     "union" : [ "124", "42" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "292"
   }, {
     "instances" : 0,
     "union" : [ "21", "189" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "293"
   }, {
     "instances" : 0,
     "union" : [ "295", "86" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "294"
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "298"
   }, {
     "instances" : 0,
     "union" : [ "118", "299" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "226"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "300"
   }, {
     "instances" : 0,
     "union" : [ "21", "33" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "303"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "304"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "305"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "306"
   }, {
     "instances" : 0,
     "union" : [ "18", "249" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "309"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "310"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "311"
   }, {
     "iri" : "http://www.opengis.net/ont/sf#GeometryCollection",
@@ -2023,17 +2023,17 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "314"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "315"
   }, {
     "instances" : 0,
     "union" : [ "21", "46" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "316"
   }, {
     "iri" : "http://www.opengis.net/ont/sf#MultiSurface",
@@ -2915,10 +2915,16 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
@@ -2928,14 +2934,8 @@
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/gml",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -3122,6 +3122,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -3137,12 +3143,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -3412,32 +3412,32 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "562"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "281"
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "564"
   }, {
     "instances" : 0,
     "union" : [ "295", "86" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "456"
   }, {
     "instances" : 0,
     "union" : [ "18", "62" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "439"
   }, {
     "instances" : 0,
     "union" : [ "18", "90" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "565"
   }, {
     "iri" : "http://www.opengis.net/ont/gml#Curve",
@@ -3475,7 +3475,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "526",
+    "id" : "527",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -3667,7 +3667,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "569",
+    "id" : "568",
     "label" : {
       "IRI-based" : "double"
     }
@@ -4116,7 +4116,7 @@
   }, {
     "instances" : 0,
     "union" : [ "21", "46" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "652"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -4170,7 +4170,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "408",
+    "id" : "407",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -4191,7 +4191,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "28"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -5099,7 +5099,7 @@
     "comment" : {
       "en" : "A reference to a specific national railway line."
     },
-    "id" : "745"
+    "id" : "746"
   }, {
     "iri" : "http://www.opengis.net/ont/gml#LineStringSegment",
     "baseIri" : "http://www.opengis.net/ont/gml",
@@ -5185,7 +5185,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "779",
+    "id" : "778",
     "label" : {
       "IRI-based" : "double"
     }
@@ -5220,7 +5220,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "702"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -5239,7 +5239,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "433"
   }, {
     "iri" : "http://www.opengis.net/ont/gml#MultiPoint",
@@ -5291,14 +5291,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "782",
+    "id" : "781",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "instances" : 0,
     "union" : [ "18", "21", "46" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "551"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -5344,7 +5344,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "768"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -5363,7 +5363,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "21" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "377"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -5382,24 +5382,24 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "731"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "732"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "732",
+    "id" : "733",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "706"
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "165"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -5418,7 +5418,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "210"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -5430,7 +5430,7 @@
   }, {
     "instances" : 0,
     "union" : [ "18", "41" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "186"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
@@ -5510,7 +5510,18 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
@@ -5520,17 +5531,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/gml",
         "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -5584,7 +5584,7 @@
       "undefined" : "point"
     },
     "comment" : {
-      "undefined" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
+      "undefined" : "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  "
     },
     "attributes" : [ "external" ],
     "id" : "295",
@@ -6008,7 +6008,7 @@
     "id" : "406",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "407",
+    "id" : "408",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "414",
@@ -6117,19 +6117,19 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "475",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "476",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "477",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "478",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "479",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "480",
     "type" : "owl:datatypeProperty"
@@ -6237,10 +6237,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "525",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "527",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "526",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "528",
     "type" : "rdfs:SubClassOf"
@@ -6320,7 +6320,7 @@
     "id" : "567",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "568",
+    "id" : "569",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "570",
@@ -6411,10 +6411,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "620",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "621",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "622",
     "type" : "owl:objectProperty"
@@ -6492,19 +6492,19 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "666",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "667",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "670",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "671",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "672",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "673",
     "type" : "owl:objectProperty"
@@ -6570,10 +6570,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "693",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "694",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "695",
     "type" : "owl:datatypeProperty"
@@ -6666,10 +6666,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "730",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "733",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "731",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "734",
     "type" : "owl:datatypeProperty"
@@ -6702,10 +6702,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "744",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "746",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "745",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "747",
     "type" : "owl:datatypeProperty"
@@ -6717,10 +6717,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "750",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "751",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "752",
     "type" : "owl:datatypeProperty"
@@ -6797,13 +6797,13 @@
     "id" : "777",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "778",
+    "id" : "779",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "780",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "781",
+    "id" : "782",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "783",
@@ -6882,10 +6882,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "811",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "812",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "813",
     "type" : "owl:objectProperty"
@@ -6974,27 +6974,27 @@
   "propertyAttribute" : [ {
     "range" : "3",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "1"
   }, {
     "range" : "3",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "10",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "12"
   }, {
     "range" : "10",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "iri" : "http://data.europa.eu/949/wheelchairSpaces",
@@ -7091,7 +7091,7 @@
   }, {
     "range" : "10",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "iri" : "http://data.europa.eu/949/usesGroup555",
@@ -7320,57 +7320,57 @@
   }, {
     "range" : "50",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
     "range" : "53",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
     "range" : "57",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "57",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "65",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "65",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "72",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
     "range" : "76",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
     "range" : "60",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "78"
   }, {
     "range" : "83",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "range" : "83",
     "domain" : "86",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "85"
   }, {
     "iri" : "http://data.europa.eu/949/etcsLevelType",
@@ -7438,22 +7438,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -7481,32 +7481,32 @@
   }, {
     "range" : "16",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "97",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "range" : "65",
     "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "99"
   }, {
     "range" : "102",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "101"
   }, {
     "range" : "102",
     "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "103"
   }, {
     "range" : "107",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "105"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
@@ -7543,27 +7543,27 @@
   }, {
     "range" : "116",
     "domain" : "115",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
     "range" : "82",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
     "range" : "121",
     "domain" : "120",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "119"
   }, {
     "range" : "124",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "122"
   }, {
     "range" : "16",
     "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "125"
   }, {
     "iri" : "http://data.europa.eu/949/raisedPantographsDistanceAndSpeed",
@@ -7762,22 +7762,22 @@
   }, {
     "range" : "138",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "range" : "102",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
     "range" : "141",
     "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "140"
   }, {
     "range" : "141",
     "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "iri" : "http://data.europa.eu/949/navigability",
@@ -7822,37 +7822,37 @@
   }, {
     "range" : "104",
     "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
     "range" : "151",
     "domain" : "150",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   }, {
     "range" : "13",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
     "range" : "154",
     "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "153"
   }, {
     "range" : "156",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
     "range" : "79",
     "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
     "range" : "138",
     "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "159"
   }, {
     "iri" : "http://data.europa.eu/949/gprsImplementationArea",
@@ -8093,7 +8093,7 @@
   }, {
     "range" : "141",
     "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "170"
   }, {
     "iri" : "http://data.europa.eu/949/maxLengthVehicleNose",
@@ -8634,22 +8634,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -8735,6 +8735,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -8745,12 +8751,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -8824,17 +8824,17 @@
   }, {
     "range" : "86",
     "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "238"
   }, {
     "range" : "86",
     "domain" : "147",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "240"
   }, {
     "range" : "86",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "242"
   }, {
     "iri" : "http://data.europa.eu/949/cantDeficiency",
@@ -8971,27 +8971,27 @@
   }, {
     "range" : "35",
     "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "252"
   }, {
     "range" : "35",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "253"
   }, {
     "range" : "257",
     "domain" : "256",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "255"
   }, {
     "range" : "257",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "258"
   }, {
     "range" : "86",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "261"
   }, {
     "iri" : "http://data.europa.eu/949/hasAutomaticDroppingDevice",
@@ -10044,37 +10044,37 @@
   }, {
     "range" : "265",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "345"
   }, {
     "range" : "25",
     "domain" : "312",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "346"
   }, {
     "range" : "25",
     "domain" : "107",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
     "range" : "25",
     "domain" : "313",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "349"
   }, {
     "range" : "312",
     "domain" : "317",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "350"
   }, {
     "range" : "141",
     "domain" : "352",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "351"
   }, {
     "range" : "141",
     "domain" : "151",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "354"
   }, {
     "iri" : "http://data.europa.eu/949/maxCurrentStandstillPantograph",
@@ -10114,12 +10114,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.6.1",
+        "value" : "1.1.1.2.2.3",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.2.2.3",
+        "value" : "1.2.2.0.6.1",
         "type" : "label"
       } ]
     },
@@ -10136,17 +10136,17 @@
   }, {
     "range" : "141",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "356"
   }, {
     "range" : "141",
     "domain" : "358",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "357"
   }, {
     "range" : "141",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "359"
   }, {
     "iri" : "http://data.europa.eu/949/redLightsRequired",
@@ -10286,7 +10286,7 @@
     "superproperty" : [ "365" ],
     "domain" : "181",
     "subproperty" : [ "183" ],
-    "attributes" : [ "external", "object", "transitive" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "363"
   }, {
     "iri" : "http://data.europa.eu/949/trainDetectionSystemSpecificCheck",
@@ -10337,12 +10337,12 @@
   }, {
     "range" : "147",
     "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "374"
   }, {
     "range" : "147",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "375"
   }, {
     "iri" : "http://data.europa.eu/949/minimumContactWireHeight",
@@ -10399,27 +10399,27 @@
   }, {
     "range" : "381",
     "domain" : "256",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "380"
   }, {
     "range" : "381",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "382"
   }, {
     "range" : "384",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "352",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "385"
   }, {
     "range" : "109",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "386"
   }, {
     "iri" : "http://data.europa.eu/949/etcsNationalApplications",
@@ -10470,17 +10470,17 @@
   }, {
     "range" : "265",
     "domain" : "266",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "range" : "265",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
     "range" : "265",
     "domain" : "268",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "390"
   }, {
     "iri" : "http://data.europa.eu/949/isQuietRoute",
@@ -10559,6 +10559,52 @@
     "attributes" : [ "external", "object" ],
     "id" : "184"
   }, {
+    "iri" : "http://data.europa.eu/949/vehiclesComposingFixedFormation",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "407",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.1.12",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-25",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "vehiclesComposingFixedFormation",
+      "en" : "vehicles composing fixed formation"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Number of vehicles composing the fixed formation (for fixed formation only). Note: the value is mandatory for all vehicle categories. If the vehicle is composed of only one car, the indicated value shall be '1'."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "406"
+  }, {
     "iri" : "http://data.europa.eu/949/etcsDataCommApp",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "371",
@@ -10603,53 +10649,7 @@
       "en" : "Data communication application for ETCS implementation."
     },
     "attributes" : [ "datatype" ],
-    "id" : "406"
-  }, {
-    "iri" : "http://data.europa.eu/949/vehiclesComposingFixedFormation",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "408",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.1.12",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "vehiclesComposingFixedFormation",
-      "en" : "vehicles composing fixed formation"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Number of vehicles composing the fixed formation (for fixed formation only). Note: the value is mandatory for all vehicle categories. If the vehicle is composed of only one car, the indicated value shall be '1'."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "407"
+    "id" : "408"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehCovers",
     "baseIri" : "http://www.opengis.net/ont/geosparql",
@@ -10673,12 +10673,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -11172,7 +11172,7 @@
     "comment" : {
       "en" : "skos:related is disjoint with skos:broaderTransitive"
     },
-    "attributes" : [ "external", "object", "symmetric" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "436"
   }, {
     "iri" : "http://data.europa.eu/949/complianceInfTsi",
@@ -11920,17 +11920,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.8.11",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
         "value" : "1.2.2.0.5.8",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.2.1.0.5.8",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.8.11",
         "type" : "label"
       } ]
     },
@@ -12313,6 +12313,46 @@
     "attributes" : [ "object" ],
     "id" : "474"
   }, {
+    "iri" : "http://data.europa.eu/949/positionOnB",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnB",
+      "en" : "position on B"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "Determines the position of the topological object B in a relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "475"
+  }, {
     "iri" : "http://data.europa.eu/949/maximumTrainDeceleration",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "176",
@@ -12357,46 +12397,6 @@
       "en" : "Limit for longitudinal track resistance given as a maximum allowed train deceleration and expressed in metres per square second."
     },
     "attributes" : [ "datatype" ],
-    "id" : "475"
-  }, {
-    "iri" : "http://data.europa.eu/949/positionOnB",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "42",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "positionOnB",
-      "en" : "position on B"
-    },
-    "domain" : "144",
-    "comment" : {
-      "en" : "Determines the position of the topological object B in a relation."
-    },
-    "attributes" : [ "object" ],
     "id" : "476"
   }, {
     "iri" : "http://data.europa.eu/949/dieselThermalAllowed",
@@ -12445,6 +12445,46 @@
     "attributes" : [ "datatype" ],
     "id" : "477"
   }, {
+    "iri" : "http://data.europa.eu/949/positionOnA",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "positionOnA",
+      "en" : "position on A"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "Determines the position of the topological object A in a relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "478"
+  }, {
     "iri" : "http://data.europa.eu/949/maximumBrakingDistance",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "202",
@@ -12489,46 +12529,6 @@
       "en" : "The maximum value of the braking distance [in meters] of a train shall be given for the maximum line speed."
     },
     "attributes" : [ "datatype" ],
-    "id" : "478"
-  }, {
-    "iri" : "http://data.europa.eu/949/positionOnA",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "42",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "positionOnA",
-      "en" : "position on A"
-    },
-    "domain" : "144",
-    "comment" : {
-      "en" : "Determines the position of the topological object A in a relation."
-    },
-    "attributes" : [ "object" ],
     "id" : "479"
   }, {
     "iri" : "http://data.europa.eu/949/permittedContactForce",
@@ -12708,7 +12708,7 @@
       "term_status" : [ {
         "identifier" : "term_status",
         "language" : "undefined",
-        "value" : "stable",
+        "value" : "unstable",
         "type" : "label"
       } ],
       "created" : [ {
@@ -12766,17 +12766,17 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
+        "value" : "1.1.1.1.8.10",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
         "value" : "1.2.1.0.5.7",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.2.2.0.5.7",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.8.10",
         "type" : "label"
       } ]
     },
@@ -12863,52 +12863,6 @@
     "attributes" : [ "datatype" ],
     "id" : "489"
   }, {
-    "iri" : "http://data.europa.eu/949/maxTrainCurrent",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "221",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-06",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-06",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.2.2.2",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "maxTrainCurrent",
-      "en" : "maximum train current"
-    },
-    "domain" : "62",
-    "comment" : {
-      "en" : "Maximum current taken by the complete train (composition of one or more units) expressed in amperes."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "491"
-  }, {
     "iri" : "http://data.europa.eu/949/gaugingCheckLocation",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "425",
@@ -12956,6 +12910,52 @@
     "domain" : "21",
     "comment" : {
       "en" : "Location of particular points requiring specific checks due to deviations from gauging. The location (generally the distance from the origin of the line to the centre) on a line is given in kilometres with decimals (precision of 0.001)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "491"
+  }, {
+    "iri" : "http://data.europa.eu/949/maxTrainCurrent",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "221",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-06",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-06",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.2.2.2",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maxTrainCurrent",
+      "en" : "maximum train current"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Maximum current taken by the complete train (composition of one or more units) expressed in amperes."
     },
     "attributes" : [ "datatype" ],
     "id" : "492"
@@ -13392,22 +13392,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -13527,7 +13527,7 @@
   }, {
     "range" : "147",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#coordinateDimension",
@@ -13552,12 +13552,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -13672,7 +13672,7 @@
   }, {
     "range" : "516",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "515"
   }, {
     "iri" : "http://data.europa.eu/949/maximumAverageDeceleration",
@@ -13723,42 +13723,82 @@
   }, {
     "range" : "135",
     "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "518"
   }, {
     "range" : "135",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "519"
   }, {
     "range" : "135",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "520"
   }, {
     "range" : "135",
     "domain" : "148",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "521"
   }, {
     "range" : "135",
     "domain" : "134",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "522"
   }, {
     "range" : "135",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "523"
   }, {
     "range" : "136",
     "domain" : "384",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "524"
+  }, {
+    "iri" : "http://data.europa.eu/949/elementB",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "elementB",
+      "en" : "element B"
+    },
+    "domain" : "144",
+    "comment" : {
+      "en" : "References the second topological object in an oriented relation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "525"
   }, {
     "iri" : "http://data.europa.eu/949/thermalCapacityTime",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "526",
+    "range" : "527",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13800,51 +13840,11 @@
       "en" : "Thermal capacity time. If no reference case is indicated."
     },
     "attributes" : [ "datatype" ],
-    "id" : "525"
-  }, {
-    "iri" : "http://data.europa.eu/949/elementB",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "33",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "elementB",
-      "en" : "element B"
-    },
-    "domain" : "144",
-    "comment" : {
-      "en" : "References the second topological object in an oriented relation."
-    },
-    "attributes" : [ "object" ],
-    "id" : "527"
+    "id" : "526"
   }, {
     "range" : "136",
     "domain" : "529",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "528"
   }, {
     "iri" : "http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument",
@@ -13895,7 +13895,7 @@
   }, {
     "range" : "134",
     "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "531"
   }, {
     "iri" : "http://data.europa.eu/949/permissiblePayload",
@@ -13946,7 +13946,7 @@
   }, {
     "range" : "516",
     "domain" : "295",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "534"
   }, {
     "iri" : "http://data.europa.eu/949/localRulesOrRestrictions",
@@ -13980,12 +13980,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.3.1",
+        "value" : "1.1.1.4.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.4.1",
+        "value" : "1.2.3.1",
         "type" : "label"
       } ]
     },
@@ -14022,12 +14022,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -14125,22 +14125,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -14168,22 +14168,22 @@
   }, {
     "range" : "34",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "543"
   }, {
     "range" : "94",
     "domain" : "545",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "544"
   }, {
     "range" : "37",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "546"
   }, {
     "range" : "37",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "547"
   }, {
     "iri" : "http://data.europa.eu/949/hasRegenerativeBrake",
@@ -14240,7 +14240,7 @@
   }, {
     "range" : "134",
     "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "549"
   }, {
     "iri" : "http://data.europa.eu/949/minimumHorizontalRadius",
@@ -14556,12 +14556,12 @@
   }, {
     "range" : "112",
     "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "560"
   }, {
     "range" : "112",
     "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "561"
   }, {
     "iri" : "http://data.europa.eu/949/hasBallast",
@@ -14656,6 +14656,52 @@
     "attributes" : [ "object" ],
     "id" : "566"
   }, {
+    "iri" : "http://data.europa.eu/949/staticAxleLoadExceptionalPayload",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "568",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.5.3.3",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-11-03",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "staticAxleLoadExceptionalPayload",
+      "en" : "static axle load under exceptional payload"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Static axle load under exceptional payload."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "567"
+  }, {
     "iri" : "http://data.europa.eu/949/localRulesOrRestrictionsDoc",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "233",
@@ -14705,62 +14751,16 @@
       "en" : "Documents regarding the rules or restrictions of a strictly local nature available by the IM."
     },
     "attributes" : [ "datatype" ],
-    "id" : "567"
-  }, {
-    "iri" : "http://data.europa.eu/949/staticAxleLoadExceptionalPayload",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "569",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-08-24",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.5.3.3",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2020-11-03",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "staticAxleLoadExceptionalPayload",
-      "en" : "static axle load under exceptional payload"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Static axle load under exceptional payload."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "568"
+    "id" : "569"
   }, {
     "range" : "86",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "570"
   }, {
     "range" : "42",
     "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "571"
   }, {
     "iri" : "http://data.europa.eu/949/hasSignal",
@@ -15064,16 +15064,6 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.6.4",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.8.7",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
         "value" : "1.2.1.0.5.5",
         "type" : "label"
       }, {
@@ -15084,12 +15074,22 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.0.0.0.5",
+        "value" : "1.1.1.1.8.7",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.1.0.6.4",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
         "value" : "1.2.2.0.2.1",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.0.0.0.5",
         "type" : "label"
       } ]
     },
@@ -15180,7 +15180,7 @@
     "superproperty" : [ "365" ],
     "domain" : "181",
     "subproperty" : [ "488" ],
-    "attributes" : [ "external", "object", "transitive" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "364"
   }, {
     "iri" : "http://data.europa.eu/949/etcsMVersion",
@@ -15498,22 +15498,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -15650,22 +15650,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -16001,52 +16001,6 @@
     "attributes" : [ "datatype" ],
     "id" : "618"
   }, {
-    "iri" : "http://data.europa.eu/949/maximumServiceBrake",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "196",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-26",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.7.7",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-26",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "maximumServiceBrake",
-      "en" : "maximum service break"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "At maximum service brake: Stopping distance, Maximum deceleration, for the load condition 'design mass under normal payload' at the design maximum speed."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "620"
-  }, {
     "iri" : "http://data.europa.eu/949/protectionLegacySystem",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -16097,6 +16051,52 @@
       "en" : "Indication of which class B system is installed"
     },
     "attributes" : [ "object" ],
+    "id" : "620"
+  }, {
+    "iri" : "http://data.europa.eu/949/maximumServiceBrake",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "196",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-26",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.7.7",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-26",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maximumServiceBrake",
+      "en" : "maximum service break"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "At maximum service brake: Stopping distance, Maximum deceleration, for the load condition 'design mass under normal payload' at the design maximum speed."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "621"
   }, {
     "iri" : "http://data.europa.eu/949/tsiCompliantFerromagneticWheel",
@@ -16455,7 +16455,7 @@
     "comment" : {
       "en" : "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."
     },
-    "attributes" : [ "external", "object", "transitive", "symmetric" ],
+    "attributes" : [ "external", "transitive", "symmetric", "object" ],
     "id" : "633"
   }, {
     "iri" : "http://data.europa.eu/949/staticAxleLoadWorkingOrder",
@@ -16673,22 +16673,22 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.2.1",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.2.0.0.3",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
         "value" : "1.1.1.1.2.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
+        "value" : "1.2.1.0.2.1",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
         "value" : "1.2.1.0.6.3",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.2.0.0.3",
         "type" : "label"
       } ]
     },
@@ -16808,22 +16808,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -17230,64 +17230,8 @@
     "comment" : {
       "en" : "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."
     },
-    "attributes" : [ "external", "object", "functional" ],
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "665"
-  }, {
-    "iri" : "http://data.europa.eu/949/demonstrationSRT",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "319",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-11",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.2.0.5.4",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.8.6",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.2.1.0.5.4",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "demonstrationSRT",
-      "en" : "declaration of demonstration SRT"
-    },
-    "domain" : "132",
-    "comment" : {
-      "en" : "Unique number for EI declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "666"
   }, {
     "iri" : "http://data.europa.eu/949/snowIceHailConditions",
     "baseIri" : "http://data.europa.eu/949",
@@ -17333,6 +17277,62 @@
       "en" : "Snow, ice and hail conditions."
     },
     "attributes" : [ "object" ],
+    "id" : "666"
+  }, {
+    "iri" : "http://data.europa.eu/949/demonstrationSRT",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "319",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-11",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.1.0.5.4",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.8.6",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.2.0.5.4",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "demonstrationSRT",
+      "en" : "declaration of demonstration SRT"
+    },
+    "domain" : "132",
+    "comment" : {
+      "en" : "Unique number for EI declarations concerning requirements of SRT (Safety in Railway Tunnels) TSI for infrastructure system."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "667"
   }, {
     "iri" : "http://data.europa.eu/949/umax2",
@@ -17380,46 +17380,6 @@
     },
     "attributes" : [ "datatype" ],
     "id" : "670"
-  }, {
-    "iri" : "http://data.europa.eu/949/startIntrinsicCoordinate",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "617",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "startIntrinsicCoordinate",
-      "en" : "start intrinsic coordinate"
-    },
-    "domain" : "33",
-    "comment" : {
-      "en" : "Indicates the coordinate point where a linear object begins."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "671"
   }, {
     "iri" : "http://data.europa.eu/949/magneticBraking",
     "baseIri" : "http://data.europa.eu/949",
@@ -17471,6 +17431,46 @@
       "en" : "Use of magnetic brakes."
     },
     "attributes" : [ "object" ],
+    "id" : "671"
+  }, {
+    "iri" : "http://data.europa.eu/949/startIntrinsicCoordinate",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "617",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startIntrinsicCoordinate",
+      "en" : "start intrinsic coordinate"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Indicates the coordinate point where a linear object begins."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "672"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehDisjoint",
@@ -17564,12 +17564,12 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.2.2",
+        "value" : "1.2.1.0.2.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.2.2",
+        "value" : "1.1.1.1.2.2",
         "type" : "label"
       } ]
     },
@@ -17839,12 +17839,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -17855,6 +17849,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -18053,54 +18053,8 @@
     "superproperty" : [ "184" ],
     "domain" : "181",
     "subproperty" : [ "633" ],
-    "attributes" : [ "external", "object", "symmetric" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "396"
-  }, {
-    "iri" : "http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "668",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-03",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-12",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.3.7.1.3",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "trainDetectionSystemSpecificCheckDocument",
-      "en" : "detection system specific check document"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "684"
   }, {
     "iri" : "http://data.europa.eu/949/boardingAids",
     "baseIri" : "http://data.europa.eu/949",
@@ -18144,6 +18098,52 @@
     "domain" : "18",
     "comment" : {
       "en" : "Description of any integrated boarding aids (if provided)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "684"
+  }, {
+    "iri" : "http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "668",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-03",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-12",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.3.7.1.3",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "trainDetectionSystemSpecificCheckDocument",
+      "en" : "detection system specific check document"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Document with the procedure(s) related to the type of track circuits declared in 1.1.1.3.7.1.2."
     },
     "attributes" : [ "datatype" ],
     "id" : "685"
@@ -18476,52 +18476,6 @@
     "attributes" : [ "datatype" ],
     "id" : "692"
   }, {
-    "iri" : "http://data.europa.eu/949/publicNetworkRoamingDetails",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "630",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-09",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-12",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.3.3.7",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "publicNetworkRoamingDetails",
-      "en" : "public network roaming details"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Details on roaming to public networks."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "693"
-  }, {
     "iri" : "http://data.europa.eu/949/maxSandingOutput",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -18566,6 +18520,52 @@
       "en" : "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams."
     },
     "attributes" : [ "object" ],
+    "id" : "693"
+  }, {
+    "iri" : "http://data.europa.eu/949/publicNetworkRoamingDetails",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "630",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-09",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-12",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.3.3.7",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publicNetworkRoamingDetails",
+      "en" : "public network roaming details"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Details on roaming to public networks."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "694"
   }, {
     "iri" : "http://data.europa.eu/949/relativePosition",
@@ -18719,22 +18719,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -18834,12 +18834,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -19446,22 +19446,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
-      } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -19607,12 +19607,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       } ],
       "prefLabel" : [ {
@@ -19822,12 +19822,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.6.1",
-        "type" : "label"
-      }, {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.0.0.0.1",
+        "value" : "1.1.1.1.8.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -19837,7 +19832,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.5.1",
+        "value" : "1.1.0.0.0.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -19847,7 +19842,12 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.8.1",
+        "value" : "1.2.2.0.5.1",
+        "type" : "label"
+      }, {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.2.1.0.6.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -20036,58 +20036,6 @@
     "attributes" : [ "datatype" ],
     "id" : "728"
   }, {
-    "iri" : "http://data.europa.eu/949/minFlangeThickness",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "732",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-08",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.14.2.7",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.3.7.8",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "minFlangeThickness",
-      "en" : "min flange thickness"
-    },
-    "domain" : "731",
-    "comment" : {
-      "en" : "Minimum permitted flange thickness, given in millimiters."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "730"
-  }, {
     "iri" : "http://data.europa.eu/949/etcsInfill",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -20138,7 +20086,59 @@
       "en" : "Information about installed trackside/on-board equipment capable to transmit infill information by loop or GSM-R for level 1 installation."
     },
     "attributes" : [ "object" ],
-    "id" : "733"
+    "id" : "730"
+  }, {
+    "iri" : "http://data.europa.eu/949/minFlangeThickness",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "733",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-08",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.14.2.7",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.3.7.8",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "minFlangeThickness",
+      "en" : "min flange thickness"
+    },
+    "domain" : "732",
+    "comment" : {
+      "en" : "Minimum permitted flange thickness, given in millimiters."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "731"
   }, {
     "iri" : "http://data.europa.eu/949/gsmRSetsInDrivingCab",
     "baseIri" : "http://data.europa.eu/949",
@@ -20438,12 +20438,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -20608,46 +20608,6 @@
     "attributes" : [ "datatype" ],
     "id" : "743"
   }, {
-    "iri" : "http://data.europa.eu/949/kilometer",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "260",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-01-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-01-29",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "kilometer",
-      "en" : "kilometer"
-    },
-    "domain" : "745",
-    "comment" : {
-      "en" : "Distance measured in kilometers from the origin of a national railway line."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "744"
-  }, {
     "iri" : "http://data.europa.eu/949/profileNumberSwapBodies",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -20692,7 +20652,47 @@
       "en" : "Coding for combined transport with swap bodies as defined in UIC Code."
     },
     "attributes" : [ "object" ],
-    "id" : "746"
+    "id" : "744"
+  }, {
+    "iri" : "http://data.europa.eu/949/kilometer",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "260",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "kilometer",
+      "en" : "kilometer"
+    },
+    "domain" : "746",
+    "comment" : {
+      "en" : "Distance measured in kilometers from the origin of a national railway line."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "745"
   }, {
     "iri" : "http://data.europa.eu/949/verificationINF",
     "baseIri" : "http://data.europa.eu/949",
@@ -20725,7 +20725,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.1.0.1.1",
+        "value" : "1.1.1.1.1.1",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -20735,7 +20735,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.1.1",
+        "value" : "1.2.1.0.1.1",
         "type" : "label"
       } ]
     },
@@ -20856,52 +20856,6 @@
     "attributes" : [ "datatype" ],
     "id" : "749"
   }, {
-    "iri" : "http://data.europa.eu/949/ferromagneticWheelMaterial",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "344",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.14.2.12",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ferromagneticWheelMaterial",
-      "en" : "ferromagnetic wheel material"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Wheel material is ferromagnetic."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "750"
-  }, {
     "iri" : "http://data.europa.eu/949/tsiCompliantMetalFreeSpace",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -20946,6 +20900,52 @@
       "en" : "TSI compliance of rules for metal-free space around wheels."
     },
     "attributes" : [ "object" ],
+    "id" : "750"
+  }, {
+    "iri" : "http://data.europa.eu/949/ferromagneticWheelMaterial",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "344",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.14.2.12",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ferromagneticWheelMaterial",
+      "en" : "ferromagnetic wheel material"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Wheel material is ferromagnetic."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "751"
   }, {
     "iri" : "http://data.europa.eu/949/hasOtherTrainProtection",
@@ -21093,7 +21093,7 @@
       "term_status" : [ {
         "identifier" : "term_status",
         "language" : "undefined",
-        "value" : "stable",
+        "value" : "unstable",
         "type" : "label"
       } ],
       "created" : [ {
@@ -21338,12 +21338,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -21354,6 +21348,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -21786,7 +21786,7 @@
     },
     "superproperty" : [ "436", "184" ],
     "domain" : "181",
-    "attributes" : [ "external", "object", "symmetric" ],
+    "attributes" : [ "external", "symmetric", "object" ],
     "id" : "397"
   }, {
     "iri" : "http://data.europa.eu/949/thermalCapacityGradient",
@@ -21912,7 +21912,7 @@
       "rinfIndex" : [ {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.1.1.1.1.2",
+        "value" : "1.2.2.0.1.2",
         "type" : "label"
       }, {
         "identifier" : "rinfIndex",
@@ -21922,7 +21922,7 @@
       }, {
         "identifier" : "rinfIndex",
         "language" : "undefined",
-        "value" : "1.2.2.0.1.2",
+        "value" : "1.1.1.1.1.2",
         "type" : "label"
       } ]
     },
@@ -22023,6 +22023,52 @@
     "attributes" : [ "datatype" ],
     "id" : "776"
   }, {
+    "iri" : "http://data.europa.eu/949/passByNoiseLevel",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "778",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-08-31",
+        "type" : "label"
+      } ],
+      "eratvIndex" : [ {
+        "identifier" : "eratvIndex",
+        "language" : "undefined",
+        "value" : "4.11.1",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-31",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "passByNoiseLevel",
+      "en" : "pass-by noise level"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Pass-by noise level given in dB(A)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "777"
+  }, {
     "iri" : "http://data.europa.eu/949/hasHotAxleBoxDetector",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "402",
@@ -22067,11 +22113,11 @@
       "en" : "Existence of trackside hot axle box detector (HABD)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "777"
+    "id" : "779"
   }, {
-    "iri" : "http://data.europa.eu/949/passByNoiseLevel",
+    "iri" : "http://data.europa.eu/949/numberElementsRakeFreightWagons",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "779",
+    "range" : "781",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -22088,32 +22134,32 @@
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2021-08-31",
+        "value" : "2021-08-25",
         "type" : "label"
       } ],
       "eratvIndex" : [ {
         "identifier" : "eratvIndex",
         "language" : "undefined",
-        "value" : "4.11.1",
+        "value" : "4.1.6",
         "type" : "label"
       } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2021-08-31",
+        "value" : "2021-08-25",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "passByNoiseLevel",
-      "en" : "pass-by noise level"
+      "IRI-based" : "numberElementsRakeFreightWagons",
+      "en" : "number elements rake freight wagons"
     },
     "domain" : "18",
     "comment" : {
-      "en" : "Pass-by noise level given in dB(A)."
+      "en" : "Number of elements in the rake of freight wagons (only for subcategory 'rake of freight wagons')"
     },
     "attributes" : [ "datatype" ],
-    "id" : "778"
+    "id" : "780"
   }, {
     "iri" : "http://data.europa.eu/949/hasShuntingRestrictions",
     "baseIri" : "http://data.europa.eu/949",
@@ -22159,53 +22205,7 @@
       "en" : "Indicates the presence of shunting restrictions."
     },
     "attributes" : [ "datatype" ],
-    "id" : "780"
-  }, {
-    "iri" : "http://data.europa.eu/949/numberElementsRakeFreightWagons",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "782",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ],
-      "eratvIndex" : [ {
-        "identifier" : "eratvIndex",
-        "language" : "undefined",
-        "value" : "4.1.6",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-25",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "numberElementsRakeFreightWagons",
-      "en" : "number elements rake freight wagons"
-    },
-    "domain" : "18",
-    "comment" : {
-      "en" : "Number of elements in the rake of freight wagons (only for subcategory 'rake of freight wagons')"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "781"
+    "id" : "782"
   }, {
     "iri" : "http://data.europa.eu/949/shortestDistanceBetweenPantographsInContactWithOCL",
     "baseIri" : "http://data.europa.eu/949",
@@ -22487,12 +22487,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -22503,6 +22497,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22599,6 +22599,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -22609,12 +22615,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22699,6 +22699,12 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
+      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -22709,12 +22715,6 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
-      } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -22854,12 +22854,12 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
         "type" : "iri"
       } ],
       "contributor" : [ {
@@ -23415,52 +23415,6 @@
     "attributes" : [ "object" ],
     "id" : "810"
   }, {
-    "iri" : "http://data.europa.eu/949/hotAxleBoxDetectorDirection",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "7",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-08-24",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-11",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.7.9",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hotAxleBoxDetectorDirection",
-      "en" : "hot axle box detector direction"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "811"
-  }, {
     "iri" : "http://data.europa.eu/949/TSITractionHarmonics",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "42",
@@ -23505,6 +23459,52 @@
       "en" : "Existence and TSI compliance of limits in harmonics in the traction current of vehicles."
     },
     "attributes" : [ "object" ],
+    "id" : "811"
+  }, {
+    "iri" : "http://data.europa.eu/949/hotAxleBoxDetectorDirection",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-11",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.7.9",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hotAxleBoxDetectorDirection",
+      "en" : "hot axle box detector direction"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Direction of measurement of trackside HABD. Specific for the French Italian and Swedish networks."
+    },
+    "attributes" : [ "datatype" ],
     "id" : "812"
   }, {
     "iri" : "http://www.opengis.net/ont/geosparql#ehMeet",
@@ -23526,12 +23526,6 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Matthew Perry",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
@@ -23542,6 +23536,12 @@
         "language" : "undefined",
         "value" : "http://www.opengis.net/ont/geosparql",
         "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Matthew Perry",
+        "type" : "label"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -23613,9 +23613,49 @@
     "attributes" : [ "datatype" ],
     "id" : "814"
   }, {
+    "iri" : "http://data.europa.eu/949/passesThroughTunnel",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-07-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-08-09",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "passesThroughTunnel",
+      "en" : "passes through tunnel"
+    },
+    "domain" : "303",
+    "comment" : {
+      "en" : "References a tunnel that a track goes through."
+    },
+    "attributes" : [ "object" ],
+    "id" : "815"
+  }, {
     "iri" : "http://data.europa.eu/949/lineReference",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "745",
+    "range" : "746",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -23655,46 +23695,6 @@
     "domain" : "542",
     "comment" : {
       "en" : "Indicates a relationship with a national railway line at a specific kilometer point."
-    },
-    "attributes" : [ "object" ],
-    "id" : "815"
-  }, {
-    "iri" : "http://data.europa.eu/949/passesThroughTunnel",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "132",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-07-29",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-08-09",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "passesThroughTunnel",
-      "en" : "passes through tunnel"
-    },
-    "domain" : "303",
-    "comment" : {
-      "en" : "References a tunnel that a track goes through."
     },
     "attributes" : [ "object" ],
     "id" : "816"
@@ -23804,22 +23804,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -24094,22 +24094,22 @@
         "value" : "OGC GeoSPARQL 1.0 Standard Working Group",
         "type" : "label"
       } ],
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/ont/geosparql",
-        "type" : "iri"
-      }, {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.opengis.net/spec/geosparql/1.0",
-        "type" : "iri"
-      } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
         "value" : "Matthew Perry",
         "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/spec/geosparql/1.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
@@ -24372,52 +24372,6 @@
     "attributes" : [ "datatype" ],
     "id" : "828"
   }, {
-    "iri" : "http://data.europa.eu/949/hotAxleBoxDetectorIdentification",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "14",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2020-08-24",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-09-11",
-        "type" : "label"
-      } ],
-      "rinfIndex" : [ {
-        "identifier" : "rinfIndex",
-        "language" : "undefined",
-        "value" : "1.1.1.1.7.6",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hotAxleBoxDetectorIdentification",
-      "en" : "hot axle box detector identification"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "829"
-  }, {
     "iri" : "http://data.europa.eu/949/gsmRNoCoverage",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "416",
@@ -24460,6 +24414,52 @@
     "domain" : "21",
     "comment" : {
       "en" : "Indication if there is no GSMR coverage."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "829"
+  }, {
+    "iri" : "http://data.europa.eu/949/hotAxleBoxDetectorIdentification",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-08-24",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-09-11",
+        "type" : "label"
+      } ],
+      "rinfIndex" : [ {
+        "identifier" : "rinfIndex",
+        "language" : "undefined",
+        "value" : "1.1.1.1.7.6",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hotAxleBoxDetectorIdentification",
+      "en" : "hot axle box detector identification"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Identification of trackside HABD. Applicable if trackside HABD is not TSI compliant."
     },
     "attributes" : [ "datatype" ],
     "id" : "830"
@@ -24510,6 +24510,46 @@
     "attributes" : [ "datatype" ],
     "id" : "831"
   }, {
+    "iri" : "http://data.europa.eu/949/linearCoordinate",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "241",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2021-04-01",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "linearCoordinate",
+      "en" : "linear coordinate"
+    },
+    "domain" : "181",
+    "comment" : {
+      "en" : "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "832"
+  }, {
     "iri" : "http://data.europa.eu/949/minVehicleImpedance",
     "baseIri" : "http://data.europa.eu/949",
     "range" : "801",
@@ -24554,7 +24594,7 @@
       "en" : "Minimum vehicle impedance (between wheels and pantograph) (only for vehicles equipped for 1500V or 3000V DC)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "832"
+    "id" : "833"
   }, {
     "iri" : "http://data.europa.eu/949/vehicleSeries",
     "baseIri" : "http://data.europa.eu/949",
@@ -24592,46 +24632,6 @@
     "domain" : "249",
     "comment" : {
       "en" : "Manufacturing series of a vehicle."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "833"
-  }, {
-    "iri" : "http://data.europa.eu/949/linearCoordinate",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "241",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2021-04-01",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "linearCoordinate",
-      "en" : "linear coordinate"
-    },
-    "domain" : "181",
-    "comment" : {
-      "en" : "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."
     },
     "attributes" : [ "datatype" ],
     "id" : "834"
