@@ -53,6 +53,15 @@
 # http://purl.org/dc/terms/created
 <http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)." .
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#label> "altitude" .
@@ -808,7 +817,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://data.europa.eu/949/notApplicable> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a property that is not applicable."@en .
 <http://data.europa.eu/949/notApplicable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/notApplicable> <http://www.w3.org/2000/01/rdf-schema#label> "not applicable"@en .
-<http://data.europa.eu/949/notApplicable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://data.europa.eu/949/notApplicable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/notYetAvailable
 <http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -817,7 +826,7 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to a property that is not yet available."@en .
 <http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "not yet available"@en .
-<http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://data.europa.eu/949/notYetAvailable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 # 
 # http://data.europa.eu/949/opEnd
 <http://data.europa.eu/949/opEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

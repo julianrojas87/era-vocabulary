@@ -2,7 +2,7 @@
 
 Vocabulary definition for the European Union Agency for Railways. The vocabulary documentation is built using the [Widoco](https://github.com/dgarijo/Widoco) toolset.
 
-Online documentation for this vocabulary is available at http://era.ilabt.imec.be/era-vocabulary/index-en.html
+Online documentation for this vocabulary is available at <https://data-interop.era.europa.eu/era-vocabulary/>
 
 ## Run WITH Docker
 
@@ -59,12 +59,12 @@ Then follow the next steps:
    ./generate-docs.sh
    ```
 
-   The resulting sources will be placed in the `public/` folder.
+   The resulting sources will be placed in the `public/doc` folder.
 
 4. Publish the Web page. In this example we use Node.js's [`npx`](https://nodejs.dev/learn/the-npx-nodejs-package-runner) utility and [`http-server`](https://github.com/http-party/http-server) for this, but you may choose to publish the static files otherwise (e.g. directly via NGINX).
 
    ```bash
-   cd public
+   cd public/doc
    npx http-server --cors -p ${PORT}
    ```
 
